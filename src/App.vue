@@ -288,7 +288,7 @@
                     <font class="text-w-700" style="font-size: 24px;color:#F38100">02 026 3250</font>
                   </div>
                   <div class="col-12 mt-5">
-                    <p class="text-w-400" style="font-size: 18px;color:#ffffff;margin-bottom:10px !important;">sellsuki co. Ltd.<br> 4Simplex, 3rd floor, no. 10/39<br> Ratchadapisek Road, chankasem,<br> chatuchak, bangkok 10900<br> thailand</p>
+                    <p class="text-w-400" style="font-size: 18px;color:#ffffff;margin-bottom:11px !important;">sellsuki co. Ltd.<br> 4Simplex, 3rd floor, no. 10/39<br> Ratchadapisek Road, chankasem,<br> chatuchak, bangkok 10900<br> thailand</p>
                   </div>                  
                   <div class="col-12">
                     <img class="background-main" src="./assets/image13.png" style="border-radius: 5px">
