@@ -1,22 +1,115 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F6ECE0">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/">
         <img src="./assets/logo-sellsuki.png" alt="" width="141.29" height="60" class="d-inline-block align-text-top">
       </a>
       <div class="ml-2">
-        <ul class="navbar-nav navbar-custom shadow text-s-16 text-w-400">
+        <ul class="navbar-nav navbar-custom shadow text-s-16 text-w-500 menu-bar" style="padding:0px !important;padding-left: 15px !important;">
           <li class="nav-item">
-            <router-link class="nav-link text-c-menu" aria-current="page" to="/Home">Home</router-link>
+            <router-link class="nav-link text-c-menu" aria-current="page" to="/">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Service</router-link>
+            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Services <i class="bi bi-chevron-down" style="font-size: 15px;"></i></router-link>
+            <ul class="dropdown" style="padding: 30px 50px 30px 50px;width: 1380px;left: 50%;">
+              <i class="bi bi-caret-up-fill" style="font-size: 40px;position: absolute;left: 29.5%;color: #ffffff;bottom: 440px;"></i>
+              <div class="row">
+                <div class="col-2" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;height:415px">
+                  <a href="#"><img src="./assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Digital Marketing</font></a>
+                  <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Influencer Marketing</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Content Marketing</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Collaborative Ads <br>(Marketplace)</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Spy ads</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Social Listening</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Ads Intelligence</p></a>
+                </div>
+                <div class="col-2" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;width: 220px !important;">
+                  <a href="#"><img src="./assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Digital Advertising</font></a>
+                  <hr style="border: 1px solid #E7E7EA;width: 182px;height: 0px;">
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Tiktok Ads</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Facebook Ads</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Instagram Ads</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Youtube Ads</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Google Ads</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Twitter Ads</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Line Ads Platform</p></a> 
+                </div>
+                <div class="col-2" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;">
+                  <a href="#"><img src="./assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Business Consult</font></a>
+                  <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">                  
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Marketing Strategy</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;margin-bottom: 2rem;">e-Distributor</p></a>
+                  <a href="#"><img src="./assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">LINE Service</font></a>
+                  <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE My shop</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE OA</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE Chatbot</p></a>
+                </div>
+                <div class="col-4" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;width: 405px !important;">
+                  <a href="#"><img src="./assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">MarTech</font></a>
+                  <hr style="border: 1px solid #E7E7EA;width: 360px;height: 0px;">
+                  <div class="row">
+                    <div class="col-6">
+                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Information Website</p></a>
+                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">E-Commerce Website</p></a>
+                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Business Intelligence</p></a>
+                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Catalog Website <br>(LINE my shop)</p></a>
+                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE API</p></a>
+                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Campaign Manager</p></a>
+                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Application System <br>Development</p></a>
+                    </div>
+                    <div class="col-6" style="padding: 0;">
+                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Order Management<br>System</p></a>
+                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">CRM System</p></a>
+                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Customer Data<br>Platform</p></a>
+                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Consult & Maintenance<br>Service Agreement</p></a>
+                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Marketing Automation</p></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2" style="padding-right: 20px !important;padding-left: 20px !important;">
+                  <a href="#"><img src="./assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">E-commerce Operation</font></a>
+                  <hr style="border: 1px solid #E7E7EA;width: 214px;height: 0px;">
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Fulfillment Service</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Fulfillment System</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;margin-bottom: 2rem;">Product Catalog<br>Management</p></a>
+                  <a href="#"><img src="./assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Delivery</font></a>
+                  <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Delivery</p></a>
+                </div>
+              </div>
+            </ul>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Solution</router-link>
+            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Solutions <i class="bi bi-chevron-down" style="font-size: 15px;"></i></router-link>
+            <ul class="dropdown" style="padding: 30px 32px 30px 32px;width: 540px;left: 43%;">
+              <i class="bi bi-caret-up-fill" style="font-size: 40px;position: absolute;left: 43.5%;color: #ffffff;bottom: 440px;"></i>
+              <div class="row">
+                <div class="col-6" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;height:415px;width: 235px !important;">
+                  <a href="#"><img src="./assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Types of Business</font></a>
+                  <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Business Owner</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Content Marketing</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Online Merchant</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Corporate</p></a>
+                </div>
+                <div class="col-6" style="padding-right: 20px !important;padding-left: 20px !important;width: 260px !important;">
+                  <a href="#"><img src="./assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Services-Products</font></a>
+                  <hr style="border: 1px solid #E7E7EA;width: 182px;height: 0px;">
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Fuse Advertising</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE Agency</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Kaikong Content Marketing</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Beary Web & Tech Service</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Akita Fulfillment</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Shipmunk : Dropshipping</p></a>
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Oc2Plus : Customer Data<br>Platform</p></a> 
+                </div>
+              </div>
+            </ul>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">About Us</router-link>
+            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/AboutUs">About Us</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Portfolio</router-link>
@@ -35,7 +128,17 @@
       <div class="ml-2">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link class="nav-link text-c-menu" to="/Home" style="margin-right:20px;margin-left:10px;padding-right: 0 !important;padding-left: 0 !important;"><div class="btn-icon text-w-700" style="background-color: #FDF5E8;font-size:16px">EN</div></router-link>
+            <router-link class="nav-link text-c-menu" to="/Home" style="margin-right:15px;margin-left:10px;padding-right: 0 !important;padding-left: 0 !important;"><div class="btn-icon text-w-700" style="background-color: #FDF5E8;font-size:16px">EN</div></router-link>
+             <ul class="dropdown" style="padding: 15px;width: 150px;height: 120px;left: 74%;top: 90px">
+              <i class="bi bi-caret-up-fill" style="font-size: 40px;position: absolute;left: 55px;color: #FFFFFF;bottom: 90px;"></i>
+              <div class="row">
+                <div class="col-12">
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">TH</p></a>
+                  <hr style="border: 1px solid #50151C;width: 100px;height: 0px;">
+                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">EN</p></a>
+                </div>
+              </div>
+            </ul>
           </li>
           <li class="nav-item">
             <router-link class="nav-link text-c-menu" to="/Home" style="margin-right:40px;margin-left:10x;padding-right: 0 !important;padding-left: 0 !important;"><img class="shadow-filter" style="background-color: #FFFFFF;border-radius: 50px;" src="./assets/icon/Vector.png"></router-link>
@@ -44,282 +147,86 @@
       </div>
     </div>
   </nav>
+  <router-view></router-view>
   <div class="background-main">
     <div class="container">
-      <div class="row">
-        <div class="col-5">
-          <font style="font-size:64px;font-weight:600;top:339px;position: absolute;color:#50151C">E-COMMERCE <br>SOLUTION</font>
+        <div class="crad">
+          <div style="background-color: #15304E">
+            <div style="padding: 40px 100px 10px 100px">
+              <div class="row">
+                <div class="col-4">
+                  <p class="text-w-700" style="color:#ffffff;font-size: 20px;">บริการของเรา</p>
+                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">ลงโฆษณาออนไลน์</a></p>
+                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">คลังสินค้าครบวงจร</a></p>
+                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">เปิดบัญชี LINE OA</a></p>
+                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">ทำเว็บไซต์</a></p>
+                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">ทำคอนเทนต์</a></p>
+                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">เปรียบเทียบค่าขนส่ง</a></p>
+                </div>
+                <div class="col-4">
+                  <p class="text-w-700" style="color:#ffffff;font-size: 20px;">เกี่ยวกับเรา</p>
+                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">ติดต่อเรา</a></p>
+                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">ร่วมงานกับเรา</a></p>
+                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">Portfolio</a></p>
+                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">Blog</a></p>
+                </div>
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2" style="margin-right:15px"><img src="./assets/icon/entypo-social_facebook-with-circle.png"></div>
+                    <div class="col-2" style="margin-right:15px"><img src="./assets/icon/entypo-social_twitter-with-circle.png"></div>
+                    <div class="col-2" style="margin-right:15px"><img src="./assets/icon/entypo-social_youtube-with-circle.png"></div>
+                    <div class="col-2" style="margin-right:15px"><img src="./assets/icon/Frame.png"></div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col-12">
+                      <font class="text-w-700" style="font-size: 20px;color:#ffffff">Call Center</font><br>
+                      <font class="text-w-700" style="font-size: 24px;color:#F38100">02 026 3250</font>
+                    </div>
+                    <div class="col-12 mt-5">
+                      <p class="text-w-400" style="font-size: 18px;color:#ffffff;margin-bottom:11px !important;">Sellsuki Co. Ltd.<br> 4Simplex, 3rd Floor, No. 10/39<br> Ratchadapisek Road, Chankasem,<br> Chatuchak, Bangkok 10900<br> Thailand</p>
+                    </div>                  
+                    <div class="col-12">
+                      <img class="background-main" src="./assets/image13.png" style="border-radius: 5px">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-12"><hr style="border: 1px solid #FFFFFF;width:100%;opacity:1"></div>
+              </div>
+              <div class="row mt-1">
+                <div class="col-6"><p class="text-w-400" style="font-size: 14px;color:#FFFFFF;">© Sellsuki Co. Ltd. (c) All Rights Reserved. Dream-Theme</p></div>
+                <div class="col-6" style="text-align:right"><p class="text-w-400" style="font-size: 14px;color:#FFFFFF;">Privacy Policy<i class="fa fa-cloud"></i> <font style="margin-left:6px;margin-right:6px">|</font> Terms and Conditions</p></div>
+              </div>
+            </div>
+          </div>  
         </div>
-        <div class="col-7">
-          <img src="./assets/image60.png" style="margin-top: -40px;">
-        </div>
-      </div>
-      <div class="crad">
-        <div class="row p-5" style="padding-top: 80px !important;">
-          <div class="col-6">
-            <img src="./assets/Lets-Grow-Your-Business-Together.png">
-          </div>
-          <div class="col-6">
-            <font style="font-size:45px;font-weight:700;margin-top:50px;position: absolute;color:#50151C">LET’S GROW YOUR<br>BUSINESS TOGETHER</font>
-            <font class="text-s-16 text-description" style="margin-top:219px;position: absolute;width: 532px;">แม่ค้าออนไลน์ยุค 5.0 ปรับตัวยังไงให้ทันในวันที่โลกหมุนเร็วขนาดนี้ การเข้ามา ลงเล่นในตลาดที่มีคู่แข่งมากมาย ต่อสู้กันอย่างดุเดือดเพื่อแย่งชิงพื้นที่ในการนำเสนอสินค้าให้แก่ผู้บริโภค บอกเลยว่าหากทำงานนี้คนเดียวคงจะหนักเอาการ ถ้าอยากเริ่มต้นขายของออนไลน์อย่างราบรื่นปลอดภัย การมีผู้ช่วยมือดีไว้ข้างกายก็จะช่วย แบ่งเบาภาระได้เยอะ...</font>
-            <button class="btn-black text-s-16 text-w-400" style="position: absolute;margin-top:455px">Read More</button>
-          </div>
-        </div>
-        <div class="p-5" style="padding-top: 80px !important;">
-          <div class="row">
-            <div class="col-4 d-flex justify-content-center">
-              <p class="text-w-700 text-white" style="position: absolute;margin-top: 305px;font-size:20px">BUSINESS OWNER</p>
-              <img class="card-img-top" src="./assets/Rectangle1.png" style="width: 285px;height: 373px;">
-            </div>
-            <div class="col-4 d-flex justify-content-center">
-              <p class="text-w-700 text-white" style="position: absolute;margin-top: 305px;font-size:20px">ONLINE MERCHANT</p>
-              <img class="card-img-top" src="./assets/Rectangle2.png" style="width: 285px;height: 373px;">
-            </div>
-            <div class="col-4 d-flex justify-content-center">
-              <p class="text-w-700 text-white" style="position: absolute;margin-top: 305px;font-size:20px">CORPORATE</p>
-              <img class="card-img-top" src="./assets/Rectangle3.png" style="width: 285px;height: 373px;">
-            </div>
-          </div>
-        </div>
-
-        <div class="p-5" style="padding-top: 40px !important;background: linear-gradient(110.74deg, #52B8E2 0%, #3D90DD 75.34%);">
-          <div class="row">
-            <div class="text-center">
-              <font style="font-size:30px;font-weight:700;color:#FFFFFF">บทความที่น่าสนใจ</font>
-            </div>
-            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-              <div class="card" style="width: 331px;border-radius: 10px">
-                <img class="card-img-top" src="./assets/Rectangle21.png" alt="Card image cap">
-                <div class="card-body">
-                  <font class="card-title" style="font-weight: bold;font-size: 24px;">News</font>
-                  <p style="margin-bottom: 0rem;" class="card-text text-s-16">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                  <button class="btn-transparent" style="left: 135px;position: relative;">Read More</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-              <div class="card" style="width: 331px;border-radius: 10px">
-                <img class="card-img-top" src="./assets/Rectangle21.png" alt="Card image cap">
-                <div class="card-body">
-                  <font class="card-title" style="font-weight: bold;font-size: 24px;">News</font>
-                  <p style="margin-bottom: 0rem;" class="card-text text-s-16">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                  <button class="btn-transparent" style="left: 135px;position: relative;">Read More</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-              <div class="card" style="width: 331px;border-radius: 10px">
-                <img class="card-img-top" src="./assets/Rectangle21.png" alt="Card image cap">
-                <div class="card-body">
-                  <font class="card-title" style="font-weight: bold;font-size: 24px;">News</font>
-                  <p style="margin-bottom: 0rem;" class="card-text text-s-16">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                  <button class="btn-transparent" style="left: 135px;position: relative;">Read More</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div style="padding: 80px 80px 0px 80px">
-          <div class="row mb-3">
-            <div class="col-6">
-              <font style="font-size:64px;font-weight:600;position: relative;color:#23233C;line-height: 90.72px;">YOUR<br>ROADMAP<br>TO SUCCESS</font>
-              <p class="mt-3" style="line-height: 24px;text-transform: capitalize;color: #807F7F;width: 415px;">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
-              <img class="mt-2" src="./assets/Vector-Smart-Object.png" style="position: relative;left: -80px;">
-            </div>
-            <div class="col-6">
-              <div class="row" style="float: right;margin: auto;">
-                <div class="card text-white" style="width: 485px;height: 221px;;background: #23233F;border-radius: 24px;">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-6" style="margin:58px 0px 58px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Research Find <br>Insight</font></div>
-                      <div class="col-6" style="margin:40px 0px 40px 0px"><img style="left: 60px;position: relative;" src="./assets/icon/Group.png"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-3" style="float: right;margin: auto;">
-                <div class="card text-white" style="width: 485px;height: 221px;;background: #23233F;border-radius: 24px;">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-6" style="margin:58px 0px 58px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Analytic the <br>Fact</font></div>
-                      <div class="col-6" style="margin:40px 0px 40px 0px"><img style="left: 60px;position: relative;" src="./assets/icon/Group1.png"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-3" style="float: right;margin: auto;">
-                <div class="card text-white" style="width: 485px;height: 221px;;background: #23233F;border-radius: 24px;">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-6" style="margin:75px 0px 75px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Right Strategy</font></div>
-                      <div class="col-6" style="margin:40px 0px 40px 0px"><img style="left: 60px;position: relative;" src="./assets/icon/Group2.png"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-3" style="float: right;margin: auto;">
-                <div class="card text-white" style="width: 485px;height: 221px;;background: #23233F;border-radius: 24px;">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-6" style="margin:58px 0px 58px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Repeat<br>Optimization</font></div>
-                      <div class="col-6" style="margin:40px 0px 40px 0px"><img style="left: 60px;position: relative;" src="./assets/icon/Group3.png"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-3" style="float: right;margin: auto;">
-                <div class="card text-white" style="width: 485px;height: 221px;;background: #23233F;border-radius: 24px;">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-7" style="margin:58px 0px 58px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Get Feedback &<br>Never Stop learning</font></div>
-                      <div class="col-5" style="margin:40px 0px 40px 0px"><img style="left: 30px;position: relative;" src="./assets/icon/Group4.png"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-12">
-              <iframe width="100%" height="650" src="https://www.youtube.com/embed/dxN2yRqXTYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="row mt-3 mb-3">
-            <div class="col-12">
-              <table style="text-align:center;width:100%">
-                <td><img src="./assets/logo/image113.png"></td>
-                <td><img src="./assets/logo/image114.png"></td>
-                <td><img src="./assets/logo/image115.png"></td>
-                <td><img src="./assets/logo/image116.png"></td>
-                <td><img src="./assets/logo/image117.png"></td>
-                <td><img src="./assets/logo/image118.png"></td>
-                <td><img src="./assets/logo/image119.png"></td>
-                <td><img src="./assets/logo/image120.png"></td>
-                <td><img src="./assets/logo/image121.png"></td>
-                <td><img src="./assets/logo/image122.png"></td>
-              </table>
-            </div>
-          </div>
-        </div>
-        <div style="background: linear-gradient(180deg, #7BB2DD 0%, #4B6ECC 100%);">
-          <div style="padding: 40px 80px 40px 80px">
-            <div class="row">
-              <div class="col-12">
-                  <font style="font-weight: 700;font-size: 30px;color:#ffffff">GET A QUOTE</font>
-                  <hr style="width: 492px;height: 2px;color:#FFFFFF">
-                  <font style="font-weight: 400;font-size: 18px;color:#ffffff">Please complete the form to request a quotation</font>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-7">
-                <form>
-                  <div class="row mt-4">
-                    <div class="form-group col-6">
-                      <label class="text-s-16 text-white">ชื่อ*</label>
-                      <input type="email" class="form-control mt-2" placeholder="Name*">
-                    </div>
-                    <div class="form-group col-6">
-                      <label class="text-s-16 text-white">นามสกุล*</label>
-                      <input type="password" class="form-control mt-2" placeholder="Last Name*">
-                    </div>
-                    <div class="form-group col-6 mt-3">
-                      <label class="text-s-16 text-white">อีเมล*</label>
-                      <input type="email" class="form-control mt-2" placeholder="Email*">
-                    </div>
-                    <div class="form-group col-6 mt-3">
-                      <label class="text-s-16 text-white">เบอร์โทรศัพท์*</label>
-                      <input type="password" class="form-control mt-2" placeholder="Tel*">
-                    </div>
-                    <div class="form-group col-6 mt-3">
-                      <label class="text-s-16 text-white">ชื่อเเบรนด์*</label>
-                      <input type="email" class="form-control mt-2" placeholder="Brand*">
-                    </div>
-                    <div class="form-group col-6 mt-3">
-                      <label class="text-s-16 text-white">เลือกความต้องการ*</label>
-                      <input type="password" class="form-control mt-2" placeholder="interested about*">
-                    </div>
-                    <div class="form-group col-12 mt-3">
-                      <label class="text-s-16 text-white">ข้อความ*</label>
-                      <textarea class="form-control mt-2" style="height:130px" placeholder="Message*"></textarea>
-                    </div>
-                  </div>
-                  <div class="text-center" style="width: 100%;margin-top:32px">
-                    <button type="submit" class="btn-orange">Submit</button>
-                  </div>
-                </form>
-              </div>
-              <div class="col-5">
-                <img class="mt-4" src="./assets/image52.png" style="position: relative;left: 38px;">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="background-color: #15304E">
-          <div style="padding: 40px 100px 10px 100px">
-            <div class="row">
-              <div class="col-4">
-                <p class="text-w-700" style="color:#ffffff;font-size: 20px;">บริการของเรา</p>
-                <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">ลงโฆษณาออนไลน์</a></p>
-                <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">คลังสินค้าครบวงจร</a></p>
-                <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">เปิดบัญชี LINE OA</a></p>
-                <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">ทำเว็บไซต์</a></p>
-                <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">ทำคอนเทนต์</a></p>
-                <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">เปรียบเทียบค่าขนส่ง</a></p>
-              </div>
-              <div class="col-4">
-                <p class="text-w-700" style="color:#ffffff;font-size: 20px;">เกี่ยวกับเรา</p>
-                <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">ติดต่อเรา</a></p>
-                <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">ร่วมงานกับเรา</a></p>
-                <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">Portfolio</a></p>
-                <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">Blog</a></p>
-              </div>
-              <div class="col-4">
-                <div class="row">
-                  <div class="col-2" style="margin-right:15px"><img src="./assets/icon/entypo-social_facebook-with-circle.png"></div>
-                  <div class="col-2" style="margin-right:15px"><img src="./assets/icon/entypo-social_twitter-with-circle.png"></div>
-                  <div class="col-2" style="margin-right:15px"><img src="./assets/icon/entypo-social_youtube-with-circle.png"></div>
-                  <div class="col-2" style="margin-right:15px"><img src="./assets/icon/Frame.png"></div>
-                </div>
-                <div class="row mt-2">
-                  <div class="col-12">
-                    <font class="text-w-700" style="font-size: 20px;color:#ffffff">Call Center</font><br>
-                    <font class="text-w-700" style="font-size: 24px;color:#F38100">02 026 3250</font>
-                  </div>
-                  <div class="col-12 mt-5">
-                    <p class="text-w-400" style="font-size: 18px;color:#ffffff;margin-bottom:11px !important;">sellsuki co. Ltd.<br> 4Simplex, 3rd floor, no. 10/39<br> Ratchadapisek Road, chankasem,<br> chatuchak, bangkok 10900<br> thailand</p>
-                  </div>                  
-                  <div class="col-12">
-                    <img class="background-main" src="./assets/image13.png" style="border-radius: 5px">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-2">
-              <div class="col-12"><hr style="border: 1px solid #FFFFFF;width:100%;opacity:1"></div>
-            </div>
-            <div class="row mt-1">
-              <div class="col-6"><p class="text-w-400" style="font-size: 14px;color:#FFFFFF;">© Sellsuki Co. Ltd. (c) All Rights Reserved. Dream-Theme</p></div>
-              <div class="col-6" style="text-align:right"><p class="text-w-400" style="font-size: 14px;color:#FFFFFF;">Privacy Policy <font style="margin-left:6px;margin-right:6px">|</font> Terms and Conditions</p></div>
-            </div>
-          </div>
-        </div>  
       </div>
     </div>
+  <div class="fabs animate__animated animate__bounce" @click="isActive = !isActive">
+    <i class="bi bi-arrow-up-short chat" :class="{'bi-chat-text-fill':isActive}"></i>
   </div>
-
-<router-view></router-view>
+  <div v-if="!isActive" class="fabs animate__animated animate__bounceInUp" style="margin-bottom: 95px;">
+    <a target="_blank" href="https://www.facebook.com/messages/t/Sellsuki"><img src="./assets/icon/image10.png" style="width: 55px;margin-right: 4px;"></a>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "App",
-};
+  name: 'App',
+  data () {
+    return {
+      isActive: true
+    }
+  }
+}
 </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import './assets/styles/css/hover.css';
+@import './assets/styles/css/custom.css';
 
 html, body {
   font-family: 'Prompt', sans-serif;
@@ -330,8 +237,12 @@ html, body {
   font-family: 'Prompt', sans-serif;
 }
 
+.container{
+  max-width: 1200px !important;
+}
+
 .background-main {
-  background-color: #FDF5E8;
+  background-color: #FDF5E8 !important;
 }
 
 a{
@@ -341,14 +252,18 @@ a{
 .navbar-custom {
   background-color: #FFFFFC;
   padding: 5px;
-  padding-left: 10px !important;
-  padding-right: 10px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
   border-radius: 50px;
-  width: 797px !important;
+  width: 805px !important;
 }
 
 .border-menu{
   border-left: 1px solid #E5E5E5;
+}
+
+[class^="bi-"]::before, [class*=" bi-"]::before{
+  font-weight:600 !important
 }
 
 .btn-icon{
@@ -364,14 +279,23 @@ a{
 .nav-link{
   padding-top: 2px !important;
   padding-bottom: 2px !important;
-  padding-right: 18px !important;;
-  padding-left: 18px !important;;
+  padding-right: 14px !important;;
+  padding-left: 15px !important;;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
+li{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .text-w-400{
   font-weight: 400 !important;
+}
+
+.text-w-500{
+  font-weight: 500 !important;
 }
 
 .text-w-700{
@@ -384,6 +308,10 @@ a{
 
 .text-s-30{
   font-size: 30px !important;
+}
+
+hr{
+  opacity: 0.5 !important;
 }
 
 .text-description{
@@ -437,4 +365,100 @@ a{
   border: 0 !important;
 }
 
+.card-shadow{
+  border-radius: 20px;
+  position: absolute;
+  width: 285px;
+  height: 373px;
+  box-shadow: 0px 0px 60px rgb(0 0 0 / 20%);
+}
+
+.carousel-indicators [data-bs-target]{
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 50% !important;
+  margin-right: 5px !important;
+  margin-left: 5px !important;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.carousel-control-next-custom{
+    position: absolute;
+    border-radius: 0px 30px 30px 0px;
+    top: 115px;
+    bottom: 480px;
+    left: 450px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+.carousel-control-prev-custom{
+    position: absolute;
+    border-radius: 30px 0px 0px 30px;
+    top: 115px;
+    bottom: 480px;
+    right: 566px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+.carousel-control-prev-custom:hover{
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+
+.carousel-control-next-custom:hover{
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
 </style>
