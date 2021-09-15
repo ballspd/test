@@ -47,7 +47,6 @@
           <div class="row mb-3">
             <div class="col-6">
               <font style="font-size:64px;font-weight:600;position: relative;color:#23233C;line-height: 90.72px;">YOUR<br>ROADMAP<br>TO SUCCESS</font>
-              <p class="mt-3" style="line-height: 24px;text-transform: capitalize;color: #807F7F;width: 415px;">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
               <img class="mt-2" src="./../assets/Vector-Smart-Object.png" style="position: relative;left: -80px;">
             </div>
             <div class="col-6">

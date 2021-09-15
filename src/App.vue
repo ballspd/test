@@ -112,7 +112,7 @@
             <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/AboutUs">About Us</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Portfolio</router-link>
+            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Portfolio">Portfolio</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Blog</router-link>
@@ -204,7 +204,7 @@
       </div>
     </div>
   <div class="fabs animate__animated animate__bounce" @click="isActive = !isActive">
-    <i class="bi bi-arrow-up-short chat" :class="{'bi-chat-text-fill':isActive}"></i>
+    <i class="bi bi-arrow-up-short social-chat" :class="{'bi-chat-text-fill':isActive}"></i>
   </div>
   <div v-if="!isActive" class="fabs animate__animated animate__bounceInUp" style="margin-bottom: 95px;">
     <a target="_blank" href="https://www.facebook.com/messages/t/Sellsuki"><img src="./assets/icon/image10.png" style="width: 55px;margin-right: 4px;"></a>
@@ -223,7 +223,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Prompt');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 @import './assets/styles/css/hover.css';
 @import './assets/styles/css/custom.css';
