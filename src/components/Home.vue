@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row" style="height :700px">
         <div class="col-5">
-          <font style="font-size:64px;font-weight:600;top:339px;position: absolute;color:#50151C">E-COMMERCE <br>SOLUTION</font>
+          <font class="font-wght" style="font-size:64px;top:339px;position: absolute;color:#50151C">E-COMMERCE <br>SOLUTION</font>
         </div>
         <div class="col-7">
           <img src="./../assets/image60.png" style="margin-top: -40px;">
@@ -16,7 +16,7 @@
             <img src="./../assets/Lets-Grow-Your-Business-Together.png">
           </div>
           <div class="col-6">
-            <font style="font-size:45px;font-weight:700;margin-top:50px;position: absolute;">LET’S GROW YOUR<br>BUSINESS TOGETHER</font>
+            <font class="font-wght" style="font-size:45px;margin-top:50px;position: absolute;">LET’S GROW YOUR<br>BUSINESS TOGETHER</font>
             <font class="text-s-16 text-description" style="margin-top:219px;position: absolute;width: 532px;">แม่ค้าออนไลน์ยุค 5.0 ปรับตัวยังไงให้ทันในวันที่โลกหมุนเร็วขนาดนี้ การเข้ามา ลงเล่นในตลาดที่มีคู่แข่งมากมาย ต่อสู้กันอย่างดุเดือดเพื่อแย่งชิงพื้นที่ในการนำเสนอสินค้าให้แก่ผู้บริโภค บอกเลยว่าหากทำงานนี้คนเดียวคงจะหนักเอาการ ถ้าอยากเริ่มต้นขายของออนไลน์อย่างราบรื่นปลอดภัย การมีผู้ช่วยมือดีไว้ข้างกายก็จะช่วย แบ่งเบาภาระได้เยอะ...</font>
             <button class="btn-black text-s-16 text-w-400 button" style="position: absolute;margin-top:455px"><span>Read More</span></button>
           </div>
@@ -46,7 +46,7 @@
         <div style="padding: 80px 80px 0px 80px">
           <div class="row mb-3">
             <div class="col-6">
-              <font style="font-size:64px;font-weight:600;position: relative;color:#23233C;line-height: 90.72px;">YOUR<br>ROADMAP<br>TO SUCCESS</font>
+              <font class="font-wght" style="font-size:64px;position: relative;color:#23233C;line-height: 90.72px;">YOUR<br>ROADMAP<br>TO SUCCESS</font>
               <img class="mt-2" src="./../assets/Vector-Smart-Object.png" style="position: relative;left: -80px;">
             </div>
             <div class="col-6">

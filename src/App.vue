@@ -5,11 +5,11 @@
         <img src="./assets/logo-sellsuki.png" alt="" width="141.29" height="60" class="d-inline-block align-text-top">
       </a>
       <div class="ml-2">
-        <ul class="navbar-nav navbar-custom shadow text-s-16 text-w-500 menu-bar" style="padding:0px !important;padding-left: 15px !important;">
-          <li class="nav-item">
-            <router-link class="nav-link text-c-menu" aria-current="page" to="/">Home</router-link>
+        <ul class="navbar-nav navbar-custom shadow text-s-16 text-w-500 menu-bar" style="padding:0px !important;width: 797px!important;">
+          <li class="nav-item navbar-item" style="border-radius: 50px 0px 0px 50px;">
+            <router-link style="padding-left:19px !important" class="nav-link text-c-menu" aria-current="page" to="/">Home</router-link>
           </li>
-          <li class="nav-item">
+          <li class="nav-item navbar-item">
             <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Services <i class="bi bi-chevron-down" style="font-size: 15px;"></i></router-link>
             <ul class="dropdown" style="padding: 30px 50px 30px 50px;width: 1380px;left: 50%;">
               <i class="bi bi-caret-up-fill" style="font-size: 40px;position: absolute;left: 29.5%;color: #ffffff;bottom: 440px;"></i>
@@ -81,7 +81,7 @@
               </div>
             </ul>
           </li>
-          <li class="nav-item">
+          <li class="nav-item navbar-item">
             <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Solutions <i class="bi bi-chevron-down" style="font-size: 15px;"></i></router-link>
             <ul class="dropdown" style="padding: 30px 32px 30px 32px;width: 540px;left: 43%;">
               <i class="bi bi-caret-up-fill" style="font-size: 40px;position: absolute;left: 43.5%;color: #ffffff;bottom: 440px;"></i>
@@ -108,19 +108,19 @@
               </div>
             </ul>
           </li>
-          <li class="nav-item">
+          <li class="nav-item navbar-item">
             <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/AboutUs">About Us</router-link>
           </li>
-          <li class="nav-item">
+          <li class="nav-item navbar-item">
             <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Portfolio">Portfolio</router-link>
           </li>
-          <li class="nav-item">
-            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Blog</router-link>
+          <li class="nav-item navbar-item">
+            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Blog">Blog</router-link>
           </li>
-          <li class="nav-item">
+          <li class="nav-item navbar-item">
             <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Contact Us</router-link>
           </li>
-          <li class="nav-item">
+          <li class="nav-item navbar-item" style="border-radius: 0px 50px 50px 0px;">
             <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Join Us</router-link>
           </li>
         </ul>
@@ -129,7 +129,7 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <router-link class="nav-link text-c-menu" to="/Home" style="margin-right:15px;margin-left:10px;padding-right: 0 !important;padding-left: 0 !important;"><div class="btn-icon text-w-700" style="background-color: #FDF5E8;font-size:16px">EN</div></router-link>
-             <ul class="dropdown" style="padding: 15px;width: 150px;height: 120px;left: 74%;top: 90px">
+             <ul class="dropdown" style="padding: 15px;width: 150px;height: 120px;margin-left: 35px;top: 90px">
               <i class="bi bi-caret-up-fill" style="font-size: 40px;position: absolute;left: 55px;color: #FFFFFF;bottom: 90px;"></i>
               <div class="row">
                 <div class="col-12">
@@ -204,7 +204,9 @@
       </div>
     </div>
   <div class="fabs animate__animated animate__bounce" @click="isActive = !isActive">
-    <i class="bi bi-arrow-up-short social-chat" :class="{'bi-chat-text-fill':isActive}"></i>
+    <div class="social-chat">
+      <i class="bi bi-arrow-up-short" style="font-size:38px;margin: 9.2px;" :class="{'bi-chat-text-fill':isActive}"></i>
+    </div>
   </div>
   <div v-if="!isActive" class="fabs animate__animated animate__bounceInUp" style="margin-bottom: 95px;">
     <a target="_blank" href="https://www.facebook.com/messages/t/Sellsuki"><img src="./assets/icon/image10.png" style="width: 55px;margin-right: 4px;"></a>
@@ -237,6 +239,11 @@ html, body {
   font-family: 'Prompt', sans-serif;
 }
 
+.font-wght {
+  font-family: 'PromptBold', sans-serif !important;
+  font-weight: bold !important;
+}
+
 .container{
   max-width: 1200px !important;
 }
@@ -250,12 +257,13 @@ a{
 }
 
 .navbar-custom {
-  background-color: #FFFFFC;
   padding: 5px;
-  padding-left: 8px !important;
-  padding-right: 8px !important;
   border-radius: 50px;
-  width: 805px !important;
+}
+
+.navbar-item{
+  background-color: #FFFFFF;
+  transition: 0.3s;
 }
 
 .border-menu{
@@ -279,8 +287,8 @@ a{
 .nav-link{
   padding-top: 2px !important;
   padding-bottom: 2px !important;
-  padding-right: 14px !important;;
-  padding-left: 15px !important;;
+  padding-right: 16px !important;;
+  padding-left: 16px !important;;
   margin-top: 5px;
   margin-bottom: 5px;
 }

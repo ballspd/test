@@ -5,7 +5,7 @@
             <div class="row" style="height :675px">
                 <div class="col-5">
                     <p class="text-s-16" style="color:#50151C;margin-top: 69px;">Home > <font class="text-s-16 text-w-700" style="color:#50151C">About us</font></p>
-                    <p class="text-w-700" style="font-size:64px;color:#50151C;margin-top: 188px;">About us</p>
+                    <p class="font-wght" style="font-size:64px;color:#50151C;margin-top: 188px;">About us</p>
                 </div>
                 <div class="col-7">
                     <img src="./../assets/image60.png" style="margin-top: -40px;">
@@ -13,9 +13,6 @@
             </div>
             <div class="crad mt-4">
                 <div class="row p-5">
-                    <div class="col-12">
-                        <img class="item-center" width="640" height="595" src="./../assets/image60.png">
-                    </div>
                     <div class="col-12 text-center">
                         <p class="text-s-30 text-w-700" style="margin-bottom: 10px !important">ประวัติความเป็นมาของ</p>
                     </div>

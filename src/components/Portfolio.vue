@@ -5,7 +5,7 @@
             <div class="row" style="height :675px">
                 <div class="col-5">
                     <p class="text-s-16" style="color:#50151C;margin-top: 69px;">Home > <font class="text-s-16 text-w-700" style="color:#50151C">Portfolio</font></p>
-                    <p class="text-w-700" style="font-size:64px;color:#50151C;margin-top: 188px;">Portfolio</p>
+                    <p class="font-wght" style="font-size:64px;color:#50151C;margin-top: 188px;">Portfolio</p>
                     <p class="text-s-16" style="color:#373737">เรื่องเล่าจากลูกค้าเรา ตัวอย่างผลงาน Review <br>ส่วนหนึ่งจากลูกค้าที่ไว้ใจใช้บริการเรา</p>
                 </div>
                 <div class="col-7">
