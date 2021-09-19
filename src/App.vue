@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F6ECE0">
+  <nav class="navbar navbar-expand-lg navbar-light d-none d-xl-block" style="background-color: #F6ECE0">
     <div class="container">
       <a class="navbar-brand" href="/">
         <img src="./assets/logo-sellsuki.png" alt="" width="141.29" height="60" class="d-inline-block align-text-top">
@@ -147,30 +147,84 @@
       </div>
     </div>
   </nav>
+<!-- ---- modile size ----- -->
+  <div class="d-block d-sm-none d-md-none d-lg-none">
+    <nav class="navbar" style="background-color: #F6ECE0;">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" @click="display_manu = true" >
+            <i class="bi bi-list" style="font-size: 35px;"></i>
+        </button>
+        <img src="./assets/mobile/image102.png">
+        <img class="shadow" src="./assets/mobile/Vector.png" style="background-color: #FFFFFF;border-radius: 50px;">
+      </div>
+    </nav>
+    <div v-if="display_manu" class="side-bg"></div>
+    <div class="sidenav animate__animated" :class="{'animate__fadeInLeft':display_manu,'animate__fadeOutLeft':!display_manu}">
+      <div class="row p-3">
+        <div class="col-5">
+          <div class="p-1" style="background: #50151C;border-radius: 2px;">
+            <div class="row text-center">
+              <div class="col-6">
+                <a class="text-s-18 p-1 active-lang" style="color:#FFFFFF">EN</a>
+              </div>
+              <div class="col-6">
+                <a class="text-s-18 p-1" style="color:#FFFFFF">ไทย</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-7">
+          <a class="closebtn" style="cursor:pointer;float: right" @click="display_manu = false"><i class="bi bi-x"></i></a>
+        </div>
+      </div>
+      <div class="row p-3">
+        <div class="col-12">
+            <a href="#">Home</a>
+            <hr style="border: 1px solid #50151C;"/>
+            <a href="#">Services</a>
+            <hr style="border: 1px solid #50151C;"/>
+            <a href="#">Solutions</a>
+            <hr style="border: 1px solid #50151C;"/>
+            <a href="#">About Us</a>
+            <hr style="border: 1px solid #50151C;"/>
+            <a href="#">Portfolio</a>
+            <hr style="border: 1px solid #50151C;"/>
+            <a href="#">Blog</a>
+            <hr style="border: 1px solid #50151C;"/>
+            <a href="#">Contact Us</a>
+            <hr style="border: 1px solid #50151C;"/>
+            <a href="#">Join Us</a>
+            <hr style="border: 1px solid #50151C;"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <router-view></router-view>
+
   <div class="background-main">
     <div class="container">
         <div class="crad">
           <div style="background-color: #15304E">
-            <div style="padding: 40px 100px 10px 100px">
+            <div class="padding-footer">
               <div class="row">
-                <div class="col-4">
-                  <p class="text-w-700" style="color:#ffffff;font-size: 20px;">บริการของเรา</p>
-                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">ลงโฆษณาออนไลน์</a></p>
-                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">คลังสินค้าครบวงจร</a></p>
-                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">เปิดบัญชี LINE OA</a></p>
-                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">ทำเว็บไซต์</a></p>
-                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">ทำคอนเทนต์</a></p>
-                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">เปรียบเทียบค่าขนส่ง</a></p>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6">
+                  <p class="text-w-700 font-footer text-white">บริการของเรา</p>
+                  <p class="text-w-400 font-footer"><a class="text-white" href="#">ลงโฆษณาออนไลน์</a></p>
+                  <p class="text-w-400 font-footer"><a class="text-white" href="#">คลังสินค้าครบวงจร</a></p>
+                  <p class="text-w-400 font-footer"><a class="text-white" href="#">เปิดบัญชี LINE OA</a></p>
+                  <p class="text-w-400 font-footer"><a class="text-white" href="#">ทำเว็บไซต์</a></p>
+                  <p class="text-w-400 font-footer"><a class="text-white" href="#">ทำคอนเทนต์</a></p>
+                  <p class="text-w-400 font-footer"><a class="text-white" href="#">เปรียบเทียบค่าขนส่ง</a></p>
                 </div>
-                <div class="col-4">
-                  <p class="text-w-700" style="color:#ffffff;font-size: 20px;">เกี่ยวกับเรา</p>
-                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">ติดต่อเรา</a></p>
-                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">ร่วมงานกับเรา</a></p>
-                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">Portfolio</a></p>
-                  <p class="text-w-400" style="font-size: 18px;"><a class="text-white" href="#">Blog</a></p>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6">
+                  <p class="text-w-700 font-footer text-white">เกี่ยวกับเรา</p>
+                  <p class="text-w-400 font-footer"><a class="text-white" href="#">ติดต่อเรา</a></p>
+                  <p class="text-w-400 font-footer"><a class="text-white" href="#">ร่วมงานกับเรา</a></p>
+                  <p class="text-w-400 font-footer"><a class="text-white" href="#">Portfolio</a></p>
+                  <p class="text-w-400 font-footer"><a class="text-white" href="#">Blog</a></p>
                 </div>
-                <div class="col-4">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                   <div class="row">
                     <div class="col-2" style="margin-right:15px"><img src="./assets/icon/entypo-social_facebook-with-circle.png"></div>
                     <div class="col-2" style="margin-right:15px"><img src="./assets/icon/entypo-social_twitter-with-circle.png"></div>
@@ -183,7 +237,8 @@
                       <font class="text-w-700" style="font-size: 24px;color:#F38100">02 026 3250</font>
                     </div>
                     <div class="col-12 mt-5">
-                      <p class="text-w-400" style="font-size: 18px;color:#ffffff;margin-bottom:11px !important;">Sellsuki Co. Ltd.<br> 4Simplex, 3rd Floor, No. 10/39<br> Ratchadapisek Road, Chankasem,<br> Chatuchak, Bangkok 10900<br> Thailand</p>
+                      <p class="text-w-400 font-footer d-none d-sm-block d-md-block d-lg-block" style="font-size: 18px;color:#ffffff;margin-bottom:11px !important;">Sellsuki Co. Ltd.<br> 4Simplex, 3rd Floor, No. 10/39<br> Ratchadapisek Road, Chankasem,<br> Chatuchak, Bangkok 10900<br> Thailand</p>
+                      <p class="text-w-400 font-footer d-block d-sm-none d-md-none d-lg-none" style="font-size: 13px;color:#ffffff;margin-bottom:11px !important;">Sellsuki Co. Ltd.<br> 4Simplex, 3rd Floor, No. 10/39 Ratchadapisek Road,<br> Chankasem, Chatuchak, Bangkok 10900 Thailand</p>
                     </div>                  
                     <div class="col-12">
                       <img class="background-main" src="./assets/image13.png" style="border-radius: 5px">
@@ -195,8 +250,8 @@
                 <div class="col-12"><hr style="border: 1px solid #FFFFFF;width:100%;opacity:1"></div>
               </div>
               <div class="row mt-1">
-                <div class="col-6"><p class="text-w-400" style="font-size: 14px;color:#FFFFFF;">© Sellsuki Co. Ltd. (c) All Rights Reserved. Dream-Theme</p></div>
-                <div class="col-6" style="text-align:right"><p class="text-w-400" style="font-size: 14px;color:#FFFFFF;">Privacy Policy<i class="fa fa-cloud"></i> <font style="margin-left:6px;margin-right:6px">|</font> Terms and Conditions</p></div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><p class="text-w-400" style="color:#FFFFFF;">© Sellsuki Co. Ltd. (c) All Rights Reserved. Dream-Theme</p></div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-xxl-end text-xl-end text-lg-end text-md-end"><p class="text-w-400" style="font-size: 14px;color:#FFFFFF;">Privacy Policy<i class="fa fa-cloud"></i> <font style="margin-left:6px;margin-right:6px">|</font> Terms and Conditions</p></div>
               </div>
             </div>
           </div>  
@@ -218,8 +273,14 @@ export default {
   name: 'App',
   data () {
     return {
-      isActive: true
+      isActive: true,
+      display_manu: false
     }
+  },
+  methods: {
+    openNav(){
+      this.display_manu = !this.display_manu;
+    },
   }
 }
 </script>
@@ -230,243 +291,56 @@ export default {
 @import './assets/styles/css/hover.css';
 @import './assets/styles/css/custom.css';
 
-html, body {
-  font-family: 'Prompt', sans-serif;
-  background-color: #FDF5E8;
+
+.sidenav {
+  height: 100%;
+  width: 80%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 15px;
 }
 
-#app {
-  font-family: 'Prompt', sans-serif;
+.side-bg {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  opacity: 0.5;
 }
 
-.font-wght {
+.sidenav a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #50151C;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #F6ECE0;
+}
+
+.sidenav .closebtn {
+  font-size: 36px;
+  bottom: 5px;
+  position: relative;
+}
+
+.active-lang{
+  background: #F6ECE0;
+  color:#50151C !important;
   font-family: 'PromptBold', sans-serif !important;
   font-weight: bold !important;
 }
 
-.container{
-  max-width: 1200px !important;
-}
-
-.background-main {
-  background-color: #FDF5E8 !important;
-}
-
-a{
-  text-decoration: none !important;
-}
-
-.navbar-custom {
-  padding: 5px;
-  border-radius: 50px;
-}
-
-.navbar-item{
-  background-color: #FFFFFF;
-  transition: 0.3s;
-}
-
-.border-menu{
-  border-left: 1px solid #E5E5E5;
-}
-
-[class^="bi-"]::before, [class*=" bi-"]::before{
-  font-weight:600 !important
-}
-
-.btn-icon{
-    padding: 13px 15px !important;
-    border-radius: 50px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-}
-
-.shadow-filter{
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-}
-
-.nav-link{
-  padding-top: 2px !important;
-  padding-bottom: 2px !important;
-  padding-right: 16px !important;;
-  padding-left: 16px !important;;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-li{
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.text-w-400{
-  font-weight: 400 !important;
-}
-
-.text-w-500{
-  font-weight: 500 !important;
-}
-
-.text-w-700{
-  font-weight: 700 !important;
-}
-
-.text-s-16{
-  font-size: 16px !important;
-}
-
-.text-s-30{
-  font-size: 30px !important;
-}
-
-hr{
-  opacity: 0.5 !important;
-}
-
-.text-description{
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color:#373737;
-}
-
-.text-c-menu{
-  color: #50151C !important;
-  Fill:solid !important;
-}
-
-.crad{
-  background: #FBFBFB;
-  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.2);
-  border-radius: 40px 40px 0px 0px;
-}
-
-.btn-black{
-  position: absolute;
-  width: 184px !important;
-  height: 40px !important;
-  color: #ffffff !important;
-  background: #231F20 !important;
-  border-radius: 20px !important;
-  border:0 !important;
-}
-
-.btn-transparent {
-  width: 169px !important;
-  height: 40px !important;
-  color: #F38100 !important;
-  background-color: #fff !important;
-  border: 1px solid #F38100 !important;
-  box-sizing: border-box !important;
-  border-radius: 20px !important;
-}
-
-.btn-orange {
-  width: 184px !important;
-  height: 40px !important;
-  color: #FFFFFF !important;
-  background-color: #F38100 !important;
-  border: 1px solid #F38100 !important;
-  box-sizing: border-box !important;
-  border-radius: 20px !important;
-}
-
-.card{
-  border: 0 !important;
-}
-
-.card-shadow{
-  border-radius: 20px;
-  position: absolute;
-  width: 285px;
-  height: 373px;
-  box-shadow: 0px 0px 60px rgb(0 0 0 / 20%);
-}
-
-.carousel-indicators [data-bs-target]{
-  width: 15px !important;
-  height: 15px !important;
-  border-radius: 50% !important;
-  margin-right: 5px !important;
-  margin-left: 5px !important;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-.carousel-control-next-custom{
-    position: absolute;
-    border-radius: 0px 30px 30px 0px;
-    top: 115px;
-    bottom: 480px;
-    left: 450px;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    background: 0 0;
-    border: 0;
-    opacity: .5;
-    transition: opacity .15s ease;
-}
-
-.carousel-control-prev-custom{
-    position: absolute;
-    border-radius: 30px 0px 0px 30px;
-    top: 115px;
-    bottom: 480px;
-    right: 566px;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    background: 0 0;
-    border: 0;
-    opacity: .5;
-    transition: opacity .15s ease;
-}
-
-.carousel-control-prev-custom:hover{
-    color: #fff;
-    text-decoration: none;
-    outline: 0;
-    opacity: .9;
-}
-
-.carousel-control-next-custom:hover{
-    color: #fff;
-    text-decoration: none;
-    outline: 0;
-    opacity: .9;
-}
 </style>

@@ -1,0 +1,143 @@
+<template>
+    <div id="Review">
+        <div class="row mt-5 mb-2 p-3">
+            <div class="col-12">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img class="d-block image-review" src="./../assets/Rectangle1.png"></div>
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-xxl-5 p-lg-5 p-sm-3 p-3">
+                        <p style="color:#FF773B">-- TESTIMGNIALS</p>
+                        <font class="text-review">What People say</font>
+                        <span></span><p class="mt-3">Losing data or accidentally sharing it can cause
+                            real headaches for you and your clients. There
+                            are lots of stories about people leaving memory
+                            sticks lying arcund, but there are much simpler
+                            ways to lose data that do just as much damage.
+                            Cyber insurance helps you cover your costs</p>
+                        <p class="mt-xxl-5 mt-4" style="color:#FF773B">Marare Pajagngslan<br>Ctursecuily secialst n Aiput</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img class="d-block image-review" src="./../assets/Rectangle2.png"></div>
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-xxl-5 p-lg-5 p-sm-3 p-3">
+                        <p style="color:#FF773B">-- TESTIMGNIALS</p>
+                        <font class="text-review">What People say</font>
+                        <span></span><p class="mt-3">Losing data or accidentally sharing it can cause
+                            real headaches for you and your clients. there
+                            are lots of stories about people leaving memory
+                            sticks lying arcund, but there are much simpler
+                            ways to lose data that do just as much damage.
+                            Cyber insurance helps you cover your costs</p>
+                        <p class="mt-xxl-5 mt-4" style="color:#FF773B">Marare Pajagngslan<br>Ctursecuily secialst n Aiput</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img class="d-block image-review" src="./../assets/Rectangle3.png"></div>
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-xxl-5 p-lg-5 p-sm-3 p-3">
+                        <p style="color:#FF773B">-- TESTIMGNIALS</p>
+                        <font class="text-review">What People say</font>
+                        <span></span><p class="mt-3">Losing data or accidentally sharing it can cause
+                            real headaches for you and your clients. there
+                            are lots of stories about people leaving memory
+                            sticks lying arcund, but there are much simpler
+                            ways to lose data that do just as much damage.
+                            Cyber insurance helps you cover your costs</p>
+                        <p class="mt-xxl-5 mt-4" style="color:#FF773B">Marare Pajagngslan<br>Ctursecuily secialst n Aiput</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="d-none d-lg-block d-xl-block">
+                    <button class="carousel-control-prev-custom" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="padding: 12px !important;background-color: #FF773B !important;width: 55px;;buttom:none">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next-custom" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" style="padding: 12px !important;background-color: #FF773B !important;width: 55px;buttom:none">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+                </div>
+                <div class="d-block d-lg-none d-xl-none">
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'Review',
+}
+</script>
+
+<style>
+/* -------------------------#Responsive------------------------ */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .image-review{
+    height:350px;
+    width:100%;
+    object-fit: cover;
+    border-radius: 0px 25px 25px 0px;
+  }
+  .text-review{
+      font-size:32px;
+      font-weight:700;
+      position: relative;
+      color:#23233C;
+      line-height: 0px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .image-review{
+    height:500px;
+    width:450px;
+    object-fit: cover;
+    border-radius: 0px 25px 25px 0px;
+  }
+    .text-review{
+      font-size:45px;
+      font-weight:700;
+      position: relative;
+      color:#23233C;
+      line-height: 90.72px;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .image-review{
+    height:500px;
+    width:450px;
+    object-fit: cover;
+    border-radius: 0px 25px 25px 0px;
+  }
+    .text-review{
+      font-size:45px;
+      font-weight:700;
+      position: relative;
+      color:#23233C;
+      line-height: 90.72px;
+  }
+}
+</style>

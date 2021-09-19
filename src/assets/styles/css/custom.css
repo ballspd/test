@@ -3,27 +3,179 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .example {background: red;}
+  .container{
+    padding: 0 !important;
+  }
+  .padding-row{
+    padding-top: 30px !important;
+    padding:20px;
+  }
+  .padding-card{
+    padding: 20px 0px 0px 0px;
+  }
+  .padding-footer{
+    padding: 25px 20px 20px 20px;
+  }
+  .font-footer{
+    font-size: 14px;
+  }
+  .crad-image{
+    background-color:#AACCEB;
+    margin-bottom: 25px;
+  }
+  .card-roadmap{
+    width: 260px !important;
+    height: 110px !important;
+    background: #23233F !important;
+    border-radius: 25px !important;
+  }
+  .image-size{
+    width: 85%;
+  }
+  .row{
+    --bs-gutter-x: 0 !important;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .example {background: green;}
+  .container{
+    padding: 0 !important;
+  }
+  .padding-row{
+    padding-top: 30px !important;
+    padding:20px;
+    margin-bottom: 25px;
+  }
+  .padding-card{
+    padding: 20px 20px 0px 20px;
+  }
+  .padding-footer{
+    padding: 25px 30px 20px 30px;
+  }
+  .font-footer{
+    font-size: 16px;
+  }
+  .crad-image{
+    width: 285px;
+    height: 330px;
+    background-color:#AACCEB;
+    margin-bottom: 25px;
+    padding: 20px;
+  }
+  .image-size{
+    width: 85%;
+  }
+  .row{
+    --bs-gutter-x: 0 !important;
+  }
+
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .example {background: blue;}
+  .padding-row{
+    padding-top: 30px !important;
+    padding:30px;
+  }
+  .padding-card{
+    padding: 30px 30px 0px 30px;
+  }
+  .padding-footer{
+    padding: 20px 40px 20px 40px;
+  }
+  .font-footer{
+    font-size: 16px;
+  }
+  .crad-image{
+    width: 285px;
+    height: 380px;
+    background-color:#AACCEB;
+    margin-bottom: 0px;
+  }
+  .image-size{
+    width: 100%;
+  }
+  .row{
+    --bs-gutter-x: 1.5rem !important;
+  }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .example {background: orange;}
+  .padding-row{
+    padding-top: 50px !important;
+    padding:40px;
+  }
+  .padding-card{
+    padding: 60px 60px 0px 60px;
+  }
+  .padding-footer{
+    padding: 40px 100px 10px 100px;
+  }
+  .font-footer{
+    font-size: 16px;
+  }
+  .crad-image{
+    width: 285px;
+    height: 380px;
+    background-color:#AACCEB;
+    margin-bottom: 0px;
+  }
+  .card-roadmap{
+    width: 450px !important;
+    height: 180px !important;
+    background: #23233F !important;
+    border-radius: 25px !important;
+  }
+  .image-size{
+    width: 100%;
+  }
+  .row{
+    --bs-gutter-x: 1.5rem !important;
+  }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .example {background: pink;}
+  .container{
+    max-width: 1200px !important;
+  }
+  .banner-hero{
+    height: 700px;
+  }
+  .padding-row{
+    padding-top: 80px !important;
+    padding:60px;
+  }
+  .padding-card{
+    padding: 80px 80px 0px 80px;
+  }
+  .padding-footer{
+    padding: 40px 100px 10px 100px;
+  }
+  .font-footer{
+    font-size: 18px;
+  }
+  .crad-image{
+    width: 285px;
+    height: 380px;
+    background-color:#AACCEB;
+    margin-bottom: 0px;
+  }
+  .image-size{
+    width: 100%;
+  }
+  .card-roadmap{
+    width: 450px !important;
+    height: 180px !important;
+    background: #23233F !important;
+    border-radius: 25px !important;
+  }
+  .row{
+    --bs-gutter-x: 1.5rem !important;
+  }
 }
 
 /* -------------------------#hover------------------------ */
@@ -85,10 +237,6 @@ html, body {
 .font-wght {
   font-family: 'PromptBold', sans-serif !important;
   font-weight: bold !important;
-}
-
-.container{
-  max-width: 1200px !important;
 }
 
 .background-main {
@@ -183,7 +331,6 @@ hr{
 }
 
 .btn-black{
-  position: absolute;
   width: 184px !important;
   height: 40px !important;
   color: #ffffff !important;
@@ -218,9 +365,6 @@ hr{
 
 .card-shadow{
   border-radius: 20px;
-  position: absolute;
-  width: 285px;
-  height: 373px;
   box-shadow: 0px 0px 60px rgb(0 0 0 / 20%);
 }
 
@@ -283,7 +427,7 @@ hr{
     border-radius: 30px 0px 0px 30px;
     top: 115px;
     bottom: 480px;
-    right: 566px;
+    right: 558px;
     z-index: 1;
     display: flex;
     align-items: center;
