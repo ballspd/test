@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light d-none d-xl-block" style="background-color: #F6ECE0">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-xl-block d-xxl-block" style="background-color: #F6ECE0">
     <div class="container">
       <a class="navbar-brand" href="/">
         <img src="./assets/logo-sellsuki.png" alt="" width="141.29" height="60" class="d-inline-block align-text-top">
@@ -148,7 +148,7 @@
     </div>
   </nav>
 <!-- ---- modile size ----- -->
-  <div class="d-block d-sm-none d-md-none d-lg-none">
+  <div class="d-block d-xl-none d-xxl-none">
     <nav class="navbar" style="background-color: #F6ECE0;">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" @click="display_manu = true" >
@@ -237,8 +237,8 @@
                       <font class="text-w-700" style="font-size: 24px;color:#F38100">02 026 3250</font>
                     </div>
                     <div class="col-12 mt-5">
-                      <p class="text-w-400 font-footer d-none d-sm-block d-md-block d-lg-block" style="font-size: 18px;color:#ffffff;margin-bottom:11px !important;">Sellsuki Co. Ltd.<br> 4Simplex, 3rd Floor, No. 10/39<br> Ratchadapisek Road, Chankasem,<br> Chatuchak, Bangkok 10900<br> Thailand</p>
-                      <p class="text-w-400 font-footer d-block d-sm-none d-md-none d-lg-none" style="font-size: 13px;color:#ffffff;margin-bottom:11px !important;">Sellsuki Co. Ltd.<br> 4Simplex, 3rd Floor, No. 10/39 Ratchadapisek Road,<br> Chankasem, Chatuchak, Bangkok 10900 Thailand</p>
+                      <p class="text-w-400 font-footer d-none d-xl-block d-xxl-block" style="font-size: 18px;color:#ffffff;margin-bottom:11px !important;">Sellsuki Co. Ltd.<br> 4Simplex, 3rd Floor, No. 10/39<br> Ratchadapisek Road, Chankasem,<br> Chatuchak, Bangkok 10900<br> Thailand</p>
+                      <p class="text-w-400 font-footer d-block d-xl-none d-xxl-none" style="font-size: 13px;color:#ffffff;margin-bottom:11px !important;">Sellsuki Co. Ltd.<br> 4Simplex, 3rd Floor, No. 10/39 Ratchadapisek Road,<br> Chankasem, Chatuchak, Bangkok 10900 Thailand</p>
                     </div>                  
                     <div class="col-12">
                       <img class="background-main" src="./assets/image13.png" style="border-radius: 5px">
@@ -264,7 +264,7 @@
     </div>
   </div>
   <div v-if="!isActive" class="fabs animate__animated animate__bounceInUp" style="margin-bottom: 95px;">
-    <a target="_blank" href="https://www.facebook.com/messages/t/Sellsuki"><img src="./assets/icon/image10.png" style="width: 55px;margin-right: 4px;"></a>
+    <a target="_blank" href="https://www.facebook.com/messages/t/Sellsuki"><img src="./assets/icon/image10.png" style="width: 55px;margin-right: 2px;"></a>
   </div>
 </template>
 
@@ -287,6 +287,7 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Prompt');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 @import './assets/styles/css/hover.css';
 @import './assets/styles/css/custom.css';

@@ -53,7 +53,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="d-none d-lg-block d-xl-block">
+                <div class="d-none d-xl-block d-xxl-block">
                     <button class="carousel-control-prev-custom" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="padding: 12px !important;background-color: #FF773B !important;width: 55px;;buttom:none">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
@@ -62,9 +62,15 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                    </div>
                 </div>
-                <div class="d-block d-lg-none d-xl-none">
+                <div class="d-block d-xl-none d-xxl-none text-center">
+                    <a class="me-1" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="" aria-hidden="true"><i class="me-1 bi bi-chevron-left" style="font-size: 26px;"></i></span>
+                    </a>
+                    <a class="ms-1" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="" aria-hidden="true"><i class="ms-1 bi bi-chevron-right" style="font-size: 26px;"></i></span>
+                    </a>
+                </div>
                 </div>
             </div>
         </div>
@@ -77,7 +83,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 /* -------------------------#Responsive------------------------ */
 
 /* Extra small devices (phones, 600px and down) */
@@ -140,4 +146,14 @@ export default {
       line-height: 90.72px;
   }
 }
+
+a{
+    color: #50151C;
+    padding: 5px 10px;
+}
+a:hover{
+    background: #FF773B;
+    border-radius: 50%;
+}
+
 </style>

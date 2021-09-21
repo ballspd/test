@@ -119,6 +119,9 @@
               </div>
             </div>
             <div class="d-block d-lg-none d-xl-none">
+              <div class="text-center">
+                <font style="font-size:26px;font-weight:700;color:#FFFFFF">บทความที่น่าสนใจ</font>
+              </div>
               <div id="carouselMobile" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
@@ -168,7 +171,7 @@
                     <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+                  </div>
                 </div>
               </div>
           </div>
