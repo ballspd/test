@@ -25,132 +25,93 @@
                 </div>
             </div>
             <div class="crad mt-4">
-                <div style="padding: 50px 30px 50px 30px;">
-                    <div class="row">
-                        <div class="col-3 text-center" style="border-right: 1px solid #E5E5E5;">
-                            <div class="p-3">
-                                <a @click="Akita = false,Fuse = true,Line = true,Beary = true,Kaikong = true,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
-                                    <img class="item-center" :class="{'filter-gray':Akita}" src="./../assets/logo/image32.png" alt="">
-                                    <font class="text-s-16" :class="{'filter-gray':Akita}" style="color:#373737">Akita Fulfillment</font>
-                                </a>
-                            </div>
-                            <div class="item-center" style="border: 1px solid #E5E5E5;transform: rotate(180deg);width: 221px;height: 0px;"></div>
-                            <div class="p-3">
-                                <a @click="Akita = true,Fuse = false,Line = true,Beary = true,Kaikong = true,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
-                                    <img class="item-center" :class="{'filter-gray':Fuse}" src="./../assets/logo/fuse.png" alt="">
-                                    <font class="text-s-16" :class="{'filter-gray':Fuse}" style="color:##413E93">Fuse Advertising</font>
-                                </a>
-                            </div>
-                            <div class="item-center" style="border: 1px solid #E5E5E5;transform: rotate(180deg);width: 221px;height: 0px;"></div>
-                            <div class="p-3">
-                                <a @click="Akita = true,Fuse = true,Line = false,Beary = true,Kaikong = true,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
-                                    <img class="item-center" :class="{'filter-gray':Line}" src="./../assets/logo/image68.png" alt="">
-                                </a>
-                            </div>
-                            <div class="item-center" style="border: 1px solid #E5E5E5;transform: rotate(180deg);width: 221px;height: 0px;"></div>
-                            <div class="p-3">
-                                <a @click="Akita = true,Fuse = true,Line = true,Beary = false,Kaikong = true,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
-                                    <img class="item-center" :class="{'filter-gray':Beary}" src="./../assets/logo/image24.png" alt="">
-                                    <font class="text-s-16" :class="{'filter-gray':Beary}" style="color:#231F20">Beary Web & Tech Service</font>
-                                </a>
-                            </div>
-                            <div class="item-center" style="border: 1px solid #E5E5E5;transform: rotate(180deg);width: 221px;height: 0px;"></div>
-                            <div class="p-3">
-                                <a @click="Akita = true,Fuse = true,Line = true,Beary = true,Kaikong = false,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
-                                    <img class="item-center" :class="{'filter-gray':Kaikong}" src="./../assets/logo/image51.png" alt="">
-                                    <font class="text-s-16" :class="{'filter-gray':Kaikong}" style="color:#7E4922">Kaikong Content Marketing</font>
-                                </a>
-                            </div>
-                            <div class="item-center" style="border: 1px solid #E5E5E5;transform: rotate(180deg);width: 221px;height: 0px;"></div>
-                            <div class="p-3">
-                                <a @click="Akita = true,Fuse = true,Line = true,Beary = true,Kaikong = true,Shipmunk = false,Oc2Plus = true" style="cursor: pointer;">
-                                    <img class="item-center" :class="{'filter-gray':Shipmunk}" src="./../assets/logo/shipmunk.png" alt="">
-                                    <font class="text-s-16" :class="{'filter-gray':Shipmunk}" style="color:#0B195E">Shipmunk : Dropshipping</font>
-                                </a>
-                            </div>
-                            <div class="item-center" style="border: 1px solid #E5E5E5;transform: rotate(180deg);width: 221px;height: 0px;"></div>
-                            <div class="p-3">
-                                <a @click="Akita = true,Fuse = true,Line = true,Beary = true,Kaikong = true,Shipmunk = true,Oc2Plus = false" style="cursor: pointer;">
-                                    <img class="item-center" :class="{'filter-gray':Oc2Plus}" src="./../assets/logo/Oc2Plus-01.png" alt="">
-                                    <font class="text-s-16" :class="{'filter-gray':Oc2Plus}" style="color:#0F0D0D">Oc2Plus Customer <br>Data Platform</font>
-                                </a>
-                            </div>
-                            <div class="item-center" style="border: 1px solid #E5E5E5;transform: rotate(180deg);width: 221px;height: 0px;"></div>
+                <div class="d-block d-xl-none d-xxl-none">
+                    <div class="row p-4" style="padding-top: 35px !important;">
+                        <div class="col-12">
+                            <select v-model="type" class="form-select" aria-label="Default select example">
+                                <option selected value="Akita">Akita Fulfillment</option>
+                                <option value="Fuse">Fuse</option>
+                                <option value="Line">Line</option>
+                                <option value="Beary">Beary tech</option>
+                                <option value="Kaikong">Kaikong</option>
+                                <option value="Shipmunk">Shipmunk</option>
+                                <option value="Oc2Plus">Oc2Plus</option>
+                            </select>
                         </div>
-                        <div class="col-9">
-                            <div class="row" style="padding-left: 25px;">
-                                <div class="col-4">
-                                    <img class="mb-2" src="./../assets/Group364.png" alt="">
-                                    <font class="text-w-700" style="font-size:24px;color:#373737">Lorem ipsum</font>
-                                    <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                    <p class="text-s-16" style="color:#373737">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
+                    </div>
+                    <div class="col-12">
+                        <PortfolioList :type="type"/>
+                    </div>
+                </div>
+                <div class="d-none d-xl-block d-xxl-block">
+                    <div style="padding: 50px 30px 50px 30px;">
+                        <div class="row">
+                            <div class="col-3 text-center" style="border-right: 1px solid #E5E5E5;">
+                                <div class="p-3">
+                                    <a @click="type = 'Akita',Akita = false,Fuse = true,Line = true,Beary = true,Kaikong = true,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
+                                        <div class="hover-logo" :class="{'filter-gray':Akita}">
+                                            <img class="item-center" src="./../assets/logo/image32.png" alt="">
+                                            <font class="text-s-16" style="color:#373737">Akita Fulfillment</font>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="col-4">
-                                    <img class="mb-2" src="./../assets/Group364.png" alt="">
-                                    <font class="text-w-700" style="font-size:24px;color:#373737">Lorem ipsum</font>
-                                    <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                    <p class="text-s-16" style="color:#373737">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
+                                <div class="item-center" style="border: 1px solid #E5E5E5;transform: rotate(180deg);width: 221px;height: 0px;"></div>
+                                <div class="p-3">
+                                    <a @click="type = 'Fuse',Akita = true,Fuse = false,Line = true,Beary = true,Kaikong = true,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
+                                        <div class="hover-logo" :class="{'filter-gray':Fuse}">
+                                            <img class="item-center" src="./../assets/logo/fuse.png" alt="">
+                                            <font class="text-s-16" style="color:##413E93">Fuse Advertising</font>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="col-4">
-                                    <img class="mb-2" src="./../assets/Group364.png" alt="">
-                                    <font class="text-w-700" style="font-size:24px;color:#373737">Lorem ipsum</font>
-                                    <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                    <p class="text-s-16" style="color:#373737">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
+                                <div class="item-center" style="border: 1px solid #E5E5E5;transform: rotate(180deg);width: 221px;height: 0px;"></div>
+                                <div class="p-3">
+                                    <a @click="type = 'Line',Akita = true,Fuse = true,Line = false,Beary = true,Kaikong = true,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
+                                        <div class="hover-logo" :class="{'filter-gray':Line}">
+                                            <img class="item-center" src="./../assets/logo/image68.png" alt="">
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="col-4">
-                                    <img class="mb-2" src="./../assets/Group364.png" alt="">
-                                    <font class="text-w-700" style="font-size:24px;color:#373737">Lorem ipsum</font>
-                                    <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                    <p class="text-s-16" style="color:#373737">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
+                                <div class="item-center" style="border: 1px solid #E5E5E5;transform: rotate(180deg);width: 221px;height: 0px;"></div>
+                                <div class="p-3">
+                                    <a @click="type = 'Beary',Akita = true,Fuse = true,Line = true,Beary = false,Kaikong = true,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
+                                        <div class="hover-logo" :class="{'filter-gray':Beary}">
+                                            <img class="item-center" src="./../assets/logo/image24.png" alt="">
+                                            <font class="text-s-16" style="color:#231F20">Beary Web & Tech Service</font>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="col-4">
-                                    <img class="mb-2" src="./../assets/Group364.png" alt="">
-                                    <font class="text-w-700" style="font-size:24px;color:#373737">Lorem ipsum</font>
-                                    <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                    <p class="text-s-16" style="color:#373737">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
+                                <div class="item-center" style="border: 1px solid #E5E5E5;transform: rotate(180deg);width: 221px;height: 0px;"></div>
+                                <div class="p-3">
+                                    <a @click="type = 'Kaikong',Akita = true,Fuse = true,Line = true,Beary = true,Kaikong = false,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
+                                        <div class="hover-logo" :class="{'filter-gray':Kaikong}">
+                                            <img class="item-center" src="./../assets/logo/image51.png" alt="">
+                                            <font class="text-s-16" style="color:#7E4922">Kaikong Content Marketing</font>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="col-4">
-                                    <img class="mb-2" src="./../assets/Group364.png" alt="">
-                                    <font class="text-w-700" style="font-size:24px;color:#373737">Lorem ipsum</font>
-                                    <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                    <p class="text-s-16" style="color:#373737">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
+                                <div class="item-center" style="border: 1px solid #E5E5E5;transform: rotate(180deg);width: 221px;height: 0px;"></div>
+                                <div class="p-3">
+                                    <a @click="type = 'Shipmunk',Akita = true,Fuse = true,Line = true,Beary = true,Kaikong = true,Shipmunk = false,Oc2Plus = true" style="cursor: pointer;">
+                                        <div class="hover-logo" :class="{'filter-gray':Shipmunk}">
+                                            <img class="item-center" src="./../assets/logo/shipmunk.png" alt="">
+                                            <font class="text-s-16" style="color:#0B195E">Shipmunk : Dropshipping</font>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="col-4">
-                                    <img class="mb-2" src="./../assets/Group364.png" alt="">
-                                    <font class="text-w-700" style="font-size:24px;color:#373737">Lorem ipsum</font>
-                                    <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                    <p class="text-s-16" style="color:#373737">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
+                                <div class="item-center" style="border: 1px solid #E5E5E5;transform: rotate(180deg);width: 221px;height: 0px;"></div>
+                                <div class="p-3">
+                                    <a @click="type = 'Oc2Plus',Akita = true,Fuse = true,Line = true,Beary = true,Kaikong = true,Shipmunk = true,Oc2Plus = false" style="cursor: pointer;">
+                                        <div class="hover-logo" :class="{'filter-gray':Oc2Plus}">
+                                            <img class="item-center" src="./../assets/logo/Oc2Plus-01.png" alt="">
+                                            <font class="text-s-16" style="color:#0F0D0D">Oc2Plus Customer <br>Data Platform</font>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="col-4">
-                                    <img class="mb-2" src="./../assets/Group364.png" alt="">
-                                    <font class="text-w-700" style="font-size:24px;color:#373737">Lorem ipsum</font>
-                                    <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                    <p class="text-s-16" style="color:#373737">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                </div>
-                                <div class="col-4">
-                                    <img class="mb-2" src="./../assets/Group364.png" alt="">
-                                    <font class="text-w-700" style="font-size:24px;color:#373737">Lorem ipsum</font>
-                                    <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                    <p class="text-s-16" style="color:#373737">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                </div>
-                                <div class="col-4">
-                                    <img class="mb-2" src="./../assets/Group364.png" alt="">
-                                    <font class="text-w-700" style="font-size:24px;color:#373737">Lorem ipsum</font>
-                                    <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                    <p class="text-s-16" style="color:#373737">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                </div>
-                                <div class="col-4">
-                                    <img class="mb-2" src="./../assets/Group364.png" alt="">
-                                    <font class="text-w-700" style="font-size:24px;color:#373737">Lorem ipsum</font>
-                                    <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                    <p class="text-s-16" style="color:#373737">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                </div>
-                                <div class="col-4">
-                                    <img class="mb-2" src="./../assets/Group364.png" alt="">
-                                    <font class="text-w-700" style="font-size:24px;color:#373737">Lorem ipsum</font>
-                                    <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                    <p class="text-s-16" style="color:#373737">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                </div>
+                                <div class="item-center" style="border: 1px solid #E5E5E5;transform: rotate(180deg);width: 221px;height: 0px;"></div>
+                            </div>
+                            <div class="col-9">
+                                <PortfolioList :type="type"/>
                             </div>
                         </div>
                     </div>
@@ -164,22 +125,25 @@
 
 <script>
 import GetQuote from '@/components/GetQuote'
+import PortfolioList from '@/components/Portfolio/PortfolioList'
 
 export default {
     name: 'Portfolio',
       components: {
-        GetQuote
+        GetQuote,
+        PortfolioList
     },
     data () {
         return {
-        isActive: true,
-        Akita: false,
-        Fuse: true,
-        Line: true,
-        Beary: true,
-        Kaikong: true,
-        Shipmunk: true,
-        Oc2Plus: true,
+            isActive: true,
+            Akita: false,
+            Fuse: true,
+            Line: true,
+            Beary: true,
+            Kaikong: true,
+            Shipmunk: true,
+            Oc2Plus: true,
+            type: 'Akita'
     }
   }
 }
@@ -189,5 +153,10 @@ export default {
     .filter-gray{
         filter: grayscale(100%);
         opacity: 0.5;
+    }
+
+    a .hover-logo:hover{
+        filter: none;
+        opacity: 1;
     }
 </style>

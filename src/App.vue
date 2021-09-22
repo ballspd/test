@@ -141,7 +141,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link text-c-menu" to="/Home" style="margin-right:40px;margin-left:10x;padding-right: 0 !important;padding-left: 0 !important;"><img class="shadow-filter" style="background-color: #FFFFFF;border-radius: 50px;" src="./assets/icon/Vector.png"></router-link>
+            <a href="tel:0877334145" target="_blank" class="nav-link text-c-menu" style="margin-right:40px;margin-left:10x;padding-right: 0 !important;padding-left: 0 !important;"><img class="shadow-filter" style="background-color: #FFFFFF;border-radius: 50px;" src="./assets/icon/Vector.png"></a>
           </li>
         </ul>
       </div>
@@ -155,7 +155,7 @@
             <i class="bi bi-list" style="font-size: 35px;"></i>
         </button>
         <img src="./assets/mobile/image102.png">
-        <img class="shadow" src="./assets/mobile/Vector.png" style="background-color: #FFFFFF;border-radius: 50px;">
+        <a href="tel:0877334145" target="_blank"><img class="shadow" src="./assets/mobile/Vector.png" style="background-color: #FFFFFF;border-radius: 50px;"></a>
       </div>
     </nav>
     <div v-if="display_manu" class="side-bg"></div>
@@ -287,7 +287,7 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Prompt');
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Promptbold');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 @import './assets/styles/css/hover.css';
 @import './assets/styles/css/custom.css';
