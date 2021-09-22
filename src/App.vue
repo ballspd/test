@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-xl-block d-xxl-block" style="background-color: #F6ECE0">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-xl-block d-xxl-block" style="background-color: #F6ECE0;z-index: 999999;">
     <div class="container">
       <a class="navbar-brand" href="/">
         <img src="./assets/logo-sellsuki.png" alt="" width="141.29" height="60" class="d-inline-block align-text-top">
@@ -118,10 +118,10 @@
             <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Blog">Blog</router-link>
           </li>
           <li class="nav-item navbar-item">
-            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Contact Us</router-link>
+            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/ContactUs">Contact Us</router-link>
           </li>
           <li class="nav-item navbar-item" style="border-radius: 0px 50px 50px 0px;">
-            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Join Us</router-link>
+            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/JoinUs">Join Us</router-link>
           </li>
         </ul>
       </div>

@@ -2,13 +2,22 @@
 <div id="AboutUs">
     <div class="background-main">
         <div class="container">
-            <div class="row" style="height :675px">
-                <div class="col-5">
-                    <p class="text-s-16" style="color:#50151C;margin-top: 69px;">Home > <font class="text-s-16 text-w-700" style="color:#50151C">About us</font></p>
-                    <p class="font-wght" style="font-size:64px;color:#50151C;margin-top: 188px;">About us</p>
+            <div class="row banner-hero">
+                <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="d-none d-xl-block d-xxl-block">
+                        <p class="text-s-16" style="color:#50151C;margin-top: 150px;">Home > <font class="text-s-16 text-w-700" style="color:#50151C">About Us</font></p>
+                        <table class="align-middle" style="width: 100%;">
+                            <td style="height: 350px !important;"><font class="font-wght" style="font-size:64px;color:#50151C">About US</font></td>
+                        </table>
+                    </div>
+                    <div class="d-block d-xl-none d-xxl-none text-center">
+                        <p class="text-s-16 mt-4 text-start ms-4" style="color:#50151C">Home > <font class="text-s-16 text-w-700" style="color:#50151C">About Us</font></p>
+                        <font class="font-wght mt-3" style="font-size:36px;color:#50151C">About US</font>
+                    </div>
                 </div>
-                <div class="col-7">
-                    <img src="./../assets/image60.png" style="margin-top: -40px;">
+                <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img class="d-none d-xl-block d-xxl-block img-fluid" src="./../assets/image60.png" style="margin-top: 40px;">
+                    <img class="d-block d-xl-none d-xxl-none img-fluid" src="./../assets/mobile/image60.png">
                 </div>
             </div>
             <div class="crad mt-4">

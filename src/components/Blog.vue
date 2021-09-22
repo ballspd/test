@@ -2,14 +2,26 @@
 <div id="Portfolio">
     <div class="background-main">
         <div class="container">
-            <div class="row" style="height :675px">
-                <div class="col-5">
-                    <p class="text-s-16" style="color:#50151C;margin-top: 69px;">Home > <font class="text-s-16 text-w-700" style="color:#50151C">Portfolio</font></p>
-                    <p class="font-wght" style="font-size:64px;color:#50151C;margin-top: 188px;">BLOG</p>
-                    <p class="text-s-16" style="color:#373737">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <br>Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+            <div class="row banner-hero">
+                <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="d-none d-xl-block d-xxl-block">
+                        <p class="text-s-16" style="color:#50151C;margin-top: 150px;">Home > <font class="text-s-16 text-w-700" style="color:#50151C">Blog</font></p>
+                        <table class="align-middle" style="width: 100%;">
+                            <td style="height: 350px !important;">
+                                <font class="font-wght" style="font-size:64px;color:#50151C">Blog</font>
+                                <p class="text-s-16 text-start" style="color:#50151C">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                            </td>
+                        </table>
+                    </div>
+                    <div class="d-block d-xl-none d-xxl-none text-center ps-4 pe-4">
+                        <p class="text-s-16 mt-4 text-start" style="color:#50151C">Home > <font class="text-s-16 text-w-700" style="color:#50151C">Blog</font></p>
+                        <font class="font-wght mt-3" style="font-size:36px;color:#50151C">Blog</font>
+                        <p class="text-s-16" style="color:#50151C">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                    </div>
                 </div>
-                <div class="col-7">
-                    <img src="./../assets/image60.png" style="margin-top: -40px;">
+                <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img class="d-none d-xl-block d-xxl-block img-fluid" src="./../assets/image60.png" style="margin-top: 40px;">
+                    <img class="d-block d-xl-none d-xxl-none img-fluid" src="./../assets/mobile/image60.png">
                 </div>
             </div>
             <div class="crad mt-4">
@@ -112,16 +124,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row text-center item-center mt-5">
-                        <div class="col-3"><img src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทคนิคการขาย <br>และการโฆษณา</p></div>
-                        <div class="col-3"><img src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Social Media</p></div>
-                        <div class="col-3"><img src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Market Place</p></div>
-                        <div class="col-3"><img src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>E-Commerce</p></div>
+                    <div class="row text-center mt-5">
+                        <div class="col-3 item-center"><img src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทคนิคการขาย <br>และการโฆษณา</p></div>
+                        <div class="col-3 item-center"><img src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Social Media</p></div>
+                        <div class="col-3 item-center"><img src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Market Place</p></div>
+                        <div class="col-3 item-center"><img src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>E-Commerce</p></div>
                     </div>
-                    <div class="row text-center item-center mt-2 justify-content-center">
-                        <div class="col-3"><img src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Social Media</p></div>
-                        <div class="col-3"><img src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Market Place</p></div>
-                        <div class="col-3"><img src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>E-Commerce</p></div>
+                    <div class="row text-center mt-2 justify-content-center">
+                        <div class="col-3 item-center"><img src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Social Media</p></div>
+                        <div class="col-3 item-center"><img src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Market Place</p></div>
+                        <div class="col-3 item-center"><img src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>E-Commerce</p></div>
                     </div>
                     <div>
                         <div class="row mt-4">
