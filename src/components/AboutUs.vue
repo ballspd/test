@@ -4,14 +4,16 @@
         <div class="container">
             <div class="row banner-hero">
                 <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="d-none d-xl-block d-xxl-block">
-                        <p class="text-s-16" style="color:#50151C;margin-top: 150px;">Home > <font class="text-s-16 text-w-700" style="color:#50151C">About Us</font></p>
+                    <div class="d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                        <p class="text-s-16 mt-150" style="color:#50151C;">Home > <font class="text-s-16 text-w-700" style="color:#50151C">About US</font></p>
                         <table class="align-middle" style="width: 100%;">
-                            <td style="height: 350px !important;"><font class="font-wght" style="font-size:64px;color:#50151C">About US</font></td>
+                            <td class="banner-height">
+                                <font class="font-wght" style="font-size:64px;color:#50151C">About US</font>
+                            </td>
                         </table>
                     </div>
-                    <div class="d-block d-xl-none d-xxl-none text-center">
-                        <p class="text-s-16 mt-4 text-start ms-4" style="color:#50151C">Home > <font class="text-s-16 text-w-700" style="color:#50151C">About Us</font></p>
+                    <div class="d-block d-md-none d-lg-none d-xl-none d-xxl-none text-center ps-4 pe-4">
+                        <p class="text-s-16 mt-4 text-start" style="color:#50151C">Home > <font class="text-s-16 text-w-700" style="color:#50151C">About US</font></p>
                         <font class="font-wght mt-3" style="font-size:36px;color:#50151C">About US</font>
                     </div>
                 </div>

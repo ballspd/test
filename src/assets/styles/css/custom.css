@@ -6,6 +6,9 @@
   .container{
     padding: 0 !important;
   }
+  .banner-height{
+    height: 240px !important;
+  }
   .padding-row{
     padding-top: 30px !important;
     padding:20px;
@@ -42,6 +45,9 @@
   .container{
     padding: 0 !important;
   }
+  .banner-height{
+    height: 240px !important;
+  }
   .padding-row{
     padding-top: 30px !important;
     padding:20px;
@@ -63,6 +69,12 @@
     margin-bottom: 25px;
     padding: 20px;
   }
+  .card-roadmap{
+    width: 260px !important;
+    height: 110px !important;
+    background: #23233F !important;
+    border-radius: 25px !important;
+  }
   .image-size{
     width: 85%;
   }
@@ -75,6 +87,9 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .banner-height{
+    height: 240px !important;
+  }
   .padding-row{
     padding-top: 30px !important;
     padding:30px;
@@ -89,16 +104,26 @@
     font-size: 16px;
   }
   .crad-image{
-    width: 285px;
+    width: 320px;
     height: 380px;
     background-color:#AACCEB;
     margin-bottom: 0px;
+  }
+  .card-roadmap{
+    width: 400px !important;
+    height: 150px !important;
+    background: #23233F !important;
+    border-radius: 25px !important;
+    padding: 20px;
   }
   .image-size{
     width: 100%;
   }
   .row{
-    --bs-gutter-x: 1.5rem !important;
+    --bs-gutter-x: 1rem !important;
+  }
+  .mt-150{
+    margin-top: 1rem!important;
   }
 } 
 
@@ -107,6 +132,9 @@
   .padding-row{
     padding-top: 50px !important;
     padding:40px;
+  }
+  .banner-height{
+    height: 325px !important;
   }
   .padding-card{
     padding: 60px 60px 0px 60px;
@@ -124,10 +152,11 @@
     margin-bottom: 0px;
   }
   .card-roadmap{
-    width: 450px !important;
-    height: 180px !important;
+    width: 400px !important;
+    height: 150px !important;
     background: #23233F !important;
     border-radius: 25px !important;
+    padding: 20px;
   }
   .image-size{
     width: 100%;
@@ -135,12 +164,18 @@
   .row{
     --bs-gutter-x: 1.5rem !important;
   }
+  .mt-150{
+    margin-top: 1rem!important;
+  }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .container{
     max-width: 1200px !important;
+  }
+  .banner-height{
+    height: 350px !important;
   }
   .banner-hero{
     height: 700px;
@@ -175,6 +210,9 @@
   }
   .row{
     --bs-gutter-x: 1.5rem !important;
+  }
+  .mt-150{
+    margin-top: 150px !important;
   }
 }
 
