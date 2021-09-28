@@ -179,16 +179,16 @@
       </div>
       <div class="row p-3">
         <div class="col-12">
-            <div v-if="menu != ''">
-                <a @click="display_sup_manu = true,menu = ''"><i class="bi bi-chevron-left me-2"></i> Back</a>
+            <div v-if="component != ''">
+                <a @click="toggle"><i class="bi bi-chevron-left me-2"></i> Back</a>
                 <hr style="border: 1px solid #50151C;"/>
-                <ServicesMenu/>
+                <component :component="component" v-bind:is="component"></component>
             </div>
 
-            <div v-if="display_sup_manu === true">
+            <div v-if="component == ''">
                 <router-link @click="display_manu = false" to="/">Home</router-link>
                 <hr style="border: 1px solid #50151C;"/>
-                <div @click="menu = 'Services',display_sup_manu = false" class="d-flex" >
+                <div @click="component = 'ServicesMenu'" class="d-flex" >
                 <a href="#">Services</a>
                 <i class="ms-auto bi bi-chevron-right"></i>
                 </div>
@@ -223,22 +223,24 @@
 
 <script>
 import ServicesMenu from '@/components/Menu/ServicesMenu'
+import DigitalMarketingMenu from '@/components/Menu/DigitalMarketingMenu'
 
 export default {
   name: 'NavMenu',
   components: {
     ServicesMenu,
+    DigitalMarketingMenu
   },
   data () {
     return {
       menu: '',
-      display_sup_manu: true,
       display_manu: false,
+      component: ''
     }
   },
   methods: {
-    scrollToTop() {
-      window.scrollTo(0,0);
+    toggle(){
+        this.component = this.menu;
     }
   }
 }

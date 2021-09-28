@@ -5,6 +5,7 @@ import Portfolio from "@/components/Portfolio.vue";
 import Blog from "@/components/Blog.vue";
 import ContactUs from "@/components/ContactUs.vue";
 import JoinUs from "@/components/JoinUs.vue";
+import JoinUsForm from "@/components/JoinUsForm.vue";
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: "/JoinUs",
     name: "JoinUs",
     component: JoinUs,
+  },
+  {
+    path: "/JoinUsForm",
+    name: "JoinUsForm",
+    component: JoinUsForm,
   }
 ];
 
