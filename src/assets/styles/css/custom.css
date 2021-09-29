@@ -172,10 +172,10 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .container{
-    max-width: 1200px !important;
+    max-width: 1150px !important;
   }
   .banner-height{
-    height: 350px !important;
+    height: 425px !important;
   }
   .banner-hero{
     height: 700px;
@@ -212,7 +212,7 @@
     --bs-gutter-x: 1.5rem !important;
   }
   .mt-150{
-    margin-top: 150px !important;
+    margin-top: 135px !important;
   }
 }
 
@@ -469,7 +469,7 @@ hr{
     border-radius: 30px 0px 0px 30px;
     top: 115px;
     bottom: 480px;
-    right: 558px;
+    right: 508px;
     z-index: 1;
     display: flex;
     align-items: center;

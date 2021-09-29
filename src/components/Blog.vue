@@ -20,11 +20,11 @@
                     </div>
                 </div>
                 <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <img class="d-none d-xl-block d-xxl-block img-fluid" src="./../assets/image60.png" style="margin-top: 40px;">
+                    <img class="d-none d-xl-block d-xxl-block img-fluid" src="./../assets/image60.png" style="margin-top: 80px;">
                     <img class="d-block d-xl-none d-xxl-none img-fluid" src="./../assets/mobile/image60.png">
                 </div>
             </div>
-            <div class="crad mt-4">
+            <div class="crad mt-5">
                 <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
                     <div class="row mb-5">
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><img class="img-fluid" src="./../assets/Group323.png" style="width: 510px;height: 330px;"></div>
@@ -189,18 +189,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-none d-lg-block d-xl-block">
-                        <div class="row text-center mt-5">
-                            <div class="col-3 item-center"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทคนิคการขาย <br>และการโฆษณา</p></div>
-                            <div class="col-3 item-center"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Social Media</p></div>
-                            <div class="col-3 item-center"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Market Place</p></div>
-                            <div class="col-3 item-center"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>E-Commerce</p></div>
-                        </div>
-                        <div class="row text-center mt-2 justify-content-center">
-                            <div class="col-3 item-center"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Social Media</p></div>
-                            <div class="col-3 item-center"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Market Place</p></div>
-                            <div class="col-3 item-center"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>E-Commerce</p></div>
-                        </div>
+                    <div class="row text-center mt-4 justify-content-center">
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทคนิคการขาย <br>และการโฆษณา</p></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Social Media</p></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Market Place</p></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>E-Commerce</p></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Social Media</p></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Market Place</p></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>E-Commerce</p></div>
                     </div>
                     <div>
                         <div class="row mt-4">
@@ -607,7 +603,7 @@ export default {
 
 <style scoped>
 .btn-green{
-    width: 85px;
+    width: 82px;
     height: 30px;
     font-size: 10px;
     background: #2AAF4A;
@@ -619,7 +615,7 @@ export default {
 }
 
 .btn-blue{
-    width: 85px;
+    width: 82px;
     height: 30px;
     font-size: 10px;
     background: #15304E;
@@ -632,5 +628,11 @@ export default {
 
 .carousel-indicators {
     opacity: .8;
+}
+
+@media only screen and (max-width: 600px) {
+    .text-s-18{
+        font-size: 14px !important;
+    }
 }
 </style>

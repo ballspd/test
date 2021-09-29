@@ -10,11 +10,11 @@
           <font class="font-wght text-center mt-4 d-block d-xl-none d-xxl-none" style="font-size:36px;color:#50151C">E-COMMERCE <br>SOLUTION</font>
         </div>
         <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-          <img class="d-none d-xl-block d-xxl-block img-fluid" src="./../assets/image60.png" style="margin-top: 40px;">
+          <img class="d-none d-xl-block d-xxl-block img-fluid" src="./../assets/image60.png" style="margin-top: 80px;">
           <img class="d-block d-xl-none d-xxl-none img-fluid" src="./../assets/mobile/image60.png">
         </div>
       </div>
-      <div class="crad">
+      <div class="crad mt-5">
         <div class="row padding-row">
           <div class="col-xxl-6 col-xl-6 col-lg-5 col-md-6 col-sm-12 col-12">
             <img class="d-none d-xl-block d-xxl-block mt-5" src="./../assets/Vector-Smart-Object2.png">
@@ -71,8 +71,8 @@
                   <div class="card text-white card-roadmap">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-6" style="margin:38px 0px 38px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Research Find <br>Insight</font></div>
-                        <div class="col-6" style="margin:25px 0px 25px 0px"><img style="left: 60px;position: relative;" src="./../assets/icon/Group.png"></div>
+                        <div class="col-6" style="margin:15px 0px 15px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Research Find <br>Insight</font></div>
+                        <div class="col-6" style="margin:5px 0px 5px 0px"><img style="left: 60px;position: relative;" src="./../assets/icon/Group.png"></div>
                       </div>
                     </div>
                   </div>
@@ -81,8 +81,8 @@
                   <div class="card text-white card-roadmap">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-6" style="margin:38px 0px 38px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Analytic the <br>Fact</font></div>
-                        <div class="col-6" style="margin:25px 0px 25px 0px"><img style="left: 60px;position: relative;" src="./../assets/icon/Group1.png"></div>
+                        <div class="col-6" style="margin:15px 0px 15px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Analytic the <br>Fact</font></div>
+                        <div class="col-6" style="margin:5px 0px 5px 0px"><img style="left: 60px;position: relative;" src="./../assets/icon/Group1.png"></div>
                       </div>
                     </div>
                   </div>
@@ -91,8 +91,8 @@
                   <div class="card text-white card-roadmap">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-6" style="margin:58px  0px 58px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Right Strategy</font></div>
-                        <div class="col-6" style="margin:25px 0px 25px 0px"><img style="left: 60px;position: relative;" src="./../assets/icon/Group2.png"></div>
+                        <div class="col-6" style="margin:38px  0px 38px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Right Strategy</font></div>
+                        <div class="col-6" style="margin:5px 0px 5px 0px"><img style="left: 60px;position: relative;" src="./../assets/icon/Group2.png"></div>
                       </div>
                     </div>
                   </div>
@@ -101,8 +101,8 @@
                   <div class="card text-white card-roadmap">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-6" style="margin:38px 0px 38px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Repeat<br>Optimization</font></div>
-                        <div class="col-6" style="margin:25px 0px 25px 0px"><img style="left: 60px;position: relative;" src="./../assets/icon/Group3.png"></div>
+                        <div class="col-6" style="margin:15px 0px 15px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Repeat<br>Optimization</font></div>
+                        <div class="col-6" style="margin:5px 0px 5px 0px"><img style="left: 60px;position: relative;" src="./../assets/icon/Group3.png"></div>
                       </div>
                     </div>
                   </div>
@@ -111,8 +111,8 @@
                   <div class="card text-white card-roadmap">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-7" style="margin:20px 0px 20px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Get Feedback &<br>Never Stop learning</font></div>
-                        <div class="col-5" style="margin:25px 0px 25px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group4.png"></div>
+                        <div class="col-7" style="margin:0px 0px 0px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Get Feedback &<br>Never Stop learning</font></div>
+                        <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group4.png"></div>
                       </div>
                     </div>
                   </div>

@@ -20,11 +20,11 @@
                     </div>
                 </div>
                 <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <img class="d-none d-xl-block d-xxl-block img-fluid" src="./../assets/image60.png" style="margin-top: 40px;">
+                    <img class="d-none d-xl-block d-xxl-block img-fluid" src="./../assets/image60.png" style="margin-top: 80px;">
                     <img class="d-block d-xl-none d-xxl-none img-fluid" src="./../assets/mobile/image60.png">
                 </div>
             </div>
-            <div class="crad mt-4">
+            <div class="crad mt-5">
                 <p class="d-block d-xl-none d-xxl-none text-center text-s-30 font-wght pt-4" style="color:#50151C">Contact Us</p>
                 <div class="row padding-contact">
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-12 col-sm-12 col-12 pe-xxl-5 pe-xl-5 border-contact">

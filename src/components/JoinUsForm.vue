@@ -10,7 +10,7 @@
             </div>
             <div class="crad mt-4 text-color-this-page">
                 <div class="row pt-xxl-1 pt-xl-1 pt-lg-1 pt-2 p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
-                  <div class="col-12 ps-4 pe-4">
+                  <div class="col-12 ps-xxl-4 ps-xl-4 ps-1 pe-xxl-4 pe-xl-4 pe-1">
                        <form>
                         <div class="row">
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
@@ -52,8 +52,9 @@
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">Resume/CV<span class="text-danger">*</span></label>
                                 <div class="input-group mb-3 mt-2">
-                                    <input type="file" class="form-control" id="inputGroupFile">
-                                    <label class="input-group-text" for="inputGroupFile">Upload</label>
+                                    <input type="file" class="form-control" id="inputGroupFile" hidden>
+                                    <input type="text" class="form-control" id="inputGroupFile">
+                                    <label class="input-group-text text-s-14" for="inputGroupFile" style="background: #FF773B;color: #FFFFFF;">Choose File</label>
                                 </div>
                             </div>
                             <div class="form-group col-12 mt-5">
@@ -62,14 +63,45 @@
                             </div>
 
                         </div>
-                        <div class="row mt-5">
-                            <p class="text-s-18">ข้าพเจ้าได้อ่านเเละเข้าใจข้อความทั้งหมดซึ่งระบุไว้วในหนังสือยินยอมฉบับนี้โดยตลอดเเล้ว จึงได้ลงลายมือชื่อไว้เป็นสำคัญ</p>
+                        </form>
+                        <div class="row mt-5 mb-5">
+                            <div class="col-12"><p class="text-s-18">ข้าพเจ้าได้อ่านเเละเข้าใจข้อความทั้งหมดซึ่งระบุไว้ในหนังสือยินยอมฉบับนี้โดยตลอดเเล้ว จึงได้ลงลายมือชื่อไว้เป็นสำคัญ</p></div>
+                            <div class="col-12"><!-- Button trigger modal -->
+                                <a href="" data-bs-toggle="modal" data-bs-target="#Modaldis" style="color:#1D6BF6 !important;text-decoration: underline !important;">ดูรายละเอียด</a>
+                            </div>
+                            
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="Modaldis" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-5">
+                                <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        ยินยอมให้ใช้หรือเปิดเผยข้อมูลส่วนบุคคลของผู้สมัคร
+                                    </label>
+                                </div>
+                            </div>
+                            <hr class="mt-5 mb-3" style="border: 1px solid #E5E5E5;">
+                            <div class="col-12">
+                                <div class="text-center" style="width: 100%;margin-top:32px">
+                                    <a href="#" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Submit</span></a>
+                                </div>
+                            </div>                    
                         </div>
-                        <div class="text-center" style="width: 100%;margin-top:32px">
-                            <button type="submit" class="btn-orange button"><span style="font-size:18px">Submit</span></button>
-                        </div>
-                    </form>
-                  </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -81,6 +113,11 @@
 
 export default {
     name: 'JoinUsForm',
+    data() {
+      return {
+        filename: 'GG'
+      }
+    }
 }
 </script>
 

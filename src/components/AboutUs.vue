@@ -18,11 +18,11 @@
                     </div>
                 </div>
                 <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <img class="d-none d-xl-block d-xxl-block img-fluid" src="./../assets/image60.png" style="margin-top: 40px;">
+                    <img class="d-none d-xl-block d-xxl-block img-fluid" src="./../assets/image60.png" style="margin-top: 80px;">
                     <img class="d-block d-xl-none d-xxl-none img-fluid" src="./../assets/mobile/image60.png">
                 </div>
             </div>
-            <div class="crad mt-4">
+            <div class="crad mt-5">
                 <div class="row p-xxl-5 p-xl-5 p-lg-4 p-md-4 p-sm-4 p-3">
                     <div class="col-12 text-center mt-xxl-0 mt-xl-0 mt-lg-0 mt-md-3 mt-sm-4 mt-4">
                         <p class="text-s-30 text-w-700" style="margin-bottom: 10px !important">ประวัติความเป็นมาของ</p>

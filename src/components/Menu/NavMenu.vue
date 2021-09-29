@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-xl-block d-xxl-block" style="background-color: #F6ECE0;z-index: 999999;">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-xl-block d-xxl-block" style="background-color: #F6ECE0;z-index: 999;">
     <div class="container">
       <a class="navbar-brand" href="/">
         <img src="./../../assets/logo-sellsuki.png" alt="" width="141.29" height="60" class="d-inline-block align-text-top">
@@ -97,7 +97,7 @@
                 <div class="col-6" style="padding-right: 20px !important;padding-left: 20px !important;width: 260px !important;">
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Services-Products</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 182px;height: 0px;">
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Fuse Advertising</p></a>
+                  <router-link to="/Solutions/Fuse"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Fuse Advertising</p></router-link>
                   <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE Agency</p></a>
                   <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Kaikong Content Marketing</p></a>
                   <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Beary Web & Tech Service</p></a>

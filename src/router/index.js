@@ -6,6 +6,7 @@ import Blog from "@/components/Blog.vue";
 import ContactUs from "@/components/ContactUs.vue";
 import JoinUs from "@/components/JoinUs.vue";
 import JoinUsForm from "@/components/JoinUsForm.vue";
+import SolutionsFuse from "@/components/Solutions/SolutionsFuse.vue";
 
 const routes = [
   {
@@ -42,6 +43,11 @@ const routes = [
     path: "/JoinUsForm",
     name: "JoinUsForm",
     component: JoinUsForm,
+  },
+  {
+    path: "/Solutions/Fuse",
+    name: "SolutionsFuse",
+    component: SolutionsFuse,
   }
 ];
 
