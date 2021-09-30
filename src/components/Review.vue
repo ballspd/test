@@ -1,6 +1,6 @@
 <template>
     <div id="Review">
-        <div class="row mt-5 mb-2 p-3">
+        <div class="row mt-4 mb-2 p-3">
             <div class="col-12">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">

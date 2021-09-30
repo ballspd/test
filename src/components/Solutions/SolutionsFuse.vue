@@ -28,17 +28,114 @@
             </div>
         </div>
         <div class="container">
-            <div class="crad mt-5">
-                <div class="row p-custom p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4 justify-content-center">
-                    <div class="row text-center mt-2">
-                        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../../assets/icon/image60.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Fackbook</p></div>
-                        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../../assets/icon/image61.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Google</p></div>
-                        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../../assets/icon/image62.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">YouTube</p></div>
-                        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../../assets/icon/image63.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Instagram</p></div>
-                        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../../assets/icon/image64.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Twitter</p></div>
-                        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../../assets/icon/image65.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Tiktok</p></div>
+            <div class="crad">
+                <div class="mt-5 p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
+                    <div class="row p-custom justify-content-center">
+                        <div class="row text-center mt-2">
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" width="60" src="./../../assets/icon/image60.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Fackbook</p></div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" width="60" src="./../../assets/icon/image61.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Google</p></div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" width="60" src="./../../assets/icon/image62.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">YouTube</p></div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" width="60" src="./../../assets/icon/image63.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Instagram</p></div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" width="60" src="./../../assets/icon/image64.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Twitter</p></div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" width="60" src="./../../assets/icon/image65.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Tiktok</p></div>
+                        </div>
                     </div>
-                </div>                
+                    <div class="row p-custom-2 d-flex">
+                        <div class="col-12 text-center mt-5"><h1 class="text-s-30 font-wght" style="color:#A7A2FD">OUR SERVICES</h1></div>
+                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5">
+                            <img class="item-center" src="./../../assets/SolutionsFuse/Fuse-011.png" alt="">
+                        </div>
+                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-5 pe-5 m-auto">
+                            <h2 class="text-s-20 font-wght" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">Digital Advertising</span></h2>
+                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">บริการยิงแอดโฆษณาบนช่องทาง Social Media ที่ครอบคลุมในกลุ่ม ทั้ง 7 ช่อง ทางทั้ง Facebook, Google, LINE, Instagram, Twitter, YouTube และ Tiktok...</p>
+                            <i class="bi bi-chevron-down pe-2" style="float:right"></i>
+                        </div>
+                    </div>
+                    <div class="row mt-5 p-custom-2 d-flex">
+                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-5 pe-5 m-auto">
+                            <h2 class="text-s-20 font-wght" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">Spy Ads</span></h2>
+                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">บริการวิเคราะห์แผนการสื่อสารและ การทำ โฆษณาของแบรนด์คู่แข่ง เพื่อนำมาพัฒนา กลยุทธ์และรูปแบบ การทำโฆษณาของแบรนด์คุณ เพื่อให้แบรนด์เติบโตและพัฒนาไปได้...</p>
+                            <i class="bi bi-chevron-down pe-2" style="float:right"></i>
+                        </div>
+                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                            <img class="item-center" src="./../../assets/SolutionsFuse/Fuse-021.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row p-custom-2 d-flex">
+                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5">
+                            <img class="item-center" src="./../../assets/SolutionsFuse/Fuse-031.png" alt="">
+                        </div>
+                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-5 pe-5 m-auto">
+                            <h2 class="text-s-20 font-wght" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">Social Listening</span></h2>
+                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">บริการวิเคราะห์แผนการสื่อสารและ การทำ โฆษณาบริการวิเคราะห์เทรนด์ และความต้องการใน ตลาดในปัจจุบัน เพื่อวิเคราะห์ว่าสินค้าและบริการที่ เกี่ยวกับธุรกิจของคุณถูกพูดถึง...</p>
+                            <i class="bi bi-chevron-down pe-2" style="float:right"></i>
+                        </div>
+                    </div>
+                    <div class="row mt-5 p-custom-2 d-flex">
+                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-5 pe-5 m-auto">
+                            <h2 class="text-s-20 font-wght" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">Influencer Marketing</span></h2>
+                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">บริการโปรโมทสินค้าและบริการของคุณ ช่วยสร้างแบรนด์ให้เป็นที่จดจำ แบบยุคใหม่ด้วย Influencers สามารถเลือกบริการได้ตั้งแต่ระดับ Nano Influencers (1,000 followers)...</p>
+                            <i class="bi bi-chevron-down pe-2" style="float:right"></i>
+                        </div>
+                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                            <img class="item-center" src="./../../assets/SolutionsFuse/Fuse-041.png" alt="">
+                        </div>
+                    </div>  
+                    <div class="row p-custom-2 d-flex">
+                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5">
+                            <img class="item-center" src="./../../assets/SolutionsFuse/Fuse-051.png" alt="">
+                        </div>
+                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-5 pe-5 m-auto">
+                            <h2 class="text-s-20 font-wght" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">Marketplace Ads</span></h2>
+                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">บริการสร้างช่องทางการขายออนไลน์ หรือ หน้าร้านบน Marketplace ไม่ว่า จะเป็น Lazada และ Shopee เพื่อ เพิ่มโอกาสในการ ขายออนไลน์ พร้อม บริการช่วยติดตั้งหน้าร้าน ช่วยลด...</p>
+                            <i class="bi bi-chevron-down pe-2" style="float:right"></i>
+                        </div>
+                    </div>   
+                    <div class="row mt-5 p-custom-2 d-flex">
+                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-5 pe-5 m-auto">
+                            <h2 class="text-s-20 font-wght" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">Business Consulting</span></h2>
+                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">ที่ปรึกษาทางด้านธุรกิจ โดยทีมงานผู้เชี่ยวชาญมีประสบการณ์ร่วมงานกับ แบรนด์ชั้นนำ ที่คอยให้คำแนะนำ รวมไปถึงช่วยทำความเข้าใจตลาด และ กลุ่มเป้าหมายพร้อม...</p>
+                            <i class="bi bi-chevron-down pe-2" style="float:right"></i>
+                        </div>
+                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                            <img class="item-center" src="./../../assets/SolutionsFuse/Fuse-061.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4" style="background: linear-gradient(0, #EAE6FF 0%, rgba(234, 230, 255, 0) 100%);">
+                    <div class="row">
+                        <div class="col-12 mt-4 text-center"><h1 class="text-s-30 text-w-700" style="color:#182E9C">ทำไมลูกค้าถึงไว้ใจให้เราดูแล</h1></div>    
+                    </div>
+                    <div class="row mt-5 text-center">
+                        <div class="col-4">
+                            <div class="bg-icon d-flex item-center">
+                                <img class="m-auto bg-icon-main" src="./../../assets/SolutionsFuse/icon-Fuse-1.png">
+                            </div>
+                            <img class="item-center mt-4" src="./../../assets/icon/Group163.png">
+                            <h2 class="text-s-20 mt-3" style="color:#373737">ให้คำปรึกษาครบวงจร <br>เรื่องการทำธุรกิจ</h2>
+                        </div>
+                        <div class="col-4">
+                            <div class="bg-icon d-flex item-center">
+                                <img class="m-auto bg-icon-main" src="./../../assets/SolutionsFuse/icon-Fuse-2.png">
+                            </div>
+                            <img class="item-center mt-4" src="./../../assets/icon/Group163.png">
+                            <h2 class="text-s-20 mt-3" style="color:#373737">ดูเเลด้วยทีมงาน <br>ที่มีประสบการณ์</h2>
+                        </div>
+                        <div class="col-4">
+                            <div class="bg-icon d-flex item-center">
+                                <img class="m-auto bg-icon-main" src="./../../assets/SolutionsFuse/icon-Fuse-3.png">
+                            </div>
+                            <img class="item-center mt-4" src="./../../assets/icon/Group163.png">
+                            <h2 class="text-s-20 mt-3" style="color:#373737">เน้นผลลัพธ์ด้วยการ <br>เข้าใจธุรกิจคุณ</h2>
+                        </div>     
+                    </div>
+                </div>
+                <InterestingArticles/>
+                <div class="padding-card pt-0 text-center">
+                    <h1 class="mt-5 text-s-30 text-w-700">เรื่องเล่าจากลูกค้าเรา</h1>
+                    <Review/>
+                </div>
+                <GetQuote :type="type"/>         
             </div>
         </div>
     </div>
@@ -46,9 +143,22 @@
 </template>
 
 <script>
+import InterestingArticles from '@/components/InterestingArticles'
+import Review from '@/components/Review'
+import GetQuote from '@/components/Solutions/SolutionsGetQuote'
 
 export default {
     name: 'SolutionsFuse',
+    components: {
+        InterestingArticles,
+        Review,
+        GetQuote
+  },
+  data () {
+        return {
+            type: 'Fuse'
+    }
+  }
 }
 </script>
 
@@ -89,5 +199,24 @@ export default {
         padding-left: 50px !important;
         padding-right: 50px !important;
     }
+    .p-custom-2{
+        padding-left: 65px !important;
+        padding-right: 65px !important;
+    }
+}
+
+.bg-icon{
+    width: 146px;
+    height: 146px;
+    background-color: #6C70E2;
+    border-radius: 50%;
+}
+
+.bg-icon-main{
+    margin-left: -8px !important;
+    margin-top: -8px !important;
+    background-color: #777BFB;
+    padding: 32px;
+    border-radius: 50%;
 }
 </style>
