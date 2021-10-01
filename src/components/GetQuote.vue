@@ -6,7 +6,7 @@
             <div class="row">
               <div class="col-12">
                   <font style="font-weight: 700;font-size: 30px;color:#ffffff">GET A QUOTE</font>
-                  <hr style="width: 578px;height: 2px;color:#FFFFFF">
+                  <hr style="width: 100%;height: 2px;color:#FFFFFF">
                   <font style="font-weight: 400;font-size: 18px;color:#ffffff">Please complete the form to request a quotation</font>
               </div>
             </div>
