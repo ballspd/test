@@ -155,7 +155,7 @@ export default {
 }
 
 .position-bu{
-  margin-top: 348px;
+  margin-top: 360px;
   position: absolute;
   margin-left: -65px;
 }

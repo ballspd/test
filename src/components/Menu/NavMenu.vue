@@ -7,76 +7,76 @@
       <div class="ml-2">
         <ul class="navbar-nav navbar-custom shadow text-s-16 text-w-500 menu-bar" style="padding:0px !important;width: 797px!important;">
           <li class="nav-item navbar-item" style="border-radius: 50px 0px 0px 50px;">
-            <router-link style="padding-left:19px !important" class="nav-link text-c-menu" aria-current="page" to="/">Home</router-link>
+            <router-link @click="scrollToTop" style="padding-left:19px !important" class="nav-link text-c-menu" aria-current="page" to="/">Home</router-link>
           </li>
           <li class="nav-item navbar-item">
-            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Services <i class="bi bi-chevron-down" style="font-size: 15px;"></i></router-link>
+            <router-link @click="scrollToTop" class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Services <i class="bi bi-chevron-down" style="font-size: 15px;"></i></router-link>
             <ul class="dropdown" style="padding: 30px 50px 30px 50px;width: 1380px;left: 50%;">
               <i class="bi bi-caret-up-fill pe-5 ps-5" style="font-size: 40px;position: absolute;left: 355px;color: #ffffff;bottom: 440px;"></i>
               <div class="row">
                 <div class="col-2 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;height:415px">
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Digital Marketing</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Influencer Marketing</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Content Marketing</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Collaborative Ads <br>(Marketplace)</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Spy ads</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Social Listening</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Ads Intelligence</p></a>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Influencer Marketing</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Content Marketing</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Collaborative Ads <br>(Marketplace)</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Spy ads</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Social Listening</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Ads Intelligence</p></a>
                 </div>
                 <div class="col-2 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;width: 220px !important;">
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Digital Advertising</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 182px;height: 0px;">
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Tiktok Ads</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Facebook Ads</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Instagram Ads</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Youtube Ads</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Google Ads</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Twitter Ads</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Line Ads Platform</p></a> 
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Tiktok Ads</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Facebook Ads</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Instagram Ads</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Youtube Ads</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Google Ads</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Twitter Ads</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Line Ads Platform</p></a> 
                 </div>
                 <div class="col-2 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;">
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Business Consult</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">                
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Marketing Strategy</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;margin-bottom: 2rem;">e-Distributor</p></a>
-                  <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">LINE Service</font></a>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Marketing Strategy</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;margin-bottom: 2rem;">e-Distributor</p></a><br>
+                  <a @click="scrollToTop" href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">LINE Service</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE My shop</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE OA</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE Chatbot</p></a>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE My shop</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE OA</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE Chatbot</p></a>
                 </div>
                 <div class="col-4 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;width: 405px !important;">
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">MarTech</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 360px;height: 0px;">
                   <div class="row">
                     <div class="col-6">
-                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Information Website</p></a>
-                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">E-Commerce Website</p></a>
-                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Business Intelligence</p></a>
-                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Catalog Website <br>(LINE my shop)</p></a>
-                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE API</p></a>
-                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Campaign Manager</p></a>
-                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Application System <br>Development</p></a>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Information Website</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">E-Commerce Website</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Business Intelligence</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Catalog Website <br>(LINE my shop)</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE API</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Campaign Manager</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Application System <br>Development</p></a>
                     </div>
                     <div class="col-6" style="padding: 0;">
-                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Order Management<br>System</p></a>
-                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">CRM System</p></a>
-                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Customer Data<br>Platform</p></a>
-                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Consult & Maintenance<br>Service Agreement</p></a>
-                      <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Marketing Automation</p></a>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Order Management<br>System</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">CRM System</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Customer Data<br>Platform</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Consult & Maintenance<br>Service Agreement</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Marketing Automation</p></a>
                     </div>
                   </div>
                 </div>
                 <div class="col-2 hover-manu" style="padding-right: 20px !important;padding-left: 20px !important;">
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">E-commerce Operation</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 214px;height: 0px;">
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Fulfillment Service</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Fulfillment System</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;margin-bottom: 2rem;">Product Catalog<br>Management</p></a>
-                  <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Delivery</font></a>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Fulfillment Service</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Fulfillment System</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;margin-bottom: 2rem;">Product Catalog<br>Management</p></a><br>
+                  <a @click="scrollToTop" href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Delivery</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Delivery</p></a>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Delivery</p></a>
                 </div>
               </div>
             </ul>
@@ -89,39 +89,39 @@
                 <div class="col-6 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;height:415px;width: 235px !important;">
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Types of Business</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Business Owner</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Content Marketing</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Online Merchant</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Corporate</p></a>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Business Owner</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Content Marketing</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Online Merchant</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Corporate</p></a>
                 </div>
                 <div class="col-6 hover-manu" style="padding-right: 20px !important;padding-left: 20px !important;width: 260px !important;">
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Services-Products</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 182px;height: 0px;">
-                  <router-link to="/Solutions/Fuse"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Fuse Advertising</p></router-link>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE Agency</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Kaikong Content Marketing</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Beary Web & Tech Service</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Akita Fulfillment</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Shipmunk : Dropshipping</p></a>
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Oc2Plus : Customer Data<br>Platform</p></a> 
+                  <router-link @click="scrollToTop" to="/Solutions/Fuse"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Fuse Advertising</p></router-link><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE Agency</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Kaikong Content Marketing</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Beary Web & Tech Service</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Akita Fulfillment</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Shipmunk : Dropshipping</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Oc2Plus : Customer Data<br>Platform</p></a> 
                 </div>
               </div>
             </ul>
           </li>
           <li class="nav-item navbar-item">
-            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/AboutUs">About Us</router-link>
+            <router-link @click="scrollToTop" class="nav-link border-menu text-c-menu" aria-current="page" to="/AboutUs">About Us</router-link>
           </li>
           <li class="nav-item navbar-item">
-            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Portfolio">Portfolio</router-link>
+            <router-link @click="scrollToTop" class="nav-link border-menu text-c-menu" aria-current="page" to="/Portfolio">Portfolio</router-link>
           </li>
           <li class="nav-item navbar-item">
-            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Blog">Blog</router-link>
+            <router-link @click="scrollToTop" class="nav-link border-menu text-c-menu" aria-current="page" to="/Blog">Blog</router-link>
           </li>
           <li class="nav-item navbar-item">
-            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/ContactUs">Contact Us</router-link>
+            <router-link @click="scrollToTop" class="nav-link border-menu text-c-menu" aria-current="page" to="/ContactUs">Contact Us</router-link>
           </li>
           <li class="nav-item navbar-item" style="border-radius: 0px 50px 50px 0px;">
-            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/JoinUs">Join Us</router-link>
+            <router-link @click="scrollToTop" class="nav-link border-menu text-c-menu" aria-current="page" to="/JoinUs">Join Us</router-link>
           </li>
         </ul>
       </div>
@@ -241,6 +241,9 @@ export default {
   methods: {
     toggle(){
         this.component = this.menu;
+    },
+    scrollToTop() {
+        window.scrollTo(0,0);
     }
   }
 }
@@ -254,9 +257,11 @@ export default {
 
 .hover-manu a p {
   color: #50151C !important;
-  display: block;
+  display: inline-block;
   padding-bottom: 10px;
   position: relative;
+  padding-bottom: 5px !important;
+  margin-bottom: 10px !important;
 }
 .hover-manu a p:after {    
   background: none repeat scroll 0 0 transparent;

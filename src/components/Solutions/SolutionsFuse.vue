@@ -48,8 +48,13 @@
                         </div>
                         <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
                             <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">Digital Advertising</span></h2>
-                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">บริการยิงแอดโฆษณาบนช่องทาง Social Media ที่ครอบคลุมในกลุ่ม ทั้ง 7 ช่อง ทางทั้ง Facebook, Google, LINE, Instagram, Twitter, YouTube และ Tiktok...</p>
-                            <i class="bi bi-chevron-down pe-2" style="float:right"></i>
+                            <p v-if="isHidden == false" class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">บริการยิงแอดโฆษณาบนช่องทาง Social Media ที่ครอบคลุมในกลุ่ม ทั้ง 7 ช่อง ทางทั้ง Facebook, Google, LINE, Instagram, Twitter, YouTube และ Tiktok...</p>
+                            <p v-if="isHidden == true" class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">
+                                บริการยิงแอดโฆษณาบนช่องทาง Social Media ที่ครอบคลุมในกลุ่ม ทั้ง 7 ช่อง ทางทั้ง Facebook, Google, LINE, Instagram, Twitter, YouTube และ Tiktok
+                                บริการยิงแอดโฆษณาบนช่องทาง Social Media ที่ครอบคลุมในกลุ่ม ทั้ง 7 ช่อง ทางทั้ง Facebook, Google, LINE, Instagram, Twitter, YouTube และ Tiktok
+                                บริการยิงแอดโฆษณาบนช่องทาง Social Media ที่ครอบคลุมในกลุ่ม ทั้ง 7 ช่อง ทางทั้ง Facebook, Google, LINE, Instagram, Twitter, YouTube และ Tiktok
+                            </p>
+                            <i class="bi bi-chevron-down pe-2" style="float:right" @click="isHidden = !isHidden"></i>
                         </div>
                     </div>
                     <div class="row mt-5 p-custom-2 d-flex">
@@ -162,7 +167,8 @@ export default {
   },
   data () {
         return {
-            type: 'Fuse'
+            type: 'Fuse',
+            isHidden: false
     }
   }
 }
