@@ -9,7 +9,7 @@
                             <p class="text-s-16 mt-150" style="color:#FFFFFC;">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">Fuse</font></p>
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
-                                    <font class="font-wght" style="font-size:64px;color:#FFFFFC">DIGITAL <br>ADVERTISING</font>
+                                    <font class="font-wght" style="font-size:62px;color:#FFFFFC">DIGITAL <br>ADVERTISING</font>
                                     <p class="text-s-16 mt-3" style="color:#FFFFFC">Fuse by sellsuki ผู้ให้บริการด้านการทำ social media marketing และเป็นที่ปรึกษาการตลาดที่ช่วยดูแลตั้งแต่การวางแผนตลอดจน การทำโฆษณา หากลุ่มลุกค้า</p>
                                 </td>
                             </table>

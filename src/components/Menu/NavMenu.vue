@@ -12,9 +12,9 @@
           <li class="nav-item navbar-item">
             <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Services <i class="bi bi-chevron-down" style="font-size: 15px;"></i></router-link>
             <ul class="dropdown" style="padding: 30px 50px 30px 50px;width: 1380px;left: 50%;">
-              <i class="bi bi-caret-up-fill" style="font-size: 40px;position: absolute;left: 29.5%;color: #ffffff;bottom: 440px;"></i>
+              <i class="bi bi-caret-up-fill pe-5 ps-5" style="font-size: 40px;position: absolute;left: 355px;color: #ffffff;bottom: 440px;"></i>
               <div class="row">
-                <div class="col-2" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;height:415px">
+                <div class="col-2 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;height:415px">
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Digital Marketing</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">
                   <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Influencer Marketing</p></a>
@@ -24,7 +24,7 @@
                   <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Social Listening</p></a>
                   <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Ads Intelligence</p></a>
                 </div>
-                <div class="col-2" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;width: 220px !important;">
+                <div class="col-2 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;width: 220px !important;">
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Digital Advertising</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 182px;height: 0px;">
                   <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Tiktok Ads</p></a>
@@ -35,9 +35,9 @@
                   <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Twitter Ads</p></a>
                   <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Line Ads Platform</p></a> 
                 </div>
-                <div class="col-2" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;">
+                <div class="col-2 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;">
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Business Consult</font></a>
-                  <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">                  
+                  <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">                
                   <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Marketing Strategy</p></a>
                   <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;margin-bottom: 2rem;">e-Distributor</p></a>
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">LINE Service</font></a>
@@ -46,7 +46,7 @@
                   <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE OA</p></a>
                   <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE Chatbot</p></a>
                 </div>
-                <div class="col-4" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;width: 405px !important;">
+                <div class="col-4 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;width: 405px !important;">
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">MarTech</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 360px;height: 0px;">
                   <div class="row">
@@ -68,7 +68,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-2" style="padding-right: 20px !important;padding-left: 20px !important;">
+                <div class="col-2 hover-manu" style="padding-right: 20px !important;padding-left: 20px !important;">
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">E-commerce Operation</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 214px;height: 0px;">
                   <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Fulfillment Service</p></a>
@@ -84,9 +84,9 @@
           <li class="nav-item navbar-item">
             <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Solutions <i class="bi bi-chevron-down" style="font-size: 15px;"></i></router-link>
             <ul class="dropdown" style="padding: 30px 32px 30px 32px;width: 540px;left: 43%;">
-              <i class="bi bi-caret-up-fill" style="font-size: 40px;position: absolute;left: 43.5%;color: #ffffff;bottom: 440px;"></i>
+              <i class="bi bi-caret-up-fill pe-5 ps-5" style="font-size: 40px;position: absolute;left: 185px;color: #ffffff;bottom: 440px;"></i>
               <div class="row">
-                <div class="col-6" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;height:415px;width: 235px !important;">
+                <div class="col-6 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;height:415px;width: 235px !important;">
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Types of Business</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">
                   <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Business Owner</p></a>
@@ -94,7 +94,7 @@
                   <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Online Merchant</p></a>
                   <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Corporate</p></a>
                 </div>
-                <div class="col-6" style="padding-right: 20px !important;padding-left: 20px !important;width: 260px !important;">
+                <div class="col-6 hover-manu" style="padding-right: 20px !important;padding-left: 20px !important;width: 260px !important;">
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Services-Products</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 182px;height: 0px;">
                   <router-link to="/Solutions/Fuse"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Fuse Advertising</p></router-link>
@@ -247,6 +247,32 @@ export default {
 </script>
 
 <style>
+.hover-manu a p:hover{
+  color: #F38100 !important;
+  font-weight: 700;
+}
+
+.hover-manu a p {
+  color: #50151C !important;
+  display: block;
+  padding-bottom: 10px;
+  position: relative;
+}
+.hover-manu a p:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  background: #F38100;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.hover-manu a p:hover:after { 
+  width: 100%; 
+}
+
 .sidenav {
   height: 100%;
   width: 80%;
