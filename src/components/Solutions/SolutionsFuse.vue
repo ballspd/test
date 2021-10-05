@@ -115,7 +115,7 @@
                 </div>
                 <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-5 p-5" style="background: linear-gradient(0, #EAE6FF 0%, rgba(234, 230, 255, 0) 100%);">
                     <div class="row">
-                        <div class="col-12 mt-4 text-center"><h1 class="text-s-30 text-w-700" style="color:#182E9C">ทำไมลูกค้าถึงไว้ใจให้เราดูแล</h1></div>    
+                        <div class="col-12 mt-4 mb-2 text-center"><h1 class="text-s-30 text-w-700" style="color:#182E9C">ทำไมลูกค้าถึงไว้ใจให้เราดูแล</h1></div>    
                     </div>
                     <div class="row mt-5 text-center">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">

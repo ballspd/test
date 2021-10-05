@@ -47,14 +47,30 @@
                     </div>
                   </div>
                   <div class="text-center" style="width: 100%;margin-top:32px">
-                    <button type="submit" class="btn-solution fuse-color button"><span>Submit</span></button>
+                    <button type="submit" class="btn-solution button" :class="{'fuse-color':type === 'Fuse','line-color':type === 'Line','akita-color':type === 'Akita'}"><span>Submit</span></button>
                   </div>
                 </form>
               </div>
               <div class="col-5 text-center">
-                <img class="item-center" src="./../../assets/SolutionsFuse/logo.png" alt="">
-                <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-                <img class="position-bu" src="./../../assets/SolutionsFuse/Group171.png" alt="">
+                <div v-if="type === 'Fuse'">
+                  <img class="item-center" src="./../../assets/SolutionsFuse/logo.png" alt="">
+                  <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
+                  <img class="position-bu" src="./../../assets/SolutionsFuse/Group171.png" alt="">
+                </div>
+                <div v-if="type === 'Line'">
+                  <img class="item-center" src="./../../assets/SolutionsLine/logo.png" alt="">
+                  <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
+                  <img class="item-center" width="360" src="./../../assets/SolutionsLine/Line-qrcode.png" alt="">
+                  <img class="position-bu" src="./../../assets/SolutionsLine/Line-bu.png" alt="">
+                </div>
+                <div v-if="type === 'Akita'">
+                  <img class="item-center" src="./../../assets/SolutionsAkita/logo.png" alt="">
+                  <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
+                  <img class="item-center" width="360" src="./../../assets/SolutionsAkita/Akita-qrcode.png" alt="">
+                  <div style="width:100%">
+                    <img class="position-bu" width="220" src="./../../assets/SolutionsAkita/Akita-bu.png" alt="">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -110,7 +126,7 @@
                         <textarea class="form-control mt-2" style="height:130px" placeholder="Message*"></textarea>
                       </div>
                     <div class="text-center mt-4 mb-2" style="width: 100%">
-                      <button type="submit" class="btn-solution fuse-color button" style="width: 150px !important"><span>Submit</span></button>
+                      <button type="submit" class="btn-solution button" :class="{'fuse-color':type === 'Fuse','line-color':type === 'Line','akita-color':type === 'Akita'}" style="width: 150px !important"><span>Submit</span></button>
                     </div>
                   </form>
                 </div>
@@ -119,9 +135,23 @@
           </div>
         </div>
         <div class="text-center mt-4" style="height: 655px;">
+            <div v-if="type === 'Fuse'">
               <img class="item-center" src="./../../assets/SolutionsFuse/logo.png" alt="">
               <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
               <img class="position-bu" src="./../../assets/SolutionsFuse/Group171.png" alt="">
+            </div>
+            <div v-if="type === 'Line'">
+              <img class="item-center" src="./../../assets/SolutionsLine/logo.png" alt="">
+              <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
+              <img class="item-center" width="360" src="./../../assets/SolutionsLine/Line-qrcode.png" alt="">
+              <img class="position-bu" src="./../../assets/SolutionsLine/Line-bu.png" alt="">
+            </div>
+            <div v-if="type === 'Akita'">
+              <img class="item-center" src="./../../assets/SolutionsAkita/logo.png" alt="">
+              <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
+              <img class="item-center" width="360" src="./../../assets/SolutionsAkita/Akita-qrcode.png" alt="">
+              <img class="position-bu" src="./../../assets/SolutionsAkita/Akita-bu.png" alt="">
+            </div>
         </div>
       </div>
     </div>
@@ -129,7 +159,8 @@
 
 <script>
 export default {
-    name: 'SolutionsGetQuote'
+    name: 'SolutionsGetQuote',
+    props:['type']
 }
 </script>
 
@@ -154,9 +185,18 @@ export default {
   border: 1px solid #542D84 !important
 }
 
+.line-color{
+  background-color: #2AAF5F !important;
+  border: 1px solid #2AAF5F !important
+}
+
+.akita-color{
+  background-color: #0D3050 !important;
+  border: 1px solid #0D3050 !important
+}
+
 .position-bu{
-  margin-top: 360px;
-  position: absolute;
-  margin-left: -65px;
+  margin-bottom: -90px;
+  margin-top: 25px;
 }
 </style>

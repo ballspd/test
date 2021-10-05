@@ -580,6 +580,7 @@
                                     </div>
                                 </div>
                             </div>
+                            {{ info }}
                         </div>
                     </div>
                 </div>
@@ -595,9 +596,9 @@ export default {
     name: 'blog',
     data () {
         return {
-        isActive: true,
+            isActive: true,
+        }
     }
-  }
 }
 </script>
 

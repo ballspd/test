@@ -7,6 +7,8 @@ import ContactUs from "@/components/ContactUs.vue";
 import JoinUs from "@/components/JoinUs.vue";
 import JoinUsForm from "@/components/JoinUsForm.vue";
 import SolutionsFuse from "@/components/Solutions/SolutionsFuse.vue";
+import SolutionsLine from "@/components/Solutions/SolutionsLine.vue";
+import SolutionsAkita from "@/components/Solutions/SolutionsAkita.vue";
 
 const routes = [
   {
@@ -48,6 +50,16 @@ const routes = [
     path: "/Solutions/Fuse",
     name: "SolutionsFuse",
     component: SolutionsFuse,
+  },
+  {
+    path: "/Solutions/Line",
+    name: "SolutionsLine",
+    component: SolutionsLine,
+  },
+  {
+    path: "/Solutions/Akita",
+    name: "SolutionsAkita",
+    component: SolutionsAkita,
   }
 ];
 

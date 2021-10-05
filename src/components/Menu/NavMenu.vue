@@ -98,10 +98,10 @@
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Services-Products</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 182px;height: 0px;">
                   <router-link @click="scrollToTop" to="/Solutions/Fuse"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Fuse Advertising</p></router-link><br>
-                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE Agency</p></a><br>
+                  <router-link @click="scrollToTop" to="/Solutions/Line"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE Agency</p></router-link><br>
                   <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Kaikong Content Marketing</p></a><br>
                   <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Beary Web & Tech Service</p></a><br>
-                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Akita Fulfillment</p></a><br>
+                  <router-link @click="scrollToTop" to="/Solutions/Akita"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Akita Fulfillment</p></router-link><br>
                   <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Shipmunk : Dropshipping</p></a><br>
                   <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Oc2Plus : Customer Data<br>Platform</p></a> 
                 </div>

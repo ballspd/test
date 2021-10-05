@@ -5,8 +5,10 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 import 'animate.css/animate.min.css'
 import router from './router'
 import VueGoogleMaps from '@fawmi/vue-google-maps'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
-createApp(App).use(router).use(VueGoogleMaps, {
+createApp(App).use(router).use(VueAxios, axios).use(VueGoogleMaps, {
     load: {
         key: 'AIzaSyDTu9fOaHvHAANQVY9mUyKJ6ykTnCLLDFU',
     },
