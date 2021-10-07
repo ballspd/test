@@ -99,11 +99,11 @@
                   <hr style="border: 1px solid #E7E7EA;width: 182px;height: 0px;">
                   <router-link @click="scrollToTop" to="/Solutions/Fuse"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Fuse Advertising</p></router-link><br>
                   <router-link @click="scrollToTop" to="/Solutions/Line"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE Agency</p></router-link><br>
-                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Kaikong Content Marketing</p></a><br>
-                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Beary Web & Tech Service</p></a><br>
+                  <router-link @click="scrollToTop" to="/Solutions/Kaikong"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Kaikong Content Marketing</p></router-link><br>
+                  <router-link @click="scrollToTop" to="/Solutions/Beary"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Beary Web & Tech Service</p></router-link><br>
                   <router-link @click="scrollToTop" to="/Solutions/Akita"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Akita Fulfillment</p></router-link><br>
-                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Shipmunk : Dropshipping</p></a><br>
-                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Oc2Plus : Customer Data<br>Platform</p></a> 
+                  <router-link @click="scrollToTop" to="/Solutions/Shipmunk"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Shipmunk : Dropshipping</p></router-link><br>
+                  <router-link @click="scrollToTop" to="/Solutions/Oc2Plus"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Oc2Plus : Customer Data<br>Platform</p></router-link> 
                 </div>
               </div>
             </ul>

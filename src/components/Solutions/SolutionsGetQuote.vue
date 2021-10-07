@@ -47,7 +47,8 @@
                     </div>
                   </div>
                   <div class="text-center" style="width: 100%;margin-top:32px">
-                    <button type="submit" class="btn-solution button" :class="{'fuse-color':type === 'Fuse','line-color':type === 'Line','akita-color':type === 'Akita'}"><span>Submit</span></button>
+                    <button type="submit" class="btn-solution button" 
+                      :class="{'fuse-color':type === 'Fuse','line-color':type === 'Line','akita-color':type === 'Akita','beary-color':type === 'Beary'}"><span>Submit</span></button>
                   </div>
                 </form>
               </div>
@@ -69,6 +70,14 @@
                   <img class="item-center" width="360" src="./../../assets/SolutionsAkita/Akita-qrcode.png" alt="">
                   <div style="width:100%">
                     <img class="position-bu" width="220" src="./../../assets/SolutionsAkita/Akita-bu.png" alt="">
+                  </div>
+                </div>
+                <div v-if="type === 'Beary'">
+                  <img class="item-center" src="./../../assets/SolutionsBeary/logo.png" alt="">
+                  <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
+                  <img class="item-center" width="360" src="./../../assets/SolutionsBeary/Beary-qrcode.png" alt="">
+                  <div style="width:100%">
+                    <img class="position-bu" width="220" src="./../../assets/SolutionsBeary/Beary-bu.png" alt="">
                   </div>
                 </div>
               </div>
@@ -152,6 +161,12 @@
               <img class="item-center" width="360" src="./../../assets/SolutionsAkita/Akita-qrcode.png" alt="">
               <img class="position-bu" src="./../../assets/SolutionsAkita/Akita-bu.png" alt="">
             </div>
+            <div v-if="type === 'Beary'">
+              <img class="item-center" src="./../../assets/SolutionsBeary/logo.png" alt="">
+              <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
+              <img class="item-center" width="360" src="./../../assets/SolutionsBeary/Beary-qrcode.png" alt="">
+              <img class="position-bu" src="./../../assets/SolutionsBeary/Beary-bu.png" alt="">
+            </div>
         </div>
       </div>
     </div>
@@ -195,8 +210,15 @@ export default {
   border: 1px solid #0D3050 !important
 }
 
+.beary-color{
+  background-color: #0D3050 !important;
+  border: 1px solid #0D3050 !important
+}
+
 .position-bu{
-  margin-bottom: -90px;
+  margin-bottom: -120px;
   margin-top: 25px;
+  position: relative;
+  z-index: 1;
 }
 </style>

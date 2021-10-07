@@ -281,6 +281,11 @@ html, body {
   background-color: #FDF5E8 !important;
 }
 
+.footer-position{
+  position: relative;
+  z-index: 99;
+}
+
 a{
   text-decoration: none !important;
 }

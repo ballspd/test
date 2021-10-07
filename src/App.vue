@@ -3,7 +3,7 @@
 
   <router-view></router-view>
 
-  <div class="background-main">
+  <div class="background-main footer-position">
     <div class="container">
         <div class="crad">
           <div style="background-color: #15304E">

@@ -10,15 +10,15 @@
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:62px;color:#FFFFFC">AKITA<br>FULFILLMENT</h1>
-                                    <h2 class="text-s-24 pt-2 pb-2" style="font-size:32px;color:#FFFFFC">“บริการคลังสินค้าครบวงจร”</h2>
+                                    <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#FFFFFC">“บริการคลังสินค้าครบวงจร”</h2>
                                     <p class="text-s-16 mt-3" style="color:#FFFFFC">พร้อมอยู่คู่เคียงข้างทุกธุรกิจ เพื่อส่งมอบประสบการณ์ การจัดส่งสินค้าที่ดีที่สุดสู่มือลูกค้า</p>
                                 </td>
                             </table>
                         </div>
                         <div class="d-block d-lg-none text-center text-md-start ps-4 pe-4">
                             <p class="text-s-14 mt-4 pb-4 text-start" style="color:#FFFFFC">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">Akita</font></p>
-                            <h1 class="font-wght" style="font-size:32px;color:#FFFFFC">AKITA FULFILLMENT</h1>
-                            <h2 class="text-s-24" style="font-size:32px;color:#FFFFFC">“บริการคลังสินค้าครบวงจร”</h2>
+                            <h1 class="font-wght text-s-32" style="color:#FFFFFC">AKITA FULFILLMENT</h1>
+                            <h2 class="text-s-24 text-w-700 text-s-30" style="color:#FFFFFC">“บริการคลังสินค้าครบวงจร”</h2>
                             <p class="text-s-14 p-4 p-md-0 ps-5 pe-5" style="color:#FFFFFC">พร้อมอยู่คู่เคียงข้างทุกธุรกิจ เพื่อส่งมอบประสบการณ์ การจัดส่งสินค้าที่ดีที่สุดสู่มือลูกค้า</p>
                         </div>
                     </div>
@@ -35,22 +35,22 @@
                     <div class="row">
                         <div class="col-12 mt-4 text-center"><h1 class="text-s-30 text-w-700" style="color:#444444">ทำไมลูกค้าถึงไว้ใจให้เราดูแล</h1></div>    
                     </div>
-                    <div class="row mt-5 text-center">
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="row mt-5 ps-5 pe-5 text-center">
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2" style="background-color: #F76D22;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto" src="./../../assets/SolutionsLine/icon-Line-1.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsLine/icon-Line-1.png"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#373737">เก็บ</h2>
                         </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2" style="background-color: #143555;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto" src="./../../assets/SolutionsLine/icon-Line-1.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsLine/icon-Line-1.png"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#373737">เเพ๊ค</h2>
                         </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2" style="background-color: #F76D22;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto" src="./../../assets/SolutionsLine/icon-Line-1.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsLine/icon-Line-1.png"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#373737">ส่ง</h2>
                         </div>     
@@ -86,7 +86,7 @@
                 </div>
                 <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-5 p-5" style="background: linear-gradient(0, rgba(247, 109, 34, 0.9) 0%, rgba(249, 158, 30, 0) 86.22%);">
                     <div class="row">
-                        <div class="col-12 mt-4 mb-2 text-center"><h1 class="text-s-30 text-w-700" style="color:#143555">มาตรฐานการให้บริการ (Brand Value)</h1></div>    
+                        <div class="col-12 mt-4 mb-2 text-center"><h1 class="text-s-30 text-w-700" style="color:#143555">มาตรฐานการให้บริการ (BRAND VALUE)</h1></div>    
                     </div>
                     <div class="row mt-5 text-center">
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
@@ -185,12 +185,22 @@ export default {
     .mt-custom{
         margin-top: -35px !important;
     }
+    .bg-icon-single{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .mt-custom{
         margin-top: -35px !important;
+    }
+    .bg-icon-single{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
     }
 }
 
@@ -199,12 +209,22 @@ export default {
     .mt-custom{
         margin-top: 3rem!important;
     }
+    .bg-icon-single{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .mt-custom{
         margin-top: 3rem!important;
+    }
+    .bg-icon-single{
+        width: 146px;
+        height: 146px;
+        border-radius: 50%;
     }
 } 
 
@@ -223,6 +243,11 @@ export default {
     }
     .img-banner-top{
         margin-top: 80px;
+    }
+    .bg-icon-single{
+        width: 146px;
+        height: 146px;
+        border-radius: 50%;
     }
 }
 </style>
