@@ -48,7 +48,14 @@
                   </div>
                   <div class="text-center" style="width: 100%;margin-top:32px">
                     <button type="submit" class="btn-solution button" 
-                      :class="{'fuse-color':type === 'Fuse','line-color':type === 'Line','akita-color':type === 'Akita','beary-color':type === 'Beary'}"><span>Submit</span></button>
+                      :class="{'fuse-color':type === 'Fuse',
+                               'line-color':type === 'Line',
+                               'akita-color':type === 'Akita',
+                               'beary-color':type === 'Beary',
+                               'kaikong-color':type === 'Kaikong',
+                               'shipmunk-color':type === 'Shipmunk',
+                               'oc2plus-color':type === 'Oc2Plus',
+                               }"><span>Submit</span></button>
                   </div>
                 </form>
               </div>
@@ -56,29 +63,32 @@
                 <div v-if="type === 'Fuse'">
                   <img class="item-center" src="./../../assets/SolutionsFuse/logo.png" alt="">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-                  <img class="position-bu" src="./../../assets/SolutionsFuse/Group171.png" alt="">
+                  <img class="item-center" width="320" src="./../../assets/SolutionsFuse/Fuse-qrcode.png" alt="">
+                  <img class="position-bu mt-5" src="./../../assets/SolutionsFuse/Fuse-bu.png" alt="">
                 </div>
                 <div v-if="type === 'Line'">
                   <img class="item-center" src="./../../assets/SolutionsLine/logo.png" alt="">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-                  <img class="item-center" width="360" src="./../../assets/SolutionsLine/Line-qrcode.png" alt="">
+                  <img class="item-center" width="320" src="./../../assets/SolutionsLine/Line-qrcode.png" alt="">
                   <img class="position-bu" src="./../../assets/SolutionsLine/Line-bu.png" alt="">
                 </div>
                 <div v-if="type === 'Akita'">
                   <img class="item-center" src="./../../assets/SolutionsAkita/logo.png" alt="">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-                  <img class="item-center" width="360" src="./../../assets/SolutionsAkita/Akita-qrcode.png" alt="">
-                  <div style="width:100%">
-                    <img class="position-bu" width="220" src="./../../assets/SolutionsAkita/Akita-bu.png" alt="">
-                  </div>
+                  <img class="item-center" width="320" src="./../../assets/SolutionsAkita/Akita-qrcode.png" alt="">
+                  <img class="position-bu" width="220" src="./../../assets/SolutionsAkita/Akita-bu.png" alt="">
                 </div>
                 <div v-if="type === 'Beary'">
                   <img class="item-center" src="./../../assets/SolutionsBeary/logo.png" alt="">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-                  <img class="item-center" width="360" src="./../../assets/SolutionsBeary/Beary-qrcode.png" alt="">
-                  <div style="width:100%">
+                  <img class="item-center" width="320" src="./../../assets/SolutionsBeary/Beary-qrcode.png" alt="">
                     <img class="position-bu" width="220" src="./../../assets/SolutionsBeary/Beary-bu.png" alt="">
-                  </div>
+                </div>
+                <div v-if="type === 'Kaikong'">
+                  <img class="item-center" src="./../../assets/SolutionsKaikong/logo.png" alt="">
+                  <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
+                  <img class="item-center" width="320" src="./../../assets/SolutionsKaikong/Kaikong-qrcode.png" alt="">
+                  <img class="position-bu" width="220" src="./../../assets/SolutionsKaikong/Kaikong-bu.png" alt="">
                 </div>
               </div>
             </div>
@@ -135,7 +145,7 @@
                         <textarea class="form-control mt-2" style="height:130px" placeholder="Message*"></textarea>
                       </div>
                     <div class="text-center mt-4 mb-2" style="width: 100%">
-                      <button type="submit" class="btn-solution button" :class="{'fuse-color':type === 'Fuse','line-color':type === 'Line','akita-color':type === 'Akita'}" style="width: 150px !important"><span>Submit</span></button>
+                      <button type="submit" class="btn-solution button" :class="{'fuse-color':type === 'Fuse','line-color':type === 'Line','akita-color':type === 'Akita','kaikong-color':type === 'Kaikong'}" style="width: 150px !important"><span>Submit</span></button>
                     </div>
                   </form>
                 </div>
@@ -147,25 +157,32 @@
             <div v-if="type === 'Fuse'">
               <img class="item-center" src="./../../assets/SolutionsFuse/logo.png" alt="">
               <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-              <img class="position-bu" src="./../../assets/SolutionsFuse/Group171.png" alt="">
+              <img class="item-center" width="320" src="./../../assets/SolutionsFuse/Fuse-qrcode.png" alt="">
+              <img class="position-bu mt-5" src="./../../assets/SolutionsFuse/Fuse-bu.png" alt="">
             </div>
             <div v-if="type === 'Line'">
               <img class="item-center" src="./../../assets/SolutionsLine/logo.png" alt="">
               <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-              <img class="item-center" width="360" src="./../../assets/SolutionsLine/Line-qrcode.png" alt="">
+              <img class="item-center" width="320" src="./../../assets/SolutionsLine/Line-qrcode.png" alt="">
               <img class="position-bu" src="./../../assets/SolutionsLine/Line-bu.png" alt="">
             </div>
             <div v-if="type === 'Akita'">
               <img class="item-center" src="./../../assets/SolutionsAkita/logo.png" alt="">
               <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-              <img class="item-center" width="360" src="./../../assets/SolutionsAkita/Akita-qrcode.png" alt="">
+              <img class="item-center" width="320" src="./../../assets/SolutionsAkita/Akita-qrcode.png" alt="">
               <img class="position-bu" src="./../../assets/SolutionsAkita/Akita-bu.png" alt="">
             </div>
             <div v-if="type === 'Beary'">
               <img class="item-center" src="./../../assets/SolutionsBeary/logo.png" alt="">
               <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-              <img class="item-center" width="360" src="./../../assets/SolutionsBeary/Beary-qrcode.png" alt="">
+              <img class="item-center" width="320" src="./../../assets/SolutionsBeary/Beary-qrcode.png" alt="">
               <img class="position-bu" src="./../../assets/SolutionsBeary/Beary-bu.png" alt="">
+            </div>
+            <div v-if="type === 'Kaikong'">
+              <img class="item-center" src="./../../assets/SolutionsKaikong/logo.png" alt="">
+              <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
+              <img class="item-center" width="320" src="./../../assets/SolutionsKaikong/Kaikong-qrcode.png" alt="">
+              <img class="position-bu" width="120" src="./../../assets/SolutionsKaikong/Kaikong-bu.png" alt="">
             </div>
         </div>
       </div>
@@ -215,9 +232,24 @@ export default {
   border: 1px solid #0D3050 !important
 }
 
+.kaikong-color{
+  background-color: #0D3050 !important;
+  border: 1px solid #0D3050 !important
+}
+
+.shipmunk-color{
+  background-color: #B1151B !important;
+  border: 1px solid #B1151B !important
+}
+
+.oc2plus-color{
+  background-color: #0D3050 !important;
+  border: 1px solid #0D3050 !important
+}
+
 .position-bu{
   margin-bottom: -120px;
-  margin-top: 25px;
+  margin-top: 65px;
   position: relative;
   z-index: 1;
 }

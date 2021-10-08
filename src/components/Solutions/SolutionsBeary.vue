@@ -18,7 +18,7 @@
                         <div class="d-block d-lg-none text-center text-md-start ps-4 pe-4">
                             <p class="text-s-14 mt-4 pb-4 text-start" style="color:#FFFFFC">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">Beary Tech</font></p>
                             <h1 class="font-wght text-s-32" style="color:#FFFFFC">BEARY TECH</h1>
-                            <h2 class="text-s-24 text-w-700 text-s-30" style="color:#FFFFFC">“บริการพัฒนา และ ทำเว็บไซต์ ทุกรูปแบบ”</h2>
+                            <h2 class="text-s-24 text-w-700 text-s-30 ps-5 pe-5" style="color:#FFFFFC">“บริการพัฒนา และ ทำเว็บไซต์ ทุกรูปแบบ”</h2>
                             <p class="text-s-14 p-4 p-md-0 ps-5 pe-5" style="color:#FFFFFC">Beary Tech ผู้ให้บริการ ทำเว็บไซต์ ครบวงจที่สามารถออกแบบ ให้เหมาะสมและตอบโจทย์ทุกความต้องการของผู้ใช้งาน เพื่อส่งมอบ ประสบการณ์ที่ดีที่สุด</p>
                         </div>
                     </div>

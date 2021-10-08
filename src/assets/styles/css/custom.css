@@ -613,7 +613,7 @@ ul li ul li {
 
   .item-center-absolute{
     position: absolute;
-    z-index: 99999;
+    z-index: 99;
     margin: auto;
     left: 50%;
     transform: translate(-50%, -50%);
