@@ -5,10 +5,16 @@
             <div class="row">
                 <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <p class="text-s-16 mt-150" style="color:#50151C;">Home > Join Us ><font class="text-s-16 font-wght" style="color:#50151C"> Lorem ipsum</font></p>
-                    <p class="font-wght text-s-30 text-center" style="color:#50151C">Lorem ipsum</p>
                 </div>
             </div>
-            <div class="crad mt-4 text-color-this-page">
+        </div>
+        <div class="bg mt-4">
+            <div style="background: rgba(0, 0, 0, 0.3);">
+                <div class="container" style="display: flex;height: 300px;"><font class="font-wght mt-auto mb-auto ms-4" style="font-size:64px;color:#FBFBFB">BLOG</font></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="crad mt-4 text-color-this-page" style="margin-top: -25px !important;">
                 <div class="row pt-xxl-1 pt-xl-1 pt-lg-1 pt-2 p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
                   <div class="col-12 ps-xxl-4 ps-xl-4 ps-1 pe-xxl-4 pe-xl-4 pe-1">
                        <form>
@@ -124,10 +130,10 @@ export default {
 <style scoped>
 
 .bg{
-  background: url('./../assets/image94.png');
+  background: url('./../assets/1-Developer.png');
   background-position: center;
   background-repeat: no-repeat;
-  height: 350px;
+  background-size: cover;
 }
 
 .text-color-this-page{

@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <PortfolioList :type="type"/>
+                        <component :is="'Portfolio'+type"/>
                     </div>
                 </div>
                 <div class="d-none d-xl-block d-xxl-block">
@@ -111,7 +111,7 @@
                                 <div class="item-center" style="border: 1px solid #E5E5E5;transform: rotate(180deg);width: 221px;height: 0px;"></div>
                             </div>
                             <div class="col-9">
-                                <PortfolioList :type="type"/>
+                                <component :is="'Portfolio'+type"/>
                             </div>
                         </div>
                     </div>
@@ -126,12 +126,16 @@
 <script>
 import GetQuote from '@/components/GetQuote'
 import PortfolioList from '@/components/Portfolio/PortfolioList'
+import PortfolioAkita from '@/components/Portfolio/PortfolioAkita'
+import PortfolioFuse from '@/components/Portfolio/PortfolioFuse'
 
 export default {
     name: 'Portfolio',
       components: {
         GetQuote,
-        PortfolioList
+        PortfolioList,
+        PortfolioAkita,
+        PortfolioFuse
     },
     data () {
         return {

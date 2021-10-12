@@ -84,7 +84,7 @@
                             <p class="mt-3" style="line-height: 2;"><i class="bi bi-dot"></i> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
                           </div>
                           <div class="text-center mt-5 pb-4" style="width: 100%">
-                              <router-link class="btn btn-orange button" to="/JoinUsForm"><span class="text-white" style="font-size:18px">Apply Now</span></router-link>
+                              <router-link @click="scrollToTop" href="#" class="btn btn-orange button" to="/JoinUsForm"><span class="text-white" style="font-size:18px">Apply Now</span></router-link>
                           </div>
                         </div>
                       </div>
@@ -174,6 +174,11 @@
 
 export default {
     name: 'JoinUs',
+    methods: {
+      scrollToTop() {
+          window.scrollTo(0,0);
+      }
+  }
 }
 </script>
 

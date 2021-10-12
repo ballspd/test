@@ -1,18 +1,5 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Home from "@/components/Home.vue";
-import AboutUs from "@/components/AboutUs.vue";
-import Portfolio from "@/components/Portfolio.vue";
-import Blog from "@/components/Blog.vue";
-import ContactUs from "@/components/ContactUs.vue";
-import JoinUs from "@/components/JoinUs.vue";
-import JoinUsForm from "@/components/JoinUsForm.vue";
-import SolutionsFuse from "@/components/Solutions/SolutionsFuse.vue";
-import SolutionsLine from "@/components/Solutions/SolutionsLine.vue";
-import SolutionsAkita from "@/components/Solutions/SolutionsAkita.vue";
-import SolutionsBeary from "@/components/Solutions/SolutionsBeary.vue";
-import SolutionsKaikong from "@/components/Solutions/SolutionsKaikong.vue";
-import SolutionsShipmunk from "@/components/Solutions/SolutionsShipmunk.vue";
-import SolutionsOc2Plus from "@/components/Solutions/SolutionsOc2Plus.vue";
 
 const routes = [
   {
@@ -23,67 +10,72 @@ const routes = [
   {
     path: "/AboutUs",
     name: "AboutUs",
-    component: AboutUs,
+    component: () => import(/* webpackChunkName: "AboutUs" */ '@/components/AboutUs.vue')
   },
   {
     path: "/Portfolio",
     name: "Portfolio",
-    component: Portfolio,
+    component: () => import(/* webpackChunkName: "Portfolio" */ '@/components/Portfolio.vue')
+  },
+  {
+    path: "/Portfolio/Detail/",
+    name: "PortfolioDetail",
+    component: () => import(/* webpackChunkName: "Portfolio" */ '@/components/Portfolio/PortfolioDetail.vue')
   },
   {
     path: "/Blog",
     name: "Blog",
-    component: Blog,
+    component: () => import(/* webpackChunkName: "Blog" */ '@/components/Blog.vue')
   },
   {
     path: "/ContactUs",
     name: "ContactUs",
-    component: ContactUs,
+    component: () => import(/* webpackChunkName: "ContactUs" */ '@/components/ContactUs.vue')
   },
   {
     path: "/JoinUs",
     name: "JoinUs",
-    component: JoinUs,
+    component: () => import(/* webpackChunkName: "JoinUs" */ '@/components/JoinUs.vue')
   },
   {
     path: "/JoinUsForm",
     name: "JoinUsForm",
-    component: JoinUsForm,
+    component: () => import(/* webpackChunkName: "JoinUsForm" */ '@/components/JoinUsForm.vue')
   },
   {
     path: "/Solutions/Fuse",
     name: "SolutionsFuse",
-    component: SolutionsFuse,
+    component: () => import(/* webpackChunkName: "SolutionsFuse" */ '@/components/Solutions/SolutionsFuse.vue')
   },
   {
     path: "/Solutions/Line",
     name: "SolutionsLine",
-    component: SolutionsLine,
+    component: () => import(/* webpackChunkName: "SolutionsLine" */ '@/components/Solutions/SolutionsLine.vue')
   },
   {
     path: "/Solutions/Akita",
     name: "SolutionsAkita",
-    component: SolutionsAkita,
+    component: () => import(/* webpackChunkName: "SolutionsAkita" */ '@/components/Solutions/SolutionsAkita.vue')
   },
   {
     path: "/Solutions/Beary",
     name: "SolutionsBeary",
-    component: SolutionsBeary,
+    component: () => import(/* webpackChunkName: "SolutionsBeary" */ '@/components/Solutions/SolutionsBeary.vue')
   },
   {
     path: "/Solutions/Kaikong",
     name: "SolutionsKaikong",
-    component: SolutionsKaikong,
+    component: () => import(/* webpackChunkName: "SolutionsKaikong" */ '@/components/Solutions/SolutionsKaikong.vue')
   },
   {
     path: "/Solutions/Shipmunk",
     name: "SolutionsShipmunk",
-    component: SolutionsShipmunk,
+    component: () => import(/* webpackChunkName: "SolutionsShipmunk" */ '@/components/Solutions/SolutionsShipmunk.vue')
   },
   {
     path: "/Solutions/Oc2Plus",
     name: "SolutionsOc2Plus",
-    component: SolutionsOc2Plus,
+    component: () => import(/* webpackChunkName: "SolutionsOc2Plus" */ '@/components/Solutions/SolutionsOc2Plus.vue')
   },
 ];
 
