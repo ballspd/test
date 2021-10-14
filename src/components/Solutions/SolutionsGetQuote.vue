@@ -90,6 +90,12 @@
                   <img class="item-center" width="320" src="./../../assets/SolutionsKaikong/Kaikong-qrcode.png" alt="">
                   <img class="position-bu" width="220" src="./../../assets/SolutionsKaikong/Kaikong-bu.png" alt="">
                 </div>
+                <div v-if="type === 'Shipmunk'">
+                  <img class="item-center" src="./../../assets/SolutionsShipmunk/logo.png" alt="">
+                  <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
+                  <!-- <img class="item-center" width="320" src="./../../assets/SolutionsShipmunk/Shipmunk-qrcode.png" alt=""> -->
+                  <img class="position-bu" width="220" src="./../../assets/SolutionsShipmunk/Shipmunk-bu.png" alt="">
+                </div>
               </div>
             </div>
           </div>
@@ -183,6 +189,12 @@
               <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
               <img class="item-center" width="320" src="./../../assets/SolutionsKaikong/Kaikong-qrcode.png" alt="">
               <img class="position-bu" width="120" src="./../../assets/SolutionsKaikong/Kaikong-bu.png" alt="">
+            </div>
+            <div v-if="type === 'Shipmunk'">
+              <img class="item-center" src="./../../assets/SolutionsShipmunk/logo.png" alt="">
+              <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
+              <!-- <img class="item-center" width="320" src="./../../assets/SolutionsShipmunk/Shipmunk-qrcode.png" alt=""> -->
+              <img class="position-bu" width="120" src="./../../assets/SolutionsShipmunk/Shipmunk-bu.png" alt="">
             </div>
         </div>
       </div>
