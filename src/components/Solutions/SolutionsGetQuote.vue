@@ -96,6 +96,12 @@
                   <!-- <img class="item-center" width="320" src="./../../assets/SolutionsShipmunk/Shipmunk-qrcode.png" alt=""> -->
                   <img class="position-bu" width="220" src="./../../assets/SolutionsShipmunk/Shipmunk-bu.png" alt="">
                 </div>
+                <div v-if="type === 'Oc2Plus'">
+                  <img class="item-center" src="./../../assets/SolutionsOc2plus/logo.png" alt="">
+                  <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
+                  <!-- <img class="item-center" width="320" src="./../../assets/SolutionsOc2plus/Oc2plus-qrcode.png" alt=""> -->
+                  <img class="position-bu" src="./../../assets/SolutionsOc2plus/Oc2plus-bu.png" alt="">
+                </div>
               </div>
             </div>
           </div>
@@ -151,7 +157,16 @@
                         <textarea class="form-control mt-2" style="height:130px" placeholder="Message*"></textarea>
                       </div>
                     <div class="text-center mt-4 mb-2" style="width: 100%">
-                      <button type="submit" class="btn-solution button" :class="{'fuse-color':type === 'Fuse','line-color':type === 'Line','akita-color':type === 'Akita','kaikong-color':type === 'Kaikong'}" style="width: 150px !important"><span>Submit</span></button>
+                      <button type="submit" class="btn-solution button" 
+                      :class="{'fuse-color':type === 'Fuse',
+                               'line-color':type === 'Line',
+                               'akita-color':type === 'Akita',
+                               'beary-color':type === 'Beary',
+                               'kaikong-color':type === 'Kaikong',
+                               'shipmunk-color':type === 'Shipmunk',
+                               'oc2plus-color':type === 'Oc2Plus',
+                               }"><span>Submit</span>
+                      </button>
                     </div>
                   </form>
                 </div>
@@ -195,6 +210,12 @@
               <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
               <!-- <img class="item-center" width="320" src="./../../assets/SolutionsShipmunk/Shipmunk-qrcode.png" alt=""> -->
               <img class="position-bu" width="120" src="./../../assets/SolutionsShipmunk/Shipmunk-bu.png" alt="">
+            </div>
+            <div v-if="type === 'Oc2Plus'">
+              <img class="item-center" src="./../../assets/SolutionsOc2plus/logo.png" alt="">
+              <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
+              <!-- <img class="item-center" width="320" src="./../../assets/SolutionsShipmunk/Shipmunk-qrcode.png" alt=""> -->
+              <img class="position-bu" width="120" src="./../../assets/SolutionsOc2plus/Oc2plus-bu.png" alt="">
             </div>
         </div>
       </div>
@@ -255,8 +276,8 @@ export default {
 }
 
 .oc2plus-color{
-  background-color: #0D3050 !important;
-  border: 1px solid #0D3050 !important
+  background-color: #54ACDD !important;
+  border: 1px solid #54ACDD !important
 }
 
 .position-bu{

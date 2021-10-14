@@ -117,103 +117,191 @@
                         </div>
                     </div>
                 </div>
+                <div class="row mt-2 mb-5">
+                    <div class="col-12">
+                        <div class="d-none d-lg-block">
+                            <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators" style="top: 430px;">
+                                    <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="10000">
+                                        <div class="row">
+                                            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
+                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                            </div>
+                                            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
+                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                            </div>
+                                            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
+                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="10000">
+                                        <div class="row">
+                                            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
+                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                            </div>
+                                            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
+                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                            </div>
+                                            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
+                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="10000">
+                                        <div class="row">
+                                            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
+                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                            </div>
+                                            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
+                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                            </div>
+                                            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
+                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-block d-lg-none">
+                            <div id="carouselBannerMobile" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="10000">
+                                        <div class="col-12 d-flex justify-content-center" style="padding-top: 30px !important;">
+                                            <img width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <div class="col-12 d-flex justify-content-center" style="padding-top: 30px !important;">
+                                            <img width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-12 d-flex justify-content-center" style="padding-top: 30px !important;">
+                                            <img width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-indicators mt-3" style="position: relative;">
+                                    <button type="button" data-bs-target="#carouselBannerMobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselBannerMobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselBannerMobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-5 p-5" style="background: linear-gradient(0, #A2D7F0 0%, rgba(161, 215, 240, 0) 100%);">
                     <div class="row">
                         <div class="col-12 mt-4 mb-2 text-center"><h1 class="text-s-30 text-w-700" style="color:#182E9C">ทำไมต้องเลือก SHIPMUNK</h1></div>    
                     </div>
                     <div class="row mt-2">
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="card mt-4">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class="mt-1 ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
                                         <p class="text-s-16 text-w-700 mb-0">รู้ราคาขนส่งทันที พร้อมเปรียบเทียบ ราคาขนส่ง ให้เห็นตัวเลือกที่ตรงตาม ความต้องการของร้านค้ามากที่สุด</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="card mt-4">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class="mt-1 ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
                                         <p class="text-s-16 text-w-700 mb-0">จองขนส่งได้ล่วงหน้า ตามวันเวลาที่ ร้านค้าสะดวก</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="card mt-4">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class="mt-1 ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
                                         <p class="text-s-16 text-w-700 mb-0">จะส่งเองแบบ (Drop off) หรือให้ ขนส่ง ไปรับถึงบ้าน (Pick up) ก็ได้</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="card mt-4">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class="mt-1 ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
                                         <p class="text-s-16 text-w-700 mb-0">ชำระค่าขนส่งได้ทันที ผ่านช่องทาง ออนไลน์</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="card mt-4">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class="mt-1 ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
                                         <p class="text-s-16 text-w-700 mb-0">ติดตามสถานะการจัดส่งสินค้าได้ แบบ realtime ผ่าน LINE OA ของ Shipmunk</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="card mt-4">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class="mt-1 ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
                                         <p class="text-s-16 text-w-700 mb-0">พิมพ์ใบปะหน้า ฟรี!</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="card mt-4">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class="mt-1 ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
                                         <p class="text-s-16 text-w-700 mb-0">ใช้ระบบ ฟรี!</p>
                                     </div>
                                 </div>
                             </div>
                         </div>  
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="card mt-4">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class="mt-1 ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0">มีระบบสร้างรายงาน หรือ Dashboard & Statistic นำข้อมูลและสถิติไป วิเคราะห์ เพื่อพัฒนาแผนการตลาด</p>
+                                        <img class=" ms-2 me-2" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <p class="text-s-16 text-w-700 mb-0">มีระบบสร้างรายงาน หรือ Dashboard & Statistic นำข้อมูลและสถิติไปวิเคราะห์เพื่อพัฒนาแผนการตลาด</p>
                                     </div>
                                 </div>
                             </div>
                         </div>     
                     </div>
                 </div>
-                <div class="row mt-4 mb-4 d-none d-xl-block d-xxl-block">
-                    <div class="col-12">
-                    <table style="text-align:center;width:100%">
-                        <td><img class="img-fluid" src="./../../assets/logo/image113.png"></td>
-                        <td><img class="img-fluid" src="./../../assets/logo/image114.png"></td>
-                        <td><img class="img-fluid" src="./../../assets/logo/image115.png"></td>
-                        <td><img class="img-fluid" src="./../../assets/logo/image116.png"></td>
-                        <td><img class="img-fluid" src="./../../assets/logo/image117.png"></td>
-                        <td><img class="img-fluid" src="./../../assets/logo/image118.png"></td>
-                    </table>
+                <div class="row mt-0 mt-lg-5 mb-5 ms-5 me-5">
+                    <div class="col-4 col-lg-2">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/image113.png">
+                    </div>
+                    <div class="col-4 col-lg-2">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/image113.png">
+                    </div>
+                    <div class="col-4 col-lg-2">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/image113.png">
+                    </div>
+                    <div class="col-4 col-lg-2">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/image113.png">
+                    </div>
+                    <div class="col-4 col-lg-2">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/image113.png">
+                    </div>
+                    <div class="col-4 col-lg-2">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/image113.png">
                     </div>
                 </div>
                 <InterestingArticles/>
@@ -293,6 +381,14 @@ export default {
 
 .theme-border{
     border-bottom: 1px solid #081B65 !important;
+}
+
+.carousel-indicators {
+    opacity: .8;
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: #000 !important;
 }
 
 /* -------------------------#Responsive------------------------ */
