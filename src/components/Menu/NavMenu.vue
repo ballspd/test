@@ -83,7 +83,7 @@
           </li> -->
           <li class="nav-item navbar-item">
             <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Solutions <i class="bi bi-chevron-down" style="font-size: 15px;"></i></router-link>
-            <ul class="dropdown" style="padding: 30px 32px 30px 32px;width: 540px;left: 43%;">
+            <ul class="dropdown" style="padding: 30px 32px 30px 32px;width: 540px;margin-left: 75px;"> <!-- 43% -->
               <i class="bi bi-caret-up-fill pe-5 ps-5" style="font-size: 40px;position: absolute;left: 185px;color: #ffffff;bottom: 440px;"></i>
               <div class="row">
                 <div class="col-6 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;height:415px;width: 235px !important;">
