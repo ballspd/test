@@ -5,11 +5,11 @@
         <img src="./../../assets/logo-sellsuki.png" alt="" width="141.29" height="60" class="d-inline-block align-text-top">
       </a>
       <div class="ml-2">
-        <ul class="navbar-nav navbar-custom shadow text-s-16 text-w-500 menu-bar" style="padding:0px !important;width: 797px!important;">
+        <ul class="navbar-nav navbar-custom shadow text-s-16 text-w-500 menu-bar" style="padding:0px !important;width: 100% !important;"> <!-- 797px -->
           <li class="nav-item navbar-item" style="border-radius: 50px 0px 0px 50px;">
             <router-link @click="scrollToTop" style="padding-left:19px !important" class="nav-link text-c-menu" aria-current="page" to="/">Home</router-link>
           </li>
-          <li class="nav-item navbar-item">
+          <!-- <li class="nav-item navbar-item">
             <router-link @click="scrollToTop" class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Services <i class="bi bi-chevron-down" style="font-size: 15px;"></i></router-link>
             <ul class="dropdown" style="padding: 30px 50px 30px 50px;width: 1380px;left: 50%;">
               <i class="bi bi-caret-up-fill pe-5 ps-5" style="font-size: 40px;position: absolute;left: 355px;color: #ffffff;bottom: 440px;"></i>
@@ -80,7 +80,7 @@
                 </div>
               </div>
             </ul>
-          </li>
+          </li> -->
           <li class="nav-item navbar-item">
             <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Solutions <i class="bi bi-chevron-down" style="font-size: 15px;"></i></router-link>
             <ul class="dropdown" style="padding: 30px 32px 30px 32px;width: 540px;left: 43%;">

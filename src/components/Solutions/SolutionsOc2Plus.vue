@@ -55,11 +55,11 @@
                     </div>
                 </div>
                     <div class="row p-custom-2 d-flex ms-5 me-5">
-                        <div class="col-12 text-center mt-3 mt-lg-5"><h1 class="text-s-30 text-w-700 theme-text-main">รูปแบบของข้อมูลเมื่อทำ CDP</h1></div>
-                        <div class="col-12 col-lg-6 ps-lg-5 mt-3"><img src="./../../assets/SolutionsOc2plus/Oc2Plus-04-CDP-View.png" alt="Oc2Plus-04-CDP-View.png"></div>
-                        <div class="col-12 col-lg-6 ps-lg-5 mt-3"><img src="./../../assets/SolutionsOc2plus/Oc2Plus-05-CRM-View.png" alt="Oc2Plus-05-CRM-View.png"></div>
+                        <div class="col-12 text-center mt-3 mt-lg-5 mb-5"><h1 class="text-s-30 text-w-700 theme-text-main">รูปแบบของข้อมูลเมื่อทำ CDP</h1></div>
+                        <!-- <div class="col-12 col-lg-6 ps-lg-5 mt-3"><img src="./../../assets/SolutionsOc2plus/Oc2Plus-04-CDP-View.png" alt="Oc2Plus-04-CDP-View.png"></div>
+                        <div class="col-12 col-lg-6 ps-lg-5 mt-3"><img src="./../../assets/SolutionsOc2plus/Oc2Plus-05-CRM-View.png" alt="Oc2Plus-05-CRM-View.png"></div> -->
                 
-                        <!-- <div class="col-6 view">
+                        <div class="col-6 view">
                             <div class="card">
                                 <div class="card-view theme-background-main d-flex">
                                     <h1 class="m-auto text-s-24 text-w-700 text-white">CDV VIEW</h1>
@@ -67,16 +67,46 @@
                                 <div class="triangle-down-main"></div>
                                 <h1 class="mt-2 text-center text-s-24 text-w-700 text-drak">SELLSUKI</h1>
                                 <hr class="ms-auto me-auto m-0" style="width: 110px;color:#708090">
-                                <div class="row">
-                                    <div class="col-5"></div>
-                                    <div class="col-7"></div>
+                                <div class="text-s-14">
+                                    <div class="row p-4">
+                                        <div class="col-5 mt-1 text-w-700">Age : </div><div class="col-7 mt-1">7 yrs</div>
+                                        <div class="col-5 mt-1 text-w-700">Location : </div><div class="col-7 mt-1">10, 39 Ratchadaphisek Rd, Chan Kasem, Chatuchak, Bangkok</div>
+                                        <div class="col-5 mt-1 text-w-700">Opened mail : </div><div class="col-7 mt-1">25 sep 21</div>
+                                        <div class="col-5 mt-1 text-w-700">Visit Website : </div><div class="col-7 mt-1">27 sep 21</div>
+                                        <div class="col-5 mt-1 text-w-700">Browser : </div><div class="col-7 mt-1">Chrome</div>
+                                        <div class="col-5 mt-1 text-w-700">Occupation : </div><div class="col-7 mt-1">Business partner</div>
+                                        <div class="col-5 mt-1 text-w-700">Postal Code : </div><div class="col-7 mt-1">10900</div>
+                                        <div class="col-5 mt-1 text-w-700">Email : </div><div class="col-7 mt-1">Hello@sellsuki.com</div>
+                                        <div class="col-5 mt-1 text-w-700">Tell : </div><div class="col-7 mt-1">02 026 3250</div>
+                                        <div class="col-5 mt-1 text-w-700">Interest in : </div><div class="col-7 mt-1">Digital Marketing</div>
+                                    </div>
                                 </div>
+                                <hr class="ms-auto me-auto mt-auto mb-4" style="width: 110px;color:#708090">
                             </div>
-                        </div> -->
+                        </div>
+                        <div class="col-6 view">
+                            <div class="card">
+                                <div class="card-view theme-background-sub d-flex">
+                                    <h1 class="m-auto text-s-24 text-w-700 text-white">CDV VIEW</h1>
+                                </div>
+                                <div class="triangle-down-sub"></div>
+                                <h1 class="mt-2 text-center text-s-24 text-w-700 text-drak">SELLSUKI</h1>
+                                <hr class="ms-auto me-auto m-0" style="width: 110px;color:#708090">
+                                <div class="text-s-14">
+                                    <div class="row p-4">
+                                        <div class="col-5 mt-1 text-w-700">Opened mail : </div><div class="col-7 mt-1">25 sep 21</div>
+                                        <div class="col-5 mt-1 text-w-700">Browser : </div><div class="col-7 mt-1">Chrome</div>
+                                        <div class="col-5 mt-1 text-w-700">Email : </div><div class="col-7 mt-1">Hello@sellsuki.com</div>
+                                        <div class="col-5 mt-1 text-w-700">Tell : </div><div class="col-7 mt-1">02 026 3250</div>
+                                    </div>
+                                </div>
+                                <hr class="ms-auto me-auto mt-auto mb-4" style="width: 110px;color:#708090">
+                            </div>
+                        </div>
                     </div>
                     <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-5 p-5" style="background: linear-gradient(0, #E0EFFE 0%, rgba(227, 240, 254, 0) 100%);">
                     <div class="row">
-                        <div class="col-12 mb-2 text-center"><h1 class="text-s-30 text-w-700" style="color:#182E9C">รูปแบบของข้อมูลเมื่อทำ CDP</h1></div>    
+                        <div class="col-12 mt-4 mb-2 text-center"><h1 class="text-s-30 text-w-700" style="color:#182E9C">รูปแบบของข้อมูลเมื่อทำ CDP</h1></div>    
                     </div>
                     <div class="row mt-2 justify-content-center">
                         <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 view-2">
@@ -200,7 +230,7 @@ export default {
     border-radius: 20px;
     filter: drop-shadow(10px 10px 30px rgba(55, 55, 55, 0.2));
     width: 374.08px;
-    height: 500px;
+    height: 475px;
 }
 
 .view-2 .card{
@@ -212,7 +242,7 @@ export default {
 .card-view{
     border-radius: 20px 20px 0 0;
     background-color: black;
-    height: 40px;
+    height: 50px;
 }
 
 .triangle-down-main {
