@@ -32,7 +32,7 @@ export default {
     },
     methods : {
         getData(){
-            this.axios.get('http://localhost:1337/Portfolios?bu_category.name='+this.type)
+            this.axios.get(this.apiUrl+'/Portfolios?bu_category.name='+this.type)
             .then(response => (this.responseData = response.data))
         }
     },

@@ -7,8 +7,10 @@ import router from './router'
 import VueGoogleMaps from '@fawmi/vue-google-maps'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import VueSweetalert2 from 'vue-sweetalert2';
+import 'sweetalert2/dist/sweetalert2.min.css';
 
-createApp(App).use(router).use(VueAxios, axios).use(VueGoogleMaps, {
+createApp(App).use(router).use(VueAxios, axios).use(VueSweetalert2).use(VueGoogleMaps, {
     load: {
         key: 'AIzaSyDTu9fOaHvHAANQVY9mUyKJ6ykTnCLLDFU',
     },

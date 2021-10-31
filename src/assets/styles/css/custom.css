@@ -290,6 +290,10 @@ a{
   text-decoration: none !important;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
 .navbar-custom {
   padding: 5px;
   border-radius: 50px;
@@ -366,6 +370,10 @@ li{
 
 .text-s-30{
   font-size: 30px !important;
+}
+
+.text-s-64{
+  font-size: 64px !important;
 }
 
 hr{

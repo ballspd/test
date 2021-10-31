@@ -4,53 +4,16 @@
             <div class="col-12">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img class="d-block image-review" src="./../assets/Rectangle1.png"></div>
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-xxl-5 p-lg-5 p-sm-3 p-3">
-                        <p style="color:#FF773B">-- TESTIMGNIALS</p>
-                        <font class="text-review">What People say</font>
-                        <span></span><p class="mt-3">Losing data or accidentally sharing it can cause
-                            real headaches for you and your clients. There
-                            are lots of stories about people leaving memory
-                            sticks lying arcund, but there are much simpler
-                            ways to lose data that do just as much damage.
-                            Cyber insurance helps you cover your costs</p>
-                        <p class="mt-xxl-5 mt-4" style="color:#FF773B">Marare Pajagngslan<br>Ctursecuily secialst n Aiput</p>
+                    <div v-for="data in responseData" :key="data.id" class="carousel-item" :class="{'active': data.id === 1}">
+                        <div class="row">
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img class="d-block image-review" src="./../assets/Rectangle1.png"></div>
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-xxl-5 p-lg-5 p-sm-3 p-3">
+                            <p style="color:#FF773B">-- TESTIMGNIALS</p>
+                            <font class="text-review">{{data.hearder}}</font>
+                            <span></span><p class="mt-3">{{data.message}}</p>
+                            <p class="mt-xxl-5 mt-4" style="color:#FF773B">{{data.name}}<br>{{data.position}}</p>
+                            </div>
                         </div>
-                    </div>
-                    </div>
-                    <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img class="d-block image-review" src="./../assets/Rectangle2.png"></div>
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-xxl-5 p-lg-5 p-sm-3 p-3">
-                        <p style="color:#FF773B">-- TESTIMGNIALS</p>
-                        <font class="text-review">What People say</font>
-                        <span></span><p class="mt-3">Losing data or accidentally sharing it can cause
-                            real headaches for you and your clients. there
-                            are lots of stories about people leaving memory
-                            sticks lying arcund, but there are much simpler
-                            ways to lose data that do just as much damage.
-                            Cyber insurance helps you cover your costs</p>
-                        <p class="mt-xxl-5 mt-4" style="color:#FF773B">Marare Pajagngslan<br>Ctursecuily secialst n Aiput</p>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img class="d-block image-review" src="./../assets/Rectangle3.png"></div>
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-xxl-5 p-lg-5 p-sm-3 p-3">
-                        <p style="color:#FF773B">-- TESTIMGNIALS</p>
-                        <font class="text-review">What People say</font>
-                        <span></span><p class="mt-3">Losing data or accidentally sharing it can cause
-                            real headaches for you and your clients. there
-                            are lots of stories about people leaving memory
-                            sticks lying arcund, but there are much simpler
-                            ways to lose data that do just as much damage.
-                            Cyber insurance helps you cover your costs</p>
-                        <p class="mt-xxl-5 mt-4" style="color:#FF773B">Marare Pajagngslan<br>Ctursecuily secialst n Aiput</p>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 <div class="d-none d-xl-block d-xxl-block">
@@ -80,6 +43,26 @@
 <script>
 export default {
     name: 'Review',
+    props: ['type'],
+    data() {
+      return {
+        responseData:[],
+        url:''
+      }
+    },
+    //this.$route.params.id
+    mounted () {
+        if(this.type != 'All'){
+            this.url = process.env.VUE_APP_API_URL+'/reviews?bu_category.name='+this.type
+        }
+        else
+        {
+            this.url = process.env.VUE_APP_API_URL+'/reviews'
+        }
+        this.axios.get(this.url)
+        .then(response => (this.responseData = response.data))
+    }
+    
 }
 </script>
 

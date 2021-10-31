@@ -47,8 +47,8 @@
                                                     <div class="row">
                                                         <div class="col-6" style="width:170px"><img class="img-fluid" src="./../assets/mobile/Group345.png"></div>
                                                         <div class="col-6 p-1">                                                
-                                                            <button class="btn-green button me-1"><span>Lorem ipsum</span></button>
-                                                            <button class="btn-blue button"><span>Lorem ipsum</span></button>
+                                                            <button class="btn-green me-1"><span>Lorem ipsum</span></button>
+                                                            <button class="btn-blue"><span>Lorem ipsum</span></button>
                                                             <p class="font-wght mt-2 mb-1" style="color:#15304E;font-size:24px">Lorem ipsum</p>
                                                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
                                                             <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
@@ -190,79 +190,42 @@
                         </div>
                     </div>
                     <div class="row text-center mt-4 justify-content-center">
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทคนิคการขาย <br>และการโฆษณา</p></div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Social Media</p></div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Market Place</p></div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>E-Commerce</p></div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Social Media</p></div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Market Place</p></div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>E-Commerce</p></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a @click="c1 = true" href="#c1"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทคนิคการขาย <br>และการโฆษณา</p></a></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a @click="c1 = true,c2 = true" href="#c2"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Social Media</p></a></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a @click="c1 = true,c2 = true,c3 = true" href="#c3"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Market Place</p></a></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a @click="c1 = true,c2 = true,c3 = true,c4 = true" href="#c4"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>E-Commerce</p></a></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true" href="#c5"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">ครบจบ <br>ทุกเรื่อง LINE</p></a></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true" href="#c6"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">Martech</p></a></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true,c7 = true" href="#c7"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">Digital <br>Transformation</p></a></div>
                     </div>
-                    <div>
+                    <span id="c1" style="display: block;height: 85px;margin-top: -85px;"></span>
+                    <div v-if="c1" class="animate__animated animate__bounceInUp">
                         <div class="row mt-4">
                             <div class="col-6">
-                                <font class="text-w-700" style="font-size:24px;color:#15304E">เทคนิคการขาย</font>
+                                <font class="text-w-700" style="font-size:24px;color:#15304E">{{responseDatac1[0].blog_category.name}}</font>
                             </div>
                             <div class="col-6 text-end">
-                                <font style="color:#807F7F;font-size: 14px">View all</font>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/'+responseDatac1[0].blog_category.id+''}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div v-for="data in responseDatac1" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
+                                        <img class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
+                                        <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
+                                        <p style="color:#373737;font-size:14px">{{data.description}}</p>
+                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <span id="c2" style="display: block;height: 85px;margin-top: -85px;"></span>
+                    <div v-if="c2" class="animate__animated animate__bounceInUp">
                         <div class="row mt-4">
                             <div class="col-6">
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ Social Media</p>
@@ -326,7 +289,8 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <span id="c3" style="display: block;height: 85px;margin-top: -85px;"></span>
+                    <div v-if="c3" class="animate__animated animate__bounceInUp">
                         <div class="row mt-4">
                             <div class="col-6">
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ Market Place</p>
@@ -390,7 +354,8 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <span id="c4" style="display: block;height: 85px;margin-top: -85px;"></span>
+                    <div v-if="c4" class="animate__animated animate__bounceInUp">
                         <div class="row mt-4">
                             <div class="col-6">
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ E-Commerce</p>
@@ -454,7 +419,8 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <span id="c5" style="display: block;height: 85px;margin-top: -85px;"></span>
+                    <div v-if="c5" class="animate__animated animate__bounceInUp">
                         <div class="row mt-4">
                             <div class="col-6">
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">ครบจบ ทุกเรื่อง LINE</p>
@@ -518,7 +484,8 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <span id="c6" style="display: block;height: 85px;margin-top: -85px;"></span>
+                    <div v-if="c6" class="animate__animated animate__bounceInUp">
                         <div class="row mt-4">
                             <div class="col-6">
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">Martech</p>
@@ -580,7 +547,71 @@
                                     </div>
                                 </div>
                             </div>
-                            {{ info }}
+                        </div>
+                    </div>
+                    <span id="c7" style="display: block;height: 85px;margin-top: -85px;"></span>
+                    <div v-if="c7" class="animate__animated animate__bounceInUp">
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                <p class="text-w-700" style="font-size:24px;color:#15304E">Digital Transformation</p>
+                            </div>
+                            <div class="col-6 text-end">
+                                <p style="color:#807F7F;font-size: 14px">View all</p>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="row">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <img class="img-fluid" src="./../assets/Group364.png">
+                                    </div>
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
+                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
+                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
+                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="row">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <img class="img-fluid" src="./../assets/Group364.png">
+                                    </div>
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
+                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
+                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
+                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="row">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <img class="img-fluid" src="./../assets/Group364.png">
+                                    </div>
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
+                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
+                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
+                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="row">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <img class="img-fluid" src="./../assets/Group364.png">
+                                    </div>
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
+                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
+                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
+                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -597,6 +628,89 @@ export default {
     data () {
         return {
             isActive: true,
+            show:false,
+            windowTop:0,
+            c1:false,
+            c2:false,
+            c3:false,
+            c4:false,
+            c5:false,
+            c6:false,
+            c7:false,
+            responseDatac1:[],
+            responseDatac2:[],
+            responseDatac3:[],
+            responseDatac4:[],
+            responseDatac5:[],
+            responseDatac6:[],
+            responseDatac7:[]
+        }
+    },
+    mounted () {
+        window.addEventListener('scroll', this.onShow);
+    },
+    unmounted () {
+        window.addEventListener('scroll', this.onShow);
+    },
+    methods: {
+        scrollToTop() {
+            window.scrollTo(0,0);
+        },
+        handleScroll () {
+            this.show = true
+        },
+        onShow(e) {
+            this.windowTop = e.target.documentElement.scrollTop;
+            if(this.windowTop > '1200'){
+                this.c1 = true
+                this.axios.get(process.env.VUE_APP_API_URL+'/blogs?blog_category=1')
+                .then(response => (this.responseDatac1 = response.data))
+            }
+            else{
+                this.c1 = false
+            }
+            if(this.windowTop > '1650')
+            {
+                this.c2 = true
+            }
+            else{
+                this.c2 = false
+            }
+            if(this.windowTop > '2150')
+            {
+                this.c3 = true
+            }
+            else{
+                this.c3 = false
+            }
+            if(this.windowTop > '2650')
+            {
+                this.c4 = true
+            }
+            else{
+                this.c4 = false
+            }
+            if(this.windowTop > '3150')
+            {
+                this.c5 = true
+            }
+            else{
+                this.c5 = false
+            }
+            if(this.windowTop > '3650')
+            {
+                this.c6 = true
+            }
+            else{
+                this.c6 = false
+            }
+            if(this.windowTop > '4150')
+            {
+                this.c7 = true
+            }
+            else{
+                this.c7 = false
+            }
         }
     }
 }
@@ -629,6 +743,12 @@ export default {
 
 .carousel-indicators {
     opacity: .8;
+}
+
+.img-fix-size{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
 }
 
 @media only screen and (max-width: 600px) {

@@ -27,65 +27,34 @@
                     <div class="col-12 text-center mt-xxl-0 mt-xl-0 mt-lg-0 mt-md-3 mt-sm-4 mt-4">
                         <p class="text-s-30 text-w-700" style="margin-bottom: 10px !important">ประวัติความเป็นมาของ</p>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 mb-4">
                         <img class="item-center" width="193" height="82" src="./../assets/logo-sellsuki.png">
                     </div>
                     <div class="d-none d-xl-block d-xxl-block">
-                        <div class="col-12 mt-4" style="height:2400px">
-                            <img src="./../assets/icon/Line28.png" height="2300" style="left: 50%;position: absolute;margin-top: 20px;">
-                            <img class="item-center-absolute" src="./../assets/icon/Ellipse14.png" style="margin-top: 2320px;">
+                        <div class="col-12 mt-4" :style="'height:'+ height_colum +'px'">
+                            <img src="./../assets/icon/Line28.png" :style="'left: 50%;position: absolute;margin-top: 20px;height:'+ height_border +'px'">
+                            <img class="item-center-absolute pt-2" src="./../assets/icon/Ellipse14.png" :style="'margin-top:'+height_border+'px'">
                                 <div class="row">
                                     <div class="col-6 text-end" style="padding-right: 55px">
-                                        <div>
-                                            <img class="item-center-absolute" src="./../assets/icon/Ellipse14.png" style="margin-top: 20px;">
-                                            <p class="text-s-30 text-w-700" style="color:#50151C">2013</p>
-                                            <p style="font-size:18">เปิดตัวธุรกิจครั้งแรกในฐานะ <b>แพลตฟอร์มผู้ช่วยธุรกิจ SME</b></p>
-                                            <button class="btn-orange button" style="width: 150px !important;height: 40px; !important"><span>Read More</span></button>
-                                            <img class="iem-center img-fluid" src="./../assets/aboutus/aboutus-1.png" style="margin-top: 20px;">
-                                        </div>
-                                        <div style="margin-top:100px">
-                                            <img class="item-center-absolute" src="./../assets/icon/Ellipse14.png" style="margin-top: 20px;">
-                                            <p class="text-s-30 text-w-700" style="color:#50151C">2016</p>
-                                            <p style="font-size:18">ตลาดการทำคอนเทนต์กำลังขายตัวจึงมีการขายบริการ<br><b>Content Marketing</b> เพื่อให้ครอบคลุมความต้องการของธุรกิจ</p>
-                                            <button class="btn-orange button" style="width: 150px !important;height: 40px; !important"><span>Read More</span></button>
-                                            <img class="iem-center img-fluid" src="./../assets/aboutus/aboutus-3.png" style="margin-top: 20px;">
-                                        </div>
-                                        <div style="margin-top:100px">
-                                            <img class="item-center-absolute" src="./../assets/icon/Ellipse14.png" style="margin-top: 20px;">
-                                            <p class="text-s-30 text-w-700" style="color:#50151C">2018</p>
-                                            <p style="font-size:18">ต่อยอดความสำเร็จให้ธุรกิจคุณ ด้วยการช่วยดูแล<br><b>การตลาดออนไลน์</b> บน Social Media Copy</p>
-                                            <button class="btn-orange button" style="width: 150px !important;height: 40px; !important"><span>Read More</span></button>
-                                            <img class="iem-center img-fluid" src="./../assets/aboutus/aboutus-5.png" style="margin-top: 20px;">
-                                        </div>
-                                        <div style="margin-top:100px">
-                                            <img class="item-center-absolute" src="./../assets/icon/Ellipse14.png" style="margin-top: 20px;">
-                                            <p class="text-s-30 text-w-700" style="color:#50151C">2020</p>
-                                            <p style="font-size:18"><b>Scale Platform Akita</b> ให้กับ Thaipost & CCC และ <br>มุ่งหน้าสู่การเป็น <b>Digital Business enabler</b> เจ้าแรกของประเทศไทย</p>
-                                            <button class="btn-orange button" style="width: 150px !important;height: 40px; !important"><span>Read More</span></button>
-                                            <img class="iem-center img-fluid" src="./../assets/aboutus/aboutus-7.png" style="margin-top: 20px;">
+                                        <div v-for="(data, index) in responseData" :key="index" :class="{'top':index != 0}">
+                                            <div v-if="data.position_left == true">
+                                                <img class="item-center-absolute" src="./../assets/icon/Ellipse14.png" style="margin-top: 20px;">
+                                                <p class="text-s-30 text-w-700" style="color:#50151C">{{data.year}}</p>
+                                                <p style="font-size:18" v-html="markdownToHtml(data.message)"></p>
+                                                <button class="btn-orange button" style="width: 150px !important;height: 40px; !important"><span>Read More</span></button>
+                                                <img class="iem-center img-fluid" :src="data.image.url" style="margin-top: 20px;">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 text-start" style="padding-left: 55px">
-                                        <div style="margin-top:185px">
-                                            <img class="item-center-absolute" src="./../assets/icon/Ellipse14.png" style="margin-top: 20px;">
-                                            <p class="text-s-30 text-w-700" style="color:#50151C">2015</p>
-                                            <p style="font-size:18">ขยายรูปแบบการให้บริการ โดยเพิ่มบริการเกี่ยวกับเว็บไซต์และ <br>ระบบหลังบ้าน</p>
-                                            <button class="btn-orange button" style="width: 150px !important;height: 40px; !important"><span>Read More</span></button>
-                                            <img class="iem-center img-fluid" src="./../assets/aboutus/aboutus-2.png" style="margin-top: 20px;">
-                                        </div>
-                                        <div style="margin-top:100px">
-                                            <img class="item-center-absolute" src="./../assets/icon/Ellipse14.png" style="margin-top: 20px;">
-                                            <p class="text-s-30 text-w-700" style="color:#50151C">2017</p>
-                                            <p style="font-size:18">เปิดตัวบริการ <b>Fulfillment</b> เพิ่มความสะสวกสบายให้เจ้าของ<br>ธุรกิจด้วยบริการ เก็บ แพ็ก ส่ง ครบจบในที่เดียว</p>
-                                            <button class="btn-orange button" style="width: 150px !important;height: 40px; !important"><span>Read More</span></button>
-                                            <img class="iem-center img-fluid" src="./../assets/aboutus/aboutus-4.png" style="margin-top: 20px;">
-                                        </div>
-                                        <div style="margin-top:100px">
-                                            <img class="item-center-absolute" src="./../assets/icon/Ellipse14.png" style="margin-top: 20px;">
-                                            <p class="text-s-30 text-w-700" style="color:#50151C">2019</p>
-                                            <p style="font-size:18">เปิดตัวบริการในฐาน <b>LINE Agency อันดับ 1 ของประเทศ</b><br>ที่ได้รับความไว้วางใจจากธุรกิจกว่า 6,000 แอคเคาท์</p>
-                                            <button class="btn-orange button" style="width: 150px !important;height: 40px; !important"><span>Read More</span></button>
-                                            <img class="iem-center img-fluid" src="./../assets/aboutus/aboutus-6.png" style="margin-top: 20px;">
+                                    <div class="col-6 text-start" style="padding-left: 55px;margin-top:70px">
+                                        <div v-for="(data, index) in responseData" :key="index" :class="{'top':index != 0}">
+                                            <div v-if="data.position_left == false">
+                                                <img class="item-center-absolute" src="./../assets/icon/Ellipse14.png" style="margin-top: 20px;">
+                                                <p class="text-s-30 text-w-700" style="color:#50151C">{{data.year}}</p>
+                                                <p style="font-size:18" v-html="markdownToHtml(data.message)"></p>
+                                                <button class="btn-orange button" style="width: 150px !important;height: 40px; !important"><span>Read More</span></button>
+                                                <img class="iem-center img-fluid" :src="data.image.url" style="margin-top: 20px;">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -95,67 +64,14 @@
                         <div class="d-block d-xl-none d-xxl-none">
                             <div class="col-12 mt-2">
                                 <div class="row text-center">
-                                    <div class="col-12 mt-2">
+                                    <div v-for="(data, index) in responseData" :key="index" class="col-12 mt-3">
+                                        <img v-if="index != 0" src="./../assets/icon/Line53.png">
                                         <img class="item-center" src="./../assets/icon/Ellipse14.png">
                                         <img src="./../assets/icon/Line53.png">
-                                        <p class="text-s-30 text-w-700" style="color:#50151C">2013</p>
-                                        <p style="font-size:18">เปิดตัวธุรกิจครั้งแรกในฐานะ <b>แพลตฟอร์มผู้ช่วยธุรกิจ SME</b></p>
+                                        <p class="text-s-30 text-w-700" style="color:#50151C">{{data.year}}</p>
+                                        <p style="font-size:18" v-html="markdownToHtml(data.message)"></p>
                                         <button class="btn-orange button" style="width: 150px !important;height: 40px; !important"><span>Read More</span></button>
-                                        <img class="iem-center img-fluid" src="./../assets/aboutus/aboutus-1.png" style="margin-top: 20px;">
-                                    </div>
-                                    <div class="col-12 mt-3">
-                                        <img src="./../assets/icon/Line53.png">
-                                        <img class="item-center" src="./../assets/icon/Ellipse14.png">
-                                        <img src="./../assets/icon/Line53.png">
-                                        <p class="text-s-30 text-w-700" style="color:#50151C">2015</p>
-                                        <p style="font-size:18">ขยายรูปแบบการให้บริการ โดยเพิ่มบริการเกี่ยวกับเว็บไซต์และ <br>ระบบหลังบ้าน</p>
-                                        <button class="btn-orange button" style="width: 150px !important;height: 40px; !important"><span>Read More</span></button>
-                                        <img class="iem-center img-fluid" src="./../assets/aboutus/aboutus-2.png" style="margin-top: 20px;">
-                                    </div>
-                                    <div class="col-12 mt-3">
-                                        <img src="./../assets/icon/Line53.png">
-                                        <img class="item-center" src="./../assets/icon/Ellipse14.png">
-                                        <img src="./../assets/icon/Line53.png">
-                                        <p class="text-s-30 text-w-700" style="color:#50151C">2016</p>
-                                        <p style="font-size:18">ตลาดการทำคอนเทนต์กำลังขายตัวจึงมีการขายบริการ<br><b>Content Marketing</b> เพื่อให้ครอบคลุมความต้องการของธุรกิจ</p>
-                                        <button class="btn-orange button" style="width: 150px !important;height: 40px; !important"><span>Read More</span></button>
-                                        <img class="iem-center img-fluid" src="./../assets/aboutus/aboutus-3.png" style="margin-top: 20px;">
-                                    </div>
-                                    <div class="col-12 mt-3">
-                                        <img src="./../assets/icon/Line53.png">
-                                        <img class="item-center" src="./../assets/icon/Ellipse14.png">
-                                        <img src="./../assets/icon/Line53.png">
-                                        <p class="text-s-30 text-w-700" style="color:#50151C">2017</p>
-                                        <p style="font-size:18">เปิดตัวบริการ <b>Fulfillment</b> เพิ่มความสะสวกสบายให้เจ้าของ<br>ธุรกิจด้วยบริการ เก็บ แพ็ก ส่ง ครบจบในที่เดียว</p>
-                                        <button class="btn-orange button" style="width: 150px !important;height: 40px; !important"><span>Read More</span></button>
-                                        <img class="iem-center img-fluid" src="./../assets/aboutus/aboutus-4.png" style="margin-top: 20px;">
-                                    </div>
-                                    <div class="col-12 mt-3">
-                                        <img src="./../assets/icon/Line53.png">
-                                        <img class="item-center" src="./../assets/icon/Ellipse14.png">
-                                        <img src="./../assets/icon/Line53.png">
-                                        <p class="text-s-30 text-w-700" style="color:#50151C">2018</p>
-                                        <p style="font-size:18">ต่อยอดความสำเร็จให้ธุรกิจคุณ ด้วยการช่วยดูแล<br><b>การตลาดออนไลน์</b> บน Social Media Copy</p>
-                                        <button class="btn-orange button" style="width: 150px !important;height: 40px; !important"><span>Read More</span></button>
-                                        <img class="iem-center img-fluid" src="./../assets/aboutus/aboutus-5.png" style="margin-top: 20px;">
-                                    </div>
-                                    <div class="col-12 mt-3">
-                                        <img src="./../assets/icon/Line53.png">
-                                        <img class="item-center" src="./../assets/icon/Ellipse14.png">
-                                        <img src="./../assets/icon/Line53.png">
-                                        <p class="text-s-30 text-w-700" style="color:#50151C">2019</p>
-                                        <p style="font-size:18">เปิดตัวบริการในฐาน <b>LINE Agency อันดับ 1 ของประเทศ</b><br>ที่ได้รับความไว้วางใจจากธุรกิจกว่า 6,000 แอคเคาท์</p>
-                                        <button class="btn-orange button" style="width: 150px !important;height: 40px; !important"><span>Read More</span></button>
-                                        <img class="iem-center img-fluid" src="./../assets/aboutus/aboutus-6.png" style="margin-top: 20px;">
-                                    </div>
-                                    <div class="col-12 mt-3">
-                                        <img src="./../assets/icon/Line53.png">
-                                        <img class="item-center" src="./../assets/icon/Ellipse14.png">
-                                        <img src="./../assets/icon/Line53.png">
-                                        <p class="text-s-30 text-w-700" style="color:#50151C">2020</p>
-                                        <p style="font-size:18"><b>Scale Platform Akita</b> ให้กับ Thaipost & CCC และ <br>มุ่งหน้าสู่การเป็น <b>Digital Business enabler</b> เจ้าแรกของประเทศไทย</p>
-                                        <button class="btn-orange button" style="width: 150px !important;height: 40px; !important"><span>Read More</span></button>
-                                        <img class="iem-center img-fluid" src="./../assets/aboutus/aboutus-7.png" style="margin-top: 20px;">
+                                        <img class="iem-center img-fluid" :src="data.image.url" style="margin-top: 20px;">
                                     </div>
                                 </div>
                             </div>
@@ -189,6 +105,7 @@
 <script>
 import GetQuote from '@/components/GetQuote'
 import InterestingArticles from '@/components/InterestingArticles'
+import marked from 'marked';
 
 export default {
     name: 'AboutUs',
@@ -196,6 +113,25 @@ export default {
         GetQuote,
         InterestingArticles
     },
+    data(){
+        return{
+            height_colum: 330,
+            height_border: 320,
+            responseData:[]
+      }
+    },
+    methods:{
+        markdownToHtml(data){
+            return marked(data);
+        }
+    },
+    //this.$route.params.id
+    mounted () {
+        this.axios.get(process.env.VUE_APP_API_URL+'/about-uses')
+        .then(response => (this.responseData = response.data))
+        this.axios.get(process.env.VUE_APP_API_URL+'/about-uses/count')
+        .then(response => (this.height_colum = this.height_colum * response.data,this.height_border = this.height_border * response.data))
+    }
 }
 </script>
 
@@ -204,6 +140,10 @@ export default {
   background-image: url('./../assets/image61.png');
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.top{
+    margin-top:100px !important;
 }
 
 /* -------------------------#Responsive------------------------ */

@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="crad mt-5">
-                <div class="row p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
+                <div class="row p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4" style="padding-bottom:20px !important">
                   <div class="col-12 ps-4 pe-4">
                     <p class="text-s-30 font-wght text-center pe-4 ps-4" style="color:#15304E">Sellsuki Workplace Culture</p>
                     <p class="text-center mt-4">ตำแหน่งว่าง รอเธอมา Join ^^</p>
@@ -60,56 +60,25 @@
                     </div>
                   </div>
                 </div>
-                <div class="row p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
+                <div class="row p-lg-5 p-md-4 p-sm-4 p-4" style="padding-top:0px !important">
                   <div class="accordion" id="accordionPanelsStayOpenExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                        <a class="accordion-button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                          <font class="font-wght" style="font-size:24px">Lorem ipsum</font>
+                    <div class="accordion-item" v-for="data in responseData" :key="data.id">
+                      <h2 class="accordion-header" :id="'panelsStayOpen-heading'+data.id">
+                        <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" :data-bs-target="'#panelsStayOpen-collapse'+data.id" aria-expanded="false" :aria-controls="'panelsStayOpen-collapse'+data.id">
+                          <font class="font-wght" style="font-size:24px">{{data.position}}</font>
                         </a>
                       </h2>
-                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                      <div :id="'panelsStayOpen-collapse'+data.id" class="accordion-collapse collapse" :aria-labelledby="'panelsStayOpen-heading'+data.id">
                         <div class="accordion-body">
                           <div class="pt-4">
-                            <p>Roles and Responsibilities:</p>
-                            <p class="mt-3" style="line-height: 2;"><i class="bi bi-dot"></i> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum. Lorem ipsum Lorem ipsum Lorem ipsum </p>
-                            <p class="mt-3" style="line-height: 2;"><i class="bi bi-dot"></i> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum. Lorem ipsum Lorem ipsum Lorem ipsum </p>
-                            <p class="mt-3" style="line-height: 2;"><i class="bi bi-dot"></i> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum. Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                            <div v-html="markdownToHtml(data.responsibility)"></div>
                           </div>
                           <div class="pt-4">
-                            <p>Roles and Responsibilities:</p>
-                            <p class="mt-3" style="line-height: 2;"><i class="bi bi-dot"></i> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
-                            <p class="mt-3" style="line-height: 2;"><i class="bi bi-dot"></i> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
-                            <p class="mt-3" style="line-height: 2;"><i class="bi bi-dot"></i> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
-                            <p class="mt-3" style="line-height: 2;"><i class="bi bi-dot"></i> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+                            <div v-html="markdownToHtml(data.qualifications)"></div>
                           </div>
                           <div class="text-center mt-5 pb-4" style="width: 100%">
-                              <router-link @click="scrollToTop" href="#" class="btn btn-orange button" to="/JoinUsForm"><span class="text-white" style="font-size:18px">Apply Now</span></router-link>
+                              <router-link @click="scrollToTop" href="#" class="btn btn-orange button" :to="{ path: '/JoinUsForm' , query: { position: data.position } }"><span class="text-white" style="font-size:18px">Apply Now</span></router-link>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                        <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                          <font class="font-wght" style="font-size:24px">Lorem ipsum</font>
-                        </a>
-                      </h2>
-                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                        <div class="accordion-body">
-                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                        <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                          <font class="font-wght" style="font-size:24px">Lorem ipsum</font>
-                        </a>
-                      </h2>
-                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                        <div class="accordion-body">
-                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                         </div>
                       </div>
                     </div>
@@ -171,14 +140,26 @@
 </template>
 
 <script>
-
+import marked from 'marked';
 export default {
     name: 'JoinUs',
+    data() {
+      return {
+        responseData:[]
+      }
+    },
     methods: {
       scrollToTop() {
           window.scrollTo(0,0);
+      },
+      markdownToHtml(data){
+          return marked(data);
       }
-  }
+    },
+    mounted () {
+        this.axios.get('http://localhost:1337/job-positions')
+        .then(response => (this.responseData = response.data))
+    },
 }
 </script>
 

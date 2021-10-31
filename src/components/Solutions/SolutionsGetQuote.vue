@@ -87,7 +87,7 @@
                 <div v-if="type === 'Kaikong'">
                   <img class="item-center" src="./../../assets/SolutionsKaikong/logo.png" alt="">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-                  <img class="item-center" width="320" src="./../../assets/SolutionsKaikong/Kaikong-qrcode.png" alt="">
+                  <img class="item-center" width="320" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Kaikong_qrcode_cece10d44a.png" alt="">
                   <img class="position-bu" width="220" src="./../../assets/SolutionsKaikong/Kaikong-bu.png" alt="">
                 </div>
                 <div v-if="type === 'Shipmunk'">

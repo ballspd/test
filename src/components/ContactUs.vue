@@ -28,23 +28,23 @@
                 <p class="d-block d-xl-none d-xxl-none text-center text-s-30 font-wght pt-4" style="color:#50151C">Contact Us</p>
                 <div class="row padding-contact">
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-12 col-sm-12 col-12 pe-xxl-5 pe-xl-5 border-contact">
-                       <form>
+                       <form v-on:submit.prevent="submitForm">
                         <div class="row">
                             <div class="form-group col-12">
                                 <label class="text-s-16" style="color: #373737;">Name<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control mt-2">
+                                <input v-model="form.name" id="name" type="text" class="form-control mt-2">
                             </div>
                             <div class="form-group col-12 mt-4">
                                 <label class="text-s-16" style="color: #373737;">Phone Number<span class="text-danger">*</span></label>
-                                <input type="number" class="form-control mt-2">
+                                <input v-model="form.phone_number" id="phone_number" type="text" class="form-control mt-2">
                             </div>
                             <div class="form-group col-12 mt-4">
                                 <label class="text-s-16" style="color: #373737;">Email<span class="text-danger">*</span></label>
-                                <input type="email" class="form-control mt-2">
+                                <input v-model="form.email" id="email" type="email" class="form-control mt-2">
                             </div>
                             <div class="form-group col-12 mt-4">
                                 <label class="text-s-16" style="color: #373737;">Message<span class="text-danger">*</span></label>
-                                <textarea class="form-control mt-2" style="height:180px"></textarea>
+                                <textarea v-model="form.message" id="message" class="form-control mt-2" style="height:180px"></textarea>
                             </div>
                         </div>
                         <div class="text-center" style="width: 100%;margin-top:32px">
@@ -91,18 +91,54 @@
 export default {
     name: 'ContactUs',
     data() {
-    return {
-        center: {lat: 13.8019328, lng: 100.5751006},
-        markers: [
-        {
-          position: {
-            lat: 13.8019328, lng: 100.5751006
-          },
+      return {
+          form: {
+                    name:'',
+                    phone_number:'',
+                    email:'',
+                    message:''
+                },
+          center: {lat: 13.8019328, lng: 100.5751006},
+          markers: [
+          {
+            position: {
+              lat: 13.8019328, lng: 100.5751006
+            },
+          }
+          , // Along list of clusters
+          ]
+      }
+    },
+    methods:{
+        submitForm() {
+            this.$swal.fire({
+                title: 'Are you sure?',
+                text: "You want to send a message",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Confilm'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        this.axios.post("http://localhost:1337/contact-uses", this.form)
+                        .then(
+                            this.$swal.fire(
+                                'Success',
+                                'Send information successfully',
+                                'success'
+                            )
+                        ).catch((error) => {
+                            this.$swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: error,
+                            })
+                        })
+                    }
+                })
         }
-        , // Along list of clusters
-        ]
     }
-  }
 }
 </script>
 

@@ -174,7 +174,7 @@
                 </div>
               </div>
             </div>
-          <Review/>
+          <Review :type="type"/>
           <div class="row mt-3 mb-3 d-none d-xl-block d-xxl-block">
             <div class="col-12">
               <table style="text-align:center;width:100%">
@@ -227,6 +227,11 @@ export default {
     InterestingArticles,
     Review
   },
+  data(){
+    return {
+    type:'All'
+    }
+  }
 }
 </script>
 

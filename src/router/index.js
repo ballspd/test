@@ -18,7 +18,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "Portfolio" */ '@/components/Portfolio.vue')
   },
   {
-    path: "/Portfolio/Detail/",
+    path: "/Portfolio/Detail/:id",
     name: "PortfolioDetail",
     component: () => import(/* webpackChunkName: "Portfolio" */ '@/components/Portfolio/PortfolioDetail.vue')
   },
@@ -26,6 +26,16 @@ const routes = [
     path: "/Blog",
     name: "Blog",
     component: () => import(/* webpackChunkName: "Blog" */ '@/components/Blog.vue')
+  },
+  {
+    path: "/Blogs/All/:id",
+    name: "BlogsAll",
+    component: () => import(/* webpackChunkName: "BlogsAll" */ '@/components/Blogs/BlogsAll.vue')
+  },
+  {
+    path: "/Blogs/Detail/:id",
+    name: "BlogsDetail",
+    component: () => import(/* webpackChunkName: "BlogsDetail" */ '@/components/Blogs/BlogsDetail.vue')
   },
   {
     path: "/ContactUs",

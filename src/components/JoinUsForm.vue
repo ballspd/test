@@ -10,7 +10,7 @@
         </div>
         <div class="bg mt-4">
             <div style="background: rgba(0, 0, 0, 0.3);">
-                <div class="container" style="display: flex;height: 300px;"><font class="font-wght mt-auto mb-auto ms-4" style="font-size:64px;color:#FBFBFB">BLOG</font></div>
+                <div class="container" style="display: flex;height: 300px;"><font class="font-wght mt-auto mb-auto ms-4" style="font-size:55px;color:#FBFBFB;text-shadow: 1px 1px 1px #000;">{{this.$route.query.position}}</font></div>
             </div>
         </div>
         <div class="container">
@@ -58,9 +58,9 @@
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">Resume/CV<span class="text-danger">*</span></label>
                                 <div class="input-group mb-3 mt-2">
-                                    <input type="file" class="form-control" id="inputGroupFile" hidden>
-                                    <input type="text" class="form-control" id="inputGroupFile">
-                                    <label class="input-group-text text-s-14" for="inputGroupFile" style="background: #FF773B;color: #FFFFFF;">Choose File</label>
+                                    <input type="file" class="form-control" @change="onFileChange" id="inputGroupFile" hidden>
+                                    <input type="text" class="form-control cursor-pointer" :value="filename" for="inputGroupFile" readonly>
+                                    <label class="input-group-text text-s-14 cursor-pointer" for="inputGroupFile" style="background: #FF773B;color: #FFFFFF;">Choose File</label>
                                 </div>
                             </div>
                             <div class="form-group col-12 mt-5">
@@ -121,8 +121,16 @@ export default {
     name: 'JoinUsForm',
     data() {
       return {
-        filename: 'GG'
+        filename: ''
       }
+    },
+    methods:{
+        onFileChange(e) {
+        var files = e.target.files || e.dataTransfer.files;
+        if (!files.length)
+            return;
+        this.filename = files[0].name;
+        }
     }
 }
 </script>
