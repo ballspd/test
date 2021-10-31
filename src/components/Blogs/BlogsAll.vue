@@ -56,7 +56,7 @@ export default {
     },
     //this.$route.params.id
     created () {
-        this.axios.get(process.env.VUE_APP_API_URL+'/Blogs?blog_category=' + this.$route.params.id)
+        this.axios.get('https://staging-sellsukiadmin.bearyweb.com/Blogs?blog_category=' + this.$route.params.id)
         .then(response => (this.responseData = response.data))
     }
 }

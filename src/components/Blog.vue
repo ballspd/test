@@ -663,7 +663,7 @@ export default {
             this.windowTop = e.target.documentElement.scrollTop;
             if(this.windowTop > '1200'){
                 this.c1 = true
-                this.axios.get(process.env.VUE_APP_API_URL+'/blogs?blog_category=1')
+                this.axios.get('https://staging-sellsukiadmin.bearyweb.com/blogs?blog_category=1')
                 .then(response => (this.responseDatac1 = response.data))
             }
             else{

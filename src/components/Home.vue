@@ -62,7 +62,7 @@
           <div class="d-none d-xxl-block d-xl-block">
             <div class="row mb-3">
               <div class="col-6">
-                <font class="font-wght" style="font-size:64px;position: relative;color:#23233C;line-height: 90.72px;">YOUR<br>ROADMAP<br>TO SUCCESS {{process.env.VUE_APP_API_URL}}</font>
+                <font class="font-wght" style="font-size:64px;position: relative;color:#23233C;line-height: 90.72px;">YOUR<br>ROADMAP<br>TO SUCCESS</font>
                 <img class="mt-5" src="./../assets/Vector001.png" style="float: right;;">
                 <img class="mt-2" src="./../assets/Vector-Smart-Object001.png" style="position: relative;left: -80px;">
               </div>

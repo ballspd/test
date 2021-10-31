@@ -148,7 +148,7 @@ export default {
     },
     //this.$route.params.id
     created () {
-        this.axios.get(process.env.VUE_APP_API_URL+'/Portfolios/' + this.$route.params.id)
+        this.axios.get('https://staging-sellsukiadmin.bearyweb.com/Portfolios/' + this.$route.params.id)
         .then(response => (this.responseData = response.data))
     }
 }

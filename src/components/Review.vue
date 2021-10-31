@@ -53,11 +53,11 @@ export default {
     //this.$route.params.id
     mounted () {
         if(this.type != 'All'){
-            this.url = process.env.VUE_APP_API_URL+'/reviews?bu_category.name='+this.type
+            this.url = 'https://staging-sellsukiadmin.bearyweb.com/reviews?bu_category.name='+this.type
         }
         else
         {
-            this.url = process.env.VUE_APP_API_URL+'/reviews'
+            this.url = 'https://staging-sellsukiadmin.bearyweb.com/reviews'
         }
         this.axios.get(this.url)
         .then(response => (this.responseData = response.data))
