@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <p class="text-s-16 mt-150" style="color:#50151C;">Home > Join Us ><font class="text-s-16 font-wght" style="color:#50151C">Lorem ipsum</font></p>
+                    <p class="text-s-16 mt-150" style="color:#50151C;">Home > Join Us > <font class="text-s-16 font-wght" style="color:#50151C">{{responseData.title}}</font></p>
                 </div>
             </div>
         </div>
@@ -28,7 +28,7 @@
                                 <span class="text-s-16 ms-4">{{responseData.view}}</span>
                             </div>
                             <div class="col-12 mt-5 mb-5">
-                                <img src="./../../assets/Group323.png" alt="" style="width:100%;height: 400px;">
+                                <img :src="responseData.banner_1.url" :alt="responseData.banner_1.name" style="width:100%;height: 400px;">
                             </div>
                             <div class="col-12">
                                 <p>{{responseData.banner_description_1}}</p>
@@ -54,7 +54,7 @@
                                 </div>
                             </div>
                             <div class="col-12 mt-3 mb-5">
-                                <img src="./../../assets/Group323.png" alt="" style="width:100%;height: 400px;">
+                                <img :src="responseData.banner_2.url" :alt="responseData.banner_2.name" style="width:100%;height: 400px;">
                             </div>
                             <div class="col-12">
                                 <p>{{responseData.banner_description_2}}</p>
@@ -63,70 +63,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="padding-card pt-0">
+                <!-- <div class="padding-card pt-0">
                     <div class="text-center pb-2">
                         <h1 class="text-s-30 font-wght">Reviews</h1>
                     </div>
                     <Review :type="this.$route.query.type_bu"/>
-                </div>
-                <div class="row pt-xxl-1 pt-xl-1 pt-lg-1 pt-2 p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
-                    <div class="col-12 ps-xxl-4 ps-xl-4 ps-1 pe-xxl-4 pe-xl-4 pe-1">
-                        <hr class="mt-5" style="border: 1px solid #E5E5E5;">
-                    </div>
-                    <div class="text-center">
-                        <h1 class="text-s-30 font-wght mt-3">Related posts</h1>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="row p-2">
-                                <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                    <img class="img-fluid" src="./../../assets/Group364.png">
-                                </div>
-                                <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                    <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                    <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                    <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="row p-2">
-                                <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                    <img class="img-fluid" src="./../../assets/Group364.png">
-                                </div>
-                                <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                    <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                    <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                    <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="row p-2">
-                                <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                    <img class="img-fluid" src="./../../assets/Group364.png">
-                                </div>
-                                <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                    <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                    <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                    <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="row p-2">
-                                <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                    <img class="img-fluid" src="./../../assets/Group364.png">
-                                </div>
-                                <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                    <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                    <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                    <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </div> -->
+                <RelatedPosts :type="'Portfolio'" :CategoryName="this.$route.query.type" :Id="this.$route.params.id"/>
             </div>
         </div>
     </div>
@@ -134,13 +77,15 @@
 </template>
 
 <script>
-import Review from '@/components/Review'
+// import Review from '@/components/Review'
+import RelatedPosts from '@/components/RelatedPosts'
 
 export default {
     name: 'PortfolioDetail',
     components:{
-        Review
-  },
+        RelatedPosts
+    //     Review
+    },
     data() {
       return {
         responseData:[]

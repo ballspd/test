@@ -43,61 +43,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row pt-xxl-1 pt-xl-1 pt-lg-1 pt-2 p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
-                    <div class="text-center">
-                        <h1 class="text-s-30 font-wght mt-3">Related posts</h1>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="row p-2">
-                                <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                    <img class="img-fluid" src="./../../assets/Group364.png">
-                                </div>
-                                <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                    <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                    <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                    <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="row p-2">
-                                <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                    <img class="img-fluid" src="./../../assets/Group364.png">
-                                </div>
-                                <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                    <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                    <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                    <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="row p-2">
-                                <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                    <img class="img-fluid" src="./../../assets/Group364.png">
-                                </div>
-                                <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                    <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                    <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                    <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="row p-2">
-                                <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                    <img class="img-fluid" src="./../../assets/Group364.png">
-                                </div>
-                                <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                    <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                    <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                    <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <RelatedPosts :type="'Blogs'" :CategoryName="this.$route.query.type" :Id="this.$route.params.id"/>
             </div>
         </div>
     </div>
@@ -105,9 +51,13 @@
 </template>
 
 <script>
+import RelatedPosts from '@/components/RelatedPosts'
 
 export default {
     name: 'BlogsDetail',
+    components:{
+        RelatedPosts
+    },
     data() {
       return {
         responseData:[]
@@ -115,6 +65,10 @@ export default {
     },
     //this.$route.params.id
     created () {
+        this.axios.get('https://staging-sellsukiadmin.bearyweb.com/Blogs/' + this.$route.params.id)
+        .then(response => (this.responseData = response.data))
+    },
+    updated () {
         this.axios.get('https://staging-sellsukiadmin.bearyweb.com/Blogs/' + this.$route.params.id)
         .then(response => (this.responseData = response.data))
     }

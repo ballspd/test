@@ -217,8 +217,8 @@
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
+                                        <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
+                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -235,55 +235,16 @@
                             </div>
                         </div>
                         <div class="row mt-2">
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div v-for="data in responseDatac2" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
+                                        <img class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
+                                        <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
+                                        <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
+                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -300,55 +261,16 @@
                             </div>
                         </div>
                         <div class="row mt-2">
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div v-for="data in responseDatac3" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
+                                        <img class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
+                                        <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
+                                        <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
+                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -365,55 +287,16 @@
                             </div>
                         </div>
                         <div class="row mt-2">
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div v-for="data in responseDatac4" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
+                                        <img class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
+                                        <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
+                                        <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
+                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -430,55 +313,16 @@
                             </div>
                         </div>
                         <div class="row mt-2">
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div v-for="data in responseDatac5" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
+                                        <img class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
+                                        <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
+                                        <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
+                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -495,55 +339,16 @@
                             </div>
                         </div>
                         <div class="row mt-2">
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div v-for="data in responseDatac6" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
+                                        <img class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
+                                        <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
+                                        <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
+                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -560,55 +365,16 @@
                             </div>
                         </div>
                         <div class="row mt-2">
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div v-for="data in responseDatac7" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
+                                        <img class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
+                                        <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fluid" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                        <button class="btn-transparent mt-1 button"><span>Read More</span></button>
+                                        <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
+                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -663,7 +429,7 @@ export default {
             this.windowTop = e.target.documentElement.scrollTop;
             if(this.windowTop > '1200'){
                 this.c1 = true
-                this.axios.get('https://staging-sellsukiadmin.bearyweb.com/blogs?blog_category=1')
+                this.axios.get('https://staging-sellsukiadmin.bearyweb.com/blogs?blog_category=1&_sort=updated_at:DESC&_limit=4')
                 .then(response => (this.responseDatac1 = response.data))
                 .catch()
             }
@@ -673,6 +439,9 @@ export default {
             if(this.windowTop > '1650')
             {
                 this.c2 = true
+                this.axios.get('https://staging-sellsukiadmin.bearyweb.com/blogs?blog_category=2&_sort=updated_at:DESC&_limit=4')
+                .then(response => (this.responseDatac2 = response.data))
+                .catch()
             }
             else{
                 this.c2 = false
@@ -680,6 +449,9 @@ export default {
             if(this.windowTop > '2150')
             {
                 this.c3 = true
+                this.axios.get('https://staging-sellsukiadmin.bearyweb.com/blogs?blog_category=3&_sort=updated_at:DESC&_limit=4')
+                .then(response => (this.responseDatac3 = response.data))
+                .catch()
             }
             else{
                 this.c3 = false
@@ -687,6 +459,9 @@ export default {
             if(this.windowTop > '2650')
             {
                 this.c4 = true
+                this.axios.get('https://staging-sellsukiadmin.bearyweb.com/blogs?blog_category=4&_sort=updated_at:DESC&_limit=4')
+                .then(response => (this.responseDatac4 = response.data))
+                .catch()
             }
             else{
                 this.c4 = false
@@ -694,6 +469,9 @@ export default {
             if(this.windowTop > '3150')
             {
                 this.c5 = true
+                this.axios.get('https://staging-sellsukiadmin.bearyweb.com/blogs?blog_category=5&_sort=updated_at:DESC&_limit=4')
+                .then(response => (this.responseDatac5 = response.data))
+                .catch()
             }
             else{
                 this.c5 = false
@@ -701,6 +479,9 @@ export default {
             if(this.windowTop > '3650')
             {
                 this.c6 = true
+                this.axios.get('https://staging-sellsukiadmin.bearyweb.com/blogs?blog_category=6&_sort=updated_at:DESC&_limit=4')
+                .then(response => (this.responseDatac6 = response.data))
+                .catch()
             }
             else{
                 this.c6 = false
@@ -708,6 +489,9 @@ export default {
             if(this.windowTop > '4150')
             {
                 this.c7 = true
+                this.axios.get('https://staging-sellsukiadmin.bearyweb.com/blogs?blog_category=7&_sort=updated_at:DESC&_limit=4')
+                .then(response => (this.responseDatac7 = response.data))
+                .catch()
             }
             else{
                 this.c7 = false

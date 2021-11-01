@@ -91,7 +91,7 @@
                                     </a>
                                 </div>
                                 <div class="item-center" style="border: 1px solid #E5E5E5;transform: rotate(180deg);width: 221px;height: 0px;"></div>
-                                <div class="p-3">
+                                <!-- <div class="p-3">
                                     <a @click="type = 'Shipmunk',Akita = true,Fuse = true,Line = true,Beary = true,Kaikong = true,Shipmunk = false,Oc2Plus = true" style="cursor: pointer;">
                                         <div class="hover-logo" :class="{'filter-gray':Shipmunk}">
                                             <img class="item-center" src="./../assets/logo/shipmunk.png" alt="">
@@ -108,7 +108,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="item-center" style="border: 1px solid #E5E5E5;transform: rotate(180deg);width: 221px;height: 0px;"></div>
+                                <div class="item-center" style="border: 1px solid #E5E5E5;transform: rotate(180deg);width: 221px;height: 0px;"></div> -->
                             </div>
                             <div class="col-9">
                                 <component :is="'Portfolio'+type"/>

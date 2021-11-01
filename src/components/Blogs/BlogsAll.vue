@@ -32,7 +32,7 @@
                                 <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                     <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                     <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                    <p style="color:#373737;font-size:14px">{{data.description}}</p>
+                                    <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
                                     <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
                                 </div>
                             </div>
