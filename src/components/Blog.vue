@@ -202,10 +202,10 @@
                     <div v-if="c1" class="animate__animated animate__bounceInUp">
                         <div class="row mt-4">
                             <div class="col-6">
-                                <font class="text-w-700" style="font-size:24px;color:#15304E">{{responseDatac1[0].blog_category.name}}</font>
+                                <font class="text-w-700" style="font-size:24px;color:#15304E">เทคนิคการขาย และการโฆษณา</font>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/'+responseDatac1[0].blog_category.id+''}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/1'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -665,6 +665,7 @@ export default {
                 this.c1 = true
                 this.axios.get('https://staging-sellsukiadmin.bearyweb.com/blogs?blog_category=1')
                 .then(response => (this.responseDatac1 = response.data))
+                .catch()
             }
             else{
                 this.c1 = false
