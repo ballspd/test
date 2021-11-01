@@ -87,6 +87,11 @@ const routes = [
     name: "SolutionsOc2Plus",
     component: () => import(/* webpackChunkName: "SolutionsOc2Plus" */ '@/components/Solutions/SolutionsOc2Plus.vue')
   },
+  {
+    path: "/TypesOfBusiness/BusinessOwner",
+    name: "BusinessOwner",
+    component: () => import(/* webpackChunkName: "BusinessOwner" */ '@/components/TypesOfBusiness/BusinessOwner.vue')
+  },
 ];
 
 const router = createRouter({

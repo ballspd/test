@@ -157,7 +157,7 @@ export default {
       }
     },
     mounted () {
-        this.axios.get('http://localhost:1337/job-positions')
+        this.axios.get('https://staging-sellsukiadmin.bearyweb.com/job-positions')
         .then(response => (this.responseData = response.data))
     },
 }

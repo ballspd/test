@@ -89,8 +89,7 @@
                 <div class="col-6 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;height:415px;width: 235px !important;">
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Types of Business</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">
-                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Business Owner</p></a><br>
-                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Content Marketing</p></a><br>
+                  <router-link @click="scrollToTop" to="/TypesOfBusiness/BusinessOwner"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Business Owner</p></router-link><br>
                   <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Online Merchant</p></a><br>
                   <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Corporate</p></a>
                 </div>

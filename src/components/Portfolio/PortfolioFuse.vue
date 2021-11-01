@@ -23,12 +23,11 @@ export default {
     data () {
         return {
             responseData:null,
-            apiUrl: process.env.VUE_APP_API_URL,
         }
     },
     methods : {
         getData(){
-            this.axios.get('http://localhost:1337/Portfolios?bu_category.name=Fuse')
+            this.axios.get('https://staging-sellsukiadmin.bearyweb.com/Portfolios?bu_category.name=Fuse')
             .then(response => (this.responseData = response.data))
         }
     },

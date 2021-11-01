@@ -127,9 +127,9 @@ export default {
     },
     //this.$route.params.id
     mounted () {
-        this.axios.get(process.env.VUE_APP_API_URL+'/about-uses')
+        this.axios.get('https://staging-sellsukiadmin.bearyweb.com/about-uses')
         .then(response => (this.responseData = response.data))
-        this.axios.get(process.env.VUE_APP_API_URL+'/about-uses/count')
+        this.axios.get('https://staging-sellsukiadmin.bearyweb.com/about-uses/count')
         .then(response => (this.height_colum = this.height_colum * response.data,this.height_border = this.height_border * response.data))
     }
 }

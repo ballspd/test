@@ -29,7 +29,7 @@ export default {
     },
     methods : {
         getData(){
-            this.axios.get(process.env.VUE_APP_API_URL+'/Portfolios?bu_category.name=Akita')
+            this.axios.get('https://staging-sellsukiadmin.bearyweb.com/Portfolios?bu_category.name=Akita')
             .then(response => (this.responseData = response.data))
         },
         scrollToTop() {

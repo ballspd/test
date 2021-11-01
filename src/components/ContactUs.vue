@@ -121,7 +121,7 @@ export default {
                 confirmButtonText: 'Confilm'
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        this.axios.post("http://localhost:1337/contact-uses", this.form)
+                        this.axios.post('https://staging-sellsukiadmin.bearyweb.com/contact-uses', this.form)
                         .then(
                             this.$swal.fire(
                                 'Success',
