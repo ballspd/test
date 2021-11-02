@@ -278,6 +278,7 @@ html, body {
   display: -webkit-box;
   -webkit-line-clamp: 2; /* number of lines to show */
   -webkit-box-orient: vertical;
+  transition: transform 1s;
 }
 
 .font-wght {

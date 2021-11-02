@@ -6,20 +6,20 @@
                 <div class="row banner-hero">
                     <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="d-none d-lg-block">
-                            <p class="text-s-16 mt-150" style="color:#0B0404;">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#0B0404">Business owner</font></p>
+                            <p class="text-s-16 mt-150" style="color:#50151C;">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#50151C">Business owner</font></p>
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:55px;color:#50151C;width: 600px;">BUSINESS OWNER</h1>
-                                    <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#0B0404;width: 350px;">“เคล็ดไม่ลับ เจ้าของธุรกิจมือใหม่ เริ่มต้นสร้างแบรนด์อย่างไรให้ปัง ?”</h2>
-                                    <p class="text-s-16 mt-3" style="color:#0B0404;width: 505px">สำหรับเจ้าของธุรกิจมือใหม่ที่กำลังอยากจะเริ่มปั้นแบรนด์ สร้างธุรกิจเป็นของ ตัวเองควรอ่านบทความนี้ ! น้องสุกิจะมาช่วยแนะนำขั้นตอนในการเริ่มต้นธุรกิจ ให้ติดตลาด มียอดขายปัง ควรเริ่มจากตรงไหนถึงจะเป็นก้าวแรกที่มั่นคง</p>
+                                    <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#50151C;width: 350px;">“เคล็ดไม่ลับ เจ้าของธุรกิจมือใหม่ เริ่มต้นสร้างแบรนด์อย่างไรให้ปัง ?”</h2>
+                                    <p class="text-s-16 mt-3" style="color:#50151C;width: 505px">สำหรับเจ้าของธุรกิจมือใหม่ที่กำลังอยากจะเริ่มปั้นแบรนด์ สร้างธุรกิจเป็นของ ตัวเองควรอ่านบทความนี้ ! น้องสุกิจะมาช่วยแนะนำขั้นตอนในการเริ่มต้นธุรกิจ ให้ติดตลาด มียอดขายปัง ควรเริ่มจากตรงไหนถึงจะเป็นก้าวแรกที่มั่นคง</p>
                                 </td>
                             </table>
                         </div>
                         <div class="d-block d-lg-none text-center text-md-start ps-4 pe-4">
-                            <p class="text-s-14 mt-4 pb-4 text-start" style="color:#0B0404">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#0B0404">Business owner</font></p>
-                            <h1 class="font-wght text-s-32" style="color:#0B0404">BUSINESS OWNER</h1>
-                            <h2 class="text-s-24 text-w-700 text-s-30 ps-5 pe-5" style="color:#0B0404">“เคล็ดไม่ลับ เจ้าของธุรกิจมือใหม่ เริ่มต้นสร้างแบรนด์อย่างไรให้ปัง ?”</h2>
-                            <p class="text-s-14 p-4 p-md-0 ps-5 pe-5" style="color:#0B0404">สำหรับเจ้าของธุรกิจมือใหม่ที่กำลังอยากจะเริ่มปั้นแบรนด์ สร้างธุรกิจเป็นของ ตัวเองควรอ่านบทความนี้ ! น้องสุกิจะมาช่วยแนะนำขั้นตอนในการเริ่มต้นธุรกิจ ให้ติดตลาด มียอดขายปัง ควรเริ่มจากตรงไหนถึงจะเป็นก้าวแรกที่มั่นคง</p>
+                            <p class="text-s-14 mt-4 pb-4 text-start" style="color:#50151C">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#50151C">Business owner</font></p>
+                            <h1 class="font-wght text-s-32" style="color:#50151C">BUSINESS OWNER</h1>
+                            <h2 class="text-s-24 text-w-700 text-s-30 ps-5 pe-5" style="color:#50151C">“เคล็ดไม่ลับ เจ้าของธุรกิจมือใหม่ เริ่มต้นสร้างแบรนด์อย่างไรให้ปัง ?”</h2>
+                            <p class="text-s-14 p-4 p-md-0 ps-5 pe-5" style="color:#50151C">สำหรับเจ้าของธุรกิจมือใหม่ที่กำลังอยากจะเริ่มปั้นแบรนด์ สร้างธุรกิจเป็นของ ตัวเองควรอ่านบทความนี้ ! น้องสุกิจะมาช่วยแนะนำขั้นตอนในการเริ่มต้นธุรกิจ ให้ติดตลาด มียอดขายปัง ควรเริ่มจากตรงไหนถึงจะเป็นก้าวแรกที่มั่นคง</p>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -31,45 +31,62 @@
         </div>
         <div class="container">
             <div class="crad">
-                <div class="mt-custom mb-4 p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
+                <div class="mt-custom mb-4 p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-5 p-5">
                     <div class="row p-custom-2 d-flex">
-                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Fulfillment Service</span></h2>
+                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                            <div class="text-lg-start text-center d-block d-lg-none">
+                                <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP 1</span>
+                                <p class="mt-4 text-s-30 text-w-700">สร้างความแตกต่างให้กับสินค้าของคุณ</p>
+                            </div>
                             <img class="item-center" src="./../../assets/SolutionsKaikong/Kaikong01.png" alt="">
                         </div>
                         <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Fulfillment Service</span></h2>
+                            <div class="text-lg-start text-center d-none d-lg-block">
+                                <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP 1</span>
+                                <p class="mt-5 text-s-30 text-w-700">สร้างความแตกต่างให้กับสินค้าของคุณ</p>
+                            </div>
                             <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">บริการพัฒนาและจัด ทำเว็บไซต์ สำหรับทุกธุรกิจ โดยทีมนักพัฒนามือ อาชีพ ที่จะทำให้ธุรกิจของคุณเติบโตบนโลกออนไลน์ สามารถรองรับได้ ทุกอุปกรณ์ ให้เว็บไซต์ของคุณ...</p>
-                            <i class="bi bi-chevron-down pe-2" style="float:right" @click="isHidden = !isHidden"></i>
                         </div>
                     </div>
-                    <div class="row mt-5 p-custom-2 d-flex">
+                    <div class="row p-custom-2 d-flex mt-5">
                         <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Fulfillment Software</span></h2>
-                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">ระบบการจัดการ Management System ของ Akita Fulfillment เหมาะ สำหรับธุรกิจที่มีคลังสินค้าเป็นของตัวเองแต่ยังไม่มีระบบการจัดการ ภายใน สามารถใช้ระบบของเรา เพื่อเพิ่มประสิทธิภาพ...</p>
-                            <i class="bi bi-chevron-down pe-2" style="float:right"></i>
+                            <div class="text-lg-start text-center d-none d-lg-block">
+                                <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP 1</span>
+                                <p class="mt-4 text-s-30 text-w-700">สร้างความแตกต่างให้กับสินค้าของคุณ</p>
+                            </div>
+                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">บริการพัฒนาและจัด ทำเว็บไซต์ สำหรับทุกธุรกิจ โดยทีมนักพัฒนามือ อาชีพ ที่จะทำให้ธุรกิจของคุณเติบโตบนโลกออนไลน์ สามารถรองรับได้ ทุกอุปกรณ์ ให้เว็บไซต์ของคุณ...</p>
                         </div>
                         <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Fulfillment Software</span></h2>
+                            <div class="text-lg-start text-center d-block d-lg-none">
+                                <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP 1</span>
+                                <p class="mt-4 text-s-30 text-w-700">สร้างความแตกต่างให้กับสินค้าของคุณ</p>
+                            </div>
                             <img class="item-center" src="./../../assets/SolutionsKaikong/Kaikong02.png" alt="">
                         </div>
                     </div>
-                    <div class="row p-custom-2 d-flex">
-                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Fulfillment Service</span></h2>
-                            <img class="item-center" src="./../../assets/SolutionsKaikong/Kaikong03.png" alt="">
+                    <div class="row p-custom-2 d-flex mt-5">
+                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                            <div class="text-lg-start text-center d-block d-lg-none">
+                                <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP 1</span>
+                                <p class="mt-4 text-s-30 text-w-700">สร้างความแตกต่างให้กับสินค้าของคุณ</p>
+                            </div>
+                            <img class="item-center" src="./../../assets/SolutionsKaikong/Kaikong01.png" alt="">
                         </div>
                         <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Fulfillment Service</span></h2>
+                            <div class="text-lg-start text-center d-none d-lg-block">
+                                <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP 1</span>
+                                <p class="mt-5 text-s-30 text-w-700">สร้างความแตกต่างให้กับสินค้าของคุณ</p>
+                            </div>
                             <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">บริการพัฒนาและจัด ทำเว็บไซต์ สำหรับทุกธุรกิจ โดยทีมนักพัฒนามือ อาชีพ ที่จะทำให้ธุรกิจของคุณเติบโตบนโลกออนไลน์ สามารถรองรับได้ ทุกอุปกรณ์ ให้เว็บไซต์ของคุณ...</p>
-                            <i class="bi bi-chevron-down pe-2" style="float:right" @click="isHidden = !isHidden"></i>
                         </div>
                     </div>
                 </div>
                 <InterestingArticles/>
-                <div class="padding-card pt-0 text-center">
+                <div class="padding-card pt-0 mb-5 text-center">
                     <h1 class="mt-5 text-s-30 text-w-700">เรื่องเล่าจากลูกค้าเรา</h1>
-                    <Review/>
+                    <div class="text-start">
+                        <Review :type="type"/>
+                    </div>
                 </div>
                 <GetQuote :type="type"/>         
             </div>
@@ -81,7 +98,7 @@
 <script>
 import InterestingArticles from '@/components/InterestingArticles'
 import Review from '@/components/Review'
-import GetQuote from '@/components/Solutions/SolutionsGetQuote'
+import GetQuote from '@/components/GetQuote'
 
 export default {
     name: 'BusinessOwner',
@@ -92,7 +109,7 @@ export default {
   },
   data () {
         return {
-            type: 'Kaikong',
+            type: 'All',
             isHidden: false
     }
   }
@@ -196,8 +213,8 @@ export default {
         padding-right: 50px !important;
     }
     .p-custom-2{
-        padding-left: 65px !important;
-        padding-right: 65px !important;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
     }
     .mt-custom{
         margin-top: 3rem!important;

@@ -26,14 +26,14 @@
             </div>
             <div class="crad mt-5">
                 <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
-                    <div class="row mb-5">
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><img class="img-fluid" src="./../assets/Group323.png" style="width: 510px;height: 330px;"></div>
+                    <div v-for="data in responseDataFirst" :key="data.id" class="row mb-5">
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><img class="img-fluid" :src="data.illustration.url" :alt="data.illustration.name" style="width: 510px;height: 330px;"></div>
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" style="padding: 30px 10px 10px 10px;">
                             <p class="text-s-16" style="color:#807F7F">21 July 2021</p>
-                            <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
+                            <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                            <p class="text-s-16" style="color:#373737">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                            <button class="btn-transparent mt-3 button"><span>Read More</span></button>
+                            <p class="text-limit text-s-16" style="color:#373737;">{{data.description}}</p>
+                            <router-link class="btn btn-transparent mt-2 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                         </div>
                     </div>
                     <div class="d-none d-xl-block d-xxl-block">
@@ -244,7 +244,7 @@
                                         <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
+                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -270,7 +270,7 @@
                                         <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
+                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -296,7 +296,7 @@
                                         <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
+                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -322,7 +322,7 @@
                                         <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
+                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -348,7 +348,7 @@
                                         <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
+                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -374,7 +374,7 @@
                                         <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
+                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -403,6 +403,7 @@ export default {
             c5:false,
             c6:false,
             c7:false,
+            responseDataFirst:[],
             responseDatac1:[],
             responseDatac2:[],
             responseDatac3:[],
@@ -411,6 +412,11 @@ export default {
             responseDatac6:[],
             responseDatac7:[]
         }
+    },
+    created () {
+        this.axios.get('https://staging-sellsukiadmin.bearyweb.com/blogs?_sort=updated_at:DESC&_limit=1')
+        .then(response => (this.responseDataFirst = response.data))
+        .catch()
     },
     mounted () {
         window.addEventListener('scroll', this.onShow);

@@ -1,7 +1,7 @@
 <template>
-    <div id="PortfolioAkita">
+    <div id="PortfolioLine">
       <div class="row ps-xxl-4 ps-xl-4">
-        <div class="col-12 mb-3 d-block d-xl-none d-xxl-none"><img class="item-center" src="./../../assets/mobile/Akita-logo.png" alt="Akita-logo.png"></div>
+        <div class="col-12 mb-3 d-block d-xl-none d-xxl-none"><img class="item-center" src="./../../assets/mobile/Line-logo.png" alt="Line-logo.png"></div>
         <div v-for="data in responseData" :key="data.id" class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 p-xxl-0 p-xl-0 p-lg-5 p-md-5 p-sm-4 p-4">
             <router-link @click="scrollToTop" :to="{ path: '/Portfolio/Detail/'+data.id+'' , query: { type: data.bu_category.name } }">
                 <div class="row ps-lg-2 pe-lg-2 ps-0 pe-0">
@@ -21,7 +21,7 @@
 <script>
 
 export default {
-    name: 'PortfolioAkita',
+    name: 'PortfolioLine',
     data () {
         return {
             responseData:[]
@@ -29,7 +29,7 @@ export default {
     },
     methods : {
         getData(){
-            this.axios.get('https://staging-sellsukiadmin.bearyweb.com/Portfolios?bu_category.name=Akita')
+            this.axios.get('https://staging-sellsukiadmin.bearyweb.com/Portfolios?bu_category.name=Line')
             .then(response => (this.responseData = response.data))
         },
         scrollToTop() {

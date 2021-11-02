@@ -40,76 +40,33 @@
                             <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" width="60" src="./../../assets/icon/image65.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Tiktok</p></div>
                         </div>
                     </div>
-                    <div class="row p-custom-2 d-flex">
-                        <div class="col-12 text-center mt-5"><h1 class="text-s-30 font-wght" style="color:#A7A2FD">OUR SERVICES</h1></div>
-                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">Digital Advertising</span></h2>
-                            <img class="item-center" src="./../../assets/SolutionsFuse/Fuse-011.png" alt="">
+                    <div class="col-12 text-center mt-5"><h1 class="text-s-30 font-wght" style="color:#A7A2FD">DIGITAL ADVERTISING TOOLS</h1></div>
+                    <div v-for="data in responseData" :key="data.id">
+                        <div v-if="data.position_left" class="row mt-4 p-custom-2 d-flex">
+                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5">
+                                <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">{{data.header}}</span></h2>
+                                <img class="item-center" :src="data.image.url" :alt="data.image.name">
+                            </div>
+                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
+                                <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">{{data.header}}</span></h2>
+                                <div class="animate__animated" :class="{'animate__slideInUp':!isHidden,'animate__flipInX':isHidden}">
+                                    <p class="text-16 mt-4 p-2 pb-0 mb-0" :class="{'text-limit':!isHidden}" style="color:#373737">{{data.detail}}</p>
+                                    <i class="bi bi-chevron-down pe-2" :class="{'bi-chevron-up':isHidden}" style="float:right" @click="isHidden = !isHidden"></i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">Digital Advertising</span></h2>
-                            <p v-if="isHidden == false" class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">บริการยิงแอดโฆษณาบนช่องทาง Social Media ที่ครอบคลุมในกลุ่ม ทั้ง 7 ช่อง ทางทั้ง Facebook, Google, LINE, Instagram, Twitter, YouTube และ Tiktok...</p>
-                            <p v-if="isHidden == true" class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">
-                                บริการยิงแอดโฆษณาบนช่องทาง Social Media ที่ครอบคลุมในกลุ่ม ทั้ง 7 ช่อง ทางทั้ง Facebook, Google, LINE, Instagram, Twitter, YouTube และ Tiktok
-                                บริการยิงแอดโฆษณาบนช่องทาง Social Media ที่ครอบคลุมในกลุ่ม ทั้ง 7 ช่อง ทางทั้ง Facebook, Google, LINE, Instagram, Twitter, YouTube และ Tiktok
-                                บริการยิงแอดโฆษณาบนช่องทาง Social Media ที่ครอบคลุมในกลุ่ม ทั้ง 7 ช่อง ทางทั้ง Facebook, Google, LINE, Instagram, Twitter, YouTube และ Tiktok
-                            </p>
-                            <i class="bi bi-chevron-down pe-2" style="float:right" @click="isHidden = !isHidden"></i>
-                        </div>
-                    </div>
-                    <div class="row mt-5 p-custom-2 d-flex">
-                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">Spy Ads</span></h2>
-                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">บริการวิเคราะห์แผนการสื่อสารและ การทำ โฆษณาของแบรนด์คู่แข่ง เพื่อนำมาพัฒนา กลยุทธ์และรูปแบบ การทำโฆษณาของแบรนด์คุณ เพื่อให้แบรนด์เติบโตและพัฒนาไปได้...</p>
-                            <i class="bi bi-chevron-down pe-2" style="float:right"></i>
-                        </div>
-                        <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">Spy Ads</span></h2>
-                            <img class="item-center" src="./../../assets/SolutionsFuse/Fuse-021.png" alt="">
-                        </div>
-                    </div>
-                    <div class="row p-custom-2 d-flex">
-                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">Social Listening</span></h2>
-                            <img class="item-center" src="./../../assets/SolutionsFuse/Fuse-031.png" alt="">
-                        </div>
-                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">Social Listening</span></h2>
-                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">บริการวิเคราะห์แผนการสื่อสารและ การทำ โฆษณาบริการวิเคราะห์เทรนด์ และความต้องการใน ตลาดในปัจจุบัน เพื่อวิเคราะห์ว่าสินค้าและบริการที่ เกี่ยวกับธุรกิจของคุณถูกพูดถึง...</p>
-                            <i class="bi bi-chevron-down pe-2" style="float:right"></i>
-                        </div>
-                    </div>
-                    <div class="row mt-5 p-custom-2 d-flex">
-                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">Influencer Marketing</span></h2>
-                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">บริการโปรโมทสินค้าและบริการของคุณ ช่วยสร้างแบรนด์ให้เป็นที่จดจำ แบบยุคใหม่ด้วย Influencers สามารถเลือกบริการได้ตั้งแต่ระดับ Nano Influencers (1,000 followers)...</p>
-                            <i class="bi bi-chevron-down pe-2" style="float:right"></i>
-                        </div>
-                        <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">Influencer Marketing</span></h2>
-                            <img class="item-center" src="./../../assets/SolutionsFuse/Fuse-041.png" alt="">
-                        </div>
-                    </div>  
-                    <div class="row p-custom-2 d-flex">
-                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">Marketplace Ads</span></h2>
-                            <img class="item-center" src="./../../assets/SolutionsFuse/Fuse-051.png" alt="">
-                        </div>
-                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">Marketplace Ads</span></h2>
-                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">บริการสร้างช่องทางการขายออนไลน์ หรือ หน้าร้านบน Marketplace ไม่ว่า จะเป็น Lazada และ Shopee เพื่อ เพิ่มโอกาสในการ ขายออนไลน์ พร้อม บริการช่วยติดตั้งหน้าร้าน ช่วยลด...</p>
-                            <i class="bi bi-chevron-down pe-2" style="float:right"></i>
-                        </div>
-                    </div>   
-                    <div class="row mt-5 p-custom-2 d-flex">
-                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">Business Consulting</span></h2>
-                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">ที่ปรึกษาทางด้านธุรกิจ โดยทีมงานผู้เชี่ยวชาญมีประสบการณ์ร่วมงานกับ แบรนด์ชั้นนำ ที่คอยให้คำแนะนำ รวมไปถึงช่วยทำความเข้าใจตลาด และ กลุ่มเป้าหมายพร้อม...</p>
-                            <i class="bi bi-chevron-down pe-2" style="float:right"></i>
-                        </div>
-                        <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">Business Consulting</span></h2>
-                            <img class="item-center" src="./../../assets/SolutionsFuse/Fuse-061.png" alt="">
+                        <div v-else class="row mt-4 p-custom-2 d-flex">
+                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
+                                <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">{{data.header}}</span></h2>
+                                <div class="animate__animated" :class="{'animate__slideInUp':!isHidden,'animate__flipInX':isHidden}">
+                                    <p class="text-16 mt-4 p-2 pb-0 mb-0" :class="{'text-limit':!isHidden}" style="color:#373737">{{data.detail}}</p>
+                                    <i class="bi bi-chevron-down pe-2" :class="{'bi-chevron-up':isHidden}" style="float:right" @click="isHidden = !isHidden"></i>
+                                </div>
+                            </div>
+                            <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                                <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">{{data.header}}</span></h2>
+                                <img class="item-center" :src="data.image.url" :alt="data.image.name">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -144,7 +101,9 @@
                 <InterestingArticles/>
                 <div class="padding-card pt-0 text-center">
                     <h1 class="mt-5 text-s-30 text-w-700">เรื่องเล่าจากลูกค้าเรา</h1>
-                    <Review/>
+                    <div class="text-start">
+                    <Review :type="type"/>
+                    </div>
                 </div>
                 <GetQuote :type="type"/>         
             </div>
@@ -164,13 +123,18 @@ export default {
         InterestingArticles,
         Review,
         GetQuote
-  },
-  data () {
-        return {
-            type: 'Fuse',
-            isHidden: false
+    },
+    data () {
+            return {
+                type: 'Fuse',
+                isHidden: false,
+                responseData:[]
+        }
+    },
+    mounted () {
+        this.axios.get('https://staging-sellsukiadmin.bearyweb.com/solution-fuse-services')
+        .then(response => (this.responseData = response.data))
     }
-  }
 }
 </script>
 

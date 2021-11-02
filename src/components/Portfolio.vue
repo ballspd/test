@@ -50,7 +50,7 @@
                                 <div class="p-3">
                                     <a @click="type = 'Akita',Akita = false,Fuse = true,Line = true,Beary = true,Kaikong = true,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
                                         <div class="hover-logo" :class="{'filter-gray':Akita}">
-                                            <img class="item-center" src="./../assets/logo/image32.png" alt="">
+                                            <img class="item-center" src="./../assets/logo/logo-Akita.png" alt="">
                                             <font class="text-s-16" style="color:#373737">Akita Fulfillment</font>
                                         </div>
                                     </a>
@@ -68,7 +68,7 @@
                                 <div class="p-3">
                                     <a @click="type = 'Line',Akita = true,Fuse = true,Line = false,Beary = true,Kaikong = true,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
                                         <div class="hover-logo" :class="{'filter-gray':Line}">
-                                            <img class="item-center" src="./../assets/logo/image68.png" alt="">
+                                            <img class="item-center" src="./../assets/logo/logo-line.png" alt="">
                                         </div>
                                     </a>
                                 </div>
@@ -125,17 +125,21 @@
 
 <script>
 import GetQuote from '@/components/GetQuote'
-import PortfolioList from '@/components/Portfolio/PortfolioList'
 import PortfolioAkita from '@/components/Portfolio/PortfolioAkita'
 import PortfolioFuse from '@/components/Portfolio/PortfolioFuse'
+import PortfolioKaikong from '@/components/Portfolio/PortfolioKaikong'
+import PortfolioLine from '@/components/Portfolio/PortfolioLine'
+import PortfolioBeary from '@/components/Portfolio/PortfolioBeary'
 
 export default {
     name: 'Portfolio',
       components: {
         GetQuote,
-        PortfolioList,
         PortfolioAkita,
-        PortfolioFuse
+        PortfolioFuse,
+        PortfolioKaikong,
+        PortfolioLine,
+        PortfolioBeary
     },
     data () {
         return {

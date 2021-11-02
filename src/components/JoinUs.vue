@@ -130,9 +130,9 @@
                       </div>
                     </div>
                 </div>
-                <div class="row pb-5 ps-5 pe-5">
+                <!-- <div class="row pb-5 ps-5 pe-5">
                   <p class="text-s-18 text-end font-wght" style="color:#373737">See more <i class="bi bi-chevron-double-right"></i></p>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

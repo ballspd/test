@@ -1,14 +1,14 @@
 <template>
     <div id="Review">
-        <div class="row mt-4 mb-2 p-3">
+        <div v-if="responseData.length != 0" class="row mt-4 mb-2 p-3">
             <div class="col-12">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div v-for="data in responseData" :key="data.id" class="carousel-item" :class="{'active': data.id === 1}">
+                    <div v-for="(data, index) in responseData" :key="index" class="carousel-item" :class="{'active': index == 0}">
                         <div class="row">
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img class="d-block image-review" src="./../assets/Rectangle1.png"></div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-xxl-5 p-lg-5 p-sm-3 p-3">
-                            <p style="color:#FF773B">-- TESTIMGNIALS</p>
+                            <p style="color:#FF773B">-- TESTIMONIALS</p>
                             <font class="text-review">{{data.hearder}}</font>
                             <span></span><p class="mt-3">{{data.message}}</p>
                             <p class="mt-xxl-5 mt-4" style="color:#FF773B">{{data.name}}<br>{{data.position}}</p>
