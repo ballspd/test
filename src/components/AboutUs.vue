@@ -117,19 +117,24 @@ export default {
         return{
             height_colum: 330,
             height_border: 320,
+            lang: localStorage.getItem('lang') || 'en',
             responseData:[]
       }
     },
     methods:{
         markdownToHtml(data){
-            return marked(data);
+            if(data != undefined){
+                return marked(data);
+            }else{
+                return '';
+            }
         }
     },
     //this.$route.params.id
     mounted () {
-        this.axios.get('https://staging-sellsukiadmin.bearyweb.com/about-uses')
+        this.axios.get('about-uses?_locale='+ this.lang)
         .then(response => (this.responseData = response.data))
-        this.axios.get('https://staging-sellsukiadmin.bearyweb.com/about-uses/count')
+        this.axios.get('about-uses/count?_locale='+ this.lang)
         .then(response => (this.height_colum = this.height_colum * response.data,this.height_border = this.height_border * response.data))
     }
 }

@@ -31,53 +31,63 @@
         </div>
         <div class="container">
             <div class="crad">
-                <div class="mt-custom mb-4 p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-5 p-5">
-                    <div class="row p-custom-2 d-flex">
-                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                            <div class="text-lg-start text-center d-block d-lg-none">
-                                <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP 1</span>
-                                <p class="mt-4 text-s-30 text-w-700">สร้างความแตกต่างให้กับสินค้าของคุณ</p>
+                <div class="mt-custom p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-5 p-5" style="margin-bottom: 20px;">
+                    <div v-for="(data, index) in responseData" :key="index">
+                        <div v-if="data.position_left" class="row p-custom-2 mt-5">
+                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                                <div class="text-lg-start text-center d-block d-lg-none">
+                                    <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP {{index + 1}}</span>
+                                    <p class="mt-4 text-s-30 text-w-700">{{data.header}}</p>
+                                </div>
+                                <img class="item-center mt-4" :src="data.image.url" :alt="data.image.name">
                             </div>
-                            <img class="item-center" src="./../../assets/SolutionsKaikong/Kaikong01.png" alt="">
+                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 mt-5">
+                                <div class="text-lg-start text-center d-none d-lg-block">
+                                    <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP {{index + 1}}</span>
+                                    <p class="mt-5 text-s-30 text-w-700">{{data.header}}</p>
+                                </div>    
+                                <div class="animate__animated animate__slideInUp">
+                                    <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
+                                        <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737">
+                                            {{data.detail}}
+                                        </div>
+                                    </div>
+                                    <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
+                                        <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">
+                                            {{data.detail}}
+                                        </div>
+                                    </div>
+                                    <a class="accordion-button collapsed cursor-pointer ms-auto me-2" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                            <div class="text-lg-start text-center d-none d-lg-block">
-                                <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP 1</span>
-                                <p class="mt-5 text-s-30 text-w-700">สร้างความแตกต่างให้กับสินค้าของคุณ</p>
+                        <div v-else class="row p-custom-2 mt-5">
+                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 mt-5">
+                                <div class="text-lg-start text-center d-none d-lg-block">
+                                    <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP {{index + 1}}</span>
+                                    <p class="mt-4 text-s-30 text-w-700 mt-5">{{data.header}}</p>
+                                </div>
+                                <div class="animate__animated animate__slideInUp">
+                                    <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
+                                        <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737">
+                                            {{data.detail}}
+                                        </div>
+                                    </div>
+                                    <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
+                                        <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">
+                                            {{data.detail}}
+                                        </div>
+                                    </div>
+                                    <a class="accordion-button collapsed cursor-pointer ms-auto me-2" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
+                                </div>
                             </div>
-                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">บริการพัฒนาและจัด ทำเว็บไซต์ สำหรับทุกธุรกิจ โดยทีมนักพัฒนามือ อาชีพ ที่จะทำให้ธุรกิจของคุณเติบโตบนโลกออนไลน์ สามารถรองรับได้ ทุกอุปกรณ์ ให้เว็บไซต์ของคุณ...</p>
-                        </div>
-                    </div>
-                    <div class="row p-custom-2 d-flex mt-5">
-                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                            <div class="text-lg-start text-center d-none d-lg-block">
-                                <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP 1</span>
-                                <p class="mt-4 text-s-30 text-w-700">สร้างความแตกต่างให้กับสินค้าของคุณ</p>
+                            <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                                <div class="text-lg-start text-center d-block d-lg-none">
+                                    <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP {{index + 1}}</span>
+                                    <p class="mt-4 text-s-30 text-w-700">{{data.header}}</p>
+                                </div>
+                                <img class="item-center mt-4" :src="data.image.url" :alt="data.image.name">
                             </div>
-                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">บริการพัฒนาและจัด ทำเว็บไซต์ สำหรับทุกธุรกิจ โดยทีมนักพัฒนามือ อาชีพ ที่จะทำให้ธุรกิจของคุณเติบโตบนโลกออนไลน์ สามารถรองรับได้ ทุกอุปกรณ์ ให้เว็บไซต์ของคุณ...</p>
-                        </div>
-                        <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                            <div class="text-lg-start text-center d-block d-lg-none">
-                                <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP 1</span>
-                                <p class="mt-4 text-s-30 text-w-700">สร้างความแตกต่างให้กับสินค้าของคุณ</p>
-                            </div>
-                            <img class="item-center" src="./../../assets/SolutionsKaikong/Kaikong02.png" alt="">
-                        </div>
-                    </div>
-                    <div class="row p-custom-2 d-flex mt-5">
-                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                            <div class="text-lg-start text-center d-block d-lg-none">
-                                <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP 1</span>
-                                <p class="mt-4 text-s-30 text-w-700">สร้างความแตกต่างให้กับสินค้าของคุณ</p>
-                            </div>
-                            <img class="item-center" src="./../../assets/SolutionsKaikong/Kaikong01.png" alt="">
-                        </div>
-                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                            <div class="text-lg-start text-center d-none d-lg-block">
-                                <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP 1</span>
-                                <p class="mt-5 text-s-30 text-w-700">สร้างความแตกต่างให้กับสินค้าของคุณ</p>
-                            </div>
-                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">บริการพัฒนาและจัด ทำเว็บไซต์ สำหรับทุกธุรกิจ โดยทีมนักพัฒนามือ อาชีพ ที่จะทำให้ธุรกิจของคุณเติบโตบนโลกออนไลน์ สามารถรองรับได้ ทุกอุปกรณ์ ให้เว็บไซต์ของคุณ...</p>
                         </div>
                     </div>
                 </div>
@@ -106,17 +116,39 @@ export default {
         InterestingArticles,
         Review,
         GetQuote
-  },
-  data () {
+    },
+    data () {
         return {
             type: 'All',
-            isHidden: false
+            isHidden: false,
+            lang: localStorage.getItem('lang') || 'en',
+            responseData:[]
+        }
+    },
+    mounted () {
+        this.axios.get('business-owners?_locale='+ this.lang)
+        .then(response => (this.responseData = response.data))
     }
-  }
 }
 </script>
 
 <style scoped>
+a{
+    color: #171515 !important;
+}
+
+.accordion-button{
+    background-color: #FBFBFB !important;
+    padding: 5px;
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed){
+    box-shadow:none;
+}
 
 .bg-icon{
     width: 146px;

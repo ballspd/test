@@ -145,6 +145,7 @@ export default {
     name: 'JoinUs',
     data() {
       return {
+        lang: localStorage.getItem('lang') || 'en',
         responseData:[]
       }
     },
@@ -153,11 +154,15 @@ export default {
           window.scrollTo(0,0);
       },
       markdownToHtml(data){
-          return marked(data);
+          if(data != undefined){
+              return marked(data);
+          }else{
+              return '';
+          }
       }
     },
     mounted () {
-        this.axios.get('https://staging-sellsukiadmin.bearyweb.com/job-positions')
+        this.axios.get('job-positions?_locale='+ this.lang)
         .then(response => (this.responseData = response.data))
     },
 }

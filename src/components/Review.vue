@@ -47,19 +47,20 @@ export default {
     data() {
       return {
         responseData:[],
-        url:''
+        url:'',
+        lang: localStorage.getItem('lang') || 'en'
       }
     },
     //this.$route.params.id
     mounted () {
         if(this.type != 'All'){
-            this.url = 'https://staging-sellsukiadmin.bearyweb.com/reviews?bu_category.name='+this.type
+            this.url = 'reviews?bu_category.name='+this.type
         }
         else
         {
-            this.url = 'https://staging-sellsukiadmin.bearyweb.com/reviews'
+            this.url = 'reviews'
         }
-        this.axios.get(this.url)
+        this.axios.get(this.url + '?_locale='+ this.lang)
         .then(response => (this.responseData = response.data))
     }
     

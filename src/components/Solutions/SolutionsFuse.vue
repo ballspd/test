@@ -49,18 +49,36 @@
                             </div>
                             <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
                                 <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">{{data.header}}</span></h2>
-                                <div class="animate__animated" :class="{'animate__slideInUp':!isHidden,'animate__flipInX':isHidden}">
-                                    <p class="text-16 mt-4 p-2 pb-0 mb-0" :class="{'text-limit':!isHidden}" style="color:#373737">{{data.detail}}</p>
-                                    <i class="bi bi-chevron-down pe-2" :class="{'bi-chevron-up':isHidden}" style="float:right" @click="isHidden = !isHidden"></i>
+                                <div class="animate__animated animate__slideInUp">
+                                    <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
+                                        <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737">
+                                            {{data.detail}}
+                                        </div>
+                                    </div>
+                                    <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
+                                        <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">
+                                            {{data.detail}}
+                                        </div>
+                                    </div>
+                                    <a class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
                                 </div>
                             </div>
                         </div>
                         <div v-else class="row mt-4 p-custom-2 d-flex">
                             <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
                                 <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">{{data.header}}</span></h2>
-                                <div class="animate__animated" :class="{'animate__slideInUp':!isHidden,'animate__flipInX':isHidden}">
-                                    <p class="text-16 mt-4 p-2 pb-0 mb-0" :class="{'text-limit':!isHidden}" style="color:#373737">{{data.detail}}</p>
-                                    <i class="bi bi-chevron-down pe-2" :class="{'bi-chevron-up':isHidden}" style="float:right" @click="isHidden = !isHidden"></i>
+                                <div class="animate__animated animate__slideInUp">
+                                    <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
+                                        <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737">
+                                            {{data.detail}}
+                                        </div>
+                                    </div>
+                                    <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
+                                        <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">
+                                            {{data.detail}}
+                                        </div>
+                                    </div>
+                                    <a class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
                                 </div>
                             </div>
                             <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
@@ -128,17 +146,30 @@ export default {
             return {
                 type: 'Fuse',
                 isHidden: false,
+                lang: localStorage.getItem('lang') || 'en',
                 responseData:[]
         }
     },
     mounted () {
-        this.axios.get('https://staging-sellsukiadmin.bearyweb.com/solution-fuse-services')
+        this.axios.get('solution-fuse-services?_locale='+ this.lang)
         .then(response => (this.responseData = response.data))
     }
 }
 </script>
 
 <style scoped>
+.accordion-button{
+    background-color: #FBFBFB !important;
+    padding: 5px;
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed){
+    box-shadow:none;
+}
 
 .bg{
   background: url('./../../assets/image94.png');

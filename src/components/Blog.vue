@@ -30,9 +30,9 @@
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><img class="img-fluid" :src="data.illustration.url" :alt="data.illustration.name" style="width: 510px;height: 330px;"></div>
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" style="padding: 30px 10px 10px 10px;">
                             <p class="text-s-16" style="color:#807F7F">21 July 2021</p>
-                            <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
+                            <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                            <p class="text-limit text-s-16" style="color:#373737;">{{data.description}}</p>
+                            <p class="text-limit-2 text-s-16" style="color:#373737;">{{data.description}}</p>
                             <router-link class="btn btn-transparent mt-2 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                         </div>
                     </div>
@@ -215,9 +215,9 @@
                                         <img class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
+                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
+                                        <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
                                         <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
@@ -241,9 +241,9 @@
                                         <img class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
+                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
+                                        <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
                                         <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
@@ -267,9 +267,9 @@
                                         <img class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
+                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
+                                        <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
                                         <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
@@ -293,9 +293,9 @@
                                         <img class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
+                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
+                                        <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
                                         <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
@@ -319,9 +319,9 @@
                                         <img class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
+                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
+                                        <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
                                         <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
@@ -345,9 +345,9 @@
                                         <img class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
+                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
+                                        <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
                                         <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
@@ -371,9 +371,9 @@
                                         <img class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
+                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p class="text-limit" style="color:#373737;font-size:14px">{{data.description}}</p>
+                                        <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
                                         <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
@@ -396,6 +396,7 @@ export default {
             isActive: true,
             show:false,
             windowTop:0,
+            lang: localStorage.getItem('lang') || 'en',
             c1:false,
             c2:false,
             c3:false,
@@ -414,7 +415,7 @@ export default {
         }
     },
     created () {
-        this.axios.get('https://staging-sellsukiadmin.bearyweb.com/blogs?_sort=updated_at:DESC&_limit=1')
+        this.axios.get('blogs?_sort=updated_at:DESC&_limit=1&_locale='+ this.lang)
         .then(response => (this.responseDataFirst = response.data))
         .catch()
     },
@@ -435,7 +436,7 @@ export default {
             this.windowTop = e.target.documentElement.scrollTop;
             if(this.windowTop > '1200'){
                 this.c1 = true
-                this.axios.get('https://staging-sellsukiadmin.bearyweb.com/blogs?blog_category=1&_sort=updated_at:DESC&_limit=4')
+                this.axios.get('blogs?blog_category=1&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac1 = response.data))
                 .catch()
             }
@@ -445,7 +446,7 @@ export default {
             if(this.windowTop > '1650')
             {
                 this.c2 = true
-                this.axios.get('https://staging-sellsukiadmin.bearyweb.com/blogs?blog_category=2&_sort=updated_at:DESC&_limit=4')
+                this.axios.get('blogs?blog_category=2&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac2 = response.data))
                 .catch()
             }
@@ -455,7 +456,7 @@ export default {
             if(this.windowTop > '2150')
             {
                 this.c3 = true
-                this.axios.get('https://staging-sellsukiadmin.bearyweb.com/blogs?blog_category=3&_sort=updated_at:DESC&_limit=4')
+                this.axios.get('blogs?blog_category=3&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac3 = response.data))
                 .catch()
             }
@@ -465,7 +466,7 @@ export default {
             if(this.windowTop > '2650')
             {
                 this.c4 = true
-                this.axios.get('https://staging-sellsukiadmin.bearyweb.com/blogs?blog_category=4&_sort=updated_at:DESC&_limit=4')
+                this.axios.get('blogs?blog_category=4&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac4 = response.data))
                 .catch()
             }
@@ -475,7 +476,7 @@ export default {
             if(this.windowTop > '3150')
             {
                 this.c5 = true
-                this.axios.get('https://staging-sellsukiadmin.bearyweb.com/blogs?blog_category=5&_sort=updated_at:DESC&_limit=4')
+                this.axios.get('blogs?blog_category=5&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac5 = response.data))
                 .catch()
             }
@@ -485,7 +486,7 @@ export default {
             if(this.windowTop > '3650')
             {
                 this.c6 = true
-                this.axios.get('https://staging-sellsukiadmin.bearyweb.com/blogs?blog_category=6&_sort=updated_at:DESC&_limit=4')
+                this.axios.get('blogs?blog_category=6&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac6 = response.data))
                 .catch()
             }
@@ -495,7 +496,7 @@ export default {
             if(this.windowTop > '4150')
             {
                 this.c7 = true
-                this.axios.get('https://staging-sellsukiadmin.bearyweb.com/blogs?blog_category=7&_sort=updated_at:DESC&_limit=4')
+                this.axios.get('blogs?blog_category=7&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac7 = response.data))
                 .catch()
             }

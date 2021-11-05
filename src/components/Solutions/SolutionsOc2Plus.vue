@@ -155,22 +155,22 @@
                 </div>
                 <div class="row mt-0 mt-lg-5 mb-5 ms-5 me-5">
                     <div class="col-4 col-lg-2">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/image113.png">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-1.png">
                     </div>
                     <div class="col-4 col-lg-2">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/image113.png">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-2.png">
                     </div>
                     <div class="col-4 col-lg-2">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/image113.png">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-3.png">
                     </div>
                     <div class="col-4 col-lg-2">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/image113.png">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-4.png">
                     </div>
                     <div class="col-4 col-lg-2">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/image113.png">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-5.png">
                     </div>
                     <div class="col-4 col-lg-2">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/image113.png">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-6.png">
                     </div>
                 </div>
                 <InterestingArticles/>

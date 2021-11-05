@@ -7,9 +7,9 @@
                 <div class="row ps-lg-2 pe-lg-2 ps-0 pe-0">
                     <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"><img class="mb-2 img-fix-size" :src="data.illustration.url" :alt="data.illustration.name"></div>
                     <div class="col-col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <font class="text-w-700" style="font-size:24px;color:#373737">{{data.title}}</font>
+                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#373737">{{data.title}}</font>
                         <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                        <p class="text-s-14 text-limit" style="color:#373737">{{data.description}}</p>
+                        <p class="text-s-14 text-limit-2" style="color:#373737">{{data.description}}</p>
                     </div>
                 </div>
             </router-link>
@@ -24,12 +24,13 @@ export default {
     name: 'PortfolioFuse',
     data () {
         return {
+            lang: localStorage.getItem('lang') || 'en',
             responseData:[]
         }
     },
     methods : {
         getData(){
-            this.axios.get('https://staging-sellsukiadmin.bearyweb.com/Portfolios?bu_category.name=Fuse')
+            this.axios.get('Portfolios?bu_category.name=Fuse&_locale='+ this.lang)
             .then(response => (this.responseData = response.data))
         },
         scrollToTop() {

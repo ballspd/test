@@ -82,7 +82,7 @@
             </ul>
           </li> -->
           <li class="nav-item navbar-item">
-            <router-link class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Solutions <i class="bi bi-chevron-down" style="font-size: 15px;"></i></router-link>
+            <a class="nav-link border-menu text-c-menu" aria-current="page" href="#">Solutions <i class="bi bi-chevron-down" style="font-size: 15px;"></i></a>
             <ul class="dropdown" style="padding: 30px 32px 30px 32px;width: 540px;margin-left: 75px;"> <!-- 43% -->
               <i class="bi bi-caret-up-fill pe-5 ps-5" style="font-size: 40px;position: absolute;left: 185px;color: #ffffff;bottom: 440px;"></i>
               <div class="row">
@@ -90,8 +90,8 @@
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Types of Business</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">
                   <router-link @click="scrollToTop" to="/TypesOfBusiness/BusinessOwner"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Business Owner</p></router-link><br>
-                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Online Merchant</p></a><br>
-                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Corporate</p></a>
+                  <router-link @click="scrollToTop" to="/TypesOfBusiness/OnlineMerchant"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Online Merchant</p></router-link><br>
+                  <router-link @click="scrollToTop" to="/TypesOfBusiness/Corporate"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Corporate</p></router-link>
                 </div>
                 <div class="col-6 hover-manu" style="padding-right: 20px !important;padding-left: 20px !important;width: 260px !important;">
                   <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Services-Products</font></a>
@@ -127,14 +127,17 @@
       <div class="ml-2">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link class="nav-link text-c-menu" to="/Home" style="margin-right:15px;margin-left:10px;padding-right: 0 !important;padding-left: 0 !important;"><div class="btn-icon text-w-700" style="background-color: #FDF5E8;font-size:16px">EN</div></router-link>
+            <div class="nav-link text-c-menu cursor-pointer" style="margin-right:15px;margin-left:10px;padding-right: 0 !important;padding-left: 0 !important;">
+              <div v-if="lang == 'en'" class="btn-icon text-w-700" style="background-color: #FDF5E8;font-size:16px">EN</div>
+              <div v-else class="btn-icon text-w-700" style="background-color: #FDF5E8;font-size:16px">TH</div>
+            </div>
              <ul class="dropdown" style="padding: 15px;width: 150px;height: 120px;margin-left: 35px;top: 90px">
               <i class="bi bi-caret-up-fill" style="font-size: 40px;position: absolute;left: 55px;color: #FFFFFF;bottom: 90px;"></i>
               <div class="row">
                 <div class="col-12">
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">TH</p></a>
+                  <a @click="langChange('th-TH'),lang = 'th-TH'" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">TH</p></a>
                   <hr style="border: 1px solid #50151C;width: 100px;height: 0px;">
-                  <a href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">EN</p></a>
+                  <a @click="langChange('en'),lang = 'en'" href="#"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">EN</p></a>
                 </div>
               </div>
             </ul>
@@ -231,10 +234,12 @@ export default {
     DigitalMarketingMenu
   },
   data () {
+    const lang = localStorage.getItem('lang') || 'en';
     return {
       menu: '',
       display_manu: false,
-      component: ''
+      component: '',
+      lang:lang
     }
   },
   methods: {
@@ -243,6 +248,10 @@ export default {
     },
     scrollToTop() {
         window.scrollTo(0,0);
+    },
+    langChange(event){
+      localStorage.setItem('lang',event);
+      window.location.reload();
     }
   }
 }
