@@ -32,31 +32,28 @@
         <div class="container">
             <div class="crad">
                 <div class="mt-custom p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
-                    <div class="row">
-                        <div class="col-12 mt-4 text-center"><h1 class="text-s-30 text-w-700" style="color:#444444">ทำไมลูกค้าถึงไว้ใจให้เราดูแล</h1></div>    
-                    </div>
                     <div class="row mt-5 ps-5 pe-5 text-center">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2" style="background-color: #F76D22;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsLine/icon-Line-1.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsAkita/icon-solution-akita-1.png"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#373737">เก็บ</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2" style="background-color: #143555;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsLine/icon-Line-1.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsAkita/icon-solution-akita-2.png"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#373737">เเพ๊ค</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2" style="background-color: #F76D22;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsLine/icon-Line-1.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsAkita/icon-solution-akita-3.png"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#373737">ส่ง</h2>
                         </div>     
                     </div>
                     <div class="row p-custom-2 d-flex">
-                        <div class="col-12 text-center mt-5"><h1 class="text-s-30 font-wght" style="color:#143555">OUR SERVICES</h1></div>
+                        <div class="col-12 text-center mt-5"><h1 class="text-s-30 font-wght" style="color:#143555">AKITA FULFILLMENT บริการคลังสินค้าครบวงจร</h1></div>
                         <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5">
                             <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="color:#F76D22;padding: 10px 5px;"><span style="border-bottom: 1px solid #045298;padding: 10px 5px">Fulfillment Service</span></h2>
                             <img class="item-center" src="./../../assets/SolutionsAkita/Akita01.png" alt="">
@@ -91,28 +88,28 @@
                     <div class="row mt-5 text-center">
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
                             <div class="bg-icon d-flex item-center mt-md-0 mt-2">
-                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-1.png"></div>
+                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsAkita/icon-solution-akita-4.png"></div>
                             </div>
                             <img class="item-center mt-4" src="./../../assets/icon/Group163.png">
                             <h2 class="text-s-20 mt-3" style="color:#373737">รับฟัง</h2>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
                             <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-2.png"></div>
+                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsAkita/icon-solution-akita-5.png"></div>
                             </div>
                             <img class="item-center mt-4" src="./../../assets/icon/Group163.png">
                             <h2 class="text-s-20 mt-3" style="color:#373737">ว่องไว</h2>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
                             <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-3.png"></div>
+                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsAkita/icon-solution-akita-6.png"></div>
                             </div>
                             <img class="item-center mt-4" src="./../../assets/icon/Group163.png">
                             <h2 class="text-s-20 mt-3" style="color:#373737">ใส่ใจ</h2>
                         </div> 
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
                             <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-3.png"></div>
+                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsAkita/icon-solution-akita-7.png"></div>
                             </div>
                             <img class="item-center mt-4" src="./../../assets/icon/Group163.png">
                             <h2 class="text-s-20 mt-3" style="color:#373737">เชื่อได้</h2>
@@ -142,13 +139,19 @@ export default {
         InterestingArticles,
         Review,
         GetQuote
-  },
-  data () {
-        return {
-            type: 'Akita',
-            isHidden: false
+    },
+    data () {
+            return {
+                type: 'Akita',
+                isHidden: false,
+                lang: localStorage.getItem('lang') || 'en',
+                responseData:[]
+        }
+    },
+    mounted () {
+            this.axios.get('solution-akita-services?_locale='+ this.lang)
+            .then(response => (this.responseData = response.data))
     }
-  }
 }
 </script>
 

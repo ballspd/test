@@ -35,43 +35,43 @@
                     <div class="row text-center justify-content-center mb-4">
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2" style="background-color: #0BBD92;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsLine/icon-Line-1.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-beary-1.png"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#0A0909">Website</h2>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2" style="background-color: #030303;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsLine/icon-Line-1.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-beary-2.png"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#0A0909">LINE API Messaging</h2>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2" style="background-color: #0BBD92;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsLine/icon-Line-1.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-beary-3.png"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#0A0909">LINE OA</h2>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2" style="background-color: #030303;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsLine/icon-Line-1.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-beary-4.png"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#0A0909">CRM software</h2>
                         </div>  
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2" style="background-color: #0BBD92;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsLine/icon-Line-1.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-beary-5.png"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#0A0909">Web Application</h2>
                         </div>  
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2" style="background-color: #030303;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsLine/icon-Line-1.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-beary-6.png"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#0A0909">Mobile Application</h2>
                         </div>       
                     </div>
                     <div class="row p-custom-2 d-flex">
-                        <div class="col-12 text-center mt-5"><h1 class="text-s-30 font-wght" style="color:#0BBD92">OUR SERVICES</h1></div>
+                        <div class="col-12 text-center mt-5"><h1 class="text-s-30 font-wght" style="color:#0BBD92">BUSINESS TECH SOLUTION</h1></div>
                         <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5">
                             <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="color:#030303;padding: 10px 5px;"><span style="border-bottom: 1px solid #0BBD92;padding: 10px 5px">Fulfillment Service</span></h2>
                             <img class="item-center" src="./../../assets/SolutionsBeary/Beary01.png" alt="">
@@ -112,21 +112,21 @@
                     <div class="row mt-5 text-center">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                             <div class="bg-icon d-flex item-center mt-md-0 mt-2">
-                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-1.png"></div>
+                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsBeary/icon-beary-7.png"></div>
                             </div>
                             <img class="item-center mt-4" src="./../../assets/icon/Group163.png">
                             <h2 class="text-s-20 mt-3" style="color:#373737">พร้อมให้คำปรึกษาในการ <br>พัฒนาระบบให้เข้ากับธุรกิจ <br>ของคุณได้ทุกรูปแบบ</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                             <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-2.png"></div>
+                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsBeary/icon-beary-8.png"></div>
                             </div>
                             <img class="item-center mt-4" src="./../../assets/icon/Group163.png">
                             <h2 class="text-s-20 mt-3" style="color:#373737">มีทีมงานที่คอยซัพพอร์ท <br>พร้อมดูแลระบบและให้คำปรึกษา <br>อย่างใกล้ชิด</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                             <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-3.png"></div>
+                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsBeary/icon-beary-9.png"></div>
                             </div>
                             <img class="item-center mt-4" src="./../../assets/icon/Group163.png">
                             <h2 class="text-s-20 mt-3" style="color:#373737">ทีมนักพัฒนามีประสบการณ์ <br>การพัฒนาระบบให้กับกลุ่มผู้ใช้งาน <br>ที่หลากหลาย และพัฒนาระบบ<br> บนหลากหลายแพลตฟอร์ม</h2>
@@ -156,13 +156,19 @@ export default {
         InterestingArticles,
         Review,
         GetQuote
-  },
-  data () {
+    },
+    data () {
         return {
             type: 'Beary',
-            isHidden: false
+            isHidden: false,
+            lang: localStorage.getItem('lang') || 'en',
+            responseData:[]
+        }
+    },
+    mounted () {
+        this.axios.get('solution-beary-services?_locale='+ this.lang)
+        .then(response => (this.responseData = response.data))
     }
-  }
 }
 </script>
 

@@ -1,5 +1,6 @@
 <template>
 <div id="Portfolio">
+    <Preloader/>
     <div class="background-main">
         <div class="container">
             <div class="row banner-hero">
@@ -130,6 +131,7 @@ import PortfolioFuse from '@/components/Portfolio/PortfolioFuse'
 import PortfolioKaikong from '@/components/Portfolio/PortfolioKaikong'
 import PortfolioLine from '@/components/Portfolio/PortfolioLine'
 import PortfolioBeary from '@/components/Portfolio/PortfolioBeary'
+import Preloader from '@/components/Preloader'
 
 export default {
     name: 'Portfolio',
@@ -139,7 +141,8 @@ export default {
         PortfolioFuse,
         PortfolioKaikong,
         PortfolioLine,
-        PortfolioBeary
+        PortfolioBeary,
+        Preloader
     },
     data () {
         return {

@@ -1,5 +1,6 @@
 <template>
 <div id="PortfolioDetail">
+    <Preloader/>
     <div class="background-main">
         <div class="container">
             <div class="row">
@@ -80,11 +81,13 @@
 // import Review from '@/components/Review'
 import RelatedPosts from '@/components/RelatedPosts'
 import marked from 'marked';
+import Preloader from '@/components/Preloader'
 
 export default {
     name: 'PortfolioDetail',
     components:{
-        RelatedPosts
+        RelatedPosts,
+        Preloader
     //     Review
     },
     data() {
@@ -104,7 +107,11 @@ export default {
     },
     //this.$route.params.id
     created () {
-        this.axios.get('Portfolios/' + this.$route.params.id + '&_locale='+ this.lang)
+        this.axios.get('Portfolios/' + this.$route.params.id+'&_locale='+ this.lang)
+        .then(response => (this.responseData = response.data))
+    },
+    updated () {
+        this.axios.get('Portfolios/' + this.$route.params.id+'&_locale='+ this.lang)
         .then(response => (this.responseData = response.data))
     }
 }

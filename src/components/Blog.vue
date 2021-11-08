@@ -1,5 +1,6 @@
 <template>
 <div id="Portfolio">
+    <Preloader/>
     <div class="background-main">
         <div class="container">
             <div class="row banner-hero">
@@ -388,9 +389,13 @@
 </template>
 
 <script>
+import Preloader from '@/components/Preloader'
 
 export default {
     name: 'blog',
+    components: {
+        Preloader
+    },
     data () {
         return {
             isActive: true,

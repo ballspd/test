@@ -1,5 +1,6 @@
 <template>
 <div id="Corporate">
+    <Preloader/>
     <div class="background-main">
         <div class="pb-lg-0 pb-5">
             <div class="container">
@@ -165,13 +166,15 @@
 import InterestingArticles from '@/components/InterestingArticles'
 import Review from '@/components/Review'
 import GetQuote from '@/components/GetQuote'
+import Preloader from '@/components/Preloader'
 
 export default {
     name: 'Corporate',
     components: {
         InterestingArticles,
         Review,
-        GetQuote
+        GetQuote,
+        Preloader
     },
     data () {
         return {

@@ -1,5 +1,6 @@
 <template>
 <div id="BlogsAll">
+    <Preloader/>
     <div class="background-main">
         <div class="container">
             <div class="row">
@@ -11,14 +12,14 @@
         <div class="container">
             <div class="crad mt-4 text-color-this-page">
                 <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
-                    <div class="row mb-1">
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><img class="img-fluid" src="./../../assets/Group323.png" style="width: 510px;height: 330px;"></div>
+                    <div v-for="data in responseDataSingle" :key="data.id" class="row mb-1">
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><img class="img-fix-size" :src="data.illustration.url" style="height: 330px;"></div>
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" style="padding: 30px 10px 10px 10px;">
                             <p class="text-s-16" style="color:#807F7F">21 July 2021</p>
-                            <font class="font-wght" style="font-size:24px;color:#15304E">Lorem ipsum</font>
+                            <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                            <p class="text-s-16" style="color:#373737">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                            <button class="btn-transparent mt-3 button"><span>Read More</span></button>
+                            <p class="text-s-16" style="color:#373737">{{data.description}}</p>
+                            <router-link class="btn btn-transparent mt-3 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
                         </div>
                     </div>
                 </div>
@@ -46,12 +47,17 @@
 </template>
 
 <script>
+import Preloader from '@/components/Preloader'
 
 export default {
     name: 'BlogsAll',
+    components: {
+        Preloader
+    },
     data() {
       return {
         responseData:[],
+        responseDataSingle:[],
         lang: localStorage.getItem('lang') || 'en',
       }
     },
@@ -59,6 +65,9 @@ export default {
     created () {
         this.axios.get('Blogs?blog_category=' + this.$route.params.id + '&_locale='+ this.lang)
         .then(response => (this.responseData = response.data))
+
+        this.axios.get('Blogs?blog_category=' + this.$route.params.id + '&_sort=updated_at:DESC&_limit=1&_locale='+ this.lang)
+        .then(response => (this.responseDataSingle = response.data))
     }
 }
 </script>

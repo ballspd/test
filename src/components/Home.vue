@@ -1,5 +1,6 @@
 <template>
 <div id="Home">
+  <Preloader/>
   <div class="background-main">
     <div class="container">
       <div class="row banner-hero">
@@ -36,22 +37,28 @@
         <div style="padding-top: 80px !important;padding:70px">
           <div class="row">
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
+              <router-link @click="scrollToTop" to="/TypesOfBusiness/BusinessOwner">
               <div class="card-shadow hvr-grow-shadow crad-image mt-3">
                 <img class="item-center mt-3 image-size" src="./../assets/beautiful-smart-asian-young-entrepreneur-business-woman-owner-sme-checking-product-stock-scan-qr-code-working-home.png">
                 <p class="mt-3 text-w-700 font-wght text-center text-dark" style="position: relative;font-size:20px;z-index: 1;">BUSINESS OWNER</p>
               </div>
+              </router-link>
             </div>
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
+              <router-link @click="scrollToTop" to="/TypesOfBusiness/OnlineMerchant">
               <div class="card-shadow hvr-grow-shadow crad-image mt-3">
                 <img class="item-center mt-3 image-size" src="./../assets/business-owner-working-home-office.png">
                 <p class="mt-3 text-w-700 font-wght text-center text-dark" style="position: relative;font-size:20px;z-index: 1;">ONLINE MERCHANT</p>
               </div>
+              </router-link>
             </div>
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
+              <router-link @click="scrollToTop" to="/TypesOfBusiness/Corporate">
               <div class="card-shadow hvr-grow-shadow crad-image mt-3">
                 <img class="item-center mt-3 image-size" src="./../assets/portrait-asian-business-man-business-district-lifestyle-business-people-concept.png">
                 <p class="mt-3 text-w-700 font-wght text-center text-dark" style="position: relative;font-size:20px;z-index: 1;">CORPORATE</p>
               </div>
+              </router-link>
             </div>
           </div>
         </div>
@@ -219,17 +226,24 @@
 import GetQuote from '@/components/GetQuote'
 import InterestingArticles from '@/components/InterestingArticles'
 import Review from '@/components/Review'
+import Preloader from '@/components/Preloader'
 
 export default {
   name: 'Home',
   components: {
     GetQuote,
     InterestingArticles,
-    Review
+    Review,
+    Preloader
   },
   data(){
     return {
     type:'All'
+    }
+  },
+  methods: {
+    scrollToTop() {
+        window.scrollTo(0,0);
     }
   }
 }

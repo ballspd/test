@@ -1,5 +1,6 @@
 <template>
   <NavMenu/>
+  <Preloader/>
 
   <router-view></router-view>
 
@@ -71,11 +72,13 @@
 
 <script>
 import NavMenu from '@/components/Menu/NavMenu'
+import Preloader from '@/components/Preloader'
 
 export default {
   name: 'App',
   components: {
     NavMenu,
+    Preloader
   },
   data () {
     return {
@@ -94,5 +97,6 @@ export default {
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 @import './assets/styles/css/hover.css';
 @import './assets/styles/css/custom.css';
+
 
 </style>

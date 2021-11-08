@@ -1,5 +1,6 @@
 <template>
 <div id="BlogsDetail">
+    <Preloader/>
     <div class="background-main">
         <div class="container">
             <div class="row">
@@ -53,11 +54,13 @@
 <script>
 import RelatedPosts from '@/components/RelatedPosts'
 import marked from 'marked';
+import Preloader from '@/components/Preloader'
 
 export default {
     name: 'BlogsDetail',
     components:{
-        RelatedPosts
+        RelatedPosts,
+        Preloader
     },
     data() {
       return {
