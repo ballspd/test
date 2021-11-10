@@ -1,5 +1,6 @@
 <template>
 <div id="SolutionsBeary">
+    <Preloader/>
     <div class="background-main">
         <div class="pb-lg-0 pb-5" style="background: linear-gradient(180deg, #0CBC93 0%, #5BCCB5 100%);">
             <div class="container">
@@ -15,16 +16,16 @@
                                 </td>
                             </table>
                         </div>
-                        <div class="d-block d-lg-none text-center text-md-start ps-4 pe-4">
-                            <p class="text-s-14 mt-4 pb-4 text-start" style="color:#FFFFFC">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">Beary Tech</font></p>
-                            <h1 class="font-wght text-s-32" style="color:#FFFFFC">BEARY TECH</h1>
-                            <h2 class="text-s-24 text-w-700 text-s-30 ps-5 pe-5" style="color:#FFFFFC">“บริการพัฒนา และ ทำเว็บไซต์ ทุกรูปแบบ”</h2>
-                            <p class="text-s-14 p-4 p-md-0 ps-5 pe-5" style="color:#FFFFFC">Beary Tech ผู้ให้บริการ ทำเว็บไซต์ ครบวงจที่สามารถออกแบบ ให้เหมาะสมและตอบโจทย์ทุกความต้องการของผู้ใช้งาน เพื่อส่งมอบ ประสบการณ์ที่ดีที่สุด</p>
+                        <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
+                            <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">Beary Tech</font></p>
+                            <h1 class="font-wght text-s-36" style="color:#FFFFFC">BEARY TECH</h1>
+                            <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#FFFFFC">“บริการพัฒนา และ ทำเว็บไซต์ ทุกรูปแบบ”</h2>
+                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">Beary Tech ผู้ให้บริการ ทำเว็บไซต์ ครบวงจที่สามารถออกแบบ ให้เหมาะสมและตอบโจทย์ทุกความต้องการของผู้ใช้งาน เพื่อส่งมอบ ประสบการณ์ที่ดีที่สุด</p>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="d-none d-lg-block img-fluid img-banner-top" src="./../../assets/image60.png">
-                        <img class="d-block d-lg-none img-fluid" src="./../../assets/mobile/image60.png">
+                        <img class="d-none d-md-block img-fluid img-banner-top" src="./../../assets/Banner/banner-Beary.png">
+                        <img class="d-block d-md-none img-fluid" src="./../../assets/Banner/banner-Beary.png">
                     </div>
                 </div>
             </div>
@@ -35,37 +36,37 @@
                     <div class="row text-center justify-content-center mb-4">
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2" style="background-color: #0BBD92;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-beary-1.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-solution-beary-1.png"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#0A0909">Website</h2>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2" style="background-color: #030303;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-beary-2.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-solution-beary-2.png"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#0A0909">LINE API Messaging</h2>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2" style="background-color: #0BBD92;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-beary-3.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-solution-beary-3.png"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#0A0909">LINE OA</h2>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2" style="background-color: #030303;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-beary-4.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-solution-beary-4.png"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#0A0909">CRM software</h2>
                         </div>  
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2" style="background-color: #0BBD92;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-beary-5.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-solution-beary-5.png"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#0A0909">Web Application</h2>
                         </div>  
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2" style="background-color: #030303;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-beary-6.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-solution-beary-6.png"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#0A0909">Mobile Application</h2>
                         </div>       
@@ -112,21 +113,21 @@
                     <div class="row mt-5 text-center">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                             <div class="bg-icon d-flex item-center mt-md-0 mt-2">
-                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsBeary/icon-beary-7.png"></div>
+                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsBeary/icon-solution-beary-7.png"></div>
                             </div>
                             <img class="item-center mt-4" src="./../../assets/icon/Group163.png">
                             <h2 class="text-s-20 mt-3" style="color:#373737">พร้อมให้คำปรึกษาในการ <br>พัฒนาระบบให้เข้ากับธุรกิจ <br>ของคุณได้ทุกรูปแบบ</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                             <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsBeary/icon-beary-8.png"></div>
+                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsBeary/icon-solution-beary-8.png"></div>
                             </div>
                             <img class="item-center mt-4" src="./../../assets/icon/Group163.png">
                             <h2 class="text-s-20 mt-3" style="color:#373737">มีทีมงานที่คอยซัพพอร์ท <br>พร้อมดูแลระบบและให้คำปรึกษา <br>อย่างใกล้ชิด</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                             <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsBeary/icon-beary-9.png"></div>
+                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsBeary/icon-solution-beary-9.png"></div>
                             </div>
                             <img class="item-center mt-4" src="./../../assets/icon/Group163.png">
                             <h2 class="text-s-20 mt-3" style="color:#373737">ทีมนักพัฒนามีประสบการณ์ <br>การพัฒนาระบบให้กับกลุ่มผู้ใช้งาน <br>ที่หลากหลาย และพัฒนาระบบ<br> บนหลากหลายแพลตฟอร์ม</h2>
@@ -149,13 +150,15 @@
 import InterestingArticles from '@/components/InterestingArticles'
 import Review from '@/components/Review'
 import GetQuote from '@/components/Solutions/SolutionsGetQuote'
+import Preloader from '@/components/Preloader'
 
 export default {
     name: 'SolutionsBeary',
     components: {
         InterestingArticles,
         Review,
-        GetQuote
+        GetQuote,
+        Preloader
     },
     data () {
         return {
@@ -173,6 +176,18 @@ export default {
 </script>
 
 <style scoped>
+.accordion-button{
+    background-color: #FBFBFB !important;
+    padding: 5px;
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed){
+    box-shadow:none;
+}
 
 .bg-icon{
     width: 146px;
@@ -254,9 +269,6 @@ export default {
     }
     .mt-custom{
         margin-top: 3rem!important;
-    }
-    .img-banner-top{
-        margin-top: 80px;
     }
     .bg-icon-single{
         width: 146px;

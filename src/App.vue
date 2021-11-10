@@ -28,10 +28,10 @@
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                   <div class="row">
-                    <div class="col-2" style="margin-right:15px"><img src="./assets/icon/entypo-social_facebook-with-circle.png"></div>
-                    <div class="col-2" style="margin-right:15px"><img src="./assets/icon/entypo-social_twitter-with-circle.png"></div>
-                    <div class="col-2" style="margin-right:15px"><img src="./assets/icon/entypo-social_youtube-with-circle.png"></div>
-                    <div class="col-2" style="margin-right:15px"><img src="./assets/icon/Frame.png"></div>
+                    <div class="col-2" style="margin-right:15px"><img class="hvr-pop" src="./assets/icon/entypo-social_facebook-with-circle.png"></div>
+                    <div class="col-2" style="margin-right:15px"><img class="hvr-pop" src="./assets/icon/entypo-social_twitter-with-circle.png"></div>
+                    <div class="col-2" style="margin-right:15px"><img class="hvr-pop" src="./assets/icon/entypo-social_youtube-with-circle.png"></div>
+                    <div class="col-2" style="margin-right:15px"><img class="hvr-pop" src="./assets/icon/Frame.png"></div>
                   </div>
                   <div class="row mt-2">
                     <div class="col-12">

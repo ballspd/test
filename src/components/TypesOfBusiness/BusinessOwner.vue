@@ -1,5 +1,6 @@
 <template>
 <div id="BusinessOwner">
+    <Preloader/>
     <div class="background-main">
         <div class="pb-lg-0 pb-5">
             <div class="container">
@@ -10,21 +11,21 @@
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:55px;color:#50151C;width: 600px;">BUSINESS OWNER</h1>
-                                    <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#50151C;width: 350px;">“เคล็ดไม่ลับ เจ้าของธุรกิจมือใหม่ เริ่มต้นสร้างแบรนด์อย่างไรให้ปัง ?”</h2>
+                                    <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#50151C;width: 420px;">“เคล็ดไม่ลับ เจ้าของธุรกิจมือใหม่ เริ่มต้นสร้างแบรนด์อย่างไรให้ปัง ?”</h2>
                                     <p class="text-s-16 mt-3" style="color:#50151C;width: 505px">สำหรับเจ้าของธุรกิจมือใหม่ที่กำลังอยากจะเริ่มปั้นแบรนด์ สร้างธุรกิจเป็นของ ตัวเองควรอ่านบทความนี้ ! น้องสุกิจะมาช่วยแนะนำขั้นตอนในการเริ่มต้นธุรกิจ ให้ติดตลาด มียอดขายปัง ควรเริ่มจากตรงไหนถึงจะเป็นก้าวแรกที่มั่นคง</p>
                                 </td>
                             </table>
                         </div>
-                        <div class="d-block d-lg-none text-center text-md-start ps-4 pe-4">
-                            <p class="text-s-14 mt-4 pb-4 text-start" style="color:#50151C">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#50151C">Business owner</font></p>
-                            <h1 class="font-wght text-s-32" style="color:#50151C">BUSINESS OWNER</h1>
-                            <h2 class="text-s-24 text-w-700 text-s-30 ps-5 pe-5" style="color:#50151C">“เคล็ดไม่ลับ เจ้าของธุรกิจมือใหม่ เริ่มต้นสร้างแบรนด์อย่างไรให้ปัง ?”</h2>
-                            <p class="text-s-14 p-4 p-md-0 ps-5 pe-5" style="color:#50151C">สำหรับเจ้าของธุรกิจมือใหม่ที่กำลังอยากจะเริ่มปั้นแบรนด์ สร้างธุรกิจเป็นของ ตัวเองควรอ่านบทความนี้ ! น้องสุกิจะมาช่วยแนะนำขั้นตอนในการเริ่มต้นธุรกิจ ให้ติดตลาด มียอดขายปัง ควรเริ่มจากตรงไหนถึงจะเป็นก้าวแรกที่มั่นคง</p>
+                        <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
+                            <p class="text-s-14 pb-3 text-start" style="color:#50151C;margin-top:95px !important">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#50151C">Business owner</font></p>
+                            <h1 class="font-wght text-s-36" style="color:#50151C">BUSINESS OWNER</h1>
+                            <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#50151C">“เคล็ดไม่ลับ เจ้าของธุรกิจมือใหม่ เริ่มต้นสร้างแบรนด์อย่างไรให้ปัง ?”</h2>
+                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#50151C">สำหรับเจ้าของธุรกิจมือใหม่ที่กำลังอยากจะเริ่มปั้นแบรนด์ สร้างธุรกิจเป็นของ ตัวเองควรอ่านบทความนี้ ! น้องสุกิจะมาช่วยแนะนำขั้นตอนในการเริ่มต้นธุรกิจ ให้ติดตลาด มียอดขายปัง ควรเริ่มจากตรงไหนถึงจะเป็นก้าวแรกที่มั่นคง</p>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="d-none d-lg-block img-fluid img-banner-top" src="./../../assets/image60.png">
-                        <img class="d-block d-lg-none img-fluid" src="./../../assets/mobile/image60.png">
+                        <img class="d-none d-md-block img-fluid img-banner-top" src="./../../assets/image60.png">
+                        <img class="d-block d-md-none img-fluid" src="./../../assets/mobile/image60.png">
                     </div>
                 </div>
             </div>
@@ -109,13 +110,15 @@
 import InterestingArticles from '@/components/InterestingArticles'
 import Review from '@/components/Review'
 import GetQuote from '@/components/GetQuote'
+import Preloader from '@/components/Preloader'
 
 export default {
     name: 'BusinessOwner',
     components: {
         InterestingArticles,
         Review,
-        GetQuote
+        GetQuote,
+        Preloader
     },
     data () {
         return {

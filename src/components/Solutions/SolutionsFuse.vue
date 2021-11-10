@@ -1,28 +1,29 @@
 <template>
 <div id="SolutionsFuse">
+    <Preloader/>
     <div class="background-main">
         <div class="pb-lg-0 pb-5" style="background: linear-gradient(180deg, #1C31A0 0%, #7479F8 100%);">
             <div class="container">
                 <div class="row banner-hero">
                     <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                        <div class="d-none d-lg-block">
                             <p class="text-s-16 mt-150" style="color:#FFFFFC;">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">Fuse</font></p>
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
-                                    <font class="font-wght" style="font-size:62px;color:#FFFFFC">DIGITAL <br>ADVERTISING</font>
+                                    <h1 class="font-wght" style="font-size:62px;color:#FFFFFC">DIGITAL <br>ADVERTISING</h1>
                                     <p class="text-s-16 mt-3" style="color:#FFFFFC">Fuse by sellsuki ผู้ให้บริการด้านการทำ social media marketing และเป็นที่ปรึกษาการตลาดที่ช่วยดูแลตั้งแต่การวางแผนตลอดจน การทำโฆษณา หากลุ่มลุกค้า</p>
                                 </td>
                             </table>
                         </div>
-                        <div class="d-block d-md-none d-lg-none d-xl-none d-xxl-none text-center ps-4 pe-4">
-                            <p class="text-s-14 mt-4 pb-4 text-start" style="color:#FFFFFC">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">Fuse</font></p>
-                            <font class="font-wght" style="font-size:32px;color:#FFFFFC">DIGITAL <br>ADVERTISING</font>
-                            <p class="text-s-14 p-4 ps-5 pe-5" style="color:#FFFFFC">Fuse by sellsuki ผู้ให้บริการด้านการทำ social media marketing และเป็นที่ปรึกษาการตลาดที่ช่วยดูแลตั้งแต่การวางแผนตลอดจน การทำโฆษณา หากลุ่มลุกค้า</p>
+                        <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
+                            <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">Fuse</font></p>
+                            <h1 class="font-wght text-s-36" style="color:#FFFFFC">DIGITAL <br>ADVERTISING</h1>
+                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">Fuse by sellsuki ผู้ให้บริการด้านการทำ social media marketing และเป็นที่ปรึกษาการตลาดที่ช่วยดูแลตั้งแต่การวางแผนตลอดจน การทำโฆษณา หากลุ่มลุกค้า</p>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="d-none d-xl-block d-xxl-block img-fluid" src="./../../assets/image60.png" style="margin-top: 80px;">
-                        <img class="d-block d-xl-none d-xxl-none img-fluid" src="./../../assets/mobile/image60.png">
+                        <img class="d-none d-md-block img-fluid img-banner-top" src="./../../assets/Banner/banner-Fuse.png">
+                        <img class="d-block d-md-none img-fluid" src="./../../assets/Banner/banner-Fuse.png">
                     </div>
                 </div>
             </div>
@@ -134,13 +135,15 @@
 import InterestingArticles from '@/components/InterestingArticles'
 import Review from '@/components/Review'
 import GetQuote from '@/components/Solutions/SolutionsGetQuote'
+import Preloader from '@/components/Preloader'
 
 export default {
     name: 'SolutionsFuse',
     components: {
         InterestingArticles,
         Review,
-        GetQuote
+        GetQuote,
+        Preloader
     },
     data () {
             return {
@@ -196,12 +199,21 @@ export default {
     border-radius: 50%;
 }
 
+.img-banner-top{
+    margin-top: 80px !important;
+}
+
 /* -------------------------#Responsive------------------------ */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .mt-custom{
         margin-top: -35px !important;
+    }
+    .bg-icon-single{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
     }
 }
 
@@ -210,6 +222,11 @@ export default {
     .mt-custom{
         margin-top: -35px !important;
     }
+    .bg-icon-single{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -217,12 +234,22 @@ export default {
     .mt-custom{
         margin-top: 3rem!important;
     }
+    .bg-icon-single{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .mt-custom{
         margin-top: 3rem!important;
+    }
+    .bg-icon-single{
+        width: 146px;
+        height: 146px;
+        border-radius: 50%;
     }
 } 
 
@@ -238,6 +265,11 @@ export default {
     }
     .mt-custom{
         margin-top: 3rem!important;
+    }
+    .bg-icon-single{
+        width: 146px;
+        height: 146px;
+        border-radius: 50%;
     }
 }
 </style>

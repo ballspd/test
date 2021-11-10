@@ -93,14 +93,14 @@
                 <div v-if="type === 'Shipmunk'">
                   <img class="item-center" src="./../../assets/SolutionsShipmunk/logo.png" alt="">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-                  <!-- <img class="item-center" width="320" src="./../../assets/SolutionsShipmunk/Shipmunk-qrcode.png" alt=""> -->
-                  <img class="position-bu" width="220" src="./../../assets/SolutionsShipmunk/Shipmunk-bu.png" alt="">
+                  <img class="item-center" width="320" src="./../../assets/qr-code-sellsuki.png" alt="">
+                  <img class="position-bu mt-4" width="220" src="./../../assets/SolutionsShipmunk/Shipmunk-bu.png" alt="">
                 </div>
                 <div v-if="type === 'Oc2Plus'">
                   <img class="item-center" src="./../../assets/SolutionsOc2plus/logo.png" alt="">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-                  <!-- <img class="item-center" width="320" src="./../../assets/SolutionsOc2plus/Oc2plus-qrcode.png" alt=""> -->
-                  <img class="position-bu" src="./../../assets/SolutionsOc2plus/Oc2plus-bu.png" alt="">
+                  <img class="item-center" width="320" src="./../../assets/qr-code-sellsuki.png" alt="">
+                  <img class="position-bu mt-2" src="./../../assets/SolutionsOc2plus/Oc2plus-bu.png" alt="">
                 </div>
               </div>
             </div>
@@ -208,13 +208,13 @@
             <div v-if="type === 'Shipmunk'">
               <img class="item-center" src="./../../assets/SolutionsShipmunk/logo.png" alt="">
               <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-              <!-- <img class="item-center" width="320" src="./../../assets/SolutionsShipmunk/Shipmunk-qrcode.png" alt=""> -->
-              <img class="position-bu" width="120" src="./../../assets/SolutionsShipmunk/Shipmunk-bu.png" alt="">
+              <img class="item-center" width="320" src="./../../assets/qr-code-sellsuki.png" alt="">
+              <img class="position-bu" width="180" src="./../../assets/SolutionsShipmunk/Shipmunk-bu.png" alt="">
             </div>
             <div v-if="type === 'Oc2Plus'">
               <img class="item-center" src="./../../assets/SolutionsOc2plus/logo.png" alt="">
               <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-              <!-- <img class="item-center" width="320" src="./../../assets/SolutionsShipmunk/Shipmunk-qrcode.png" alt=""> -->
+              <img class="item-center" width="320" src="./../../assets/qr-code-sellsuki.png" alt="">
               <img class="position-bu" width="120" src="./../../assets/SolutionsOc2plus/Oc2plus-bu.png" alt="">
             </div>
         </div>

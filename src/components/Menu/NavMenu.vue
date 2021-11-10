@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-xl-block d-xxl-block" style="background-color: #F6ECE0;z-index: 999;">
     <div class="container">
       <a class="navbar-brand" href="/">
-        <img src="./../../assets/logo-sellsuki.png" alt="" width="141.29" height="60" class="d-inline-block align-text-top">
+        <img src="./../../assets/Sellsuki-logo-01.png" alt="" width="141.29" height="60" class="d-inline-block align-text-top">
       </a>
       <div class="ml-2">
         <ul class="navbar-nav navbar-custom shadow text-s-16 text-w-500 menu-bar" style="padding:0px !important;width: 100% !important;"> <!-- 797px -->
@@ -150,13 +150,13 @@
     </div>
   </nav>
 <!-- ---- modile size ----- -->
-  <div class="d-block d-xl-none d-xxl-none">
-    <nav class="navbar" style="background-color: #F6ECE0;">
+  <div class="d-block d-xl-none">
+    <nav class="navbar fixed-top" style="background-color: #F6ECE0;">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" @click="display_manu = true" >
             <i class="bi bi-list" style="font-size: 35px;"></i>
         </button>
-        <img src="./../../assets/mobile/image102.png">
+        <img src="./../../assets/Sellsuki-logo-01.png">
         <a href="tel:0877334145" target="_blank"><img class="shadow" src="./../../assets/mobile/Vector.png" style="background-color: #FFFFFF;border-radius: 50px;"></a>
       </div>
     </nav>

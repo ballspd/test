@@ -3,18 +3,7 @@
   <Preloader/>
   <div class="background-main">
     <div class="container">
-      <div class="row banner-hero">
-        <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
-          <table class="d-none d-xl-block d-xxl-block align-middle" style="width: 100%;">
-            <td style="height: 690px !important;"><font class="font-wght" style="font-size:64px;color:#50151C">E-COMMERCE <br>SOLUTION</font></td>
-          </table>
-          <font class="font-wght text-center mt-4 d-block d-xl-none d-xxl-none" style="font-size:36px;color:#50151C">E-COMMERCE <br>SOLUTION</font>
-        </div>
-        <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-          <img class="d-none d-xl-block d-xxl-block img-fluid" src="./../assets/image60.png" style="margin-top: 80px;">
-          <img class="d-block d-xl-none d-xxl-none img-fluid" src="./../assets/mobile/image60.png">
-        </div>
-      </div>
+      <BannerBU/>
       <div class="crad mt-5">
         <div class="row padding-row">
           <div class="col-xxl-6 col-xl-6 col-lg-5 col-md-6 col-sm-12 col-12">
@@ -38,7 +27,7 @@
           <div class="row">
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
               <router-link @click="scrollToTop" to="/TypesOfBusiness/BusinessOwner">
-              <div class="card-shadow hvr-grow-shadow crad-image mt-3">
+              <div class="card-shadow hvr-grow-rotate crad-image mt-3">
                 <img class="item-center mt-3 image-size" src="./../assets/beautiful-smart-asian-young-entrepreneur-business-woman-owner-sme-checking-product-stock-scan-qr-code-working-home.png">
                 <p class="mt-3 text-w-700 font-wght text-center text-dark" style="position: relative;font-size:20px;z-index: 1;">BUSINESS OWNER</p>
               </div>
@@ -46,7 +35,7 @@
             </div>
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
               <router-link @click="scrollToTop" to="/TypesOfBusiness/OnlineMerchant">
-              <div class="card-shadow hvr-grow-shadow crad-image mt-3">
+              <div class="card-shadow hvr-grow-rotate crad-image mt-3">
                 <img class="item-center mt-3 image-size" src="./../assets/business-owner-working-home-office.png">
                 <p class="mt-3 text-w-700 font-wght text-center text-dark" style="position: relative;font-size:20px;z-index: 1;">ONLINE MERCHANT</p>
               </div>
@@ -54,7 +43,7 @@
             </div>
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
               <router-link @click="scrollToTop" to="/TypesOfBusiness/Corporate">
-              <div class="card-shadow hvr-grow-shadow crad-image mt-3">
+              <div class="card-shadow hvr-grow-rotate crad-image mt-3">
                 <img class="item-center mt-3 image-size" src="./../assets/portrait-asian-business-man-business-district-lifestyle-business-people-concept.png">
                 <p class="mt-3 text-w-700 font-wght text-center text-dark" style="position: relative;font-size:20px;z-index: 1;">CORPORATE</p>
               </div>
@@ -75,7 +64,7 @@
               </div>
               <div class="col-6">
                 <div class="row" style="float: right;margin: auto;">
-                  <div class="card text-white card-roadmap">
+                  <div class="card text-white card-roadmap hvr-rotate">
                     <div class="card-body">
                       <div class="row">
                         <div class="col-6" style="margin:15px 0px 15px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Research Find <br>Insight</font></div>
@@ -85,7 +74,7 @@
                   </div>
                 </div>
                 <div class="row mt-3" style="float: right;margin: auto;">
-                  <div class="card text-white card-roadmap">
+                  <div class="card text-white card-roadmap hvr-rotate">
                     <div class="card-body">
                       <div class="row">
                         <div class="col-6" style="margin:15px 0px 15px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Analytic the <br>Fact</font></div>
@@ -95,7 +84,7 @@
                   </div>
                 </div>
                 <div class="row mt-3" style="float: right;margin: auto;">
-                  <div class="card text-white card-roadmap">
+                  <div class="card text-white card-roadmap hvr-rotate">
                     <div class="card-body">
                       <div class="row">
                         <div class="col-6" style="margin:38px  0px 38px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Right Strategy</font></div>
@@ -105,7 +94,7 @@
                   </div>
                 </div>
                 <div class="row mt-3" style="float: right;margin: auto;">
-                  <div class="card text-white card-roadmap">
+                  <div class="card text-white card-roadmap hvr-rotate">
                     <div class="card-body">
                       <div class="row">
                         <div class="col-6" style="margin:15px 0px 15px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Repeat<br>Optimization</font></div>
@@ -115,7 +104,7 @@
                   </div>
                 </div>
                 <div class="row mt-3" style="float: right;margin: auto;">
-                  <div class="card text-white card-roadmap">
+                  <div class="card text-white card-roadmap hvr-rotate">
                     <div class="card-body">
                       <div class="row">
                         <div class="col-7" style="margin:0px 0px 0px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Get Feedback &<br>Never Stop learning</font></div>
@@ -227,6 +216,7 @@ import GetQuote from '@/components/GetQuote'
 import InterestingArticles from '@/components/InterestingArticles'
 import Review from '@/components/Review'
 import Preloader from '@/components/Preloader'
+import BannerBU from '@/components/BannerBU'
 
 export default {
   name: 'Home',
@@ -234,6 +224,7 @@ export default {
     GetQuote,
     InterestingArticles,
     Review,
+    BannerBU,
     Preloader
   },
   data(){
@@ -256,4 +247,5 @@ export default {
   background-repeat: no-repeat;
   /* background-size: contain; */
 }
+
 </style>

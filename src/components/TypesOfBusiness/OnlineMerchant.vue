@@ -1,5 +1,6 @@
 <template>
 <div id="OnlineMerchant">
+    <Preloader/>
     <div class="background-main">
         <div class="pb-lg-0 pb-5">
             <div class="container">
@@ -15,11 +16,11 @@
                                 </td>
                             </table>
                         </div>
-                        <div class="d-block d-lg-none text-center text-md-start ps-4 pe-4">
-                            <p class="text-s-14 mt-4 pb-4 text-start" style="color:#50151C">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#50151C">Online Merchant</font></p>
-                            <h1 class="font-wght text-s-32" style="color:#50151C">ONLINE MERCHANT</h1>
-                            <h2 class="text-s-24 text-w-700 text-s-30 ps-5 pe-5" style="color:#50151C">“เจ้าของ SME ธุรกิจกำลังขยาย งานล้นมือ ต้องมีผู้ช่วยมือดีคอยดูแลให้อยู่หมัด”</h2>
-                            <p class="text-s-14 p-4 p-md-0 ps-5 pe-5" style="color:#50151C">ถ้าคุณกำลังมีปัญหาเหล่านี้ ไม่ว่าจะเรื่องการวางแผนการขาย หรือไม่มี พื้นที่จัดเก็บสินค้า หรือการแพ็กส่งของต่าง ๆ วันนี้น้องสุกิมีผู้ช่วยที่จะ ทำให้ปัญหาเหล่านี้หมดไป มาแนะนำกัน !</p>
+                        <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
+                            <p class="text-s-14 pb-3 text-start" style="color:#50151C;margin-top:95px !important">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#50151C">Online Merchant</font></p>
+                            <h1 class="font-wght text-s-36" style="color:#50151C">ONLINE MERCHANT</h1>
+                            <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#50151C">“เจ้าของ SME ธุรกิจกำลังขยาย งานล้นมือ ต้องมีผู้ช่วยมือดีคอยดูแลให้อยู่หมัด”</h2>
+                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#50151C">ถ้าคุณกำลังมีปัญหาเหล่านี้ ไม่ว่าจะเรื่องการวางแผนการขาย หรือไม่มี พื้นที่จัดเก็บสินค้า หรือการแพ็กส่งของต่าง ๆ วันนี้น้องสุกิมีผู้ช่วยที่จะ ทำให้ปัญหาเหล่านี้หมดไป มาแนะนำกัน !</p>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -140,13 +141,15 @@
 import InterestingArticles from '@/components/InterestingArticles'
 import Review from '@/components/Review'
 import GetQuote from '@/components/GetQuote'
+import Preloader from '@/components/Preloader'
 
 export default {
     name: 'OnlineMerchant',
     components: {
         InterestingArticles,
         Review,
-        GetQuote
+        GetQuote,
+        Preloader
     },
     data () {
         return {

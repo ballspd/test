@@ -60,7 +60,7 @@
                                 <div class="p-3">
                                     <a @click="type = 'Fuse',Akita = true,Fuse = false,Line = true,Beary = true,Kaikong = true,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
                                         <div class="hover-logo" :class="{'filter-gray':Fuse}">
-                                            <img class="item-center" src="./../assets/logo/fuse.png" alt="">
+                                            <img class="item-center" src="./../assets/logo/logo-Fuse.png" alt="">
                                             <font class="text-s-16" style="color:##413E93">Fuse Advertising</font>
                                         </div>
                                     </a>
@@ -77,7 +77,7 @@
                                 <div class="p-3">
                                     <a @click="type = 'Beary',Akita = true,Fuse = true,Line = true,Beary = false,Kaikong = true,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
                                         <div class="hover-logo" :class="{'filter-gray':Beary}">
-                                            <img class="item-center" src="./../assets/logo/image24.png" alt="">
+                                            <img class="item-center" src="./../assets/logo/logo-Beary.png" alt="">
                                             <font class="text-s-16" style="color:#231F20">Beary Web & Tech Service</font>
                                         </div>
                                     </a>

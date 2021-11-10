@@ -1,5 +1,6 @@
 <template>
 <div id="SolutionsShipmunk">
+    <Preloader/>
     <div class="background-main">
         <div class="pb-lg-0 pb-5" style="background: linear-gradient(180deg, #B7161E 0%, #DE0404 100%);">
             <div class="container">
@@ -15,16 +16,16 @@
                                 </td>
                             </table>
                         </div>
-                        <div class="d-block d-lg-none text-center text-md-start ps-4 pe-4">
-                            <p class="text-s-14 mt-4 pb-4 text-start" style="color:#FFFFFC">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">Shipmunk</font></p>
-                            <h1 class="font-wght text-s-32" style="color:#FFFFFC">SHIPMANK</h1>
-                            <h2 class="text-s-24 text-w-700 text-s-30 ps-5 pe-5" style="color:#FFFFFC">“ช่วยเปรียบเทียบค่าส่งพัสดุ เลือกผู้ให้บริการ ขนส่งที่ดีที่สุด สะดวก ประหยัดยิ่งกว่า”</h2>
-                            <p class="text-s-14 p-4 p-md-0 ps-5 pe-5" style="color:#FFFFFC">ผู้ให้บริการการ เปรียบเทียบค่าส่งพัสดุ จองคิวขนส่งและชำระเงิน ได้ง่ายๆ ผ่านระบบออนไลน์ ช่วยให้เจ้าของธุรกิจ ทำงานได้ง่ายยิ่งขึ้น!</p>
+                        <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
+                            <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">Shipmunk</font></p>
+                            <h1 class="font-wght text-s-36" style="color:#FFFFFC">SHIPMANK</h1>
+                            <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#FFFFFC">“ช่วยเปรียบเทียบค่าส่งพัสดุ เลือกผู้ให้บริการ ขนส่งที่ดีที่สุด สะดวก ประหยัดยิ่งกว่า”</h2>
+                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">ผู้ให้บริการการ เปรียบเทียบค่าส่งพัสดุ จองคิวขนส่งและชำระเงิน ได้ง่ายๆ ผ่านระบบออนไลน์ ช่วยให้เจ้าของธุรกิจ ทำงานได้ง่ายยิ่งขึ้น!</p>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="d-none d-lg-block img-fluid img-banner-top" src="./../../assets/image60.png">
-                        <img class="d-block d-lg-none img-fluid" src="./../../assets/mobile/image60.png">
+                        <img class="d-none d-md-block img-fluid img-banner-top" src="./../../assets/image60.png">
+                        <img class="d-block d-md-none img-fluid" src="./../../assets/mobile/image60.png">
                     </div>
                 </div>
             </div>
@@ -35,19 +36,19 @@
                     <div class="row text-center justify-content-center mb-4">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 theme-background-sub">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsLine/icon-Line-1.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsShipmunk/icon-solutions-shipmunk-1.png"></div>
                             </div>
                             <h2 class="text-s-18 mt-4 ps-3 pe-3" style="color:#0A0909;line-height: 1.5;">บริการจัดส่ง <br>สินค้าแช่เย็น แช่แข็ง</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 theme-background-main">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsLine/icon-Line-1.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsShipmunk/icon-solutions-shipmunk-2.png"></div>
                             </div>
                             <h2 class="text-s-18 mt-4 ps-3 pe-3" style="color:#0A0909;line-height: 1.5;">ประกันภัยขนส่งสินค้า</h2>
                         </div>   
                     </div>
                     <div class="row p-custom-2 d-flex">
-                        <div class="col-12 text-center mt-5"><h1 class="text-s-30 font-wght theme-text-sub">OUR SERVICES</h1></div>
+                        <div class="col-12 text-center mt-5"><h1 class="text-s-30 font-wght theme-text-sub">ส่งของง่ายกว่า ด้วยบริการจาก SHIPMANK</h1></div>
                         <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5">
                             <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Compare and Book</span></h2>
                             <img class="item-center" src="./../../assets/SolutionsShipmunk/SHIPMUNK01-Compare-and-Book.png" alt="">
@@ -320,24 +321,44 @@
 import InterestingArticles from '@/components/InterestingArticles'
 import Review from '@/components/Review'
 import GetQuote from '@/components/Solutions/SolutionsGetQuote'
+import Preloader from '@/components/Preloader'
 
 export default {
     name: 'SolutionsShipmunk',
     components: {
         InterestingArticles,
         Review,
-        GetQuote
+        GetQuote,
+        Preloader
   },
-  data () {
-        return {
-            type: 'Shipmunk',
-            isHidden: false
+    data () {
+            return {
+                type: 'Shipmunk',
+                isHidden: false,
+                lang: localStorage.getItem('lang') || 'en',
+                responseData:[]
+        }
+    },
+    mounted () {
+        this.axios.get('solution-shipmunk-services?_locale='+ this.lang)
+        .then(response => (this.responseData = response.data))
     }
-  }
 }
 </script>
 
 <style scoped>
+.accordion-button{
+    background-color: #FBFBFB !important;
+    padding: 5px;
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed){
+    box-shadow:none;
+}
 
 .bg-icon{
     width: 146px;
@@ -453,9 +474,6 @@ export default {
     }
     .mt-custom{
         margin-top: 3rem!important;
-    }
-    .img-banner-top{
-        margin-top: 80px;
     }
     .bg-icon-single{
         width: 146px;

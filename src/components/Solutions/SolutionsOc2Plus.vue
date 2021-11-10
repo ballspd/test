@@ -1,5 +1,6 @@
 <template>
 <div id="SolutionsOc2plus">
+    <Preloader/>
     <div class="background-main">
         <div class="pb-lg-0 pb-5" style="background: linear-gradient(180deg, #4A91C9 0%, #54B2A6 100%);">
             <div class="container">
@@ -15,16 +16,16 @@
                                 </td>
                             </table>
                         </div>
-                        <div class="d-block d-lg-none text-center text-md-start ps-4 pe-4">
-                            <p class="text-s-14 mt-4 pb-4 text-start" style="color:#FFFFFC">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">Oc2plus</font></p>
-                            <h1 class="font-wght text-s-32" style="color:#FFFFFC">OC2PLUS</h1>
-                            <h2 class="text-s-24 text-w-700 text-s-30 ps-5 pe-5" style="color:#FFFFFC">“เครื่องมือจัดเก็บข้อมูล สำหรับวางแผน การตลาด ที่เจ้าของธุรกิจต้องมี”</h2>
-                            <p class="text-s-14 p-4 p-md-0 ps-5 pe-5" style="color:#FFFFFC">บริการน้องใหม่จาก Sellsuki เป็นบริการ Customer Data Platform (CDP) หรือพื้นที่ในการจัดเก็บข้อมูลของลูกค้า ซึ่งมี ความจำเป็นอย่างมากต่อการ ทำธุรกิจในยุคปัจจุบันที่เราต้องใช้ข้อมูล</p>
+                        <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
+                            <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">Oc2plus</font></p>
+                            <h1 class="font-wght text-s-36" style="color:#FFFFFC">OC2PLUS</h1>
+                            <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#FFFFFC">“เครื่องมือจัดเก็บข้อมูล สำหรับวางแผน การตลาด ที่เจ้าของธุรกิจต้องมี”</h2>
+                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">บริการน้องใหม่จาก Sellsuki เป็นบริการ Customer Data Platform (CDP) หรือพื้นที่ในการจัดเก็บข้อมูลของลูกค้า ซึ่งมี ความจำเป็นอย่างมากต่อการ ทำธุรกิจในยุคปัจจุบันที่เราต้องใช้ข้อมูล</p>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="d-none d-lg-block img-fluid img-banner-top" src="./../../assets/image60.png">
-                        <img class="d-block d-lg-none img-fluid" src="./../../assets/mobile/image60.png">
+                        <img class="d-none d-md-block img-fluid img-banner-top" src="./../../assets/image60.png">
+                        <img class="d-block d-md-none img-fluid" src="./../../assets/mobile/image60.png">
                     </div>
                 </div>
             </div>
@@ -106,7 +107,7 @@
                     </div>
                     <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-5 p-5" style="background: linear-gradient(0, #E0EFFE 0%, rgba(227, 240, 254, 0) 100%);">
                     <div class="row">
-                        <div class="col-12 mt-4 mb-2 text-center"><h1 class="text-s-30 text-w-700" style="color:#182E9C">รูปแบบของข้อมูลเมื่อทำ CDP</h1></div>    
+                        <div class="col-12 mt-4 mb-2 text-center"><h1 class="text-s-30 text-w-700" style="color:#182E9C">ทำไมธุรกิจต้องใช้ CDP</h1></div>    
                     </div>
                     <div class="row mt-2 justify-content-center">
                         <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 view-2">
@@ -189,20 +190,28 @@
 import InterestingArticles from '@/components/InterestingArticles'
 import Review from '@/components/Review'
 import GetQuote from '@/components/Solutions/SolutionsGetQuote'
+import Preloader from '@/components/Preloader'
 
 export default {
     name: 'SolutionsOc2plus',
     components: {
         InterestingArticles,
         Review,
-        GetQuote
-  },
-  data () {
-        return {
-            type: 'Oc2Plus',
-            isHidden: false
+        GetQuote,
+        Preloader
+    },
+    data () {
+            return {
+                type: 'Oc2Plus',
+                isHidden: false,
+                lang: localStorage.getItem('lang') || 'en',
+                responseData:[]
+        }
+    },
+    mounted () {
+        this.axios.get('solution-oc2plus-services?_locale='+ this.lang)
+        .then(response => (this.responseData = response.data))
     }
-  }
 }
 </script>
 

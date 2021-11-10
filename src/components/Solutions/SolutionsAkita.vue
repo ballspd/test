@@ -1,5 +1,6 @@
 <template>
 <div id="SolutionsAkita">
+    <Preloader/>
     <div class="background-main">
         <div class="pb-lg-0 pb-5" style="background: linear-gradient(180deg, #153556 0%, #055297 100%);">
             <div class="container">
@@ -12,19 +13,21 @@
                                     <h1 class="font-wght" style="font-size:62px;color:#FFFFFC">AKITA<br>FULFILLMENT</h1>
                                     <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#FFFFFC">“บริการคลังสินค้าครบวงจร”</h2>
                                     <p class="text-s-16 mt-3" style="color:#FFFFFC">พร้อมอยู่คู่เคียงข้างทุกธุรกิจ เพื่อส่งมอบประสบการณ์ การจัดส่งสินค้าที่ดีที่สุดสู่มือลูกค้า</p>
+                                    <a href="#" class="btn btn-orange button mt-4"><span class="text-white" style="font-size:18px">Click Now</span></a>
                                 </td>
                             </table>
                         </div>
-                        <div class="d-block d-lg-none text-center text-md-start ps-4 pe-4">
-                            <p class="text-s-14 mt-4 pb-4 text-start" style="color:#FFFFFC">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">Akita</font></p>
-                            <h1 class="font-wght text-s-32" style="color:#FFFFFC">AKITA FULFILLMENT</h1>
-                            <h2 class="text-s-24 text-w-700 text-s-30" style="color:#FFFFFC">“บริการคลังสินค้าครบวงจร”</h2>
-                            <p class="text-s-14 p-4 p-md-0 ps-5 pe-5" style="color:#FFFFFC">พร้อมอยู่คู่เคียงข้างทุกธุรกิจ เพื่อส่งมอบประสบการณ์ การจัดส่งสินค้าที่ดีที่สุดสู่มือลูกค้า</p>
+                        <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
+                            <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">Akita</font></p>
+                            <h1 class="font-wght text-s-36" style="color:#FFFFFC">AKITA<br>FULFILLMENT</h1>
+                            <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-5 pe-5 mt-4" style="color:#FFFFFC">“บริการคลังสินค้าครบวงจร”</h2>
+                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">พร้อมอยู่คู่เคียงข้างทุกธุรกิจ เพื่อส่งมอบประสบการณ์ การจัดส่งสินค้าที่ดีที่สุดสู่มือลูกค้า</p>
+                            <a href="#" class="btn btn-orange button mt-2"><span class="text-white" style="font-size:18px">Click Now</span></a>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="d-none d-lg-block img-fluid img-banner-top" src="./../../assets/image60.png">
-                        <img class="d-block d-lg-none img-fluid" src="./../../assets/mobile/image60.png">
+                        <img class="d-none d-md-block img-fluid img-banner-top" src="./../../assets/image60.png">
+                        <img class="d-block d-md-none img-fluid" src="./../../assets/mobile/image60.png">
                     </div>
                 </div>
             </div>
@@ -132,13 +135,15 @@
 import InterestingArticles from '@/components/InterestingArticles'
 import Review from '@/components/Review'
 import GetQuote from '@/components/Solutions/SolutionsGetQuote'
+import Preloader from '@/components/Preloader'
 
 export default {
     name: 'SolutionsAkita',
     components: {
         InterestingArticles,
         Review,
-        GetQuote
+        GetQuote,
+        Preloader
     },
     data () {
             return {
@@ -156,6 +161,18 @@ export default {
 </script>
 
 <style scoped>
+.accordion-button{
+    background-color: #FBFBFB !important;
+    padding: 5px;
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed){
+    box-shadow:none;
+}
 
 .bg-icon{
     width: 146px;
@@ -243,9 +260,6 @@ export default {
     }
     .mt-custom{
         margin-top: 3rem!important;
-    }
-    .img-banner-top{
-        margin-top: 80px;
     }
     .bg-icon-single{
         width: 146px;

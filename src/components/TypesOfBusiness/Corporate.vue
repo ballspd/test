@@ -11,21 +11,21 @@
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:55px;color:#50151C;width: 600px;">COPORATE</h1>
-                                    <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#50151C;width: 470px;">“วางแผนแคมเปญใหญ่ให้ปัง รู้ทันกลุ่มเป้าหมาย ก่อนลงทุนหลักล้าน !”</h2>
+                                    <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#50151C;width: 485px;">“วางแผนแคมเปญใหญ่ให้ปัง รู้ทันกลุ่มเป้าหมาย ก่อนลงทุนหลักล้าน !”</h2>
                                     <p class="text-s-16 mt-3" style="color:#50151C;width: 505px">โดยทีมงานนักการตลาดมืออาชีพที่เข้าใจปัญหา การทำธุรกิจอย่างแท้จริง เพื่อพัฒนาแผนการสื่อสารของแคมเปญ ให้เข้าถึงลูกค้าได้ตรงกลุ่ม และ ผลักให้ธุรกิจของคุณเติบโตมากขึ้น</p>
                                 </td>
                             </table>
                         </div>
-                        <div class="d-block d-lg-none text-center text-md-start ps-4 pe-4">
-                            <p class="text-s-14 mt-4 pb-4 text-start" style="color:#50151C">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#50151C">Coporate</font></p>
-                            <h1 class="font-wght text-s-32" style="color:#50151C">COPORATE</h1>
-                            <h2 class="text-s-24 text-w-700 text-s-30 ps-5 pe-5" style="color:#50151C">“วางแผนแคมเปญใหญ่ให้ปัง รู้ทันกลุ่มเป้าหมาย ก่อนลงทุนหลักล้าน !”</h2>
-                            <p class="text-s-14 p-4 p-md-0 ps-5 pe-5" style="color:#50151C">โดยทีมงานนักการตลาดมืออาชีพที่เข้าใจปัญหา การทำธุรกิจอย่างแท้จริง เพื่อพัฒนาแผนการสื่อสารของแคมเปญ ให้เข้าถึงลูกค้าได้ตรงกลุ่ม และ ผลักให้ธุรกิจของคุณเติบโตมากขึ้น</p>
+                        <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
+                            <p class="text-s-14 pb-3 text-start" style="color:#50151C;margin-top:95px !important">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#50151C">Coporate</font></p>
+                            <h1 class="font-wght text-s-36" style="color:#50151C">COPORATE</h1>
+                            <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-sm-4 mt-sm-4" style="color:#50151C">“วางแผนแคมเปญใหญ่ให้ปัง รู้ทันกลุ่มเป้าหมาย ก่อนลงทุนหลักล้าน !”</h2>
+                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#50151C">โดยทีมงานนักการตลาดมืออาชีพที่เข้าใจปัญหา การทำธุรกิจอย่างแท้จริง เพื่อพัฒนาแผนการสื่อสารของแคมเปญ ให้เข้าถึงลูกค้าได้ตรงกลุ่ม และ ผลักให้ธุรกิจของคุณเติบโตมากขึ้น</p>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="d-none d-lg-block img-fluid img-banner-top" src="./../../assets/image60.png">
-                        <img class="d-block d-lg-none img-fluid" src="./../../assets/mobile/image60.png">
+                        <img class="d-none d-md-block img-fluid img-banner-top" src="./../../assets/image60.png">
+                        <img class="d-block d-md-none img-fluid" src="./../../assets/mobile/image60.png">
                     </div>
                 </div>
             </div>
