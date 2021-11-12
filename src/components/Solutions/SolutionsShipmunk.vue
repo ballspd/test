@@ -10,7 +10,7 @@
                             <p class="text-s-16 mt-150" style="color:#FFFFFC;">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">Shipmunk</font></p>
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
-                                    <h1 class="font-wght" style="font-size:62px;color:#FFFFFC">SHIPMANK</h1>
+                                    <h1 class="font-wght" style="font-size:62px;color:#FFFFFC">SHIPMUNK</h1>
                                     <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#FFFFFC">“ช่วยเปรียบเทียบค่าส่งพัสดุ เลือกผู้ให้บริการ ขนส่งที่ดีที่สุด สะดวก ประหยัดยิ่งกว่า”</h2>
                                     <p class="text-s-16 mt-3" style="color:#FFFFFC">ผู้ให้บริการการ เปรียบเทียบค่าส่งพัสดุ จองคิวขนส่งและชำระเงิน ได้ง่ายๆ ผ่านระบบออนไลน์ ช่วยให้เจ้าของธุรกิจ ทำงานได้ง่ายยิ่งขึ้น!</p>
                                 </td>
@@ -18,7 +18,7 @@
                         </div>
                         <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
                             <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">Shipmunk</font></p>
-                            <h1 class="font-wght text-s-36" style="color:#FFFFFC">SHIPMANK</h1>
+                            <h1 class="font-wght text-s-36" style="color:#FFFFFC">SHIPMUNK</h1>
                             <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#FFFFFC">“ช่วยเปรียบเทียบค่าส่งพัสดุ เลือกผู้ให้บริการ ขนส่งที่ดีที่สุด สะดวก ประหยัดยิ่งกว่า”</h2>
                             <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">ผู้ให้บริการการ เปรียบเทียบค่าส่งพัสดุ จองคิวขนส่งและชำระเงิน ได้ง่ายๆ ผ่านระบบออนไลน์ ช่วยให้เจ้าของธุรกิจ ทำงานได้ง่ายยิ่งขึ้น!</p>
                         </div>
@@ -35,138 +35,153 @@
                 <div class="mt-custom mb-4 p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
                     <div class="row text-center justify-content-center mb-4">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
-                            <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 theme-background-sub">
+                            <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 theme-background-sub hvr-float-shadow">
                                 <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsShipmunk/icon-solutions-shipmunk-1.png"></div>
                             </div>
                             <h2 class="text-s-18 mt-4 ps-3 pe-3" style="color:#0A0909;line-height: 1.5;">บริการจัดส่ง <br>สินค้าแช่เย็น แช่แข็ง</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
-                            <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 theme-background-main">
+                            <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 theme-background-main hvr-float-shadow">
                                 <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsShipmunk/icon-solutions-shipmunk-2.png"></div>
                             </div>
                             <h2 class="text-s-18 mt-4 ps-3 pe-3" style="color:#0A0909;line-height: 1.5;">ประกันภัยขนส่งสินค้า</h2>
                         </div>   
                     </div>
-                    <div class="row p-custom-2 d-flex">
-                        <div class="col-12 text-center mt-5"><h1 class="text-s-30 font-wght theme-text-sub">ส่งของง่ายกว่า ด้วยบริการจาก SHIPMANK</h1></div>
-                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Compare and Book</span></h2>
-                            <img class="item-center" src="./../../assets/SolutionsShipmunk/SHIPMUNK01-Compare-and-Book.png" alt="">
-                        </div>
-                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Compare and Book</span></h2>
-                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">ร้านค้าสามารถเปรียบเทียบค่าส่งพัสดุ และคำนวณอัตราค่าบริการได้ทันที รวมถึงระยะเวลาในการส่ง ประเภทการขนส่ง จองขนส่ง มีขนส่ง ให้เลือก หลากหลายบริษัท pick up หรือจะไป drop off เอง</p>
-                            <i class="bi bi-chevron-down pe-2" style="float:right" @click="isHidden = !isHidden"></i>
-                        </div>
-                    </div>
-                    <div class="row mt-5 p-custom-2 d-flex">
-                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Label Printing</span></h2>
-                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">ร้านค้าสามารถ print ใบปะหน้าได้ฟรี</p>
-                            <i class="bi bi-chevron-down pe-2" style="float:right"></i>
-                        </div>
-                        <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Label Printing</span></h2>
-                            <img class="item-center" src="./../../assets/SolutionsShipmunk/SHIPMUNK02-Label-Printing.png" alt="">
-                        </div>
-                    </div>
-                    <div class="row p-custom-2 d-flex">
-                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Fulfillment Service</span></h2>
-                            <img class="item-center" src="./../../assets/SolutionsShipmunk/SHIPMUNK03-Track-and-Trace.png" alt="">
-                        </div>
-                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Fulfillment Service</span></h2>
-                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">บริการพัฒนาและจัด ทำเว็บไซต์ สำหรับทุกธุรกิจ โดยทีมนักพัฒนามือ อาชีพ ที่จะทำให้ธุรกิจของคุณเติบโตบนโลกออนไลน์ สามารถรองรับได้ ทุกอุปกรณ์ ให้เว็บไซต์ของคุณ...</p>
-                            <i class="bi bi-chevron-down pe-2" style="float:right" @click="isHidden = !isHidden"></i>
-                        </div>
-                    </div>
-                    <div class="row mt-4 mb-4">
-                        <div class="col-12 mt-4 mb-2 text-center"><h1 class="text-s-30 text-w-700 theme-text-sub">ทำไมลูกค้าถึงไว้ใจให้เราดูแล</h1></div>    
-                    </div>
-                    <div class="row mt-5 p-custom-2 d-flex">
-                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">จองบริการได้ล่วงหน้า</span></h2>
-                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">สามารถจองบริการขนส่งที่ใช้ได้ส่วงหน้าไม่ว่าจะเป็นแบบ ส่งเอง (Drop off) หรือให้ขนส่งไปรับถึงบ้าน (Pick up) ก็ได้</p>
-                            <i class="bi bi-chevron-down pe-2" style="float:right"></i>
-                        </div>
-                        <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">จองบริการได้ล่วงหน้า</span></h2>
-                            <img class="item-center" src="./../../assets/SolutionsShipmunk/SHIPMUNK04-จองบริการได้ล่วงหน้า.png" alt="">
+                    <div class="row">
+                        <div v-if="animation1" class="col-12 text-center mt-5"><h1 class="text-s-30 text-w-700 animate__animated animate__fadeInDown theme-text-sub">LINE SERVICE</h1></div>
+                        <div v-for="(data, index) in responseDataH1" :key="index">
+                            <div :id="'contantH1' + (index + 1)" style="display:none">
+                                <div v-if="data.position == 'Left'" class="row mt-4 p-custom-2 d-flex">
+                                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5 animate__animated animate__zoomInLeft">
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <img class="item-center hvr-rotate" :src="data.image.url" :alt="data.image.name">
+                                </div>
+                                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInRight animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                        <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
+                                        </div>
+                                        <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
+                                        </div>
+                                        <a v-if="data.detail.length>180" class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
+                                    </div>
+                                </div>
+                                </div>
+                                <div v-else class="row mt-4 p-custom-2 d-flex">
+                                    <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto ">
+                                        <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInLeft animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                        <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                            <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
+                                                <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
+                                            </div>
+                                            <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
+                                                <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
+                                            </div>
+                                            <a v-if="data.detail.length>180" class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
+                                        </div>
+                                    </div>
+                                    <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 animate__animated animate__zoomInRight">
+                                        <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                        <img class="item-center hvr-rotate" :src="data.image.url" :alt="data.image.name">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row p-custom-2 d-flex">
-                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">ชำระเงินผ่านช่องทางออนไลน์</span></h2>
-                            <img class="item-center" src="./../../assets/SolutionsShipmunk/SHIPMUNK05-ชำระเงินผ่านช่องทางออนไลน์.png" alt="">
-                        </div>
-                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">ชำระเงินผ่านช่องทางออนไลน์</span></h2>
-                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">ช่องทางการชำระเงินที่ครอบคลุมและง่าย ผ่านระบบการชำระเงินออนไลน์</p>
-                            <i class="bi bi-chevron-down pe-2" style="float:right" @click="isHidden = !isHidden"></i>
-                        </div>
-                    </div>
-                    <div class="row mt-5 p-custom-2 d-flex">
-                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Dashboard สรุปยอดขาย</span></h2>
-                            <p class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">สรุปข้อมูลการขาย เพื่อนให้เจ้าของธุรกิจทำไปพัฒนาแผนการตลาด ได้ง่ายยิ่งขึ้น</p>
-                            <i class="bi bi-chevron-down pe-2" style="float:right"></i>
-                        </div>
-                        <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                            <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Dashboard สรุปยอดขาย</span></h2>
-                            <img class="item-center" src="./../../assets/SolutionsShipmunk/SHIPMUNK06-Dashboard-สรุปยอดขาย.png" alt="">
+                    <div v-if="animation2" class="col-12 text-center pt-5 pb-3 animate__animated animate__fadeInDown"><h1 class="text-s-30 text-w-700" style="color:#444444">บริการเสริม (Add-on Services)</h1></div>   
+                    <div v-for="(data, index) in responseDataH2" :key="index">
+                        <div :id="'contantH2' + (index + 1)" style="display:none">
+                            <div v-if="data.position == 'Right'" class="row mt-4 p-custom-2 d-flex">
+                                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto ">
+                                        <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInLeft animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                        <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                            <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
+                                                <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
+                                            </div>
+                                            <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
+                                                <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
+                                            </div>
+                                            <a v-if="data.detail.length>180" class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
+                                        </div>
+                                    </div>
+                                <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 animate__animated animate__zoomInRight">
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><img v-if="index == 1" class="me-2" style="margin-top:-3px" src="./../../assets/icon/new.png" alt="new.png"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <img class="item-center hvr-rotate" :src="data.image.url" :alt="data.image.name">
+                                </div>
+                            </div>
+                            <div v-else class="row mt-4 p-custom-2 d-flex">
+                                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5 animate__animated animate__zoomInLeft">
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <img class="item-center hvr-rotate" :src="data.image.url" :alt="data.image.name">
+                                </div>
+                                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInRight animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                        <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
+                                        </div>
+                                        <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
+                                        </div>
+                                        <a v-if="data.detail.length>180" class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row mt-2 mb-5">
+                <div class="row mt-2">
                     <div class="col-12">
                         <div class="d-none d-lg-block">
                             <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-indicators" style="top: 430px;">
-                                    <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                </div>
+                                
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="10000">
                                         <div class="row">
                                             <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
                                             </div>
                                             <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
                                             </div>
                                             <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item" data-bs-interval="10000">
                                         <div class="row">
                                             <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
                                             </div>
                                             <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
                                             </div>
                                             <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item" data-bs-interval="10000">
                                         <div class="row">
                                             <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
                                             </div>
                                             <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
                                             </div>
                                             <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="carousel-indicators mt-4" style="position: relative;">
+                                    <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                 </div>
                             </div>
                         </div>
@@ -286,23 +301,23 @@
                     </div>
                 </div>
                 <div class="row mt-0 mt-lg-5 mb-5 ms-5 me-5">
-                    <div class="col-4 col-lg-2">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/image113.png">
+                    <div class="col-4 col-lg-2 m-auto">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-1.png">
                     </div>
-                    <div class="col-4 col-lg-2">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/image113.png">
+                    <div class="col-4 col-lg-2 m-auto">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-2.png">
                     </div>
-                    <div class="col-4 col-lg-2">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/image113.png">
+                    <div class="col-4 col-lg-2 m-auto">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-3.png">
                     </div>
-                    <div class="col-4 col-lg-2">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/image113.png">
+                    <div class="col-4 col-lg-2 m-auto">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-4.png">
                     </div>
-                    <div class="col-4 col-lg-2">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/image113.png">
+                    <div class="col-4 col-lg-2 m-auto">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-5.png">
                     </div>
-                    <div class="col-4 col-lg-2">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/image113.png">
+                    <div class="col-4 col-lg-2 m-auto">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-6.png">
                     </div>
                 </div>
                 <InterestingArticles/>
@@ -322,6 +337,7 @@ import InterestingArticles from '@/components/InterestingArticles'
 import Review from '@/components/Review'
 import GetQuote from '@/components/Solutions/SolutionsGetQuote'
 import Preloader from '@/components/Preloader'
+import marked from 'marked';
 
 export default {
     name: 'SolutionsShipmunk',
@@ -336,12 +352,73 @@ export default {
                 type: 'Shipmunk',
                 isHidden: false,
                 lang: localStorage.getItem('lang') || 'en',
-                responseData:[]
+                animation1:false,
+                animation2:false,
+                responseDataH1:[],
+                responseDataH2:[]
         }
     },
     mounted () {
-        this.axios.get('solution-shipmunk-services?_locale='+ this.lang)
-        .then(response => (this.responseData = response.data))
+
+        this.axios.get('solution-shipmunk-services?_locale='+ this.lang + '&type=H1')
+        .then(response => (this.responseDataH1 = response.data))
+
+        this.axios.get('solution-shipmunk-services?_locale='+ this.lang + '&type=H2')
+        .then(response => (this.responseDataH2 = response.data))
+
+        window.addEventListener('scroll', this.onShow);
+    },
+    methods:{
+        onShow (e) {
+            this.windowTop = e.target.documentElement.scrollTop;
+            if(this.windowTop > 200){
+                this.animation1 = true
+            }else if(this.windowTop < 200){
+                this.animation1 = false
+            }
+            if(this.windowTop > 400){
+                document.querySelector('#contantH11').style.display = "block";
+            }else if(this.windowTop < 300){
+                document.querySelector('#contantH11').style.display = "none";
+            }
+            if(this.windowTop > 800){
+                document.querySelector('#contantH12').style.display = "block";
+            }else if(this.windowTop < 700){
+                document.querySelector('#contantH12').style.display = "none";
+            }
+            if(this.windowTop > 1200){
+                document.querySelector('#contantH13').style.display = "block";
+            }else if(this.windowTop < 1100){
+                document.querySelector('#contantH13').style.display = "none";
+            }
+            if(this.windowTop > 1500){
+                this.animation2 = true
+            }else if(this.windowTop < 1400){
+                this.animation2 = false
+            }
+            if(this.windowTop > 1600){
+                document.querySelector('#contantH21').style.display = "block";
+            }else if(this.windowTop < 1400){
+                document.querySelector('#contantH21').style.display = "none";
+            }
+            if(this.windowTop > 2000){
+                document.querySelector('#contantH22').style.display = "block";
+            }else if(this.windowTop < 1800){
+                document.querySelector('#contantH22').style.display = "none";
+            }
+            if(this.windowTop > 2400){
+                document.querySelector('#contantH23').style.display = "block";
+            }else if(this.windowTop < 2000){
+                document.querySelector('#contantH23').style.display = "none";
+            }
+        },
+        markdownToHtml(data){
+            if(data != undefined){
+                return marked(data);
+            }else{
+                return '';
+            }
+        }
     }
 }
 </script>

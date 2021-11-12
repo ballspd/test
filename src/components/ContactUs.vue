@@ -1,5 +1,6 @@
 <template>
 <div id="ContactUs">
+    <Preloader/>
     <div class="background-main">
         <div class="container">
             <div class="row banner-hero">
@@ -87,9 +88,13 @@
 </template>
 
 <script>
+import Preloader from '@/components/Preloader'
 
 export default {
     name: 'ContactUs',
+    components: {
+        Preloader
+    },
     data() {
       return {
           form: {

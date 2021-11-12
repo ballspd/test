@@ -33,125 +33,115 @@
         <div class="container">
             <div class="crad">
                 <div class="mt-custom p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
-                    <div class="row">
-                        <div class="col-12 mt-4 text-center"><h1 class="text-s-30 text-w-700" style="color:#444444">ทำไมลูกค้าถึงไว้ใจให้เราดูแล</h1></div>    
-                    </div>
-                    <div class="row mt-5 text-center">
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-                            <div class="bg-icon d-flex item-center mt-md-0 mt-2">
-                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-1.png"></div>
-                            </div>
-                            <img class="item-center mt-4" src="./../../assets/icon/Group163.png">
-                            <h2 class="text-s-20 mt-3" style="color:#373737">Course Training LINE<br>ขั้นเทพ</h2>
+                    <div v-if="animation1">
+                        <div class="row">
+                            <div class="col-12 mt-4 mb-2 text-center animate__animated animate__fadeInDown theme-text-sub"><h1 class="text-s-30 text-w-700">ทำไมลูกค้าถึงไว้ใจให้เราดูแล</h1></div>    
                         </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-                            <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-2.png"></div>
+                        <div class="row mt-5 text-center">
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="bg-icon d-flex item-center mt-md-0 mt-2">
+                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-1.png"></div>
+                                </div>
+                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">>Course Training LINE<br>ขั้นเทพ</h2>
                             </div>
-                            <img class="item-center mt-4" src="./../../assets/icon/Group163.png">
-                            <h2 class="text-s-20 mt-3" style="color:#373737">ทีมงานผู้เชี่ยวชาญ คอยให้<br>คำปรึกษา</h2>
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="bg-icon d-flex item-center mt-md-0 mt-5">
+                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-2.png"></div>
+                                </div>
+                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">ทีมงานผู้เชี่ยวชาญ คอยให้<br>คำปรึกษา</h2>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="bg-icon d-flex item-center mt-md-0 mt-5">
+                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-3.png"></div>
+                                </div>
+                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">เครื่องมือเสริม ที่ช่วยให้ธุรกิจ<br>โตได้ไวกว่า</h2>
+                            </div>     
                         </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-                            <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-3.png"></div>
-                            </div>
-                            <img class="item-center mt-4" src="./../../assets/icon/Group163.png">
-                            <h2 class="text-s-20 mt-3" style="color:#373737">เครื่องมือเสริม ที่ช่วยให้ธุรกิจ<br>โตได้ไวกว่า</h2>
-                        </div>     
                     </div>
                     <div class="row">
-                        <div class="col-12 text-center mt-5"><h1 class="text-s-30 text-w-700" style="color:#444444">LINE SERVICE</h1></div>
-                        <div v-for="data in responseData" :key="data.id">
-                            <div v-if="data.position == 'Left'" class="row mt-4 p-custom-2 d-flex">
-                                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5">
-                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">{{data.header}}</span></h2>
-                                    <img class="item-center" :src="data.image.url" :alt="data.image.name">
+                        <div v-if="animation1" class="col-12 text-center mt-5"><h1 class="text-s-30 text-w-700 animate__animated animate__fadeInDown theme-text-sub">LINE SERVICE</h1></div>
+                        <div v-for="(data, index) in responseDataH1" :key="index">
+                            <div :id="'contant' + (index + 1)" style="display:none">
+                                <div v-if="data.position == 'Left'" class="row mt-4 p-custom-2 d-flex">
+                                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5 animate__animated animate__zoomInLeft">
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <img class="item-center hvr-rotate" :src="data.image.url" :alt="data.image.name">
                                 </div>
                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">{{data.header}}</span></h2>
-                                    <div class="animate__animated animate__slideInUp">
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInRight animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <div class="animate__animated animate__zoomIn animate__delay-2s">
                                         <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
-                                            <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737">
-                                                {{data.detail}}
-                                            </div>
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                         </div>
                                         <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
-                                            <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">
-                                                {{data.detail}}
-                                            </div>
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                         </div>
-                                        <a class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
+                                        <a v-if="data.detail.length>180" class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
                                     </div>
+                                </div>
+                                </div>
+                                <div v-else class="row mt-4 p-custom-2 d-flex">
+                                    <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto ">
+                                        <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInLeft animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                        <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                            <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
+                                                <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
+                                            </div>
+                                            <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
+                                                <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
+                                            </div>
+                                            <a v-if="data.detail.length>180" class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
+                                        </div>
+                                    </div>
+                                    <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 animate__animated animate__zoomInRight">
+                                        <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                        <img class="item-center hvr-rotate" :src="data.image.url" :alt="data.image.name">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div v-if="animation2" class="col-12 text-center pt-5 pb-3 animate__animated animate__fadeInDown"><h1 class="text-s-30 text-w-700" style="color:#444444">บริการเสริม (Add-on Services)</h1></div>   
+                    <div v-for="(data, index) in responseDataH2" :key="index">
+                        <div :id="'contantAdd' + (index + 1)" style="display:none">
+                            <div v-if="data.position == 'Right'" class="row mt-4 p-custom-2 d-flex">
+                                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto ">
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInLeft animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                        <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
+                                        </div>
+                                        <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
+                                        </div>
+                                        <a v-if="data.detail.length>180" class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
+                                    </div>
+                                </div>
+                                <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 animate__animated animate__zoomInRight">
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <img class="item-center hvr-rotate" :src="data.image.url" :alt="data.image.name">
                                 </div>
                             </div>
                             <div v-else class="row mt-4 p-custom-2 d-flex">
+                                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5 animate__animated animate__zoomInLeft">
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><img v-if="index == 1" class="me-2" style="margin-top:-3px" src="./../../assets/icon/new.png" alt="new.png"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <img class="item-center hvr-rotate" :src="data.image.url" :alt="data.image.name">
+                                </div>
                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">{{data.header}}</span></h2>
-                                    <div class="animate__animated animate__slideInUp">
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInRight animate__slow" style="padding: 10px 5px;"><img v-if="index == 1" class="me-2" style="margin-top:-3px" src="./../../assets/icon/new.png" alt="new.png"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <div class="animate__animated animate__zoomIn animate__delay-2s">
                                         <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
-                                            <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737">
-                                                {{data.detail}}
-                                            </div>
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                         </div>
                                         <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
-                                            <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">
-                                                {{data.detail}}
-                                            </div>
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                         </div>
-                                        <a class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
+                                        <a v-if="data.detail.length>180" class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
                                     </div>
                                 </div>
-                                <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">{{data.header}}</span></h2>
-                                    <img class="item-center" :src="data.image.url" :alt="data.image.name">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 text-center pt-5 pb-3"><h1 class="text-s-30 text-w-700" style="color:#444444">บริการเสริม (Add-on Services)</h1></div>   
-                    <div v-for="data in responseDataAddOn" :key="data.id">
-                        <div v-if="data.position == 'Left'" class="row mt-4 p-custom-2 d-flex">
-                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5">
-                                <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">{{data.header}}</span></h2>
-                                <img class="item-center" :src="data.image.url" :alt="data.image.name">
-                            </div>
-                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                                <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">{{data.header}}</span></h2>
-                                <div class="animate__animated animate__slideInUp">
-                                    <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
-                                        <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737">
-                                            {{data.detail}}
-                                        </div>
-                                    </div>
-                                    <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
-                                        <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">
-                                            {{data.detail}}
-                                        </div>
-                                    </div>
-                                    <a class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div v-else class="row mt-4 p-custom-2 d-flex">
-                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                                <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">{{data.header}}</span></h2>
-                                <div class="animate__animated animate__slideInUp">
-                                    <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
-                                        <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737">
-                                            {{data.detail}}
-                                        </div>
-                                    </div>
-                                    <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
-                                        <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">
-                                            {{data.detail}}
-                                        </div>
-                                    </div>
-                                    <a class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
-                                </div>
-                            </div>
-                            <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                                <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">{{data.header}}</span></h2>
-                                <img class="item-center" :src="data.image.url" :alt="data.image.name">
                             </div>
                         </div>
                     </div>
@@ -173,6 +163,7 @@ import InterestingArticles from '@/components/InterestingArticles'
 import Review from '@/components/Review'
 import GetQuote from '@/components/Solutions/SolutionsGetQuote'
 import Preloader from '@/components/Preloader'
+import marked from 'marked';
 
 export default {
     name: 'SolutionsLine',
@@ -187,16 +178,77 @@ export default {
                 type: 'Line',
                 isHidden: false,
                 lang: localStorage.getItem('lang') || 'en',
-                responseData:[],
-                responseDataAddOn:[]
+                responseDataH1:[],
+                responseDataH2:[],
+                animation1:false,
+                animation2:false
         }
     },
     mounted () {
         this.axios.get('solution-line-services?_locale='+ this.lang + '&type=LINE_Service')
-        .then(response => (this.responseData = response.data))
+        .then(response => (this.responseDataH1 = response.data))
 
         this.axios.get('solution-line-services?_locale='+ this.lang + '&type=Add_on_Services')
-        .then(response => (this.responseDataAddOn = response.data))
+        .then(response => (this.responseDataH2 = response.data))
+
+        window.addEventListener('scroll', this.onShow);
+    },
+    methods:{
+        markdownToHtml(data){
+            if(data != undefined){
+                return marked(data);
+            }else{
+                return '';
+            }
+        },
+        onShow (e) {
+            this.windowTop = e.target.documentElement.scrollTop;
+            if(this.windowTop > 200){
+                this.animation1 = true
+            }else if(this.windowTop < 200){
+                this.animation1 = false
+            }
+            if(this.windowTop > 400){
+                document.querySelector('#contant1').style.display = "block";
+            }else if(this.windowTop < 400){
+                document.querySelector('#contant1').style.display = "none";
+            }
+            if(this.windowTop > 800){
+                document.querySelector('#contant2').style.display = "block";
+            }else if(this.windowTop < 800){
+                document.querySelector('#contant2').style.display = "none";
+            }
+            if(this.windowTop > 1200){
+                document.querySelector('#contant3').style.display = "block";
+            }else if(this.windowTop < 1200){
+                document.querySelector('#contant3').style.display = "none";
+            }
+            if(this.windowTop > 1600){
+                document.querySelector('#contant4').style.display = "block";
+            }else if(this.windowTop < 1600){
+                document.querySelector('#contant4').style.display = "none";
+            }
+            if(this.windowTop > 2000){
+                document.querySelector('#contant5').style.display = "block";
+            }else if(this.windowTop < 2000){
+                document.querySelector('#contant5').style.display = "none";
+            }
+            if(this.windowTop > 2300){
+                this.animation2 = true
+            }else if(this.windowTop < 2200){
+                this.animation2 = false
+            }
+            if(this.windowTop > 2500){
+                document.querySelector('#contantAdd1').style.display = "block";
+            }else if(this.windowTop < 2200){
+                document.querySelector('#contantAdd1').style.display = "none";
+            }
+            if(this.windowTop > 2900){
+                document.querySelector('#contantAdd2').style.display = "block";
+            }else if(this.windowTop < 2200){
+                document.querySelector('#contantAdd2').style.display = "none";
+            }
+        }
     }
 }
 </script>
@@ -239,6 +291,19 @@ export default {
     height: 146px;
     border-radius: 50%;
 }
+
+.theme-text-main{
+    color: #53B535;
+}
+
+.theme-text-sub{
+    color: #444444;
+}
+
+.theme-border{
+    border-bottom: 1px solid #444444 !important;
+}
+
 
 /* -------------------------#Responsive------------------------ */
 

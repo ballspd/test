@@ -1,27 +1,28 @@
 <template>
 <div id="AboutUs">
+    <Preloader/>
     <div class="background-main">
         <div class="container">
             <div class="row banner-hero">
-                <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="d-none d-md-block d-lg-block d-xl-block d-xxl-block">
-                        <p class="text-s-16 mt-150" style="color:#50151C;">Home > <font class="text-s-16 text-w-700" style="color:#50151C">About US</font></p>
-                        <table class="align-middle" style="width: 100%;">
-                            <td class="banner-height">
-                                <font class="font-wght" style="font-size:64px;color:#50151C">About US</font>
-                            </td>
-                        </table>
+                    <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="d-none d-md-block">
+                            <p class="text-s-16 mt-150" style="color:#50151C;">Home > <font class="text-s-16 text-w-700" style="color:#50151C">About Us</font></p>
+                            <table class="align-middle" style="width: 100%;">
+                                <td class="banner-height">
+                                    <h1 class="font-wght text-s-64" style="color:#50151C">ABOUT US</h1>
+                                </td>
+                            </table>
+                        </div>
+                        <div class="d-block d-md-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
+                            <p class="text-s-14 pb-3 text-start" style="color:#50151C;margin-top:95px !important">Home > <font class="text-s-16 text-w-700" style="color:#50151C">About Us</font></p>
+                            <h1 class="font-wght text-s-36" style="color:#50151C">ABOUT US</h1>
+                        </div>
                     </div>
-                    <div class="d-block d-md-none d-lg-none d-xl-none d-xxl-none text-center ps-4 pe-4">
-                        <p class="text-s-16 mt-4 text-start" style="color:#50151C">Home > <font class="text-s-16 text-w-700" style="color:#50151C">About US</font></p>
-                        <font class="font-wght mt-3" style="font-size:36px;color:#50151C">About US</font>
+                    <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <img class="d-none d-md-block img-fluid img-banner-top" src="./../assets/image60.png">
+                        <img class="d-block d-md-none img-fluid" src="./../assets/mobile/image60.png">
                     </div>
                 </div>
-                <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <img class="d-none d-xl-block d-xxl-block img-fluid" src="./../assets/image60.png" style="margin-top: 80px;">
-                    <img class="d-block d-xl-none d-xxl-none img-fluid" src="./../assets/mobile/image60.png">
-                </div>
-            </div>
             <div class="crad mt-5">
                 <div class="row p-xxl-5 p-xl-5 p-lg-4 p-md-4 p-sm-4 p-3">
                     <div class="col-12 text-center mt-xxl-0 mt-xl-0 mt-lg-0 mt-md-3 mt-sm-4 mt-4">
@@ -106,12 +107,14 @@
 import GetQuote from '@/components/GetQuote'
 import InterestingArticles from '@/components/InterestingArticles'
 import marked from 'marked';
+import Preloader from '@/components/Preloader'
 
 export default {
     name: 'AboutUs',
       components: {
         GetQuote,
-        InterestingArticles
+        InterestingArticles,
+        Preloader
     },
     data(){
         return{

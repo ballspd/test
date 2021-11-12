@@ -35,99 +35,69 @@
                 <div class="mt-custom mb-4 p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
                     <div class="row text-center justify-content-center mb-4">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 mt-md-4 ">
-                            <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 theme-background-sub hvr-buzz">
+                            <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 theme-background-sub hvr-float-shadow">
                                 <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsKaikong/icon-solution-kaikong-1.png"></div>
                             </div>
                             <h2 class="text-s-18 mt-4 ps-3 pe-3" style="color:#0A0909;line-height: 1.5;">Content Marketing</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
-                            <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 theme-background-main hvr-buzz">
+                            <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 theme-background-main hvr-float-shadow">
                                 <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsKaikong/icon-solution-kaikong-2.png"></div>
                             </div>
                             <h2 class="text-s-18 mt-4 ps-3 pe-3" style="color:#0A0909;line-height: 1.5;">Graphic & Production</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
-                            <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 theme-background-sub hvr-buzz">
+                            <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 theme-background-sub hvr-float-shadow">
                                 <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsKaikong/icon-solution-kaikong-3.png"></div>
                             </div>
                             <h2 class="text-s-18 mt-4 ps-5 pe-5" style="color:#0A0909;line-height: 1.5;">Admin Page</h2>
                         </div>     
                     </div>
                     <div class="col-12 text-center mt-5"><h1 class="text-s-30 font-wght theme-text-sub">KAIKONG CREATIVE SERVICE</h1></div>
-                    <div id="contant1" ref="contant1" class="p-custom-2 mt-5">
-                        <div v-if="contant1" class="row d-flex">
-                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5 animate__animated animate__zoomInLeft">
-                                <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Fulfillment Service</span></h2>
-                                <img class="item-center hvr-rotate" src="./../../assets/SolutionsKaikong/Kaikong01.png" alt="">
-                            </div>
-                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                                <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInRight animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Fulfillment Service</span></h2>
-                                <div class="animate__animated animate__flipInX animate__delay-2s">
-                                    <div class="show collapse multi-collapse1" id="showCollapseMin1">
-                                        <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737">
-                                            KAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICE
+                    <div v-for="(data, index) in responseData" :key="index">
+                        <div :id="'contant' + (index + 1)" style="display:none">
+                            <div v-if="data.position_left" class="row mt-4 p-custom-2 d-flex">
+                                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5 animate__animated animate__zoomInLeft">
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <img class="item-center hvr-rotate" :src="data.image.url" :alt="data.image.name">
+                                </div>
+                                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInRight animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                        <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737">
+                                                {{data.detail}}
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="collapse  multi-collapse1" id="showCollapseMix1">
-                                        <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">
-                                            KAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICE
-                                            KAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICE
-                                            KAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICE
+                                        <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">
+                                                {{data.detail}}
+                                            </div>
                                         </div>
+                                        <a class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
                                     </div>
-                                    <a class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" data-bs-target=".multi-collapse1" aria-expanded="false" aria-controls="showCollapseMin1 showCollapseMix1"></a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div id="contant2" ref="contant2" class="p-custom-2 mt-5">
-                        <div v-if="contant2" class="row d-flex">
-                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                                <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInLeft animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Fulfillment Software</span></h2>
-                                <div class="animate__animated animate__flipInX animate__delay-2s">
-                                    <div class="show collapse multi-collapse2" id="showCollapseMin2">
-                                        <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737">
-                                            KAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICE
+                            <div v-else class="row mt-4 p-custom-2 d-flex">
+                                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto ">
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInLeft animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                        <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737">
+                                                {{data.detail}}
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="collapse  multi-collapse2" id="showCollapseMix2">
-                                        <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">
-                                            KAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICE
-                                            KAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICE
-                                            KAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICE
+                                        <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">
+                                                {{data.detail}}
+                                            </div>
                                         </div>
+                                        <a class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
                                     </div>
-                                    <a class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" data-bs-target=".multi-collapse2" aria-expanded="false" aria-controls="showCollapseMin2 showCollapseMix2"></a>
                                 </div>
-                            </div>
-                            <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 animate__animated animate__zoomInRight">
-                                <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Fulfillment Software</span></h2>
-                                <img class="item-center hvr-rotate" src="./../../assets/SolutionsKaikong/Kaikong02.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="contant3" ref="contant3" class="p-custom-2 mt-5">
-                        <div v-if="contant3" class="row d-flex">
-                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5 animate__animated animate__zoomInLeft">
-                                <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Fulfillment Service</span></h2>
-                                <img class="item-center hvr-rotate" src="./../../assets/SolutionsKaikong/Kaikong03.png" alt="">
-                            </div>
-                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                                <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInRight animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">Fulfillment Service</span></h2>
-                                <div class="animate__animated animate__flipInX animate__delay-2s">
-                                    <div class="show collapse multi-collapse3" id="showCollapseMin3">
-                                        <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737">
-                                            KAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICE
-                                        </div>
-                                    </div>
-                                    <div class="collapse  multi-collapse3" id="showCollapseMix3">
-                                        <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">
-                                            KAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICE
-                                            KAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICE
-                                            KAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICEKAIKONG CREATIVE SERVICE
-                                        </div>
-                                    </div>
-                                    <a class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" data-bs-target=".multi-collapse3" aria-expanded="false" aria-controls="showCollapseMin3 showCollapseMix3"></a>
+                                <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 animate__animated animate__zoomInRight">
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <img class="item-center hvr-rotate" :src="data.image.url" :alt="data.image.name">
                                 </div>
                             </div>
                         </div>
@@ -166,32 +136,32 @@ export default {
                 isHidden: false,
                 lang: localStorage.getItem('lang') || 'en',
                 windowTop:'',
-                responseData:'',
-                contant1:false,
-                contant2:false,
-                contant3:false
+                responseData:[]
         }
     },
     mounted () {
+        this.axios.get('solution-kaikong-services?_locale='+ this.lang)
+        .then(response => (this.responseData = response.data))
+
         window.addEventListener('scroll', this.onShow);
     },
     methods: {
-        onShow (e) {
-            this.windowTop = e.target.documentElement.scrollTop;
-            if(this.windowTop > (this.$refs.contant1.scrollHeight + 400)){
-                this.contant1 = true
-            }else if(this.windowTop < (this.$refs.contant1.scrollHeight)){
-                this.contant1 = false
+        onShow (event) {
+            this.windowTop = event.target.documentElement.scrollTop;
+            if(this.windowTop > 400){
+                document.querySelector('#contant1').style.display = "block";
+            }else if(this.windowTop < 400){
+                document.querySelector('#contant1').style.display = "none";
             }
-            if(this.windowTop > (this.$refs.contant2.scrollHeight + 800)){
-                this.contant2 = true
-            }else if(this.windowTop < (this.$refs.contant2.scrollHeight)){
-                this.contant2 = false
+            if(this.windowTop > 800){
+                document.querySelector('#contant2').style.display = "block";
+            }else if(this.windowTop < 800){
+                document.querySelector('#contant2').style.display = "none";
             }
-            if(this.windowTop > (this.$refs.contant3.scrollHeight + 1200)){
-                this.contant3 = true
-            }else if(this.windowTop < (this.$refs.contant3.scrollHeight)){
-                this.contant3 = false
+            if(this.windowTop > 1200){
+                document.querySelector('#contant3').style.display = "block";
+            }else if(this.windowTop < 1200){
+                document.querySelector('#contant3').style.display = "none";
             }
         }
     }

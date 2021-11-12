@@ -32,36 +32,36 @@
         </div>
         <div class="container">
             <div class="crad">
-                <div class="mt-custom mb-4 p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
+                <div class="mt-custom p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
                     <div class="row mt-2">
                         <div class="col-12">
-                            <p class="ps-5 pe-5">โดยหน้าที่ของ CDP คือ การรวบรวมข้อมูลของลูกค้าคุณจากทุกช่องทางไม่ว่าจะเป็นเว็บไซต์ หรือ Social Media ต่าง ๆ มาไว้ในที่เดียว เพื่อให้ง่าย ต่อการนำมาใช้งานต่อ</p>
+                            <p class="ps-5 pe-5 mb-0">โดยหน้าที่ของ CDP คือ การรวบรวมข้อมูลของลูกค้าคุณจากทุกช่องทางไม่ว่าจะเป็นเว็บไซต์ หรือ Social Media ต่าง ๆ มาไว้ในที่เดียว เพื่อให้ง่าย ต่อการนำมาใช้งานต่อ</p>
                         </div>
                     </div>
                 </div>
-                <div class="ps-4 pe-4">
+                <div v-if="animation1" class="ps-4 pe-4">
                     <div class="row text-center justify-content-center mb-4 ps-5 pe-5">
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-3 mt-md-4">
-                            <img class="item-center" src="./../../assets/SolutionsOc2plus/Oc2Plus-01-รวบรวมข้อมูลจากทุกช่องทาง.png" alt="Oc2Plus-01-รวบรวมข้อมูลจากทุกช่องทาง.png">
-                            <h2 class="text-s-18 text-w-700 mt-4 ps-3 pe-3 theme-text-main">รวบรวมข้อมูลจากทุกช่องทาง</h2>
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-5 mt-lg-0">
+                            <img class="item-center animate__animated animate__rotateIn animate__slow animate__delay-1s" src="./../../assets/SolutionsOc2plus/Oc2Plus-01-รวบรวมข้อมูลจากทุกช่องทาง.png" alt="Oc2Plus-01-รวบรวมข้อมูลจากทุกช่องทาง.png">
+                            <h2 class="text-s-18 text-w-700 mt-4 ps-3 pe-3 theme-text-main animate__animated animate__fadeInDown animate__delay-2s">รวบรวมข้อมูลจากทุกช่องทาง</h2>
                         </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-3 mt-md-4">
-                            <img class="item-center" src="./../../assets/SolutionsOc2plus/Oc2Plus-02-จัดเก็บไว้ในที่เดียว.png" alt="Oc2Plus-02-จัดเก็บไว้ในที่เดียว.png">
-                            <h2 class="text-s-18 text-w-700 mt-4 ps-3 pe-3 theme-text-main">จัดเก็บไว้ในที่เดียว</h2>
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-5 mt-lg-0">
+                            <img class="item-center animate__animated animate__rotateIn animate__slow animate__delay-1s" src="./../../assets/SolutionsOc2plus/Oc2Plus-02-จัดเก็บไว้ในที่เดียว.png" alt="Oc2Plus-02-จัดเก็บไว้ในที่เดียว.png">
+                            <h2 class="text-s-18 text-w-700 mt-4 ps-3 pe-3 theme-text-main animate__animated animate__fadeInDown animate__delay-2s">จัดเก็บไว้ในที่เดียว</h2>
                         </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-3 mt-md-4">
-                            <img class="item-center" src="./../../assets/SolutionsOc2plus/Oc2Plus-03-ง่ายต่อการนำไปใช้งาน.png" alt="Oc2Plus-03-ง่ายต่อการนำไปใช้งาน.png">
-                            <h2 class="text-s-18 text-w-700 mt-4 ps-3 pe-3 theme-text-main">จัดเก็บไว้ในที่เดียว</h2>
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-5 mt-lg-0">
+                            <img class="item-center animate__animated animate__rotateIn animate__slow animate__delay-1s" src="./../../assets/SolutionsOc2plus/Oc2Plus-03-ง่ายต่อการนำไปใช้งาน.png" alt="Oc2Plus-03-ง่ายต่อการนำไปใช้งาน.png">
+                            <h2 class="text-s-18 text-w-700 mt-4 ps-3 pe-3 theme-text-main animate__animated animate__fadeInDown animate__delay-2s">จัดเก็บไว้ในที่เดียว</h2>
                         </div>      
                     </div>
                 </div>
-                    <div class="row p-custom-2 d-flex ms-5 me-5">
-                        <div class="col-12 text-center mt-3 mt-lg-5 mb-5"><h1 class="text-s-30 text-w-700 theme-text-main">รูปแบบของข้อมูลเมื่อทำ CDP</h1></div>
+                    <div v-if="animation2" class="row p-custom-2 d-flex ms-5 me-5">
+                        <div class="col-12 text-center mt-4 mt-lg-5 mb-5 animate__animated animate__fadeInDown"><h1 class="text-s-30 text-w-700 theme-text-main">รูปแบบของข้อมูลเมื่อทำ CDP</h1></div>
                         <!-- <div class="col-12 col-lg-6 ps-lg-5 mt-3"><img src="./../../assets/SolutionsOc2plus/Oc2Plus-04-CDP-View.png" alt="Oc2Plus-04-CDP-View.png"></div>
                         <div class="col-12 col-lg-6 ps-lg-5 mt-3"><img src="./../../assets/SolutionsOc2plus/Oc2Plus-05-CRM-View.png" alt="Oc2Plus-05-CRM-View.png"></div> -->
                 
-                        <div class="col-6 view">
-                            <div class="card">
+                        <div class="col-md-6 col-12 view animate__animated animate__slideInLeft animate__slow">
+                            <div class="card item-center">
                                 <div class="card-view theme-background-main d-flex">
                                     <h1 class="m-auto text-s-24 text-w-700 text-white">CDV VIEW</h1>
                                 </div>
@@ -85,8 +85,8 @@
                                 <hr class="ms-auto me-auto mt-auto mb-4" style="width: 110px;color:#708090">
                             </div>
                         </div>
-                        <div class="col-6 view">
-                            <div class="card">
+                        <div class="col-md-6 col-12 mt-md-0 mt-5 view animate__animated animate__slideInRight animate__slow">
+                            <div class="card item-center">
                                 <div class="card-view theme-background-sub d-flex">
                                     <h1 class="m-auto text-s-24 text-w-700 text-white">CDV VIEW</h1>
                                 </div>
@@ -205,12 +205,31 @@ export default {
                 type: 'Oc2Plus',
                 isHidden: false,
                 lang: localStorage.getItem('lang') || 'en',
-                responseData:[]
+                responseData:[],
+                animation1:false,
+                animation2:false
         }
     },
     mounted () {
         this.axios.get('solution-oc2plus-services?_locale='+ this.lang)
         .then(response => (this.responseData = response.data))
+
+        window.addEventListener('scroll', this.onShow);
+    },
+    methods:{
+        onShow (e) {
+            this.windowTop = e.target.documentElement.scrollTop;
+            if(this.windowTop > 200){
+                this.animation1 = true
+            }else if(this.windowTop < 200){
+                this.animation1 = false
+            }
+            if(this.windowTop > 500){
+                this.animation2 = true
+            }else if(this.windowTop < 400){
+                this.animation2 = false
+            }
+        }
     }
 }
 </script>

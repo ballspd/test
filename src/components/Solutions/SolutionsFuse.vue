@@ -33,88 +33,84 @@
                 <div class="mt-custom p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
                     <div class="row p-custom justify-content-center">
                         <div class="row text-center mt-2">
-                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" width="60" src="./../../assets/icon/image60.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Fackbook</p></div>
-                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" width="60" src="./../../assets/icon/image61.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Google</p></div>
-                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" width="60" src="./../../assets/icon/image62.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">YouTube</p></div>
-                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" width="60" src="./../../assets/icon/image63.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Instagram</p></div>
-                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" width="60" src="./../../assets/icon/image64.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Twitter</p></div>
-                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid" width="60" src="./../../assets/icon/image65.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Tiktok</p></div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid hvr-float-shadow" width="60" src="./../../assets/icon/image60.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Fackbook</p></div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid hvr-float-shadow" width="60" src="./../../assets/icon/image61.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Google</p></div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid hvr-float-shadow" width="60" src="./../../assets/icon/image62.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">YouTube</p></div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid hvr-float-shadow" width="60" src="./../../assets/icon/image63.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Instagram</p></div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid hvr-float-shadow" width="60" src="./../../assets/icon/image64.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Twitter</p></div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid hvr-float-shadow" width="60" src="./../../assets/icon/image65.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Tiktok</p></div>
                         </div>
                     </div>
                     <div class="col-12 text-center mt-5"><h1 class="text-s-30 font-wght" style="color:#A7A2FD">DIGITAL ADVERTISING TOOLS</h1></div>
-                    <div v-for="data in responseData" :key="data.id">
-                        <div v-if="data.position_left" class="row mt-4 p-custom-2 d-flex">
-                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5">
-                                <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">{{data.header}}</span></h2>
-                                <img class="item-center" :src="data.image.url" :alt="data.image.name">
-                            </div>
-                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                                <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">{{data.header}}</span></h2>
-                                <div class="animate__animated animate__slideInUp">
-                                    <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
-                                        <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737">
-                                            {{data.detail}}
+                    <div v-for="(data, index) in responseData" :key="index">
+                        <div :id="'contant' + (index + 1)" style="display:none">
+                            <div v-if="data.position == 'Left'" class="row mt-4 p-custom-2 d-flex">
+                                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5 animate__animated animate__zoomInLeft">
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <img class="item-center hvr-rotate" :src="data.image.url" :alt="data.image.name">
+                                </div>
+                                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInRight animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                        <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                         </div>
-                                    </div>
-                                    <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
-                                        <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">
-                                            {{data.detail}}
+                                        <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                         </div>
+                                        <a v-if="data.detail.length>180" class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
                                     </div>
-                                    <a class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
                                 </div>
                             </div>
-                        </div>
-                        <div v-else class="row mt-4 p-custom-2 d-flex">
-                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                                <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">{{data.header}}</span></h2>
-                                <div class="animate__animated animate__slideInUp">
-                                    <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
-                                        <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737">
-                                            {{data.detail}}
+                            <div v-else class="row mt-4 p-custom-2 d-flex">
+                                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto ">
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInLeft animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                        <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                         </div>
-                                    </div>
-                                    <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
-                                        <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">
-                                            {{data.detail}}
+                                        <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                         </div>
+                                        <a v-if="data.detail.length>180" class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
                                     </div>
-                                    <a class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
                                 </div>
-                            </div>
-                            <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                                <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="color:#182E9C;padding: 10px 5px;"><span style="border-bottom: 1px solid #7074EC;padding: 10px 5px">{{data.header}}</span></h2>
-                                <img class="item-center" :src="data.image.url" :alt="data.image.name">
+                                <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 animate__animated animate__zoomInRight">
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <img class="item-center hvr-rotate" :src="data.image.url" :alt="data.image.name">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-5 p-5" style="background: linear-gradient(0, #EAE6FF 0%, rgba(234, 230, 255, 0) 100%);">
-                    <div class="row">
-                        <div class="col-12 mt-4 mb-2 text-center"><h1 class="text-s-30 text-w-700" style="color:#182E9C">ทำไมลูกค้าถึงไว้ใจให้เราดูแล</h1></div>    
-                    </div>
-                    <div class="row mt-5 text-center">
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-                            <div class="bg-icon d-flex item-center mt-md-0 mt-2">
-                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-1.png"></div>
-                            </div>
-                            <img class="item-center mt-4" src="./../../assets/icon/Group163.png">
-                            <h2 class="text-s-20 mt-3" style="color:#373737">ให้คำปรึกษาครบวงจร <br>เรื่องการทำธุรกิจ</h2>
+                <div id="animation1" ref="animation1" class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-5 p-5" style="background: linear-gradient(0, #EAE6FF 0%, rgba(234, 230, 255, 0) 100%);">
+                    <div v-if="animation1">
+                        <div class="row">
+                            <div class="col-12 mt-4 mb-2 text-center animate__animated animate__fadeInDown"><h1 class="text-s-30 text-w-700" style="color:#182E9C">ทำไมลูกค้าถึงไว้ใจให้เราดูแล</h1></div>    
                         </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-                            <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-2.png"></div>
+                        <div class="row mt-5 text-center">
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="bg-icon d-flex item-center mt-md-0 mt-2">
+                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-1.png"></div>
+                                </div>
+                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">ให้คำปรึกษาครบวงจร <br>เรื่องการทำธุรกิจ</h2>
                             </div>
-                            <img class="item-center mt-4" src="./../../assets/icon/Group163.png">
-                            <h2 class="text-s-20 mt-3" style="color:#373737">ดูเเลด้วยทีมงาน <br>ที่มีประสบการณ์</h2>
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="bg-icon d-flex item-center mt-md-0 mt-5">
+                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-2.png"></div>
+                                </div>
+                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">ดูเเลด้วยทีมงาน <br>ที่มีประสบการณ์</h2>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="bg-icon d-flex item-center mt-md-0 mt-5">
+                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-3.png"></div>
+                                </div>
+                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">เน้นผลลัพธ์ด้วยการ <br>เข้าใจธุรกิจคุณ</h2>
+                            </div>     
                         </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-                            <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                <div class="bg-icon-main d-flex"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-3.png"></div>
-                            </div>
-                            <img class="item-center mt-4" src="./../../assets/icon/Group163.png">
-                            <h2 class="text-s-20 mt-3" style="color:#373737">เน้นผลลัพธ์ด้วยการ <br>เข้าใจธุรกิจคุณ</h2>
-                        </div>     
                     </div>
                 </div>
                 <InterestingArticles/>
@@ -136,6 +132,7 @@ import InterestingArticles from '@/components/InterestingArticles'
 import Review from '@/components/Review'
 import GetQuote from '@/components/Solutions/SolutionsGetQuote'
 import Preloader from '@/components/Preloader'
+import marked from 'marked';
 
 export default {
     name: 'SolutionsFuse',
@@ -150,12 +147,62 @@ export default {
                 type: 'Fuse',
                 isHidden: false,
                 lang: localStorage.getItem('lang') || 'en',
-                responseData:[]
+                responseData:[],
+                animation1:false
         }
     },
     mounted () {
         this.axios.get('solution-fuse-services?_locale='+ this.lang)
         .then(response => (this.responseData = response.data))
+        
+        window.addEventListener('scroll', this.onShow);
+    },
+    methods: {
+        markdownToHtml(data){
+            if(data != undefined){
+                return marked(data);
+            }else{
+                return '';
+            }
+        },
+        onShow (e) {
+            this.windowTop = e.target.documentElement.scrollTop;
+            if(this.windowTop > 400){
+                document.querySelector('#contant1').style.display = "block";
+            }else if(this.windowTop < 200){
+                document.querySelector('#contant1').style.display = "none";
+            }
+            if(this.windowTop > 800){
+                document.querySelector('#contant2').style.display = "block";
+            }else if(this.windowTop < 600){
+                document.querySelector('#contant2').style.display = "none";
+            }
+            if(this.windowTop > 1200){
+                document.querySelector('#contant3').style.display = "block";
+            }else if(this.windowTop < 1000){
+                document.querySelector('#contant3').style.display = "none";
+            }
+            if(this.windowTop > 1600){
+                document.querySelector('#contant4').style.display = "block";
+            }else if(this.windowTop < 1400){
+                document.querySelector('#contant4').style.display = "none";
+            }
+            if(this.windowTop > 2000){
+                document.querySelector('#contant5').style.display = "block";
+            }else if(this.windowTop < 1600){
+                document.querySelector('#contant5').style.display = "none";
+            }
+            if(this.windowTop > 2400){
+                document.querySelector('#contant6').style.display = "block";
+            }else if(this.windowTop < 1800){
+                document.querySelector('#contant6').style.display = "none";
+            }
+            if(this.windowTop > 2600){
+                this.animation1 = true
+            }else if(this.windowTop < 2200){
+                this.animation1 = false
+            }
+        }
     }
 }
 </script>
@@ -197,6 +244,26 @@ export default {
     width: 146px;
     height: 146px;
     border-radius: 50%;
+}
+
+.theme-background-main{
+    background-color: #182E9C;
+}
+
+.theme-background-sub{
+    background-color: #777BFB;
+}
+
+.theme-text-main{
+    color: #182E9C;
+}
+
+.theme-text-sub{
+    color: #777BFB;
+}
+
+.theme-border{
+    border-bottom: 1px solid #777BFB !important;
 }
 
 .img-banner-top{

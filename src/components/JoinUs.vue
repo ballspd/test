@@ -1,5 +1,6 @@
 <template>
 <div id="JoinUs">
+  <Preloader/>
     <div class="background-main">
         <div class="container">
             <div class="row banner-hero">
@@ -27,13 +28,14 @@
             <div class="crad mt-5">
                 <div class="row p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4" style="padding-bottom:20px !important">
                   <div class="col-12 ps-4 pe-4">
-                    <p class="text-s-30 font-wght text-center pe-4 ps-4" style="color:#15304E">Sellsuki Workplace Culture</p>
-                    <p class="text-center mt-4">ตำแหน่งว่าง รอเธอมา Join ^^</p>
-                    <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                      ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="text-s-30 font-wght text-center pe-4 ps-4" style="color:#15304E">มาเป็นครอบครัวเดียวกับ Sellsuki</p>
+                    <!-- <p class="text-center mt-4">ตำแหน่งว่าง รอเธอมา Join ^^</p> -->
+                    <p class="mt-4" style="text-indent: 65px">Sellsuki เป็นบริษัทที่มีความโดดเด่น และเชี่ยวชาญด้านด้านเทคโนโลยี 
+                      โดยมีจุดเริ่มต้นในการเป็นแพลตฟอร์มผู้ช่วยเจ้าของธุรกิจออนไลน์ ระบบการจัดการหลังบ้าน 
+                      โดยเราได้มีการพัฒนาบริการของเราให้กว้างยิ่งขึ้นไปเพื่อให้ครบวงจรและตอบสนองความต้องการเจ้าของธุรกิจได้อย่างครอบคลุมมากที่สุด 
+                      ไม่ว่าจะเป็นด้านการให้คำปรึกษาทางการตลาด การทำโฆษณา การทำ Content Marketing การสร้างระบบร้านค้า หรือหน้าเว็บต่าง ๆ 
+                      รวมทั้ง การเข้ารวมเป็น Partner LINE เจ้าใหญ่ที่สุดในประเทศไทยที่ได้ ด้วยบริการที่ครบคลุมครบวงจรสำหรับคนอยากเป็นทำธุรกิจจึงทำให้มีเจ้าของธุรกิจมากมายที่ไว้ใจและเลือกใช้บริการเรา 
+                      เราจึงคอยมองหาคนที่มีศัพยภาพและเป้าหมายเดียวกันในการช่วยผลักดัน SME ไทยให้เติบโตไปด้วยกันมาร่วมทีมกับเรา</p>
                   </div>
                   <div class="col-12">
                     <div id="carouselimage" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -140,9 +142,14 @@
 </template>
 
 <script>
+import Preloader from '@/components/Preloader'
 import marked from 'marked';
+
 export default {
     name: 'JoinUs',
+    components: {
+        Preloader
+    },
     data() {
       return {
         lang: localStorage.getItem('lang') || 'en',

@@ -1,5 +1,6 @@
 <template>
 <div id="JoinUsForm">
+    <Preloader/>
     <div class="background-main">
         <div class="container">
             <div class="row">
@@ -116,9 +117,13 @@
 </template>
 
 <script>
+import Preloader from '@/components/Preloader'
 
 export default {
     name: 'JoinUsForm',
+    components: {
+        Preloader
+    },
     data() {
       return {
         filename: ''
