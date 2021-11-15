@@ -26,7 +26,7 @@
                             </div>
                             <div class="col-6 col-md-7 col-xl-9 p-2">
                                 <i class="bi bi-eye ms-lg-5 ms-3"></i>
-                                <span class="text-s-16 ms-4">{{responseData.view}}</span>
+                                <span class="text-s-16 ms-4">{{count}}</span>
                             </div>                 
                         </div>
                         <div v-for="data in responseData.contant" :key="data.id" class="row">
@@ -65,6 +65,8 @@ export default {
       return {
         responseData:[],
         lang: localStorage.getItem('lang') || 'en',
+        view: 1,
+        count:''
       }
     },
     methods: {
@@ -74,12 +76,17 @@ export default {
             }else{
                 return '';
             } 
+      },
+      addView(view){
+        this.count = view + this.view
+        this.axios.put('blogs/'+ this.$route.params.id, {view: this.count})
+        .then()
       }
     },
     //this.$route.params.id
     created () {
         this.axios.get('blogs/' + this.$route.params.id+'&_locale='+ this.lang)
-        .then(response => (this.responseData = response.data))
+        .then(response => (this.responseData = response.data,this.addView(response.data.view)))
     }
 }
 </script>

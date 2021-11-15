@@ -26,14 +26,18 @@
                             </div>
                             <div class="col-6 col-md-7 col-xl-9 p-2">
                                 <i class="bi bi-eye ms-lg-5 ms-3"></i>
-                                <span class="text-s-16 ms-4">{{responseData.view}}</span>
+                                <span class="text-s-16 ms-4">{{count}}</span>
                             </div>
-                            <div class="col-12 mt-5 mb-5">
-                                <img v-if="responseData.banner_1.url" class="img-cover" :src="responseData.banner_1.url" :alt="responseData.banner_1.name">
-                            </div>
-                            <div class="col-12">
-                                <p v-html="markdownToHtml(responseData.banner_description_1)"></p>
-                            </div>
+                            <div v-for="(data, index) in responseData.contant" :key="index">
+                                <div v-if="index == 0" class="row">
+                                    <div v-if="data.image != null" class="col-12 mt-5 mb-5">
+                                        <img class="img-cover" :src="data.image.url" :alt="data.image.name">
+                                    </div>
+                                    <div v-if="data.text != null" class="col-12">
+                                        <p v-html="markdownToHtml(data.text)"></p>
+                                    </div>
+                                </div>
+                            </div> 
                             <div class="col-12 mt-4 mb-4">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-4 col-10">
@@ -54,13 +58,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 mt-3 mb-5">
-                                <img class="img-cover" :src="responseData.banner_2.url" :alt="responseData.banner_2.name">
-                            </div>
-                            <div class="col-12">
-                                <p v-html="markdownToHtml(responseData.banner_description_2)"></p>
-                                <hr class="mt-5" style="border: 1px solid #E5E5E5;">
-                            </div>                  
+                            <div v-for="(data, index) in responseData.contant" :key="index">
+                                <div v-if="index != 0" class="row">
+                                    <div v-if="data.image != null" class="col-12 mt-5 mb-5">
+                                        <img class="img-cover" :src="data.image.url" :alt="data.image.name">
+                                    </div>
+                                    <div v-else class="mt-3 mb-3">
+                                    </div>
+                                    <div v-if="data.text != null" class="col-12">
+                                        <p v-html="markdownToHtml(data.text)"></p>
+                                    </div>
+                                    <div v-else class="mt-3 mb-3">
+                                    </div>
+                                </div>   
+                            </div>               
                         </div>
                     </div>
                 </div>
@@ -93,7 +104,9 @@ export default {
     data() {
       return {
             lang: localStorage.getItem('lang') || 'en',
-            responseData:[]
+            responseData:[],
+            view: 1,
+            count:''
       }
     },
     methods: {
@@ -103,16 +116,17 @@ export default {
             }else{
                 return '';
             }
+      },
+      addView(view){
+        this.count = this.view + view
+        this.axios.put('portfolios/'+ this.$route.params.id, {view: this.count})
+        .then()
       }
     },
     //this.$route.params.id
-    created () {
-        this.axios.get('Portfolios/' + this.$route.params.id+'&_locale='+ this.lang)
-        .then(response => (this.responseData = response.data))
-    },
-    updated () {
-        this.axios.get('Portfolios/' + this.$route.params.id+'&_locale='+ this.lang)
-        .then(response => (this.responseData = response.data))
+    mounted () {
+        this.axios.get('portfolios/' + this.$route.params.id+'&_locale='+ this.lang)
+        .then(response => (this.responseData = response.data,this.addView(response.data.view)))
     }
 }
 </script>

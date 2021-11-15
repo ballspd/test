@@ -36,17 +36,23 @@
             <div class="col-xxl-7 col-xl-7 col-lg-8 col-md-12 col-sm-12 col-12">
                 <div class="row d-none d-lg-block" style="margin-top: 80px;">
                     <div class="col-12">
-                        <img @mouseover="activeBuFuse = true" @mouseleave="activeBuFuse = false" class="bu-fuse hvr-pulse" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
-                        <img @mouseover="activeBuLine = true" @mouseleave="activeBuLine = false" class="bu-line hvr-pulse" src="./../assets/Banner/Line.png" alt="Fuse.png">
-                        <img src="./../assets/Main.png" style="max-width: 661px">
+                        <img @mouseover="activeBuFuse = true,showHover = false" @mouseleave="activeBuFuse = false" class="bu-fuse hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
+                        <img @mouseover="activeBuLine = true,showHover = false" @mouseleave="activeBuLine = false" class="bu-line hvr-grow" :class="{'auto-pulse':showHover}" src="./../assets/Banner/Line.png" alt="Fuse.png">
+                        <img @mouseover="activeBuFuse = true,showHover = false" @mouseleave="activeBuFuse = false" class="bu-akita hvr-grow" src="./../assets/Banner/Fuse.png" alt="Akita.png">
+                        <img @mouseover="activeBuFuse = true,showHover = false" @mouseleave="activeBuFuse = false" class="bu-beary hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
+                        <img @mouseover="activeBuFuse = true,showHover = false" @mouseleave="activeBuFuse = false" class="bu-kaikong hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
+                        <img class="bu-size" src="./../assets/Main.png">
                     </div>
                 </div>
                 <div class="d-block d-lg-none">
                     <div class="row justify-content-center">
                         <div class="col-md-8 col-sm-11 col-10">
-                            <img @click="activeBuFuse = true ,activeBuLine = false" class="bu-fuse" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
-                            <img @click="activeBuLine = true ,activeBuFuse = false" class="bu-line" src="./../assets/Banner/Line.png" alt="Fuse.png">
-                            <img class="item-center" src="./../assets/Main.png" style="max-width: 500px">
+                            <img @click="showHover = false,activeBuFuse = true ,activeBuLine = false" class="bu-fuse hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
+                            <img @click="showHover = false,activeBuLine = true ,activeBuFuse = false" class="bu-line" :class="{'auto-pulse':showHover}" src="./../assets/Banner/Line.png" alt="Line.png">
+                            <img @click="showHover = false,activeBuFuse = true ,activeBuLine = false" class="bu-akita" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
+                            <img @click="showHover = false,activeBuLine = true ,activeBuFuse = false" class="bu-beary" src="./../assets/Banner/Line.png" alt="Line.png">
+                            <img @click="showHover = false,activeBuFuse = true ,activeBuLine = false" class="bu-kaikong" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
+                            <img class="item-center bu-size" src="./../assets/Main.png">
                         </div>
                     </div>
                 </div>
@@ -60,8 +66,12 @@ export default {
   name: 'BannerBU',
   data(){
     return {
+    showHover: true,
     activeBuFuse: false,
-    activeBuLine: false
+    activeBuLine: false,
+    activeBuAkita: false,
+    activeBuBeary: false,
+    activeBuKaikong: false
     }
   },
   methods: {
@@ -73,14 +83,93 @@ export default {
 </script>
 
 <style scoped>
+@-webkit-keyframes auto-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes auto-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.auto-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.auto-pulse, .auto-pulse:focus, .auto-pulse:active {
+  -webkit-animation-name: auto-pulse;
+  animation-name: auto-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
 
 /* -------------------------#Responsive------------------------ */
 
-/* Extra small devices (phones, 991px and down) */
-@media only screen and (max-width: 991px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 549px) {
+    .bu-size{
+        max-width: 450px
+    }
     .bu-fuse{
         position: absolute;
-        margin: 55px 0 0 300px;
+        margin: 55px 0 0 270px;
+        width: 70px;
+        cursor: pointer;
+    }
+    .bu-line{
+        position: absolute;
+        margin: 48px 0 0 125px;
+        width: 70px;
+        cursor: pointer;
+    }
+    .bu-akita{
+        position: absolute;
+        margin: 140px 0 0 60px;
+        width: 70px;
+        cursor: pointer;
+    }
+
+    .bu-beary{
+        position: absolute;
+        margin: 150px 0 0 330px;
+        width: 70px;
+        cursor: pointer;
+    }
+
+    .bu-kaikong{
+        position: absolute;
+        margin: 245px 0 0 325px;
+        width: 70px;
+        cursor: pointer;
+    }
+}
+
+/* Extra small devices (phones, 991px and down) */
+@media only screen and (min-width: 550px) and (max-width: 991px){
+    .bu-size{
+        max-width: 510px
+    }
+    .bu-fuse{
+        position: absolute;
+        margin: 60px 0 0 300px;
         width: 70px;
         cursor: pointer;
     }
@@ -91,20 +180,64 @@ export default {
         width: 70px;
         cursor: pointer;
     }
+    .bu-akita{
+        position: absolute;
+        margin: 160px 0 0 65px;
+        width: 70px;
+        cursor: pointer;
+    }
+
+    .bu-beary{
+        position: absolute;
+        margin: 170px 0 0 380px;
+        width: 70px;
+        cursor: pointer;
+    }
+
+    .bu-kaikong{
+        position: absolute;
+        margin: 280px 0 0 380px;
+        width: 70px;
+        cursor: pointer;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .bu-size{
+        max-width: 661px
+    }
     .bu-fuse{
         position: absolute;
-        margin: 70px 0 0 380px;
+        margin: 75px 0 0 380px;
         width: 100px;
         cursor: pointer;
     }
 
     .bu-line{
         position: absolute;
-        margin: 70px 0 0 185px;
+        margin: 60px 0 0 185px;
+        width: 100px;
+        cursor: pointer;
+    }
+
+    .bu-akita{
+        position: absolute;
+        margin: 200px 0 0 80px;
+        width: 100px;
+        cursor: pointer;
+    }
+
+    .bu-beary{
+        position: absolute;
+        margin: 215px 0 0 495px;
+        width: 100px;
+        cursor: pointer;
+    }
+
+    .bu-kaikong{
+        position: absolute;
+        margin: 360px 0 0 480px;
         width: 100px;
         cursor: pointer;
     }
