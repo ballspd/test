@@ -27,21 +27,20 @@
                             <div class="col-6 col-md-7 col-xl-9 p-2">
                                 <i class="bi bi-eye ms-lg-5 ms-3"></i>
                                 <span class="text-s-16 ms-4">{{responseData.view}}</span>
-                            </div>
-                            <div class="col-12 mt-5 mb-5">
-                                <img class="img-cover" :src="responseData.banner_1.url" :alt="responseData.banner_1.name">
-                            </div>
-                            <div class="col-12">
-                                <p v-html="markdownToHtml(responseData.content_1)"></p>
-                            </div>
-                            <div class="col-12 mt-3 mb-5">
-                                <img class="img-cover" :src="responseData.banner_2.url" :alt="responseData.banner_2.name">
-                            </div>
-                            <div class="col-12">
-                                <p v-html="markdownToHtml(responseData.content_2)"></p>
-                                <hr class="mt-5" style="border: 1px solid #E5E5E5;">
-                            </div>                  
+                            </div>                 
                         </div>
+                        <div v-for="data in responseData.contant" :key="data.id" class="row">
+                            <div v-if="data.image != null" class="col-12 mt-5 mb-5">
+                                <img class="img-cover" :src="data.image.url" :alt="data.image.name">
+                            </div>
+                            <div v-else class="mt-3 mb-3">
+                            </div>
+                            <div v-if="data.text != null" class="col-12">
+                                <p v-html="markdownToHtml(data.text)"></p>
+                            </div>
+                            <div v-else class="mt-3 mb-3">
+                            </div>
+                        </div> 
                     </div>
                 </div>
                 <RelatedPosts :type="'Blogs'" :CategoryName="this.$route.query.type" :Id="this.$route.params.id"/>
@@ -79,11 +78,7 @@ export default {
     },
     //this.$route.params.id
     created () {
-        this.axios.get('Blogs/' + this.$route.params.id+'&_locale='+ this.lang)
-        .then(response => (this.responseData = response.data))
-    },
-    updated () {
-        this.axios.get('Blogs/' + this.$route.params.id+'&_locale='+ this.lang)
+        this.axios.get('blogs/' + this.$route.params.id+'&_locale='+ this.lang)
         .then(response => (this.responseData = response.data))
     }
 }
