@@ -188,23 +188,15 @@ export default {
             this.windowTop = event.target.documentElement.scrollTop;
             if(this.windowTop > 500){
                 document.querySelector('#contant1').style.display = "block";
-            }else if(this.windowTop < 400){
-                document.querySelector('#contant1').style.display = "none";
             }
             if(this.windowTop > 900){
                 document.querySelector('#contant2').style.display = "block";
-            }else if(this.windowTop < 800){
-                document.querySelector('#contant2').style.display = "none";
             }
             if(this.windowTop > 1300){
                 document.querySelector('#contant3').style.display = "block";
-            }else if(this.windowTop < 1200){
-                document.querySelector('#contant3').style.display = "none";
             }
             if(this.windowTop > 1500){
                 this.animation1 = true
-            }else if(this.windowTop < 1300){
-                this.animation1 = false
             }
         },
         markdownToHtml(data){

@@ -768,7 +768,7 @@ ul li ul li {
   }
 
   .item-center{
-    display: block !important;
+    display: block;
     margin: 0 auto;
   }
 

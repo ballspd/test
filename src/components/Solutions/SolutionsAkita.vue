@@ -179,18 +179,12 @@ export default {
             this.windowTop = event.target.documentElement.scrollTop;
             if(this.windowTop > 300){
                 document.querySelector('#contant1').style.display = "block";
-            }else if(this.windowTop < 200){
-                document.querySelector('#contant1').style.display = "none";
             }
             if(this.windowTop > 600){
                 document.querySelector('#contant2').style.display = "block";
-            }else if(this.windowTop < 500){
-                document.querySelector('#contant2').style.display = "none";
             }
             if(this.windowTop > 1200){
                 this.animation1 = true
-            }else if(this.windowTop < 800){
-                this.animation1 = false
             }
         },
         markdownToHtml(data){

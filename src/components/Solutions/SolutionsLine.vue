@@ -205,48 +205,30 @@ export default {
             this.windowTop = e.target.documentElement.scrollTop;
             if(this.windowTop > 200){
                 this.animation1 = true
-            }else if(this.windowTop < 200){
-                this.animation1 = false
             }
             if(this.windowTop > 400){
                 document.querySelector('#contant1').style.display = "block";
-            }else if(this.windowTop < 400){
-                document.querySelector('#contant1').style.display = "none";
             }
             if(this.windowTop > 800){
                 document.querySelector('#contant2').style.display = "block";
-            }else if(this.windowTop < 800){
-                document.querySelector('#contant2').style.display = "none";
             }
             if(this.windowTop > 1200){
                 document.querySelector('#contant3').style.display = "block";
-            }else if(this.windowTop < 1200){
-                document.querySelector('#contant3').style.display = "none";
             }
             if(this.windowTop > 1600){
                 document.querySelector('#contant4').style.display = "block";
-            }else if(this.windowTop < 1600){
-                document.querySelector('#contant4').style.display = "none";
             }
             if(this.windowTop > 2000){
                 document.querySelector('#contant5').style.display = "block";
-            }else if(this.windowTop < 2000){
-                document.querySelector('#contant5').style.display = "none";
             }
             if(this.windowTop > 2300){
                 this.animation2 = true
-            }else if(this.windowTop < 2200){
-                this.animation2 = false
             }
             if(this.windowTop > 2500){
                 document.querySelector('#contantAdd1').style.display = "block";
-            }else if(this.windowTop < 2200){
-                document.querySelector('#contantAdd1').style.display = "none";
             }
             if(this.windowTop > 2900){
                 document.querySelector('#contantAdd2').style.display = "block";
-            }else if(this.windowTop < 2200){
-                document.querySelector('#contantAdd2').style.display = "none";
             }
         }
     }

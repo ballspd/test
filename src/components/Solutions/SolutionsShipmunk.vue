@@ -373,43 +373,27 @@ export default {
             this.windowTop = e.target.documentElement.scrollTop;
             if(this.windowTop > 200){
                 this.animation1 = true
-            }else if(this.windowTop < 200){
-                this.animation1 = false
             }
             if(this.windowTop > 400){
                 document.querySelector('#contantH11').style.display = "block";
-            }else if(this.windowTop < 300){
-                document.querySelector('#contantH11').style.display = "none";
             }
             if(this.windowTop > 800){
                 document.querySelector('#contantH12').style.display = "block";
-            }else if(this.windowTop < 700){
-                document.querySelector('#contantH12').style.display = "none";
             }
             if(this.windowTop > 1200){
                 document.querySelector('#contantH13').style.display = "block";
-            }else if(this.windowTop < 1100){
-                document.querySelector('#contantH13').style.display = "none";
             }
             if(this.windowTop > 1500){
                 this.animation2 = true
-            }else if(this.windowTop < 1400){
-                this.animation2 = false
             }
             if(this.windowTop > 1600){
                 document.querySelector('#contantH21').style.display = "block";
-            }else if(this.windowTop < 1400){
-                document.querySelector('#contantH21').style.display = "none";
             }
             if(this.windowTop > 2000){
                 document.querySelector('#contantH22').style.display = "block";
-            }else if(this.windowTop < 1800){
-                document.querySelector('#contantH22').style.display = "none";
             }
             if(this.windowTop > 2400){
                 document.querySelector('#contantH23').style.display = "block";
-            }else if(this.windowTop < 2000){
-                document.querySelector('#contantH23').style.display = "none";
             }
         },
         markdownToHtml(data){

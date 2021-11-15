@@ -169,38 +169,24 @@ export default {
             this.windowTop = e.target.documentElement.scrollTop;
             if(this.windowTop > 400){
                 document.querySelector('#contant1').style.display = "block";
-            }else if(this.windowTop < 200){
-                document.querySelector('#contant1').style.display = "none";
             }
             if(this.windowTop > 800){
                 document.querySelector('#contant2').style.display = "block";
-            }else if(this.windowTop < 600){
-                document.querySelector('#contant2').style.display = "none";
             }
             if(this.windowTop > 1200){
                 document.querySelector('#contant3').style.display = "block";
-            }else if(this.windowTop < 1000){
-                document.querySelector('#contant3').style.display = "none";
             }
             if(this.windowTop > 1600){
                 document.querySelector('#contant4').style.display = "block";
-            }else if(this.windowTop < 1400){
-                document.querySelector('#contant4').style.display = "none";
             }
             if(this.windowTop > 2000){
                 document.querySelector('#contant5').style.display = "block";
-            }else if(this.windowTop < 1600){
-                document.querySelector('#contant5').style.display = "none";
             }
             if(this.windowTop > 2400){
                 document.querySelector('#contant6').style.display = "block";
-            }else if(this.windowTop < 1800){
-                document.querySelector('#contant6').style.display = "none";
             }
             if(this.windowTop > 2600){
                 this.animation1 = true
-            }else if(this.windowTop < 2200){
-                this.animation1 = false
             }
         }
     }

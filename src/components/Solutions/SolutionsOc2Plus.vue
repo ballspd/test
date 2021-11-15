@@ -221,13 +221,9 @@ export default {
             this.windowTop = e.target.documentElement.scrollTop;
             if(this.windowTop > 200){
                 this.animation1 = true
-            }else if(this.windowTop < 200){
-                this.animation1 = false
             }
             if(this.windowTop > 500){
                 this.animation2 = true
-            }else if(this.windowTop < 400){
-                this.animation2 = false
             }
         }
     }
