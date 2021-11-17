@@ -15,7 +15,7 @@
                     <div v-for="data in responseDataSingle" :key="data.id" class="row mb-1">
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><img class="img-fix-size" :src="data.illustration.url" style="height: 330px;"></div>
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" style="padding: 30px 10px 10px 10px;">
-                            <p class="text-s-16" style="color:#807F7F">21 July 2021</p>
+                            <p class="text-s-16" style="color:#807F7F">{{dateTime(responseData.updated_at)}}</p>
                             <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
                             <p class="text-s-16" style="color:#373737">{{data.description}}</p>
@@ -48,6 +48,7 @@
 
 <script>
 import Preloader from '@/components/Preloader'
+import moment from 'moment'
 
 export default {
     name: 'BlogsAll',
@@ -68,6 +69,11 @@ export default {
 
         this.axios.get('Blogs?blog_category=' + this.$route.params.id + '&_sort=updated_at:DESC&_limit=1&_locale='+ this.lang)
         .then(response => (this.responseDataSingle = response.data))
+    },
+    methods:{
+        dateTime(value) {
+            return moment(value).format('DD MMM YYYY');
+        },
     }
 }
 </script>

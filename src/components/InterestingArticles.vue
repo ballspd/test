@@ -21,7 +21,7 @@
                           <div class="card-body">
                             <font class="card-title" style="font-weight: bold;font-size: 24px;">News</font>
                             <p style="margin-bottom: 0rem;" class="card-text text-s-16">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                            <button class="btn-transparent button position-btn"><span class="m-auto">Read More</span></button>
+                            <button class="btn-transparent hvr-back-pulse position-btn"><span class="m-auto">Read More</span></button>
                           </div>
                         </div>
                       </div>
@@ -31,7 +31,7 @@
                           <div class="card-body">
                             <font class="card-title" style="font-weight: bold;font-size: 24px;">News</font>
                             <p style="margin-bottom: 0rem;" class="card-text text-s-16">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                            <button class="btn-transparent button position-btn"><span class="m-auto">Read More</span></button>
+                            <button class="btn-transparent hvr-back-pulse position-btn"><span class="m-auto">Read More</span></button>
                           </div>
                         </div>
                       </div>
@@ -41,7 +41,7 @@
                           <div class="card-body">
                             <font class="card-title" style="font-weight: bold;font-size: 24px;">News</font>
                             <p style="margin-bottom: 0rem;" class="card-text text-s-16">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                            <button class="btn-transparent button position-btn"><span class="m-auto">Read More</span></button>
+                            <button class="btn-transparent hvr-back-pulse position-btn"><span class="m-auto">Read More</span></button>
                           </div>
                         </div>
                       </div>
@@ -55,7 +55,7 @@
                           <div class="card-body">
                             <font class="card-title" style="font-weight: bold;font-size: 24px;">News</font>
                             <p style="margin-bottom: 0rem;" class="card-text text-s-16">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                            <button class="btn-transparent button position-btn"><span class="m-auto">Read More</span></button>
+                            <button class="btn-transparent hvr-back-pulse position-btn"><span class="m-auto">Read More</span></button>
                           </div>
                         </div>
                       </div>
@@ -65,7 +65,7 @@
                           <div class="card-body">
                             <font class="card-title" style="font-weight: bold;font-size: 24px;">News</font>
                             <p style="margin-bottom: 0rem;" class="card-text text-s-16">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                            <button class="btn-transparent button position-btn"><span class="m-auto">Read More</span></button>
+                            <button class="btn-transparent hvr-back-pulse position-btn"><span class="m-auto">Read More</span></button>
                           </div>
                         </div>
                       </div>
@@ -75,7 +75,7 @@
                           <div class="card-body">
                             <font class="card-title" style="font-weight: bold;font-size: 24px;">News</font>
                             <p style="margin-bottom: 0rem;" class="card-text text-s-16">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                            <button class="btn-transparent button position-btn"><span class="m-auto">Read More</span></button>
+                            <button class="btn-transparent hvr-back-pulse position-btn"><span class="m-auto">Read More</span></button>
                           </div>
                         </div>
                       </div>
@@ -89,7 +89,7 @@
                           <div class="card-body">
                             <font class="card-title" style="font-weight: bold;font-size: 24px;">News</font>
                             <p style="margin-bottom: 0rem;" class="card-text text-s-16">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                            <button class="btn-transparent button position-btn"><span class="m-auto">Read More</span></button>
+                            <button class="btn-transparent hvr-back-pulse position-btn"><span class="m-auto">Read More</span></button>
                           </div>
                         </div>
                       </div>
@@ -99,7 +99,7 @@
                           <div class="card-body">
                             <font class="card-title" style="font-weight: bold;font-size: 24px;">News</font>
                             <p style="margin-bottom: 0rem;" class="card-text text-s-16">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                            <button class="btn-transparent button position-btn"><span class="m-auto">Read More</span></button>
+                            <button class="btn-transparent hvr-back-pulse position-btn"><span class="m-auto">Read More</span></button>
                           </div>
                         </div>
                       </div>
@@ -109,7 +109,7 @@
                           <div class="card-body">
                             <font class="card-title" style="font-weight: bold;font-size: 24px;">News</font>
                             <p style="margin-bottom: 0rem;" class="card-text text-s-16">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                            <button class="btn-transparent button position-btn"><span class="m-auto">Read More</span></button>
+                            <button class="btn-transparent hvr-back-pulse position-btn"><span class="m-auto">Read More</span></button>
                           </div>
                         </div>
                       </div>
@@ -132,7 +132,7 @@
                             <div class="card-body">
                               <font class="card-title" style="font-weight: bold;font-size: 24px;">News</font>
                               <p style="margin-bottom: 0rem;" class="card-text text-s-16">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                              <button class="btn-transparent button" style="float: right;"><span>Read More</span></button>
+                              <button class="btn-transparent hvr-back-pulse" style="float: right;"><span>Read More</span></button>
                             </div>
                           </div>
                         </div>
@@ -146,7 +146,7 @@
                             <div class="card-body">
                               <font class="card-title" style="font-weight: bold;font-size: 24px;">News</font>
                               <p style="margin-bottom: 0rem;" class="card-text text-s-16">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                              <button class="btn-transparent button" style="float: right;"><span>Read More</span></button>
+                              <button class="btn-transparent hvr-back-pulse" style="float: right;"><span>Read More</span></button>
                             </div>
                           </div>
                         </div>
@@ -160,7 +160,7 @@
                             <div class="card-body">
                               <font class="card-title" style="font-weight: bold;font-size: 24px;">News</font>
                               <p style="margin-bottom: 0rem;" class="card-text text-s-16">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                              <button class="btn-transparent button" style="float: right;"><span>Read More</span></button>
+                              <button class="btn-transparent hvr-back-pulse" style="float: right;"><span>Read More</span></button>
                             </div>
                           </div>
                         </div>

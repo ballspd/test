@@ -14,12 +14,12 @@
             <div class="d-none d-xl-block d-xxl-block">
               <font class="font-wght" style="font-size:45px;margin-top:50px;position: absolute;">LET’S GROW YOUR<br> BUSINESS TOGETHER</font>
               <font class="text-s-16 text-description" style="margin-top:219px;position: absolute;width: 532px;">แม่ค้าออนไลน์ยุค 5.0 ปรับตัวยังไงให้ทันในวันที่โลกหมุนเร็วขนาดนี้ การเข้ามา ลงเล่นในตลาดที่มีคู่แข่งมากมาย ต่อสู้กันอย่างดุเดือดเพื่อแย่งชิงพื้นที่ในการนำเสนอสินค้าให้แก่ผู้บริโภค บอกเลยว่าหากทำงานนี้คนเดียวคงจะหนักเอาการ ถ้าอยากเริ่มต้นขายของออนไลน์อย่างราบรื่นปลอดภัย การมีผู้ช่วยมือดีไว้ข้างกายก็จะช่วย แบ่งเบาภาระได้เยอะ...</font>
-              <button class="btn-black text-s-16 text-w-400 button" style="position: absolute;margin-top:455px"><span>Read More</span></button>
+              <button class="btn-black text-s-16 text-w-400 hvr-back-pulse" style="position: absolute;margin-top:455px"><span>Read More</span></button>
             </div>
             <div class="d-block d-xl-none d-xxl-none">
               <font class="font-wght mb-3" style="font-size:20px;display: flex;">LET’S GROW YOUR BUSINESS TOGETHER</font>
               <font class="text-s-16 text-description" style="">แม่ค้าออนไลน์ยุค 5.0 ปรับตัวยังไงให้ทันในวันที่โลกหมุนเร็วขนาดนี้ การเข้ามา ลงเล่นในตลาดที่มีคู่แข่งมากมาย ต่อสู้กันอย่างดุเดือดเพื่อแย่งชิงพื้นที่ในการนำเสนอสินค้าให้แก่ผู้บริโภค บอกเลยว่าหากทำงานนี้คนเดียวคงจะหนักเอาการ ถ้าอยากเริ่มต้นขายของออนไลน์อย่างราบรื่นปลอดภัย การมีผู้ช่วยมือดีไว้ข้างกายก็จะช่วย แบ่งเบาภาระได้เยอะ...</font>
-              <button class="btn-black text-s-16 text-w-400 mt-4 item-center button"><span>Read More</span></button>
+              <button class="btn-black text-s-16 text-w-400 mt-4 item-center hvr-back-pulse"><span>Read More</span></button>
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@
           <div class="row">
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
               <router-link @click="scrollToTop" to="/TypesOfBusiness/BusinessOwner">
-              <div class="card-shadow hvr-grow-rotate crad-image mt-3">
+              <div class="card-shadow hvr-grow-rotate-left crad-image mt-3">
                 <img class="item-center mt-3 image-size" src="./../assets/beautiful-smart-asian-young-entrepreneur-business-woman-owner-sme-checking-product-stock-scan-qr-code-working-home.png">
                 <p class="mt-3 text-w-700 font-wght text-center text-dark" style="position: relative;font-size:20px;z-index: 1;">BUSINESS OWNER</p>
               </div>
@@ -35,7 +35,7 @@
             </div>
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
               <router-link @click="scrollToTop" to="/TypesOfBusiness/OnlineMerchant">
-              <div class="card-shadow hvr-grow-rotate crad-image mt-3">
+              <div class="card-shadow hvr-grow crad-image mt-3">
                 <img class="item-center mt-3 image-size" src="./../assets/business-owner-working-home-office.png">
                 <p class="mt-3 text-w-700 font-wght text-center text-dark" style="position: relative;font-size:20px;z-index: 1;">ONLINE MERCHANT</p>
               </div>
@@ -59,8 +59,8 @@
             <div class="row mb-3">
               <div class="col-6">
                 <font class="font-wght" style="font-size:64px;position: relative;color:#23233C;line-height: 90.72px;">YOUR<br>ROADMAP<br>TO SUCCESS</font>
-                <img class="mt-5" src="./../assets/Vector001.png" style="float: right;;">
-                <img class="mt-2" src="./../assets/Vector-Smart-Object001.png" style="position: relative;left: -80px;">
+                <img class="mt-3" src="./../assets/Vector001.png" style="float: right;;">
+                <img class="mt-2" src="./../assets/Vector-Smart-Object001.png" style="position: relative;left: -80px;height: 510px;width: 540px;">
               </div>
               <div class="col-6">
                 <div class="row" style="float: right;margin: auto;">
@@ -246,6 +246,22 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   /* background-size: contain; */
+}
+
+.hvr-grow-rotate-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow-rotate-left:hover, .hvr-grow-rotate-left:focus, .hvr-grow-rotate-left:active {
+  -webkit-transform: scale(1.1) rotate(-4deg);
+  transform: scale(1.1) rotate(-4deg);
 }
 
 </style>

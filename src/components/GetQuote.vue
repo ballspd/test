@@ -51,7 +51,7 @@
                     </div>
                   </div>
                   <div class="text-center" style="width: 100%;margin-top:32px">
-                    <button type="submit" class="btn-orange button"><span>Submit</span></button>
+                    <button type="submit" class="btn-orange hvr-back-pulse"><span>Submit</span></button>
                   </div>
                 </form>
               </div>
@@ -111,7 +111,7 @@
                       <textarea class="form-control mt-2" style="height:130px" placeholder="Message*"></textarea>
                     </div>
                   <div class="text-center mt-4 mb-2" style="width: 100%">
-                    <button type="submit" class="btn-orange button" style="width: 150px !important"><span>Submit</span></button>
+                    <button type="submit" class="btn-orange hvr-back-pulse" style="width: 150px !important"><span>Submit</span></button>
                   </div>
                 </form>
               </div>

@@ -49,7 +49,7 @@
                             </div>
                         </div>
                         <div class="text-center" style="width: 100%;margin-top:32px">
-                            <button type="submit" class="btn-orange button"><span style="font-size:18px"><i class="bi bi-cursor-fill"></i> Send</span></button>
+                            <button type="submit" class="btn-orange hvr-back-pulse"><span style="font-size:18px"><i class="bi bi-cursor-fill"></i> Send</span></button>
                         </div>
                         </form>
                     </div>

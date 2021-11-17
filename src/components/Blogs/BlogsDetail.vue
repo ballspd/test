@@ -17,7 +17,7 @@
                         <div class="row mt-5">
                             <div class="col-12"><h1 class="text-s-30 font-wght">{{responseData.title}}</h1><hr style="border: 1px solid #E5E5E5;"></div>
                             <div class="col-12">
-                                <p class="text-s-16" style="color:#807F7F !important">21 July 2021</p>
+                                <p class="text-s-16" style="color:#807F7F !important">{{dateTime(responseData.updated_at)}}</p>
                             </div>
                             <div class="col-6 col-md-5 col-xl-3" style="border-right: 2px solid #E5E5E5;">
                                 <span class="me-4">Share with :</span> 
@@ -54,6 +54,7 @@
 import RelatedPosts from '@/components/RelatedPosts'
 import marked from 'marked';
 import Preloader from '@/components/Preloader'
+import moment from 'moment'
 
 export default {
     name: 'BlogsDetail',
@@ -76,6 +77,9 @@ export default {
             }else{
                 return '';
             } 
+      },
+      dateTime(value) {
+        return moment(value).format('DD MMM YYYY');
       },
       addView(view){
         this.count = view + this.view

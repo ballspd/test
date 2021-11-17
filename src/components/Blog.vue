@@ -27,14 +27,16 @@
             </div>
             <div class="crad mt-5">
                 <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
-                    <div v-for="data in responseDataFirst" :key="data.id" class="row mb-5">
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><img class="img-fluid" :src="data.illustration.url" :alt="data.illustration.name" style="width: 510px;height: 330px;"></div>
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" style="padding: 30px 10px 10px 10px;">
-                            <p class="text-s-16" style="color:#807F7F">21 July 2021</p>
-                            <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
-                            <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                            <p class="text-limit-2 text-s-16" style="color:#373737;">{{data.description}}</p>
-                            <router-link class="btn btn-transparent mt-2 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
+                    <div v-for="(data, index) in responseData" :key="index" class="mb-5">
+                        <div v-if="index == 0" class="row">
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img class="img-fluid img-fix-size" :src="data.illustration.url" :alt="data.illustration.name" style="width: 510px;height: 330px;"></div>
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="padding: 30px 10px 10px 10px;">
+                                <p class="text-s-16" style="color:#807F7F">{{dateTime(responseData.updated_at)}}</p>
+                                <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
+                                <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
+                                <p class="text-limit-2 text-s-16" style="color:#373737;">{{data.description}}</p>
+                                <router-link class="btn btn-transparent mt-2 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
+                            </div>
                         </div>
                     </div>
                     <div class="d-none d-xl-block d-xxl-block">
@@ -44,82 +46,34 @@
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                             <div class="row">
-                                                <div class="col-4">
-                                                    <div class="row">
-                                                        <div class="col-6" style="width:170px"><img class="img-fluid" src="./../assets/mobile/Group345.png"></div>
+                                                <div v-for="(data, index) in responseData" :key="index" :class="{'col-4':index < 3}">
+                                                    <div v-if="index < 3" class="row">
+                                                        <div class="col-6" style="width:170px"><img class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
                                                         <div class="col-6 p-1">                                                
                                                             <button class="btn-green me-1"><span>Lorem ipsum</span></button>
                                                             <button class="btn-blue"><span>Lorem ipsum</span></button>
-                                                            <p class="font-wght mt-2 mb-1" style="color:#15304E;font-size:24px">Lorem ipsum</p>
+                                                            <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:24px">{{data.title}}</p>
                                                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                                            <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
+                                                            <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="row">
-                                                        <div class="col-6" style="width:170px"><img class="img-fluid" src="./../assets/mobile/Group345.png"></div>
-                                                        <div class="col-6 p-1">                                                
-                                                            <button class="btn-green me-1"><span>Lorem ipsum</span></button>
-                                                            <button class="btn-blue"><span>Lorem ipsum</span></button>
-                                                            <p class="font-wght mt-2 mb-1" style="color:#15304E;font-size:24px">Lorem ipsum</p>
-                                                            <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                                            <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="row">
-                                                        <div class="col-6" style="width:170px"><img class="img-fluid" src="./../assets/mobile/Group345.png"></div>
-                                                        <div class="col-6 p-1">                                                
-                                                            <button class="btn-green me-1"><span>Lorem ipsum</span></button>
-                                                            <button class="btn-blue "><span>Lorem ipsum</span></button>
-                                                            <p class="font-wght mt-2 mb-1" style="color:#15304E;font-size:24px">Lorem ipsum</p>
-                                                            <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                                            <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                                        </div>
-                                                    </div>
-                                                </div>                                            
+                                                </div>                                         
                                             </div>
                                         </div>
                                         <div class="carousel-item">
                                             <div class="row">
-                                                <div class="col-4">
-                                                    <div class="row">
-                                                        <div class="col-6" style="width:170px"><img class="img-fluid" src="./../assets/mobile/Group345.png"></div>
+                                                <div v-for="(data, index) in responseData" :key="index" :class="{'col-4':index > 2}">
+                                                    <div v-if="index > 2" class="row">
+                                                        <div class="col-6" style="width:170px"><img class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
                                                         <div class="col-6 p-1">                                                
                                                             <button class="btn-green me-1"><span>Lorem ipsum</span></button>
                                                             <button class="btn-blue"><span>Lorem ipsum</span></button>
-                                                            <p class="font-wght mt-2 mb-1" style="color:#15304E;font-size:24px">Lorem ipsum</p>
+                                                            <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:24px">{{data.title}}</p>
                                                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                                            <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
+                                                            <p class="text-limit-2 text-s-14" style="color:#373737;">{{data.description}}</p>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="row">
-                                                        <div class="col-6" style="width:170px"><img class="img-fluid" src="./../assets/mobile/Group345.png"></div>
-                                                        <div class="col-6 p-1">                                                
-                                                            <button class="btn-green me-1"><span>Lorem ipsum</span></button>
-                                                            <button class="btn-blue"><span>Lorem ipsum</span></button>
-                                                            <p class="font-wght mt-2 mb-1" style="color:#15304E;font-size:24px">Lorem ipsum</p>
-                                                            <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                                            <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="row">
-                                                        <div class="col-6" style="width:170px"><img class="img-fluid" src="./../assets/mobile/Group345.png"></div>
-                                                        <div class="col-6 p-1">                                                
-                                                            <button class="btn-green me-1"><span>Lorem ipsum</span></button>
-                                                            <button class="btn-blue"><span>Lorem ipsum</span></button>
-                                                            <p class="font-wght mt-2 mb-1" style="color:#15304E;font-size:24px">Lorem ipsum</p>
-                                                            <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                                            <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                                        </div>
-                                                    </div>
-                                                </div>                                            
+                                                </div>                                         
                                             </div>
                                         </div>
                                     </div>
@@ -132,72 +86,40 @@
                             <div class="row p-3" style="background-color:#F2F3F5">
                                 <div class="col-12 p-0">
                                     <div class="carousel-inner">
-                                        <div class="carousel-item active" data-bs-interval="10000">
-                                        <div class="row">
-                                            <div class="col-12 d-flex justify-content-center">
-                                                <div class="row">
-                                                    <div class="col-6" style="width:170px"><img class="img-fluid" src="./../assets/mobile/Group345.png"></div>
-                                                    <div class="col-6 p-1">                                                
-                                                        <button class="btn-green me-1"><span>Lorem ipsum</span></button>
-                                                        <button class="btn-blue"><span>Lorem ipsum</span></button>
-                                                        <p class="font-wght mt-2 mb-1" style="color:#15304E;font-size:24px">Lorem ipsum</p>
-                                                        <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
+                                        <div v-for="(data, index) in responseData" :key="index" :class="{'active':index == 0}" class="carousel-item" data-bs-interval="10000">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <div class="col-6" style="width:170px"><img class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
+                                                        <div class="col-6 p-2 ps-sm-3 pe-sm-3">                                                
+                                                            <button class="btn-green me-1"><span>Lorem ipsum</span></button>
+                                                            <button class="btn-blue"><span>Lorem ipsum</span></button>
+                                                            <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:24px">{{data.title}}</p>
+                                                            <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
+                                                            <p class="text-limit-2 text-s-14 mb-0" style="color:#373737;">{{data.description}}</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="2000">
-                                        <div class="row">
-                                            <div class="col-12 d-flex justify-content-center">
-                                                <div class="row">
-                                                    <div class="col-6" style="width:170px"><img class="img-fluid" src="./../assets/mobile/Group345.png"></div>
-                                                    <div class="col-6 p-1">                                                
-                                                        <button class="btn-green me-1"><span>Lorem ipsum</span></button>
-                                                        <button class="btn-blue"><span>Lorem ipsum</span></button>
-                                                        <p class="font-wght mt-2 mb-1" style="color:#15304E;font-size:24px">Lorem ipsum</p>
-                                                        <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-12 d-flex justify-content-center">
-                                                <div class="row">
-                                                    <div class="col-6" style="width:170px"><img class="img-fluid" src="./../assets/mobile/Group345.png"></div>
-                                                    <div class="col-6 p-1">                                                
-                                                        <button class="btn-green me-1"><span>Lorem ipsum</span></button>
-                                                        <button class="btn-blue"><span>Lorem ipsum</span></button>
-                                                        <p class="font-wght mt-2 mb-1" style="color:#15304E;font-size:24px">Lorem ipsum</p>
-                                                        <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                                        <p style="color:#373737;font-size:14px">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-indicators mt-3" style="position: relative;">
-                                <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <div v-for="(data, index) in responseData" :key="index">
+                                    <button type="button" data-bs-target="#carouselMobile" :data-bs-slide-to="index" :class="{'active':index == 0}" :aria-current="{'true':index == 0}" :aria-label="'Slide '+ (index + 1)"></button>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="row text-center mt-4 justify-content-center">
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a @click="c1 = true" href="#c1"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทคนิคการขาย <br>และการโฆษณา</p></a></div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a @click="c1 = true,c2 = true" href="#c2"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Social Media</p></a></div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a @click="c1 = true,c2 = true,c3 = true" href="#c3"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Market Place</p></a></div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a @click="c1 = true,c2 = true,c3 = true,c4 = true" href="#c4"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>E-Commerce</p></a></div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true" href="#c5"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">ครบจบ <br>ทุกเรื่อง LINE</p></a></div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true" href="#c6"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">Martech</p></a></div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true,c7 = true" href="#c7"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">Digital <br>Transformation</p></a></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a class="hvr-bounce-in" @click="c1 = true" href="#c1"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทคนิคการขาย <br>และการโฆษณา</p></a></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a class="hvr-bounce-in" @click="c1 = true,c2 = true" href="#c2"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Social Media</p></a></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true" href="#c3"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Market Place</p></a></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true" href="#c4"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>E-Commerce</p></a></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true" href="#c5"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">ครบจบ <br>ทุกเรื่อง LINE</p></a></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true" href="#c6"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">Martech</p></a></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true,c7 = true" href="#c7"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">Digital <br>Transformation</p></a></div>
                     </div>
                     <span id="c1" style="display: block;height: 85px;margin-top: -85px;"></span>
                     <div v-if="c1" class="animate__animated animate__bounceInUp">
@@ -219,7 +141,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
+                                        <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -232,7 +154,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ Social Media</p>
                             </div>
                             <div class="col-6 text-end">
-                                <p style="color:#807F7F;font-size: 14px">View all</p>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/2'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -245,7 +167,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
+                                        <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -258,7 +180,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ Market Place</p>
                             </div>
                             <div class="col-6 text-end">
-                                <p style="color:#807F7F;font-size: 14px">View all</p>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/3'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -271,7 +193,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
+                                        <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -284,7 +206,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ E-Commerce</p>
                             </div>
                             <div class="col-6 text-end">
-                                <p style="color:#807F7F;font-size: 14px">View all</p>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/4'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -297,7 +219,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
+                                        <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -310,7 +232,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">ครบจบ ทุกเรื่อง LINE</p>
                             </div>
                             <div class="col-6 text-end">
-                                <p style="color:#807F7F;font-size: 14px">View all</p>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/5'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -323,7 +245,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
+                                        <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -336,7 +258,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">Martech</p>
                             </div>
                             <div class="col-6 text-end">
-                                <p style="color:#807F7F;font-size: 14px">View all</p>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/6'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -349,7 +271,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
+                                        <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -362,7 +284,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">Digital Transformation</p>
                             </div>
                             <div class="col-6 text-end">
-                                <p style="color:#807F7F;font-size: 14px">View all</p>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/7'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -375,7 +297,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
+                                        <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
                             </div>
@@ -390,6 +312,7 @@
 
 <script>
 import Preloader from '@/components/Preloader'
+import moment from 'moment'
 
 export default {
     name: 'blog',
@@ -409,7 +332,7 @@ export default {
             c5:false,
             c6:false,
             c7:false,
-            responseDataFirst:[],
+            responseData:[],
             responseDatac1:[],
             responseDatac2:[],
             responseDatac3:[],
@@ -420,8 +343,8 @@ export default {
         }
     },
     created () {
-        this.axios.get('blogs?_sort=updated_at:DESC&_limit=1&_locale='+ this.lang)
-        .then(response => (this.responseDataFirst = response.data))
+        this.axios.get('blogs?_sort=updated_at:DESC&_limit=6&_locale='+ this.lang)
+        .then(response => (this.responseData = response.data))
         .catch()
     },
     mounted () {
@@ -433,6 +356,9 @@ export default {
     methods: {
         scrollToTop() {
             window.scrollTo(0,0);
+        },
+        dateTime(value) {
+            return moment(value).format('DD MMM YYYY');
         },
         handleScroll () {
             this.show = true
@@ -515,7 +441,6 @@ export default {
 
 <style scoped>
 .btn-green{
-    width: 82px;
     height: 30px;
     font-size: 10px;
     background: #2AAF4A;
@@ -527,7 +452,6 @@ export default {
 }
 
 .btn-blue{
-    width: 82px;
     height: 30px;
     font-size: 10px;
     background: #15304E;
@@ -545,6 +469,12 @@ export default {
 .img-fix-size{
     width: 100%;
     height: 230px;
+    object-fit: cover;
+}
+
+.img-fix-size-2{
+    width: 100%;
+    height: 160px;
     object-fit: cover;
 }
 

@@ -184,19 +184,19 @@
             <div v-if="component != ''">
                 <a @click="toggle"><i class="bi bi-chevron-left me-2"></i> Back</a>
                 <hr style="border: 1px solid #50151C;"/>
-                <component :component="component" v-bind:is="component"></component>
+                <component :component="component" :is="component"></component>
             </div>
 
             <div v-if="component == ''">
                 <router-link @click="display_manu = false" to="/">Home</router-link>
-                <hr style="border: 1px solid #50151C;"/>
+                <!-- <hr style="border: 1px solid #50151C;"/>
                 <div @click="component = 'ServicesMenu'" class="d-flex" >
                 <a href="#">Services</a>
                 <i class="ms-auto bi bi-chevron-right"></i>
-                </div>
+                </div> -->
             
                 <hr style="border: 1px solid #50151C;"/>
-                <div class="d-flex" >
+                <div @click="component = 'SolutionsMenu'" class="d-flex" >
                 <a href="#">Solutions</a>
                 <i class="ms-auto bi bi-chevron-right"></i>
                 </div>
@@ -225,12 +225,14 @@
 
 <script>
 import ServicesMenu from '@/components/Menu/ServicesMenu'
+import SolutionsMenu from '@/components/Menu/ServicesMenu'
 import DigitalMarketingMenu from '@/components/Menu/DigitalMarketingMenu'
 
 export default {
   name: 'NavMenu',
   components: {
     ServicesMenu,
+    SolutionsMenu,
     DigitalMarketingMenu
   },
   data () {
