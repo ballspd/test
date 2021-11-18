@@ -56,7 +56,7 @@
                 </form>
               </div>
               <div class="col-5">
-                <img class="mt-4" src="./../assets/image52.png" style="position: relative;">
+                <img class="mt-4" src="./../assets/image52.png" style="position: relative;margin-left:-25px">
               </div>
             </div>
           </div>

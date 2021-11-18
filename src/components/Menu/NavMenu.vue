@@ -150,96 +150,23 @@
     </div>
   </nav>
 <!-- ---- modile size ----- -->
-  <div class="d-block d-xl-none">
-    <nav class="navbar fixed-top" style="background-color: #F6ECE0;">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" @click="display_manu = true" >
-            <i class="bi bi-list" style="font-size: 35px;"></i>
-        </button>
-        <img src="./../../assets/Sellsuki-logo-01.png">
-        <a href="tel:0877334145" target="_blank"><img class="shadow" src="./../../assets/mobile/Vector.png" style="background-color: #FFFFFF;border-radius: 50px;"></a>
-      </div>
-    </nav>
-    <div v-if="display_manu" class="side-bg"></div>
-    <div class="sidenav animate__animated" :class="{'animate__fadeInLeft':display_manu,'animate__fadeOutLeft':!display_manu}">
-      <div class="row p-3">
-        <div class="col-5">
-          <div class="p-1" style="background: #50151C;border-radius: 2px;">
-            <div class="row text-center">
-              <div class="col-6">
-                <a class="text-s-18 p-1 active-lang" style="color:#FFFFFF">EN</a>
-              </div>
-              <div class="col-6">
-                <a class="text-s-18 p-1" style="color:#FFFFFF">ไทย</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-7">
-          <a class="closebtn" style="cursor:pointer;float: right" @click="display_manu = false"><i class="bi bi-x"></i></a>
-        </div>
-      </div>
-      <div class="row p-3">
-        <div class="col-12">
-            <div v-if="component != ''">
-                <a @click="toggle"><i class="bi bi-chevron-left me-2"></i> Back</a>
-                <hr style="border: 1px solid #50151C;"/>
-                <component :component="component" :is="component"></component>
-            </div>
-
-            <div v-if="component == ''">
-                <router-link @click="display_manu = false" to="/">Home</router-link>
-                <!-- <hr style="border: 1px solid #50151C;"/>
-                <div @click="component = 'ServicesMenu'" class="d-flex" >
-                <a href="#">Services</a>
-                <i class="ms-auto bi bi-chevron-right"></i>
-                </div> -->
-            
-                <hr style="border: 1px solid #50151C;"/>
-                <div @click="component = 'SolutionsMenu'" class="d-flex" >
-                <a href="#">Solutions</a>
-                <i class="ms-auto bi bi-chevron-right"></i>
-                </div>
-            
-                <hr style="border: 1px solid #50151C;"/>
-                <router-link @click="display_manu = false" to="/AboutUs">About Us</router-link>
-            
-                <hr style="border: 1px solid #50151C;"/>
-                <router-link @click="display_manu = false" to="/Portfolio">Portfolio</router-link>
-            
-                <hr style="border: 1px solid #50151C;"/>
-                <router-link @click="display_manu = false" to="/Blog">Blog</router-link>
-
-                <hr style="border: 1px solid #50151C;"/>
-                <router-link @click="display_manu = false" to="/ContactUs">Contact Us</router-link>
-                
-                <hr style="border: 1px solid #50151C;"/>
-                <router-link @click="display_manu = false" to="/JoinUs">Join Us</router-link>
-                <hr style="border: 1px solid #50151C;"/>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="d-block d-xl-none">
+  <NavMobile/>
+</div>
 </template>
 
 <script>
-import ServicesMenu from '@/components/Menu/ServicesMenu'
-import SolutionsMenu from '@/components/Menu/ServicesMenu'
-import DigitalMarketingMenu from '@/components/Menu/DigitalMarketingMenu'
+import NavMobile from '@/components/Menu/NavMobile'
 
 export default {
   name: 'NavMenu',
   components: {
-    ServicesMenu,
-    SolutionsMenu,
-    DigitalMarketingMenu
+    NavMobile
   },
   data () {
     const lang = localStorage.getItem('lang') || 'en';
     return {
       menu: '',
-      display_manu: false,
       component: '',
       lang:lang
     }
@@ -259,7 +186,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .hover-manu a p:hover{
   color: #F38100 !important;
   font-weight: 700;
@@ -286,56 +213,5 @@ export default {
 }
 .hover-manu a p:hover:after { 
   width: 100%; 
-}
-
-.sidenav {
-  height: 100%;
-  width: 80%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #FFFFFF;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 15px;
-}
-
-.side-bg {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #000000;
-  overflow-x: hidden;
-  transition: 0.5s;
-  opacity: 0.5;
-}
-
-.sidenav a {
-  text-decoration: none;
-  font-size: 18px;
-  color: #50151C;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #F6ECE0;
-}
-
-.sidenav .closebtn {
-  font-size: 36px;
-  bottom: 5px;
-  position: relative;
-}
-
-.active-lang{
-  background: #F6ECE0;
-  color:#50151C !important;
-  font-family: 'PromptBold', sans-serif !important;
-  font-weight: bold !important;
 }
 </style>

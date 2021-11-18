@@ -6,12 +6,14 @@
                 <div class="carousel-inner">
                     <div v-for="(data, index) in responseData" :key="index" class="carousel-item" :class="{'active': index == 0}">
                         <div class="row">
-                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img class="d-block image-review" src="./../assets/Rectangle1.png"></div>
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img class="d-block image-review" :src="data.illustration.url" :alt="data.illustration.name"></div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-xxl-5 p-lg-5 p-sm-3 p-3">
-                            <p style="color:#FF773B">-- TESTIMONIALS</p>
-                            <font class="text-review">{{data.hearder}}</font>
-                            <span></span><p class="mt-3">{{data.message}}</p>
-                            <p class="mt-xxl-5 mt-4" style="color:#FF773B">{{data.name}}<br>{{data.position}}</p>
+                                <div class="ps-sm-2 pe-sm-2 ps-2 pe-0">
+                                <p style="color:#FF773B">-- TESTIMONIALS</p>
+                                    <font class="text-review">{{data.title}}</font>
+                                    <span></span><p class="mt-3">{{data.description}}</p>
+                                    <p class="mt-xxl-5 mt-4" style="color:#FF773B">{{data.name}}<br>{{data.position}}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -26,7 +28,7 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <div class="d-block d-xl-none d-xxl-none text-center">
+                <div class="d-block d-xl-none d-xxl-none text-center mt-4">
                     <a class="me-1" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                         <span class="" aria-hidden="true"><i class="me-1 bi bi-chevron-left" style="font-size: 26px;"></i></span>
                     </a>
@@ -54,11 +56,11 @@ export default {
     //this.$route.params.id
     mounted () {
         if(this.type != 'All'){
-            this.url = 'reviews?bu_category.name='+this.type
+            this.url = 'portfolios?bu_category.name='+this.type
         }
         else
         {
-            this.url = 'reviews'
+            this.url = 'portfolios'
         }
         this.axios.get(this.url + '?_locale='+ this.lang)
         .then(response => (this.responseData = response.data))
@@ -74,7 +76,7 @@ export default {
 @media only screen and (max-width: 600px) {
   .image-review{
     height:350px;
-    width:100%;
+    width:500px;
     object-fit: cover;
     border-radius: 0px 25px 25px 0px;
   }
@@ -89,19 +91,29 @@ export default {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+    .image-review{
+        height:350px;
+        width:500px;
+        object-fit: cover;
+        border-radius: 0px 25px 25px 0px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+  .image-review{
+    height:350px;
+    width:100%;
+    object-fit: cover;
+    border-radius: 0px 25px 25px 0px;
+  }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .image-review{
-    height:500px;
-    width:450px;
+    height:450px;
+    width:100%;
     object-fit: cover;
     border-radius: 0px 25px 25px 0px;
   }
@@ -110,7 +122,7 @@ export default {
       font-weight:700;
       position: relative;
       color:#23233C;
-      line-height: 90.72px;
+      line-height: 1.5;
   }
 } 
 
@@ -127,7 +139,7 @@ export default {
       font-weight:700;
       position: relative;
       color:#23233C;
-      line-height: 90.72px;
+      line-height: 1.5;
   }
 }
 

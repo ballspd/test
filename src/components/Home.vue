@@ -5,21 +5,21 @@
     <div class="container">
       <BannerBU/>
       <div class="crad mt-5">
-        <div class="row padding-row">
-          <div class="col-xxl-6 col-xl-6 col-lg-5 col-md-6 col-sm-12 col-12">
+        <div class="row padding-row mb-0">
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
             <img class="d-none d-xl-block d-xxl-block mt-5" src="./../assets/Vector-Smart-Object2.png">
             <img class="d-block d-xl-none d-xxl-none img-fluid item-center" src="./../assets/mobile/Vector-Smart-Object.png">
           </div>
-          <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12">
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
             <div class="d-none d-xl-block d-xxl-block">
-              <font class="font-wght" style="font-size:45px;margin-top:50px;position: absolute;">LET’S GROW YOUR<br> BUSINESS TOGETHER</font>
-              <font class="text-s-16 text-description" style="margin-top:219px;position: absolute;width: 532px;">แม่ค้าออนไลน์ยุค 5.0 ปรับตัวยังไงให้ทันในวันที่โลกหมุนเร็วขนาดนี้ การเข้ามา ลงเล่นในตลาดที่มีคู่แข่งมากมาย ต่อสู้กันอย่างดุเดือดเพื่อแย่งชิงพื้นที่ในการนำเสนอสินค้าให้แก่ผู้บริโภค บอกเลยว่าหากทำงานนี้คนเดียวคงจะหนักเอาการ ถ้าอยากเริ่มต้นขายของออนไลน์อย่างราบรื่นปลอดภัย การมีผู้ช่วยมือดีไว้ข้างกายก็จะช่วย แบ่งเบาภาระได้เยอะ...</font>
-              <button class="btn-black text-s-16 text-w-400 hvr-back-pulse" style="position: absolute;margin-top:455px"><span>Read More</span></button>
+              <h1 class="font-wght mt-5" style="font-size:45px;line-height: 1.5;">LET’S GROW YOUR<br> BUSINESS TOGETHER</h1>
+              <p class="text-s-16 text-description mt-5 mb-5">แม่ค้าออนไลน์ยุค 5.0 ปรับตัวยังไงให้ทันในวันที่โลกหมุนเร็วขนาดนี้ การเข้ามา ลงเล่นในตลาดที่มีคู่แข่งมากมาย ต่อสู้กันอย่างดุเดือดเพื่อแย่งชิงพื้นที่ในการนำเสนอสินค้าให้แก่ผู้บริโภค บอกเลยว่าหากทำงานนี้คนเดียวคงจะหนักเอาการ ถ้าอยากเริ่มต้นขายของออนไลน์อย่างราบรื่นปลอดภัย การมีผู้ช่วยมือดีไว้ข้างกายก็จะช่วย แบ่งเบาภาระได้เยอะ...</p>
+              <button class="btn-black text-s-16 mt-5 text-w-400 hvr-back-pulse"><span>Read More</span></button>
             </div>
-            <div class="d-block d-xl-none d-xxl-none">
-              <font class="font-wght mb-3" style="font-size:20px;display: flex;">LET’S GROW YOUR BUSINESS TOGETHER</font>
-              <font class="text-s-16 text-description" style="">แม่ค้าออนไลน์ยุค 5.0 ปรับตัวยังไงให้ทันในวันที่โลกหมุนเร็วขนาดนี้ การเข้ามา ลงเล่นในตลาดที่มีคู่แข่งมากมาย ต่อสู้กันอย่างดุเดือดเพื่อแย่งชิงพื้นที่ในการนำเสนอสินค้าให้แก่ผู้บริโภค บอกเลยว่าหากทำงานนี้คนเดียวคงจะหนักเอาการ ถ้าอยากเริ่มต้นขายของออนไลน์อย่างราบรื่นปลอดภัย การมีผู้ช่วยมือดีไว้ข้างกายก็จะช่วย แบ่งเบาภาระได้เยอะ...</font>
-              <button class="btn-black text-s-16 text-w-400 mt-4 item-center hvr-back-pulse"><span>Read More</span></button>
+            <div class="d-block d-xl-none d-xxl-none p-3">
+              <h1 class="font-wght mb-3" style="font-size:30px;display: flex;">LET’S GROW YOUR BUSINESS TOGETHER</h1>
+              <p class="text-s-16 text-description" style="">แม่ค้าออนไลน์ยุค 5.0 ปรับตัวยังไงให้ทันในวันที่โลกหมุนเร็วขนาดนี้ การเข้ามา ลงเล่นในตลาดที่มีคู่แข่งมากมาย ต่อสู้กันอย่างดุเดือดเพื่อแย่งชิงพื้นที่ในการนำเสนอสินค้าให้แก่ผู้บริโภค บอกเลยว่าหากทำงานนี้คนเดียวคงจะหนักเอาการ ถ้าอยากเริ่มต้นขายของออนไลน์อย่างราบรื่นปลอดภัย การมีผู้ช่วยมือดีไว้ข้างกายก็จะช่วย แบ่งเบาภาระได้เยอะ...</p>
+              <button class="item-center btn-black text-s-16 text-w-400 mt-4 item-center hvr-back-pulse" style="display:block"><span>Read More</span></button>
             </div>
           </div>
         </div>
