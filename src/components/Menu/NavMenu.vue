@@ -164,7 +164,7 @@ export default {
     NavMobile
   },
   data () {
-    const lang = localStorage.getItem('lang') || 'en';
+    const lang = localStorage.getItem('lang') || 'th-TH';
     return {
       menu: '',
       component: '',

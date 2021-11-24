@@ -7,13 +7,28 @@
                         <td style="height: 690px !important;">
                             <div v-if="activeBuFuse">
                                 <img class="mt-5 animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Fuse.png" alt="logo-fuse.png">
-                                <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:550px">FUSE <br>DIGITAL ADVERTISING</h1>
-                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:400px">บริการคลังสินค้าครบวงจรที่ช่วยดูแลสินค้าของคุณในทุก ๆ ขั้นตอนตั้งกระบวนการจัดเก็บ แพ็ก หรือขนส่งสินค้าถึงมือผู้รับ อย่างปลอดภัย ช่วยเพิ่มเวลาในการทำงานของคุณเพื่อไปวาง แผนในการขยายธุรกิจ</p>
+                                <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:550px">FUSE ADVERTISING</h1>
+                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">บริการรับทำโฆษณาที่ครอบคลุมช่องทาง Social Media มากที่สุด พร้อมบริการเสริมอื่น ๆ ที่จะช่วยผลักดันและเพิ่มยอดขายให้ธุรกิจของคุณได้มากยิ่งขึ้น ตลอดจนการให้คำปรึกษาด้านการตลาด พร้อมช่วยวางแผนธุรกิจคุณให้เติบโตยิ่งกว่า</p>
                             </div>
                             <div v-else-if="activeBuLine">
-                                <img class="mt-5 animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-line.png" alt="logo-Akita.png">
-                                <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">LINE <br>FULFILLMENT</h1>
-                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:400px">บริการคลังสินค้าครบวงจรที่ช่วยดูแลสินค้าของคุณในทุก ๆ ขั้นตอนตั้งกระบวนการจัดเก็บ แพ็ก หรือขนส่งสินค้าถึงมือผู้รับ อย่างปลอดภัย ช่วยเพิ่มเวลาในการทำงานของคุณเพื่อไปวาง แผนในการขยายธุรกิจ</p>
+                                <img class="mt-5 animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-line.png" alt="logo-Line.png">
+                                <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">LINE AGENCY <br>BY SELLSUKI</h1>
+                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">LINE Partner อันดับ 1 ของประเทศไทย ที่ได้รับความไว้วางใจจากลูกค้ากว่า 6,000 Accounts ให้เราช่วยดูแลช่องทางการขายบน LINE Official Account และบริการทำโฆษณาอย่างตรงจุด หยุดทุกสายตาบนพื้นที่ LINE รวมถึง LINE Chatbot ให้งานตอบลูกค้าเป็นเรื่องง่ายสะดวกสบาย</p>
+                            </div>
+                            <div v-else-if="activeBuAkita">
+                                <img class="mt-5 animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Akita.png" alt="logo-Akita.png">
+                                <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">AKITA <br>FULFILLMENT</h1>
+                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">บริการคลังสินค้าครบวงจรที่ช่วยดูแลสินค้าของคุณในทุก ๆ ขั้นตอน ตั้งแต่กระบวนการจัดเก็บ แพ็ก หรือขนส่งสินค้า ให้ถึงมือลูกค้าอย่างปลอดภัย ช่วยลดระยะเวลาในการทำงานรวมถึงขั้นตอนที่ไม่จำเป็น ทำให้มีเวลาเพิ่มเพื่อไปวางแผนในการขยายธุรกิจ</p>
+                            </div>
+                            <div v-else-if="activeBuBeary">
+                                <img class="mt-5 animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Beary.png" alt="logo-Beary.png">
+                                <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">BEARY TECH</h1>
+                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">บริการออกแบบ Website และบริการพัฒนาซอฟต์แวร์  รวมถึงการเชื่อมต่อระบบ API เข้ากับระบบและช่องทางการขายสินค้าออนไลน์ ไม่ว่าจะเป็น Shopee Lazada หรือ LINE MyShop เพื่อซัพพอร์ตธุรกิจออนไลน์ให้ง่ายยิ่งขึ้น</p>
+                            </div>
+                            <div v-else-if="activeBuKaikong">
+                                <img class="mt-5 animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Kaikong.png" alt="logo-Kaikong.png">
+                                <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">KAIKONG</h1>
+                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">บริการ Content Marketing วางแผน สร้างคอนเทนต์ที่โดนใจ ส่งไปหากลุ่มเป้าหมายที่ใช่ พร้อมบริการ Admin ดูแลเพจ ที่จะช่วยคอยตอบคำถาม ทำให้แบรนด์คุณสนทนาโต้ตอบกับลูกค้าได้อย่างรวดเร็ว  และปิดการขายอย่างมืออาชีพ</p>
                             </div>
                             <div v-else><h1 class="font-wght mt-5 text-s-banner" style="color:#50151C;width:600px">E-COMMERCE <br>SOLUTION</h1></div>
                         </td>
@@ -38,20 +53,20 @@
                     <div class="col-12">
                         <img @mouseover="activeBuFuse = true,showHover = false" @mouseleave="activeBuFuse = false" class="bu-fuse hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
                         <img @mouseover="activeBuLine = true,showHover = false" @mouseleave="activeBuLine = false" class="bu-line hvr-grow" :class="{'auto-pulse':showHover}" src="./../assets/Banner/Line.png" alt="Fuse.png">
-                        <img @mouseover="activeBuFuse = true,showHover = false" @mouseleave="activeBuFuse = false" class="bu-akita hvr-grow" src="./../assets/Banner/Fuse.png" alt="Akita.png">
-                        <img @mouseover="activeBuFuse = true,showHover = false" @mouseleave="activeBuFuse = false" class="bu-beary hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
-                        <img @mouseover="activeBuFuse = true,showHover = false" @mouseleave="activeBuFuse = false" class="bu-kaikong hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
+                        <img @mouseover="activeBuAkita = true,showHover = false" @mouseleave="activeBuAkita = false" class="bu-akita hvr-grow" src="./../assets/Banner/Fuse.png" alt="Akita.png">
+                        <img @mouseover="activeBuBeary = true,showHover = false" @mouseleave="activeBuBeary = false" class="bu-beary hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
+                        <img @mouseover="activeBuKaikong = true,showHover = false" @mouseleave="activeBuKaikong = false" class="bu-kaikong hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
                         <img class="bu-size" src="./../assets/Main.png">
                     </div>
                 </div>
                 <div class="d-block d-lg-none">
                     <div class="row justify-content-center">
                         <div class="col-md-8 col-sm-11 col-10">
-                            <img @click="showHover = false,activeBuFuse = true ,activeBuLine = false" class="bu-fuse hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
-                            <img @click="showHover = false,activeBuLine = true ,activeBuFuse = false" class="bu-line" :class="{'auto-pulse':showHover}" src="./../assets/Banner/Line.png" alt="Line.png">
-                            <img @click="showHover = false,activeBuFuse = true ,activeBuLine = false" class="bu-akita" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
-                            <img @click="showHover = false,activeBuLine = true ,activeBuFuse = false" class="bu-beary" src="./../assets/Banner/Line.png" alt="Line.png">
-                            <img @click="showHover = false,activeBuFuse = true ,activeBuLine = false" class="bu-kaikong" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
+                            <img @click="showHover = false,activeBuFuse = true ,activeBuLine = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-fuse hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
+                            <img @click="showHover = false,activeBuLine = true ,activeBuFuse = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-line" :class="{'auto-pulse':showHover}" src="./../assets/Banner/Line.png" alt="Line.png">
+                            <img @click="showHover = false,activeBuAkita = true ,activeBuFuse = false, activeBuLine = false, activeBuBeary = false, activeBuKaikong = false" class="bu-akita" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
+                            <img @click="showHover = false,activeBuBeary = true ,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuKaikong = false" class="bu-beary" src="./../assets/Banner/Line.png" alt="Line.png">
+                            <img @click="showHover = false,activeBuKaikong = true ,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuBeary = false" class="bu-kaikong" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
                             <img class="item-center bu-size" src="./../assets/Main.png">
                         </div>
                     </div>

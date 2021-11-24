@@ -86,7 +86,7 @@
                                 <div class="p-3">
                                     <a @click="type = 'Kaikong',Akita = true,Fuse = true,Line = true,Beary = true,Kaikong = false,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
                                         <div class="hover-logo" :class="{'filter-gray':Kaikong}">
-                                            <img class="item-center" src="./../assets/logo/image51.png" alt="">
+                                            <img class="item-center" src="./../assets/logo/logo-Kaikong.png" alt="">
                                             <font class="text-s-16" style="color:#7E4922">Kaikong Content Marketing</font>
                                         </div>
                                     </a>

@@ -113,13 +113,62 @@
                         </div>
                     </div>
                     <div class="row text-center mt-4 justify-content-center">
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a class="hvr-bounce-in" @click="c1 = true" href="#c1"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทคนิคการขาย <br>และการโฆษณา</p></a></div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a class="hvr-bounce-in" @click="c1 = true,c2 = true" href="#c2"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Social Media</p></a></div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true" href="#c3"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Market Place</p></a></div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true" href="#c4"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>E-Commerce</p></a></div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true" href="#c5"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">ครบจบ <br>ทุกเรื่อง LINE</p></a></div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true" href="#c6"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">Martech</p></a></div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3"><a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true,c7 = true" href="#c7"><img class="img-fluid" src="./../assets/Ellipse52.png"><p class="text-s-18 text-w-700 mt-3" style="color:#15304E">Digital <br>Transformation</p></a></div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
+                            <a class="hvr-bounce-in" @click="c1 = true" href="#c1">
+                                <div class="bg-radius">
+                                    <img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/1_6e4fb38d23.webp">
+                                </div>
+                            <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทคนิคการขาย <br>และการโฆษณา</p>
+                            </a>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
+                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true" href="#c2">
+                                <div class="bg-radius">
+                                    <img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Social_Media_1_2c014a8960.webp">
+                                </div>
+                                <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Social Media</p>
+                            </a>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
+                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true" href="#c3">
+                                <div class="bg-radius">
+                                    <img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Market_Place_1_53e4432aa1.webp">
+                                </div>
+                                <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Market Place</p>
+                            </a>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
+                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true" href="#c4">
+                                <div class="bg-radius">
+                                    <img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/E_Commerce_1_2a0856686e.webp">
+                                </div>
+                                <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>E-Commerce</p>
+                            </a>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
+                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true" href="#c5">
+                                <div class="bg-radius">
+                                    <img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/LINE_1_01da326f99.webp">
+                                </div>
+                                <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">ครบจบ <br>ทุกเรื่อง LINE</p>
+                            </a>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
+                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true" href="#c6">
+                                <div class="bg-radius">
+                                    <img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Martech_1_b04d7041eb.webp">
+                                </div>
+                                <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">Martech</p>
+                            </a>
+                        </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
+                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true,c7 = true" href="#c7">
+                                <div class="bg-radius">
+                                    <img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Digital_Transformation_1_a66fa3e27e.webp">
+                                </div>
+                                <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">Digital <br>Transformation</p>
+                            </a>
+                        </div>
                     </div>
                     <span id="c1" style="display: block;height: 85px;margin-top: -85px;"></span>
                     <div v-if="c1" class="animate__animated animate__bounceInUp">
@@ -476,6 +525,12 @@ export default {
     width: 100%;
     height: 160px;
     object-fit: cover;
+}
+
+.bg-radius{
+    background: #F2F3F5;
+    padding: 40px;
+    border-radius: 50%;
 }
 
 @media only screen and (max-width: 600px) {

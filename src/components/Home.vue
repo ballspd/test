@@ -7,8 +7,8 @@
       <div class="crad mt-5">
         <div class="row padding-row mb-0">
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-            <img class="d-none d-xl-block d-xxl-block mt-5" src="./../assets/Vector-Smart-Object2.png">
-            <img class="d-block d-xl-none d-xxl-none img-fluid item-center" src="./../assets/mobile/Vector-Smart-Object.png">
+            <img class="d-none d-xl-block d-xxl-block mt-5" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector_Smart_Object2_869bcb7919.webp">
+            <img class="d-block d-xl-none d-xxl-none img-fluid item-center" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector_Smart_Object2_869bcb7919.webp">
           </div>
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
             <div class="d-none d-xl-block d-xxl-block">
@@ -59,8 +59,8 @@
             <div class="row mb-3">
               <div class="col-6">
                 <font class="font-wght" style="font-size:64px;position: relative;color:#23233C;line-height: 90.72px;">YOUR<br>ROADMAP<br>TO SUCCESS</font>
-                <img class="mt-3" src="./../assets/Vector001.png" style="float: right;;">
-                <img class="mt-2" src="./../assets/Vector-Smart-Object001.png" style="position: relative;left: -80px;height: 510px;width: 540px;">
+                <img class="mt-3" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector001_89725b6f03.webp" style="float: right;;">
+                <img class="mt-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector_Smart_Object001_442f89ee50.webp" style="position: relative;left: -80px;height: 510px;width: 540px;">
               </div>
               <div class="col-6">
                 <div class="row" style="float: right;margin: auto;">
@@ -174,33 +174,33 @@
           <div class="row mt-3 mb-3 d-none d-xl-block d-xxl-block">
             <div class="col-12">
               <table style="text-align:center;width:100%">
-                <td><img class="img-fluid" src="./../assets/logo/image113.png"></td>
-                <td><img class="img-fluid" src="./../assets/logo/image114.png"></td>
-                <td><img class="img-fluid" src="./../assets/logo/image115.png"></td>
-                <td><img class="img-fluid" src="./../assets/logo/image116.png"></td>
-                <td><img class="img-fluid" src="./../assets/logo/image117.png"></td>
-                <td><img class="img-fluid" src="./../assets/logo/image118.png"></td>
-                <td><img class="img-fluid" src="./../assets/logo/image119.png"></td>
-                <td><img class="img-fluid" src="./../assets/logo/image120.png"></td>
-                <td><img class="img-fluid" src="./../assets/logo/image121.png"></td>
-                <td><img class="img-fluid" src="./../assets/logo/image122.png"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_11_fb7cd31613.webp"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_22_7dc25d4c2b.webp"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_33_df24cea2cc.webp"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_44_cc06f77185.webp"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_55_2817addebd.webp"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_66_a377e6c849.webp"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_77_bee2277445.webp"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_88_342b654e63.webp"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_99_4cf2750cce.webp"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_1010_2a62f4561b.webp"></td>
               </table>
             </div>
           </div>
           <div class="row mt-3 mb-3 p-3 d-block d-xl-none">
               <table style="text-align:center;width:100%">
-                <td><img class="img-fluid p-2" src="./../assets/logo/image113.png"></td>
-                <td><img class="img-fluid p-2" src="./../assets/logo/image114.png"></td>
-                <td><img class="img-fluid p-2" src="./../assets/logo/image115.png"></td>
-                <td><img class="img-fluid p-2" src="./../assets/logo/image116.png"></td>
-                <td><img class="img-fluid p-2" src="./../assets/logo/image117.png"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_11_fb7cd31613.webp"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_22_7dc25d4c2b.webp"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_33_df24cea2cc.webp"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_55_2817addebd.webp"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_66_a377e6c849.webp"></td>
               </table>
               <table style="text-align:center;width:100%">
-                <td><img class="img-fluid p-2" src="./../assets/logo/image118.png"></td>
-                <td><img class="img-fluid p-2" src="./../assets/logo/image119.png"></td>
-                <td><img class="img-fluid p-2" src="./../assets/logo/image120.png"></td>
-                <td><img class="img-fluid p-2" src="./../assets/logo/image121.png"></td>
-                <td><img class="img-fluid p-2" src="./../assets/logo/image122.png"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_66_a377e6c849.webp"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_77_bee2277445.webp"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_88_342b654e63.webp"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_99_4cf2750cce.webp"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_1010_2a62f4561b.webp"></td>
               </table>
           </div>
         </div>

@@ -22,23 +22,23 @@
                         <div class="row">
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">First Name/ชื่อ<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control mt-2">
+                                <input type="text" class="form-control mt-2" v-model="firstName" id="firstName" name="firstName">
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">Last Name/นามสกุล<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control mt-2">
+                                <input type="text" class="form-control mt-2" v-model="lastName" id="lastName" name="lastName">
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">Email/อีเมล<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control mt-2">
+                                <input type="text" class="form-control mt-2" v-model="email" id="email" name="email">
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">Phone Number/เบอร์โทรศัพท์<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control mt-2">
+                                <input type="text" class="form-control mt-2" v-model="phoneNumber" id="phoneNumber" name="phoneNumber">
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">How did you hear of this job vacancy? <br>คุณรู้จักตำแหน่งงานนี้ได้อย่างไร?<span class="text-danger">*</span></label>
-                                <select class="form-select mt-2" placeholder="Please Select/กรุณาเลือก">
+                                <select class="form-select mt-2" placeholder="Please Select/กรุณาเลือก" v-model="jobVacancy" id="jobVacancy" name="jobVacancy">
                                     <option selected value="">Please Select/กรุณาเลือก</option>
                                     <option value="Fuse">Fuse</option>
                                     <option value="Line">Line</option>
@@ -50,23 +50,23 @@
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;"><br>Position applied for/ตำแหน่งที่สนใจ<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control mt-2">
+                                <input type="text" class="form-control mt-2" v-model="position" id="position" name="position">
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">Expected salary/เงินเดือนที่คาดหวัง<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control mt-2">
+                                <input type="text" class="form-control mt-2" v-model="expectedSalary" id="expectedSalary" name="expectedSalary">
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">Resume/CV<span class="text-danger">*</span></label>
                                 <div class="input-group mb-3 mt-2">
-                                    <input type="file" class="form-control" @change="onFileChange" id="inputGroupFile" hidden>
+                                    <input type="file" ref="file" class="form-control" @change="onChangeFileUpload()" id="inputGroupFile" hidden>
                                     <input type="text" class="form-control cursor-pointer" :value="filename" for="inputGroupFile" readonly>
                                     <label class="input-group-text text-s-14 cursor-pointer" for="inputGroupFile" style="background: #FF773B;color: #FFFFFF;">Choose File</label>
                                 </div>
                             </div>
                             <div class="form-group col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">Tell us about yourself <br>อยากบอกอะไรให้เรารู้เกี่ยวกับตัวคุณ*<span class="text-danger">*</span></label>
-                                <textarea class="form-control mt-2" style="height:180px"></textarea>
+                                <textarea class="form-control mt-2" style="height:180px" v-model="tellUs" id="tellUs" name="tellUs"></textarea>
                             </div>
 
                         </div>
@@ -104,7 +104,7 @@
                             <hr class="mt-5 mb-3" style="border: 1px solid #E5E5E5;">
                             <div class="col-12">
                                 <div class="text-center" style="width: 100%;margin-top:32px">
-                                    <a href="#" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Submit</span></a>
+                                    <a href="#" @click="submitForm()" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Submit</span></a>
                                 </div>
                             </div>                    
                         </div>
@@ -117,7 +117,10 @@
 </template>
 
 <script>
-import Preloader from '@/components/Preloader'
+import Preloader from '@/components/Preloader';
+import emailjs from 'emailjs-com';
+import{ init } from 'emailjs-com';
+init("user_QloagcVOZPqf6VjPjBCaI");
 
 export default {
     name: 'JoinUsForm',
@@ -126,16 +129,115 @@ export default {
     },
     data() {
       return {
-        filename: ''
+        responseData:[],
+        files:'',
+        filename:'',
+        firstName:'',
+        lastName:'',
+        email:'',
+        phoneNumber:'',
+        jobVacancy:'',
+        position:'',
+        filebase64:'',
+        expectedSalary:'',
+        tellUs: ''
       }
     },
     methods:{
-        onFileChange(e) {
-        var files = e.target.files || e.dataTransfer.files;
-        if (!files.length)
-            return;
-        this.filename = files[0].name;
-        }
+        onChangeFileUpload(){
+            this.files = this.$refs.file.files[0];
+            console.log(this.files);
+            this.filename = this.$refs.file.files[0].name;
+        },
+        getBase64(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = error => reject(error);
+            });
+        },
+
+        submitForm(){
+
+            if (this.$refs.file.files){
+                let formData = new FormData();
+                formData.append('files', this.files);
+
+                this.axios.post('upload',
+                formData,
+                        {
+                        headers: {
+                            'Content-Type': 'multipart/form-data'
+                        }
+                        }
+                ).then(response => (this.responseData = response.data))
+                .catch(function(){
+                    console.log('FAILURE!!');
+                });
+            }
+            
+            this.$swal.fire({
+                title: 'Are you sure?',
+                text: "You want to send a message",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Confilm'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        try {
+                            this.sendEmail()
+                            this.$swal.fire(
+                                'Success',
+                                'Send information successfully',
+                                'success'
+                            )
+                        } catch(error) {
+                            this.$swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: error,
+                            })
+                        }
+                    }
+                })
+        },
+        sendEmail() {
+            var name = this.firstName + ' ' + this.lastName
+            var email = this.email
+            var phoneNumber = this.phoneNumber
+            var jobVacancy = this.jobVacancy
+            var position = this.position
+            var expectedSalary = this.expectedSalary
+            var tellUs = this.tellUs
+
+            try {
+                emailjs.send("service_l6knyfr","template_bjt8m9e",{
+                    name: name,
+                    email: email,
+                    phone_number:phoneNumber,
+                    job_vacancy:jobVacancy,
+                    position:position,
+                    expected_salary:expectedSalary,
+                    tell_us:tellUs,
+                    file_cv: this.responseData[0].url
+                });
+            } catch(error) {
+                console.log({error})
+            }
+            // Reset form field
+            this.firstName = ''
+            this.lastName = ''
+            this.email = ''
+            this.phoneNumber = ''
+            this.jobVacancy = ''
+            this.position = ''
+            this.expectedSalary = ''
+            this.tellUs = ''
+            this.filebase64 = ''
+        },
     }
 }
 </script>

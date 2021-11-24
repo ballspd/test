@@ -56,7 +56,7 @@
                 </form>
               </div>
               <div class="col-5">
-                <img class="mt-4" src="./../assets/image52.png" style="position: relative;margin-left:-25px">
+                <img class="mt-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/GET_A_QUOTE_db09b3e246.webp" style="position: relative;margin-left:-25px">
               </div>
             </div>
           </div>
@@ -130,7 +130,7 @@ export default {
 
 <style scoped>
 .bg{
-  background-image: url('./../assets/mobile/image52.png');
+  background-image: url('https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/GET_A_QUOTE_2_2d7a8b05a4.webp');
   background-position: center;
   background-repeat: no-repeat;
 }
