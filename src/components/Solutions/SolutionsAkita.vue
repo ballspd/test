@@ -13,7 +13,7 @@
                                     <h1 class="font-wght" style="font-size:62px;color:#FFFFFC">AKITA<br>FULFILLMENT</h1>
                                     <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#FFFFFC">“บริการคลังสินค้าครบวงจร”</h2>
                                     <p class="text-s-16 mt-3" style="color:#FFFFFC">พร้อมอยู่คู่เคียงข้างทุกธุรกิจ เพื่อส่งมอบประสบการณ์ การจัดส่งสินค้าที่ดีที่สุดสู่มือลูกค้า</p>
-                                    <a href="#" class="btn btn-orange button mt-4"><span class="text-white" style="font-size:18px">Click Now</span></a>
+                                    <a href="https://www.akitahub.com/" target="_blank" class="btn btn-orange button mt-4"><span class="text-white" style="font-size:18px">Click Now</span></a>
                                 </td>
                             </table>
                         </div>
@@ -22,7 +22,7 @@
                             <h1 class="font-wght text-s-36" style="color:#FFFFFC">AKITA<br>FULFILLMENT</h1>
                             <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-5 pe-5 mt-4" style="color:#FFFFFC">“บริการคลังสินค้าครบวงจร”</h2>
                             <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">พร้อมอยู่คู่เคียงข้างทุกธุรกิจ เพื่อส่งมอบประสบการณ์ การจัดส่งสินค้าที่ดีที่สุดสู่มือลูกค้า</p>
-                            <a href="#" class="btn btn-orange button mt-2"><span class="text-white" style="font-size:18px">Click Now</span></a>
+                            <a href="https://www.akitahub.com/" target="_blank" class="btn btn-orange button mt-2"><span class="text-white" style="font-size:18px">Click Now</span></a>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -107,7 +107,7 @@
                                     <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsAkita/icon-solution-akita-4.png"></div>
                                 </div>
                                 <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
-                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">>รับฟัง</h2>
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">รับฟัง</h2>
                             </div>
                             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
@@ -132,7 +132,7 @@
                             </div>       
                         </div>
                     </div>
-                <InterestingArticles/>
+                <InterestingArticles :type="type"/>
                 <div class="padding-card pt-0 text-center">
                     <h1 class="mt-5 text-s-30 text-w-700">เรื่องเล่าจากลูกค้าเรา</h1>
                     <Review/>

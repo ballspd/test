@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-xl-block d-xxl-block" style="background-color: #F6ECE0;z-index: 999;">
     <div class="container">
       <a class="navbar-brand" href="/">
-        <img src="./../../assets/Sellsuki-logo-01.png" alt="" width="141.29" height="60" class="d-inline-block align-text-top">
+        <img src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Sellsuki_logo_01_3_41353765c4.png" alt="" width="141.29" height="60" class="d-inline-block align-text-top">
       </a>
       <div class="ml-2">
         <ul class="navbar-nav navbar-custom shadow text-s-16 text-w-500 menu-bar" style="padding:0px !important;width: 100% !important;"> <!-- 797px -->

@@ -5,17 +5,19 @@
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div v-for="(data, index) in responseData" :key="index" class="carousel-item" :class="{'active': index == 0}">
+                        <router-link @click="scrollToTop" :to="{ path: '/Portfolio/Detail/'+data.id+'' , query: { type: data.bu_category.name } }">
                         <div class="row">
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img class="d-block image-review" :src="data.illustration.url" :alt="data.illustration.name"></div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-xxl-5 p-lg-5 p-sm-3 p-3">
                                 <div class="ps-sm-2 pe-sm-2 ps-2 pe-0">
                                 <p style="color:#FF773B">-- TESTIMONIALS</p>
-                                    <font class="text-review">{{data.title}}</font>
-                                    <span></span><p class="mt-3">{{data.description}}</p>
+                                    <font class="text-review text-limit-1">{{data.title}}</font>
+                                    <p class="mt-3 text-limit-7">{{data.description}}</p>
                                     <p class="mt-xxl-5 mt-4" style="color:#FF773B">{{data.name}}<br>{{data.position}}</p>
                                 </div>
                             </div>
                         </div>
+                        </router-link>
                     </div>
                 </div>
                 <div class="d-none d-xl-block d-xxl-block">
@@ -28,7 +30,7 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <div class="d-block d-xl-none d-xxl-none text-center mt-4">
+                <div class="d-block d-xl-none d-xxl-none text-center mt-4 show-hover">
                     <a class="me-1" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                         <span class="" aria-hidden="true"><i class="me-1 bi bi-chevron-left" style="font-size: 26px;"></i></span>
                     </a>
@@ -64,6 +66,11 @@ export default {
         }
         this.axios.get(this.url + '?_locale='+ this.lang)
         .then(response => (this.responseData = response.data))
+    },
+    methods:{
+      scrollToTop() {
+            window.scrollTo(0,0);
+        },
     }
     
 }
@@ -147,7 +154,7 @@ a{
     color: #50151C;
     padding: 5px 10px;
 }
-a:hover{
+.show-hover a:hover{
     background: #FF773B;
     border-radius: 50%;
 }

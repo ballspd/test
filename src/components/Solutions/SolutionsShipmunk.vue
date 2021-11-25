@@ -320,7 +320,7 @@
                         <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-6.png">
                     </div>
                 </div>
-                <InterestingArticles/>
+                <InterestingArticles :type="type"/>
                 <div class="padding-card pt-0 text-center">
                     <h1 class="mt-5 text-s-30 text-w-700">เรื่องเล่าจากลูกค้าเรา</h1>
                     <Review/>

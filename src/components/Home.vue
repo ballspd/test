@@ -52,7 +52,7 @@
           </div>
         </div>
 
-        <InterestingArticles/>
+        <InterestingArticles :type="type"/>
 
         <div class="padding-card">
           <div class="d-none d-xxl-block d-xl-block">

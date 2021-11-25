@@ -96,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <InterestingArticles/>
+                <InterestingArticles :type="type"/>
                 <GetQuote/>
             </div>
         </div>
@@ -121,6 +121,7 @@ export default {
             height_colum: 330,
             height_border: 320,
             lang: localStorage.getItem('lang') || 'en',
+            type:'All',
             responseData:[]
       }
     },
