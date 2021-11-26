@@ -43,7 +43,7 @@
                                     <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-1.png"></div>
                                 </div>
                                 <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
-                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">>Course Training LINE<br>ขั้นเทพ</h2>
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">Course Training LINE<br>ขั้นเทพ</h2>
                             </div>
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
