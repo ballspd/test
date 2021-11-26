@@ -7,7 +7,7 @@
                 <div class="row banner-hero">
                     <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="d-none d-lg-block">
-                            <p class="text-s-16 mt-150" style="color:#FFFFFC;">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">Oc2plus</font></p>
+                            <p class="text-s-16 mt-150" style="color:#FFFFFC;"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#FFFFFC">Oc2plus</font></p>
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:62px;color:#FFFFFC">OC2PLUS</h1>
@@ -17,7 +17,7 @@
                             </table>
                         </div>
                         <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
-                            <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">Oc2plus</font></p>
+                            <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#FFFFFC">Oc2plus</font></p>
                             <h1 class="font-wght text-s-36" style="color:#FFFFFC">OC2PLUS</h1>
                             <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#FFFFFC">“เครื่องมือจัดเก็บข้อมูล สำหรับวางแผน การตลาด ที่เจ้าของธุรกิจต้องมี”</h2>
                             <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">บริการน้องใหม่จาก Sellsuki เป็นบริการ Customer Data Platform (CDP) หรือพื้นที่ในการจัดเก็บข้อมูลของลูกค้า ซึ่งมี ความจำเป็นอย่างมากต่อการ ทำธุรกิจในยุคปัจจุบันที่เราต้องใช้ข้อมูล</p>

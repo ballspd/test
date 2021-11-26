@@ -253,6 +253,14 @@ ul li ul:hover {
 	background: #469EEB !important;
 }
 
+a:hover{
+  color: unset !important;
+}
+
+a{
+  color: unset !important;
+}
+
 .carousel-control-prev-custom:hover{
   color: #fff;
   text-decoration: none;

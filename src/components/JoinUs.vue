@@ -6,7 +6,7 @@
             <div class="row banner-hero">
                 <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="d-none d-md-block d-lg-block d-xl-block d-xxl-block">
-                        <p class="text-s-16 mt-150" style="color:#50151C;">Home > <font class="text-s-16 text-w-700" style="color:#50151C">Join Us</font></p>
+                        <p class="text-s-16 mt-150" style="color:#50151C;"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">Join Us</font></p>
                         <table class="align-middle" style="width: 100%;">
                             <td class="banner-height">
                                 <font class="font-wght" style="font-size:64px;color:#50151C">Join Us</font>
@@ -15,7 +15,7 @@
                         </table>
                     </div>
                     <div class="d-block d-md-none d-lg-none d-xl-none d-xxl-none text-center ps-4 pe-4">
-                        <p class="text-s-16 mt-4 text-start" style="color:#50151C">Home > <font class="text-s-16 text-w-700" style="color:#50151C">Join Us</font></p>
+                        <p class="text-s-16 mt-4 text-start" style="color:#50151C"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">Join Us</font></p>
                         <font class="font-wght mt-3" style="font-size:36px;color:#50151C">Join Us</font>
                         <p class="text-s-16" style="color:#50151C">มาเป็นครอบครัวเดียวกัน กับ Sellsuki :)</p>
                     </div>
@@ -88,32 +88,34 @@
                 </div>
                 <div class="bg">
                   <div class="p-5" style="background: rgba(0, 0, 0, 0.3);display: flex;height: 350px;">
-                    <font class="font-wght mt-auto mb-auto ms-4" style="font-size:64px;color:#FBFBFB">BLOG</font>
+                    <font class="font-wght mt-auto mb-auto ms-4" style="font-size:64px;color:#FBFBFB">LOREM</font>
                   </div>
                 </div>
                 <div class="row p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4" style="margin-top: -150px;">
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
                        <div class="card item-center">
                         <div class="card-body" style="padding:2.5rem 1rem;">
-                          <p class="card-title font-wght" style="font-size:36px">Lorem ipsum</p>
-                          <p class="text-s-30 font-wght">Lorem ipsum</p>
-                          <p class="font-wght" style="font-size:20px">Lorem ipsum</p>
-                          <p class="card-text text-s-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                          <p class="card-title font-wght" style="font-size:30px">Thatim Prakaymaneewong</p>
+                          <p class="text-s-24 font-wght">LINE Product Owner</p>
+                          <p class="card-text text-s-16">ที่นี่ให้อิสระในการทำงาน
+                              ให้โอกาส ให้ลองผิดลองถูก ทำให้เราได้เติบโตขึ้นในทุกวันเหม
+                              และที่นี่ยังมีโครงสร้างองค์กรณ์ที่ค่อนข้างยืดหยุ่น
+                              ถ้ามีเรื่องไหนที่เราคิดไม่ออกหรือติดปัญหา
+                              นอกจากปรึกษาทีม เราสามารถเดินเข้าไปคุยกับผู้บริหารได้เลย
                           </p>
+                          <p class="card-text text-s-16">นอกจากนั้นพื่อนร่วมงานที่นี่น่ารัก<br>เพิ่มความสุขใจในการทำงานได้อย่างมากจริงๆ</p>
                         </div>
                       </div>
                     </div>
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
                        <div class="card item-center">
                         <div class="card-body" style="padding:2.5rem 1rem;">
-                          <p class="card-title font-wght" style="font-size:36px">Lorem ipsum</p>
-                          <p class="text-s-30 font-wght">Lorem ipsum</p>
-                          <p class="font-wght" style="font-size:20px">Lorem ipsum</p>
-                          <p class="card-text text-s-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                          <p class="card-title font-wght" style="font-size:30px">Panadda Kongsuk</p>
+                          <p class="text-s-24 font-wght">Business Development Executive</p>
+                          <p class="card-text text-s-16">ที่นี่อิสระทางความคิด และเป็นการทำงานที่เน้นผลงานมากกว่าลำดับชั้น 
+                            สิ่งที่ได้จากการทำงานที่นี่คือ คำว่าพี่น้อง ไม่ใช่กาสะลองซองปีบ แต่เป็น สังคมของการช่วยเหลือพร้อมที่จะเติบโตไปพร้อมกัน 
+                            เรารักษาและดูแลใจกันแบบมนุษย์ที่ทุกคนเท่าเทียมกัน ภายใต้กรอบแนวคิดคือเคารพความเห็นซึ่งกันและกัน จนหลายครั้งก็กลาย
+                            เป็นแนวทางในการผลิตบริการตัวใหม่จากหลายความเห็นของหลายคนมาร่วมกัน ความสุขที่ได้จากการทำงาน การมองเห็นอนาคตของเราและองค์กรเติบโตไปด้วยกัน
                           </p>
                         </div>
                       </div>

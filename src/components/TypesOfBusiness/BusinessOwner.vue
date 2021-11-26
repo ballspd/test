@@ -7,7 +7,7 @@
                 <div class="row banner-hero">
                     <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="d-none d-lg-block">
-                            <p class="text-s-16 mt-150" style="color:#50151C;">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#50151C">Business owner</font></p>
+                            <p class="text-s-16 mt-150" style="color:#50151C;"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">Business owner</font></p>
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:55px;color:#50151C;width: 600px;">BUSINESS OWNER</h1>
@@ -17,7 +17,7 @@
                             </table>
                         </div>
                         <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
-                            <p class="text-s-14 pb-3 text-start" style="color:#50151C;margin-top:95px !important">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#50151C">Business owner</font></p>
+                            <p class="text-s-14 pb-3 text-start" style="color:#50151C;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">Business owner</font></p>
                             <h1 class="font-wght text-s-36" style="color:#50151C">BUSINESS OWNER</h1>
                             <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#50151C">“เคล็ดไม่ลับ เจ้าของธุรกิจมือใหม่ เริ่มต้นสร้างแบรนด์อย่างไรให้ปัง ?”</h2>
                             <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#50151C">สำหรับเจ้าของธุรกิจมือใหม่ที่กำลังอยากจะเริ่มปั้นแบรนด์ สร้างธุรกิจเป็นของ ตัวเองควรอ่านบทความนี้ ! น้องสุกิจะมาช่วยแนะนำขั้นตอนในการเริ่มต้นธุรกิจ ให้ติดตลาด มียอดขายปัง ควรเริ่มจากตรงไหนถึงจะเป็นก้าวแรกที่มั่นคง</p>

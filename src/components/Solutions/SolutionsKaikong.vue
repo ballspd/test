@@ -7,7 +7,7 @@
                 <div class="row banner-hero">
                     <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="d-none d-lg-block">
-                            <p class="text-s-16 mt-150" style="color:#0B0404;">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#0B0404">Kaikong</font></p>
+                            <p class="text-s-16 mt-150" style="color:#0B0404;"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#0B0404">Kaikong</font></p>
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:62px;color:#0B0404">KAIKONG</h1>
@@ -17,7 +17,7 @@
                             </table>
                         </div>
                         <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
-                            <p class="text-s-14 pb-3 text-start" style="color:#0B0404;margin-top:95px !important">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#0B0404">Kaikong</font></p>
+                            <p class="text-s-14 pb-3 text-start" style="color:#0B0404;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#0B0404">Kaikong</font></p>
                             <h1 class="font-wght text-s-36" style="color:#0B0404">KAIKONG</h1>
                             <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-5 pe-5 mt-4" style="color:#0B0404">“ช่วยสร้าง CONTENT MARKETING ให้ธุรกิจเป็นที่จดจำ”</h2>
                             <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#0B0404">Creative Agency ผู้เชี่ยวชาญในด้านการทำ Content marketing ที่พร้อมจะช่วยสร้างธุรกิจของคุณให้เป็นที่น่าจดจำ เพื่อเพิ่มยอดขาย และเติบโตอย่างก้าวกระโดด</p>

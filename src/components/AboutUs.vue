@@ -6,7 +6,7 @@
             <div class="row banner-hero">
                     <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="d-none d-md-block">
-                            <p class="text-s-16 mt-150" style="color:#50151C;">Home > <font class="text-s-16 text-w-700" style="color:#50151C">About Us</font></p>
+                            <p class="text-s-16 mt-150" style="color:#50151C;"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">About Us</font></p>
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght text-s-64" style="color:#50151C">ABOUT US</h1>
@@ -14,7 +14,7 @@
                             </table>
                         </div>
                         <div class="d-block d-md-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
-                            <p class="text-s-14 pb-3 text-start" style="color:#50151C;margin-top:95px !important">Home > <font class="text-s-16 text-w-700" style="color:#50151C">About Us</font></p>
+                            <p class="text-s-14 pb-3 text-start" style="color:#50151C;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">About Us</font></p>
                             <h1 class="font-wght text-s-36" style="color:#50151C">ABOUT US</h1>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                         <p class="text-s-30 text-w-700" style="margin-bottom: 10px !important">ประวัติความเป็นมาของ</p>
                     </div>
                     <div class="col-12 mb-4">
-                        <img class="item-center" width="193" height="82" src="./../assets/logo-sellsuki.png">
+                        <img class="item-center" width="193" height="82" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Sellsuki_logo_01_3_41353765c4.png">
                     </div>
                     <div class="d-none d-xl-block d-xxl-block">
                         <div class="col-12 mt-4" :style="'height:'+ height_colum +'px'">

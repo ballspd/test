@@ -6,7 +6,7 @@
             <div class="row banner-hero">
                 <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="d-none d-md-block d-lg-block d-xl-block d-xxl-block">
-                        <p class="text-s-16 mt-150" style="color:#50151C;">Home > <font class="text-s-16 text-w-700" style="color:#50151C">Blog</font></p>
+                        <p class="text-s-16 mt-150" style="color:#50151C;"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">Blog</font></p>
                         <table class="align-middle" style="width: 100%;">
                             <td class="banner-height">
                                 <font class="font-wght" style="font-size:64px;color:#50151C">Blog</font>
@@ -15,7 +15,7 @@
                         </table>
                     </div>
                     <div class="d-block d-md-none d-lg-none d-xl-none d-xxl-none text-center ps-4 pe-4">
-                        <p class="text-s-16 mt-4 text-start" style="color:#50151C">Home > <font class="text-s-16 text-w-700" style="color:#50151C">Blog</font></p>
+                        <p class="text-s-16 mt-4 text-start" style="color:#50151C"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">Blog</font></p>
                         <font class="font-wght mt-3" style="font-size:36px;color:#50151C">Blog</font>
                         <p class="text-s-16" style="color:#50151C">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
                     </div>
@@ -50,8 +50,7 @@
                                                     <div v-if="index < 3" class="row">
                                                         <div class="col-6" style="width:170px"><img class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
                                                         <div class="col-6 p-1">                                                
-                                                            <button class="btn-green me-1"><span>Lorem ipsum</span></button>
-                                                            <button class="btn-blue"><span>Lorem ipsum</span></button>
+                                                            <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}" class="btn lh-1 btn-orange hvr-back-pulse" style="width: 120px !important;height: 32px !important"><span style="font-size:14px">NEW</span></router-link>
                                                             <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:24px">{{data.title}}</p>
                                                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
                                                             <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
@@ -65,9 +64,8 @@
                                                 <div v-for="(data, index) in responseData" :key="index" :class="{'col-4':index > 2}">
                                                     <div v-if="index > 2" class="row">
                                                         <div class="col-6" style="width:170px"><img class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
-                                                        <div class="col-6 p-1">                                                
-                                                            <button class="btn-green me-1"><span>Lorem ipsum</span></button>
-                                                            <button class="btn-blue"><span>Lorem ipsum</span></button>
+                                                        <div class="col-6 p-1">                                            
+                                                            <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}" class="btn lh-1 btn-orange hvr-back-pulse" style="width: 120px !important;height: 32px !important"><span style="font-size:14px">NEW</span></router-link>
                                                             <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:24px">{{data.title}}</p>
                                                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
                                                             <p class="text-limit-2 text-s-14" style="color:#373737;">{{data.description}}</p>
@@ -92,8 +90,7 @@
                                                     <div class="row">
                                                         <div class="col-6" style="width:170px"><img class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
                                                         <div class="col-6 p-2 ps-sm-3 pe-sm-3">                                                
-                                                            <button class="btn-green me-1"><span>Lorem ipsum</span></button>
-                                                            <button class="btn-blue"><span>Lorem ipsum</span></button>
+                                                            <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}" class="btn btn-orange hvr-back-pulse" style="width: 120px !important;height: 32px !important;line-height: 1"><span style="font-size:14px">NEW</span></router-link>
                                                             <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:24px">{{data.title}}</p>
                                                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
                                                             <p class="text-limit-2 text-s-14 mb-0" style="color:#373737;">{{data.description}}</p>
@@ -489,6 +486,15 @@ export default {
 </script>
 
 <style scoped>
+
+.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active{
+    opacity: 0.8 !important;
+}
+
+.lh-1{
+    line-height: 1 !important
+}
+
 .btn-green{
     height: 30px;
     font-size: 10px;

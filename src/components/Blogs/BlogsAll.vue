@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <p class="text-s-16 mt-150" style="color:#50151C;">Home > <font class="text-s-16 font-wght" style="color:#50151C">Blogs</font></p>
+                    <p class="text-s-16 mt-150" style="color:#50151C;"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> <router-link @click="scrollToTop" to="/Blog">Blog</router-link> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">{{responseData[0].blog_category.name}}</font></p>
                 </div>
             </div>
         </div>

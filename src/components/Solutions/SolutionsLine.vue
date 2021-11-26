@@ -7,20 +7,20 @@
                 <div class="row banner-hero">
                     <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="d-none d-lg-block">
-                            <p class="text-s-16 mt-150" style="color:#FFFFFC;">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">LINE Agency</font></p>
+                            <p class="text-s-16 mt-150" style="color:#FFFFFC;"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#FFFFFC">LINE Agency</font></p>
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <font class="font-wght" style="font-size:62px;color:#FFFFFC">LINE AGENCY <br>BY SELLSUKI</font>
                                     <p class="text-s-16 mt-3" style="color:#FFFFFC">ผู้เชี่ยวชาญอันดับ 1 เรื่อง LINE OA ที่ได้รับความไว้วางใจ จากเจ้าของธุรกิจกว่า 6,000 แอคเคาท์ ให้เราช่วยดู</p>
-                                    <a href="https://www.sellsuki.co.th/line-homepage" target="_blank" class="btn btn-orange button mt-4"><span class="text-white" style="font-size:18px">Click Now</span></a>
+                                    <a href="https://lineagency.sellsuki.com" target="_blank" class="btn btn-orange button mt-4"><span class="text-white" style="font-size:18px">Click Now</span></a>
                                 </td>
                             </table>
                         </div>
                         <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
-                            <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#FFFFFC">LINE Agency</font></p>
+                            <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#FFFFFC">LINE Agency</font></p>
                             <h1 class="font-wght text-s-36" style="color:#FFFFFC">LINE AGENCY <br>BY SELLSUKI</h1>
                             <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">ผู้เชี่ยวชาญอันดับ 1 เรื่อง LINE OA ที่ได้รับความไว้วางใจ จากเจ้าของธุรกิจกว่า 6,000 แอคเคาท์ ให้เราช่วยดู</p>
-                            <a href="https://www.sellsuki.co.th/line-homepage" target="_blank" class="btn btn-orange button mt-4"><span class="text-white" style="font-size:18px">Click Now</span></a>
+                            <a href="https://lineagency.sellsuki.com" target="_blank" class="btn btn-orange button mt-4"><span class="text-white" style="font-size:18px">Click Now</span></a>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -221,13 +221,13 @@ export default {
             if(this.windowTop > 2000){
                 document.querySelector('#contant5').style.display = "block";
             }
-            if(this.windowTop > 2300){
+            if(this.windowTop > 2100){
                 this.animation2 = true
             }
-            if(this.windowTop > 2500){
+            if(this.windowTop > 2300){
                 document.querySelector('#contantAdd1').style.display = "block";
             }
-            if(this.windowTop > 2900){
+            if(this.windowTop > 2700){
                 document.querySelector('#contantAdd2').style.display = "block";
             }
         }

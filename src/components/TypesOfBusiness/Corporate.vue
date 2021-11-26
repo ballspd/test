@@ -7,7 +7,7 @@
                 <div class="row banner-hero">
                     <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="d-none d-lg-block">
-                            <p class="text-s-16 mt-150" style="color:#50151C;">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#50151C">Coporate</font></p>
+                            <p class="text-s-16 mt-150" style="color:#50151C;"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">Coporate</font></p>
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:55px;color:#50151C;width: 600px;">COPORATE</h1>
@@ -17,7 +17,7 @@
                             </table>
                         </div>
                         <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
-                            <p class="text-s-14 pb-3 text-start" style="color:#50151C;margin-top:95px !important">Home > Solutions > <font class="text-s-16 text-w-700" style="color:#50151C">Coporate</font></p>
+                            <p class="text-s-14 pb-3 text-start" style="color:#50151C;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">Coporate</font></p>
                             <h1 class="font-wght text-s-36" style="color:#50151C">COPORATE</h1>
                             <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-sm-4 mt-sm-4" style="color:#50151C">“วางแผนแคมเปญใหญ่ให้ปัง รู้ทันกลุ่มเป้าหมาย ก่อนลงทุนหลักล้าน !”</h2>
                             <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#50151C">โดยทีมงานนักการตลาดมืออาชีพที่เข้าใจปัญหา การทำธุรกิจอย่างแท้จริง เพื่อพัฒนาแผนการสื่อสารของแคมเปญ ให้เข้าถึงลูกค้าได้ตรงกลุ่ม และ ผลักให้ธุรกิจของคุณเติบโตมากขึ้น</p>
