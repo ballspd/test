@@ -72,7 +72,7 @@
                                 </div>
                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
                                     <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInRight animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
-                                    <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                    <div class="animate__animated animate__bounceInLeft animate__slow">
                                         <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
                                             <div class="text-center text-lg-start text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                         </div>
@@ -86,7 +86,7 @@
                                 <div v-else class="row mt-4 p-custom-2 d-flex">
                                     <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto ">
                                         <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInLeft animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
-                                        <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                        <div class="animate__animated animate__bounceInRight animate__slow">
                                             <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
                                                 <div class="text-center text-lg-start text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                             </div>
@@ -110,7 +110,7 @@
                             <div v-if="data.position == 'Right'" class="row mt-4 p-custom-2 d-flex">
                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto ">
                                     <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInLeft animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
-                                    <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                    <div class="animate__animated animate__bounceInRight animate__slow">
                                         <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
                                             <div class="text-center text-lg-start text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                         </div>
@@ -132,7 +132,7 @@
                                 </div>
                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
                                     <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInRight animate__slow" style="padding: 10px 5px;"><img v-if="index == 1" class="me-2" style="margin-top:-3px" src="./../../assets/icon/new.png" alt="new.png"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
-                                    <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                    <div class="animate__animated animate__bounceInLeft animate__slow">
                                         <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
                                             <div class="text-center text-lg-start text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                         </div>
@@ -180,7 +180,7 @@ export default {
                 lang: localStorage.getItem('lang') || 'en',
                 responseDataH1:[],
                 responseDataH2:[],
-                animation1:false,
+                animation1:true,
                 animation2:false
         }
     },
@@ -203,9 +203,9 @@ export default {
         },
         onShow (e) {
             this.windowTop = e.target.documentElement.scrollTop;
-            if(this.windowTop > 200){
-                this.animation1 = true
-            }
+            //if(this.windowTop > 200){
+                //this.animation1 = true
+            //}
             if(this.windowTop > 400){
                 document.querySelector('#contant1').style.display = "block";
             }

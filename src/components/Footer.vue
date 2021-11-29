@@ -8,12 +8,13 @@
                 <div class="row">
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6 hover-manu">
                         <p class="text-w-700 font-footer text-white">บริการของเรา</p>
-                        <p class="text-w-400 font-footer"><router-link @click="scrollToTop" to="" class="text-white">ลงโฆษณาออนไลน์</router-link></p>
-                        <p class="text-w-400 font-footer"><router-link @click="scrollToTop" to="" class="text-white">คลังสินค้าครบวงจร</router-link></p>
-                        <p class="text-w-400 font-footer"><router-link @click="scrollToTop" to="" class="text-white">เปิดบัญชี LINE OA</router-link></p>
-                        <p class="text-w-400 font-footer"><router-link @click="scrollToTop" to="" class="text-white">ทำเว็บไซต์</router-link></p>
-                        <p class="text-w-400 font-footer"><router-link @click="scrollToTop" to="" class="text-white">ทำคอนเทนต์</router-link></p>
-                        <p class="text-w-400 font-footer"><router-link @click="scrollToTop" to="" class="text-white">เปรียบเทียบค่าขนส่ง</router-link></p>
+                        <p class="text-w-400 font-footer"><router-link @click="scrollToTop" to="/Solutions/Fuse" class="text-white">ลงโฆษณาออนไลน์</router-link></p>
+                        <p class="text-w-400 font-footer"><router-link @click="scrollToTop" to="/Solutions/Akita" class="text-white">คลังสินค้าครบวงจร</router-link></p>
+                        <p class="text-w-400 font-footer"><router-link @click="scrollToTop" to="/Solutions/Line" class="text-white">เปิดบัญชี LINE OA</router-link></p>
+                        <p class="text-w-400 font-footer"><router-link @click="scrollToTop" to="/Solutions/Beary" class="text-white">ทำเว็บไซต์</router-link></p>
+                        <p class="text-w-400 font-footer"><router-link @click="scrollToTop" to="/Solutions/Kaikong" class="text-white">ทำคอนเทนต์</router-link></p>
+                        <p class="text-w-400 font-footer"><router-link @click="scrollToTop" to="/Solutions/Shipmunk" class="text-white">เปรียบเทียบค่าขนส่ง</router-link></p>
+                        <p class="text-w-400 font-footer"><router-link @click="scrollToTop" to="/Solutions/Oc2Plus" class="text-white">Customer Data Platform</router-link></p>
                     </div>
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6 hover-manu">
                         <p class="text-w-700 font-footer text-white">เกี่ยวกับเรา</p>
@@ -25,9 +26,9 @@
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div class="row">
                         <div class="col-2" style="margin-right:15px"><a href="https://www.facebook.com/Sellsuki/" target="_blank"><img class="hvr-pop" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/icon_facebook_bc636d1ef3.webp"></a></div>
-                        <div class="col-2" style="margin-right:15px"><a href="https://www.facebook.com/Sellsuki/" target="_blank"><img class="hvr-pop" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/icon_twitter_bbdd9ac703.webp"></a></div>
+                        <div class="col-2" style="margin-right:15px"><a href="https://lin.ee/eMB0DP0" target="_blank"><img class="hvr-pop" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Group_351_6cfbba5ab1.png"></a></div>
                         <div class="col-2" style="margin-right:15px"><a href="https://www.youtube.com/channel/UC-NEIYfX5dc2JXG9mEwWfcQ" target="_blank"><img class="hvr-pop" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/icon_youtube_d357434034.webp"></a></div>
-                        <div class="col-2" style="margin-right:15px"><a href="https://www.facebook.com/Sellsuki/" target="_blank"><img class="hvr-pop" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/icon_mail_6d62394fe0.webp"></a></div>
+                        <div class="col-2" style="margin-right:15px"><a href="" target="_blank"><img class="hvr-pop" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/icon_mail_6d62394fe0.webp"></a></div>
                     </div>
                     <div class="row mt-2">
                         <div class="col-12">
@@ -85,10 +86,8 @@ export default {
 .hover-manu a {
   color: #FFFFFF !important;
   display: inline-block;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   position: relative;
-  padding-bottom: 5px !important;
-  margin-bottom: 10px !important;
 }
 .hover-manu a:after {    
   background: none repeat scroll 0 0 transparent;

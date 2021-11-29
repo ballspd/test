@@ -58,7 +58,7 @@
                                 </div>
                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
                                     <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInRight animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
-                                    <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                    <div class="animate__animated animate__bounceInLeft animate__slow">
                                         <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
                                             <div class="text-center text-lg-start text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                         </div>
@@ -72,7 +72,7 @@
                                 <div v-else class="row mt-4 p-custom-2 d-flex">
                                     <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto ">
                                         <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInLeft animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
-                                        <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                        <div class="animate__animated animate__bounceInRight animate__slow">
                                             <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
                                                 <div class="text-center text-lg-start text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                             </div>
@@ -96,7 +96,7 @@
                             <div v-if="data.position == 'Right'" class="row mt-4 p-custom-2 d-flex">
                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto ">
                                         <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInLeft animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
-                                        <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                        <div class="animate__animated animate__bounceInRight animate__slow">
                                             <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
                                                 <div class="text-center text-lg-start text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                             </div>
@@ -118,7 +118,7 @@
                                 </div>
                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
                                     <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInRight animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
-                                    <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                    <div class="animate__animated animate__bounceInLeft animate__slow">
                                         <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
                                             <div class="text-center text-lg-start text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                         </div>
@@ -134,56 +134,43 @@
                 </div>
                 <div class="row mt-2">
                     <div class="col-12">
-                        <div class="d-none d-lg-block">
-                            <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
-                                
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active" data-bs-interval="10000">
-                                        <div class="row">
-                                            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
-                                            </div>
-                                            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
-                                            </div>
-                                            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
-                                            </div>
-                                        </div>
+                        <div class="d-none d-xl-block">
+                            <Splide data-splide='{"type":"loop","padding":"20rem"}'>
+                                    <SplideSlide>
+                                    <div style="padding-top: 30px !important;">
+                                        <img class="item-center" width="385" height="385" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
                                     </div>
-                                    <div class="carousel-item" data-bs-interval="10000">
-                                        <div class="row">
-                                            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
-                                            </div>
-                                            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
-                                            </div>
-                                            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
-                                            </div>
-                                        </div>
+                                    </SplideSlide>
+                                    <SplideSlide>
+                                    <div style="padding-top: 30px !important;">
+                                        <img class="item-center" width="385" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/business_owner_working_home_office_f0ca478a08.png" alt="hipmunk-banner2.png">
                                     </div>
-                                    <div class="carousel-item" data-bs-interval="10000">
-                                        <div class="row">
-                                            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
-                                            </div>
-                                            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
-                                            </div>
-                                            <div class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                                <img class="img-fluid" width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
-                                            </div>
-                                        </div>
+                                    </SplideSlide>
+                                    <SplideSlide>
+                                    <div style="padding-top: 30px !important;">
+                                        <img class="item-center" width="385" height="385" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
                                     </div>
-                                </div>
-                                <div class="carousel-indicators mt-4" style="position: relative;">
-                                    <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                </div>
-                            </div>
+                                    </SplideSlide>
+                            </Splide>
+                        </div>
+                        <div class="d-none d-lg-block d-xl-none d-xxl-none">
+                            <Splide data-splide='{"type":"loop","padding":"15rem"}'>
+                                    <SplideSlide>
+                                    <div style="padding-top: 30px !important;">
+                                        <img class="item-center" width="385" height="385" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
+                                    </div>
+                                    </SplideSlide>
+                                    <SplideSlide>
+                                    <div style="padding-top: 30px !important;">
+                                        <img class="item-center" width="385" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/business_owner_working_home_office_f0ca478a08.png" alt="hipmunk-banner2.png">
+                                    </div>
+                                    </SplideSlide>
+                                    <SplideSlide>
+                                    <div style="padding-top: 30px !important;">
+                                        <img class="item-center" width="385" height="385" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
+                                    </div>
+                                    </SplideSlide>
+                            </Splide>
                         </div>
                         <div class="d-block d-lg-none">
                             <div id="carouselBannerMobile" class="carousel slide" data-bs-ride="carousel">
@@ -338,6 +325,8 @@ import Review from '@/components/Review'
 import GetQuote from '@/components/Solutions/SolutionsGetQuote'
 import Preloader from '@/components/Preloader'
 import marked from 'marked';
+import { Splide, SplideSlide } from '@splidejs/vue-splide';
+import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 
 export default {
     name: 'SolutionsShipmunk',
@@ -345,7 +334,9 @@ export default {
         InterestingArticles,
         Review,
         GetQuote,
-        Preloader
+        Preloader,
+        Splide,
+        SplideSlide
   },
     data () {
             return {

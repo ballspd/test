@@ -12,6 +12,7 @@
   "dependencies": {
     "@fawmi/vue-google-maps": "^0.9.3",
     "@popperjs/core": "^2.10.1",
+    "@splidejs/vue-splide": "^0.5.13",
     "animate.css": "^4.1.1",
     "axios": "^0.22.0",
     "bootstrap": "^5.1.1",

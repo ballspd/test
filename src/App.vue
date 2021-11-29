@@ -16,7 +16,10 @@
     </div>
   </div>
   <div v-if="!isActive" class="fabs animate__animated animate__fadeInUp" :class="{'animate__fadeInUp': isActive}" style="margin-bottom: 155px;">
-    <a target="_blank" href="https://www.facebook.com/messages/t/Sellsuki"><img src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/icon_chat_871c1dec5a.png" style="width: 55px;margin-right: 2px;"></a>
+    <a target="_blank" href="https://www.facebook.com/messages/t/Sellsuki"><img src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/icon_chat_871c1dec5a.png" style="width: 55px;margin-right: 2px;margin-bottom: 4px;"></a>
+  </div>
+  <div v-if="!isActive" class="fabs animate__animated animate__fadeInUp" :class="{'animate__fadeInUp': isActive}" style="margin-bottom: 222px;">
+    <a target="_blank" href="https://lin.ee/eMB0DP0"><img src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Group_351_6cfbba5ab1.png" style="width: 65px;margin-right: -2px;"></a>
   </div>
 </template>
 

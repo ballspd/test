@@ -10,14 +10,14 @@
                         <table class="align-middle" style="width: 100%;">
                             <td class="banner-height">
                                 <font class="font-wght" style="font-size:64px;color:#50151C">Blog</font>
-                                <p class="text-s-16" style="color:#50151C">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                                <p class="text-s-16" style="color:#50151C">ติดตามข่าวสาร และข้อมูลดี ๆ เกี่ยวกับ เทรนด์การตลาด และ e-Commerce ก่อนใครได้แล้ว ที่นี่!</p>
                             </td>
                         </table>
                     </div>
                     <div class="d-block d-md-none d-lg-none d-xl-none d-xxl-none text-center ps-4 pe-4">
                         <p class="text-s-16 mt-4 text-start" style="color:#50151C"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">Blog</font></p>
                         <font class="font-wght mt-3" style="font-size:36px;color:#50151C">Blog</font>
-                        <p class="text-s-16" style="color:#50151C">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                        <p class="text-s-16" style="color:#50151C">ติดตามข่าวสาร และข้อมูลดี ๆ เกี่ยวกับ เทรนด์การตลาด และ e-Commerce ก่อนใครได้แล้ว ที่นี่!</p>
                     </div>
                 </div>
                 <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -50,8 +50,8 @@
                                                     <div v-if="index < 3" class="row">
                                                         <div class="col-6" style="width:170px"><img class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
                                                         <div class="col-6 p-1">                                                
-                                                            <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}" class="btn lh-1 btn-orange hvr-back-pulse" style="width: 120px !important;height: 32px !important"><span style="font-size:14px">NEW</span></router-link>
-                                                            <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:24px">{{data.title}}</p>
+                                                            <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}" class="btn lh-1 btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important"><span style="font-size:14px">NEW</span></router-link>
+                                                            <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:18px">{{data.title}}</p>
                                                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
                                                             <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
                                                         </div>
@@ -65,8 +65,8 @@
                                                     <div v-if="index > 2" class="row">
                                                         <div class="col-6" style="width:170px"><img class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
                                                         <div class="col-6 p-1">                                            
-                                                            <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}" class="btn lh-1 btn-orange hvr-back-pulse" style="width: 120px !important;height: 32px !important"><span style="font-size:14px">NEW</span></router-link>
-                                                            <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:24px">{{data.title}}</p>
+                                                            <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}" class="btn lh-1 btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important"><span style="font-size:14px">NEW</span></router-link>
+                                                            <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:18px">{{data.title}}</p>
                                                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
                                                             <p class="text-limit-2 text-s-14" style="color:#373737;">{{data.description}}</p>
                                                         </div>
@@ -90,8 +90,8 @@
                                                     <div class="row">
                                                         <div class="col-6" style="width:170px"><img class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
                                                         <div class="col-6 p-2 ps-sm-3 pe-sm-3">                                                
-                                                            <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}" class="btn btn-orange hvr-back-pulse" style="width: 120px !important;height: 32px !important;line-height: 1"><span style="font-size:14px">NEW</span></router-link>
-                                                            <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:24px">{{data.title}}</p>
+                                                            <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}" class="btn btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important;line-height: 1"><span style="font-size:14px">NEW</span></router-link>
+                                                            <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:18px">{{data.title}}</p>
                                                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
                                                             <p class="text-limit-2 text-s-14 mb-0" style="color:#373737;">{{data.description}}</p>
                                                         </div>
@@ -113,7 +113,7 @@
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
                             <a class="hvr-bounce-in" @click="c1 = true" href="#c1">
                                 <div class="bg-radius">
-                                    <img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/1_6e4fb38d23.webp">
+                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/1_6e4fb38d23.webp">
                                 </div>
                             <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทคนิคการขาย <br>และการโฆษณา</p>
                             </a>
@@ -121,7 +121,7 @@
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
                             <a class="hvr-bounce-in" @click="c1 = true,c2 = true" href="#c2">
                                 <div class="bg-radius">
-                                    <img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Social_Media_1_2c014a8960.webp">
+                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Social_Media_1_2c014a8960.webp">
                                 </div>
                                 <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Social Media</p>
                             </a>
@@ -129,7 +129,7 @@
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
                             <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true" href="#c3">
                                 <div class="bg-radius">
-                                    <img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Market_Place_1_53e4432aa1.webp">
+                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Market_Place_1_53e4432aa1.webp">
                                 </div>
                                 <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Market Place</p>
                             </a>
@@ -137,7 +137,7 @@
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
                             <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true" href="#c4">
                                 <div class="bg-radius">
-                                    <img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/E_Commerce_1_2a0856686e.webp">
+                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/E_Commerce_1_2a0856686e.webp">
                                 </div>
                                 <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>E-Commerce</p>
                             </a>
@@ -145,7 +145,7 @@
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
                             <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true" href="#c5">
                                 <div class="bg-radius">
-                                    <img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/LINE_1_01da326f99.webp">
+                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/LINE_1_01da326f99.webp">
                                 </div>
                                 <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">ครบจบ <br>ทุกเรื่อง LINE</p>
                             </a>
@@ -153,7 +153,7 @@
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
                             <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true" href="#c6">
                                 <div class="bg-radius">
-                                    <img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Martech_1_b04d7041eb.webp">
+                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Martech_1_b04d7041eb.webp">
                                 </div>
                                 <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">Martech</p>
                             </a>
@@ -161,7 +161,7 @@
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
                             <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true,c7 = true" href="#c7">
                                 <div class="bg-radius">
-                                    <img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Digital_Transformation_1_a66fa3e27e.webp">
+                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Digital_Transformation_1_a66fa3e27e.webp">
                                 </div>
                                 <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">Digital <br>Transformation</p>
                             </a>
@@ -535,7 +535,7 @@ export default {
 
 .bg-radius{
     background: #F2F3F5;
-    padding: 40px;
+    padding: 32px;
     border-radius: 50%;
 }
 

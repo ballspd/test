@@ -88,15 +88,16 @@
                 </div>
                 <div class="bg">
                   <div class="p-5" style="background: rgba(0, 0, 0, 0.3);display: flex;height: 350px;">
-                    <font class="font-wght mt-auto mb-auto ms-4" style="font-size:64px;color:#FBFBFB">LOREM</font>
+                    <font class="font-wght mt-auto mb-auto ms-4" style="font-size:64px;color:#FBFBFB">SELLSUKI LIFE</font>
                   </div>
                 </div>
                 <div class="row p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4" style="margin-top: -150px;">
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
-                       <div class="card item-center">
-                        <div class="card-body" style="padding:2.5rem 1rem;">
-                          <p class="card-title font-wght" style="font-size:30px">Thatim Prakaymaneewong</p>
-                          <p class="text-s-24 font-wght">LINE Product Owner</p>
+                       <div class="card item-center" style="height: 550px">
+                        <div class="card-body p-4">
+                          <img class="pb-3" width="90" src="./../assets/Ellipse52.png" alt="">
+                          <p class="card-title font-wght text-s-20">Thatim Prakaymaneewong</p>
+                          <p class="text-s-16 font-wght">LINE Product Owner</p>
                           <p class="card-text text-s-16">ที่นี่ให้อิสระในการทำงาน
                               ให้โอกาส ให้ลองผิดลองถูก ทำให้เราได้เติบโตขึ้นในทุกวันเหม
                               และที่นี่ยังมีโครงสร้างองค์กรณ์ที่ค่อนข้างยืดหยุ่น
@@ -108,27 +109,15 @@
                       </div>
                     </div>
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
-                       <div class="card item-center">
-                        <div class="card-body" style="padding:2.5rem 1rem;">
-                          <p class="card-title font-wght" style="font-size:30px">Panadda Kongsuk</p>
-                          <p class="text-s-24 font-wght">Business Development Executive</p>
+                       <div class="card item-center" style="height: 550px">
+                        <div class="card-body p-4">
+                          <img class="pb-3" width="90" src="./../assets/Ellipse52.png" alt="">
+                          <p class="card-title font-wght text-s-20">Panadda Kongsuk</p>
+                          <p class="text-s-16 font-wght">Business Development Executive</p>
                           <p class="card-text text-s-16">ที่นี่อิสระทางความคิด และเป็นการทำงานที่เน้นผลงานมากกว่าลำดับชั้น 
                             สิ่งที่ได้จากการทำงานที่นี่คือ คำว่าพี่น้อง ไม่ใช่กาสะลองซองปีบ แต่เป็น สังคมของการช่วยเหลือพร้อมที่จะเติบโตไปพร้อมกัน 
                             เรารักษาและดูแลใจกันแบบมนุษย์ที่ทุกคนเท่าเทียมกัน ภายใต้กรอบแนวคิดคือเคารพความเห็นซึ่งกันและกัน จนหลายครั้งก็กลาย
                             เป็นแนวทางในการผลิตบริการตัวใหม่จากหลายความเห็นของหลายคนมาร่วมกัน ความสุขที่ได้จากการทำงาน การมองเห็นอนาคตของเราและองค์กรเติบโตไปด้วยกัน
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
-                       <div class="card item-center">
-                        <div class="card-body" style="padding:2.5rem 1rem;">
-                          <p class="card-title font-wght" style="font-size:36px">Lorem ipsum</p>
-                          <p class="text-s-30 font-wght">Lorem ipsum</p>
-                          <p class="font-wght" style="font-size:20px">Lorem ipsum</p>
-                          <p class="card-text text-s-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                           </p>
                         </div>
                       </div>
