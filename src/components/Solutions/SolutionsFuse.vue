@@ -182,10 +182,7 @@ export default {
             if(this.windowTop > 2000){
                 document.querySelector('#contant5').style.display = "block";
             }
-            if(this.windowTop > 2400){
-                document.querySelector('#contant6').style.display = "block";
-            }
-            if(this.windowTop > 2600){
+            if(this.windowTop > 2200){
                 this.animation1 = true
             }
         }

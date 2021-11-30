@@ -10,14 +10,14 @@
                         <table class="align-middle" style="width: 100%;">
                             <td class="banner-height">
                                 <font class="font-wght" style="font-size:64px;color:#50151C">Contact Us</font>
-                                <p class="text-s-16" style="color:#50151C">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                                <p class="text-s-16" style="color:#50151C">สอบถามข้อมูลเพิ่มเติมและปรึกษาเพื่อหาทางออกที่ใช้ให้ธุรกิจคุณ ติดต่อทีมงานของเราได้เลย!</p>
                             </td>
                         </table>
                     </div>
                     <div class="d-block d-md-none d-lg-none d-xl-none d-xxl-none text-center ps-4 pe-4">
                         <p class="text-s-16 mt-4 text-start" style="color:#50151C"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">Contact Us</font></p>
                         <font class="font-wght mt-3" style="font-size:36px;color:#50151C">Contact Us</font>
-                        <p class="text-s-16" style="color:#50151C">Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                        <p class="text-s-16" style="color:#50151C">สอบถามข้อมูลเพิ่มเติมและปรึกษาเพื่อหาทางออกที่ใช้ให้ธุรกิจคุณ ติดต่อทีมงานของเราได้เลย!</p>
                     </div>
                 </div>
                 <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -54,10 +54,10 @@
                         </form>
                     </div>
                     <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12 text-center">
-                        <img class="item-center mt-5" width="193" height="82" src="./../assets/image103.png">
+                        <img class="item-center mt-5" width="193" height="82" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Sellsuki_logo_01_3_41353765c4.png">
                         <p class="text-s-16 mt-4" style="color:#23243D">Sellsuki Co,. Ltd. อาคาร 4 Simplex <br>ชั้น 3 เลขที่ 10/39 ถนนรัชดาภิเษก <br>แขวงจันทรเกษม เขตจตุจักร กรุงเทพมหานคร 10900</p>
                         <p class="text-s-16 mt-5" style="color:#23243D">โทรศัพท์ : 02-026-3250</p>
-                        <img class="item-center mt-4" src="./../assets/image65.png" >
+                        <img class="item-center mt-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/sellsuki_actor_2_0237634e46.webp" >
                     </div>
                 </div>
                 <div class="row">

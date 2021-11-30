@@ -149,4 +149,9 @@ export default {
     height: 230px;
     object-fit: cover;
 }
+
+.card-img, .card-img-top{
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
 </style>

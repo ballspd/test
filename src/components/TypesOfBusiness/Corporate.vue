@@ -34,57 +34,50 @@
             <div class="crad">
                 <div class="mt-custom p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-5 p-5">
                     <div v-for="(data, index) in responseData" :key="index">
-                        <div v-if="data.position_left" class="row p-custom-2 mt-5">
-                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                                <div class="text-lg-start text-center d-block d-lg-none">
-                                    <p class="mt-4 text-s-30 text-w-700">{{data.header}}</p>
+                        <div :id="'contant' + (index + 1)" style="display:none">
+                            <div v-if="data.position_left" class="row p-custom-2 mt-5">
+                                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                                    <div class="text-lg-start text-center d-block d-lg-none animate__animated animate__bounceInRight animate__slow">
+                                        <p class="mt-4 text-s-30 text-w-700">{{data.header}}</p>
+                                    </div>
+                                    <img class="item-center mt-4  animate__animated animate__zoomInLeft animate__slow" :src="data.image.url" :alt="data.image.name">
                                 </div>
-                                <img class="item-center mt-4" :src="data.image.url" :alt="data.image.name">
-                            </div>
-                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 mt-5">
-                                <div class="text-lg-start text-center d-none d-lg-block">
-                                    <p class="mt-5 text-s-30 text-w-700">{{data.header}}</p>
-                                </div>    
-                                <div class="animate__animated animate__slideInUp">
-                                    <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
-                                        <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737">
-                                            {{data.detail}}
+                                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 mt-5">
+                                    <div class="text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInRight animate__slow">
+                                        <p class="mt-5 text-s-30 text-w-700">{{data.header}}</p>
+                                    </div>    
+                                    <div class="animate__animated animate__bounceInLeft animate__slow">
+                                        <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                         </div>
-                                    </div>
-                                    <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
-                                        <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">
-                                            {{data.detail}}
+                                        <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                         </div>
+                                        <a v-if="data.detail.length>180" class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
                                     </div>
-                                    <a class="accordion-button collapsed cursor-pointer ms-auto me-2" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
                                 </div>
                             </div>
-                        </div>
-                        <div v-else class="row p-custom-2 mt-5">
-                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 mt-5">
-                                <div class="text-lg-start text-center d-none d-lg-block">
-                                    <p class="mt-4 text-s-30 text-w-700 mt-5">{{data.header}}</p>
-                                </div>
-                                <div class="animate__animated animate__slideInUp">
-                                    <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
-                                        <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737">
-                                            {{data.detail}}
-                                        </div>
+                            <div v-else class="row p-custom-2 mt-5">
+                                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 mt-5">
+                                    <div class="text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInLeft animate__slow">
+                                        <p class="mt-4 text-s-30 text-w-700 mt-5">{{data.header}}</p>
                                     </div>
-                                    <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
-                                        <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737">
-                                            {{data.detail}}
+                                    <div class="animate__animated animate__bounceInRight animate__slow">
+                                        <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                         </div>
+                                        <div class="collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMix'+data.id">
+                                            <div class="text-16 mt-4 p-2 pb-0 mb-0" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
+                                        </div>
+                                        <a v-if="data.detail.length>180" class="accordion-button collapsed cursor-pointer ms-auto me-0" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
                                     </div>
-                                    <a class="accordion-button collapsed cursor-pointer ms-auto me-2" style="width: 30px;" data-bs-toggle="collapse" :data-bs-target="'.multi-collapse'+data.id" aria-expanded="false" :aria-controls="'showCollapseMin'+data.id+' showCollapseMix'+data.id"></a>
                                 </div>
-                            </div>
-                            <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                                <div class="text-lg-start text-center d-block d-lg-none">
-                                    <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP {{index + 2}}</span>
-                                    <p class="mt-4 text-s-30 text-w-700">{{data.header}}</p>
+                                <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                                    <div class="text-lg-start text-center d-block d-lg-none animate__animated animate__bounceInLeft animate__slow">
+                                        <p class="mt-4 text-s-30 text-w-700">{{data.header}}</p>
+                                    </div>
+                                    <img class="item-center mt-4  animate__animated animate__zoomInRight animate__slow" :src="data.image.url" :alt="data.image.name">
                                 </div>
-                                <img class="item-center mt-4" :src="data.image.url" :alt="data.image.name">
                             </div>
                         </div>
                     </div>
@@ -167,6 +160,7 @@ import InterestingArticles from '@/components/InterestingArticles'
 import Review from '@/components/Review'
 import GetQuote from '@/components/GetQuote'
 import Preloader from '@/components/Preloader'
+import marked from 'marked'
 
 export default {
     name: 'Corporate',
@@ -187,6 +181,29 @@ export default {
     mounted () {
         this.axios.get('coporates?_locale='+ this.lang)
         .then(response => (this.responseData = response.data))
+
+        window.addEventListener('scroll', this.onShow);
+    },
+    methods:{
+        markdownToHtml(data){
+            if(data != undefined){
+                return marked(data);
+            }else{
+                return '';
+            }
+        },
+        onShow (event) {
+            this.windowTop = event.target.documentElement.scrollTop;
+            if(this.windowTop > 200){
+                document.querySelector('#contant1').style.display = "block";
+            }
+            if(this.windowTop > 600){
+                document.querySelector('#contant2').style.display = "block";
+            }
+            if(this.windowTop > 1000){
+                document.querySelector('#contant3').style.display = "block";
+            }
+        },
     }
 }
 </script>

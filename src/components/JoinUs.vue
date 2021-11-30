@@ -93,7 +93,7 @@
                 </div>
                 <div class="row p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4" style="margin-top: -150px;">
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
-                       <div class="card item-center" style="height: 550px">
+                       <div class="card item-center" style="height: 480px">
                         <div class="card-body p-4">
                           <img class="pb-3" width="90" src="./../assets/Ellipse52.png" alt="">
                           <p class="card-title font-wght text-s-20">Thatim Prakaymaneewong</p>
@@ -109,15 +109,34 @@
                       </div>
                     </div>
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
-                       <div class="card item-center" style="height: 550px">
+                       <div class="card item-center" style="height: 480px">
                         <div class="card-body p-4">
                           <img class="pb-3" width="90" src="./../assets/Ellipse52.png" alt="">
                           <p class="card-title font-wght text-s-20">Panadda Kongsuk</p>
                           <p class="text-s-16 font-wght">Business Development Executive</p>
-                          <p class="card-text text-s-16">ที่นี่อิสระทางความคิด และเป็นการทำงานที่เน้นผลงานมากกว่าลำดับชั้น 
-                            สิ่งที่ได้จากการทำงานที่นี่คือ คำว่าพี่น้อง ไม่ใช่กาสะลองซองปีบ แต่เป็น สังคมของการช่วยเหลือพร้อมที่จะเติบโตไปพร้อมกัน 
-                            เรารักษาและดูแลใจกันแบบมนุษย์ที่ทุกคนเท่าเทียมกัน ภายใต้กรอบแนวคิดคือเคารพความเห็นซึ่งกันและกัน จนหลายครั้งก็กลาย
-                            เป็นแนวทางในการผลิตบริการตัวใหม่จากหลายความเห็นของหลายคนมาร่วมกัน ความสุขที่ได้จากการทำงาน การมองเห็นอนาคตของเราและองค์กรเติบโตไปด้วยกัน
+                          <p class="card-text text-s-16">ที่นี่อิสระทางความคิด และเป็นการทำงานที่เน้นผลงาน
+                              สิ่งที่ได้จากการทำงานที่นี่คือ คำว่าพี่น้อง 
+                              สังคมของการช่วยเหลือพร้อมที่จะเติบโตไปพร้อมกัน 
+                              เรารักษาและดูแลทุกคนอย่างเท่าเทียมกัน เคารพความเห็นซึ่งกันและกัน 
+                              ทำำให้เรามีความสุขจากการทำงาน และมององคืกรของเราเติบดตไปด้วยกัน
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
+                       <div class="card item-center" style="height: 480px">
+                        <div class="card-body p-4">
+                          <img class="pb-3" width="90" src="./../assets/Ellipse52.png" alt="">
+                          <p class="card-title font-wght text-s-20">Wasin Jamroensap</p>
+                          <p class="text-s-16 font-wght">Backend Developer</p>
+                          <p class="card-text text-s-16">ถ้าจะเปรียบว่าโรงเรียนเป็นบ้านหลังที่สอง 
+                              ที่นี่ก็คงเป็นบ้านอีกหลังนึงสำหรับเราแหละ
+                              อยู่มาตั้งแต่เป็นเด็กฝึกงานยันเป็นพนักงาน
+                              ได้พบเจอเพื่อนร่วมงานหลากหลายแบบ
+                              ได้เรียนรู้ และเติบโตในหลายๆ เรื่อง
+                              ได้เห็นความเปลี่ยนแปลงต่างๆ
+                              มีช่วงที่ สนุกบ้าง กดดันบ้าง เศร้าบ้าง
+                              แต่ก็ดีใจนะที่ได้มาฝึกงานและได้ทำงานที่นี่ :)
                           </p>
                         </div>
                       </div>

@@ -10,7 +10,7 @@
                         <table class="align-middle" style="width: 100%;">
                             <td class="banner-height">
                                 <font class="font-wght" style="font-size:64px;color:#50151C">Blog</font>
-                                <p class="text-s-16" style="color:#50151C">ติดตามข่าวสาร และข้อมูลดี ๆ เกี่ยวกับ เทรนด์การตลาด และ e-Commerce ก่อนใครได้แล้ว ที่นี่!</p>
+                                <p class="text-s-16" style="color:#50151C;width: 395px;">ติดตามข่าวสาร และข้อมูลดี ๆ เกี่ยวกับ เทรนด์การตลาด และ e-Commerce ก่อนใครได้แล้ว ที่นี่!</p>
                             </td>
                         </table>
                     </div>

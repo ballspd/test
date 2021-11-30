@@ -30,7 +30,10 @@
                                 <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">KAIKONG</h1>
                                 <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">บริการ Content Marketing วางแผน สร้างคอนเทนต์ที่โดนใจ ส่งไปหากลุ่มเป้าหมายที่ใช่ พร้อมบริการ Admin ดูแลเพจ ที่จะช่วยคอยตอบคำถาม ทำให้แบรนด์คุณสนทนาโต้ตอบกับลูกค้าได้อย่างรวดเร็ว  และปิดการขายอย่างมืออาชีพ</p>
                             </div>
-                            <div v-else><h1 class="font-wght mt-5 text-s-banner" style="color:#50151C;width:600px">E-COMMERCE <br>SOLUTION</h1></div>
+                            <div v-else>
+                                <h1 class="font-wght mt-5 text-s-banner" style="color:#50151C;width:600px">E-COMMERCE <br>SOLUTION</h1>
+                                <p class="text-s-16" style="color:#50151C;width:420px">Sellsuki ผู้ช่วยธุรกิจออนไลน์ที่ครบเครื่องมากที่สุด ช่วยมองหาทางออกที่ใช่ให้ธุรกิจคุณ</p>
+                            </div>
                         </td>
                     </table>
                 </div>
@@ -45,29 +48,32 @@
                         <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">LINE FULFILLMENT</h1>
                         <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">บริการคลังสินค้าครบวงจรที่ช่วยดูแลสินค้าของคุณในทุก ๆ ขั้นตอนตั้งกระบวนการจัดเก็บ แพ็ก หรือขนส่งสินค้าถึงมือผู้รับ อย่างปลอดภัย ช่วยเพิ่มเวลาในการทำงานของคุณเพื่อไปวาง แผนในการขยายธุรกิจ</p>
                     </div>
-                    <div v-else class="text-center"><h1 class="font-wght" style="font-size:36px;color:#50151C;margin-top:120px">E-COMMERCE <br>SOLUTION</h1></div>
+                    <div v-else class="text-center">
+                        <h1 class="font-wght" style="font-size:36px;color:#50151C;margin-top:120px">E-COMMERCE <br>SOLUTION</h1>
+                        <p class="text-s-16" style="color:#50151C">Sellsuki ผู้ช่วยธุรกิจออนไลน์ที่ครบเครื่องมากที่สุด ช่วยมองหาทางออกที่ใช่ให้ธุรกิจคุณ</p>
+                    </div>
                 </div>
             </div>
             <div class="col-xxl-7 col-xl-7 col-lg-8 col-md-12 col-sm-12 col-12">
                 <div class="row d-none d-lg-block" style="margin-top: 80px;">
                     <div class="col-12">
-                        <img @mouseover="activeBuFuse = true,showHover = false" @mouseleave="activeBuFuse = false" class="bu-fuse hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
-                        <img @mouseover="activeBuLine = true,showHover = false" @mouseleave="activeBuLine = false" class="bu-line hvr-grow" :class="{'auto-pulse':showHover}" src="./../assets/Banner/Line.png" alt="Fuse.png">
-                        <img @mouseover="activeBuAkita = true,showHover = false" @mouseleave="activeBuAkita = false" class="bu-akita hvr-grow" src="./../assets/Banner/Fuse.png" alt="Akita.png">
-                        <img @mouseover="activeBuBeary = true,showHover = false" @mouseleave="activeBuBeary = false" class="bu-beary hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
-                        <img @mouseover="activeBuKaikong = true,showHover = false" @mouseleave="activeBuKaikong = false" class="bu-kaikong hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
-                        <img class="bu-size" src="./../assets/Main.png">
+                        <router-link @click="scrollToTop" to="/Solutions/Fuse"><img @mouseover="activeBuFuse = true,showHover = false" @mouseleave="activeBuFuse = false" class="bu-fuse hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png"></router-link>
+                        <router-link @click="scrollToTop" to="/Solutions/Line"><img @mouseover="activeBuLine = true,showHover = false" @mouseleave="activeBuLine = false" class="bu-line hvr-grow" :class="{'auto-pulse':showHover}" src="./../assets/Banner/Line.png" alt="Fuse.png"></router-link>
+                        <router-link @click="scrollToTop" to="/Solutions/Akita"><img @mouseover="activeBuAkita = true,showHover = false" @mouseleave="activeBuAkita = false" class="bu-akita hvr-grow" src="./../assets/Banner/Fuse.png" alt="Akita.png"></router-link>
+                        <router-link @click="scrollToTop" to="/Solutions/Beary"><img @mouseover="activeBuBeary = true,showHover = false" @mouseleave="activeBuBeary = false" class="bu-beary hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png"></router-link>
+                        <router-link @click="scrollToTop" to="/Solutions/Kaikong"><img @mouseover="activeBuKaikong = true,showHover = false" @mouseleave="activeBuKaikong = false" class="bu-kaikong hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png"></router-link>
+                        <img class="bu-size" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Banner_Hero_Main_046ae72c6f.webp">
                     </div>
                 </div>
                 <div class="d-block d-lg-none">
                     <div class="row justify-content-center">
                         <div class="col-md-8 col-sm-11 col-10">
-                            <img @click="showHover = false,activeBuFuse = true ,activeBuLine = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-fuse hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
-                            <img @click="showHover = false,activeBuLine = true ,activeBuFuse = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-line" :class="{'auto-pulse':showHover}" src="./../assets/Banner/Line.png" alt="Line.png">
-                            <img @click="showHover = false,activeBuAkita = true ,activeBuFuse = false, activeBuLine = false, activeBuBeary = false, activeBuKaikong = false" class="bu-akita" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
-                            <img @click="showHover = false,activeBuBeary = true ,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuKaikong = false" class="bu-beary" src="./../assets/Banner/Line.png" alt="Line.png">
-                            <img @click="showHover = false,activeBuKaikong = true ,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuBeary = false" class="bu-kaikong" src="./../assets/Banner/Fuse.png" alt="Fuse.png">
-                            <img class="item-center bu-size" src="./../assets/Main.png">
+                            <router-link @click="scrollToTop" to="/Solutions/Fuse"><img @click="showHover = false,activeBuFuse = true ,activeBuLine = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-fuse hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png"></router-link>
+                            <router-link @click="scrollToTop" to="/Solutions/Line"><img @click="showHover = false,activeBuLine = true ,activeBuFuse = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-line" :class="{'auto-pulse':showHover}" src="./../assets/Banner/Line.png" alt="Line.png"></router-link>
+                            <router-link @click="scrollToTop" to="/Solutions/Akita"><img @click="showHover = false,activeBuAkita = true ,activeBuFuse = false, activeBuLine = false, activeBuBeary = false, activeBuKaikong = false" class="bu-akita" src="./../assets/Banner/Fuse.png" alt="Fuse.png"></router-link>
+                            <router-link @click="scrollToTop" to="/Solutions/Beary"><img @click="showHover = false,activeBuBeary = true ,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuKaikong = false" class="bu-beary" src="./../assets/Banner/Line.png" alt="Line.png"></router-link>
+                            <router-link @click="scrollToTop" to="/Solutions/Kaikong"><img @click="showHover = false,activeBuKaikong = true ,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuBeary = false" class="bu-kaikong" src="./../assets/Banner/Fuse.png" alt="Fuse.png"></router-link>
+                            <img class="item-center bu-size" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Banner_Hero_Main_046ae72c6f.webp">
                         </div>
                     </div>
                 </div>

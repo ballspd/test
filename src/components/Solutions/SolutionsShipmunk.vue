@@ -38,7 +38,7 @@
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 theme-background-sub hvr-float-shadow">
                                 <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsShipmunk/icon-solutions-shipmunk-1.png"></div>
                             </div>
-                            <h2 class="text-s-18 mt-4 ps-3 pe-3" style="color:#0A0909;line-height: 1.5;">บริการจัดส่ง <br>สินค้าแช่เย็น แช่แข็ง</h2>
+                            <h2 class="text-s-18 mt-4 ps-3 pe-3" style="color:#0A0909;line-height: 1.5;">บริการจัดส่งทั่วไป <br>สินค้าแช่เย็น แช่แข็ง</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 theme-background-main hvr-float-shadow">
@@ -138,17 +138,17 @@
                             <Splide data-splide='{"type":"loop","padding":"20rem"}'>
                                     <SplideSlide>
                                     <div style="padding-top: 30px !important;">
-                                        <img class="item-center" width="385" height="385" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
+                                        <img class="item-center" width="385" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_1_ca62b683df.webp" alt="shipmunk-banner2.png">
                                     </div>
                                     </SplideSlide>
                                     <SplideSlide>
                                     <div style="padding-top: 30px !important;">
-                                        <img class="item-center" width="385" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/business_owner_working_home_office_f0ca478a08.png" alt="hipmunk-banner2.png">
+                                        <img class="item-center" width="385" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_2_dba10752e9.webp" alt="shipmunk-banner2.png">
                                     </div>
                                     </SplideSlide>
                                     <SplideSlide>
                                     <div style="padding-top: 30px !important;">
-                                        <img class="item-center" width="385" height="385" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
+                                        <img class="item-center" width="385" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_3_db62025453.webp" alt="shipmunk-banner2.png">
                                     </div>
                                     </SplideSlide>
                             </Splide>
@@ -157,17 +157,17 @@
                             <Splide data-splide='{"type":"loop","padding":"15rem"}'>
                                     <SplideSlide>
                                     <div style="padding-top: 30px !important;">
-                                        <img class="item-center" width="385" height="385" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
+                                        <img class="item-center" width="385" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_1_ca62b683df.webp" alt="shipmunk-banner2.png">
                                     </div>
                                     </SplideSlide>
                                     <SplideSlide>
                                     <div style="padding-top: 30px !important;">
-                                        <img class="item-center" width="385" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/business_owner_working_home_office_f0ca478a08.png" alt="hipmunk-banner2.png">
+                                        <img class="item-center" width="385" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_2_dba10752e9.webp" alt="shipmunk-banner2.png">
                                     </div>
                                     </SplideSlide>
                                     <SplideSlide>
                                     <div style="padding-top: 30px !important;">
-                                        <img class="item-center" width="385" height="385" src="./../../assets/SolutionsShipmunk/Shipmunk-banner2.png" alt="hipmunk-banner2.png">
+                                        <img class="item-center" width="385" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_3_db62025453.webp" alt="shipmunk-banner2.png">
                                     </div>
                                     </SplideSlide>
                             </Splide>
@@ -177,17 +177,17 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="10000">
                                         <div class="col-12 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                            <img width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                            <img width="375" height="375" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_1_ca62b683df.webp" alt="shipmunk-banner.png">
                                         </div>
                                     </div>
                                     <div class="carousel-item" data-bs-interval="2000">
                                         <div class="col-12 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                            <img width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                            <img width="375" height="375" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_2_dba10752e9.webp" alt="shipmunk-banner.png">
                                         </div>
                                     </div>
                                     <div class="carousel-item">
                                         <div class="col-12 d-flex justify-content-center" style="padding-top: 30px !important;">
-                                            <img width="375" height="375" src="./../../assets/SolutionsShipmunk/Shipmunk-banner.png" alt="hipmunk-banner.png">
+                                            <img width="375" height="375" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_3_db62025453.webp" alt="shipmunk-banner.png">
                                         </div>
                                     </div>
                                 </div>

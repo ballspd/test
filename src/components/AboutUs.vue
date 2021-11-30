@@ -92,7 +92,7 @@
                             </div>
                         </div>
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <img class="img-fluid" src="./../assets/image66.png" style="padding: 35px;">
+                            <img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/sellsuki_actor_6e6001e337.webp" style="padding: 35px;">
                         </div>
                     </div>
                 </div>
@@ -146,7 +146,7 @@ export default {
 
 <style scoped>
 .bg{
-  background-image: url('./../assets/image61.png');
+  background-image: url('https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/GET_A_QUOTE_2_2d7a8b05a4.webp');
   background-position: center;
   background-repeat: no-repeat;
 }

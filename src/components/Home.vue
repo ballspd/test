@@ -178,11 +178,11 @@
                   </div>
                 </div>
               </div>
-              <div class="row mt-3 p-3">
+              <!-- <div class="row mt-3 p-3">
                 <div class="col-12">
                   <iframe width="100%" height="320" src="https://www.youtube.com/embed/dxN2yRqXTYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-              </div>
+              </div> -->
             </div>
           <Review :type="type"/>
           <div class="row mt-3 mb-3 d-none d-xl-block d-xxl-block">
@@ -278,10 +278,5 @@ export default {
 .hvr-grow-rotate-left:hover, .hvr-grow-rotate-left:focus, .hvr-grow-rotate-left:active {
   -webkit-transform: scale(1.1) rotate(-4deg);
   transform: scale(1.1) rotate(-4deg);
-}
-
-.card-img, .card-img-top{
-  border-top-left-radius: 10px !important;
-  border-top-right-radius: 10px !important;
 }
 </style>

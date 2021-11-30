@@ -32,23 +32,23 @@
         </div>
         <div class="container">
             <div class="crad">
-                <div class="mt-custom p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-5 p-5" style="margin-bottom: 20px;">
+                <div class="mt-custom p-xxl-4 p-xl-4 p-lg-5 p-md-4 p-sm-5 p-5" style="margin-bottom: 40px;">
                     <div v-for="(data, index) in responseData" :key="index">
                         <div :id="'contant' + (index + 1)" style="display:none">
                             <div v-if="data.position_left" class="row p-custom-2 mt-5">
                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                                    <div class="text-lg-start text-center d-block d-lg-none">
-                                        <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP {{index + 1}}</span>
+                                    <div class="text-lg-start text-center d-block d-lg-none animate__animated animate__bounceInRight animate__slow">
+                                        <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 5px 15px;">STEP {{index + 1}}</span>
                                         <p class="mt-4 text-s-30 text-w-700">{{data.header}}</p>
                                     </div>
-                                    <img class="item-center mt-4" :src="data.image.url" :alt="data.image.name">
+                                    <img class="item-center mt-4 animate__animated animate__zoomInLeft animate__slow" :src="data.image.url" :alt="data.image.name">
                                 </div>
                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 mt-5">
-                                    <div class="text-lg-start text-center d-none d-lg-block">
-                                        <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP {{index + 1}}</span>
+                                    <div class="text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInRight animate__slow">
+                                        <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 5px 15px">STEP {{index + 1}}</span>
                                         <p class="mt-5 text-s-30 text-w-700">{{data.header}}</p>
                                     </div>    
-                                    <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                    <div class="animate__animated animate__bounceInLeft animate__slow">
                                         <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
                                             <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                         </div>
@@ -61,11 +61,11 @@
                             </div>
                             <div v-else class="row p-custom-2 mt-5">
                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 mt-5">
-                                    <div class="text-lg-start text-center d-none d-lg-block">
-                                        <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP {{index + 1}}</span>
+                                    <div class="text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInLeft animate__slow">
+                                        <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 5px 15px">STEP {{index + 1}}</span>
                                         <p class="mt-4 text-s-30 text-w-700 mt-5">{{data.header}}</p>
                                     </div>
-                                    <div class="animate__animated animate__zoomIn animate__delay-2s">
+                                    <div class="animate__animated animate__bounceInRight animate__slow">
                                         <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
                                             <div class="text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
                                         </div>
@@ -76,11 +76,11 @@
                                     </div>
                                 </div>
                                 <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                                    <div class="text-lg-start text-center d-block d-lg-none">
-                                        <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 12px 20px">STEP {{index + 1}}</span>
+                                    <div class="text-lg-start text-center d-block d-lg-none animate__animated animate__bounceInLeft animate__slow">
+                                        <span class="text-s-30 font-wght text-white" style="background: #F47530;border-radius: 10px;padding: 5px 15px">STEP {{index + 1}}</span>
                                         <p class="mt-4 text-s-30 text-w-700">{{data.header}}</p>
                                     </div>
-                                    <img class="item-center mt-4" :src="data.image.url" :alt="data.image.name">
+                                    <img class="item-center mt-4 animate__animated animate__zoomInRight animate__slow" :src="data.image.url" :alt="data.image.name">
                                 </div>
                             </div>
                         </div>
@@ -135,23 +135,15 @@ export default {
             this.windowTop = event.target.documentElement.scrollTop;
             if(this.windowTop > 200){
                 document.querySelector('#contant1').style.display = "block";
-            }else if(this.windowTop < 200){
-                document.querySelector('#contant1').style.display = "none";
             }
             if(this.windowTop > 600){
                 document.querySelector('#contant2').style.display = "block";
-            }else if(this.windowTop < 600){
-                document.querySelector('#contant2').style.display = "none";
             }
             if(this.windowTop > 1000){
                 document.querySelector('#contant3').style.display = "block";
-            }else if(this.windowTop < 1000){
-                document.querySelector('#contant3').style.display = "none";
             }
             if(this.windowTop > 1500){
                 this.animation1 = true
-            }else if(this.windowTop < 1300){
-                this.animation1 = false
             }
         },
         markdownToHtml(data){
