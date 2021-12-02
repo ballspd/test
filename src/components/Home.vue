@@ -178,11 +178,11 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="row mt-3 p-3">
+              <div class="row mt-3 p-3">
                 <div class="col-12">
                   <iframe width="100%" height="320" src="https://www.youtube.com/embed/dxN2yRqXTYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-              </div> -->
+              </div>
             </div>
           <Review :type="type"/>
           <div class="row mt-3 mb-3 d-none d-xl-block d-xxl-block">

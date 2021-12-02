@@ -59,10 +59,10 @@
                     <div class="col-12">
                         <router-link @click="scrollToTop" to="/Solutions/Fuse"><img @mouseover="activeBuFuse = true,showHover = false" @mouseleave="activeBuFuse = false" class="bu-fuse hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png"></router-link>
                         <router-link @click="scrollToTop" to="/Solutions/Line"><img @mouseover="activeBuLine = true,showHover = false" @mouseleave="activeBuLine = false" class="bu-line hvr-grow" :class="{'auto-pulse':showHover}" src="./../assets/Banner/Line.png" alt="Fuse.png"></router-link>
-                        <router-link @click="scrollToTop" to="/Solutions/Akita"><img @mouseover="activeBuAkita = true,showHover = false" @mouseleave="activeBuAkita = false" class="bu-akita hvr-grow" src="./../assets/Banner/Fuse.png" alt="Akita.png"></router-link>
-                        <router-link @click="scrollToTop" to="/Solutions/Beary"><img @mouseover="activeBuBeary = true,showHover = false" @mouseleave="activeBuBeary = false" class="bu-beary hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png"></router-link>
-                        <router-link @click="scrollToTop" to="/Solutions/Kaikong"><img @mouseover="activeBuKaikong = true,showHover = false" @mouseleave="activeBuKaikong = false" class="bu-kaikong hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png"></router-link>
-                        <img class="bu-size" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Banner_Hero_Main_046ae72c6f.webp">
+                        <router-link @click="scrollToTop" to="/Solutions/Akita"><img @mouseover="activeBuAkita = true,showHover = false" @mouseleave="activeBuAkita = false" class="bu-akita hvr-grow" src="./../assets/Banner/AKT.png" alt="Akita.png"></router-link>
+                        <router-link @click="scrollToTop" to="/Solutions/Beary"><img @mouseover="activeBuBeary = true,showHover = false" @mouseleave="activeBuBeary = false" class="bu-beary hvr-grow" src="./../assets/Banner/Bearyweb.png" alt="Beary.png"></router-link>
+                        <router-link @click="scrollToTop" to="/Solutions/Kaikong"><img @mouseover="activeBuKaikong = true,showHover = false" @mouseleave="activeBuKaikong = false" class="bu-kaikong hvr-grow" src="./../assets/Banner/Kaikong.png" alt="Kaikong.png"></router-link>
+                        <img class="bu-size" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/SSK_Main_fa38f3ed9d.webp">
                     </div>
                 </div>
                 <div class="d-block d-lg-none">
@@ -70,10 +70,10 @@
                         <div class="col-md-8 col-sm-11 col-10">
                             <router-link @click="scrollToTop" to="/Solutions/Fuse"><img @click="showHover = false,activeBuFuse = true ,activeBuLine = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-fuse hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png"></router-link>
                             <router-link @click="scrollToTop" to="/Solutions/Line"><img @click="showHover = false,activeBuLine = true ,activeBuFuse = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-line" :class="{'auto-pulse':showHover}" src="./../assets/Banner/Line.png" alt="Line.png"></router-link>
-                            <router-link @click="scrollToTop" to="/Solutions/Akita"><img @click="showHover = false,activeBuAkita = true ,activeBuFuse = false, activeBuLine = false, activeBuBeary = false, activeBuKaikong = false" class="bu-akita" src="./../assets/Banner/Fuse.png" alt="Fuse.png"></router-link>
-                            <router-link @click="scrollToTop" to="/Solutions/Beary"><img @click="showHover = false,activeBuBeary = true ,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuKaikong = false" class="bu-beary" src="./../assets/Banner/Line.png" alt="Line.png"></router-link>
-                            <router-link @click="scrollToTop" to="/Solutions/Kaikong"><img @click="showHover = false,activeBuKaikong = true ,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuBeary = false" class="bu-kaikong" src="./../assets/Banner/Fuse.png" alt="Fuse.png"></router-link>
-                            <img class="item-center bu-size" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Banner_Hero_Main_046ae72c6f.webp">
+                            <router-link @click="scrollToTop" to="/Solutions/Akita"><img @click="showHover = false,activeBuAkita = true ,activeBuFuse = false, activeBuLine = false, activeBuBeary = false, activeBuKaikong = false" class="bu-akita" src="./../assets/Banner/AKT.png" alt="Akita.png"></router-link>
+                            <router-link @click="scrollToTop" to="/Solutions/Beary"><img @click="showHover = false,activeBuBeary = true ,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuKaikong = false" class="bu-beary" src="./../assets/Banner/Bearyweb.png" alt="Beary.png"></router-link>
+                            <router-link @click="scrollToTop" to="/Solutions/Kaikong"><img @click="showHover = false,activeBuKaikong = true ,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuBeary = false" class="bu-kaikong" src="./../assets/Banner/Kaikong.png" alt="Kaikong.png"></router-link>
+                            <img class="item-center bu-size" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/SSK_Main_fa38f3ed9d.webp">
                         </div>
                     </div>
                 </div>
@@ -231,21 +231,21 @@ export default {
     .bu-fuse{
         position: absolute;
         margin: 75px 0 0 380px;
-        width: 100px;
+        width: 110px;
         cursor: pointer;
     }
 
     .bu-line{
         position: absolute;
         margin: 60px 0 0 185px;
-        width: 100px;
+        width: 110px;
         cursor: pointer;
     }
 
     .bu-akita{
         position: absolute;
         margin: 200px 0 0 80px;
-        width: 100px;
+        width: 105px;
         cursor: pointer;
     }
 
@@ -259,7 +259,7 @@ export default {
     .bu-kaikong{
         position: absolute;
         margin: 360px 0 0 480px;
-        width: 100px;
+        width: 110px;
         cursor: pointer;
     }
 } 

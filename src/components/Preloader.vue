@@ -1,7 +1,7 @@
 <template>
 	<transition name="fade">
 		<div v-if="show" class="preloader animate__animated animate__fadeIn">
-			<img class="img-fluid logo-preloader"  src="./../assets/image60.png" alt="">
+			<img class="img-fluid logo-preloader"  src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Home_826a845399.webp" alt="Header-sellsuki.webp">
       <div class="waviy">
         <span style="--i:1">S</span>
         <span style="--i:2">E</span>

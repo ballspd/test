@@ -10,14 +10,14 @@
                         <table class="align-middle" style="width: 100%;">
                             <td class="banner-height">
                                 <font class="font-wght" style="font-size:64px;color:#50151C">Contact Us</font>
-                                <p class="text-s-16" style="color:#50151C">สอบถามข้อมูลเพิ่มเติมและปรึกษาเพื่อหาทางออกที่ใช้ให้ธุรกิจคุณ ติดต่อทีมงานของเราได้เลย!</p>
+                                <p class="text-s-16" style="color:#50151C">สอบถามข้อมูลเพิ่มเติมและปรึกษาเพื่อหาทางออกที่ใช่ให้ธุรกิจคุณ ติดต่อทีมงานของเราได้เลย!</p>
                             </td>
                         </table>
                     </div>
                     <div class="d-block d-md-none d-lg-none d-xl-none d-xxl-none text-center ps-4 pe-4">
                         <p class="text-s-16 mt-4 text-start" style="color:#50151C"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">Contact Us</font></p>
                         <font class="font-wght mt-3" style="font-size:36px;color:#50151C">Contact Us</font>
-                        <p class="text-s-16" style="color:#50151C">สอบถามข้อมูลเพิ่มเติมและปรึกษาเพื่อหาทางออกที่ใช้ให้ธุรกิจคุณ ติดต่อทีมงานของเราได้เลย!</p>
+                        <p class="text-s-16" style="color:#50151C">สอบถามข้อมูลเพิ่มเติมและปรึกษาเพื่อหาทางออกที่ใช่ให้ธุรกิจคุณ ติดต่อทีมงานของเราได้เลย!</p>
                     </div>
                 </div>
                 <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
