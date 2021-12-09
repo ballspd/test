@@ -174,7 +174,7 @@
                                 <font class="text-w-700" style="font-size:24px;color:#15304E">เทคนิคการขาย และการโฆษณา</font>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/1'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/8'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -191,6 +191,18 @@
                                     </div>
                                 </div>
                             </div>
+                            <div v-if="responseDatac1.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="row">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <img class="img-fix-size" src="./../assets/Group364.png">
+                                    </div>
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">Lorem Ipsum Lorem Ipsum Lorem Ipsum</font>
+                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
+                                        <p class="text-limit-2" style="color:#373737;font-size:14px">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <span id="c2" style="display: block;height: 85px;margin-top: -85px;"></span>
@@ -200,7 +212,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ Social Media</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/2'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/9'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -217,6 +229,18 @@
                                     </div>
                                 </div>
                             </div>
+                            <div v-if="responseDatac2.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="row">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <img class="img-fix-size" src="./../assets/Group364.png">
+                                    </div>
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">Lorem Ipsum Lorem Ipsum Lorem Ipsum</font>
+                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
+                                        <p class="text-limit-2" style="color:#373737;font-size:14px">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <span id="c3" style="display: block;height: 85px;margin-top: -85px;"></span>
@@ -226,7 +250,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ Market Place</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/3'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/10'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -243,6 +267,18 @@
                                     </div>
                                 </div>
                             </div>
+                            <div v-if="responseDatac3.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="row">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <img class="img-fix-size" src="./../assets/Group364.png">
+                                    </div>
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">Lorem Ipsum Lorem Ipsum Lorem Ipsum</font>
+                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
+                                        <p class="text-limit-2" style="color:#373737;font-size:14px">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <span id="c4" style="display: block;height: 85px;margin-top: -85px;"></span>
@@ -252,7 +288,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ E-Commerce</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/4'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/11'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -269,6 +305,18 @@
                                     </div>
                                 </div>
                             </div>
+                            <div v-if="responseDatac4.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="row">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <img class="img-fix-size" src="./../assets/Group364.png">
+                                    </div>
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">Lorem Ipsum Lorem Ipsum Lorem Ipsum</font>
+                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
+                                        <p class="text-limit-2" style="color:#373737;font-size:14px">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <span id="c5" style="display: block;height: 85px;margin-top: -85px;"></span>
@@ -278,7 +326,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">ครบจบ ทุกเรื่อง LINE</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/5'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/12'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -295,6 +343,18 @@
                                     </div>
                                 </div>
                             </div>
+                            <div v-if="responseDatac5.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="row">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <img class="img-fix-size" src="./../assets/Group364.png">
+                                    </div>
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">Lorem Ipsum Lorem Ipsum Lorem Ipsum</font>
+                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
+                                        <p class="text-limit-2" style="color:#373737;font-size:14px">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <span id="c6" style="display: block;height: 85px;margin-top: -85px;"></span>
@@ -304,7 +364,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">Martech</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/6'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/13'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -321,6 +381,18 @@
                                     </div>
                                 </div>
                             </div>
+                            <div v-if="responseDatac6.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="row">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <img class="img-fix-size" src="./../assets/Group364.png">
+                                    </div>
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">Lorem Ipsum Lorem Ipsum Lorem Ipsum</font>
+                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
+                                        <p class="text-limit-2" style="color:#373737;font-size:14px">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <span id="c7" style="display: block;height: 85px;margin-top: -85px;"></span>
@@ -330,7 +402,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">Digital Transformation</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/7'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/14'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -344,6 +416,18 @@
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
                                         <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div v-if="responseDatac7.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="row">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <img class="img-fix-size" src="./../assets/Group364.png">
+                                    </div>
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">Lorem Ipsum Lorem Ipsum Lorem Ipsum</font>
+                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
+                                        <p class="text-limit-2" style="color:#373737;font-size:14px">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
                                     </div>
                                 </div>
                             </div>
@@ -370,7 +454,7 @@ export default {
             isActive: true,
             show:false,
             windowTop:0,
-            lang: localStorage.getItem('lang') || 'en',
+            lang: localStorage.getItem('lang') || 'TH-th',
             c1:false,
             c2:false,
             c3:false,
@@ -413,7 +497,7 @@ export default {
             this.windowTop = e.target.documentElement.scrollTop;
             if(this.windowTop > '1200'){
                 this.c1 = true
-                this.axios.get('blogs?blog_category=1&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
+                this.axios.get('blogs?blog_category=8&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac1 = response.data))
                 .catch()
             }
@@ -423,7 +507,7 @@ export default {
             if(this.windowTop > '1650')
             {
                 this.c2 = true
-                this.axios.get('blogs?blog_category=2&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
+                this.axios.get('blogs?blog_category=9&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac2 = response.data))
                 .catch()
             }
@@ -433,7 +517,7 @@ export default {
             if(this.windowTop > '2150')
             {
                 this.c3 = true
-                this.axios.get('blogs?blog_category=3&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
+                this.axios.get('blogs?blog_category=10&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac3 = response.data))
                 .catch()
             }
@@ -443,7 +527,7 @@ export default {
             if(this.windowTop > '2650')
             {
                 this.c4 = true
-                this.axios.get('blogs?blog_category=4&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
+                this.axios.get('blogs?blog_category=11&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac4 = response.data))
                 .catch()
             }
@@ -453,7 +537,7 @@ export default {
             if(this.windowTop > '3150')
             {
                 this.c5 = true
-                this.axios.get('blogs?blog_category=5&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
+                this.axios.get('blogs?blog_category=12&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac5 = response.data))
                 .catch()
             }
@@ -463,7 +547,7 @@ export default {
             if(this.windowTop > '3650')
             {
                 this.c6 = true
-                this.axios.get('blogs?blog_category=6&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
+                this.axios.get('blogs?blog_category=13&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac6 = response.data))
                 .catch()
             }
@@ -473,7 +557,7 @@ export default {
             if(this.windowTop > '4150')
             {
                 this.c7 = true
-                this.axios.get('blogs?blog_category=7&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
+                this.axios.get('blogs?blog_category=14&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac7 = response.data))
                 .catch()
             }

@@ -43,13 +43,19 @@
                             <div class="col-12 p-0">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="10000">
-                                      <img src="./../assets/Group324.png" class="d-block w-100">
+                                      <img src="./../assets/joinUs/join-us-1.webp" class="d-block w-100">
                                     </div>
                                     <div class="carousel-item" data-bs-interval="2000">
-                                      <img src="./../assets/Group324.png" class="d-block w-100">
+                                      <img src="./../assets/joinUs/join-us-2.webp" class="d-block w-100">
                                     </div>
-                                    <div class="carousel-item">
-                                      <img src="./../assets/Group324.png" class="d-block w-100">
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                      <img src="./../assets/joinUs/join-us-3.webp" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                      <img src="./../assets/joinUs/join-us-4.webp" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                      <img src="./../assets/joinUs/join-us-5.webp" class="d-block w-100">
                                     </div>
                                 </div>
                             </div>
@@ -58,6 +64,8 @@
                             <button type="button" data-bs-target="#carouselimage" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselimage" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselimage" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselimage" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselimage" data-bs-slide-to="4" aria-label="Slide 5"></button>
                         </div>
                     </div>
                   </div>
@@ -95,7 +103,7 @@
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
                        <div class="card item-center" style="height: 480px">
                         <div class="card-body p-4">
-                          <img class="pb-3" width="90" src="./../assets/Ellipse52.png" alt="">
+                          <img class="pb-3" width="90" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Join_us_Profile_3_8b963d1591.webp" alt="">
                           <p class="card-title font-wght text-s-20">Thatim Prakaymaneewong</p>
                           <p class="text-s-16 font-wght">LINE Product Owner</p>
                           <p class="card-text text-s-16">ที่นี่ให้อิสระในการทำงาน ให้โอกาส ให้ลองผิดลองถูก ทำให้เราได้เติบโตขึ้นในทุกวัน 
@@ -109,7 +117,7 @@
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
                        <div class="card item-center" style="height: 480px">
                         <div class="card-body p-4">
-                          <img class="pb-3" width="90" src="./../assets/Ellipse52.png" alt="">
+                          <img class="pb-3" width="90" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Join_us_Profile_2_12169ea52c.webp" alt="">
                           <p class="card-title font-wght text-s-20">Panadda Kongsuk</p>
                           <p class="text-s-16 font-wght">Business Development Executive</p>
                           <p class="card-text text-s-16">ที่นี่ให้อิสระทางความคิด และเป็นการทำงานที่เน้นผลงาน
@@ -122,7 +130,7 @@
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
                        <div class="card item-center" style="height: 480px">
                         <div class="card-body p-4">
-                          <img class="pb-3" width="90" src="./../assets/Ellipse52.png" alt="">
+                          <img class="pb-3" width="90" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Join_us_Profile_1_ed39c8f93a.webp" alt="">
                           <p class="card-title font-wght text-s-20">Wasin Jamroensap</p>
                           <p class="text-s-16 font-wght">Backend Developer</p>
                           <p class="card-text text-s-16">ถ้าจะเปรียบว่าโรงเรียนเป็นบ้านหลังที่สอง 
@@ -158,7 +166,7 @@ export default {
     },
     data() {
       return {
-        lang: localStorage.getItem('lang') || 'en',
+        lang: localStorage.getItem('lang') || 'TH-th',
         responseData:[]
       }
     },

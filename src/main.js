@@ -16,14 +16,14 @@ import en from './locales/en.json'
 import th from './locales/th.json'
 
 const i18n = createI18n({
-    locale: localStorage.getItem('lang') || 'en',
+    locale: localStorage.getItem('lang') || 'TH-th',
     messages:{
         en:en,
         th:th
     }
 })
 
-const lang = localStorage.getItem('lang') || 'en'
+const lang = localStorage.getItem('lang') || 'TH-th'
 axios.defaults.baseURL = 'https://staging-sellsukiadmin.bearyweb.com/'
 axios.defaults.headers['Accept-language'] = lang
 

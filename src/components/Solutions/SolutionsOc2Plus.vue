@@ -51,7 +51,7 @@
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-5 mt-lg-0">
                             <img class="item-center animate__animated animate__rotateIn animate__slow animate__delay-1s" src="./../../assets/SolutionsOc2plus/Oc2Plus-03-ง่ายต่อการนำไปใช้งาน.png" alt="Oc2Plus-03-ง่ายต่อการนำไปใช้งาน.png">
-                            <h2 class="text-s-18 text-w-700 mt-4 ps-3 pe-3 theme-text-main animate__animated animate__fadeInDown animate__delay-2s">จัดเก็บไว้ในที่เดียว</h2>
+                            <h2 class="text-s-18 text-w-700 mt-4 ps-3 pe-3 theme-text-main animate__animated animate__fadeInDown animate__delay-2s">ง่ายต่อการนำไปใช้งาน</h2>
                         </div>      
                     </div>
                 </div>
