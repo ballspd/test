@@ -12,7 +12,7 @@
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:55px;color:#50151C;width: 600px;">ONLINE MERCHANT</h1>
                                     <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#50151C;width: 450px;">“เจ้าของ SME ธุรกิจกำลังขยาย งานล้นมือ ต้องมีผู้ช่วยมือดีคอยดูแลให้อยู่หมัด”</h2>
-                                    <p class="text-s-16 mt-3" style="color:#50151C;width: 505px">ถ้าคุณกำลังมีปัญหาเหล่านี้ ไม่ว่าจะเรื่องการวางแผนการขาย หรือไม่มีพื้นที่จัดเก็บสินค้า หรือการแพ็กส่งของต่าง ๆ วันนี้น้องสุกิมีผู้ช่วยที่จะ ทำให้ปัญหาเหล่านี้หมดไปมาแนะนำกัน !</p>
+                                    <p class="text-s-16 mt-3" style="color:#50151C;width: 460px">ถ้าคุณกำลังมีปัญหาเหล่านี้ ไม่ว่าจะเรื่องการวางแผนการขาย หรือไม่มีพื้นที่จัดเก็บสินค้า หรือการแพ็กส่งของต่าง ๆ วันนี้น้องสุกิมีผู้ช่วยที่จะ ทำให้ปัญหาเหล่านี้หมดไปมาแนะนำกัน !</p>
                                 </td>
                             </table>
                         </div>
@@ -24,8 +24,8 @@
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="d-none d-lg-block img-fluid img-banner-top" src="./../../assets/image60.png">
-                        <img class="d-block d-lg-none img-fluid" src="./../../assets/mobile/image60.png">
+                        <img class="d-none d-lg-block img-fluid img-banner-top" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Online_Merchant_acc9999dc3.webp">
+                        <img class="d-block d-lg-none img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Online_Merchant_acc9999dc3.webp">
                     </div>
                 </div>
             </div>
@@ -297,7 +297,7 @@ a{
         margin-top: 3rem!important;
     }
     .img-banner-top{
-        margin-top: 80px;
+        margin-top: 145px;
     }
     .bg-icon-single{
         width: 146px;

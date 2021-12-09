@@ -12,7 +12,7 @@
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:55px;color:#50151C;width: 600px;">BUSINESS OWNER</h1>
                                     <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#50151C;width: 420px;">“เคล็ดไม่ลับ เจ้าของธุรกิจมือใหม่ เริ่มต้นสร้างแบรนด์อย่างไรให้ปัง ?”</h2>
-                                    <p class="text-s-16 mt-3" style="color:#50151C;width: 505px">สำหรับเจ้าของธุรกิจมือใหม่ที่กำลังอยากจะเริ่มปั้นแบรนด์ สร้างธุรกิจเป็นของ ตัวเองควรอ่านบทความนี้ ! น้องสุกิจะมาช่วยแนะนำขั้นตอนในการเริ่มต้นธุรกิจ ให้ติดตลาด มียอดขายปัง ควรเริ่มจากตรงไหนถึงจะเป็นก้าวแรกที่มั่นคง</p>
+                                    <p class="text-s-16 mt-3" style="color:#50151C;width: 460px">สำหรับเจ้าของธุรกิจมือใหม่ที่กำลังอยากจะเริ่มปั้นแบรนด์ สร้างธุรกิจเป็นของ ตัวเองควรอ่านบทความนี้ ! น้องสุกิจะมาช่วยแนะนำขั้นตอนในการเริ่มต้นธุรกิจ ให้ติดตลาด มียอดขายปัง ควรเริ่มจากตรงไหนถึงจะเป็นก้าวแรกที่มั่นคง</p>
                                 </td>
                             </table>
                         </div>
@@ -24,8 +24,8 @@
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="d-none d-md-block img-fluid img-banner-top" src="./../../assets/image60.png">
-                        <img class="d-block d-md-none img-fluid" src="./../../assets/mobile/image60.png">
+                        <img class="d-none d-md-block img-fluid img-banner-top" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Business_Owner_8d95a489f3.webp">
+                        <img class="d-block d-md-none img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Business_Owner_8d95a489f3.webp">
                     </div>
                 </div>
             </div>
@@ -277,7 +277,7 @@ a{
         margin-top: 3rem!important;
     }
     .img-banner-top{
-        margin-top: 80px;
+        margin-top: 145px;
     }
     .bg-icon-single{
         width: 146px;

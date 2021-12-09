@@ -24,8 +24,8 @@
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="d-none d-md-block img-fluid img-banner-top" src="./../../assets/image60.png">
-                        <img class="d-block d-md-none img-fluid" src="./../../assets/mobile/image60.png">
+                        <img class="d-none d-md-block img-fluid img-banner-top" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Corporate_4051bf6e2d.webp">
+                        <img class="d-block d-md-none img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Corporate_4051bf6e2d.webp">
                     </div>
                 </div>
             </div>
@@ -334,7 +334,7 @@ a{
         margin-top: 3rem!important;
     }
     .img-banner-top{
-        margin-top: 80px;
+        margin-top: 145px;
     }
     .bg-icon-single{
         width: 146px;
