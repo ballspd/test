@@ -258,7 +258,7 @@ a:hover{
 }
 
 a{
-  color: unset !important;
+  color: unset;
 }
 
 .carousel-control-prev-custom:hover{

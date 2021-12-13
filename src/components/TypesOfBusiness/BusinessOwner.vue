@@ -213,6 +213,10 @@ a{
     border-bottom: 1px solid #5D391A !important;
 }
 
+a{
+  color: #007bff !important;
+}
+
 /* -------------------------#Responsive------------------------ */
 
 /* Extra small devices (phones, 600px and down) */
@@ -277,7 +281,7 @@ a{
         margin-top: 3rem!important;
     }
     .img-banner-top{
-        margin-top: 145px;
+        margin-top: 145px !important;;
     }
     .bg-icon-single{
         width: 146px;

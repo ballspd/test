@@ -297,7 +297,7 @@ a{
         margin-top: 3rem!important;
     }
     .img-banner-top{
-        margin-top: 145px;
+        margin-top: 145px !important;;
     }
     .bg-icon-single{
         width: 146px;

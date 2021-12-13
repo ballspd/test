@@ -12,7 +12,8 @@
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:62px;color:#FFFFFC">OC2PLUS</h1>
                                     <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#FFFFFC">“เครื่องมือจัดเก็บข้อมูล สำหรับวางแผน การตลาด ที่เจ้าของธุรกิจต้องมี”</h2>
-                                    <p class="text-s-16 mt-3" style="color:#FFFFFC">บริการน้องใหม่จาก Sellsuki เป็นบริการ Customer Data Platform (CDP) หรือพื้นที่ในการจัดเก็บข้อมูลของลูกค้า ซึ่งมี ความจำเป็นอย่างมากต่อการ ทำธุรกิจในยุคปัจจุบันที่เราต้องใช้ข้อมูล</p>
+                                    <p class="text-s-16 mt-3 mb-0" style="color:#FFFFFC;width: 470px;">บริการน้องใหม่จาก Sellsuki เป็นบริการ Customer Data Platform (CDP) หรือพื้นที่ในการจัดเก็บข้อมูลของลูกค้า ซึ่งมี ความจำเป็นอย่างมากต่อการ ทำธุรกิจในยุคปัจจุบันที่เราต้องใช้ข้อมูล</p>
+                                    <p class="text-s-16 mt-2" style="color:#FFFFFC;width: 470px;"><span class="ms-4"></span>โดยหน้าที่ของ CDP คือ การรวบรวมข้อมูลของลูกค้าคุณจากทุกช่องทางไม่ว่าจะเป็นเว็บไซต์ หรือ Social Media ต่าง ๆ มาไว้ในที่เดียว เพื่อให้ง่าย ต่อการนำมาใช้งานต่อ</p>
                                 </td>
                             </table>
                         </div>
@@ -32,14 +33,7 @@
         </div>
         <div class="container">
             <div class="crad">
-                <div class="mt-custom p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
-                    <div class="row mt-2">
-                        <div class="col-12">
-                            <p class="ps-5 pe-5 mb-0">โดยหน้าที่ของ CDP คือ การรวบรวมข้อมูลของลูกค้าคุณจากทุกช่องทางไม่ว่าจะเป็นเว็บไซต์ หรือ Social Media ต่าง ๆ มาไว้ในที่เดียว เพื่อให้ง่าย ต่อการนำมาใช้งานต่อ</p>
-                        </div>
-                    </div>
-                </div>
-                <div v-if="animation1" class="ps-4 pe-4">
+                <div v-if="animation1" class="mt-custom p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
                     <div class="row text-center justify-content-center mb-4 ps-5 pe-5">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-5 mt-lg-0">
                             <img class="item-center animate__animated animate__rotateIn animate__slow animate__delay-1s" src="./../../assets/SolutionsOc2plus/Oc2Plus-01-รวบรวมข้อมูลจากทุกช่องทาง.png" alt="Oc2Plus-01-รวบรวมข้อมูลจากทุกช่องทาง.png">
@@ -152,26 +146,6 @@
                                 </div>
                             </div>
                         </div>  
-                    </div>
-                </div>
-                <div class="row mt-0 mt-lg-5 mb-5 ms-5 me-5">
-                    <div class="col-4 col-lg-2">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-1.png">
-                    </div>
-                    <div class="col-4 col-lg-2">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-2.png">
-                    </div>
-                    <div class="col-4 col-lg-2">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-3.png">
-                    </div>
-                    <div class="col-4 col-lg-2">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-4.png">
-                    </div>
-                    <div class="col-4 col-lg-2">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-5.png">
-                    </div>
-                    <div class="col-4 col-lg-2">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-6.png">
                     </div>
                 </div>
                 <InterestingArticles :type="type"/>

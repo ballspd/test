@@ -92,7 +92,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0">ช่วยรวบรวบข้อมูลจากทุกช่องทางขาย</p>
+                                        <p class="text-s-16 text-w-700 mb-0">ทีมงานผู้เชี่ยวชาญเฉพาะด้านคอยดูแลอย่างใกล้ชิดเพื่อแก้ปัญหาอย่างตรงจุด</p>
                                     </div>
                                 </div>
                             </div>
@@ -102,7 +102,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">เข้าถึงข้อมูลได้มายิ่งขึ้นเพื่อนำไป ต่อยอด</p>
+                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">การทำงานภายใต้ Data Driven ศึกษาข้อมูล ปัญหาให้เข้าใจก่อนวางแผนเพื่อลงมือทำ</p>
                                     </div>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">เข้าถึงข้อมูลได้มายิ่งขึ้นเพื่อนำไป ต่อยอด</p>
+                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">พาร์ทเนอร์ที่ครอบคลุมทั้ง Social Media ทุกแพลตฟอร์มและ บริการขนส่งชั้นนำระดับประเทศ</p>
                                     </div>
                                 </div>
                             </div>
@@ -124,7 +124,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">เข้าถึงความต้องการที่แท้จริงของ กลุ่มเป้าหมาย</p>
+                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">บริการทำการตลาดที่ครอบคลุมตั้งแต่การวางแผนจนส่งมอบสินค้าถึงมือลูกค้า</p>
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">เพิ่มประสิทธิภาพของแแผนธุรกิจ</p>
+                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">ประสบการณ์ทำงานในวงการ Digital Marketing มากกว่า 7 ปี</p>
                                     </div>
                                 </div>
                             </div>
@@ -270,6 +270,10 @@ a{
     border-bottom: 1px solid #5D391A !important;
 }
 
+a{
+  color: #007bff !important;
+}
+
 /* -------------------------#Responsive------------------------ */
 
 /* Extra small devices (phones, 600px and down) */
@@ -334,7 +338,7 @@ a{
         margin-top: 3rem!important;
     }
     .img-banner-top{
-        margin-top: 145px;
+        margin-top: 145px !important;;
     }
     .bg-icon-single{
         width: 146px;

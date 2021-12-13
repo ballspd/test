@@ -96,12 +96,12 @@
                 </div>
                 <div class="bg">
                   <div class="p-5" style="background: rgba(0, 0, 0, 0.3);display: flex;height: 350px;">
-                    <font class="font-wght mt-auto mb-auto ms-4" style="font-size:64px;color:#FBFBFB">SELLSUKI LIFE</font>
+                    <font class="font-wght mt-auto mb-auto ms-4 font-header" style="color:#FBFBFB">SELLSUKI LIFE</font>
                   </div>
                 </div>
                 <div class="row p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4" style="margin-top: -150px;">
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
-                       <div class="card item-center" style="height: 480px">
+                       <div class="card item-center">
                         <div class="card-body p-4">
                           <img class="pb-3" width="90" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Join_us_Profile_3_8b963d1591.webp" alt="">
                           <p class="card-title font-wght text-s-20">Thatim Prakaymaneewong</p>
@@ -115,7 +115,7 @@
                       </div>
                     </div>
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
-                       <div class="card item-center" style="height: 480px">
+                       <div class="card item-center">
                         <div class="card-body p-4">
                           <img class="pb-3" width="90" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Join_us_Profile_2_12169ea52c.webp" alt="">
                           <p class="card-title font-wght text-s-20">Panadda Kongsuk</p>
@@ -128,7 +128,7 @@
                       </div>
                     </div>
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
-                       <div class="card item-center" style="height: 480px">
+                       <div class="card item-center">
                         <div class="card-body p-4">
                           <img class="pb-3" width="90" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Join_us_Profile_1_ed39c8f93a.webp" alt="">
                           <p class="card-title font-wght text-s-20">Wasin Jamroensap</p>
@@ -208,28 +208,53 @@ export default {
 /* -------------------------#Responsive------------------------ */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
+@media only screen and (max-width: 599px) {
+  .card{
+    height: 450px
+  }
+  .font-header{
+    font-size: 42px !important;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
 }
-
+  .card{
+    height: 430px
+  }
+  .font-header{
+    font-size: 58px;
+  }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+  .card{
+    height: 400px
+  }
+  .font-header{
+    font-size: 60px;
+  }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+  .card{
+    height: 610px
+  }
+  .font-header{
+    font-size: 64px;
+  }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+  .card{
+    height: 520px
+  }
+  .font-header{
+    font-size: 64px;
+  }
 }
 
 .carousel-indicators {

@@ -501,18 +501,12 @@ export default {
                 .then(response => (this.responseDatac1 = response.data))
                 .catch()
             }
-            else{
-                this.c1 = false
-            }
             if(this.windowTop > '1650')
             {
                 this.c2 = true
                 this.axios.get('blogs?blog_category=9&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac2 = response.data))
                 .catch()
-            }
-            else{
-                this.c2 = false
             }
             if(this.windowTop > '2150')
             {
@@ -521,18 +515,12 @@ export default {
                 .then(response => (this.responseDatac3 = response.data))
                 .catch()
             }
-            else{
-                this.c3 = false
-            }
             if(this.windowTop > '2650')
             {
                 this.c4 = true
                 this.axios.get('blogs?blog_category=11&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac4 = response.data))
                 .catch()
-            }
-            else{
-                this.c4 = false
             }
             if(this.windowTop > '3150')
             {
@@ -541,9 +529,6 @@ export default {
                 .then(response => (this.responseDatac5 = response.data))
                 .catch()
             }
-            else{
-                this.c5 = false
-            }
             if(this.windowTop > '3650')
             {
                 this.c6 = true
@@ -551,18 +536,12 @@ export default {
                 .then(response => (this.responseDatac6 = response.data))
                 .catch()
             }
-            else{
-                this.c6 = false
-            }
             if(this.windowTop > '4150')
             {
                 this.c7 = true
                 this.axios.get('blogs?blog_category=14&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac7 = response.data))
                 .catch()
-            }
-            else{
-                this.c7 = false
             }
         }
     }
