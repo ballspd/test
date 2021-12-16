@@ -40,12 +40,12 @@
                                 <label class="text-s-16" style="color: #373737;">How did you hear of this job vacancy? <br>คุณรู้จักตำแหน่งงานนี้ได้อย่างไร?<span class="text-danger">*</span></label>
                                 <select class="form-select mt-2" placeholder="Please Select/กรุณาเลือก" v-model="jobVacancy" id="jobVacancy" name="jobVacancy">
                                     <option selected value="">Please Select/กรุณาเลือก</option>
-                                    <option value="Fuse">Fuse</option>
-                                    <option value="Line">Line</option>
-                                    <option value="Beary">Beary tech</option>
-                                    <option value="Kaikong">Kaikong</option>
-                                    <option value="Shipmunk">Shipmunk</option>
-                                    <option value="Oc2Plus">Oc2Plus</option>
+                                    <option value="Jobsdb">Jobsdb</option>
+                                    <option value="Jobthai">Jobthai</option>
+                                    <option value="Facebook">Facebook</option>
+                                    <option value="พนักงานของบริษัท">พนักงานของบริษัท</option>
+                                    <option value="Blognone">Blognone</option>
+                                    <option value="อื่นๆ เช่นการบอกต่อ">อื่นๆ เช่นการบอกต่อ</option>
                                 </select>
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">

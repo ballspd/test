@@ -166,6 +166,14 @@
                                 <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">Digital <br>Transformation</p>
                             </a>
                         </div>
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
+                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true,c7 = true,c8 = true" href="#c8">
+                                <div class="bg-radius">
+                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Digital_Transformation_1_a66fa3e27e.webp">
+                                </div>
+                                <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">Digital <br>Transformation</p>
+                            </a>
+                        </div>
                     </div>
                     <span id="c1" style="display: block;height: 85px;margin-top: -85px;"></span>
                     <div v-if="c1" class="animate__animated animate__bounceInUp">
@@ -433,6 +441,44 @@
                             </div>
                         </div>
                     </div>
+                    <span id="c8" style="display: block;height: 85px;margin-top: -85px;"></span>
+                    <div v-if="c8" class="animate__animated animate__bounceInUp">
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                <p class="text-w-700" style="font-size:24px;color:#15304E">Digital Transformation</p>
+                            </div>
+                            <div class="col-6 text-end">
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/14'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div v-for="data in responseDatac8" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="row">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <img class="img-fix-size" :src="data.illustration.url">
+                                    </div>
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
+                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
+                                        <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
+                                        <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div v-if="responseDatac8.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="row">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <img class="img-fix-size" src="./../assets/Group364.png">
+                                    </div>
+                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">Lorem Ipsum Lorem Ipsum Lorem Ipsum</font>
+                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
+                                        <p class="text-limit-2" style="color:#373737;font-size:14px">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -462,6 +508,7 @@ export default {
             c5:false,
             c6:false,
             c7:false,
+            c8:false,
             responseData:[],
             responseDatac1:[],
             responseDatac2:[],
@@ -469,7 +516,8 @@ export default {
             responseDatac4:[],
             responseDatac5:[],
             responseDatac6:[],
-            responseDatac7:[]
+            responseDatac7:[],
+            responseDatac8:[]
         }
     },
     created () {
@@ -541,6 +589,13 @@ export default {
                 this.c7 = true
                 this.axios.get('blogs?blog_category=14&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac7 = response.data))
+                .catch()
+            }
+            if(this.windowTop > '4550')
+            {
+                this.c8 = true
+                this.axios.get('blogs?blog_category=15&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
+                .then(response => (this.responseDatac8 = response.data))
                 .catch()
             }
         }

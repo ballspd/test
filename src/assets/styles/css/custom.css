@@ -261,6 +261,10 @@ a{
   color: unset;
 }
 
+.mt-150 a{
+  color: unset !important;
+}
+
 .carousel-control-prev-custom:hover{
   color: #fff;
   text-decoration: none;

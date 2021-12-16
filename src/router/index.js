@@ -102,6 +102,16 @@ const routes = [
     name: "Coporate",
     component: () => import(/* webpackChunkName: "Corporate" */ '@/components/TypesOfBusiness/Corporate.vue')
   },
+  {
+    path: "/Policy",
+    name: "Policy",
+    component: () => import(/* webpackChunkName: "Corporate" */ '@/components/Policy.vue')
+  },
+  {
+    path: "/TermsOfUse",
+    name: "TermsOfUse",
+    component: () => import(/* webpackChunkName: "Corporate" */ '@/components/TermsOfUse.vue')
+  },
 ];
 
 const router = createRouter({

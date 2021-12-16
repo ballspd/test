@@ -102,7 +102,7 @@ export default {
                     phone_number:'',
                     email:'',
                     message:''
-                },
+          },
           center: {lat: 13.8019328, lng: 100.5751006},
           markers: [
           {
@@ -126,7 +126,49 @@ export default {
                 confirmButtonText: 'Confilm'
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        this.axios.post('contact-uses', this.form)
+
+                        //const params = new URLSearchParams()
+                        //params.append('title', 'web ssk test')
+                        //params.append('user_id', 6542084)
+                        //params.append('pipeline_id', 4)
+
+                        //const config = {
+                        //    headers: {
+                        //        'Content-Type': 'application/x-www-form-urlencoded'
+                        //    }
+                        //}
+
+                        //var api_token = "4e9d4073e72ab32c7ffff64dcee32836be9954f8"
+
+                        //this.axios.post('https://api.pipedrive.com/v1/leads?api_token='+ api_token, params, config)
+                        //.then(
+                        //    this.$swal.fire(
+                        //        'Success',
+                        //        'Send information successfully',
+                        //        'success'
+                        //    )
+                        //).catch((error) => {
+                        //    this.$swal.fire({
+                        //        icon: 'error',
+                        //        title: 'Oops...',
+                        //        text: error,
+                        //    })
+                        //})
+                        const data = { 
+                            "title": "Contact Sellsuki website",
+                            "owner_id": 6542084,
+                            "person_id": null,
+                            "organization_id": null,
+                            "dd1bbc90338efc249596b00527d3d2d47ae4fb46" : this.form.name,
+                            "f4f7afcb9529346468dd737251033edf6c04847b": this.form.phone_number,
+                            "1681c8caf179eaa804c3abe3bdd3456bf053fd38": this.form.email,
+                            "1bc506f7722eb25f5f7bd1fdfaad6d06ebbe14b4": this.form.message
+                        };
+
+                        console.log(data)
+
+                        var api_token = "4e9d4073e72ab32c7ffff64dcee32836be9954f8"
+                        this.axios.post('https://api.pipedrive.com/v1/leads?api_token='+ api_token, data)
                         .then(
                             this.$swal.fire(
                                 'Success',
