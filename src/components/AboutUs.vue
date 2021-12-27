@@ -42,7 +42,6 @@
                                                 <img class="item-center-absolute" src="./../assets/icon/Ellipse14.png" style="margin-top: 20px;">
                                                 <p class="text-s-30 text-w-700" style="color:#50151C">{{data.year}}</p>
                                                 <p style="font-size:18" v-html="markdownToHtml(data.message)"></p>
-                                                <button class="btn-orange hvr-back-pulse" style="width: 150px !important;height: 40px; !important"><span>Read More</span></button>
                                                 <img class="iem-center img-fluid" :src="data.image.url" style="margin-top: 20px;">
                                             </div>
                                         </div>
@@ -53,7 +52,6 @@
                                                 <img class="item-center-absolute" src="./../assets/icon/Ellipse14.png" style="margin-top: 20px;">
                                                 <p class="text-s-30 text-w-700" style="color:#50151C">{{data.year}}</p>
                                                 <p style="font-size:18" v-html="markdownToHtml(data.message)"></p>
-                                                <button class="btn-orange hvr-back-pulse" style="width: 150px !important;height: 40px; !important"><span>Read More</span></button>
                                                 <img class="iem-center img-fluid" :src="data.image.url" style="margin-top: 20px;">
                                             </div>
                                         </div>
@@ -71,7 +69,6 @@
                                         <img src="./../assets/icon/Line53.png">
                                         <p class="text-s-30 text-w-700" style="color:#50151C">{{data.year}}</p>
                                         <p style="font-size:18" v-html="markdownToHtml(data.message)"></p>
-                                        <button class="btn-orange button" style="width: 150px !important;height: 40px; !important"><span>Read More</span></button>
                                         <img class="iem-center img-fluid" :src="data.image.url" style="margin-top: 20px;">
                                     </div>
                                 </div>
