@@ -36,7 +36,7 @@
                             <div v-else class="mt-3 mb-3">
                             </div>
                             <div v-if="data.text != null" class="col-12">
-                                <p v-html="markdownToHtml(data.text)"></p>
+                                <div v-html="markdownToHtml(data.text)"></div>
                             </div>
                             <div v-else class="mt-3 mb-3">
                             </div>
@@ -120,6 +120,31 @@ p {
   height: 400px;
   object-fit: cover;
 }
+
+div::v-deep(h1){
+    font-size: 24px !important;
+}
+
+div::v-deep(h2){
+    font-size: 22px !important;
+}
+
+div::v-deep(h3){
+    font-size: 20px !important;
+}
+
+div::v-deep(h4){
+    font-size: 18px !important;
+}
+
+::v-deep(p){
+    font-size: 18px !important;
+}
+
+::v-deep(li){
+    font-size: 18px !important;
+}
+
 
 /* -------------------------#Responsive------------------------ */
 
