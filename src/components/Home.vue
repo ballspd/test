@@ -65,7 +65,7 @@
             </div>
           </div>
         </div>
-
+        <!-- <ParallaxAll/> -->
         <InterestingArticles :type="type"/>
 
         <div class="padding-card">
@@ -81,8 +81,8 @@
                   <div class="card text-white card-roadmap hvr-rotate">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-6" style="margin:15px 0px 15px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Research Find <br>Insight</font></div>
-                        <div class="col-6" style="margin:5px 0px 5px 0px"><img style="left: 60px;position: relative;" src="./../assets/icon/Group.png"></div>
+                        <div class="col-7" style="margin:15px 0px 15px 0px"><font style="font-size: 22px;left: 30px;position: relative;">ศึกษา ทำความเข้าใจ <br>กลุ่มเป้าหมายและตลาด</font></div>
+                        <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group.png"></div>
                       </div>
                     </div>
                   </div>
@@ -91,8 +91,8 @@
                   <div class="card text-white card-roadmap hvr-rotate">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-6" style="margin:15px 0px 15px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Analytic the <br>Fact</font></div>
-                        <div class="col-6" style="margin:5px 0px 5px 0px"><img style="left: 60px;position: relative;" src="./../assets/icon/Group1.png"></div>
+                        <div class="col-7" style="margin:15px 0px 15px 0px"><font style="font-size: 22px;left: 30px;position: relative;">วิเคราะห์ข้อมูลเพื่อหาข้อ <br>เท็จจริง</font></div>
+                        <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group1.png"></div>
                       </div>
                     </div>
                   </div>
@@ -101,8 +101,8 @@
                   <div class="card text-white card-roadmap hvr-rotate">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-6" style="margin:38px  0px 38px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Right Strategy</font></div>
-                        <div class="col-6" style="margin:5px 0px 5px 0px"><img style="left: 60px;position: relative;" src="./../assets/icon/Group2.png"></div>
+                        <div class="col-7" style="margin:15px  0px 15px 0px"><font style="font-size: 22px;left: 30px;position: relative;">วางแผลกลยุทธ์ที่ตอบ <br>โจทย์กับรูปแบบธุรกิจ</font></div>
+                        <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group2.png"></div>
                       </div>
                     </div>
                   </div>
@@ -111,8 +111,8 @@
                   <div class="card text-white card-roadmap hvr-rotate">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-6" style="margin:15px 0px 15px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Repeat<br>Optimization</font></div>
-                        <div class="col-6" style="margin:5px 0px 5px 0px"><img style="left: 60px;position: relative;" src="./../assets/icon/Group3.png"></div>
+                        <div class="col-7" style="margin:0px 0px 0px 0px"><font style="font-size: 22px;left: 30px;position: relative;">ตรวจเช็คและแก้ไข เพื่อ<br>เพิ่มประสิทธิภาพให้กับแผนงาน</font></div>
+                        <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group3.png"></div>
                       </div>
                     </div>
                   </div>
@@ -121,7 +121,7 @@
                   <div class="card text-white card-roadmap hvr-rotate">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-7" style="margin:0px 0px 0px 0px"><font style="font-size: 24px;left: 30px;position: relative;">Get Feedback &<br>Never Stop learning</font></div>
+                        <div class="col-7" style="margin:0px 0px 0px 0px"><font style="font-size: 22px;left: 30px;position: relative;">ตรวจสอบและไม่หยุด &<br>พัฒนา เพื่อผลลัพธ์ที่ดีที่สุด</font></div>
                         <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group4.png"></div>
                       </div>
                     </div>
@@ -231,6 +231,7 @@ import InterestingArticles from '@/components/InterestingArticles'
 import Review from '@/components/Review'
 import Preloader from '@/components/Preloader'
 import BannerBU from '@/components/BannerBU'
+//import ParallaxAll from '@/components/ParallaxAll'
 
 export default {
   name: 'Home',
@@ -239,7 +240,8 @@ export default {
     InterestingArticles,
     Review,
     BannerBU,
-    Preloader
+    Preloader,
+    //ParallaxAll
   },
   data(){
     return {

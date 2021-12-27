@@ -120,7 +120,7 @@
                                 <p>
                                 Please also visit our Terms and Conditions section establishing the use, disclaimers, and limitations of liability governing
                                 the use of our website at
-                                <a href="https://www.sellsuki.co.th/terms.html">www.sellsuki.co.th/terms</a>
+                                <router-link @click="scrollToTop" to="/TermsOfUse">www.sellsuki.co.th/TermsOfUse</router-link>
                                 </p>
                             </div>
 
@@ -136,7 +136,7 @@
                             <div class="text1">
                                 <p>
                                 If we decide to change our privacy policy, we will post those changes on this page.
-                                <a href="https://www.sellsuki.co.th">www.sellsuki.co.th</a>
+                                <router-link @click="scrollToTop" to="/">www.sellsuki.co.th</router-link>
                                 </p>
                                 <p>
                                 This policy is powered by Trust Guard PCI compliance.
@@ -152,6 +152,11 @@
 <script>
 export default {
 	name: 'Policy',
+    methods: {
+    scrollToTop() {
+      window.scrollTo(0,0);
+    }
+  }
 }
 </script>
 
@@ -160,7 +165,7 @@ export default {
   .preloader{
 	position: absolute;
 	width: 100%;
-	height: 2000px;
+	height: 2100px;
 	background-color: #F5F5F5;
 	z-index: 9999;
   }

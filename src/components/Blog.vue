@@ -169,9 +169,9 @@
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
                             <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true,c7 = true,c8 = true" href="#c8">
                                 <div class="bg-radius">
-                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Digital_Transformation_1_a66fa3e27e.webp">
+                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/other_f1d6b43fd6.png">
                                 </div>
-                                <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">Digital <br>Transformation</p>
+                                <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">อื่นๆ</p>
                             </a>
                         </div>
                     </div>

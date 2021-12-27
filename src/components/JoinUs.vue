@@ -49,12 +49,6 @@
                                       <img src="./../assets/joinUs/join-us-2.webp" class="d-block w-100">
                                     </div>
                                     <div class="carousel-item" data-bs-interval="2000">
-                                      <img src="./../assets/joinUs/join-us-3.webp" class="d-block w-100">
-                                    </div>
-                                    <div class="carousel-item" data-bs-interval="2000">
-                                      <img src="./../assets/joinUs/join-us-4.webp" class="d-block w-100">
-                                    </div>
-                                    <div class="carousel-item" data-bs-interval="2000">
                                       <img src="./../assets/joinUs/join-us-5.webp" class="d-block w-100">
                                     </div>
                                 </div>
@@ -64,8 +58,6 @@
                             <button type="button" data-bs-target="#carouselimage" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselimage" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselimage" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselimage" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#carouselimage" data-bs-slide-to="4" aria-label="Slide 5"></button>
                         </div>
                     </div>
                   </div>

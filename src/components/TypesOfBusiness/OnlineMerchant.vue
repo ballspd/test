@@ -41,14 +41,18 @@
                     <div class="row justify-content-center mt-3">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
                             <div class="hvr-grow-shadow crad-square mt-3">
-                                <img class="item-center mt-3" width="200" height="170" src="./../../assets/image60.png">
-                                <p class="mt-3 text-s-14 text-center text-dark" style="position: relative">ไม่เข้าใจ insight</p>
+                                <div class="p-4 mt-3">
+                                    <img class="item-center" width="110" height="100" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/1_Group_739_fd9a5280f2.webp">
+                                    <p class="mt-4 pt-2 text-s-14 text-center text-dark" style="position: relative">ไม่เข้าใจ insight</p>
+                                </div>
                             </div>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
                             <div class="hvr-grow-shadow crad-square mt-3">
-                                <img class="item-center mt-3" width="200" height="170" src="./../../assets/image60.png">
-                                <p class="mt-3 text-s-14 text-center text-dark" style="position: relative">ตามเทรนด์ไม่ทัน</p>
+                                <div class="p-4 mt-3">
+                                    <img class="item-center" width="110" height="100" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/2_Digital_overload_0d356c11dc.webp">
+                                    <p class="mt-4 pt-2 text-s-14 text-center text-dark" style="position: relative">ตามเทรนด์ไม่ทัน</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -66,20 +70,26 @@
                     <div class="row justify-content-center mt-3">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
                             <div class="hvr-grow-shadow crad-square mt-3">
-                                <img class="item-center mt-3" width="200" height="170" src="./../../assets/image60.png">
-                                <p class="mt-3 text-s-14 text-center text-dark" style="position: relative">แอดมินทำงานไม่ทัน</p>
+                                <div class="p-4 mt-3">
+                                    <img class="item-center mt-3" width="110" height="100" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/3_Stress_b8618f02a9.webp">
+                                    <p class="mt-4 pt-2 text-s-14 text-center text-dark" style="position: relative">แอดมินทำงานไม่ทัน</p>
+                                </div>
                             </div>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
                             <div class="hvr-grow-shadow crad-square mt-3">
-                                <img class="item-center mt-3" width="200" height="170" src="./../../assets/image60.png">
-                                <p class="mt-3 text-s-14 text-center text-dark" style="position: relative">ตอบแชทช้า</p>
+                                <div class="p-4 mt-3">
+                                    <img class="item-center mt-3" width="110" height="100" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/4_Frustration_6af1afeff8.webp">
+                                    <p class="mt-4 pt-2 text-s-14 text-center text-dark" style="position: relative">ตอบแชทช้า</p>
+                                </div>
                             </div>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
                             <div class="hvr-grow-shadow crad-square mt-3">
-                                <img class="item-center mt-3" width="200" height="170" src="./../../assets/image60.png">
-                                <p class="mt-3 text-s-14 text-center text-dark" style="position: relative">ลูกค้าตกหล่น</p>
+                                <div class="p-4 mt-3">
+                                    <img class="item-center mt-3" width="110" height="100" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/5_Emotional_burnout_0208859706.webp">
+                                    <p class="mt-4 pt-2 text-s-14 text-center text-dark" style="position: relative">ลูกค้าตกหล่น</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -99,20 +109,26 @@
                     <div class="row justify-content-center mt-3">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
                             <div class="hvr-grow-shadow crad-square mt-3">
-                                <img class="item-center mt-3" width="200" height="170" src="./../../assets/image60.png">
-                                <p class="mt-3 text-s-14 text-center text-dark" style="position: relative">พื้นที่จัดเก็บไม่พอ</p>
+                                <div class="p-4 mt-3">
+                                    <img class="item-center mt-3" width="110" height="100" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/6_Group_741_3429c1e50f.webp">
+                                    <p class="mt-4 pt-2 text-s-14 text-center text-dark" style="position: relative">พื้นที่จัดเก็บไม่พอ</p>
+                                </div>
                             </div>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
                             <div class="hvr-grow-shadow crad-square mt-3">
-                                <img class="item-center mt-3" width="200" height="170" src="./../../assets/image60.png">
-                                <p class="mt-3 text-s-14 text-center text-dark" style="position: relative">จัดออเดอร์ผิดพลาด</p>
+                                <div class="p-4 mt-3">
+                                    <img class="item-center mt-3" width="100" height="100" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/7_Group_742_39a20dc10c.webp">
+                                    <p class="mt-4 pt-2 text-s-14 text-center text-dark" style="position: relative">จัดออเดอร์ผิดพลาด</p>
+                                </div>
                             </div>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
                             <div class="hvr-grow-shadow crad-square mt-3">
-                                <img class="item-center mt-3" width="200" height="170" src="./../../assets/image60.png">
-                                <p class="mt-3 text-s-14 text-center text-dark" style="position: relative">แพ็กส่งไม่ทัน</p>
+                                <div class="p-4 mt-3">
+                                    <img class="item-center mt-3" width="100" height="100" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/8_Group_743_e0afa9631d.webp">
+                                    <p class="mt-4 pt-2 text-s-14 text-center text-dark" style="position: relative">แพ็กส่งไม่ทัน</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -187,8 +203,8 @@ a{
 .crad-square{
     background-color:#FFFFFF;
     margin-bottom: 25px;
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 240px;
     box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
     border-radius: 20px;
 

@@ -19,8 +19,8 @@
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="d-none d-md-block img-fluid img-banner-top" src="./../assets/image60.png">
-                        <img class="d-block d-md-none img-fluid" src="./../assets/mobile/image60.png">
+                        <img class="d-none d-md-block img-fluid img-banner-top" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_about_us_01_1_f6d1bba674.webp">
+                        <img class="d-block d-md-none img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_about_us_01_1_f6d1bba674.webp">
                     </div>
                 </div>
             <div class="crad mt-5">
