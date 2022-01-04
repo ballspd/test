@@ -87,14 +87,14 @@
               <i class="bi bi-caret-up-fill pe-5 ps-5" style="font-size: 40px;position: absolute;left: 185px;color: #ffffff;bottom: 440px;"></i>
               <div class="row">
                 <div class="col-6 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;height:415px;width: 235px !important;">
-                  <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Types of Business</font></a>
+                  <a href="#"><img src="./../../assets/icon/icon-menu1.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Types of Business</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">
                   <router-link @click="scrollToTop" to="/TypesOfBusiness/BusinessOwner"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Business Owner</p></router-link><br>
                   <router-link @click="scrollToTop" to="/TypesOfBusiness/OnlineMerchant"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Online Merchant</p></router-link><br>
                   <router-link @click="scrollToTop" to="/TypesOfBusiness/Corporate"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Corporate</p></router-link>
                 </div>
                 <div class="col-6 hover-manu" style="padding-right: 20px !important;padding-left: 20px !important;width: 260px !important;">
-                  <a href="#"><img src="./../../assets/icon/Vector5.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Services-Products</font></a>
+                  <a href="#"><img src="./../../assets/icon/icon-menu2.png" alt=""><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Services-Products</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 182px;height: 0px;">
                   <router-link @click="scrollToTop" to="/Solutions/Fuse"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Fuse Advertising</p></router-link><br>
                   <router-link @click="scrollToTop" to="/Solutions/Line"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE Agency</p></router-link><br>

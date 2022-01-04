@@ -1,45 +1,95 @@
 <template>
-    <main>
+<div class="sticky-container">
+  <main>
     <section>
-        <h1>Beep</h1>
-    </section>
-    <section>
-        <h1>Boop</h1>
+      <img class="img-fluid" src="./../assets/Paralax/1/1.webp">
     </section>
     <section>
-        <h1>Boooom</h1>
+      <h1>Boop</h1>
     </section>
-        <section>
-        <h1>The End</h1>
+    <section>
+      <h1>GG</h1>
     </section>
-    </main>
+    <section>
+      <h1>QQ</h1>
+    </section>
+    <section>
+      <h1>Boop</h1>
+    </section>
+    <section>
+      <h1>Geee</h1>
+    </section>
+  </main>
+</div>
 </template>
 
 <script>
 export default {
     name:"ParallaxAll",
+    data(){
+      return{
+        section1:true,
+        section2:false
+      }
+    },
     mounted () {
-        const scrollContainer = document.querySelector("main");
-
-        scrollContainer.addEventListener("wheel", (evt) => {
-            evt.preventDefault();
-            scrollContainer.scrollLeft += evt.deltaY;
+        this.init();
+    },
+    methods:{
+      init(){
+        this.setStickyContainersSize();
+        this.bindEvents();
+      },
+      bindEvents(){
+        window.addEventListener("wheel", this.wheelHandler);        
+      },
+      setStickyContainersSize(){
+        document.querySelectorAll('.sticky-container').forEach(function(container){
+            container.setAttribute('style', 'height: 5000px');
         });
+      },
+      isElementInViewport (el) {
+        const rect = el.getBoundingClientRect();
+        return rect.top <= 0 && rect.bottom > document.documentElement.clientHeight;
+      },
+      wheelHandler(evt){
+        
+        const containerInViewPort = Array.from(document.querySelectorAll('.sticky-container')).filter(function(container){
+            return container;
+        })[0];
+
+        if(!containerInViewPort){
+            return;
+        }
+
+        var isPlaceHolderBelowTop = containerInViewPort.offsetTop < document.documentElement.scrollTop;
+        var isPlaceHolderBelowBottom = containerInViewPort.offsetTop + containerInViewPort.offsetHeight > document.documentElement.scrollTop;
+        let g_canScrollHorizontally = isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
+
+        if(g_canScrollHorizontally){
+            containerInViewPort.querySelector('main').scrollLeft += 1100;
+
+            window.removeEventListener("wheel", this.wheelHandler)
+            setTimeout(() => window.addEventListener("wheel", this.wheelHandler), 500)
+
+            if(containerInViewPort.querySelector('main').scrollLeft >= 200){
+              //this.section1 = false
+              //this.section2 = true
+            }
+            console.log(evt.deltaY)
+        }
+      },
     }
 
 }
 </script>
 
 <style scoped>
-html,
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
-
 main {
   overflow-x: hidden;
   display: flex;
+  position: sticky;
+  top:0;
 }
 
 h1 {
@@ -48,8 +98,8 @@ h1 {
 }
 
 section {
-  min-width: 50vw;
-  min-height: 100vh;
+  min-width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,25 +109,5 @@ section {
 section:nth-child(even) {
   background-color: teal;
   color: white;
-}
-.read-article{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 999;
-  color: #000;
-  background: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-family: arial;
-  text-decoration: none;
-  box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px -15px;
-}
-.read-article:hover{
-    background: #d5d5d5;
-    box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px 0px;
-}
-iframe[sandbox] .read-article{
-  display: none;
 }
 </style>

@@ -19,8 +19,8 @@
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="d-none d-md-block img-fluid img-banner-top" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_about_us_01_1_f6d1bba674.webp">
-                        <img class="d-block d-md-none img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_about_us_01_1_f6d1bba674.webp">
+                        <img class="d-none d-md-block img-fluid img-banner-top" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_about_us_01_1_5dfa225de9.webp">
+                        <img class="d-block d-md-none img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_about_us_01_1_5dfa225de9.webp">
                     </div>
                 </div>
             <div class="crad mt-5">
@@ -115,8 +115,8 @@ export default {
     },
     data(){
         return{
-            height_colum: 330,
-            height_border: 320,
+            height_colum: 305,
+            height_border: 300,
             lang: localStorage.getItem('lang') || 'TH-th',
             type:'All',
             responseData:[]

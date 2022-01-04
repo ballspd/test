@@ -40,17 +40,37 @@
                 <div class="d-block d-lg-none">
                     <div v-if="activeBuFuse" class="text-center ps-5 pe-5">
                         <img class="animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Fuse.png" alt="logo-fuse.png" style="margin-top:120px">
-                        <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">FUSE DIGITAL ADVERTISING</h1>
-                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">บริการคลังสินค้าครบวงจรที่ช่วยดูแลสินค้าของคุณในทุก ๆ ขั้นตอนตั้งกระบวนการจัดเก็บ แพ็ก หรือขนส่งสินค้าถึงมือผู้รับ อย่างปลอดภัย ช่วยเพิ่มเวลาในการทำงานของคุณเพื่อไปวาง แผนในการขยายธุรกิจ</p>
+                        <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">FUSE ADVERTISING</h1>
+                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">บริการรับทำโฆษณาที่ครอบคลุมช่องทาง Social Media มากที่สุด พร้อมบริการเสริมอื่น ๆ ที่จะช่วยผลักดันและเพิ่มยอดขายให้ธุรกิจของคุณได้มากยิ่งขึ้น ตลอดจนการให้คำปรึกษาด้านการตลาด พร้อมช่วยวางแผนธุรกิจคุณให้เติบโตยิ่งกว่า</p>
+                        <router-link @click="scrollToTop" to="/Solutions/Fuse" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></router-link>
                     </div>
                     <div v-else-if="activeBuLine" class="text-center ps-5 pe-5">
-                        <img class="animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Beary.png" alt="logo-Akita.png" style="margin-top:120px">
-                        <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">LINE FULFILLMENT</h1>
-                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">บริการคลังสินค้าครบวงจรที่ช่วยดูแลสินค้าของคุณในทุก ๆ ขั้นตอนตั้งกระบวนการจัดเก็บ แพ็ก หรือขนส่งสินค้าถึงมือผู้รับ อย่างปลอดภัย ช่วยเพิ่มเวลาในการทำงานของคุณเพื่อไปวาง แผนในการขยายธุรกิจ</p>
+                        <img class="animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-line.png" alt="logo-line.png" style="margin-top:120px">
+                        <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">LINE AGENCY BY SELLSUKI</h1>
+                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">LINE Partner อันดับ 1 ของประเทศไทย ที่ได้รับความไว้วางใจจากลูกค้ากว่า 6,000 Accounts ให้เราช่วยดูแลช่องทางการขายบน LINE Official Account และบริการทำโฆษณาอย่างตรงจุด หยุดทุกสายตาบนพื้นที่ LINE รวมถึง LINE Chatbot ให้งานตอบลูกค้าเป็นเรื่องง่ายสะดวกสบาย</p>
+                        <router-link @click="scrollToTop" to="/Solutions/Line" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></router-link>
+                    </div>
+                    <div v-else-if="activeBuAkita" class="text-center ps-5 pe-5">
+                        <img class="animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Akita.png" alt="logo-akita.png" style="margin-top:120px">
+                        <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">AKITA FULFILLMENT</h1>
+                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">บริการคลังสินค้าครบวงจรที่ช่วยดูแลสินค้าของคุณในทุก ๆ ขั้นตอน ตั้งแต่กระบวนการจัดเก็บ แพ็ก หรือขนส่งสินค้า ให้ถึงมือลูกค้าอย่างปลอดภัย ช่วยลดระยะเวลาในการทำงานรวมถึงขั้นตอนที่ไม่จำเป็น ทำให้มีเวลาเพิ่มเพื่อไปวางแผนในการขยายธุรกิจ</p>
+                        <router-link @click="scrollToTop" to="/Solutions/Akita" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></router-link>
+                    </div>
+                    <div v-else-if="activeBuBeary" class="text-center ps-5 pe-5">
+                        <img class="animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Beary.png" alt="logo-beary.png" style="margin-top:120px">
+                        <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">BEARY TECH</h1>
+                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">บริการออกแบบ Website และบริการพัฒนาซอฟต์แวร์  รวมถึงการเชื่อมต่อระบบ API เข้ากับระบบและช่องทางการขายสินค้าออนไลน์ ไม่ว่าจะเป็น Shopee Lazada หรือ LINE MyShop เพื่อซัพพอร์ตธุรกิจออนไลน์ให้ง่ายยิ่งขึ้น</p>
+                        <router-link @click="scrollToTop" to="/Solutions/Beary" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></router-link>
+                    </div>
+                    <div v-else-if="activeBuKaikong" class="text-center ps-5 pe-5">
+                        <img class="animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Kaikong.png" alt="logo-kaikong.png" style="margin-top:120px">
+                        <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">KAIKONG</h1>
+                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">บริการ Content Marketing วางแผน สร้างคอนเทนต์ที่โดนใจ ส่งไปหากลุ่มเป้าหมายที่ใช่ พร้อมบริการ Admin ดูแลเพจ ที่จะช่วยคอยตอบคำถาม ทำให้แบรนด์คุณสนทนาโต้ตอบกับลูกค้าได้อย่างรวดเร็ว  และปิดการขายอย่างมืออาชีพ</p>
+                        <router-link @click="scrollToTop" to="/Solutions/Kaikong" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></router-link>
                     </div>
                     <div v-else class="text-center">
                         <h1 class="font-wght" style="font-size:36px;color:#50151C;margin-top:120px">E-COMMERCE <br>SOLUTION</h1>
-                        <p class="text-s-16" style="color:#50151C">Sellsuki ผู้ช่วยธุรกิจออนไลน์ที่ครบเครื่องมากที่สุด ช่วยมองหาทางออกที่ใช่ให้ธุรกิจคุณ</p>
+                        <p class="text-s-16 ps-3 pe-3" style="color:#50151C">Sellsuki ผู้ช่วยธุรกิจออนไลน์ที่ครบเครื่องมากที่สุด ช่วยมองหาทางออกที่ใช่ให้ธุรกิจคุณ</p>
                     </div>
                 </div>
             </div>
@@ -65,14 +85,14 @@
                         <img class="bu-size" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/SSK_Main_fa38f3ed9d.webp">
                     </div>
                 </div>
-                <div class="d-block d-lg-none">
+                <div class="d-block d-lg-none" style="margin-top: -30px;">
                     <div class="row justify-content-center">
                         <div class="col-md-8 col-sm-11 col-10">
-                            <router-link @click="scrollToTop" to="/Solutions/Fuse"><img @click="showHover = false,activeBuFuse = true ,activeBuLine = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-fuse hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png"></router-link>
-                            <router-link @click="scrollToTop" to="/Solutions/Line"><img @click="showHover = false,activeBuLine = true ,activeBuFuse = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-line" :class="{'auto-pulse':showHover}" src="./../assets/Banner/Line.png" alt="Line.png"></router-link>
-                            <router-link @click="scrollToTop" to="/Solutions/Akita"><img @click="showHover = false,activeBuAkita = true ,activeBuFuse = false, activeBuLine = false, activeBuBeary = false, activeBuKaikong = false" class="bu-akita" src="./../assets/Banner/AKT.png" alt="Akita.png"></router-link>
-                            <router-link @click="scrollToTop" to="/Solutions/Beary"><img @click="showHover = false,activeBuBeary = true ,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuKaikong = false" class="bu-beary" src="./../assets/Banner/Bearyweb.png" alt="Beary.png"></router-link>
-                            <router-link @click="scrollToTop" to="/Solutions/Kaikong"><img @click="showHover = false,activeBuKaikong = true ,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuBeary = false" class="bu-kaikong" src="./../assets/Banner/Kaikong.png" alt="Kaikong.png"></router-link>
+                            <a><img @click="showHover = false,activeBuFuse = true ,activeBuLine = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-fuse hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png"></a>
+                            <a><img @click="showHover = false,activeBuLine = true ,activeBuFuse = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-line" :class="{'auto-pulse':showHover}" src="./../assets/Banner/Line.png" alt="Line.png"></a>
+                            <a><img @click="showHover = false,activeBuAkita = true ,activeBuFuse = false, activeBuLine = false, activeBuBeary = false, activeBuKaikong = false" class="bu-akita" src="./../assets/Banner/AKT.png" alt="Akita.png"></a>
+                            <a><img @click="showHover = false,activeBuBeary = true ,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuKaikong = false" class="bu-beary" src="./../assets/Banner/Bearyweb.png" alt="Beary.png"></a>
+                            <a><img @click="showHover = false,activeBuKaikong = true ,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuBeary = false" class="bu-kaikong" src="./../assets/Banner/Kaikong.png" alt="Kaikong.png"></a>
                             <img class="item-center bu-size" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/SSK_Main_fa38f3ed9d.webp">
                         </div>
                     </div>

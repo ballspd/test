@@ -1,0 +1,22 @@
+<svg id="PAGE_4" data-name="PAGE 4" xmlns="http://www.w3.org/2000/svg" width="1440" height="720" viewBox="0 0 1440 720">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b1ecff;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #727272;
+        stroke-width: 3px;
+        stroke-dasharray: 18 18;
+      }
+    </style>
+  </defs>
+  <path id="Shape_7_copy" data-name="Shape 7 copy" class="cls-1" d="M1532,234S1144,496,738,402C317,279-66,212-66,212V756H1518Z"/>
+  <path class="cls-2" d="M1532,234S1151,495,738,402C323,280-66,212-66,212V756H1518Z"/>
+</svg>

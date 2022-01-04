@@ -261,6 +261,10 @@ a{
   color: unset;
 }
 
+div p a{
+  color: unset !important;
+}
+
 .mt-150 a{
   color: unset !important;
 }
@@ -526,6 +530,10 @@ li{
 }
 
 .text-s-20{
+  font-size: 20px !important;
+}
+
+.text-s-22{
   font-size: 20px !important;
 }
 

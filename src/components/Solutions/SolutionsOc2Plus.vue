@@ -12,8 +12,8 @@
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:62px;color:#FFFFFC">OC2PLUS</h1>
                                     <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#FFFFFC">“เครื่องมือจัดเก็บข้อมูล สำหรับวางแผน การตลาด ที่เจ้าของธุรกิจต้องมี”</h2>
-                                    <p class="text-s-16 mt-3 mb-0" style="color:#FFFFFC;width: 470px;">บริการน้องใหม่จาก Sellsuki เป็นบริการ Customer Data Platform (CDP) หรือพื้นที่ในการจัดเก็บข้อมูลของลูกค้า ซึ่งมี ความจำเป็นอย่างมากต่อการ ทำธุรกิจในยุคปัจจุบันที่เราต้องใช้ข้อมูล</p>
-                                    <p class="text-s-16 mt-2" style="color:#FFFFFC;width: 470px;"><span class="ms-4"></span>โดยหน้าที่ของ CDP คือ การรวบรวมข้อมูลของลูกค้าคุณจากทุกช่องทางไม่ว่าจะเป็นเว็บไซต์ หรือ Social Media ต่าง ๆ มาไว้ในที่เดียว เพื่อให้ง่าย ต่อการนำมาใช้งานต่อ</p>
+                                    <p class="text-s-16 mt-3 mb-lg-4 mb-xl-0" style="color:#FFFFFC;width: 470px;">บริการน้องใหม่จาก Sellsuki เป็นบริการ Customer Data Platform (CDP) หรือพื้นที่ในการจัดเก็บข้อมูลของลูกค้า ซึ่งมี ความจำเป็นอย่างมากต่อการ ทำธุรกิจในยุคปัจจุบันที่เราต้องใช้ข้อมูล <br>
+                                    โดยหน้าที่ของ CDP คือ การรวบรวมข้อมูลของลูกค้าคุณจากทุกช่องทางไม่ว่าจะเป็นเว็บไซต์ หรือ Social Media ต่าง ๆ มาไว้ในที่เดียว เพื่อให้ง่าย ต่อการนำมาใช้งานต่อ</p>
                                 </td>
                             </table>
                         </div>
@@ -21,12 +21,13 @@
                             <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#FFFFFC">Oc2plus</font></p>
                             <h1 class="font-wght text-s-36" style="color:#FFFFFC">OC2PLUS</h1>
                             <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#FFFFFC">“เครื่องมือจัดเก็บข้อมูล สำหรับวางแผน การตลาด ที่เจ้าของธุรกิจต้องมี”</h2>
-                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">บริการน้องใหม่จาก Sellsuki เป็นบริการ Customer Data Platform (CDP) หรือพื้นที่ในการจัดเก็บข้อมูลของลูกค้า ซึ่งมี ความจำเป็นอย่างมากต่อการ ทำธุรกิจในยุคปัจจุบันที่เราต้องใช้ข้อมูล</p>
+                            <p class="text-s-16 p-4 p-md-0 ps-4 pe-4 pb-4" style="color:#FFFFFC">บริการน้องใหม่จาก Sellsuki เป็นบริการ Customer Data Platform (CDP) หรือพื้นที่ในการจัดเก็บข้อมูลของลูกค้า ซึ่งมี ความจำเป็นอย่างมากต่อการ ทำธุรกิจในยุคปัจจุบันที่เราต้องใช้ข้อมูล<br>
+                                    โดยหน้าที่ของ CDP คือ การรวบรวมข้อมูลของลูกค้าคุณจากทุกช่องทางไม่ว่าจะเป็นเว็บไซต์ หรือ Social Media ต่าง ๆ มาไว้ในที่เดียว เพื่อให้ง่าย ต่อการนำมาใช้งานต่อ</p>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="d-none d-md-block img-fluid img-banner-top" src="./../../assets/image60.png">
-                        <img class="d-block d-md-none img-fluid" src="./../../assets/mobile/image60.png">
+                        <img class="d-none d-md-block img-fluid img-banner-top m-auto" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Oc2_Plus_029596b4b0.webp">
+                        <img class="d-block d-md-none img-fluid img-banner-top m-auto pb-5" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Oc2_Plus_029596b4b0.webp">
                     </div>
                 </div>
             </div>
@@ -295,6 +296,9 @@ export default {
         height: 70px;
         border-radius: 50%;
     }
+    .img-banner-top{
+        width: 60%;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -306,6 +310,9 @@ export default {
         width: 80px;
         height: 80px;
         border-radius: 50%;
+    }
+    .img-banner-top{
+        width: 60%;
     }
 }
 
@@ -319,6 +326,10 @@ export default {
         height: 100px;
         border-radius: 50%;
     }
+    .img-banner-top{
+        margin-top:300px !important;
+        width: 70%;
+    }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -330,6 +341,10 @@ export default {
         width: 146px;
         height: 146px;
         border-radius: 50%;
+    }
+    .img-banner-top{
+        margin-top: 220px !important;
+        width: 70%;
     }
 } 
 
@@ -346,13 +361,13 @@ export default {
     .mt-custom{
         margin-top: 3rem!important;
     }
-    .img-banner-top{
-        margin-top: 80px;
-    }
     .bg-icon-single{
         width: 146px;
         height: 146px;
         border-radius: 50%;
+    }
+    .img-banner-top{
+        margin-top: 300px !important;
     }
 }
 </style>
