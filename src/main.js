@@ -24,7 +24,7 @@ const i18n = createI18n({
 })
 
 const lang = localStorage.getItem('lang') || 'TH-th'
-axios.defaults.baseURL = process.env.VUE_APP_API_URL
+axios.defaults.baseURL = 'https://staging-sellsukiadmin.bearyweb.com/'
 axios.defaults.headers['Accept-language'] = lang
 
 createApp(App).use(router).use(VueAxios, axios).use(VueSweetalert2).use(i18n).use(VueGoogleMaps, {
