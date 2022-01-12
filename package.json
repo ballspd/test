@@ -1,0 +1,61 @@
+{
+  "name": "sellsuki-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "staging": "vue-cli-service serve --mode staging",
+    "production": "vue-cli-service serve --mode production",
+    "build:staging": "vue-cli-service build --mode staging",
+    "build:production": "vue-cli-service build --mode production"
+  },
+  "dependencies": {
+    "@fawmi/vue-google-maps": "^0.9.3",
+    "@popperjs/core": "^2.10.1",
+    "@splidejs/vue-splide": "^0.5.13",
+    "animate.css": "^4.1.1",
+    "axios": "^0.22.0",
+    "bootstrap": "^5.1.1",
+    "core-js": "^3.6.5",
+    "emailjs-com": "^3.2.0",
+    "hover.css": "^2.3.2",
+    "jqeury": "0.0.1-security",
+    "marked": "^3.0.8",
+    "moment": "^2.29.1",
+    "vue": "^3.0.0",
+    "vue-axios": "^3.3.7",
+    "vue-i18n": "^9.2.0-beta.17",
+    "vue-router": "^4.0.11",
+    "vue-sweetalert2": "^5.0.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
