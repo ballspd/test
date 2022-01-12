@@ -81,7 +81,7 @@
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                             <div class="crad text-center crad-aboutus" style="border-radius: 10px;box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);">
                                 <p class="text-w-700 pt-xl-0 pt-lg-4 pt-md-4 pt-sm-5 pt-4" style="font-size:48px;color:#E48724">VISION</p>
-                                <p class="text-w-400" style="font-size:16px">Sellsuki ผู้ช่วยที่ ‘ครบเครื่อง’ ที่สุด ช่วยผลักดัน <br>ธุรกิจออนไลน์ในไทยให้เติบโต</p>
+                                <p class="text-w-400" style="font-size:15px">Sellsuki ผู้ช่วยที่ 'ครบเครื่อง' ที่สุด ช่วยผลักดัน <br>ธุรกิจออนไลน์ในไทยให้เติบโต</p>
                             </div>
                             <div class="crad text-center crad-aboutus mt-4" style="border-radius: 10px;padding: 38px;box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);">
                                 <p class="text-w-700" style="font-size:48px;color:#1B4485">MISSION</p>
