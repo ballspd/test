@@ -172,12 +172,7 @@ export default {
             type: 'All',
             isHidden: false,
             lang: localStorage.getItem('lang') || 'en',
-            responseData:[]
         }
-    },
-    mounted () {
-        this.axios.get('business-owners?_locale='+ this.lang)
-        .then(response => (this.responseData = response.data))
     }
 }
 </script>

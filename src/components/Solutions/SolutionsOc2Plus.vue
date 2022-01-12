@@ -180,14 +180,11 @@ export default {
                 type: 'Oc2Plus',
                 isHidden: false,
                 lang: localStorage.getItem('lang') || 'en',
-                responseData:[],
                 animation1:false,
                 animation2:false
         }
     },
     mounted () {
-        this.axios.get('solution-oc2plus-services?_locale='+ this.lang)
-        .then(response => (this.responseData = response.data))
 
         window.addEventListener('scroll', this.onShow);
     },
