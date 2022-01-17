@@ -46,7 +46,7 @@
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 hvr-float-shadow" style="background-color: #143555;">
                                 <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsAkita/icon-solution-akita-2.png"></div>
                             </div>
-                            <h2 class="text-s-20 mt-3" style="color:#373737">เเพ๊ค</h2>
+                            <h2 class="text-s-20 mt-3" style="color:#373737">แพ็ก</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 hvr-float-shadow" style="background-color: #F76D22;">
