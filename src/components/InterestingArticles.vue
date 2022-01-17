@@ -120,11 +120,11 @@ export default {
       }
       
         if(this.type != 'All'){
-            this.url = 'blogs?_sort=updated_at:DESC&_limit=9&blog_category.id='+blogType
+            this.url = 'blogs?_sort=created_at:DESC&_limit=9&blog_category.id='+blogType
         }
         else
         {
-            this.url = 'blogs?_sort=updated_at:DESC&_limit=9'
+            this.url = 'blogs?_sort=created_at:DESC&_limit=9'
         }
         this.axios.get(this.url + '&_locale='+ this.lang)
         .then(response => (this.responseData = response.data))
