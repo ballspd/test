@@ -59,11 +59,11 @@ export default {
     //this.$route.params.id
     mounted () {
         if(this.type == 'Portfolio'){
-            this.url = 'Portfolios?bu_category.name='+this.CategoryName+'&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang
+            this.url = 'Portfolios?bu_category.name='+this.CategoryName+'&_sort=created_at:DESC&_limit=4&_locale='+ this.lang
         }
         else
         {
-            this.url = 'blogs?blog_category.id='+this.CategoryName+'&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang
+            this.url = 'blogs?blog_category.id='+this.CategoryName+'&_sort=created_at:DESC&_limit=4&_locale='+ this.lang
         }
         this.axios.get(this.url)
         .then(response => (this.responseData = response.data))

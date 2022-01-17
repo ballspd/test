@@ -20,7 +20,7 @@
                         <div class="row mt-5">
                             <div class="col-12"><h1 class="text-s-30 text-w-700">{{responseData.title}}</h1><hr style="border: 1px solid #E5E5E5;"></div>
                             <div class="col-12">
-                                <p class="text-s-16" style="color:#807F7F !important">{{dateTime(responseData.updated_at)}}</p>
+                                <p class="text-s-16" style="color:#807F7F !important">{{dateTime(responseData.created_at)}}</p>
                             </div>
                             <div class="col-6 col-md-5 col-xl-3" style="border-right: 2px solid #E5E5E5;">
                                 <span class="me-4">Share with :</span> 

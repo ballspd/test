@@ -31,7 +31,7 @@
                         <div v-if="index == 0" class="row">
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img class="img-fluid img-fix-size" :src="data.illustration.url" :alt="data.illustration.name" style="width: 510px;height: 330px;"></div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="padding: 30px 10px 10px 10px;">
-                                <p class="text-s-16" style="color:#807F7F">{{dateTime(responseData.updated_at)}}</p>
+                                <p class="text-s-16" style="color:#807F7F">{{dateTime(responseData.created_at)}}</p>
                                 <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                 <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
                                 <p class="text-limit-2 text-s-16" style="color:#373737;">{{data.description}}</p>
@@ -521,7 +521,7 @@ export default {
         }
     },
     created () {
-        this.axios.get('blogs?_sort=updated_at:DESC&_limit=6&_locale='+ this.lang)
+        this.axios.get('blogs?_sort=created_at:DESC&_limit=6&_locale='+ this.lang)
         .then(response => (this.responseData = response.data))
         .catch()
     },
@@ -545,56 +545,56 @@ export default {
             this.windowTop = e.target.documentElement.scrollTop;
             if(this.windowTop > '1200'){
                 this.c1 = true
-                this.axios.get('blogs?blog_category=8&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
+                this.axios.get('blogs?blog_category=8&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac1 = response.data))
                 .catch()
             }
             if(this.windowTop > '1650')
             {
                 this.c2 = true
-                this.axios.get('blogs?blog_category=9&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
+                this.axios.get('blogs?blog_category=9&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac2 = response.data))
                 .catch()
             }
             if(this.windowTop > '2150')
             {
                 this.c3 = true
-                this.axios.get('blogs?blog_category=10&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
+                this.axios.get('blogs?blog_category=10&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac3 = response.data))
                 .catch()
             }
             if(this.windowTop > '2650')
             {
                 this.c4 = true
-                this.axios.get('blogs?blog_category=11&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
+                this.axios.get('blogs?blog_category=11&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac4 = response.data))
                 .catch()
             }
             if(this.windowTop > '3150')
             {
                 this.c5 = true
-                this.axios.get('blogs?blog_category=12&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
+                this.axios.get('blogs?blog_category=12&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac5 = response.data))
                 .catch()
             }
             if(this.windowTop > '3650')
             {
                 this.c6 = true
-                this.axios.get('blogs?blog_category=13&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
+                this.axios.get('blogs?blog_category=13&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac6 = response.data))
                 .catch()
             }
             if(this.windowTop > '4150')
             {
                 this.c7 = true
-                this.axios.get('blogs?blog_category=14&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
+                this.axios.get('blogs?blog_category=14&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac7 = response.data))
                 .catch()
             }
             if(this.windowTop > '4550')
             {
                 this.c8 = true
-                this.axios.get('blogs?blog_category=15&_sort=updated_at:DESC&_limit=4&_locale='+ this.lang)
+                this.axios.get('blogs?blog_category=15&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac8 = response.data))
                 .catch()
             }
