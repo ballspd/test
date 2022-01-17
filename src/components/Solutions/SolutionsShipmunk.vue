@@ -250,7 +250,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0">ติดตามสถานะการจัดส่งสินค้าได้ แบบ realtime ผ่าน LINE OA ของ Shipmunk</p>
+                                        <p class="text-s-16 text-w-700 mb-0">ติดตามสถานะการจัดส่งสินค้าได้ แบบ Realtime ผ่าน LINE OA ของ Shipmunk</p>
                                     </div>
                                 </div>
                             </div>
@@ -299,9 +299,6 @@
                     </div>
                     <div class="col-4 col-lg-2 m-auto">
                         <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-4.png">
-                    </div>
-                    <div class="col-4 col-lg-2 m-auto">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-5.png">
                     </div>
                     <div class="col-4 col-lg-2 m-auto">
                         <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-6.png">
