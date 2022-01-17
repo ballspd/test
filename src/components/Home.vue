@@ -66,6 +66,7 @@
           </div>
         </div>
         <!-- <ParallaxAll/> -->
+        <!-- <ParallaxMobile/> -->
         <InterestingArticles :type="type"/>
 
         <div class="padding-card">
@@ -232,6 +233,7 @@ import Review from '@/components/Review'
 import Preloader from '@/components/Preloader'
 import BannerBU from '@/components/BannerBU'
 //import ParallaxAll from '@/components/ParallaxAll'
+//import ParallaxMobile from '@/components/ParallaxMobile'
 
 export default {
   name: 'Home',
@@ -241,7 +243,8 @@ export default {
     Review,
     BannerBU,
     Preloader,
-    //ParallaxAll
+    //ParallaxAll,
+    //ParallaxMobile
   },
   data(){
     return {
