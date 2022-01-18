@@ -20,7 +20,7 @@
                                 <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                 <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
                                 <p class="text-s-16" style="color:#373737">{{data.description}}</p>
-                                <router-link class="btn btn-transparent mt-3 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
+                                <router-link class="btn btn-transparent mt-3 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
                             </div>
                         </div>
                     </div>
@@ -36,7 +36,7 @@
                                     <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                     <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                     <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                    <router-link class="btn btn-transparent mt-1 button" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
+                                    <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+''}"><span>Read More</span></router-link>
                                 </div>
                             </div>
                         </div>
@@ -60,12 +60,12 @@ export default {
     data() {
       return {
         responseData:[],
-        lang: localStorage.getItem('lang') || 'en',
+        lang: localStorage.getItem('lang') || 'TH-th',
         paramsId: this.$route.params.id
       }
     },
     //this.$route.params.id
-    created () {
+    mounted () {
         this.axios.get('Blogs?blog_category=' + this.paramsId + '&_sort=created_at:DESC&_locale='+ this.lang)
         .then(response => (this.responseData = response.data))
     },
@@ -81,6 +81,9 @@ export default {
 </script>
 
 <style scoped>
+.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active{
+    opacity: 0.8 !important;
+}
 
 .card {
   background: #FBFBFB;

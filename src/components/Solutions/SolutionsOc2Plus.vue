@@ -179,7 +179,7 @@ export default {
             return {
                 type: 'Oc2Plus',
                 isHidden: false,
-                lang: localStorage.getItem('lang') || 'en',
+                lang: localStorage.getItem('lang') || 'TH-th',
                 animation1:false,
                 animation2:false
         }

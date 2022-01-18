@@ -171,7 +171,7 @@ export default {
         return {
             type: 'All',
             isHidden: false,
-            lang: localStorage.getItem('lang') || 'en',
+            lang: localStorage.getItem('lang') || 'TH-th',
         }
     }
 }
