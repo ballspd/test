@@ -182,7 +182,7 @@
                                 <font class="text-w-700" style="font-size:24px;color:#15304E">เทคนิคการขาย และการโฆษณา</font>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/8'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/8', query: { type: 'เทคนิคการขาย และการโฆษณา' } }"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -220,7 +220,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ Social Media</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/9'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/9', query: { type: 'เทรนด์ Social Media' } }"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -258,7 +258,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ Market Place</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/10'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/10', query: { type: 'เทรนด์ Market Place' }}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -296,7 +296,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ E-Commerce</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/11'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/11', query: { type: 'เทรนด์ E-Commerce' }}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -334,7 +334,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">ครบจบ ทุกเรื่อง LINE</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/12'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/12', query: { type: 'ครบจบ ทุกเรื่อง LINE' }}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -372,7 +372,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">Martech</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/13'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/13', query: { type: 'Martech' }}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -410,7 +410,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">Digital Transformation</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/14'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/14', query: { type: 'Digital Transformation' }}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -445,10 +445,10 @@
                     <div v-if="c8" class="animate__animated animate__bounceInUp">
                         <div class="row mt-4">
                             <div class="col-6">
-                                <p class="text-w-700" style="font-size:24px;color:#15304E">Digital Transformation</p>
+                                <p class="text-w-700" style="font-size:24px;color:#15304E">อื่น ๆ</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/14'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/15', query: { type: 'อื่น ๆ' }}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">

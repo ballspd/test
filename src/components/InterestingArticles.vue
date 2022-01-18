@@ -29,7 +29,7 @@
                   </div>
                   <div v-if="responseData.length > 3" class="carousel-item" data-bs-interval="10000">
                     <div class="row">
-                      <div v-for="(data, index) in responseData.slice(4, 6)" :key="index" class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
+                      <div v-for="(data, index) in responseData.slice(4, 7)" :key="index" class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
                         <div class="card" style="width: 331px;border-radius: 10px">
                           <img class="card-img-top img-fix-size" :src="data.illustration.url">
                           <div class="card-body">
@@ -43,7 +43,7 @@
                   </div>
                   <div v-if="responseData.length > 6" class="carousel-item" data-bs-interval="10000">
                     <div class="row">
-                      <div v-for="(data, index) in responseData.slice(7, 9)" :key="index" class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
+                      <div v-for="(data, index) in responseData.slice(8, 10)" :key="index" class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
                         <div class="card" style="width: 331px;border-radius: 10px">
                           <img class="card-img-top img-fix-size" :src="data.illustration.url">
                           <div class="card-body">

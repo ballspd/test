@@ -11,7 +11,7 @@
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <font class="font-wght" style="font-size:62px;color:#FFFFFC">LINE AGENCY <br>BY SELLSUKI</font>
-                                    <p class="text-s-16 mt-3" style="color:#FFFFFC">ผู้เชี่ยวชาญอันดับ 1 เรื่อง LINE OA ที่ได้รับความไว้วางใจ จากเจ้าของธุรกิจกว่า 6,000 แอคเคาท์ ให้เราช่วยดู</p>
+                                    <p class="text-s-16 mt-3" style="color:#FFFFFC">ผู้เชี่ยวชาญอันดับ 1 เรื่อง LINE OA ที่ได้รับความไว้วางใจ จากเจ้าของธุรกิจกว่า 6,000 แอคเคาท์ ให้เราช่วยดูแล</p>
                                     <a href="https://lineagency.sellsuki.com" target="_blank" class="btn btn-orange button mt-4"><span class="text-white" style="font-size:18px">Click Now</span></a>
                                 </td>
                             </table>
@@ -19,7 +19,7 @@
                         <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
                             <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#FFFFFC">LINE Agency</font></p>
                             <h1 class="font-wght text-s-36" style="color:#FFFFFC">LINE AGENCY <br>BY SELLSUKI</h1>
-                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">ผู้เชี่ยวชาญอันดับ 1 เรื่อง LINE OA ที่ได้รับความไว้วางใจ จากเจ้าของธุรกิจกว่า 6,000 แอคเคาท์ ให้เราช่วยดู</p>
+                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">ผู้เชี่ยวชาญอันดับ 1 เรื่อง LINE OA ที่ได้รับความไว้วางใจ จากเจ้าของธุรกิจกว่า 6,000 แอคเคาท์ ให้เราช่วยดูแล</p>
                             <a href="https://lineagency.sellsuki.com" target="_blank" class="btn btn-orange button mt-4"><span class="text-white" style="font-size:18px">Click Now</span></a>
                         </div>
                     </div>

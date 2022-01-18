@@ -12,7 +12,7 @@
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:62px;color:#FFFFFC">BEARY TECH</h1>
                                     <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#FFFFFC">“บริการพัฒนา และ ทำเว็บไซต์ ทุกรูปแบบ”</h2>
-                                    <p class="text-s-16 mt-3" style="color:#FFFFFC">Beary Tech ผู้ให้บริการ ทำเว็บไซต์ ครบวงจที่สามารถออกแบบ ให้เหมาะสมและตอบโจทย์ทุกความต้องการของผู้ใช้งาน เพื่อส่งมอบ ประสบการณ์ที่ดีที่สุด</p>
+                                    <p class="text-s-16 mt-3" style="color:#FFFFFC">Beary Tech ผู้ให้บริการ ทำเว็บไซต์ ครบวงจรที่สามารถออกแบบ ให้เหมาะสมและตอบโจทย์ทุกความต้องการของผู้ใช้งาน เพื่อส่งมอบ ประสบการณ์ที่ดีที่สุด</p>
                                 </td>
                             </table>
                         </div>
@@ -20,7 +20,7 @@
                             <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#FFFFFC">Beary Tech</font></p>
                             <h1 class="font-wght text-s-36" style="color:#FFFFFC">BEARY TECH</h1>
                             <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#FFFFFC">“บริการพัฒนา และ ทำเว็บไซต์ ทุกรูปแบบ”</h2>
-                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">Beary Tech ผู้ให้บริการ ทำเว็บไซต์ ครบวงจที่สามารถออกแบบ ให้เหมาะสมและตอบโจทย์ทุกความต้องการของผู้ใช้งาน เพื่อส่งมอบ ประสบการณ์ที่ดีที่สุด</p>
+                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">Beary Tech ผู้ให้บริการ ทำเว็บไซต์ ครบวงจรที่สามารถออกแบบ ให้เหมาะสมและตอบโจทย์ทุกความต้องการของผู้ใช้งาน เพื่อส่งมอบ ประสบการณ์ที่ดีที่สุด</p>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -56,7 +56,7 @@
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 hvr-float-shadow" style="background-color: #030303;">
                                 <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-solution-beary-4.png"></div>
                             </div>
-                            <h2 class="text-s-20 mt-3" style="color:#0A0909">CRM software</h2>
+                            <h2 class="text-s-20 mt-3" style="color:#0A0909">CRM Software</h2>
                         </div>  
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 hvr-float-shadow" style="background-color: #0BBD92;">

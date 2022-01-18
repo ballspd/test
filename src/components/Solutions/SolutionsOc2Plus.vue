@@ -11,18 +11,18 @@
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:62px;color:#FFFFFC">OC2PLUS</h1>
-                                    <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#FFFFFC">“เครื่องมือจัดเก็บข้อมูล สำหรับวางแผน การตลาด ที่เจ้าของธุรกิจต้องมี”</h2>
-                                    <p class="text-s-16 mt-3 mb-lg-4 mb-xl-0" style="color:#FFFFFC;width: 470px;">บริการน้องใหม่จาก Sellsuki เป็นบริการ Customer Data Platform (CDP) หรือพื้นที่ในการจัดเก็บข้อมูลของลูกค้า ซึ่งมี ความจำเป็นอย่างมากต่อการ ทำธุรกิจในยุคปัจจุบันที่เราต้องใช้ข้อมูล <br>
-                                    โดยหน้าที่ของ CDP คือ การรวบรวมข้อมูลของลูกค้าคุณจากทุกช่องทางไม่ว่าจะเป็นเว็บไซต์ หรือ Social Media ต่าง ๆ มาไว้ในที่เดียว เพื่อให้ง่าย ต่อการนำมาใช้งานต่อ</p>
+                                    <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#FFFFFC">“เครื่องมือจัดเก็บข้อมูล สำหรับวางแผนการตลาด ที่เจ้าของธุรกิจต้องมี”</h2>
+                                    <p class="text-s-16 mt-3 mb-lg-4 mb-xl-0" style="color:#FFFFFC;width: 470px;">บริการน้องใหม่จาก Sellsuki เป็นบริการ Customer Data Platform (CDP) หรือพื้นที่ในการจัดเก็บข้อมูลของลูกค้า ซึ่งมีความจำเป็นอย่างมากต่อการทำธุรกิจในยุคปัจจุบันที่เราต้องใช้ข้อมูล <br>
+                                    โดยหน้าที่ของ CDP คือ การรวบรวมข้อมูลของลูกค้าจากทุกช่องทาง ไม่ว่าจะเป็นเว็บไซต์ หรือ Social Media ต่าง ๆ มาไว้ในที่เดียว เพื่อให้ง่าย ต่อการนำมาใช้งานต่อ</p>
                                 </td>
                             </table>
                         </div>
                         <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
                             <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#FFFFFC">Oc2plus</font></p>
                             <h1 class="font-wght text-s-36" style="color:#FFFFFC">OC2PLUS</h1>
-                            <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#FFFFFC">“เครื่องมือจัดเก็บข้อมูล สำหรับวางแผน การตลาด ที่เจ้าของธุรกิจต้องมี”</h2>
-                            <p class="text-s-16 p-4 p-md-0 ps-4 pe-4 pb-4" style="color:#FFFFFC">บริการน้องใหม่จาก Sellsuki เป็นบริการ Customer Data Platform (CDP) หรือพื้นที่ในการจัดเก็บข้อมูลของลูกค้า ซึ่งมี ความจำเป็นอย่างมากต่อการ ทำธุรกิจในยุคปัจจุบันที่เราต้องใช้ข้อมูล<br>
-                                    โดยหน้าที่ของ CDP คือ การรวบรวมข้อมูลของลูกค้าคุณจากทุกช่องทางไม่ว่าจะเป็นเว็บไซต์ หรือ Social Media ต่าง ๆ มาไว้ในที่เดียว เพื่อให้ง่าย ต่อการนำมาใช้งานต่อ</p>
+                            <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#FFFFFC">“เครื่องมือจัดเก็บข้อมูล สำหรับวางแผนการตลาด ที่เจ้าของธุรกิจต้องมี”</h2>
+                            <p class="text-s-16 p-4 p-md-0 ps-4 pe-4 pb-4" style="color:#FFFFFC">บริการน้องใหม่จาก Sellsuki เป็นบริการ Customer Data Platform (CDP) หรือพื้นที่ในการจัดเก็บข้อมูลของลูกค้า ซึ่งมีความจำเป็นอย่างมากต่อการทำธุรกิจในยุคปัจจุบันที่เราต้องใช้ข้อมูล<br>
+                                    โดยหน้าที่ของ CDP คือ การรวบรวมข้อมูลของลูกค้าจากทุกช่องทาง ไม่ว่าจะเป็นเว็บไซต์ หรือ Social Media ต่าง ๆ มาไว้ในที่เดียว เพื่อให้ง่าย ต่อการนำมาใช้งานต่อ</p>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -120,7 +120,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">เข้าถึงข้อมูลได้มายิ่งขึ้นเพื่อนำไป ต่อยอด</p>
+                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">เข้าถึงข้อมูลได้มากยิ่งขึ้นเพื่อนำไป ต่อยอด</p>
                                     </div>
                                 </div>
                             </div>
@@ -142,7 +142,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">เพิ่มประสิทธิภาพของแแผนธุรกิจ</p>
+                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">เพิ่มประสิทธิภาพของแผนธุรกิจ</p>
                                     </div>
                                 </div>
                             </div>

@@ -29,7 +29,7 @@
               <p v-if="readMore == true" class="text-s-16 text-description animate__animated animate__flipInX">
                 แม่ค้าออนไลน์ยุค 5.0 ปรับตัวยังไงให้ทันในวันที่โลกหมุนเร็วขนาดนี้ การเข้ามาลงเล่นในตลาดที่มีคู่แข่งมากมาย 
                 ต่อสู้กันอย่างดุเดือดเพื่อแย่งชิงพื้นที่ในการนำเสนอสินค้าให้แก่ผู้บริโภค บอกเลยว่าหากทำงานนี้คนเดียวคงจะหนักเอาการ ถ้าอยากเริ่มต้นขายของออนไลน์อย่างราบรื่นปลอดภัย 
-                การมีผู้ช่วยมือดีไว้ข้างกายก็จะช่วย แบ่งเบาภาระได้เยอะสำหรับ Sellsuki โฉมใหม่ พร้อมเป็นผู้ช่วยให้กับแม่ค้าออนไลน์ทุกคน ไม่เพียงแต่การจัดการออเดอร์เท่านั้น 
+                การมีผู้ช่วยมือดีไว้ข้างกายก็จะช่วยแบ่งเบาภาระได้เยอะสำหรับ Sellsuki โฉมใหม่ พร้อมเป็นผู้ช่วยให้กับแม่ค้าออนไลน์ทุกคน ไม่เพียงแต่การจัดการออเดอร์เท่านั้น 
                 แต่เรากลับมาพร้อมกับอาวุธครบมือ จบได้ทุกปัญหา ไม่ว่าจะเป็นการให้คำปรึกษาด้านการตลาดและการเริ่มต้นทำธุรกิจ การทำ Social Media Marketing ทุกรูปแบบ 
                 บนทุกแพลตฟอร์ม บริการจัดทำเว็บไซต์และระบบต่าง ๆ ให้ตอบโจทย์ทุกธุรกิจ และบริการ Fulfillment ที่ช่วยจัดการสินค้า และออเดอร์ของคุณได้ทุกเมื่อ เรียกได้ว่า Sellsuki  
                 พร้อมดูแลคุณในทุกก้าวตั้งแต่เริ่มต้นจนเป็นแม่ค้าคนดังกันเลย!</p>
@@ -82,7 +82,7 @@
                   <div class="card text-white card-roadmap hvr-rotate">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-7" style="margin:15px 0px 15px 0px"><font style="font-size: 22px;left: 30px;position: relative;">ศึกษา ทำความเข้าใจ <br>กลุ่มเป้าหมายและตลาด</font></div>
+                        <div class="col-7" style="margin:15px 0px 15px 0px"><font style="font-size: 20px;left: 30px;position: relative;">ศึกษา ทำความเข้าใจ <br>กลุ่มเป้าหมายและตลาด</font></div>
                         <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group.png"></div>
                       </div>
                     </div>
@@ -92,7 +92,7 @@
                   <div class="card text-white card-roadmap hvr-rotate">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-7" style="margin:15px 0px 15px 0px"><font style="font-size: 22px;left: 30px;position: relative;">วิเคราะห์ข้อมูลเพื่อหาข้อ <br>เท็จจริง</font></div>
+                        <div class="col-7" style="margin:15px 0px 15px 0px"><font style="font-size: 20px;left: 30px;position: relative;">วิเคราะห์ข้อมูลเพื่อหาข้อ <br>เท็จจริง</font></div>
                         <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group1.png"></div>
                       </div>
                     </div>
@@ -102,7 +102,7 @@
                   <div class="card text-white card-roadmap hvr-rotate">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-7" style="margin:15px  0px 15px 0px"><font style="font-size: 22px;left: 30px;position: relative;">วางแผลกลยุทธ์ที่ตอบ <br>โจทย์กับรูปแบบธุรกิจ</font></div>
+                        <div class="col-7" style="margin:15px  0px 15px 0px"><font style="font-size: 20px;left: 30px;position: relative;">วางแผลกลยุทธ์ที่ตอบ <br>โจทย์กับรูปแบบธุรกิจ</font></div>
                         <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group2.png"></div>
                       </div>
                     </div>
@@ -112,7 +112,7 @@
                   <div class="card text-white card-roadmap hvr-rotate">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-7" style="margin:0px 0px 0px 0px"><font style="font-size: 22px;left: 30px;position: relative;">ตรวจเช็คและแก้ไข เพื่อ<br>เพิ่มประสิทธิภาพให้กับแผนงาน</font></div>
+                        <div class="col-7" style="margin:0px 0px 0px 0px"><font style="font-size: 20px;left: 30px;position: relative;">ตรวจเช็คและแก้ไข เพื่อ<br>เพิ่มประสิทธิภาพให้กับแผนงาน</font></div>
                         <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group3.png"></div>
                       </div>
                     </div>
@@ -122,7 +122,7 @@
                   <div class="card text-white card-roadmap hvr-rotate">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-7" style="margin:0px 0px 0px 0px"><font style="font-size: 22px;left: 30px;position: relative;">ตรวจสอบและไม่หยุด &<br>พัฒนา เพื่อผลลัพธ์ที่ดีที่สุด</font></div>
+                        <div class="col-7" style="margin:0px 0px 0px 0px"><font style="font-size: 20px;left: 30px;position: relative;">ตรวจสอบและไม่หยุด &<br>พัฒนา เพื่อผลลัพธ์ที่ดีที่สุด</font></div>
                         <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group4.png"></div>
                       </div>
                     </div>
