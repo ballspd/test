@@ -146,7 +146,7 @@ export default {
             return {
                 type: 'Fuse',
                 isHidden: false,
-                lang: localStorage.getItem('lang') || 'en',
+                lang: localStorage.getItem('lang') || 'TH-th',
                 responseData:[],
                 animation1:false
         }

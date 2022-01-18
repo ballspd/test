@@ -65,7 +65,7 @@ export default {
     data() {
       return {
         responseData:[],
-        lang: localStorage.getItem('lang') || 'en',
+        lang: localStorage.getItem('lang') || 'TH-th',
         view: 1,
         count:''
       }

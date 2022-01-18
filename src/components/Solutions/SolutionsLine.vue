@@ -177,7 +177,7 @@ export default {
             return {
                 type: 'Line',
                 isHidden: false,
-                lang: localStorage.getItem('lang') || 'en',
+                lang: localStorage.getItem('lang') || 'TH-th',
                 responseDataH1:[],
                 responseDataH2:[],
                 animation1:true,
@@ -218,17 +218,11 @@ export default {
             if(this.windowTop > 1600){
                 document.querySelector('#contant4').style.display = "block";
             }
-            if(this.windowTop > 2000){
-                document.querySelector('#contant5').style.display = "block";
-            }
-            if(this.windowTop > 2100){
+            if(this.windowTop > 1800){
                 this.animation2 = true
             }
-            if(this.windowTop > 2300){
+            if(this.windowTop > 2000){
                 document.querySelector('#contantAdd1').style.display = "block";
-            }
-            if(this.windowTop > 2700){
-                document.querySelector('#contantAdd2').style.display = "block";
             }
         }
     }
