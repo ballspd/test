@@ -107,7 +107,7 @@ export default {
     },
     data() {
       return {
-            lang: localStorage.getItem('lang') || 'en',
+            lang: localStorage.getItem('lang') || 'TH-th',
             responseData:[],
             view: 1,
             count:''

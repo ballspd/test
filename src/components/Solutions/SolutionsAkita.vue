@@ -163,7 +163,7 @@ export default {
             return {
                 type: 'Akita',
                 isHidden: false,
-                lang: localStorage.getItem('lang') || 'en',
+                lang: localStorage.getItem('lang') || 'TH-th',
                 animation1:false,
                 responseData:[]
         }

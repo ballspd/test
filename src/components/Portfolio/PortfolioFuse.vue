@@ -24,7 +24,7 @@ export default {
     name: 'PortfolioFuse',
     data () {
         return {
-            lang: localStorage.getItem('lang') || 'en',
+            lang: localStorage.getItem('lang') || 'TH-th',
             responseData:[]
         }
     },

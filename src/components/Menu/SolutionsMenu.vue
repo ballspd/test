@@ -21,7 +21,7 @@
 export default {
     name: 'SolutionsMenu',
      data () {
-    const lang = localStorage.getItem('lang') || 'en';
+    const lang = localStorage.getItem('lang') || 'TH-th';
     return {
       lang:lang,
       Group:null,

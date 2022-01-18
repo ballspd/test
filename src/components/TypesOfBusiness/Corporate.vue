@@ -175,7 +175,7 @@ export default {
             type: 'All',
             isHidden: false,
             responseData:[],
-            lang: localStorage.getItem('lang') || 'en'
+            lang: localStorage.getItem('lang') || 'TH-th'
         }
     },
     mounted () {

@@ -48,7 +48,7 @@ export default {
       return {
         responseData:[],
         url:'',
-        lang: localStorage.getItem('lang') || 'en',
+        lang: localStorage.getItem('lang') || 'TH-th',
       }
     },
     methods : {
