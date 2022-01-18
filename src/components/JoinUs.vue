@@ -34,8 +34,8 @@
                       โดยมีจุดเริ่มต้นในการเป็นแพลตฟอร์มผู้ช่วยเจ้าของธุรกิจออนไลน์ ระบบการจัดการหลังบ้าน 
                       โดยเราได้มีการพัฒนาบริการของเราให้กว้างยิ่งขึ้นไปเพื่อให้ครบวงจรและตอบสนองความต้องการเจ้าของธุรกิจได้อย่างครอบคลุมมากที่สุด 
                       ไม่ว่าจะเป็นด้านการให้คำปรึกษาทางการตลาด การทำโฆษณา การทำ Content Marketing การสร้างระบบร้านค้า หรือหน้าเว็บต่าง ๆ 
-                      รวมทั้ง การเข้ารวมเป็น Partner LINE เจ้าใหญ่ที่สุดในประเทศไทยที่ได้ ด้วยบริการที่ครบคลุมครบวงจรสำหรับคนอยากเป็นทำธุรกิจจึงทำให้มีเจ้าของธุรกิจมากมายที่ไว้ใจและเลือกใช้บริการเรา 
-                      เราจึงคอยมองหาคนที่มีศัพยภาพและเป้าหมายเดียวกันในการช่วยผลักดัน SME ไทยให้เติบโตไปด้วยกันมาร่วมทีมกับเรา</p>
+                      รวมทั้ง การเข้าร่วมเป็น Partner LINE เจ้าใหญ่ที่สุดในประเทศไทยที่ได้ ด้วยบริการที่ครอบคลุมครบวงจรสำหรับคนอยากเป็นทำธุรกิจจึงทำให้มีเจ้าของธุรกิจมากมายที่ไว้ใจและเลือกใช้บริการเรา 
+                      เราจึงคอยมองหาคนที่มีศัพยภาพและเป้าหมายเดียวกันในการช่วยผลักดัน SME ไทยให้เติบโตไปด้วยกัน</p>
                   </div>
                   <div class="col-12">
                     <div id="carouselimage" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -43,13 +43,19 @@
                             <div class="col-12 p-0">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="10000">
-                                      <img src="./../assets/joinUs/join-us-1.webp" class="d-block w-100">
+                                      <img src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/IMG_0005_e48fa140f2.webp" class="d-block w-100">
                                     </div>
                                     <div class="carousel-item" data-bs-interval="2000">
-                                      <img src="./../assets/joinUs/join-us-2.webp" class="d-block w-100">
+                                      <img src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/IMG_0013_9d4498a6de.webp" class="d-block w-100">
                                     </div>
                                     <div class="carousel-item" data-bs-interval="2000">
-                                      <img src="./../assets/joinUs/join-us-5.webp" class="d-block w-100">
+                                      <img src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/IMG_20_3b63f6690c.webp" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                      <img src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/IMG_0032_4fa9ccab98.webp" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                      <img src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/IMG_25_5fb07da684.webp" class="d-block w-100">
                                     </div>
                                 </div>
                             </div>
@@ -58,6 +64,8 @@
                             <button type="button" data-bs-target="#carouselimage" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselimage" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselimage" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselimage" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselimage" data-bs-slide-to="4" aria-label="Slide 5"></button>
                         </div>
                     </div>
                   </div>
@@ -100,9 +108,9 @@
                           <p class="text-s-16 font-wght">LINE Product Owner</p>
                           <p class="card-text text-s-16">ที่นี่ให้อิสระในการทำงาน ให้โอกาส ให้ลองผิดลองถูก ทำให้เราได้เติบโตขึ้นในทุกวัน 
                               และที่นี่ยังมีโครงสร้างองค์กรที่ค่อนข้างยืดหยุ่น ถ้ามีเรื่องไหนที่เราคิดไม่ออกหรือติดปัญหานอกจากปรึกษาทีม เราสามารถเดินเข้าไปคุยกับผู้บริหารได้เลย
-                              นอกจากนั้นพื่อนร่วมงานที่นี่น่ารัก เพิ่มความสุขใจในการทำงานได้อย่างมากจริงๆ
+                              นอกจากนั้นเพื่อนร่วมงานที่นี่น่ารัก เพิ่มความสุขใจในการทำงานได้อย่างมากจริงๆ
                           </p>
-                          <p class="card-text text-s-16">นอกจากนั้นพื่อนร่วมงานที่นี่น่ารัก<br>เพิ่มความสุขใจในการทำงานได้อย่างมากจริงๆ</p>
+                          <p class="card-text text-s-16">นอกจากนั้นเพื่อนร่วมงานที่นี่น่ารัก<br>เพิ่มความสุขใจในการทำงานได้อย่างมากจริงๆ</p>
                         </div>
                       </div>
                     </div>

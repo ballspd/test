@@ -11,14 +11,14 @@
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:62px;color:#FFFFFC">DIGITAL <br>ADVERTISING</h1>
-                                    <p class="text-s-16 mt-3" style="color:#FFFFFC">Fuse by sellsuki ผู้ให้บริการด้านการทำ social media marketing และเป็นที่ปรึกษาการตลาดที่ช่วยดูแลตั้งแต่การวางแผนตลอดจน การทำโฆษณา หากลุ่มลุกค้า</p>
+                                    <p class="text-s-16 mt-3" style="color:#FFFFFC">Fuse by sellsuki ผู้ให้บริการด้านการทำ social media marketing และเป็นที่ปรึกษาการตลาดที่ช่วยดูแลตั้งแต่การวางแผนตลอดจน การทำโฆษณา หากลุ่มลูกค้า</p>
                                 </td>
                             </table>
                         </div>
                         <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
                             <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#FFFFFC">Fuse</font></p>
                             <h1 class="font-wght text-s-36" style="color:#FFFFFC">DIGITAL <br>ADVERTISING</h1>
-                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">Fuse by sellsuki ผู้ให้บริการด้านการทำ social media marketing และเป็นที่ปรึกษาการตลาดที่ช่วยดูแลตั้งแต่การวางแผนตลอดจน การทำโฆษณา หากลุ่มลุกค้า</p>
+                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">Fuse by sellsuki ผู้ให้บริการด้านการทำ social media marketing และเป็นที่ปรึกษาการตลาดที่ช่วยดูแลตั้งแต่การวางแผนตลอดจน การทำโฆษณา หากลุ่มลูกค้า</p>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
