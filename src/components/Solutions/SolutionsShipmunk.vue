@@ -11,16 +11,16 @@
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:62px;color:#FFFFFC">SHIPMUNK</h1>
-                                    <h2 class="text-s-22 pt-2 pb-2 text-w-700" style="color:#FFFFFC">“ช่วยเปรียบเทียบค่าส่งพัสดุ เลือกผู้ให้บริการ ขนส่งที่ดีที่สุด สะดวก ประหยัดยิ่งกว่า”</h2>
-                                    <p class="text-s-16 mt-3" style="color:#FFFFFC">ผู้ให้บริการการ เปรียบเทียบค่าส่งพัสดุ จองคิวขนส่งและชำระเงิน ได้ง่ายๆ ผ่านระบบออนไลน์ ช่วยให้เจ้าของธุรกิจ ทำงานได้ง่ายยิ่งขึ้น!</p>
+                                    <h2 class="text-s-22 pt-2 pb-2 text-w-700" style="color:#FFFFFC">“ช่วยเปรียบเทียบค่าส่งพัสดุ เลือกผู้ให้บริการขนส่งที่ดีที่สุด สะดวก ประหยัดยิ่งกว่า”</h2>
+                                    <p class="text-s-16 mt-3" style="color:#FFFFFC">ผู้ให้บริการการเปรียบเทียบค่าส่งพัสดุ จองคิวขนส่ง และชำระเงินได้ง่ายๆ ผ่านระบบออนไลน์ ช่วยให้เจ้าของธุรกิจทำงานได้ง่ายยิ่งขึ้น!</p>
                                 </td>
                             </table>
                         </div>
                         <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
                             <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#FFFFFC">Shipmunk</font></p>
                             <h1 class="font-wght text-s-36" style="color:#FFFFFC">SHIPMUNK</h1>
-                            <h2 class="text-s-22 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#FFFFFC">“ช่วยเปรียบเทียบค่าส่งพัสดุ เลือกผู้ให้บริการ ขนส่งที่ดีที่สุด สะดวก ประหยัดยิ่งกว่า”</h2>
-                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">ผู้ให้บริการการ เปรียบเทียบค่าส่งพัสดุ จองคิวขนส่งและชำระเงิน ได้ง่ายๆ ผ่านระบบออนไลน์ ช่วยให้เจ้าของธุรกิจ ทำงานได้ง่ายยิ่งขึ้น!</p>
+                            <h2 class="text-s-22 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#FFFFFC">“ช่วยเปรียบเทียบค่าส่งพัสดุ เลือกผู้ให้บริการขนส่งที่ดีที่สุด สะดวก ประหยัดยิ่งกว่า”</h2>
+                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">ผู้ให้บริการการเปรียบเทียบค่าส่งพัสดุ จองคิวขนส่ง และชำระเงินได้ง่ายๆ ผ่านระบบออนไลน์ ช่วยให้เจ้าของธุรกิจทำงานได้ง่ายยิ่งขึ้น!</p>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
