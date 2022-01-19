@@ -116,6 +116,14 @@ export default {
     },
     methods:{
         submitForm() {
+            if(this.form.name == '' || this.form.phone_number == '' || this.form.email == '' || this.form.message == ''){
+                this.$swal.fire(
+                                'ข้อมูลไม่ครบถ้วน',
+                                'กรุณากรอกข้อมูลให้ครบถ้วน',
+                                'warning'
+                            )
+                return false
+            }
             this.$swal.fire({
                 title: 'Are you sure?',
                 text: "You want to send a message",
