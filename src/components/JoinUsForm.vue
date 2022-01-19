@@ -95,9 +95,9 @@
 
                             <div class="col-12 mt-5">
                                 <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <input class="form-check-input" type="checkbox" v-model="checkbox" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
-                                        ยินยอมให้ใช้หรือเปิดเผยข้อมูลส่วนบุคคลของผู้สมัคร
+                                        ยินยอมให้ใช้หรือเปิดเผยข้อมูลส่วนบุคคลของผู้สมัคร {{checkbox}}
                                     </label>
                                 </div>
                             </div>
@@ -140,7 +140,8 @@ export default {
         position:'',
         filebase64:'',
         expectedSalary:'',
-        tellUs: ''
+        tellUs: '',
+        checkbox:''
       }
     },
     methods:{
@@ -159,6 +160,22 @@ export default {
         },
 
         submitForm(){
+            if(this.filename == '' || this.firstName == '' || this.lastName == '' || this.email == '' || this.phoneNumber == '' || this.jobVacancy == '' || this.position == '' || this.expectedSalary == '' || this.tellUs == ''){
+                this.$swal.fire(
+                                'ข้อมูลไม่ครบถ้วน',
+                                'กรุณากรอกข้อมูลให้ครบถ้วน',
+                                'warning'
+                            )
+                return false
+            }
+            if(this.checkbox != true){
+                this.$swal.fire(
+                                'ยินยอมให้ใช้ข้อมูล',
+                                'กรุณายินยอมให้ใช้หรือเปิดเผยข้อมูลส่วนบุคคลของผู้สมัคร',
+                                'warning'
+                            )
+                return false
+            }
 
             if (this.$refs.file.files){
                 let formData = new FormData();

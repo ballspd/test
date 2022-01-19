@@ -13,7 +13,7 @@
                             <div v-else-if="activeBuLine">
                                 <img class="mt-5 animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-line.png" alt="logo-Line.png">
                                 <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">LINE AGENCY <br>BY SELLSUKI</h1>
-                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">LINE Partner อันดับ 1 ของประเทศไทย ที่ได้รับความไว้วางใจจากลูกค้ากว่า 6,000 Accounts ให้เราช่วยดูแลช่องทางการขายบน LINE Official Account และบริการทำโฆษณาอย่างตรงจุด หยุดทุกสายตาบนพื้นที่ LINE รวมถึง LINE Chatbot ให้งานตอบลูกค้าเป็นเรื่องง่ายสะดวกสบาย</p>
+                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">ครองตำแหน่ง LINE Partner อันดับ 1 ของประเทศไทยมากกว่า 4 ปี ที่ได้รับความไว้วางใจจากลูกค้ากว่า 6,000 Accounts ให้เราช่วยดูแลช่องทางการขายบน LINE Official Account และบริการทำโฆษณาอย่างตรงจุด หยุดทุกสายตาบนพื้นที่ LINE รวมถึง LINE Chatbot ให้งานตอบลูกค้าเป็นเรื่องง่ายสะดวกสบาย</p>
                             </div>
                             <div v-else-if="activeBuAkita">
                                 <img class="mt-5 animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Akita.png" alt="logo-Akita.png">
@@ -47,7 +47,7 @@
                     <div v-else-if="activeBuLine" class="text-center ps-5 pe-5">
                         <img class="animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-line.png" alt="logo-line.png" style="margin-top:120px">
                         <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">LINE AGENCY BY SELLSUKI</h1>
-                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">LINE Partner อันดับ 1 ของประเทศไทย ที่ได้รับความไว้วางใจจากลูกค้ากว่า 6,000 Accounts ให้เราช่วยดูแลช่องทางการขายบน LINE Official Account และบริการทำโฆษณาอย่างตรงจุด หยุดทุกสายตาบนพื้นที่ LINE รวมถึง LINE Chatbot ให้งานตอบลูกค้าเป็นเรื่องง่ายสะดวกสบาย</p>
+                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">ครองตำแหน่ง LINE Partner อันดับ 1 ของประเทศไทยมากกว่า 4 ปี ที่ได้รับความไว้วางใจจากลูกค้ากว่า 6,000 Accounts ให้เราช่วยดูแลช่องทางการขายบน LINE Official Account และบริการทำโฆษณาอย่างตรงจุด หยุดทุกสายตาบนพื้นที่ LINE รวมถึง LINE Chatbot ให้งานตอบลูกค้าเป็นเรื่องง่ายสะดวกสบาย</p>
                         <router-link @click="scrollToTop" to="/Solutions/Line" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></router-link>
                     </div>
                     <div v-else-if="activeBuAkita" class="text-center ps-5 pe-5">
