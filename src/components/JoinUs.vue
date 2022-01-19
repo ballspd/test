@@ -105,7 +105,7 @@
                         <div class="card-body p-4">
                           <img class="pb-3" width="90" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Join_us_Profile_3_8b963d1591.webp" alt="">
                           <p class="card-title font-wght text-s-20">Thatim Prakaymaneewong</p>
-                          <p class="text-s-16 font-wght">LINE Product Owner</p>
+                          <p class="text-s-16 font-wght">Product Owner</p>
                           <p class="card-text text-s-16">ที่นี่ให้อิสระในการทำงาน ให้โอกาส ให้ลองผิดลองถูก ทำให้เราได้เติบโตขึ้นในทุกวัน 
                               และที่นี่ยังมีโครงสร้างองค์กรที่ค่อนข้างยืดหยุ่น ถ้ามีเรื่องไหนที่เราคิดไม่ออกหรือติดปัญหานอกจากปรึกษาทีม เราสามารถเดินเข้าไปคุยกับผู้บริหารได้เลย
                               นอกจากนั้นเพื่อนร่วมงานที่นี่น่ารัก เพิ่มความสุขใจในการทำงานได้อย่างมากจริงๆ
