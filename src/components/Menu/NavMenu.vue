@@ -143,7 +143,7 @@
             </ul>
           </li> -->
           <li class="nav-item">
-            <a href="tel:0877334145" target="_blank" class="nav-link text-c-menu" style="margin-right:40px;margin-left:10x;padding-right: 0 !important;padding-left: 0 !important;"><img class="shadow-filter" style="background-color: #FFFFFF;border-radius: 50px;" src="./../../assets/icon/Vector.png"></a>
+            <a href="tel:020263250" target="_blank" class="nav-link text-c-menu" style="margin-right:40px;margin-left:10x;padding-right: 0 !important;padding-left: 0 !important;"><img class="shadow-filter" style="background-color: #FFFFFF;border-radius: 50px;" src="./../../assets/icon/Vector.png"></a>
           </li>
         </ul>
       </div>
