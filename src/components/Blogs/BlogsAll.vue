@@ -14,7 +14,7 @@
                 <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
                     <div v-for="(data, index) in responseData" :key="index">
                         <div v-if="index == 0" class="row mb-1">
-                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><img class="img-fix-size" :src="data.illustration.url" style="height: 330px;"></div>
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" style="height: 330px;"></div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" style="padding: 30px 10px 10px 10px;">
                                 <p class="text-s-16" style="color:#807F7F">{{dateTime(responseData.created_at)}}</p>
                                 <font class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</font>
@@ -30,7 +30,7 @@
                         <div v-for="(data, index) in responseData" :key="index" :class="{'hide-col':index == 0}" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                             <div class="row">
                                 <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                    <img class="img-fix-size" :src="data.illustration.url">
+                                    <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
                                 </div>
                                 <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                     <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
