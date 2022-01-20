@@ -31,7 +31,7 @@
                         </div>
                         <div v-for="data in responseData.contant" :key="data.id" class="row">
                             <div v-if="data.image != null" class="col-12 mt-5 mb-5">
-                                <img class="img-cover" :src="data.image.url" :alt="data.image.name">
+                                <img v-if="data.image != null" class="img-cover" :src="data.image.url" :alt="data.image.name">
                             </div>
                             <div v-else class="mt-3 mb-3">
                             </div>

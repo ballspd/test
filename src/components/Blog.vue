@@ -29,7 +29,7 @@
                 <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
                     <div v-for="(data, index) in responseData" :key="index" class="mb-5">
                         <div v-if="index == 0" class="row">
-                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img class="img-fluid img-fix-size" :src="data.illustration.url" :alt="data.illustration.name" style="width: 510px;height: 330px;"></div>
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img v-if="data.illustration != null" class="img-fluid img-fix-size" :src="data.illustration.url" :alt="data.illustration.name" style="width: 510px;height: 330px;"></div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="padding: 30px 10px 10px 10px;">
                                 <p class="text-s-16" style="color:#807F7F">{{dateTime(responseData.created_at)}}</p>
                                 <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
@@ -48,7 +48,7 @@
                                             <div class="row">
                                                 <div v-for="(data, index) in responseData" :key="index" :class="{'col-4':index < 3}">
                                                     <div v-if="index < 3" class="row">
-                                                        <div class="col-6" style="width:170px"><img class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
+                                                        <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
                                                         <div class="col-6 p-1">                                                
                                                             <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}" class="btn lh-1 btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important"><span style="font-size:14px">NEW</span></router-link>
                                                             <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:18px">{{data.title}}</p>
@@ -63,7 +63,7 @@
                                             <div class="row">
                                                 <div v-for="(data, index) in responseData" :key="index" :class="{'col-4':index > 2}">
                                                     <div v-if="index > 2" class="row">
-                                                        <div class="col-6" style="width:170px"><img class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
+                                                        <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
                                                         <div class="col-6 p-1">                                            
                                                             <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}" class="btn lh-1 btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important"><span style="font-size:14px">NEW</span></router-link>
                                                             <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:18px">{{data.title}}</p>
@@ -88,7 +88,7 @@
                                             <div class="row">
                                                 <div class="col-12">
                                                     <div class="row">
-                                                        <div class="col-6" style="width:170px"><img class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
+                                                        <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
                                                         <div class="col-6 p-2 ps-sm-3 pe-sm-3">                                                
                                                             <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}" class="btn btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important;line-height: 1"><span style="font-size:14px">NEW</span></router-link>
                                                             <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:18px">{{data.title}}</p>
@@ -189,7 +189,7 @@
                             <div v-for="data in responseDatac1" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fix-size" :src="data.illustration.url">
+                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
@@ -227,7 +227,7 @@
                             <div v-for="data in responseDatac2" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fix-size" :src="data.illustration.url">
+                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
@@ -265,7 +265,7 @@
                             <div v-for="data in responseDatac3" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fix-size" :src="data.illustration.url">
+                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
@@ -303,7 +303,7 @@
                             <div v-for="data in responseDatac4" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fix-size" :src="data.illustration.url">
+                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
@@ -341,7 +341,7 @@
                             <div v-for="data in responseDatac5" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fix-size" :src="data.illustration.url">
+                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
@@ -379,7 +379,7 @@
                             <div v-for="data in responseDatac6" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fix-size" :src="data.illustration.url">
+                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
@@ -417,7 +417,7 @@
                             <div v-for="data in responseDatac7" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fix-size" :src="data.illustration.url">
+                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
@@ -455,7 +455,7 @@
                             <div v-for="data in responseDatac8" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fix-size" :src="data.illustration.url">
+                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>

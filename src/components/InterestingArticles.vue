@@ -17,7 +17,7 @@
                     <div class="row">
                       <div v-for="(data, index) in responseData.slice(0, 3)" :key="index" class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
                         <div class="card" style="width: 331px;border-radius: 10px">
-                          <img class="card-img-top img-fix-size" :src="data.illustration.url">
+                          <img v-if="data.illustration != null" class="card-img-top img-fix-size" :src="data.illustration.url">
                           <div class="card-body">
                             <font class="card-title text-limit-1" style="font-weight: bold;font-size: 24px;">{{data.title}}</font>
                             <p style="margin-bottom: 0rem;" class="card-text text-s-16 text-limit-2">{{data.description}}</p>
@@ -31,7 +31,7 @@
                     <div class="row">
                       <div v-for="(data, index) in responseData.slice(4, 7)" :key="index" class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
                         <div class="card" style="width: 331px;border-radius: 10px">
-                          <img class="card-img-top img-fix-size" :src="data.illustration.url">
+                          <img v-if="data.illustration != null" class="card-img-top img-fix-size" :src="data.illustration.url">
                           <div class="card-body">
                             <font class="card-title text-limit-1" style="font-weight: bold;font-size: 24px;">{{data.title}}</font>
                             <p style="margin-bottom: 0rem;" class="card-text text-s-16 text-limit-2">{{data.description}}</p>
@@ -45,7 +45,7 @@
                     <div class="row">
                       <div v-for="(data, index) in responseData.slice(8, 10)" :key="index" class="col-4 d-flex justify-content-center" style="padding-top: 30px !important;">
                         <div class="card" style="width: 331px;border-radius: 10px">
-                          <img class="card-img-top img-fix-size" :src="data.illustration.url">
+                          <img v-if="data.illustration != null" class="card-img-top img-fix-size" :src="data.illustration.url">
                           <div class="card-body">
                             <font class="card-title text-limit-1" style="font-weight: bold;font-size: 24px;">{{data.title}}</font>
                             <p style="margin-bottom: 0rem;" class="card-text text-s-16 text-limit-2">{{data.description}}</p>

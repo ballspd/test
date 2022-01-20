@@ -34,16 +34,16 @@
                             <div v-for="(data, index) in responseData.contant" :key="index">
                                 <div v-if="index == 0" class="row">
                                     <div v-if="data.image != null" class="col-12 mt-5 mb-5">
-                                        <img class="img-cover" :src="data.image.url" :alt="data.image.name">
+                                        <img v-if="data.image != null" class="img-cover" :src="data.image.url" :alt="data.image.name">
                                     </div>
                                     <div v-if="data.text != null" class="col-12">
                                         <p v-html="markdownToHtml(data.text)"></p>
                                     </div>
                                 </div>
                             </div> 
-                            <div class="col-12 mt-4 mb-4">
+                            <div v-if="responseData.income != null && responseData.results != null" class="col-12 mt-4 mb-4">
                                 <div class="row justify-content-center">
-                                    <div class="col-lg-4 col-10">
+                                    <div v-if="responseData.income != null" class="col-lg-4 col-10">
                                         <div class="crad text-center card-port d-flex" style="background-color: #E27485">
                                             <div class="m-auto">
                                                 <p class="text-w-700 text-s-24 m-0" style="color:#AA4051 !important">รายได้เพิ่มขึ้น</p>
@@ -51,7 +51,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-10 mt-lg-0 mt-4">
+                                    <div v-if="responseData.results != null" class="col-lg-4 col-10 mt-lg-0 mt-4">
                                         <div class="crad text-center card-port d-flex" style="background-color: #F4BF69">
                                             <div class="m-auto">
                                                 <p class="text-w-700 text-s-24 m-0" style="color:#B57D23 !important">เดือนในการเห็นผล</p>

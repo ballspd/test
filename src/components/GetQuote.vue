@@ -172,7 +172,7 @@ export default {
                             "c8a12d868709dfba7851c4a17313adc3eb92b8f9": this.form.interested
                         };
 
-                        console.log(data)
+                        //console.log(data)
 
                         var api_token = "4e9d4073e72ab32c7ffff64dcee32836be9954f8"
                         this.axios.post('https://api.pipedrive.com/v1/leads?api_token='+ api_token, data)
@@ -189,6 +189,14 @@ export default {
                                 text: error,
                             })
                         })
+
+                        this.form.fname == ''
+                        this.form.lname == ''
+                        this.form.tel == ''
+                        this.form.email == ''
+                        this.form.message == ''
+                        this.form.brand == ''
+                        this.form.interested == ''
                     }
                 })
         }
