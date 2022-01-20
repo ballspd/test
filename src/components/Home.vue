@@ -65,7 +65,7 @@
             </div>
           </div>
         </div>
-        <ParallaxAll/>
+        <!-- <ParallaxAll/> -->
         <!-- <ParallaxMobile/> -->
         <InterestingArticles :type="type"/>
 
@@ -232,7 +232,7 @@ import InterestingArticles from '@/components/InterestingArticles'
 import Review from '@/components/Review'
 import Preloader from '@/components/Preloader'
 import BannerBU from '@/components/BannerBU'
-import ParallaxAll from '@/components/ParallaxAll'
+//import ParallaxAll from '@/components/ParallaxAll'
 //import ParallaxMobile from '@/components/ParallaxMobile'
 
 export default {
@@ -243,7 +243,7 @@ export default {
     Review,
     BannerBU,
     Preloader,
-    ParallaxAll,
+    //ParallaxAll,
     //ParallaxMobile
   },
   data(){
