@@ -42,7 +42,7 @@
                                                 <img class="item-center-absolute" src="./../assets/icon/Ellipse14.png" style="margin-top: 20px;">
                                                 <p class="text-s-30 text-w-700" style="color:#50151C">{{data.year}}</p>
                                                 <p style="font-size:18" v-html="markdownToHtml(data.message)"></p>
-                                                <img class="iem-center img-fluid" :src="data.image.url" style="margin-top: 20px;">
+                                                <img v-if="data.image != null" class="iem-center img-fluid" :src="data.image.url" style="margin-top: 20px;">
                                             </div>
                                         </div>
                                     </div>
@@ -52,7 +52,7 @@
                                                 <img class="item-center-absolute" src="./../assets/icon/Ellipse14.png" style="margin-top: 20px;">
                                                 <p class="text-s-30 text-w-700" style="color:#50151C">{{data.year}}</p>
                                                 <p style="font-size:18" v-html="markdownToHtml(data.message)"></p>
-                                                <img class="iem-center img-fluid" :src="data.image.url" style="margin-top: 20px;">
+                                                <img v-if="data.image != null" class="iem-center img-fluid" :src="data.image.url" style="margin-top: 20px;">
                                             </div>
                                         </div>
                                     </div>
@@ -69,7 +69,7 @@
                                         <img src="./../assets/icon/Line53.png">
                                         <p class="text-s-30 text-w-700" style="color:#50151C">{{data.year}}</p>
                                         <p style="font-size:18" v-html="markdownToHtml(data.message)"></p>
-                                        <img class="iem-center img-fluid" :src="data.image.url" style="margin-top: 20px;">
+                                        <img v-if="data.image != null" class="iem-center img-fluid" :src="data.image.url" style="margin-top: 20px;">
                                     </div>
                                 </div>
                             </div>

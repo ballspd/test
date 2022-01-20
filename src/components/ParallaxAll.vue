@@ -152,7 +152,11 @@ export default {
         section3:false,
         section4:false,
         section5:false,
-        section6:false
+        section6:false,
+        section7:false,
+        section8:false,
+        section9:false,
+        section10:false
       }
     },
     mounted () {
@@ -225,6 +229,34 @@ export default {
             }else
             {
               this.section6 = false
+            }
+
+            if(containerInViewPort.querySelector('main').scrollLeft > 5500 && containerInViewPort.querySelector('main').scrollLeft <= 6600){
+              this.section7 = true
+            }else
+            {
+              this.section7 = false
+            }
+
+            if(containerInViewPort.querySelector('main').scrollLeft > 6600 && containerInViewPort.querySelector('main').scrollLeft <= 7700){
+              this.section8 = true
+            }else
+            {
+              this.section8 = false
+            }
+
+            if(containerInViewPort.querySelector('main').scrollLeft > 7700 && containerInViewPort.querySelector('main').scrollLeft <= 8800){
+              this.section9 = true
+            }else
+            {
+              this.section9 = false
+            }
+
+            if(containerInViewPort.querySelector('main').scrollLeft > 8800 && containerInViewPort.querySelector('main').scrollLeft <= 9900){
+              this.section10 = true
+            }else
+            {
+              this.section10 = false
             }
             //console.log(containerInViewPort.querySelector('main').scrollLeft)
         }

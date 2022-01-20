@@ -190,6 +190,11 @@ export default {
                                 text: error,
                             })
                         })
+
+                        this.form.name == ''
+                        this.form.phone_number == ''
+                        this.form.email == ''
+                        this.form.message == ''
                     }
                 })
         }

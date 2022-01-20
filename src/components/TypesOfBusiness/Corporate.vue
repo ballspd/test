@@ -40,7 +40,7 @@
                                     <div class="text-lg-start text-center d-block d-lg-none animate__animated animate__bounceInRight animate__slow">
                                         <p class="mt-4 text-s-30 text-w-700">{{data.header}}</p>
                                     </div>
-                                    <img class="item-center mt-4  animate__animated animate__zoomInLeft animate__slow" :src="data.image.url" :alt="data.image.name">
+                                    <img v-if="data.image != null" class="item-center mt-4  animate__animated animate__zoomInLeft animate__slow" :src="data.image.url" :alt="data.image.name">
                                 </div>
                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 mt-5">
                                     <div class="text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInRight animate__slow">
@@ -76,7 +76,7 @@
                                     <div class="text-lg-start text-center d-block d-lg-none animate__animated animate__bounceInLeft animate__slow">
                                         <p class="mt-4 text-s-30 text-w-700">{{data.header}}</p>
                                     </div>
-                                    <img class="item-center mt-4  animate__animated animate__zoomInRight animate__slow" :src="data.image.url" :alt="data.image.name">
+                                    <img v-if="data.image != null" class="item-center mt-4  animate__animated animate__zoomInRight animate__slow" :src="data.image.url" :alt="data.image.name">
                                 </div>
                             </div>
                         </div>
