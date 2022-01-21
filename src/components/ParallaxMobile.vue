@@ -52,8 +52,8 @@ body {
 }
 
 #page div {
-		flex: 0 0 100vw;
-		height: 100vh;
+		flex: 0 0 50vw;
+		height: 50vh;
 		position: relative;
 		align-items: center;
 		display: flex;
