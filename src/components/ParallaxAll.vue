@@ -51,7 +51,7 @@
         <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/4/4-1.webp">
         <img class="img-fluid position-absolute tranfer-right-none-top" src="./../assets/Paralax/3/3-6.webp">
 
-        <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/4/4.9.svg">
+        <img class="img-fluid position-absolute animate__animated animate__fadeIn" src="./../assets/Paralax/4/4.9.svg">
         <img class="img-fluid position-absolute animate__animated animate__fadeOut" src="./../assets/Paralax/3/3.12.svg">
 
         <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/4/4-2.webp">
@@ -63,7 +63,7 @@
         <img class="img-fluid position-absolute animate__animated animate__fadeInUp" src="./../assets/Paralax/4/4-4.webp">
         <img class="img-fluid position-absolute animate__animated animate__fadeInUp" src="./../assets/Paralax/4/4-5.webp">
 
-        <img class="img-fluid position-absolute show-right-delay-2s" src="./../assets/Paralax/4/4-3.webp">
+        <img class="img-fluid position-absolute show-right-delay-15s" src="./../assets/Paralax/4/4-3.webp">
 
         <img class="img-fluid position-absolute" src="./../assets/Paralax/all.webp">
 
@@ -88,7 +88,7 @@
         <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/5/5-1.webp">
         <img class="img-fluid position-absolute animate__animated animate__fadeOut" src="./../assets/Paralax/4/4-1.webp">
 
-        <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/5/5.8.svg">
+        <img class="img-fluid position-absolute animate__animated animate__fadeIn" src="./../assets/Paralax/5/5.8.svg">
         <img class="img-fluid position-absolute animate__animated animate__fadeOut" src="./../assets/Paralax/4/4.9.svg">
 
         <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/5/5-2.webp">
@@ -116,7 +116,7 @@
         <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/6/6-1.webp">
         <img class="img-fluid position-absolute animate__animated animate__fadeOut" src="./../assets/Paralax/5/5-1.webp">
 
-        <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/6/6.6.svg">
+        <img class="img-fluid position-absolute animate__animated animate__fadeIn" src="./../assets/Paralax/6/6.6.svg">
         <img class="img-fluid position-absolute animate__animated animate__fadeOut" src="./../assets/Paralax/5/5.8.svg">
 
         <img class="img-fluid position-absolute show-top" src="./../assets/Paralax/6/6-4.webp">
@@ -136,6 +136,129 @@
         <img class="img-fluid position-absolute move-page" src="./../assets/Paralax/5/5-4.webp">
         <img class="img-fluid position-absolute move-page" src="./../assets/Paralax/5/5-5.webp">
       </div>
+    </section>
+    <section>
+      <div v-if="section7">
+        <img class="img-fluid position-absolute" src="./../assets/Paralax/3/3-bg-main.webp">
+
+        <img class="img-fluid position-absolute animate__animated animate__fadeIn" src="./../assets/Paralax/7/7.8.svg">
+        <img class="img-fluid position-absolute animate__animated animate__fadeOut" src="./../assets/Paralax/6/6.6.svg">
+        
+        <img class="img-fluid position-absolute show-right-delay-2s" src="./../assets/Paralax/7/7-text-1.webp">
+
+        <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/7/7-1.webp">
+        <img class="img-fluid position-absolute animate__animated animate__fadeOut" src="./../assets/Paralax/6/6-1.webp">
+
+        <img class="img-fluid position-absolute show-top-3" src="./../assets/Paralax/7/7-3.webp">
+        <img class="img-fluid position-absolute show-top-2" src="./../assets/Paralax/7/7-4.webp">
+        <img class="img-fluid position-absolute show-top-1" src="./../assets/Paralax/7/7-5.webp">
+        <img class="img-fluid position-absolute show-top" src="./../assets/Paralax/7/7-6.webp">
+
+        <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/7/7-2.webp">
+        <img class="img-fluid position-absolute tranfer-left-none-top" src="./../assets/Paralax/6/6-2.webp">
+
+        <img class="img-fluid position-absolute" src="./../assets/Paralax/all.webp">
+
+        <!------------------ move-page ----------------->
+        <img class="img-fluid position-absolute move-page" src="./../assets/Paralax/6/6-text-1.webp">
+        <img class="img-fluid position-absolute move-page" src="./../assets/Paralax/6/6-3.webp">
+        <img class="img-fluid position-absolute move-page" src="./../assets/Paralax/6/6-4.webp">
+      </div>
+    </section>
+    <section>
+      <div v-if="section8">
+        <img class="img-fluid position-absolute" src="./../assets/Paralax/3/3-bg-main.webp">      
+
+        <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/8/8-1.webp">
+        <img class="img-fluid position-absolute animate__animated animate__fadeOutRight" src="./../assets/Paralax/7/7-1.webp">
+
+        <img class="img-fluid position-absolute animate__animated animate__fadeIn" src="./../assets/Paralax/8/8.6.svg">
+        <img class="img-fluid position-absolute animate__animated animate__fadeOut" src="./../assets/Paralax/7/7.8.svg">
+
+        <img class="img-fluid position-absolute show-top" src="./../assets/Paralax/8/8-3.webp">
+        <img class="img-fluid position-absolute show-right" src="./../assets/Paralax/8/8-text-1.webp">
+
+        <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/8/8-2.webp">
+        <img class="img-fluid position-absolute animate__animated animate__fadeOut" src="./../assets/Paralax/7/7-2.webp">
+
+        <img class="img-fluid position-absolute" src="./../assets/Paralax/all.webp">
+
+        <!------------------ move-page ----------------->
+        <img class="img-fluid position-absolute move-page" src="./../assets/Paralax/7/7-text-1.webp">
+        <img class="img-fluid position-absolute move-page" src="./../assets/Paralax/7/7-3.webp">
+        <img class="img-fluid position-absolute move-page" src="./../assets/Paralax/7/7-4.webp">
+        <img class="img-fluid position-absolute move-page" src="./../assets/Paralax/7/7-5.webp">
+        <img class="img-fluid position-absolute move-page" src="./../assets/Paralax/7/7-6.webp">
+      </div>
+    </section>
+    <section>
+      <div v-if="section9">
+        <img class="img-fluid position-absolute" src="./../assets/Paralax/3/3-bg-main.webp">
+
+        <img class="img-fluid position-absolute show-right" src="./../assets/Paralax/9/9-6.webp">
+
+                <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/9/9-1.webp">
+        <img class="img-fluid position-absolute tranfer-right" src="./../assets/Paralax/8/8-1.webp">
+
+        <img class="img-fluid position-absolute animate__animated animate__fadeIn" src="./../assets/Paralax/9/9.8.svg">
+        <img class="img-fluid position-absolute animate__animated animate__fadeOut" src="./../assets/Paralax/8/8.6.svg">
+        
+
+        <img class="img-fluid position-absolute show-top-2" src="./../assets/Paralax/9/9-3.webp">
+        <img class="img-fluid position-absolute show-top-1" src="./../assets/Paralax/9/9-4.webp">
+        <img class="img-fluid position-absolute show-top" src="./../assets/Paralax/9/9-5.webp">
+
+        <img class="img-fluid position-absolute show-right-delay-2s" src="./../assets/Paralax/9/9-text-1.webp">
+
+        <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/9/9-2.webp">
+        <img class="img-fluid position-absolute tranfer-right-none-top" src="./../assets/Paralax/8/8-2.webp">
+
+        <img class="img-fluid position-absolute" src="./../assets/Paralax/all.webp">
+
+        <!------------------ move-page ----------------->
+        <img class="img-fluid position-absolute move-page" src="./../assets/Paralax/8/8-text-1.webp">
+        <img class="img-fluid position-absolute move-page" src="./../assets/Paralax/8/8-3.webp">
+      </div>
+    </section>
+    <section>
+      <div v-if="section10">
+        <img class="img-fluid position-absolute" src="./../assets/Paralax/3/3-bg-main.webp">
+
+         <img class="img-fluid position-absolute show-right" src="./../assets/Paralax/10/10-8.webp">
+        <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/10/10-1.webp">
+        <img class="img-fluid position-absolute tranfer-size" src="./../assets/Paralax/9/9-1.webp">
+
+        <img class="img-fluid position-absolute animate__animated animate__fadeIn" src="./../assets/Paralax/10/10.7.svg">
+        <img class="img-fluid position-absolute animate__animated animate__fadeOut" src="./../assets/Paralax/9/9.8.svg">
+        
+        <img class="img-fluid position-absolute show-top" src="./../assets/Paralax/10/10-7.webp">
+        <img class="img-fluid position-absolute show-bottom" src="./../assets/Paralax/10/10-3.webp">
+        <img class="img-fluid position-absolute show-right" src="./../assets/Paralax/10/10-4.webp">
+        <img class="img-fluid position-absolute show-top" src="./../assets/Paralax/10/10-5.webp">
+        <img class="img-fluid position-absolute show-top" src="./../assets/Paralax/10/10-6.webp">
+
+        <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/10/10-2.webp">
+        <img class="img-fluid position-absolute tranfer-right-none-top" src="./../assets/Paralax/9/9-2.webp">
+
+        <img class="img-fluid position-absolute" src="./../assets/Paralax/all.webp">
+
+        <!------------------ move-page ----------------->
+        <img class="img-fluid position-absolute move-page" src="./../assets/Paralax/9/9-text-1.webp">
+        <img class="img-fluid position-absolute move-page" src="./../assets/Paralax/9/9-3.webp">
+        <img class="img-fluid position-absolute move-page" src="./../assets/Paralax/9/9-4.webp">
+        <img class="img-fluid position-absolute move-page" src="./../assets/Paralax/9/9-5.webp">
+        <img class="img-fluid position-absolute move-page" src="./../assets/Paralax/9/9-6.webp">
+      </div>
+    </section>
+      
+    <section>
+      <img class="img-fluid" src="./../assets/Paralax/10/10.webp">
+    </section>
+    <section>
+      <img class="img-fluid" src="./../assets/Paralax/10/10.webp">
+    </section>
+    <section>
+      <img class="img-fluid" src="./../assets/Paralax/10/10.webp">
     </section>
   </main>
 </div>
@@ -168,11 +291,11 @@ export default {
         this.bindEvents();
       },
       bindEvents(){
-        window.addEventListener("wheel", this.wheelHandler);        
+        window.addEventListener("wheel", this.wheelHandler);       
       },
       setStickyContainersSize(){
         document.querySelectorAll('.sticky-container').forEach(function(container){
-            container.setAttribute('style', 'height: 2600px');
+            container.setAttribute('style', 'height: 2200px');
         });
       },
       isElementInViewport (el) {
@@ -194,6 +317,9 @@ export default {
         let g_canScrollHorizontally = isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
 
         if(g_canScrollHorizontally){
+            if(containerInViewPort.querySelector('main').scrollLeft > 13200){
+              return false
+            }
             containerInViewPort.querySelector('main').scrollLeft += event.deltaY < 0 ? -1100 : 1100;
 
             if(containerInViewPort.querySelector('main').scrollLeft > 1 && containerInViewPort.querySelector('main').scrollLeft <= 1100){
@@ -258,7 +384,7 @@ export default {
             {
               this.section10 = false
             }
-            //console.log(containerInViewPort.querySelector('main').scrollLeft)
+            console.log(containerInViewPort.querySelector('main').scrollLeft)
         }
       },
     }
@@ -273,6 +399,8 @@ main {
   display: flex;
   position: sticky;
   top:0;
+  margin-top: -150px;
+  /* background: linear-gradient(110.74deg, rgb(82, 184, 226) 0%, rgb(61, 144, 221) 75.34%); */
 }
 
 h1 {
@@ -367,12 +495,41 @@ section div {
 }
 
 .show-right-delay-2s{
-  animation: show-right 2s forwards;
+  animation: show-right 1s forwards;
   animation-iteration-count: 1;
+  animation-delay: 2s;
+  opacity: 0;
+
 }
 
 .show-top{
   animation: show-top 1s forwards;
+  animation-iteration-count: 1;
+}
+
+.show-top-1{
+  animation: show-top 1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.show-top-2{
+  animation: show-top 1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.show-top-3{
+  animation: show-top 1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+
+.show-bottom{
+  animation: show-bottom 1s forwards;
   animation-iteration-count: 1;
 }
 
@@ -423,6 +580,11 @@ section div {
 
 @keyframes show-top {
   0%   {margin-top: 300px;}
-  100% {margin-top: 0px;}
+  100% {margin-top: 0px;opacity: 1;}
+}
+
+@keyframes show-bottom {
+  0%   {margin-bottom: 300px;}
+  100% {margin-bottom: 0px;opacity: 1;}
 }
 </style>
