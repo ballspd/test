@@ -606,12 +606,12 @@ hr{
 }
 
 .splide__pagination__page.is-active{
-  background-color: #000 !important;
+  background-color: #fff !important;
   opacity: 1 !important;
 }
 
 .splide__pagination__page{
-  background-color: #000 !important;
+  background-color: #fff !important;
   opacity: 0.5 !important;
 }
 

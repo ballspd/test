@@ -28,6 +28,7 @@
             <div class="crad mt-5">
                 <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
                     <div v-for="(data, index) in responseData" :key="index" class="mb-5">
+                        <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
                         <div v-if="index == 0" class="row">
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img v-if="data.illustration != null" class="img-fluid img-fix-size" :src="data.illustration.url" :alt="data.illustration.name" style="width: 510px;height: 330px;"></div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="padding: 30px 10px 10px 10px;">
@@ -38,6 +39,7 @@
                                 <router-link class="btn btn-transparent mt-2 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                             </div>
                         </div>
+                        </router-link>
                     </div>
                     <div class="d-none d-xl-block d-xxl-block">
                         <div class="row p-3" style="background-color:#F2F3F5">
@@ -47,30 +49,30 @@
                                         <div class="carousel-item active">
                                             <div class="row">
                                                 <div v-for="(data, index) in responseData" :key="index" :class="{'col-4':index < 3}">
-                                                    <div v-if="index < 3" class="row">
+                                                    <router-link class="row" v-if="index < 3" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
                                                         <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
                                                         <div class="col-6 p-1">                                                
-                                                            <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}" class="btn lh-1 btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important"><span style="font-size:14px">NEW</span></router-link>
+                                                            <div class="btn lh-1 btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important"><span style="font-size:14px">NEW</span></div>
                                                             <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:18px">{{data.title}}</p>
                                                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
                                                             <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
                                                         </div>
-                                                    </div>
+                                                    </router-link>
                                                 </div>                                         
                                             </div>
                                         </div>
                                         <div class="carousel-item">
                                             <div class="row">
                                                 <div v-for="(data, index) in responseData" :key="index" :class="{'col-4':index > 2}">
-                                                    <div v-if="index > 2" class="row">
+                                                    <router-link class="row" v-if="index > 2" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
                                                         <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
-                                                        <div class="col-6 p-1">                                            
-                                                            <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}" class="btn lh-1 btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important"><span style="font-size:14px">NEW</span></router-link>
+                                                        <div class="col-6 p-1">                                                
+                                                            <div class="btn lh-1 btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important"><span style="font-size:14px">NEW</span></div>
                                                             <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:18px">{{data.title}}</p>
                                                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                                            <p class="text-limit-2 text-s-14" style="color:#373737;">{{data.description}}</p>
+                                                            <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
                                                         </div>
-                                                    </div>
+                                                    </router-link>
                                                 </div>                                         
                                             </div>
                                         </div>
@@ -187,17 +189,19 @@
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac1" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="row">
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
+                                    <div class="row">
+                                        <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                            <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
+                                        </div>
+                                        <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                            <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
+                                            <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
+                                            <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
+                                            <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
+                                        </div>
                                     </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
-                                    </div>
-                                </div>
+                                </router-link>
                             </div>
                             <div v-if="responseDatac1.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
@@ -225,6 +229,7 @@
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac2" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
@@ -236,6 +241,7 @@
                                         <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
+                                </router-link>
                             </div>
                             <div v-if="responseDatac2.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
@@ -263,6 +269,7 @@
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac3" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
@@ -274,6 +281,7 @@
                                         <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
+                                </router-link>
                             </div>
                             <div v-if="responseDatac3.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
@@ -301,6 +309,7 @@
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac4" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
@@ -312,6 +321,7 @@
                                         <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
+                                </router-link>
                             </div>
                             <div v-if="responseDatac4.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
@@ -339,6 +349,7 @@
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac5" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
@@ -350,6 +361,7 @@
                                         <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
+                                </router-link>
                             </div>
                             <div v-if="responseDatac5.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
@@ -377,6 +389,7 @@
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac6" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
@@ -388,6 +401,7 @@
                                         <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
+                                </router-link>
                             </div>
                             <div v-if="responseDatac6.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
@@ -415,6 +429,7 @@
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac7" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
@@ -426,6 +441,7 @@
                                         <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
+                                </router-link>
                             </div>
                             <div v-if="responseDatac7.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
@@ -453,6 +469,7 @@
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac8" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
@@ -464,6 +481,7 @@
                                         <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
                                     </div>
                                 </div>
+                                </router-link>
                             </div>
                             <div v-if="responseDatac8.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">

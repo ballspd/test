@@ -115,8 +115,8 @@ export default {
     },
     data(){
         return{
-            height_colum: 305,
-            height_border: 300,
+            height_colum: 275,
+            height_border: 270,
             lang: localStorage.getItem('lang') || 'TH-th',
             type:'All',
             responseData:[]
