@@ -1,5 +1,4 @@
 <template>
-<div class="">
 <div class="sticky-container">
   <main>
     <section>
@@ -254,14 +253,7 @@
     <section>
       <img class="img-fluid" src="./../assets/Paralax/10/10.webp">
     </section>
-    <section>
-      <img class="img-fluid" src="./../assets/Paralax/10/10.webp">
-    </section>
-    <section>
-      <img class="img-fluid" src="./../assets/Paralax/10/10.webp">
-    </section>
   </main>
-</div>
 </div>
 </template>
 
@@ -317,7 +309,7 @@ export default {
         let g_canScrollHorizontally = isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
 
         if(g_canScrollHorizontally){
-            if(containerInViewPort.querySelector('main').scrollLeft > 13200){
+            if(document.documentElement.scrollTop > 3058){
               return false
             }
             containerInViewPort.querySelector('main').scrollLeft += event.deltaY < 0 ? -1100 : 1100;

@@ -67,7 +67,7 @@ export default {
         responseData:[],
         lang: localStorage.getItem('lang') || 'TH-th',
         view: 1,
-        count:''
+        count:0
       }
     },
     methods: {
@@ -82,7 +82,9 @@ export default {
         return moment(value).format('DD MMM YYYY');
       },
       addView(view){
-        this.count = view + this.view
+        //console.log(view)
+        this.count = parseInt(view) + 1
+        //console.log(this.count)
         this.axios.put('blogs/'+ this.$route.params.id, {view: this.count})
         .then()
       }
