@@ -110,7 +110,6 @@
                               และที่นี่ยังมีโครงสร้างองค์กรที่ค่อนข้างยืดหยุ่น ถ้ามีเรื่องไหนที่เราคิดไม่ออกหรือติดปัญหานอกจากปรึกษาทีม เราสามารถเดินเข้าไปคุยกับผู้บริหารได้เลย
                               นอกจากนั้นเพื่อนร่วมงานที่นี่น่ารัก เพิ่มความสุขใจในการทำงานได้อย่างมากจริงๆ
                           </p>
-                          <p class="card-text text-s-16">นอกจากนั้นเพื่อนร่วมงานที่นี่น่ารัก<br>เพิ่มความสุขใจในการทำงานได้อย่างมากจริงๆ</p>
                         </div>
                       </div>
                     </div>
@@ -222,7 +221,7 @@ export default {
 
 }
   .card{
-    height: 430px
+    height: 400px
   }
   .font-header{
     font-size: 58px;
@@ -230,7 +229,7 @@ export default {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .card{
-    height: 400px
+    height: 380px
   }
   .font-header{
     font-size: 60px;
@@ -240,7 +239,7 @@ export default {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .card{
-    height: 610px
+    height: 550px
   }
   .font-header{
     font-size: 64px;
@@ -250,7 +249,7 @@ export default {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .card{
-    height: 520px
+    height: 480px
   }
   .font-header{
     font-size: 64px;

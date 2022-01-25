@@ -173,7 +173,7 @@ export default {
   header.bg-header {
     height: 186px;
     padding-bottom: 0px;
-    background: url("https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Policy_01_cbfd9ea655.webp") no-repeat top center #0caaed;
+    background: url("https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Policy_01_cbfd9ea655.webp") no-repeat top center #FDF5E8;
     background-size: 200px 200px;
 }
 

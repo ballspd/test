@@ -65,8 +65,12 @@
             </div>
           </div>
         </div>
-        <ParallaxAll/>
-        <!-- <ParallaxMobile/> -->
+        <div class="d-none d-xxl-block d-xl-block">
+          <ParallaxAll/>
+        </div>
+        <div class="d-block d-xl-none d-xxl-none">
+          <ParallaxMobile/>
+        </div>
         <InterestingArticles :type="type"/>
 
         <div class="padding-card">
@@ -233,7 +237,7 @@ import Review from '@/components/Review'
 import Preloader from '@/components/Preloader'
 import BannerBU from '@/components/BannerBU'
 import ParallaxAll from '@/components/ParallaxAll'
-//import ParallaxMobile from '@/components/ParallaxMobile'
+import ParallaxMobile from '@/components/ParallaxMobile'
 
 export default {
   name: 'Home',
@@ -244,7 +248,7 @@ export default {
     BannerBU,
     Preloader,
     ParallaxAll,
-    //ParallaxMobile
+    ParallaxMobile
   },
   data(){
     return {
