@@ -11,8 +11,8 @@
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:62px;color:#FFFFFC">AKITA<br>FULFILLMENT</h1>
-                                    <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#FFFFFC">“บริการคลังสินค้าครบวงจร”</h2>
-                                    <p class="text-s-16 mt-3" style="color:#FFFFFC">พร้อมอยู่คู่เคียงข้างทุกธุรกิจ เพื่อส่งมอบประสบการณ์ การจัดส่งสินค้าที่ดีที่สุดสู่มือลูกค้า</p>
+                                    <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#FFFFFC">“{{ $t("solution.akita.ONE_Stop_warehouse_service") }}”</h2>
+                                    <p class="text-s-16 mt-3" style="color:#FFFFFC">{{ $t("solution.akita.mata") }}</p>
                                     <a href="https://www.akitahub.com/" target="_blank" class="btn btn-orange button mt-4"><span class="text-white" style="font-size:18px">Click Now</span></a>
                                 </td>
                             </table>
@@ -20,8 +20,8 @@
                         <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
                             <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#FFFFFC">Akita</font></p>
                             <h1 class="font-wght text-s-36" style="color:#FFFFFC">AKITA<br>FULFILLMENT</h1>
-                            <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-5 pe-5 mt-4" style="color:#FFFFFC">“บริการคลังสินค้าครบวงจร”</h2>
-                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">พร้อมอยู่คู่เคียงข้างทุกธุรกิจ เพื่อส่งมอบประสบการณ์ การจัดส่งสินค้าที่ดีที่สุดสู่มือลูกค้า</p>
+                            <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-5 pe-5 mt-4" style="color:#FFFFFC">“{{ $t("solution.akita.ONE_Stop_warehouse_service") }}”</h2>
+                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">{{ $t("solution.akita.mata") }}</p>
                             <a href="https://www.akitahub.com/" target="_blank" class="btn btn-orange button mt-2"><span class="text-white" style="font-size:18px">Click Now</span></a>
                         </div>
                     </div>
@@ -40,22 +40,22 @@
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 hvr-float-shadow" style="background-color: #F76D22;">
                                 <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsAkita/icon-solution-akita-1.png"></div>
                             </div>
-                            <h2 class="text-s-20 mt-3" style="color:#373737">เก็บ</h2>
+                            <h2 class="text-s-20 mt-3" style="color:#373737">{{ $t("solution.akita.receiving") }}</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 hvr-float-shadow" style="background-color: #143555;">
                                 <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsAkita/icon-solution-akita-2.png"></div>
                             </div>
-                            <h2 class="text-s-20 mt-3" style="color:#373737">แพ็ก</h2>
+                            <h2 class="text-s-20 mt-3" style="color:#373737">{{ $t("solution.akita.packing") }}</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 hvr-float-shadow" style="background-color: #F76D22;">
                                 <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsAkita/icon-solution-akita-3.png"></div>
                             </div>
-                            <h2 class="text-s-20 mt-3" style="color:#373737">ส่ง</h2>
+                            <h2 class="text-s-20 mt-3" style="color:#373737">{{ $t("solution.akita.delivering") }}</h2>
                         </div>     
                     </div>
-                    <div class="col-12 text-center mt-5"><h1 class="text-s-30 font-wght theme-text-sub">AKITA FULFILLMENT บริการคลังสินค้าครบวงจร</h1></div>
+                    <div class="col-12 text-center mt-5"><h1 class="text-s-30 font-wght theme-text-sub">AKITA FULFILLMENT {{ $t("solution.akita.ONE_Stop_warehouse_service") }}</h1></div>
                     <div v-for="(data, index) in responseData" :key="index">
                         <div :id="'contant' + (index + 1)" style="display:none">
                             <div v-if="data.position == 'Left'" class="row mt-4 p-custom-2 d-flex">
@@ -99,7 +99,7 @@
                 </div>
                 <div v-if="animation1" class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-5 p-5" style="background: linear-gradient(0, rgba(247, 109, 34, 0.9) 0%, rgba(249, 158, 30, 0) 86.22%);">
                         <div class="row">
-                            <div class="col-12 mt-4 mb-2 text-center animate__animated animate__fadeInDown theme-text-sub"><h1 class="text-s-30 text-w-700">มาตรฐานการให้บริการ (BRAND VALUE)</h1></div>    
+                            <div class="col-12 mt-4 mb-2 text-center animate__animated animate__fadeInDown theme-text-sub"><h1 class="text-s-30 text-w-700">{{ $t("solution.akita.brand_value") }}</h1></div>    
                         </div>
                         <div class="row mt-5 text-center">
                             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
@@ -107,28 +107,28 @@
                                     <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsAkita/icon-solution-akita-4.png"></div>
                                 </div>
                                 <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
-                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">รับฟัง</h2>
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">{{ $t("solution.akita.listening") }}</h2>
                             </div>
                             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
                                     <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsAkita/icon-solution-akita-5.png"></div>
                                 </div>
                                 <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
-                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">ว่องไว</h2>
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">{{ $t("solution.akita.active") }}</h2>
                             </div>
                             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
                                     <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsAkita/icon-solution-akita-6.png"></div>
                                 </div>
                                 <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
-                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">ใส่ใจ</h2>
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">{{ $t("solution.akita.attention") }}</h2>
                             </div>
                             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
                                     <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsAkita/icon-solution-akita-7.png"></div>
                                 </div>
                                 <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
-                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">เชื่อได้</h2>
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">{{ $t("solution.akita.reliable") }}</h2>
                             </div>       
                         </div>
                     </div>

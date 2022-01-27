@@ -1,10 +1,35 @@
 {
   "YourRoadmap": "YOUR ROADMAP",
 
-  "SolutionFuse":{
-    "contant1_h1": "Digital Advertising",
-    "contant1_h2": "บริการยิงแอดโฆษณาบนช่องทาง Social Media ที่ครอบคลุมในกลุ่มทั้ง 7 ช่องทางทั้ง Facebook Google LINE Instagram  Twitter YouTube และ Tiktok สามารถเข้าถึงกลุ่มเป้าหมายของธุรกิจคุณได้อย่างแม่นยำ ทำให้กลุ่มเป้าหมายสนใจสินค้าและบริการของคุณมากยิ่งขึ้น และมีแนวโน้มที่จะก้าวมาเป็นลูกค้าของคุณในอนาคต",
-    "contant2_h1": "Spy Ads",
-    "contant2_h2": "บริการวิเคราะห์แผนการสื่อสารและการทำโฆษณาของแบรนด์คู่แข่ง เพื่อนำมาพัฒนากลยุทธ์และรูปแบบการทำโฆษณาของแบรนด์คุณ เพื่อให้แบรนด์เติบโตและพัฒนาไปได้ไกลกว่าคู่แข่ง พร้อมทั้งเจาะกลุ่มลูกค้าอย่างแม่นยำและครอบคลุมถึงกลุ่มเป้าหมายที่คู่แข่งกำลังมองหา"
+  "banner":{
+    "fuse": "We have an advertising creation service that covers all many social media platforms. And we also have an add-on service that helps you to push your business to have more growth as well as suggestions about marketing to a business plan for more growth.",
+    "line": "1st LINE partner in Thailand who takes care of 6,000 accounts in selling on LINE Official account and accurately advertises to target customers including Chatbot. Therefore, we will make customer responses more convenient.",
+    "akita": "“One-stop warehouse service” helps you to take care of your products in steps that include Parcel receiving, Packing, and safe product delivery to the customer. We can reduce unnecessary time in your work process. Therefore, it helps you have more time to expand your business growth.",
+    "kaikong": "Marketing content planning, creating engaging content and reaching the right target customer. We have an admin who takes care of your business page or channels to make your brand rapidly respond to the customer in time and complete your sale professionally.",
+    "shipmunk": "reservation systems and delivery fee comparison and shipping distance from the top delivery provider. It helps your business to use the most worthwhile services and completely track a parcel's status.",
+    "oc2plus": "Customer Data Platforms (CDP) system or storage data systems that we can bring that data to analyze, plan, strategize a business, and reach the target customer effectively.",
+    "beary": "Website design service and software development include connecting with API systems and online sales channels. Whether Shopee, Lazada, or LINE My shop to support your business."
+  },
+
+  "solution":{
+    "akita":{
+      "mata":"We’re ready to grow alongside all businesses to provide shipping experiences to the customer with the most effective and efficient.",
+      "ONE_Stop_warehouse_service": "ONE-Stop warehouse service",
+      "receiving":"Receiving",
+      "packing":"Packing",
+      "delivering":"Delivering",
+      "listening": "Listening",
+      "active": "Active",
+      "attention": "Attention",
+      "reliable": "Reliable",
+      "brand_value": "Brand Value"
+    },
+    "fuse":{
+      "mata":"Fuse by sellsuki,Social media marketing provider and suggests a marketing plan that helps you plan, advertise, and survey the target customer.",
+      "why_do": "Why do customers choose us?",
+      "suggestions":"Suggestions for all  <br>business doing",
+      "assisted":"Assisted by <br>professional teams",
+      "focus":"Focus on the result by <br>understanding your business"
+    }
   }
 }
