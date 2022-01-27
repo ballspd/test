@@ -8,27 +8,27 @@
                             <div v-if="activeBuFuse">
                                 <img class="mt-5 animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Fuse.png" alt="logo-fuse.png">
                                 <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:550px">FUSE ADVERTISING</h1>
-                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">บริการรับทำโฆษณาที่ครอบคลุมช่องทาง Social Media มากที่สุด พร้อมบริการเสริมอื่น ๆ ที่จะช่วยผลักดันและเพิ่มยอดขายให้ธุรกิจของคุณได้มากยิ่งขึ้น ตลอดจนการให้คำปรึกษาด้านการตลาด พร้อมช่วยวางแผนธุรกิจคุณให้เติบโตยิ่งกว่า</p>
+                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">{{ $t("banner.fuse") }}</p>
                             </div>
                             <div v-else-if="activeBuLine">
                                 <img class="mt-5 animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-line.png" alt="logo-Line.png">
                                 <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">LINE AGENCY <br>BY SELLSUKI</h1>
-                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">ครองตำแหน่ง LINE Partner อันดับ 1 ของประเทศไทยมากกว่า 4 ปี ที่ได้รับความไว้วางใจจากลูกค้ากว่า 6,000 Accounts ให้เราช่วยดูแลช่องทางการขายบน LINE Official Account และบริการทำโฆษณาอย่างตรงจุด หยุดทุกสายตาบนพื้นที่ LINE รวมถึง LINE Chatbot ให้งานตอบลูกค้าเป็นเรื่องง่ายสะดวกสบาย</p>
+                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">{{ $t("banner.line") }}</p>
                             </div>
                             <div v-else-if="activeBuAkita">
                                 <img class="mt-5 animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Akita.png" alt="logo-Akita.png">
                                 <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">AKITA <br>FULFILLMENT</h1>
-                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">บริการคลังสินค้าครบวงจรที่ช่วยดูแลสินค้าของคุณในทุก ๆ ขั้นตอน ตั้งแต่กระบวนการจัดเก็บ แพ็ก หรือขนส่งสินค้า ให้ถึงมือลูกค้าอย่างปลอดภัย ช่วยลดระยะเวลาในการทำงานรวมถึงขั้นตอนที่ไม่จำเป็น ทำให้มีเวลาเพิ่มเพื่อไปวางแผนในการขยายธุรกิจ</p>
+                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">{{ $t("banner.akita") }}</p>
                             </div>
                             <div v-else-if="activeBuBeary">
                                 <img class="mt-5 animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Beary.png" alt="logo-Beary.png">
                                 <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">BEARY TECH</h1>
-                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">บริการออกแบบ Website และบริการพัฒนาซอฟต์แวร์  รวมถึงการเชื่อมต่อระบบ API เข้ากับระบบและช่องทางการขายสินค้าออนไลน์ ไม่ว่าจะเป็น Shopee Lazada หรือ LINE MyShop เพื่อซัพพอร์ตธุรกิจออนไลน์ให้ง่ายยิ่งขึ้น</p>
+                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">{{ $t("banner.beary") }}</p>
                             </div>
                             <div v-else-if="activeBuKaikong">
                                 <img class="mt-5 animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Kaikong.png" alt="logo-Kaikong.png">
                                 <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">KAIKONG</h1>
-                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">บริการ Content Marketing วางแผน สร้างคอนเทนต์ที่โดนใจ ส่งไปหากลุ่มเป้าหมายที่ใช่ พร้อมบริการ Admin ดูแลเพจ ที่จะช่วยคอยตอบคำถาม ทำให้แบรนด์คุณสนทนาโต้ตอบกับลูกค้าได้อย่างรวดเร็ว  และปิดการขายอย่างมืออาชีพ</p>
+                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">{{ $t("banner.kaikong") }}</p>
                             </div>
                             <div v-else>
                                 <h1 class="font-wght mt-5 text-s-banner" style="color:#50151C;width:600px">E-COMMERCE <br>SOLUTION</h1>
@@ -41,31 +41,31 @@
                     <div v-if="activeBuFuse" class="text-center ps-5 pe-5">
                         <img class="animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Fuse.png" alt="logo-fuse.png" style="margin-top:120px">
                         <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">FUSE ADVERTISING</h1>
-                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">บริการรับทำโฆษณาที่ครอบคลุมช่องทาง Social Media มากที่สุด พร้อมบริการเสริมอื่น ๆ ที่จะช่วยผลักดันและเพิ่มยอดขายให้ธุรกิจของคุณได้มากยิ่งขึ้น ตลอดจนการให้คำปรึกษาด้านการตลาด พร้อมช่วยวางแผนธุรกิจคุณให้เติบโตยิ่งกว่า</p>
+                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">{{ $t("banner.fuse") }}</p>
                         <router-link @click="scrollToTop" to="/Solutions/Fuse" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></router-link>
                     </div>
                     <div v-else-if="activeBuLine" class="text-center ps-5 pe-5">
                         <img class="animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-line.png" alt="logo-line.png" style="margin-top:120px">
                         <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">LINE AGENCY BY SELLSUKI</h1>
-                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">ครองตำแหน่ง LINE Partner อันดับ 1 ของประเทศไทยมากกว่า 4 ปี ที่ได้รับความไว้วางใจจากลูกค้ากว่า 6,000 Accounts ให้เราช่วยดูแลช่องทางการขายบน LINE Official Account และบริการทำโฆษณาอย่างตรงจุด หยุดทุกสายตาบนพื้นที่ LINE รวมถึง LINE Chatbot ให้งานตอบลูกค้าเป็นเรื่องง่ายสะดวกสบาย</p>
+                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">{{ $t("banner.Line") }}</p>
                         <router-link @click="scrollToTop" to="/Solutions/Line" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></router-link>
                     </div>
                     <div v-else-if="activeBuAkita" class="text-center ps-5 pe-5">
                         <img class="animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Akita.png" alt="logo-akita.png" style="margin-top:120px">
                         <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">AKITA FULFILLMENT</h1>
-                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">บริการคลังสินค้าครบวงจรที่ช่วยดูแลสินค้าของคุณในทุก ๆ ขั้นตอน ตั้งแต่กระบวนการจัดเก็บ แพ็ก หรือขนส่งสินค้า ให้ถึงมือลูกค้าอย่างปลอดภัย ช่วยลดระยะเวลาในการทำงานรวมถึงขั้นตอนที่ไม่จำเป็น ทำให้มีเวลาเพิ่มเพื่อไปวางแผนในการขยายธุรกิจ</p>
+                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">{{ $t("banner.akita") }}</p>
                         <router-link @click="scrollToTop" to="/Solutions/Akita" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></router-link>
                     </div>
                     <div v-else-if="activeBuBeary" class="text-center ps-5 pe-5">
                         <img class="animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Beary.png" alt="logo-beary.png" style="margin-top:120px">
                         <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">BEARY TECH</h1>
-                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">บริการออกแบบ Website และบริการพัฒนาซอฟต์แวร์  รวมถึงการเชื่อมต่อระบบ API เข้ากับระบบและช่องทางการขายสินค้าออนไลน์ ไม่ว่าจะเป็น Shopee Lazada หรือ LINE MyShop เพื่อซัพพอร์ตธุรกิจออนไลน์ให้ง่ายยิ่งขึ้น</p>
+                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">{{ $t("banner.beary") }}</p>
                         <router-link @click="scrollToTop" to="/Solutions/Beary" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></router-link>
                     </div>
                     <div v-else-if="activeBuKaikong" class="text-center ps-5 pe-5">
                         <img class="animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Kaikong.png" alt="logo-kaikong.png" style="margin-top:120px">
                         <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">KAIKONG</h1>
-                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">บริการ Content Marketing วางแผน สร้างคอนเทนต์ที่โดนใจ ส่งไปหากลุ่มเป้าหมายที่ใช่ พร้อมบริการ Admin ดูแลเพจ ที่จะช่วยคอยตอบคำถาม ทำให้แบรนด์คุณสนทนาโต้ตอบกับลูกค้าได้อย่างรวดเร็ว  และปิดการขายอย่างมืออาชีพ</p>
+                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">{{ $t("banner.kaikong") }}</p>
                         <router-link @click="scrollToTop" to="/Solutions/Kaikong" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></router-link>
                     </div>
                     <div v-else class="text-center">

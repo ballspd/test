@@ -11,14 +11,14 @@
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:62px;color:#FFFFFC">DIGITAL <br>ADVERTISING</h1>
-                                    <p class="text-s-16 mt-3" style="color:#FFFFFC">Fuse by sellsuki ผู้ให้บริการด้านการทำ social media marketing และเป็นที่ปรึกษาการตลาดที่ช่วยดูแลตั้งแต่การวางแผนตลอดจน การทำโฆษณา หากลุ่มลูกค้า</p>
+                                    <p class="text-s-16 mt-3" style="color:#FFFFFC">{{ $t("solution.fuse.mata") }}</p>
                                 </td>
                             </table>
                         </div>
                         <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
                             <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#FFFFFC">Fuse</font></p>
                             <h1 class="font-wght text-s-36" style="color:#FFFFFC">DIGITAL <br>ADVERTISING</h1>
-                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">Fuse by sellsuki ผู้ให้บริการด้านการทำ social media marketing และเป็นที่ปรึกษาการตลาดที่ช่วยดูแลตั้งแต่การวางแผนตลอดจน การทำโฆษณา หากลุ่มลูกค้า</p>
+                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">{{ $t("solution.fuse.mata") }}</p>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -86,7 +86,7 @@
                 <div id="animation1" ref="animation1" class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-5 p-5" style="background: linear-gradient(0, #EAE6FF 0%, rgba(234, 230, 255, 0) 100%);">
                     <div v-if="animation1">
                         <div class="row">
-                            <div class="col-12 mt-4 mb-2 text-center animate__animated animate__fadeInDown"><h1 class="text-s-30 text-w-700" style="color:#182E9C">ทำไมลูกค้าถึงไว้ใจให้เราดูแล</h1></div>    
+                            <div class="col-12 mt-4 mb-2 text-center animate__animated animate__fadeInDown"><h1 class="text-s-30 text-w-700" style="color:#182E9C">{{ $t("solution.fuse.why_do") }}</h1></div>    
                         </div>
                         <div class="row mt-5 text-center">
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
@@ -94,21 +94,21 @@
                                     <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-1.png"></div>
                                 </div>
                                 <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
-                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">ให้คำปรึกษาครบวงจร <br>เรื่องการทำธุรกิจ</h2>
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737" v-html="$t('solution.fuse.suggestions')"></h2>
                             </div>
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
                                     <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-2.png"></div>
                                 </div>
                                 <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
-                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">ดูเเลด้วยทีมงาน <br>ที่มีประสบการณ์</h2>
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737" v-html="$t('solution.fuse.assisted')"></h2>
                             </div>
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
                                     <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-3.png"></div>
                                 </div>
                                 <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
-                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">เน้นผลลัพธ์ด้วยการ <br>เข้าใจธุรกิจคุณ</h2>
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737" v-html="$t('solution.fuse.focus')"></h2>
                             </div>     
                         </div>
                     </div>
