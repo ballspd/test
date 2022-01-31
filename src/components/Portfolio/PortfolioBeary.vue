@@ -24,7 +24,7 @@ export default {
     name: 'PortfolioBeary',
     data () {
         return {
-            lang: localStorage.getItem('lang') || 'TH-th',
+            lang: localStorage.getItem('lang') || 'th-TH',
             responseData:[]
         }
     },

@@ -125,7 +125,7 @@
 export default {
     name: 'NavMobile',
     data () {
-        const lang = localStorage.getItem('lang') || 'TH-th';
+        const lang = localStorage.getItem('lang') || 'th-TH';
         return {
             component: '',
             display_manu: false,

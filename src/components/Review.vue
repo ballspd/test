@@ -52,7 +52,7 @@ export default {
       return {
         responseData:[],
         url:'',
-        lang: localStorage.getItem('lang') || 'TH-th'
+        lang: localStorage.getItem('lang') || 'th-TH'
       }
     },
     //this.$route.params.id

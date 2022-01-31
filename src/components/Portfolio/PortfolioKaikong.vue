@@ -24,7 +24,7 @@ export default {
     name: 'PortfolioKaikong',
     data () {
         return {
-            lang: localStorage.getItem('lang') || 'TH-th',
+            lang: localStorage.getItem('lang') || 'th-TH',
             responseData:[]
         }
     },

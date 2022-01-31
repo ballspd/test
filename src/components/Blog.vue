@@ -518,7 +518,7 @@ export default {
             isActive: true,
             show:false,
             windowTop:0,
-            lang: localStorage.getItem('lang') || 'TH-th',
+            lang: localStorage.getItem('lang') || 'th-TH',
             c1:false,
             c2:false,
             c3:false,
