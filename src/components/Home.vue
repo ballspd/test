@@ -12,64 +12,61 @@
           </div>
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
             <div class="d-none d-xl-block d-xxl-block">
-              <h1 class="font-wght mt-5" style="font-size:45px;line-height: 1.5;">LET’S GROW YOUR<br> BUSINESS TOGETHER</h1>
-              <p v-if="readMore == false" class="text-s-16 text-description mt-5 mb-5 animate__animated animate__flipInX">แม่ค้าออนไลน์ยุค 5.0 ปรับตัวยังไงให้ทันในวันที่โลกหมุนเร็วขนาดนี้ การเข้ามาลงเล่นในตลาดที่มีคู่แข่งมากมาย ต่อสู้กันอย่างดุเดือดเพื่อแย่งชิงพื้นที่ในการนำเสนอสินค้าให้แก่ผู้บริโภค บอกเลยว่าหากทำงานนี้คนเดียวคงจะหนักเอาการ ถ้าอยากเริ่มต้นขายของออนไลน์อย่างราบรื่นปลอดภัย การมีผู้ช่วยมือดีไว้ข้างกายก็จะช่วย แบ่งเบาภาระได้เยอะ...</p>
-              <p v-if="readMore == true" class="text-s-16 text-description mt-5 mb-5 animate__animated animate__flipInX">
-                แม่ค้าออนไลน์ยุค 5.0 ปรับตัวยังไงให้ทันในวันที่โลกหมุนเร็วขนาดนี้ การเข้ามาลงเล่นในตลาดที่มีคู่แข่งมากมาย 
-                ต่อสู้กันอย่างดุเดือดเพื่อแย่งชิงพื้นที่ในการนำเสนอสินค้าให้แก่ผู้บริโภค บอกเลยว่าหากทำงานนี้คนเดียวคงจะหนักเอาการ ถ้าอยากเริ่มต้นขายของออนไลน์อย่างราบรื่นปลอดภัย 
-                การมีผู้ช่วยมือดีไว้ข้างกายก็จะช่วย แบ่งเบาภาระได้เยอะสำหรับ Sellsuki โฉมใหม่ พร้อมเป็นผู้ช่วยให้กับแม่ค้าออนไลน์ทุกคน ไม่เพียงแต่การจัดการออเดอร์เท่านั้น 
-                แต่เรากลับมาพร้อมกับอาวุธครบมือ จบได้ทุกปัญหา ไม่ว่าจะเป็นการให้คำปรึกษาด้านการตลาดและการเริ่มต้นทำธุรกิจ การทำ Social Media Marketing ทุกรูปแบบ 
-                บนทุกแพลตฟอร์ม บริการจัดทำเว็บไซต์และระบบต่าง ๆ ให้ตอบโจทย์ทุกธุรกิจ และบริการ Fulfillment ที่ช่วยจัดการสินค้า และออเดอร์ของคุณได้ทุกเมื่อ เรียกได้ว่า Sellsuki  
-                พร้อมดูแลคุณในทุกก้าวตั้งแต่เริ่มต้นจนเป็นแม่ค้าคนดังกันเลย!</p>
-              <button @click="readMore = !readMore" class="btn-black text-s-16 mt-5 text-w-400 hvr-back-pulse"><span>Read More</span></button>
+              <h1 class="font-wght mt-5" style="font-size:45px;line-height: 1.5;" v-html="$t('home.YourRoadmap')"></h1>
+              <p v-if="readMore == false" class="text-s-16 text-description mt-5 mb-5 animate__animated animate__flipInX">{{$t("home.text_shot")}}</p>
+              <p v-if="readMore == true" class="text-s-16 text-description mt-5 mb-5 animate__animated animate__flipInX">{{$t("home.text_long")}}</p>
+              <button @click="readMore = !readMore" class="btn-black text-s-16 text-w-400 hvr-back-pulse"><span>Read More</span></button>
             </div>
             <div class="d-block d-xl-none d-xxl-none p-3">
-              <h1 class="font-wght mb-3" style="font-size:30px;display: flex;">LET’S GROW YOUR BUSINESS TOGETHER</h1>
-              <p v-if="readMore == false" class="text-s-16 text-description animate__animated animate__flipInX" style="">แม่ค้าออนไลน์ยุค 5.0 ปรับตัวยังไงให้ทันในวันที่โลกหมุนเร็วขนาดนี้ การเข้ามา ลงเล่นในตลาดที่มีคู่แข่งมากมาย ต่อสู้กันอย่างดุเดือดเพื่อแย่งชิงพื้นที่ในการนำเสนอสินค้าให้แก่ผู้บริโภค บอกเลยว่าหากทำงานนี้คนเดียวคงจะหนักเอาการ ถ้าอยากเริ่มต้นขายของออนไลน์อย่างราบรื่นปลอดภัย การมีผู้ช่วยมือดีไว้ข้างกายก็จะช่วย แบ่งเบาภาระได้เยอะ...</p>
-              <p v-if="readMore == true" class="text-s-16 text-description animate__animated animate__flipInX">
-                แม่ค้าออนไลน์ยุค 5.0 ปรับตัวยังไงให้ทันในวันที่โลกหมุนเร็วขนาดนี้ การเข้ามาลงเล่นในตลาดที่มีคู่แข่งมากมาย 
-                ต่อสู้กันอย่างดุเดือดเพื่อแย่งชิงพื้นที่ในการนำเสนอสินค้าให้แก่ผู้บริโภค บอกเลยว่าหากทำงานนี้คนเดียวคงจะหนักเอาการ ถ้าอยากเริ่มต้นขายของออนไลน์อย่างราบรื่นปลอดภัย 
-                การมีผู้ช่วยมือดีไว้ข้างกายก็จะช่วยแบ่งเบาภาระได้เยอะสำหรับ Sellsuki โฉมใหม่ พร้อมเป็นผู้ช่วยให้กับแม่ค้าออนไลน์ทุกคน ไม่เพียงแต่การจัดการออเดอร์เท่านั้น 
-                แต่เรากลับมาพร้อมกับอาวุธครบมือ จบได้ทุกปัญหา ไม่ว่าจะเป็นการให้คำปรึกษาด้านการตลาดและการเริ่มต้นทำธุรกิจ การทำ Social Media Marketing ทุกรูปแบบ 
-                บนทุกแพลตฟอร์ม บริการจัดทำเว็บไซต์และระบบต่าง ๆ ให้ตอบโจทย์ทุกธุรกิจ และบริการ Fulfillment ที่ช่วยจัดการสินค้า และออเดอร์ของคุณได้ทุกเมื่อ เรียกได้ว่า Sellsuki  
-                พร้อมดูแลคุณในทุกก้าวตั้งแต่เริ่มต้นจนเป็นแม่ค้าคนดังกันเลย!</p>
+              <h1 class="font-wght mb-3" style="font-size:30px;display: flex;">{{ $t("home.YourRoadmapM") }}</h1>
+              <p v-if="readMore == false" class="text-s-16 text-description animate__animated animate__flipInX" style="">{{$t("home.text_shot")}}</p>
+              <p v-if="readMore == true" class="text-s-16 text-description animate__animated animate__flipInX">{{$t("home.text_long")}}</p>
               <button @click="readMore = !readMore" class="item-center btn-black text-s-16 text-w-400 mt-4 item-center hvr-back-pulse" style="display:block"><span>Read More</span></button>
             </div>
           </div>
         </div>
-        <div style="padding-top: 80px !important;padding:70px">
+        <div style="padding-top: 80px !important;padding:40px">
+          <div class="row pb-4">
+              <div class="col-12 text-center">
+                  <h1 style="font-weight: 700;font-size: 36px;color:#231F20">BUSINESS SERVICE SOLUTION SERVICE</h1>
+                  <h2 style="font-weight: 700;font-size: 24px;color:#231F20">ธุรกิจแบบไหนก็ดูเเลไหว</h2>
+              </div>
+            </div>
           <div class="row">
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
               <router-link @click="scrollToTop" to="/TypesOfBusiness/BusinessOwner">
-              <div class="card-shadow hvr-grow-rotate-left crad-image mt-3">
-                <img class="item-center mt-3 image-size" src="./../assets/beautiful-smart-asian-young-entrepreneur-business-woman-owner-sme-checking-product-stock-scan-qr-code-working-home.png">
-                <p class="mt-3 text-w-700 font-wght text-center text-dark" style="position: relative;font-size:20px;z-index: 1;">BUSINESS OWNER</p>
+              <div class="card card-shadow hvr-grow-rotate-left mt-3" style="border-radius: 20px;background-color: #CBE2F8;width: 286px;">
+                <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_1_5fa36c01d1.webp">
+                <div class="card-body" style="background-color: #AACCEB;border-bottom-left-radius: 20px !important;border-bottom-right-radius: 20px !important;">
+                  <p class="text-w-700 font-wght text-center text-dark m-1" style="position: relative;font-size:20px;z-index: 1;">BUSINESS OWNER</p>
+                </div>
               </div>
               </router-link>
             </div>
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
               <router-link @click="scrollToTop" to="/TypesOfBusiness/OnlineMerchant">
-              <div class="card-shadow hvr-grow crad-image mt-3">
-                <img class="item-center mt-3 image-size" src="./../assets/business-owner-working-home-office.png">
-                <p class="mt-3 text-w-700 font-wght text-center text-dark" style="position: relative;font-size:20px;z-index: 1;">ONLINE MERCHANT</p>
+              <div class="card card-shadow hvr-grow mt-3" style="border-radius: 20px;background-color: #CBE2F8;width: 286px;">
+                <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_2_30fffe585a.webp">
+                <div class="card-body" style="background-color: #AACCEB;border-bottom-left-radius: 20px !important;border-bottom-right-radius: 20px !important;">
+                  <p class="text-w-700 font-wght text-center text-dark m-1" style="position: relative;font-size:20px;z-index: 1;">ONLINE MERCHANT</p>
+                </div>
               </div>
               </router-link>
             </div>
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
-              <router-link @click="scrollToTop" to="/TypesOfBusiness/Corporate">
-              <div class="card-shadow hvr-grow-rotate crad-image mt-3">
-                <img class="item-center mt-3 image-size" src="./../assets/portrait-asian-business-man-business-district-lifestyle-business-people-concept.png">
-                <p class="mt-3 text-w-700 font-wght text-center text-dark" style="position: relative;font-size:20px;z-index: 1;">CORPORATE</p>
+              <router-link @click="scrollToTop" to="/TypesOfBusiness/OnlineMerchant">
+              <div class="card card-shadow hvr-grow-rotate mt-3" style="border-radius: 20px;background-color: #CBE2F8;width: 286px;">
+                <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_3_2f16995ad2.webp">
+                <div class="card-body" style="background-color: #AACCEB;border-bottom-left-radius: 20px !important;border-bottom-right-radius: 20px !important;">
+                  <p class="text-w-700 font-wght text-center text-dark m-1" style="position: relative;font-size:20px;z-index: 1;">CORPORATE</p>
+                </div>
               </div>
               </router-link>
             </div>
           </div>
         </div>
-        <div class="d-none d-xxl-block d-xl-block">
-          <ParallaxAll/>
-        </div>
-        <div class="d-block d-xl-none d-xxl-none">
-          <ParallaxMobile/>
+        <div class="mt-5">
+        <ParallaxMobile/>
         </div>
         <InterestingArticles :type="type"/>
 
@@ -236,7 +233,7 @@ import InterestingArticles from '@/components/InterestingArticles'
 import Review from '@/components/Review'
 import Preloader from '@/components/Preloader'
 import BannerBU from '@/components/BannerBU'
-import ParallaxAll from '@/components/ParallaxAll'
+//import ParallaxAll from '@/components/ParallaxAll'
 import ParallaxMobile from '@/components/ParallaxMobile'
 
 export default {
@@ -247,7 +244,7 @@ export default {
     Review,
     BannerBU,
     Preloader,
-    ParallaxAll,
+    //ParallaxAll,
     ParallaxMobile
   },
   data(){

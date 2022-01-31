@@ -1,5 +1,5 @@
 <template>
-	<Splide @splide:move="onArrowsMounted" :options="{ pagination: false,wheel:true}">
+	<Splide @splide:move="onArrowsMounted" :options="{ pagination: false,wheel:true,releaseWheel:true}">
 	<SplideSlide>
       <div v-if="section1">
         <img class="img-fluid" src="./../assets/Paralax/1/1.webp">

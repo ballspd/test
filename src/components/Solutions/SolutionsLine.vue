@@ -11,7 +11,7 @@
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <font class="font-wght" style="font-size:62px;color:#FFFFFC">LINE AGENCY <br>BY SELLSUKI</font>
-                                    <p class="text-s-16 mt-3" style="color:#FFFFFC">ผู้เชี่ยวชาญอันดับ 1 เรื่อง LINE OA ที่ได้รับความไว้วางใจ จากเจ้าของธุรกิจกว่า 6,000 แอคเคาท์ ให้เราช่วยดูแล</p>
+                                    <p class="text-s-16 mt-3" style="color:#FFFFFC">{{ $t("solution.line.mata") }}</p>
                                     <a href="https://lineagency.sellsuki.com" target="_blank" class="btn btn-orange button mt-4"><span class="text-white" style="font-size:18px">Click Now</span></a>
                                 </td>
                             </table>
@@ -19,7 +19,7 @@
                         <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
                             <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#FFFFFC">LINE Agency</font></p>
                             <h1 class="font-wght text-s-36" style="color:#FFFFFC">LINE AGENCY <br>BY SELLSUKI</h1>
-                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">ผู้เชี่ยวชาญอันดับ 1 เรื่อง LINE OA ที่ได้รับความไว้วางใจ จากเจ้าของธุรกิจกว่า 6,000 แอคเคาท์ ให้เราช่วยดูแล</p>
+                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">{{ $t("solution.line.mata") }}</p>
                             <a href="https://lineagency.sellsuki.com" target="_blank" class="btn btn-orange button mt-4"><span class="text-white" style="font-size:18px">Click Now</span></a>
                         </div>
                     </div>
@@ -35,7 +35,7 @@
                 <div class="mt-custom p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
                     <div v-if="animation1">
                         <div class="row">
-                            <div class="col-12 mt-4 mb-2 text-center animate__animated animate__fadeInDown theme-text-sub"><h1 class="text-s-30 text-w-700">ทำไมลูกค้าถึงไว้ใจให้เราดูแล</h1></div>    
+                            <div class="col-12 mt-4 mb-2 text-center animate__animated animate__fadeInDown theme-text-sub"><h1 class="text-s-30 text-w-700">{{ $t("solution.line.why_do") }}</h1></div>    
                         </div>
                         <div class="row mt-5 text-center">
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
@@ -43,21 +43,21 @@
                                     <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-1.png"></div>
                                 </div>
                                 <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
-                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">Course Training LINE<br>ขั้นเทพ</h2>
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737" v-html="$t('solution.line.training')"></h2>
                             </div>
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
                                     <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-2.png"></div>
                                 </div>
                                 <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
-                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">ทีมงานผู้เชี่ยวชาญ คอยให้<br>คำปรึกษา</h2>
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737" v-html="$t('solution.line.suggestions')"></h2>
                             </div>
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
                                     <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-3.png"></div>
                                 </div>
                                 <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
-                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">เครื่องมือเสริม ที่ช่วยให้ธุรกิจ<br>โตได้ไวกว่า</h2>
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737" v-html="$t('solution.line.tools')"></h2>
                             </div>     
                         </div>
                     </div>
@@ -104,7 +104,7 @@
                             </div>
                         </div>
                     </div>
-                    <div v-if="animation2" class="col-12 text-center pt-5 pb-3 animate__animated animate__fadeInDown"><h1 class="text-s-30 text-w-700" style="color:#444444">บริการเสริม (Add-on Services)</h1></div>   
+                    <div v-if="animation2" class="col-12 text-center pt-5 pb-3 animate__animated animate__fadeInDown"><h1 class="text-s-30 text-w-700" style="color:#444444">{{ $t("solution.line.add_on_services") }}</h1></div>   
                     <div v-for="(data, index) in responseDataH2" :key="index">
                         <div :id="'contantAdd' + (index + 1)" style="display:none">
                             <div v-if="data.position == 'Right'" class="row mt-4 p-custom-2 d-flex">
