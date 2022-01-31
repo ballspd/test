@@ -172,7 +172,7 @@ export default {
         return {
             type: 'Beary',
             isHidden: false,
-            lang: localStorage.getItem('lang') || 'TH-th',
+            lang: localStorage.getItem('lang') || 'th-TH',
             animation1:false,
             responseData:[]
         }

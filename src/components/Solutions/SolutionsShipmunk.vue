@@ -342,7 +342,7 @@ export default {
             return {
                 type: 'Shipmunk',
                 isHidden: false,
-                lang: localStorage.getItem('lang') || 'TH-th',
+                lang: localStorage.getItem('lang') || 'th-TH',
                 animation1:false,
                 animation2:false,
                 responseDataH1:[],

@@ -127,7 +127,7 @@ export default {
             return {
                 type: 'Kaikong',
                 isHidden: false,
-                lang: localStorage.getItem('lang') || 'TH-th',
+                lang: localStorage.getItem('lang') || 'th-TH',
                 windowTop:'',
                 responseData:[]
         }
