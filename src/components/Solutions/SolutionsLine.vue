@@ -177,7 +177,7 @@ export default {
             return {
                 type: 'Line',
                 isHidden: false,
-                lang: localStorage.getItem('lang') || 'TH-th',
+                lang: localStorage.getItem('lang') || 'th-TH',
                 responseDataH1:[],
                 responseDataH2:[],
                 animation1:true,

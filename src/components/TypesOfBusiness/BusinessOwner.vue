@@ -119,7 +119,7 @@ export default {
         return {
             type: 'All',
             isHidden: false,
-            lang: localStorage.getItem('lang') || 'TH-th',
+            lang: localStorage.getItem('lang') || 'th-TH',
             responseData:[],
             animation1:false,
         }

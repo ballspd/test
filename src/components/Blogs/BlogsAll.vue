@@ -60,7 +60,7 @@ export default {
     data() {
       return {
         responseData:[],
-        lang: localStorage.getItem('lang') || 'TH-th',
+        lang: localStorage.getItem('lang') || 'th-TH',
         paramsId: this.$route.params.id
       }
     },
