@@ -391,7 +391,7 @@ main {
   display: flex;
   position: sticky;
   top:0;
-  margin-top: -150px;
+  margin-top: -90px;
   /* background: linear-gradient(110.74deg, rgb(82, 184, 226) 0%, rgb(61, 144, 221) 75.34%); */
 }
 

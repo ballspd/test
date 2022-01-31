@@ -11,16 +11,16 @@
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:62px;color:#FFFFFC">SHIPMUNK</h1>
-                                    <h2 class="text-s-22 pt-2 pb-2 text-w-700" style="color:#FFFFFC">“ช่วยเปรียบเทียบค่าส่งพัสดุ เลือกผู้ให้บริการขนส่งที่ดีที่สุด สะดวก ประหยัดยิ่งกว่า”</h2>
-                                    <p class="text-s-16 mt-3" style="color:#FFFFFC">ผู้ให้บริการการเปรียบเทียบค่าส่งพัสดุ จองคิวขนส่ง และชำระเงินได้ง่ายๆ ผ่านระบบออนไลน์ ช่วยให้เจ้าของธุรกิจทำงานได้ง่ายยิ่งขึ้น!</p>
+                                    <h2 class="text-s-22 pt-2 pb-2 text-w-700" style="color:#FFFFFC">“{{ $t("solution.shipmunk.text_banner") }}”</h2>
+                                    <p class="text-s-16 mt-3" style="color:#FFFFFC">{{ $t("solution.shipmunk.mata") }}</p>
                                 </td>
                             </table>
                         </div>
                         <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
                             <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#FFFFFC">Shipmunk</font></p>
                             <h1 class="font-wght text-s-36" style="color:#FFFFFC">SHIPMUNK</h1>
-                            <h2 class="text-s-22 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#FFFFFC">“ช่วยเปรียบเทียบค่าส่งพัสดุ เลือกผู้ให้บริการขนส่งที่ดีที่สุด สะดวก ประหยัดยิ่งกว่า”</h2>
-                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">ผู้ให้บริการการเปรียบเทียบค่าส่งพัสดุ จองคิวขนส่ง และชำระเงินได้ง่ายๆ ผ่านระบบออนไลน์ ช่วยให้เจ้าของธุรกิจทำงานได้ง่ายยิ่งขึ้น!</p>
+                            <h2 class="text-s-22 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#FFFFFC">“{{ $t("solution.shipmunk.text_banner") }}”</h2>
+                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">{{ $t("solution.shipmunk.mata") }}</p>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -38,17 +38,17 @@
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 theme-background-sub hvr-float-shadow">
                                 <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsShipmunk/icon-solutions-shipmunk-1.png"></div>
                             </div>
-                            <h2 class="text-s-18 mt-4 ps-3 pe-3" style="color:#0A0909;line-height: 1.5;">บริการจัดส่งทั่วไป <br>สินค้าแช่เย็น แช่แข็ง</h2>
+                            <h2 class="text-s-18 mt-4 ps-3 pe-3" style="color:#0A0909;line-height: 1.5;" v-html="$t('solution.shipmunk.h1')"></h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 theme-background-main hvr-float-shadow">
                                 <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsShipmunk/icon-solutions-shipmunk-2.png"></div>
                             </div>
-                            <h2 class="text-s-18 mt-4 ps-3 pe-3" style="color:#0A0909;line-height: 1.5;">ประกันภัยขนส่งสินค้า</h2>
+                            <h2 class="text-s-18 mt-4 ps-3 pe-3" style="color:#0A0909;line-height: 1.5;" v-html="$t('solution.shipmunk.h2')"></h2>
                         </div>   
                     </div>
                     <div class="row">
-                        <div v-if="animation1" class="col-12 text-center mt-5"><h1 class="text-s-30 text-w-700 animate__animated animate__fadeInDown theme-text-sub">LINE SERVICE</h1></div>
+                        <div v-if="animation1" class="col-12 text-center mt-5"><h1 class="text-s-30 text-w-700 animate__animated animate__fadeInDown theme-text-sub">{{$t('solution.shipmunk.header')}}</h1></div>
                         <div v-for="(data, index) in responseDataH1" :key="index">
                             <div :id="'contantH1' + (index + 1)" style="display:none">
                                 <div v-if="data.position == 'Left'" class="row mt-4 p-custom-2 d-flex">
@@ -90,12 +90,12 @@
                             </div>
                         </div>
                     </div>
-                    <div v-if="animation2" class="col-12 text-center pt-5 pb-3 animate__animated animate__fadeInDown"><h1 class="text-s-30 text-w-700" style="color:#444444">บริการเสริม (Add-on Services)</h1></div>   
+                    <div v-if="animation2" class="col-12 text-center pt-5 pb-3 animate__animated animate__fadeInDown"><h1 class="text-s-30 text-w-700" style="color:#444444">{{$t('solution.shipmunk.add_on_services')}}</h1></div>   
                     <div v-for="(data, index) in responseDataH2" :key="index">
                         <div :id="'contantH2' + (index + 1)" style="display:none">
                             <div v-if="data.position == 'Right'" class="row mt-4 p-custom-2 d-flex">
                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto ">
-                                        <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInLeft animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                        <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInLeft animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 0px">{{data.header}}</span></h2>
                                         <div class="animate__animated animate__bounceInRight animate__slow">
                                             <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
                                                 <div class="text-center text-lg-start text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
@@ -117,7 +117,7 @@
                                     <img v-if="data.image != null" class="item-center hvr-rotate" :src="data.image.url" :alt="data.image.name">
                                 </div>
                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInRight animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInRight animate__slow" style="padding: 10px 5px;"><span class="theme-text-main theme-border" style="padding: 10px 0px">{{data.header}}</span></h2>
                                     <div class="animate__animated animate__bounceInLeft animate__slow">
                                         <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
                                             <div class="text-center text-lg-start text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="markdownToHtml(data.detail)"></div>
@@ -202,7 +202,7 @@
                 </div>
                 <div class="p-lg-5 p-md-4 p-sm-5 p-5 ps-lg-4 pe-lg-4" style="background: linear-gradient(0, #A2D7F0 0%, rgba(161, 215, 240, 0) 100%);">
                     <div class="row">
-                        <div class="col-12 mt-4 mb-2 text-center"><h1 class="text-s-30 text-w-700" style="color:#182E9C">ทำไมต้องเลือก SHIPMUNK</h1></div>    
+                        <div class="col-12 mt-4 mb-2 text-center"><h1 class="text-s-30 text-w-700" style="color:#182E9C">{{$t('solution.shipmunk.why')}}</h1></div>    
                     </div>
                     <div class="row mt-2">
                         <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -210,7 +210,8 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0">รู้ราคาขนส่งทันที พร้อมเปรียบเทียบ ราคาขนส่ง ให้เห็นตัวเลือกที่ตรงตาม ความต้องการของร้านค้ามากที่สุด</p>
+                                        <p v-if="lang == 'en'" class="text-w-700 mb-0" style="font-size:13.5px">{{$t('solution.shipmunk.why1')}}</p>
+                                        <p v-else class="text-s-16 text-w-700 mb-0">{{$t('solution.shipmunk.why1')}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -220,7 +221,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0">จองขนส่งได้ล่วงหน้า ตามวันเวลาที่ ร้านค้าสะดวก</p>
+                                        <p class="text-s-16 text-w-700 mb-0">{{$t('solution.shipmunk.why2')}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -230,7 +231,8 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0">จะส่งเองแบบ (Drop off) หรือให้ ขนส่ง ไปรับถึงบ้าน (Pick up) ก็ได้</p>
+                                        <p v-if="lang == 'en'" class="text-s-14 text-w-700 mb-0">{{$t('solution.shipmunk.why3')}}</p>
+                                        <p v-else class="text-s-16 text-w-700 mb-0">{{$t('solution.shipmunk.why3')}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -240,7 +242,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0">ชำระค่าขนส่งได้ทันที ผ่านช่องทาง ออนไลน์</p>
+                                        <p class="text-s-16 text-w-700 mb-0">{{$t('solution.shipmunk.why4')}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -250,7 +252,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0">ติดตามสถานะการจัดส่งสินค้าได้ แบบ Realtime ผ่าน LINE OA ของ Shipmunk</p>
+                                        <p class="text-s-16 text-w-700 mb-0">{{$t('solution.shipmunk.why5')}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -260,7 +262,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0">พิมพ์ใบปะหน้า ฟรี!</p>
+                                        <p class="text-s-16 text-w-700 mb-0">{{$t('solution.shipmunk.why6')}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -270,7 +272,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0">ใช้ระบบ ฟรี!</p>
+                                        <p class="text-s-16 text-w-700 mb-0">{{$t('solution.shipmunk.why7')}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -280,7 +282,8 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-2" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0">มีระบบสร้างรายงาน หรือ Dashboard & Statistic นำข้อมูลและสถิติไปวิเคราะห์เพื่อพัฒนาแผนการตลาด</p>
+                                        <p v-if="lang == 'en'" class="text-w-700 mb-0" style="font-size:13.5px">{{$t('solution.shipmunk.why8')}}</p>
+                                        <p v-else class="text-s-16 text-w-700 mb-0">{{$t('solution.shipmunk.why8')}}</p>
                                     </div>
                                 </div>
                             </div>

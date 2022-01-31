@@ -126,7 +126,7 @@
       </div>
       <div class="ml-2">
         <ul class="navbar-nav">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <div class="nav-link text-c-menu cursor-pointer" style="margin-right:15px;margin-left:10px;padding-right: 0 !important;padding-left: 0 !important;">
               <div v-if="lang == 'en'" class="btn-icon text-w-700" style="background-color: #FDF5E8;font-size:16px">EN</div>
               <div v-else class="btn-icon text-w-700" style="background-color: #FDF5E8;font-size:16px">TH</div>
@@ -141,7 +141,7 @@
                 </div>
               </div>
             </ul>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a href="tel:020263250" target="_blank" class="nav-link text-c-menu" style="margin-right:40px;margin-left:10x;padding-right: 0 !important;padding-left: 0 !important;"><img class="shadow-filter" style="background-color: #FFFFFF;border-radius: 50px;" src="./../../assets/icon/Vector.png"></a>
           </li>

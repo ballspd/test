@@ -164,8 +164,84 @@ export default {
 
 /* -------------------------#Responsive------------------------ */
 
+@media only screen and (max-width: 479px) {
+    .bu-size{
+        max-width: 360px
+    }
+    .bu-fuse{
+        position: absolute;
+        margin: 45px 0 0 230px;
+        width: 70px;
+        cursor: pointer;
+    }
+    .bu-line{
+        position: absolute;
+        margin: 38px 0 0 90px;
+        width: 70px;
+        cursor: pointer;
+    }
+    .bu-akita{
+        position: absolute;
+        margin: 135px 0 0 25px;
+        width: 70px;
+        cursor: pointer;
+    }
+
+    .bu-beary{
+        position: absolute;
+        margin: 145px 0 0 275px;
+        width: 70px;
+        cursor: pointer;
+    }
+
+    .bu-kaikong{
+        position: absolute;
+        margin: 235px 0 0 230px;
+        width: 70px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 494px) {
+    .bu-size{
+        max-width: 360px
+    }
+    .bu-fuse{
+        position: absolute;
+        margin: 45px 0 0 255px;
+        width: 70px;
+        cursor: pointer;
+    }
+    .bu-line{
+        position: absolute;
+        margin: 38px 0 0 110px;
+        width: 70px;
+        cursor: pointer;
+    }
+    .bu-akita{
+        position: absolute;
+        margin: 135px 0 0 45px;
+        width: 70px;
+        cursor: pointer;
+    }
+
+    .bu-beary{
+        position: absolute;
+        margin: 145px 0 0 285px;
+        width: 70px;
+        cursor: pointer;
+    }
+
+    .bu-kaikong{
+        position: absolute;
+        margin: 235px 0 0 240px;
+        width: 70px;
+        cursor: pointer;
+    }
+}
+
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 549px) {
+@media only screen and (min-width: 495px) and (max-width: 549px) {
     .bu-size{
         max-width: 450px
     }

@@ -1,5 +1,10 @@
 {
-  "YourRoadmap": "YOUR ROADMAP",
+  "home":{
+    "YourRoadmap": "Let Your Business <br>Growth Together",
+    "YourRoadmapM": "Let Your Business Growth Together",
+    "text_shot": "Online sellers in the 5.0 era and how to adjust to keep up on the day when our world spins so speedy? Entering a market where have many competitors, compete intensely to struggle for the product presentation area. It’s difficult and complicated if you do it alone. But if you want to start online selling smoothly and safely, you should have an effective assistant to help your work on your own.",
+    "text_long": "Online sellers in the 5.0 era and how to adjust to keep up on the day when our world spins so speedy? Entering a market where have many competitors, compete intensely to struggle for the product presentation area. It’s difficult and complicated if you do it alone. But if you want to start online selling smoothly and safely, you should have an effective assistant to help your work on your own. For the new Sellsuki, we are ready to be an online seller assistant for all. Not only order management but also, we have many tools to solve all selling online problems. Whether guide you about marketing, starting a business, social media marketing in every type and channel, making your own websites or any business systems, Fulfillment services which help to manage a product and your orders anytime. Therefore, Sellsuki is a selling online assistant who literally takes care of you from the beginning until successful"
+  },
 
   "banner":{
     "fuse": "We have an advertising creation service that covers all many social media platforms. And we also have an add-on service that helps you to push your business to have more growth as well as suggestions about marketing to a business plan for more growth.",
@@ -30,6 +35,46 @@
       "suggestions":"Suggestions for all  <br>business doing",
       "assisted":"Assisted by <br>professional teams",
       "focus":"Focus on the result by <br>understanding your business"
+    },
+    "line":{
+      "mata":"The 1st LINE OA professional who takes care of 6,000 business account.",
+      "why_do": "Why do customers choose us?",
+      "training":"The best Course <br>Training Line",
+      "suggestions":"Suggestions by <br>professional",
+      "tools":"Tools for business <br>growth faster",
+      "add_on_services":"Add-on Services"
+    },
+    "kaikong":{
+      "mata":"Creative agencies, professionals in building marketing content that can help to create your business be memorable. To motivate your sales and growth in advance",
+      "text_banner": "help you to create a memorable business",
+      "content_marketing":"Content Marketing",
+      "graphic_production":"Graphic & Production",
+      "admin_page":"Admin Page"
+    },
+    "beary":{
+      "mata":"Beary Tech, the website creation provider that ability to design a suitable and meet the users need to deliver the best experiences for all",
+      "text_banner": "Website design and development",
+      "brand_value": "Brand Value",
+      "h1":"Beary tech, we are ready to provide development suggestions by customizing a system to suit your business.",
+      "h2":"Beary Tech have teams who always support and provide suggestion all the time",
+      "h3":"Developing team who have experience in system development for various users and improve a system on every channel"
+    },
+    "shipmunk":{
+      "mata":"Parcel delivery fee comparison service provider, booking a shipping queue, and easy to pay through an online system. Therefore, it will reduce complicated work and run a business smoothly.",
+      "text_banner": "helps you compare a parcel delivery fee, choose the best shipping to deliver, convenient, and the cheapest.",
+      "h1":"Frozen parcel <br>delivery service",
+      "h2":"Cargo insurance in case <br>that parcel get damaged",
+      "header": "Easier Shipping with Shipmunk service",
+      "add_on_services":"Add-on Services",
+      "why": "Why should you choose Shipmunk?",
+      "why1": "receive delivery service charge immediately and compare delivery service provider that the most suitable for your business",
+      "why2": "reserve shipping in advance every time",
+      "why3": "able to deliver in both Drop-off or Pick-up (delivery provider come to take your parcel at home)",
+      "why4": "immediately pay for service charges through online channels.",
+      "why5": "real-time parcel status tracking through LINE OA's Shipmunk",
+      "why6": "print a parcel cover sheet for free",
+      "why7": "use a system for free",
+      "why8": "have report generation systems or Dashboard & Statistic that merchants can use to strategize and develop a business."
     }
   }
 }
