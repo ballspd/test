@@ -11,16 +11,16 @@
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:62px;color:#0B0404">KAIKONG</h1>
-                                    <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#0B0404">“ช่วยสร้าง CONTENT MARKETING ให้ธุรกิจเป็นที่จดจำ”</h2>
-                                    <p class="text-s-16 mt-3" style="color:#0B0404">Creative Agency ผู้เชี่ยวชาญในด้านการทำ Content Marketing ที่พร้อมจะช่วยสร้างธุรกิจของคุณให้เป็นที่น่าจดจำ เพื่อเพิ่มยอดขาย และเติบโตอย่างก้าวกระโดด</p>
+                                    <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#0B0404">“{{ $t("solution.kaikong.text_banner") }}”</h2>
+                                    <p class="text-s-16 mt-3" style="color:#0B0404">{{ $t("solution.kaikong.mata") }}</p>
                                 </td>
                             </table>
                         </div>
                         <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
                             <p class="text-s-14 pb-3 text-start" style="color:#0B0404;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#0B0404">Kaikong</font></p>
                             <h1 class="font-wght text-s-36" style="color:#0B0404">KAIKONG</h1>
-                            <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-5 pe-5 mt-4" style="color:#0B0404">“ช่วยสร้าง CONTENT MARKETING ให้ธุรกิจเป็นที่จดจำ”</h2>
-                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#0B0404">Creative Agency ผู้เชี่ยวชาญในด้านการทำ Content Marketing ที่พร้อมจะช่วยสร้างธุรกิจของคุณให้เป็นที่น่าจดจำ เพื่อเพิ่มยอดขาย และเติบโตอย่างก้าวกระโดด</p>
+                            <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-5 pe-5 mt-4" style="color:#0B0404">“{{ $t("solution.kaikong.text_banner") }}”</h2>
+                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#0B0404">{{ $t("solution.kaikong.mata") }}</p>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -38,19 +38,19 @@
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 theme-background-sub hvr-float-shadow">
                                 <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsKaikong/icon-solution-kaikong-1.png"></div>
                             </div>
-                            <h2 class="text-s-18 mt-4 ps-3 pe-3" style="color:#0A0909;line-height: 1.5;">Content Marketing</h2>
+                            <h2 class="text-s-18 mt-4 ps-3 pe-3" style="color:#0A0909;line-height: 1.5;">{{ $t("solution.kaikong.content_marketing") }}</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 theme-background-main hvr-float-shadow">
                                 <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsKaikong/icon-solution-kaikong-2.png"></div>
                             </div>
-                            <h2 class="text-s-18 mt-4 ps-3 pe-3" style="color:#0A0909;line-height: 1.5;">Graphic & Production</h2>
+                            <h2 class="text-s-18 mt-4 ps-3 pe-3" style="color:#0A0909;line-height: 1.5;">{{ $t("solution.kaikong.graphic_production") }}</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 theme-background-sub hvr-float-shadow">
                                 <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsKaikong/icon-solution-kaikong-3.png"></div>
                             </div>
-                            <h2 class="text-s-18 mt-4 ps-5 pe-5" style="color:#0A0909;line-height: 1.5;">Admin Page</h2>
+                            <h2 class="text-s-18 mt-4 ps-5 pe-5" style="color:#0A0909;line-height: 1.5;">{{ $t("solution.kaikong.admin_page") }}</h2>
                         </div>     
                     </div>
                     <div class="col-12 text-center mt-5"><h1 class="text-s-30 font-wght theme-text-sub">KAIKONG CREATIVE SERVICE</h1></div>

@@ -11,16 +11,16 @@
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:62px;color:#FFFFFC">BEARY TECH</h1>
-                                    <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#FFFFFC">“บริการพัฒนา และ ทำเว็บไซต์ ทุกรูปแบบ”</h2>
-                                    <p class="text-s-16 mt-3" style="color:#FFFFFC">Beary Tech ผู้ให้บริการ ทำเว็บไซต์ ครบวงจรที่สามารถออกแบบ ให้เหมาะสมและตอบโจทย์ทุกความต้องการของผู้ใช้งาน เพื่อส่งมอบ ประสบการณ์ที่ดีที่สุด</p>
+                                    <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#FFFFFC">“{{ $t("solution.beary.text_banner") }}”</h2>
+                                    <p class="text-s-16 mt-3" style="color:#FFFFFC">{{ $t("solution.beary.mata") }}</p>
                                 </td>
                             </table>
                         </div>
                         <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
                             <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#FFFFFC">Beary Tech</font></p>
                             <h1 class="font-wght text-s-36" style="color:#FFFFFC">BEARY TECH</h1>
-                            <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#FFFFFC">“บริการพัฒนา และ ทำเว็บไซต์ ทุกรูปแบบ”</h2>
-                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">Beary Tech ผู้ให้บริการ ทำเว็บไซต์ ครบวงจรที่สามารถออกแบบ ให้เหมาะสมและตอบโจทย์ทุกความต้องการของผู้ใช้งาน เพื่อส่งมอบ ประสบการณ์ที่ดีที่สุด</p>
+                            <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#FFFFFC">“{{ $t("solution.beary.text_banner") }}”</h2>
+                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">{{ $t("solution.beary.mata") }}</p>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -115,7 +115,7 @@
                 </div>
                 <div v-if="animation1" class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-5 p-5" style="background: linear-gradient(0, #6AD5C0 0%, rgba(106, 213, 192, 0) 100%);">
                         <div class="row">
-                            <div class="col-12 mt-4 mb-2 text-center animate__animated animate__fadeInDown theme-text-sub"><h1 class="text-s-30 text-w-700">มาตรฐานการให้บริการ (BRAND VALUE)</h1></div>    
+                            <div class="col-12 mt-4 mb-2 text-center animate__animated animate__fadeInDown theme-text-sub"><h1 class="text-s-30 text-w-700">{{ $t("solution.beary.brand_value") }}</h1></div>    
                         </div>
                         <div class="row mt-5 text-center">
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
@@ -123,21 +123,21 @@
                                     <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-1.png"></div>
                                 </div>
                                 <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
-                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">พร้อมให้คำปรึกษาในการ <br>พัฒนาระบบให้เข้ากับธุรกิจ <br>ของคุณได้ทุกรูปแบบ</h2>
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737" v-html="$t('solution.beary.h1')"></h2>
                             </div>
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
                                     <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-2.png"></div>
                                 </div>
                                 <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
-                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">มีทีมงานที่คอยซัพพอร์ท <br>พร้อมดูแลระบบและให้คำปรึกษา <br>อย่างใกล้ชิด</h2>
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737" v-html="$t('solution.beary.h2')"></h2>
                             </div>
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
                                     <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-3.png"></div>
                                 </div>
                                 <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
-                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">ทีมนักพัฒนามีประสบการณ์ <br>การพัฒนาระบบให้กับกลุ่มผู้ใช้งาน <br>ที่หลากหลาย และพัฒนาระบบ<br> บนหลากหลายแพลตฟอร์ม</h2>
+                                <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737" v-html="$t('solution.beary.h3')"></h2>
                             </div>     
                         </div>
                     </div>
