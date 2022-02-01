@@ -28,7 +28,7 @@
             <div class="crad mt-5">
                 <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
                     <div v-for="(data, index) in responseData" :key="index" class="mb-5">
-                        <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
+                        <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                         <div v-if="index == 0" class="row">
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img v-if="data.illustration != null" class="img-fluid img-fix-size" :src="data.illustration.url" :alt="data.illustration.name" style="width: 510px;height: 330px;"></div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="padding: 30px 10px 10px 10px;">
@@ -36,7 +36,7 @@
                                 <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                 <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
                                 <p class="text-limit-2 text-s-16" style="color:#373737;">{{data.description}}</p>
-                                <router-link class="btn btn-transparent mt-2 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
+                                <router-link class="btn btn-transparent mt-2 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span>Read More</span></router-link>
                             </div>
                         </div>
                         </router-link>
@@ -49,7 +49,7 @@
                                         <div class="carousel-item active">
                                             <div class="row">
                                                 <div v-for="(data, index) in responseData" :key="index" :class="{'col-4':index < 3}">
-                                                    <router-link class="row" v-if="index < 3" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
+                                                    <router-link class="row" v-if="index < 3" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                                                         <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
                                                         <div class="col-6 p-1">                                                
                                                             <div class="btn lh-1 btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important"><span style="font-size:14px">NEW</span></div>
@@ -64,7 +64,7 @@
                                         <div class="carousel-item">
                                             <div class="row">
                                                 <div v-for="(data, index) in responseData" :key="index" :class="{'col-4':index > 2}">
-                                                    <router-link class="row" v-if="index > 2" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
+                                                    <router-link class="row" v-if="index > 2" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                                                         <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
                                                         <div class="col-6 p-1">                                                
                                                             <div class="btn lh-1 btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important"><span style="font-size:14px">NEW</span></div>
@@ -92,7 +92,7 @@
                                                     <div class="row">
                                                         <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
                                                         <div class="col-6 p-2 ps-sm-3 pe-sm-3">                                                
-                                                            <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}" class="btn btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important;line-height: 1"><span style="font-size:14px">NEW</span></router-link>
+                                                            <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}" class="btn btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important;line-height: 1"><span style="font-size:14px">NEW</span></router-link>
                                                             <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:18px">{{data.title}}</p>
                                                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
                                                             <p class="text-limit-2 text-s-14 mb-0" style="color:#373737;">{{data.description}}</p>
@@ -184,12 +184,12 @@
                                 <font class="text-w-700" style="font-size:24px;color:#15304E">เทคนิคการขาย และการโฆษณา</font>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/8', query: { type: 'เทคนิคการขาย และการโฆษณา' } }"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/8/'+responseDatac1[0].blog_category.name }"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac1" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                                     <div class="row">
                                         <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                             <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
@@ -198,7 +198,7 @@
                                             <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                             <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                             <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                            <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></router-link>
+                                            <router-link class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span>Read More</span></router-link>
                                         </div>
                                     </div>
                                 </router-link>
@@ -224,12 +224,12 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ Social Media</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/9', query: { type: 'เทรนด์ Social Media' } }"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/9/'+responseDatac2[0].blog_category.name }"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac2" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
@@ -264,12 +264,12 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ Market Place</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/10', query: { type: 'เทรนด์ Market Place' }}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/10/'+responseDatac3[0].blog_category.name}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac3" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
@@ -304,12 +304,12 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ E-Commerce</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/11', query: { type: 'เทรนด์ E-Commerce' }}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/11/'+responseDatac4[0].blog_category.name}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac4" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
@@ -344,12 +344,12 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">ครบจบ ทุกเรื่อง LINE</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/12', query: { type: 'ครบจบ ทุกเรื่อง LINE' }}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/12/'+responseDatac5[0].blog_category.name}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac5" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
@@ -384,12 +384,12 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">Martech</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/13', query: { type: 'Martech' }}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/13/'+responseDatac6[0].blog_category.name}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac6" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
@@ -424,12 +424,12 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">Digital Transformation</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/14', query: { type: 'Digital Transformation' }}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/14/'+responseDatac7[0].blog_category.name}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac7" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
@@ -464,12 +464,12 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">อื่น ๆ</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/15', query: { type: 'อื่น ๆ' }}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/15/'+responseDatac8[0].blog_category.name }"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac8" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}">
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
@@ -562,59 +562,99 @@ export default {
         onShow(e) {
             this.windowTop = e.target.documentElement.scrollTop;
             if(this.windowTop > '1200'){
-                this.c1 = true
                 this.axios.get('blogs?blog_category=8&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac1 = response.data))
                 .catch()
+
+                if(this.responseDatac1.length == 0){
+                    this.c1 = false
+                }else{
+                    this.c1 = true
+                }
             }
-            if(this.windowTop > '1650')
+            if(this.windowTop > '1500')
             {
-                this.c2 = true
                 this.axios.get('blogs?blog_category=9&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac2 = response.data))
                 .catch()
+
+                if(this.responseDatac2.length == 0){
+                    this.c2 = false
+                }else{
+                    this.c2 = true
+                }
             }
-            if(this.windowTop > '2150')
+            if(this.windowTop > '1800')
             {
-                this.c3 = true
                 this.axios.get('blogs?blog_category=10&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac3 = response.data))
                 .catch()
+
+                if(this.responseDatac3.length == 0){
+                    this.c3 = false
+                }else{
+                    this.c3 = true
+                }
             }
-            if(this.windowTop > '2650')
+            if(this.windowTop > '2100')
             {
-                this.c4 = true
                 this.axios.get('blogs?blog_category=11&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac4 = response.data))
                 .catch()
+
+                if(this.responseDatac4.length == 0){
+                    this.c4 = false
+                }else{
+                    this.c4 = true
+                }
             }
-            if(this.windowTop > '3150')
+            if(this.windowTop > '2400')
             {
-                this.c5 = true
                 this.axios.get('blogs?blog_category=12&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac5 = response.data))
                 .catch()
+
+                if(this.responseDatac5.length == 0){
+                    this.c5 = false
+                }else{
+                    this.c5 = true
+                }
             }
-            if(this.windowTop > '3650')
+            if(this.windowTop > '2700')
             {
-                this.c6 = true
                 this.axios.get('blogs?blog_category=13&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac6 = response.data))
                 .catch()
+
+                if(this.responseDatac6.length == 0){
+                    this.c6 = false
+                }else{
+                    this.c6 = true
+                }
             }
-            if(this.windowTop > '4150')
+            if(this.windowTop > '3000')
             {
-                this.c7 = true
                 this.axios.get('blogs?blog_category=14&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac7 = response.data))
                 .catch()
+
+                if(this.responseDatac7.length == 0){
+                    this.c7 = false
+                }else{
+                    this.c7 = true
+                }
             }
-            if(this.windowTop > '4550')
+            if(this.windowTop > '3300')
             {
-                this.c8 = true
                 this.axios.get('blogs?blog_category=15&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
                 .then(response => (this.responseDatac8 = response.data))
                 .catch()
+
+                if(this.responseDatac8.length == 0){
+                    this.c8 = false
+                }else{
+                    this.c8 = true
+                }
             }
         }
     }

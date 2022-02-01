@@ -43,7 +43,7 @@ const routes = [
     }
   },
   {
-    path: "/Blogs/All/:id",
+    path: "/Blogs/All/:id/:name",
     name: "BlogsAll",
     component: () => import(/* webpackChunkName: "BlogsAll" */ '@/components/Blogs/BlogsAll.vue'),
     meta:{
@@ -51,7 +51,7 @@ const routes = [
     }
   },
   {
-    path: "/Blogs/Detail/:id",
+    path: "/Blogs/Detail/:id/:name",
     name: "BlogsDetail",
     component: () => import(/* webpackChunkName: "BlogsDetail" */ '@/components/Blogs/BlogsDetail.vue'),
     meta:{
