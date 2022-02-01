@@ -43,7 +43,7 @@
                         </div> 
                     </div>
                 </div>
-                <RelatedPosts :type="'Blogs'" :CategoryName="this.$route.query.type" :Id="this.$route.params.id"/>
+                <RelatedPosts :type="'Blogs'" :CategoryName="responseData.blog_category.id" :Id="this.$route.params.id"/>
             </div>
         </div>
     </div>

@@ -22,7 +22,7 @@
             </div>
             <div v-else class="row mt-3">
                 <div v-for="data in responseData" :key="data.id" :class="{'hide-class':Id == data.id}" class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6">
-                    <a :href="'/Blogs/Detail/'+data.id+'?type='+data.blog_category.id">
+                    <a :href="'/Blogs/Detail/'+data.id+'/'+data.url">
                         <div class="row p-2">
                             <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-2">
                                 <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.name">
