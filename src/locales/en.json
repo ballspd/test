@@ -75,6 +75,44 @@
       "why6": "print a parcel cover sheet for free",
       "why7": "use a system for free",
       "why8": "have report generation systems or Dashboard & Statistic that merchants can use to strategize and develop a business."
+    },
+    "oc2plus":{
+      "mata":"the latest service from Sellsuki - is a Customer Data Platform( CDP) service or data storage space that is essential for doing business. Because we have to use data about customer behavior, customer interest to plan a business marketing, communication plan to increase your business sales. <br>The Customer Data Platform (CDP) role is collecting customer information from every channel whether a website or any social media in together for easy use.",
+      "text_banner": "Storage tool for marketing planning which business owners need",
+      "h1":"Collecting data from every channel",
+      "h2":"One place storage",
+      "h3":"easy bringing to use",
+      "header": "CDP formatted data",
+      "why": "Why should you use CDP?",
+      "why1": "Helping you to collect data from every sale platform",
+      "why2": "More data reaching for development",
+      "why3": "Reach target customer actually need",
+      "why4": "Increase business plan performance"
+    }
+  },
+  "type_of_business":{
+    "business_owner":{
+      "mata":"A new business owner who is making a new brand or creating a business for their own should read this article. Sellsuki would like to suggest business creation steps that make your brand popular, rising in sales, and what steps should we start from?",
+      "text_banner": "Tips for a new business owner, how to make a successful brand?"
+    },
+    "online_merchant":{
+      "mata":"SME business owners who have to run a business alone or have few assistants. When business is starting to go, many problems come such as you can not do work in time or can't allocate time to work in other parts. Therefore, it might harm your business. If you're encountering these problems, whether sale planning, not enough goods storage or parcel packing. Today, Sellsuki has an assistant to solve these problems for your business. Let's go",
+      "text_banner": "SME business is growing, overwhelmed task, You should have an assistant to help your work.",
+      "header1": "Can not reach a market trend",
+      "h1_1":"don't <br>understand insight",
+      "h1_2":"Not trendy",
+      "d1_1" : "Although your business is stable or has a regular customer, we have to do marketing every time. Especially during the business growing time, Catching the social issues or topics point is essential. Therefore, customer demand reaching is a very important thing. So we can use data to improve communication which is suitable for target customers.",
+      "d1_2" : "FUSE- professional Social media marketers who can help you create business marketing on any platform. We have suggestion services that help to develop a business. Includes working with social listening that can help you reach market trends and customer favoring, more reach target groups, and take data to development.",
+      "header2": "Overwhelmed order, can't respond in time",
+      "h2_1" : "Admin can't work in time",
+      "h2_2" : "Slow response",
+      "h2_3" : "Customer order error",
+      "d2_1" : "",
+      "d2_2" : ""
+    },
+    "corporate":{
+      "mata":"A new business owner who is making a new brand or creating a business for their own should read this article. Sellsuki would like to suggest business creation steps that make your brand popular, rising in sales, and what steps should we start from?",
+      "text_banner": "Tips for a new business owner, how to make a successful brand?"
     }
   }
 }

@@ -11,18 +11,16 @@
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:62px;color:#FFFFFC">OC2PLUS</h1>
-                                    <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#FFFFFC">“เครื่องมือจัดเก็บข้อมูล สำหรับวางแผนการตลาด ที่เจ้าของธุรกิจต้องมี”</h2>
-                                    <p class="text-s-16 mt-3 mb-lg-4 mb-xl-0" style="color:#FFFFFC;width: 470px;">บริการน้องใหม่จาก Sellsuki เป็นบริการ Customer Data Platform (CDP) หรือพื้นที่ในการจัดเก็บข้อมูลของลูกค้า ซึ่งมีความจำเป็นอย่างมากต่อการทำธุรกิจในยุคปัจจุบันที่เราต้องใช้ข้อมูล <br>
-                                    โดยหน้าที่ของ CDP คือ การรวบรวมข้อมูลของลูกค้าจากทุกช่องทาง ไม่ว่าจะเป็นเว็บไซต์ หรือ Social Media ต่าง ๆ มาไว้ในที่เดียว เพื่อให้ง่าย ต่อการนำมาใช้งานต่อ</p>
+                                    <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#FFFFFC">“{{ $t("solution.oc2plus.text_banner") }}”</h2>
+                                    <p class="text-s-16 mt-3 mb-lg-4 mb-xl-0" style="color:#FFFFFC;width: 470px;" v-html="$t('solution.oc2plus.mata')"></p>
                                 </td>
                             </table>
                         </div>
                         <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
                             <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#FFFFFC">Oc2plus</font></p>
                             <h1 class="font-wght text-s-36" style="color:#FFFFFC">OC2PLUS</h1>
-                            <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#FFFFFC">“เครื่องมือจัดเก็บข้อมูล สำหรับวางแผนการตลาด ที่เจ้าของธุรกิจต้องมี”</h2>
-                            <p class="text-s-16 p-4 p-md-0 ps-4 pe-4 pb-4" style="color:#FFFFFC">บริการน้องใหม่จาก Sellsuki เป็นบริการ Customer Data Platform (CDP) หรือพื้นที่ในการจัดเก็บข้อมูลของลูกค้า ซึ่งมีความจำเป็นอย่างมากต่อการทำธุรกิจในยุคปัจจุบันที่เราต้องใช้ข้อมูล<br>
-                                    โดยหน้าที่ของ CDP คือ การรวบรวมข้อมูลของลูกค้าจากทุกช่องทาง ไม่ว่าจะเป็นเว็บไซต์ หรือ Social Media ต่าง ๆ มาไว้ในที่เดียว เพื่อให้ง่าย ต่อการนำมาใช้งานต่อ</p>
+                            <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-4 mt-4" style="color:#FFFFFC">“{{ $t("solution.oc2plus.text_banner") }}”</h2>
+                            <p class="text-s-16 p-4 p-md-0 ps-4 pe-4 pb-4" style="color:#FFFFFC" v-html="$t('solution.oc2plus.mata')"></p>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -38,20 +36,20 @@
                     <div class="row text-center justify-content-center mb-4 ps-5 pe-5">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-5 mt-lg-0">
                             <img class="item-center animate__animated animate__rotateIn animate__slow animate__delay-1s" src="./../../assets/SolutionsOc2plus/Oc2Plus-01-รวบรวมข้อมูลจากทุกช่องทาง.png" alt="Oc2Plus-01-รวบรวมข้อมูลจากทุกช่องทาง.png">
-                            <h2 class="text-s-18 text-w-700 mt-4 ps-3 pe-3 theme-text-main animate__animated animate__fadeInDown animate__delay-2s">รวบรวมข้อมูลจากทุกช่องทาง</h2>
+                            <h2 class="text-s-18 text-w-700 mt-4 ps-3 pe-3 theme-text-main animate__animated animate__fadeInDown animate__delay-2s">{{ $t("solution.oc2plus.h1") }}</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-5 mt-lg-0">
                             <img class="item-center animate__animated animate__rotateIn animate__slow animate__delay-1s" src="./../../assets/SolutionsOc2plus/Oc2Plus-02-จัดเก็บไว้ในที่เดียว.png" alt="Oc2Plus-02-จัดเก็บไว้ในที่เดียว.png">
-                            <h2 class="text-s-18 text-w-700 mt-4 ps-3 pe-3 theme-text-main animate__animated animate__fadeInDown animate__delay-2s">จัดเก็บไว้ในที่เดียว</h2>
+                            <h2 class="text-s-18 text-w-700 mt-4 ps-3 pe-3 theme-text-main animate__animated animate__fadeInDown animate__delay-2s">{{ $t("solution.oc2plus.h2") }}</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-5 mt-lg-0">
                             <img class="item-center animate__animated animate__rotateIn animate__slow animate__delay-1s" src="./../../assets/SolutionsOc2plus/Oc2Plus-03-ง่ายต่อการนำไปใช้งาน.png" alt="Oc2Plus-03-ง่ายต่อการนำไปใช้งาน.png">
-                            <h2 class="text-s-18 text-w-700 mt-4 ps-3 pe-3 theme-text-main animate__animated animate__fadeInDown animate__delay-2s">ง่ายต่อการนำไปใช้งาน</h2>
+                            <h2 class="text-s-18 text-w-700 mt-4 ps-3 pe-3 theme-text-main animate__animated animate__fadeInDown animate__delay-2s">{{ $t("solution.oc2plus.h3") }}</h2>
                         </div>      
                     </div>
                 </div>
                     <div v-if="animation2" class="row p-custom-2 d-flex ms-5 me-5">
-                        <div class="col-12 text-center mt-4 mt-lg-5 mb-5 animate__animated animate__fadeInDown"><h1 class="text-s-30 text-w-700 theme-text-main">รูปแบบของข้อมูลเมื่อทำ CDP</h1></div>
+                        <div class="col-12 text-center mt-4 mt-lg-5 mb-5 animate__animated animate__fadeInDown"><h1 class="text-s-30 text-w-700 theme-text-main">{{ $t("solution.oc2plus.header") }}</h1></div>
                         <!-- <div class="col-12 col-lg-6 ps-lg-5 mt-3"><img src="./../../assets/SolutionsOc2plus/Oc2Plus-04-CDP-View.png" alt="Oc2Plus-04-CDP-View.png"></div>
                         <div class="col-12 col-lg-6 ps-lg-5 mt-3"><img src="./../../assets/SolutionsOc2plus/Oc2Plus-05-CRM-View.png" alt="Oc2Plus-05-CRM-View.png"></div> -->
                 
@@ -102,7 +100,7 @@
                     </div>
                     <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-5 p-5" style="background: linear-gradient(0, #E0EFFE 0%, rgba(227, 240, 254, 0) 100%);">
                     <div class="row">
-                        <div class="col-12 mt-4 mb-2 text-center"><h1 class="text-s-30 text-w-700" style="color:#182E9C">ทำไมธุรกิจต้องใช้ CDP</h1></div>    
+                        <div class="col-12 mt-4 mb-2 text-center"><h1 class="text-s-30 text-w-700" style="color:#182E9C">{{ $t("solution.oc2plus.why") }}</h1></div>    
                     </div>
                     <div class="row mt-2 justify-content-center">
                         <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 view-2">
@@ -110,7 +108,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0">ช่วยรวบรวบข้อมูลจากทุกช่องทางขาย</p>
+                                        <p class="text-s-16 text-w-700 mb-0">{{ $t("solution.oc2plus.why1") }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +118,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">เข้าถึงข้อมูลได้มากยิ่งขึ้นเพื่อนำไป ต่อยอด</p>
+                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">{{ $t("solution.oc2plus.why2") }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +130,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">เข้าถึงความต้องการที่แท้จริงของ กลุ่มเป้าหมาย</p>
+                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">{{ $t("solution.oc2plus.why3") }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -142,7 +140,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">เพิ่มประสิทธิภาพของแผนธุรกิจ</p>
+                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">{{ $t("solution.oc2plus.why4") }}</p>
                                     </div>
                                 </div>
                             </div>

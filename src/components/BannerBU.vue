@@ -6,27 +6,27 @@
                     <table class="align-middle" style="width: 100%;">
                         <td style="height: 690px !important;">
                             <div v-if="activeBuFuse">
-                                <img class="mt-5 animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Fuse.png" alt="logo-fuse.png">
+                                <img class="mt-5 animate__animated animate__flipInX" src="./../assets/logo/logo-Fuse.png" alt="logo-fuse.png">
                                 <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:550px">FUSE ADVERTISING</h1>
                                 <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">{{ $t("banner.fuse") }}</p>
                             </div>
                             <div v-else-if="activeBuLine">
-                                <img class="mt-5 animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-line.png" alt="logo-Line.png">
+                                <img class="mt-5 animate__animated animate__flipInX" src="./../assets/logo/logo-line.png" alt="logo-Line.png">
                                 <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">LINE AGENCY <br>BY SELLSUKI</h1>
                                 <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">{{ $t("banner.line") }}</p>
                             </div>
                             <div v-else-if="activeBuAkita">
-                                <img class="mt-5 animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Akita.png" alt="logo-Akita.png">
+                                <img class="mt-5 animate__animated animate__flipInX" src="./../assets/logo/logo-Akita.png" alt="logo-Akita.png">
                                 <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">AKITA <br>FULFILLMENT</h1>
                                 <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">{{ $t("banner.akita") }}</p>
                             </div>
                             <div v-else-if="activeBuBeary">
-                                <img class="mt-5 animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Beary.png" alt="logo-Beary.png">
+                                <img class="mt-5 animate__animated animate__flipInX" src="./../assets/logo/logo-Beary.png" alt="logo-Beary.png">
                                 <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">BEARY TECH</h1>
                                 <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">{{ $t("banner.beary") }}</p>
                             </div>
                             <div v-else-if="activeBuKaikong">
-                                <img class="mt-5 animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Kaikong.png" alt="logo-Kaikong.png">
+                                <img class="mt-5 animate__animated animate__flipInX" src="./../assets/logo/logo-Kaikong.png" alt="logo-Kaikong.png">
                                 <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">KAIKONG</h1>
                                 <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">{{ $t("banner.kaikong") }}</p>
                             </div>
@@ -39,31 +39,31 @@
                 </div>
                 <div class="d-block d-lg-none">
                     <div v-if="activeBuFuse" class="text-center ps-5 pe-5">
-                        <img class="animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Fuse.png" alt="logo-fuse.png" style="margin-top:120px">
+                        <img class="animate__animated animate__flipInX" src="./../assets/logo/logo-Fuse.png" alt="logo-fuse.png" style="margin-top:120px">
                         <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">FUSE ADVERTISING</h1>
                         <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">{{ $t("banner.fuse") }}</p>
                         <router-link @click="scrollToTop" to="/Solutions/Fuse" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></router-link>
                     </div>
                     <div v-else-if="activeBuLine" class="text-center ps-5 pe-5">
-                        <img class="animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-line.png" alt="logo-line.png" style="margin-top:120px">
+                        <img class="animate__animated animate__flipInX" src="./../assets/logo/logo-line.png" alt="logo-line.png" style="margin-top:120px">
                         <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">LINE AGENCY BY SELLSUKI</h1>
                         <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">{{ $t("banner.Line") }}</p>
                         <router-link @click="scrollToTop" to="/Solutions/Line" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></router-link>
                     </div>
                     <div v-else-if="activeBuAkita" class="text-center ps-5 pe-5">
-                        <img class="animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Akita.png" alt="logo-akita.png" style="margin-top:120px">
+                        <img class="animate__animated animate__flipInX" src="./../assets/logo/logo-Akita.png" alt="logo-akita.png" style="margin-top:120px">
                         <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">AKITA FULFILLMENT</h1>
                         <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">{{ $t("banner.akita") }}</p>
                         <router-link @click="scrollToTop" to="/Solutions/Akita" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></router-link>
                     </div>
                     <div v-else-if="activeBuBeary" class="text-center ps-5 pe-5">
-                        <img class="animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Beary.png" alt="logo-beary.png" style="margin-top:120px">
+                        <img class="animate__animated animate__flipInX" src="./../assets/logo/logo-Beary.png" alt="logo-beary.png" style="margin-top:120px">
                         <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">BEARY TECH</h1>
                         <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">{{ $t("banner.beary") }}</p>
                         <router-link @click="scrollToTop" to="/Solutions/Beary" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></router-link>
                     </div>
                     <div v-else-if="activeBuKaikong" class="text-center ps-5 pe-5">
-                        <img class="animate__animated animate__flipInX animate__delay-1s" src="./../assets/logo/logo-Kaikong.png" alt="logo-kaikong.png" style="margin-top:120px">
+                        <img class="animate__animated animate__flipInX" src="./../assets/logo/logo-Kaikong.png" alt="logo-kaikong.png" style="margin-top:120px">
                         <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">KAIKONG</h1>
                         <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">{{ $t("banner.kaikong") }}</p>
                         <router-link @click="scrollToTop" to="/Solutions/Kaikong" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></router-link>
@@ -77,11 +77,12 @@
             <div class="col-xxl-7 col-xl-7 col-lg-8 col-md-12 col-sm-12 col-12">
                 <div class="row d-none d-lg-block" style="margin-top: 80px;">
                     <div class="col-12">
-                        <router-link @click="scrollToTop" to="/Solutions/Fuse"><img @mouseover="activeBuFuse = true,showHover = false" @mouseleave="activeBuFuse = false" class="bu-fuse hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png"></router-link>
-                        <router-link @click="scrollToTop" to="/Solutions/Line"><img @mouseover="activeBuLine = true,showHover = false" @mouseleave="activeBuLine = false" class="bu-line hvr-grow" :class="{'auto-pulse':showHover}" src="./../assets/Banner/Line.png" alt="Fuse.png"></router-link>
-                        <router-link @click="scrollToTop" to="/Solutions/Akita"><img @mouseover="activeBuAkita = true,showHover = false" @mouseleave="activeBuAkita = false" class="bu-akita hvr-grow" src="./../assets/Banner/AKT.png" alt="Akita.png"></router-link>
-                        <router-link @click="scrollToTop" to="/Solutions/Beary"><img @mouseover="activeBuBeary = true,showHover = false" @mouseleave="activeBuBeary = false" class="bu-beary hvr-grow" src="./../assets/Banner/Bearyweb.png" alt="Beary.png"></router-link>
-                        <router-link @click="scrollToTop" to="/Solutions/Kaikong"><img @mouseover="activeBuKaikong = true,showHover = false" @mouseleave="activeBuKaikong = false" class="bu-kaikong hvr-grow" src="./../assets/Banner/Kaikong.png" alt="Kaikong.png"></router-link>
+                        <img @mouseover="showHover = true,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-main" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/SSK_Main_fa38f3ed9d.webp">
+                        <router-link @click="scrollToTop" to="/Solutions/Fuse"><img @mouseover="activeBuFuse = true,showHover = false,activeBuLine = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-fuse hvr-grow" src="./../assets/Banner/Fuse.png" alt="Fuse.png"></router-link>
+                        <router-link @click="scrollToTop" to="/Solutions/Line"><img @mouseover="activeBuLine = true,showHover = false,activeBuFuse = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-line hvr-grow" :class="{'auto-pulse':showHover}" src="./../assets/Banner/Line.png" alt="Fuse.png"></router-link>
+                        <router-link @click="scrollToTop" to="/Solutions/Akita"><img @mouseover="activeBuAkita = true,showHover = false,activeBuFuse = false, activeBuLine = false, activeBuBeary = false, activeBuKaikong = false" class="bu-akita hvr-grow" src="./../assets/Banner/AKT.png" alt="Akita.png"></router-link>
+                        <router-link @click="scrollToTop" to="/Solutions/Beary"><img @mouseover="activeBuBeary = true,showHover = false,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuKaikong = false" class="bu-beary hvr-grow" src="./../assets/Banner/Bearyweb.png" alt="Beary.png"></router-link>
+                        <router-link @click="scrollToTop" to="/Solutions/Kaikong"><img @mouseover="activeBuKaikong = true,showHover = false,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuBeary = false" class="bu-kaikong hvr-grow" src="./../assets/Banner/Kaikong.png" alt="Kaikong.png"></router-link>
                         <img class="bu-size" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/SSK_Main_fa38f3ed9d.webp">
                     </div>
                 </div>
@@ -161,6 +162,14 @@ export default {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+
+.bu-main{
+        position: absolute;
+        width: 300px;
+        cursor: pointer;
+        margin: 170px 0 0 190px;
+        opacity: 0;
+    }
 
 /* -------------------------#Responsive------------------------ */
 
