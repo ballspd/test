@@ -113,7 +113,7 @@
                     </div>
                     <div class="row text-center mt-4 justify-content-center">
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
-                            <a class="hvr-bounce-in" @click="c1 = true" href="#c1">
+                            <a class="hvr-bounce-in" @click="c1 = true" href="#เทคนิคการขาย-และการโฆษณา">
                                 <div class="bg-radius">
                                     <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/1_6e4fb38d23.webp">
                                 </div>
@@ -121,7 +121,7 @@
                             </a>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
-                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true" href="#c2">
+                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true" href="#เทรนด์-Social-Media">
                                 <div class="bg-radius">
                                     <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Social_Media_1_2c014a8960.webp">
                                 </div>
@@ -129,7 +129,7 @@
                             </a>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
-                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true" href="#c3">
+                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true" href="#เทรนด์-Market-Place">
                                 <div class="bg-radius">
                                     <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Market_Place_1_53e4432aa1.webp">
                                 </div>
@@ -177,14 +177,14 @@
                             </a>
                         </div>
                     </div>
-                    <span id="c1" style="display: block;height: 85px;margin-top: -85px;"></span>
+                    <span id="เทคนิคการขาย-และการโฆษณา" style="display: block;height: 85px;margin-top: -85px;"></span>
                     <div v-if="c1" class="animate__animated animate__bounceInUp">
                         <div class="row mt-4">
                             <div class="col-6">
                                 <font class="text-w-700" style="font-size:24px;color:#15304E">เทคนิคการขาย และการโฆษณา</font>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/8/'+responseDatac1[0].blog_category.name }"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/8/เทคนิคการขาย และการโฆษณา' }"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -208,23 +208,18 @@
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img class="img-fix-size" src="./../assets/Group364.png">
                                     </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">Lorem Ipsum Lorem Ipsum Lorem Ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p class="text-limit-2" style="color:#373737;font-size:14px">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <span id="c2" style="display: block;height: 85px;margin-top: -85px;"></span>
+                    <span id="เทรนด์-Social-Media" style="display: block;height: 85px;margin-top: -85px;"></span>
                     <div v-if="c2" class="animate__animated animate__bounceInUp">
                         <div class="row mt-4">
                             <div class="col-6">
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ Social Media</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/9/'+responseDatac2[0].blog_category.name }"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/9/เทรนด์ Social Media'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -248,23 +243,18 @@
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img class="img-fix-size" src="./../assets/Group364.png">
                                     </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">Lorem Ipsum Lorem Ipsum Lorem Ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p class="text-limit-2" style="color:#373737;font-size:14px">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <span id="c3" style="display: block;height: 85px;margin-top: -85px;"></span>
+                    <span id="เทรนด์-Market-Place" style="display: block;height: 85px;margin-top: -85px;"></span>
                     <div v-if="c3" class="animate__animated animate__bounceInUp">
                         <div class="row mt-4">
                             <div class="col-6">
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ Market Place</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/10/'+responseDatac3[0].blog_category.name}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/10/เทรนด์ Market Place'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -288,11 +278,6 @@
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img class="img-fix-size" src="./../assets/Group364.png">
                                     </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">Lorem Ipsum Lorem Ipsum Lorem Ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p class="text-limit-2" style="color:#373737;font-size:14px">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -304,7 +289,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ E-Commerce</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/11/'+responseDatac4[0].blog_category.name}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/11/เทรนด์ E-Commerce'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -328,11 +313,6 @@
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img class="img-fix-size" src="./../assets/Group364.png">
                                     </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">Lorem Ipsum Lorem Ipsum Lorem Ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p class="text-limit-2" style="color:#373737;font-size:14px">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -344,7 +324,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">ครบจบ ทุกเรื่อง LINE</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/12/'+responseDatac5[0].blog_category.name}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/12/ครบจบ ทุกเรื่อง LINE'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -368,11 +348,6 @@
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img class="img-fix-size" src="./../assets/Group364.png">
                                     </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">Lorem Ipsum Lorem Ipsum Lorem Ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p class="text-limit-2" style="color:#373737;font-size:14px">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -384,7 +359,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">Martech</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/13/'+responseDatac6[0].blog_category.name}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/13/Martech'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -408,11 +383,6 @@
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img class="img-fix-size" src="./../assets/Group364.png">
                                     </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">Lorem Ipsum Lorem Ipsum Lorem Ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p class="text-limit-2" style="color:#373737;font-size:14px">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -424,7 +394,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">Digital Transformation</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/14/'+responseDatac7[0].blog_category.name}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/14/Digital Transformation'}"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -448,11 +418,6 @@
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img class="img-fix-size" src="./../assets/Group364.png">
                                     </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">Lorem Ipsum Lorem Ipsum Lorem Ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p class="text-limit-2" style="color:#373737;font-size:14px">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -464,7 +429,7 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">อื่น ๆ</p>
                             </div>
                             <div class="col-6 text-end">
-                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/15/'+responseDatac8[0].blog_category.name }"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
+                                <router-link @click="scrollToTop" :to="{ path: '/Blogs/All/15/อื่นๆ' }"><font style="color:#807F7F;font-size: 14px">View all</font></router-link>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -487,11 +452,6 @@
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img class="img-fix-size" src="./../assets/Group364.png">
-                                    </div>
-                                    <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">Lorem Ipsum Lorem Ipsum Lorem Ipsum</font>
-                                        <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                        <p class="text-limit-2" style="color:#373737;font-size:14px">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
                                     </div>
                                 </div>
                             </div>
@@ -538,15 +498,36 @@ export default {
             responseDatac8:[]
         }
     },
-    created () {
+    mounted () {
         this.axios.get('blogs?_sort=created_at:DESC&_limit=6&_locale='+ this.lang)
         .then(response => (this.responseData = response.data))
         .catch()
-    },
-    mounted () {
-        window.addEventListener('scroll', this.onShow);
-    },
-    unmounted () {
+
+        this.axios.get('blogs?blog_category=8&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
+        .then(response => (this.responseDatac1 = response.data))
+        .catch()
+        this.axios.get('blogs?blog_category=9&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
+        .then(response => (this.responseDatac2 = response.data))
+        .catch()
+        this.axios.get('blogs?blog_category=10&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
+        .then(response => (this.responseDatac3 = response.data))
+        .catch()
+        this.axios.get('blogs?blog_category=11&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
+        .then(response => (this.responseDatac4 = response.data))
+        .catch()
+        this.axios.get('blogs?blog_category=12&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
+        .then(response => (this.responseDatac5 = response.data))
+        .catch()
+        this.axios.get('blogs?blog_category=13&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
+        .then(response => (this.responseDatac6 = response.data))
+        .catch()
+        this.axios.get('blogs?blog_category=14&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
+        .then(response => (this.responseDatac7 = response.data))
+        .catch()
+        this.axios.get('blogs?blog_category=15&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
+        .then(response => (this.responseDatac8 = response.data))
+        .catch()
+
         window.addEventListener('scroll', this.onShow);
     },
     methods: {
@@ -562,99 +543,35 @@ export default {
         onShow(e) {
             this.windowTop = e.target.documentElement.scrollTop;
             if(this.windowTop > '1200'){
-                this.axios.get('blogs?blog_category=8&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
-                .then(response => (this.responseDatac1 = response.data))
-                .catch()
-
-                if(this.responseDatac1.length == 0){
-                    this.c1 = false
-                }else{
-                    this.c1 = true
-                }
+                this.c1 = true
             }
             if(this.windowTop > '1500')
             {
-                this.axios.get('blogs?blog_category=9&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
-                .then(response => (this.responseDatac2 = response.data))
-                .catch()
-
-                if(this.responseDatac2.length == 0){
-                    this.c2 = false
-                }else{
-                    this.c2 = true
-                }
+                this.c2 = true
             }
             if(this.windowTop > '1800')
             {
-                this.axios.get('blogs?blog_category=10&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
-                .then(response => (this.responseDatac3 = response.data))
-                .catch()
-
-                if(this.responseDatac3.length == 0){
-                    this.c3 = false
-                }else{
-                    this.c3 = true
-                }
+                this.c3 = true
             }
-            if(this.windowTop > '2100')
+            if(this.windowTop > '2300')
             {
-                this.axios.get('blogs?blog_category=11&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
-                .then(response => (this.responseDatac4 = response.data))
-                .catch()
-
-                if(this.responseDatac4.length == 0){
-                    this.c4 = false
-                }else{
-                    this.c4 = true
-                }
-            }
-            if(this.windowTop > '2400')
-            {
-                this.axios.get('blogs?blog_category=12&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
-                .then(response => (this.responseDatac5 = response.data))
-                .catch()
-
-                if(this.responseDatac5.length == 0){
-                    this.c5 = false
-                }else{
-                    this.c5 = true
-                }
+                this.c4 = true
             }
             if(this.windowTop > '2700')
             {
-                this.axios.get('blogs?blog_category=13&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
-                .then(response => (this.responseDatac6 = response.data))
-                .catch()
-
-                if(this.responseDatac6.length == 0){
-                    this.c6 = false
-                }else{
-                    this.c6 = true
-                }
+                this.c5 = true
             }
-            if(this.windowTop > '3000')
+            if(this.windowTop > '3100')
             {
-                this.axios.get('blogs?blog_category=14&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
-                .then(response => (this.responseDatac7 = response.data))
-                .catch()
-
-                if(this.responseDatac7.length == 0){
-                    this.c7 = false
-                }else{
-                    this.c7 = true
-                }
+                this.c6 = true
             }
-            if(this.windowTop > '3300')
+            if(this.windowTop > '3600')
             {
-                this.axios.get('blogs?blog_category=15&_sort=created_at:DESC&_limit=4&_locale='+ this.lang)
-                .then(response => (this.responseDatac8 = response.data))
-                .catch()
-
-                if(this.responseDatac8.length == 0){
-                    this.c8 = false
-                }else{
-                    this.c8 = true
-                }
+                this.c7 = true
+            }
+            if(this.windowTop > '4000')
+            {
+                this.c8 = true
             }
         }
     }
