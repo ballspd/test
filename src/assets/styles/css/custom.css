@@ -256,14 +256,18 @@ ul li ul:hover {
 }
 
 a:hover{
-  color: unset !important;
+  color: #469EEB !important;
 }
 
 a{
   color: unset;
 }
 
-div p a{
+.unset p a{
+  color: unset !important;
+}
+
+.unset p a:hover{
   color: unset !important;
 }
 
