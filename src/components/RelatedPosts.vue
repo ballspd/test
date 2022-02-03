@@ -59,7 +59,7 @@ export default {
     //this.$route.params.id
     mounted () {
         if(this.type == 'Portfolio'){
-            this.url = 'Portfolios?bu_category.name='+this.CategoryName+'&_sort=created_at:DESC&_limit=4&_locale='+ this.lang
+            this.url = 'Portfolios?bu_category.id='+this.CategoryName+'&_sort=created_at:DESC&_limit=4&_locale='+ this.lang
         }
         else
         {
