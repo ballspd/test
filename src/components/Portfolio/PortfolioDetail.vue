@@ -84,7 +84,7 @@
                     </div>
                     <Review :type="this.$route.query.type_bu"/>
                 </div> -->
-                <RelatedPosts :type="'Portfolio'" :CategoryName="this.$route.query.type" :Id="this.$route.params.id"/>
+                <RelatedPosts :type="'Portfolio'" :CategoryName="responseData.bu_category.id" :Id="this.$route.params.id"/>
             </div>
         </div>
     </div>
@@ -110,7 +110,7 @@ export default {
             lang: localStorage.getItem('lang') || 'th-TH',
             responseData:[],
             view: 1,
-            count:''
+            count:0
       }
     },
     methods: {
@@ -125,13 +125,13 @@ export default {
         return moment(value).format('DD MMM YYYY');
       },
       addView(view){
-        this.count = this.view + view
+        this.count = parseInt(view) + 1
         this.axios.put('portfolios/'+ this.$route.params.id, {view: this.count})
         .then()
       }
     },
     //this.$route.params.id
-    mounted () {
+    created () {
         this.axios.get('portfolios/' + this.$route.params.id+'&_locale='+ this.lang)
         .then(response => (this.responseData = response.data,this.addView(response.data.view)))
     }

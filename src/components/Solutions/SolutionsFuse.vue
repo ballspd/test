@@ -22,8 +22,8 @@
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="d-none d-md-block img-fluid img-banner-top" src="./../../assets/Banner/banner-Fuse.png">
-                        <img class="d-block d-md-none img-fluid" src="./../../assets/Banner/banner-Fuse.png">
+                        <img class="d-none d-md-block img-fluid img-banner-top" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/banner_Fuse_d28afcf0c5.webp">
+                        <img class="d-block d-md-none img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/banner_Fuse_d28afcf0c5.webp">
                     </div>
                 </div>
             </div>

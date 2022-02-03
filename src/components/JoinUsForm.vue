@@ -97,7 +97,7 @@
                                 <div class="form-check">
                                 <input class="form-check-input" type="checkbox" v-model="checkbox" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
-                                        ยินยอมให้ใช้หรือเปิดเผยข้อมูลส่วนบุคคลของผู้สมัคร {{checkbox}}
+                                        ยินยอมให้ใช้หรือเปิดเผยข้อมูลส่วนบุคคลของผู้สมัคร
                                     </label>
                                 </div>
                             </div>
