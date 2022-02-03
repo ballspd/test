@@ -27,7 +27,7 @@ const routes = [
     }
   },
   {
-    path: "/Portfolio/Detail/:id",
+    path: "/Portfolio/Detail/:id/:name",
     name: "PortfolioDetail",
     component: () => import(/* webpackChunkName: "Portfolio" */ '@/components/Portfolio/PortfolioDetail.vue'),
     meta:{
