@@ -137,7 +137,7 @@
                             </a>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
-                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true" href="#c4">
+                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true" href="#เทรนด์-E-Commerce">
                                 <div class="bg-radius">
                                     <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/E_Commerce_1_2a0856686e.webp">
                                 </div>
@@ -145,7 +145,7 @@
                             </a>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
-                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true" href="#c5">
+                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true" href="#ครบจบ-ทุกเรื่อง-LINE">
                                 <div class="bg-radius">
                                     <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/LINE_1_01da326f99.webp">
                                 </div>
@@ -153,7 +153,7 @@
                             </a>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
-                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true" href="#c6">
+                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true" href="#Martech">
                                 <div class="bg-radius">
                                     <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Martech_1_b04d7041eb.webp">
                                 </div>
@@ -161,7 +161,7 @@
                             </a>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
-                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true,c7 = true" href="#c7">
+                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true,c7 = true" href="#Digital-Transformation">
                                 <div class="bg-radius">
                                     <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Digital_Transformation_1_a66fa3e27e.webp">
                                 </div>
@@ -169,7 +169,7 @@
                             </a>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
-                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true,c7 = true,c8 = true" href="#c8">
+                            <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true,c7 = true,c8 = true" href="#อื่นๆ">
                                 <div class="bg-radius">
                                     <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/other_f1d6b43fd6.png">
                                 </div>
@@ -282,7 +282,7 @@
                             </div>
                         </div>
                     </div>
-                    <span id="c4" style="display: block;height: 85px;margin-top: -85px;"></span>
+                    <span id="เทรนด์-E-Commerce" style="display: block;height: 85px;margin-top: -85px;"></span>
                     <div v-if="c4" class="animate__animated animate__bounceInUp">
                         <div class="row mt-4">
                             <div class="col-6">
@@ -317,7 +317,7 @@
                             </div>
                         </div>
                     </div>
-                    <span id="c5" style="display: block;height: 85px;margin-top: -85px;"></span>
+                    <span id="ครบจบ-ทุกเรื่อง-LINE" style="display: block;height: 85px;margin-top: -85px;"></span>
                     <div v-if="c5" class="animate__animated animate__bounceInUp">
                         <div class="row mt-4">
                             <div class="col-6">
@@ -352,7 +352,7 @@
                             </div>
                         </div>
                     </div>
-                    <span id="c6" style="display: block;height: 85px;margin-top: -85px;"></span>
+                    <span id="Martech" style="display: block;height: 85px;margin-top: -85px;"></span>
                     <div v-if="c6" class="animate__animated animate__bounceInUp">
                         <div class="row mt-4">
                             <div class="col-6">
@@ -387,7 +387,7 @@
                             </div>
                         </div>
                     </div>
-                    <span id="c7" style="display: block;height: 85px;margin-top: -85px;"></span>
+                    <span id="Digital-Transformation" style="display: block;height: 85px;margin-top: -85px;"></span>
                     <div v-if="c7" class="animate__animated animate__bounceInUp">
                         <div class="row mt-4">
                             <div class="col-6">
@@ -422,7 +422,7 @@
                             </div>
                         </div>
                     </div>
-                    <span id="c8" style="display: block;height: 85px;margin-top: -85px;"></span>
+                    <span id="อื่นๆ" style="display: block;height: 85px;margin-top: -85px;"></span>
                     <div v-if="c8" class="animate__animated animate__bounceInUp">
                         <div class="row mt-4">
                             <div class="col-6">
