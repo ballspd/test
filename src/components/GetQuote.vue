@@ -160,7 +160,7 @@ export default {
                     if (result.isConfirmed) {
                         var fullname = this.form.fname + " " + this.form.lname
                         const data = { 
-                            "title": "Get A Quote Sellsuki website",
+                            "title": fullname + ' ' + this.form.interested,
                             "owner_id": 6542084,
                             "person_id": null,
                             "organization_id": null,
