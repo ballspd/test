@@ -28,7 +28,7 @@
         <div style="padding-top: 80px !important;padding:40px">
           <div class="row pb-4">
               <div class="col-12 text-center">
-                  <h1 style="font-weight: 700;font-size: 36px;color:#231F20">BUSINESS SERVICE SOLUTION SERVICE</h1>
+                  <h1 style="font-weight: 700;font-size: 36px;color:#231F20">SOLUTION SERVICE</h1>
                   <h2 style="font-weight: 700;font-size: 24px;color:#231F20">ธุรกิจแบบไหนก็ดูเเลไหว</h2>
               </div>
             </div>
