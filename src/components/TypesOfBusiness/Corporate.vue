@@ -11,16 +11,16 @@
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght" style="font-size:55px;color:#50151C;width: 600px;">CORPORATE</h1>
-                                    <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#50151C;width: 485px;">“วางแผนแคมเปญใหญ่ให้ปัง รู้ทันกลุ่มเป้าหมาย ก่อนลงทุนหลักล้าน !”</h2>
-                                    <p class="text-s-16 mt-3" style="color:#50151C;width: 500px">โดยทีมงานนักการตลาดมืออาชีพที่เข้าใจปัญหา การทำธุรกิจอย่างแท้จริง เพื่อพัฒนาแผนการสื่อสารของแคมเปญ ให้เข้าถึงลูกค้าได้ตรงกลุ่ม และ ผลักให้ธุรกิจของคุณเติบโตมากขึ้น</p>
+                                    <h2 class="text-s-24 pt-2 pb-2 text-w-700 text-s-32" style="color:#50151C;width: 485px;">“{{ $t("type_of_business.corporate.text_banner") }}”</h2>
+                                    <p class="text-s-16 mt-3" style="color:#50151C;width: 500px">{{ $t("type_of_business.corporate.mata") }}</p>
                                 </td>
                             </table>
                         </div>
                         <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
                             <p class="text-s-14 pb-3 text-start" style="color:#50151C;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">Corporate</font></p>
                             <h1 class="font-wght text-s-36" style="color:#50151C">CORPORATE</h1>
-                            <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-sm-4 mt-sm-4" style="color:#50151C">“วางแผนแคมเปญใหญ่ให้ปัง รู้ทันกลุ่มเป้าหมาย ก่อนลงทุนหลักล้าน !”</h2>
-                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#50151C">โดยทีมงานนักการตลาดมืออาชีพที่เข้าใจปัญหา การทำธุรกิจอย่างแท้จริง เพื่อพัฒนาแผนการสื่อสารของแคมเปญ ให้เข้าถึงลูกค้าได้ตรงกลุ่ม และ ผลักให้ธุรกิจของคุณเติบโตมากขึ้น</p>
+                            <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-4 pe-sm-4 mt-sm-4" style="color:#50151C">“{{ $t("type_of_business.corporate.text_banner") }}”</h2>
+                            <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#50151C">{{ $t("type_of_business.corporate.mata") }}</p>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -84,7 +84,7 @@
                 </div>
                 <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-5 p-5" style="background: linear-gradient(0, #E0EFFE 0%, rgba(227, 240, 254, 0) 100%);padding-top:0px !important">
                     <div class="row">
-                        <div class="col-12 mt-4 mb-2 text-center"><h1 class="text-s-30 text-w-700" style="color:#182E9C">ทำไมต้องเลือก SELLSUKI</h1></div>    
+                        <div class="col-12 mt-4 mb-2 text-center"><h1 class="text-s-30 text-w-700" style="color:#182E9C">{{ $t("type_of_business.corporate.why") }}</h1></div>    
                     </div>
                     <div class="row mt-2 justify-content-center">
                         <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 view-2">
@@ -92,7 +92,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0">ทีมงานผู้เชี่ยวชาญเฉพาะด้านคอยดูแลอย่างใกล้ชิดเพื่อแก้ปัญหาอย่างตรงจุด</p>
+                                        <p class="text-s-14 text-w-700 mb-0">{{ $t("type_of_business.corporate.why1") }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -102,7 +102,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">การทำงานภายใต้ Data Driven ศึกษาข้อมูล ปัญหาให้เข้าใจก่อนวางแผนเพื่อลงมือทำ</p>
+                                        <p class="text-s-14 text-w-700 mb-0">{{ $t("type_of_business.corporate.why2") }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">พาร์ทเนอร์ที่ครอบคลุมทั้ง Social Media ทุกแพลตฟอร์มและ บริการขนส่งชั้นนำระดับประเทศ</p>
+                                        <p class="text-s-14 text-w-700 mb-0 ps-2 pe-2">{{ $t("type_of_business.corporate.why3") }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -124,7 +124,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">บริการทำการตลาดที่ครอบคลุมตั้งแต่การวางแผนจนส่งมอบสินค้าถึงมือลูกค้า</p>
+                                        <p class="text-w-700 mb-0" style="font-size: 13.5px">{{ $t("type_of_business.corporate.why4") }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
                                         <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
-                                        <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">ประสบการณ์ทำงานในวงการ Digital Marketing มากกว่า 7 ปี</p>
+                                        <p class="text-s-14 text-w-700 mb-0 ps-2 pe-2">{{ $t("type_of_business.corporate.why5") }}</p>
                                     </div>
                                 </div>
                             </div>

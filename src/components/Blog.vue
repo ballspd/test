@@ -15,7 +15,10 @@
                         </table>
                     </div>
                     <div class="d-block d-md-none d-lg-none d-xl-none d-xxl-none text-center ps-4 pe-4">
-                        <p class="text-s-16 mt-4 text-start" style="color:#50151C"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">Blog</font></p>
+                        <p class="text-s-16 text-start" style="color:#50151C;margin-top:95px !important">
+                            <router-link @click="scrollToTop" to="/" style="color:#50151C">Home</router-link> <i class="bi bi-chevron-right"></i>
+                            <font class="text-s-16 text-w-700"><router-link @click="scrollToTop" to="/Blog" style="color:#50151C"> Blog</router-link></font>
+                        </p>
                         <font class="font-wght mt-3" style="font-size:36px;color:#50151C">Blog</font>
                         <p class="text-s-16" style="color:#50151C">ติดตามข่าวสาร และข้อมูลดี ๆ เกี่ยวกับ เทรนด์การตลาด และ e-Commerce ก่อนใครได้แล้ว ที่นี่!</p>
                     </div>
