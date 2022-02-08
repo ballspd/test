@@ -94,7 +94,7 @@
                             <hr style="border: 1px solid #50151C;"/>
                         </div>
                         <div v-if="component == 'BU'">
-                            <a @click="component = 'BU'"><i class="bi bi-chevron-left me-2"></i> Back</a>
+                            <a @click="component = 'SolutionsMenu'"><i class="bi bi-chevron-left me-2"></i> Back</a>
                             <hr style="border: 1px solid #50151C;"/>
                             <div class="d-flex" >
                                 <font class="text-w-700 text-s-18" style="color:#50151C;">BU</font>

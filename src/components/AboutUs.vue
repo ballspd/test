@@ -6,7 +6,7 @@
             <div class="row banner-hero">
                     <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="d-none d-md-block">
-                            <p class="text-s-16 mt-150" style="color:#50151C;"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">About Us</font></p>
+                            <p class="text-s-16 mt-150"><router-link @click="scrollToTop" to="/" style="color:#50151C;">Home</router-link> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">About Us</font></p>
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght text-s-64" style="color:#50151C">ABOUT US</h1>
@@ -14,7 +14,7 @@
                             </table>
                         </div>
                         <div class="d-block d-md-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
-                            <p class="text-s-14 pb-3 text-start" style="color:#50151C;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">About Us</font></p>
+                            <p class="text-s-14 pb-3 text-start" style="color:#50151C;margin-top:95px !important"><router-link @click="scrollToTop" to="/" style="color:#50151C;">Home</router-link> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">About Us</font></p>
                             <h1 class="font-wght text-s-36" style="color:#50151C">ABOUT US</h1>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                             </div>
                         </div>
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <img class="img-fluid mt-3" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/SSK_Vision_1_2978c2683e.svg" style="max-width: 120%;">
+                            <img class="img-fluid mt-3 img-size-inpage" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/SSK_Vision_1_2978c2683e.svg" style="max-width: 100%;">
                         </div>
                     </div>
                 </div>
@@ -211,6 +211,9 @@ export default {
   }
   .padding-aboutus{
     padding:30px 80px 30px 80px;
+  }
+  .img-size-inpage{
+      max-width: 120% !important;
   }
 }
 </style>
