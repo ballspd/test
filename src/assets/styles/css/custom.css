@@ -38,6 +38,9 @@
   .row{
     --bs-gutter-x: 0 !important;
   }
+  .mt-150{
+    margin-top: 90px !important;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -81,7 +84,9 @@
   .row{
     --bs-gutter-x: 0 !important;
   }
-
+  .mt-150{
+    margin-top: 70px !important;
+  }
 
 }
 

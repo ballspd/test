@@ -17,7 +17,7 @@
                             </table>
                         </div>
                         <div class="d-block d-lg-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
-                            <p class="text-s-14 pb-3 text-start" style="color:#0B0404;margin-top:95px !important"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#0B0404">Kaikong</font></p>
+                            <p class="text-s-14 pb-3 text-start" style="color:#0B0404;margin-top:95px !important"><router-link @click="scrollToTop" to="/" style="color:#0B0404;">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#0B0404">Kaikong</font></p>
                             <h1 class="font-wght text-s-36" style="color:#0B0404">KAIKONG</h1>
                             <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-5 pe-5 mt-4" style="color:#0B0404">“{{ $t("solution.kaikong.text_banner") }}”</h2>
                             <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#0B0404">{{ $t("solution.kaikong.mata") }}</p>
