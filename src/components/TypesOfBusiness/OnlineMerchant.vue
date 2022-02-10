@@ -43,7 +43,7 @@
                             <div class="hvr-grow-shadow crad-square mt-3">
                                 <div class="p-4 mt-3">
                                     <img class="item-center" width="110" height="100" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/1_Group_739_fd9a5280f2.webp">
-                                    <p class="mt-4 pt-2 text-s-14 text-center text-dark" style="position: relative">{{ $t("type_of_business.online_merchant.h1_1") }}</p>
+                                    <p class="mt-4 pt-2 text-s-14 text-center text-dark" style="position: relative" v-html="$t('type_of_business.online_merchant.h1_1')"></p>
                                 </div>
                             </div>
                         </div>
