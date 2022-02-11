@@ -24,8 +24,8 @@
                     </div>
                 </div>
                 <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <img class="d-none d-xl-block d-xxl-block img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Blog_01_1_4a9495c574.webp" style="margin-top: 80px;">
-                    <img class="d-block d-xl-none d-xxl-none img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Blog_01_1_4a9495c574.webp">
+                    <img class="d-none d-xl-block d-xxl-block img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Blog_01_1_4a9495c574.webp" alt="Header Blog 01.webp" style="margin-top: 80px;">
+                    <img class="d-block d-xl-none d-xxl-none img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Blog_01_1_4a9495c574.webp" alt="Header Blog 01.webp">
                 </div>
             </div>
             <div class="crad mt-5">
@@ -33,7 +33,7 @@
                     <div v-for="(data, index) in responseData" :key="index" class="mb-5">
                         <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                         <div v-if="index == 0" class="row">
-                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img v-if="data.illustration != null" class="img-fluid img-fix-size" :src="data.illustration.url" :alt="data.illustration.name" style="width: 510px;height: 330px;"></div>
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img v-if="data.illustration != null" class="img-fluid img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText" style="width: 510px;height: 330px;"></div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="padding: 30px 10px 10px 10px;">
                                 <p class="text-s-16" style="color:#807F7F">{{dateTime(responseData.created_at)}}</p>
                                 <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
@@ -53,7 +53,7 @@
                                             <div class="row">
                                                 <div v-for="(data, index) in responseData" :key="index" :class="{'col-4':index < 3}">
                                                     <router-link class="row" v-if="index < 3" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
-                                                        <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
+                                                        <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.alternativeText"></div>
                                                         <div class="col-6 p-1">                                                
                                                             <div class="btn lh-1 btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important"><span style="font-size:14px">NEW</span></div>
                                                             <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:18px">{{data.title}}</p>
@@ -68,7 +68,7 @@
                                             <div class="row">
                                                 <div v-for="(data, index) in responseData" :key="index" :class="{'col-4':index > 2}">
                                                     <router-link class="row" v-if="index > 2" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
-                                                        <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
+                                                        <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.alternativeText"></div>
                                                         <div class="col-6 p-1">                                                
                                                             <div class="btn lh-1 btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important"><span style="font-size:14px">NEW</span></div>
                                                             <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:18px">{{data.title}}</p>
@@ -93,7 +93,7 @@
                                             <div class="row">
                                                 <div class="col-12">
                                                     <div class="row">
-                                                        <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.name"></div>
+                                                        <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.alternativeText"></div>
                                                         <div class="col-6 p-2 ps-sm-3 pe-sm-3">                                                
                                                             <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}" class="btn btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important;line-height: 1"><span style="font-size:14px">NEW</span></router-link>
                                                             <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:18px">{{data.title}}</p>
@@ -118,7 +118,7 @@
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
                             <a class="hvr-bounce-in" @click="c1 = true" href="#เทคนิคการขาย-และการโฆษณา">
                                 <div class="bg-radius">
-                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/1_6e4fb38d23.webp">
+                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/1_6e4fb38d23.webp" alt="1_6e4fb38d23.webp">
                                 </div>
                             <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทคนิคการขาย <br>และการโฆษณา</p>
                             </a>
@@ -126,7 +126,7 @@
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
                             <a class="hvr-bounce-in" @click="c1 = true,c2 = true" href="#เทรนด์-Social-Media">
                                 <div class="bg-radius">
-                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Social_Media_1_2c014a8960.webp">
+                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Social_Media_1_2c014a8960.webp" alt="Social Media 1.webp">
                                 </div>
                                 <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Social Media</p>
                             </a>
@@ -134,7 +134,7 @@
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
                             <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true" href="#เทรนด์-Market-Place">
                                 <div class="bg-radius">
-                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Market_Place_1_53e4432aa1.webp">
+                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Market_Place_1_53e4432aa1.webp" alt="Market Place 1.webp">
                                 </div>
                                 <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>Market Place</p>
                             </a>
@@ -142,7 +142,7 @@
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
                             <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true" href="#เทรนด์-E-Commerce">
                                 <div class="bg-radius">
-                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/E_Commerce_1_2a0856686e.webp">
+                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/E_Commerce_1_2a0856686e.webp" alt="E Commerce 1.webp">
                                 </div>
                                 <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">เทรนด์ <br>E-Commerce</p>
                             </a>
@@ -150,7 +150,7 @@
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
                             <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true" href="#ครบจบ-ทุกเรื่อง-LINE">
                                 <div class="bg-radius">
-                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/LINE_1_01da326f99.webp">
+                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/LINE_1_01da326f99.webp" alt="LINE_1.webp">
                                 </div>
                                 <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">ครบจบ <br>ทุกเรื่อง LINE</p>
                             </a>
@@ -158,7 +158,7 @@
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
                             <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true" href="#Martech">
                                 <div class="bg-radius">
-                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Martech_1_b04d7041eb.webp">
+                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Martech_1_b04d7041eb.webp" alt="Martech_1.webp">
                                 </div>
                                 <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">Martech</p>
                             </a>
@@ -166,7 +166,7 @@
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
                             <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true,c7 = true" href="#Digital-Transformation">
                                 <div class="bg-radius">
-                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Digital_Transformation_1_a66fa3e27e.webp">
+                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Digital_Transformation_1_a66fa3e27e.webp" alt="Digital_Transformation_1.webp">
                                 </div>
                                 <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">Digital <br>Transformation</p>
                             </a>
@@ -174,7 +174,7 @@
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
                             <a class="hvr-bounce-in" @click="c1 = true,c2 = true,c3 = true,c4 = true,c5 = true,c6 = true,c7 = true,c8 = true" href="#อื่นๆ">
                                 <div class="bg-radius">
-                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/other_f1d6b43fd6.png">
+                                    <img class="img-fluid" width="70" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/other_f1d6b43fd6.png" alt="other.png">
                                 </div>
                                 <p class="text-s-18 text-w-700 mt-3" style="color:#15304E">อื่นๆ</p>
                             </a>
@@ -195,7 +195,7 @@
                                 <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                                     <div class="row">
                                         <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                            <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
+                                            <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                                         </div>
                                         <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                             <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
@@ -209,7 +209,7 @@
                             <div v-if="responseDatac1.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fix-size" src="./../assets/Group364.png">
+                                        <img class="img-fix-size" src="./../assets/Group364.png" alt="Group364.png">
                                     </div>
                                 </div>
                             </div>
@@ -230,7 +230,7 @@
                                 <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
+                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
@@ -244,7 +244,7 @@
                             <div v-if="responseDatac2.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fix-size" src="./../assets/Group364.png">
+                                        <img class="img-fix-size" src="./../assets/Group364.png" alt="Group364.png">
                                     </div>
                                 </div>
                             </div>
@@ -265,7 +265,7 @@
                                 <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
+                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
@@ -279,7 +279,7 @@
                             <div v-if="responseDatac3.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fix-size" src="./../assets/Group364.png">
+                                        <img class="img-fix-size" src="./../assets/Group364.png" alt="Group364.png">
                                     </div>
                                 </div>
                             </div>
@@ -300,7 +300,7 @@
                                 <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
+                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
@@ -314,7 +314,7 @@
                             <div v-if="responseDatac4.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fix-size" src="./../assets/Group364.png">
+                                        <img class="img-fix-size" src="./../assets/Group364.png" alt="Group364.png">
                                     </div>
                                 </div>
                             </div>
@@ -335,7 +335,7 @@
                                 <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
+                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
@@ -349,7 +349,7 @@
                             <div v-if="responseDatac5.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fix-size" src="./../assets/Group364.png">
+                                        <img class="img-fix-size" src="./../assets/Group364.png" alt="Group364.png">
                                     </div>
                                 </div>
                             </div>
@@ -370,7 +370,7 @@
                                 <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
+                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
@@ -384,7 +384,7 @@
                             <div v-if="responseDatac6.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fix-size" src="./../assets/Group364.png">
+                                        <img class="img-fix-size" src="./../assets/Group364.png" alt="Group364.png">
                                     </div>
                                 </div>
                             </div>
@@ -405,7 +405,7 @@
                                 <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
+                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
@@ -419,7 +419,7 @@
                             <div v-if="responseDatac7.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fix-size" src="./../assets/Group364.png">
+                                        <img class="img-fix-size" src="./../assets/Group364.png" alt="Group364">
                                     </div>
                                 </div>
                             </div>
@@ -440,7 +440,7 @@
                                 <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url">
+                                        <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                                     </div>
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
@@ -454,7 +454,7 @@
                             <div v-if="responseDatac8.length == 0" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
-                                        <img class="img-fix-size" src="./../assets/Group364.png">
+                                        <img class="img-fix-size" src="./../assets/Group364.png" alt="Group364">
                                     </div>
                                 </div>
                             </div>
