@@ -28,7 +28,7 @@
         <div style="padding-top: 80px !important;padding:40px">
           <div class="row pb-4">
               <div class="col-12 text-center">
-                  <h1 style="font-weight: 700;font-size: 36px;color:#231F20">SOLUTION SERVICE</h1>
+                  <h2 style="font-weight: 700;font-size: 36px;color:#231F20">SOLUTION SERVICE</h2>
                   <h2 style="font-weight: 700;font-size: 24px;color:#231F20">ธุรกิจแบบไหนก็ดูเเลไหว</h2>
               </div>
             </div>
@@ -38,7 +38,7 @@
               <div class="card card-shadow hvr-grow-rotate-left mt-3" style="border-radius: 20px;background-color: #CBE2F8;width: 286px;">
                 <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_1_5fa36c01d1.webp" alt="home">
                 <div class="card-body" style="background-color: #AACCEB;border-bottom-left-radius: 20px !important;border-bottom-right-radius: 20px !important;">
-                  <p class="text-w-700 font-wght text-center text-dark m-1" style="position: relative;font-size:20px;z-index: 1;">BUSINESS OWNER</p>
+                  <h3 class="text-w-700 font-wght text-center text-dark m-1" style="position: relative;font-size:20px;z-index: 1;">BUSINESS OWNER</h3>
                 </div>
               </div>
               </router-link>
@@ -48,7 +48,7 @@
               <div class="card card-shadow hvr-grow mt-3" style="border-radius: 20px;background-color: #CBE2F8;width: 286px;">
                 <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_2_30fffe585a.webp" alt="home">
                 <div class="card-body" style="background-color: #AACCEB;border-bottom-left-radius: 20px !important;border-bottom-right-radius: 20px !important;">
-                  <p class="text-w-700 font-wght text-center text-dark m-1" style="position: relative;font-size:20px;z-index: 1;">ONLINE MERCHANT</p>
+                  <h3 class="text-w-700 font-wght text-center text-dark m-1" style="position: relative;font-size:20px;z-index: 1;">ONLINE MERCHANT</h3>
                 </div>
               </div>
               </router-link>
@@ -58,7 +58,7 @@
               <div class="card card-shadow hvr-grow-rotate mt-3" style="border-radius: 20px;background-color: #CBE2F8;width: 286px;">
                 <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_3_2f16995ad2.webp" alt="home">
                 <div class="card-body" style="background-color: #AACCEB;border-bottom-left-radius: 20px !important;border-bottom-right-radius: 20px !important;">
-                  <p class="text-w-700 font-wght text-center text-dark m-1" style="position: relative;font-size:20px;z-index: 1;">CORPORATE</p>
+                  <h3 class="text-w-700 font-wght text-center text-dark m-1" style="position: relative;font-size:20px;z-index: 1;">CORPORATE</h3>
                 </div>
               </div>
               </router-link>
@@ -74,7 +74,7 @@
           <div class="d-none d-xxl-block d-xl-block">
             <div class="row mb-3">
               <div class="col-6">
-                <font class="font-wght" style="font-size:64px;position: relative;color:#23233C;line-height: 90.72px;">YOUR<br>ROADMAP<br>TO SUCCESS</font>
+                <h2 class="font-wght" style="font-size:64px;position: relative;color:#23233C;line-height: 90.72px;">YOUR<br>ROADMAP<br>TO SUCCESS</h2>
                 <img class="mt-3" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector001_89725b6f03.webp" alt="Vector" style="float: right;;">
                 <img class="mt-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector_Smart_Object001_442f89ee50.webp" alt="Vector_Smart_Object" style="position: relative;left: -80px;height: 510px;width: 540px;">
               </div>
@@ -140,8 +140,7 @@
             <div class="row mb-3">
               <div class="col-12">
                 <div class="text-center">
-                  <p class="font-wght mt-2" style="font-size:25px;color:#23233C;margin-bottom: 0px;">YOUR ROADMAP</p>
-                  <p class="font-wght" style="font-size:25px;color:#23233C;">TO SUCCESS</p> 
+                  <h2 class="font-wght mt-2" style="font-size:25px;color:#23233C;margin-bottom: 0px;">YOUR ROADMAP <br>TO SUCCESS</h2>
                 </div>
                 <img class="mt-4 img-fluid" src="./../assets/Vector001.png" alt="Vector 001" style="float: right;width: 110px;">
                 <div class="bg" style="margin-top: 200px;">
@@ -224,14 +223,32 @@
 </template>
 
 <script>
-import GetQuote from '@/components/GetQuote'
-import InterestingArticles from '@/components/InterestingArticles'
-import Review from '@/components/Review'
+import { defineAsyncComponent } from 'vue'
 import Preloader from '@/components/Preloader'
-import BannerBU from '@/components/BannerBU'
-//import ParallaxAll from '@/components/ParallaxAll'
-import ParallaxMobile from '@/components/ParallaxMobile'
-import YoutubeVideo from '@/components/YoutubeVideo'
+
+const GetQuote = defineAsyncComponent(() =>
+  import('@/components/GetQuote.vue')
+)
+
+const InterestingArticles = defineAsyncComponent(() =>
+  import('@/components/InterestingArticles.vue')
+)
+
+const Review = defineAsyncComponent(() =>
+  import('@/components/Review.vue')
+)
+
+const BannerBU = defineAsyncComponent(() =>
+  import('@/components/BannerBU.vue')
+)
+
+const ParallaxMobile = defineAsyncComponent(() =>
+  import('@/components/ParallaxMobile.vue')
+)
+
+const YoutubeVideo = defineAsyncComponent(() =>
+  import('@/components/YoutubeVideo.vue')
+)
 
 export default {
   name: 'Home',
