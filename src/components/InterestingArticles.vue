@@ -10,7 +10,7 @@
                       <SplideSlide v-for="(data, index) in responseData" :key="index" class="col-4 d-flex justify-content-center ps-2 pe-2" style="padding-top: 30px !important;">
                         <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}" style="color:unset !important">
                         <div class="card" style="border-radius: 10px">
-                          <img v-if="data.illustration != null" class="card-img-top img-fix-size" :src="data.illustration.url">
+                          <img v-if="data.illustration != null" class="card-img-top img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                           <div class="card-body">
                             <font class="card-title text-limit-1" style="font-weight: bold;font-size: 24px;">{{data.title}}</font>
                             <p style="margin-bottom: 0rem;" class="card-text text-s-16 text-limit-2">{{data.description}}</p>
@@ -29,7 +29,7 @@
                       <SplideSlide v-for="(data, index) in responseData" :key="index" class="col-4 d-flex justify-content-center ps-2 pe-2" style="padding-top: 30px !important;">
                         <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}" style="color:unset !important">
                         <div class="card" style="border-radius: 10px">
-                          <img v-if="data.illustration != null" class="card-img-top img-fix-size" :src="data.illustration.url">
+                          <img v-if="data.illustration != null" class="card-img-top img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                           <div class="card-body">
                             <font class="card-title text-limit-1" style="font-weight: bold;font-size: 24px;">{{data.title}}</font>
                             <p style="margin-bottom: 0rem;" class="card-text text-s-16 text-limit-2">{{data.description}}</p>

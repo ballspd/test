@@ -7,8 +7,8 @@
       <div class="crad mt-5">
         <div class="row padding-row mb-0">
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-            <img class="d-none d-xl-block d-xxl-block mt-5" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector_Smart_Object2_869bcb7919.webp">
-            <img class="d-block d-xl-none d-xxl-none img-fluid item-center" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector_Smart_Object2_869bcb7919.webp">
+            <img class="d-none d-xl-block d-xxl-block mt-5" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector_Smart_Object2_869bcb7919.webp" alt="Vector Smart Object">
+            <img class="d-block d-xl-none d-xxl-none img-fluid item-center" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector_Smart_Object2_869bcb7919.webp" alt="Vector Smart Object">
           </div>
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
             <div class="d-none d-xl-block d-xxl-block">
@@ -36,7 +36,7 @@
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
               <router-link @click="scrollToTop" to="/TypesOfBusiness/BusinessOwner">
               <div class="card card-shadow hvr-grow-rotate-left mt-3" style="border-radius: 20px;background-color: #CBE2F8;width: 286px;">
-                <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_1_5fa36c01d1.webp">
+                <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_1_5fa36c01d1.webp" alt="home">
                 <div class="card-body" style="background-color: #AACCEB;border-bottom-left-radius: 20px !important;border-bottom-right-radius: 20px !important;">
                   <p class="text-w-700 font-wght text-center text-dark m-1" style="position: relative;font-size:20px;z-index: 1;">BUSINESS OWNER</p>
                 </div>
@@ -46,7 +46,7 @@
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
               <router-link @click="scrollToTop" to="/TypesOfBusiness/OnlineMerchant">
               <div class="card card-shadow hvr-grow mt-3" style="border-radius: 20px;background-color: #CBE2F8;width: 286px;">
-                <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_2_30fffe585a.webp">
+                <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_2_30fffe585a.webp" alt="home">
                 <div class="card-body" style="background-color: #AACCEB;border-bottom-left-radius: 20px !important;border-bottom-right-radius: 20px !important;">
                   <p class="text-w-700 font-wght text-center text-dark m-1" style="position: relative;font-size:20px;z-index: 1;">ONLINE MERCHANT</p>
                 </div>
@@ -56,7 +56,7 @@
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
               <router-link @click="scrollToTop" to="/TypesOfBusiness/OnlineMerchant">
               <div class="card card-shadow hvr-grow-rotate mt-3" style="border-radius: 20px;background-color: #CBE2F8;width: 286px;">
-                <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_3_2f16995ad2.webp">
+                <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_3_2f16995ad2.webp" alt="home">
                 <div class="card-body" style="background-color: #AACCEB;border-bottom-left-radius: 20px !important;border-bottom-right-radius: 20px !important;">
                   <p class="text-w-700 font-wght text-center text-dark m-1" style="position: relative;font-size:20px;z-index: 1;">CORPORATE</p>
                 </div>
@@ -75,8 +75,8 @@
             <div class="row mb-3">
               <div class="col-6">
                 <font class="font-wght" style="font-size:64px;position: relative;color:#23233C;line-height: 90.72px;">YOUR<br>ROADMAP<br>TO SUCCESS</font>
-                <img class="mt-3" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector001_89725b6f03.webp" style="float: right;;">
-                <img class="mt-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector_Smart_Object001_442f89ee50.webp" style="position: relative;left: -80px;height: 510px;width: 540px;">
+                <img class="mt-3" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector001_89725b6f03.webp" alt="Vector" style="float: right;;">
+                <img class="mt-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector_Smart_Object001_442f89ee50.webp" alt="Vector_Smart_Object" style="position: relative;left: -80px;height: 510px;width: 540px;">
               </div>
               <div class="col-6">
                 <div class="row" style="float: right;margin: auto;">
@@ -84,7 +84,7 @@
                     <div class="card-body">
                       <div class="row">
                         <div class="col-7" style="margin:20px 0px 20px 0px"><font style="font-size: 20px;left: 30px;position: relative;" v-html="$t('home.roadmap1')"></font></div>
-                        <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group.png"></div>
+                        <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group.png" alt="Group"></div>
                       </div>
                     </div>
                   </div>
@@ -94,7 +94,7 @@
                     <div class="card-body">
                       <div class="row">
                         <div class="col-7" style="margin:20px 0px 20px 0px"><font style="font-size: 20px;left: 30px;position: relative;" v-html="$t('home.roadmap2')"></font></div>
-                        <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group1.png"></div>
+                        <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group1.png" alt="Group1"></div>
                       </div>
                     </div>
                   </div>
@@ -104,7 +104,7 @@
                     <div class="card-body">
                       <div class="row">
                         <div class="col-7" style="margin:20px  0px 20px 0px"><font style="font-size: 20px;left: 30px;position: relative;" v-html="$t('home.roadmap3')"></font></div>
-                        <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group2.png"></div>
+                        <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group2.png" alt="Group2"></div>
                       </div>
                     </div>
                   </div>
@@ -114,7 +114,7 @@
                     <div class="card-body">
                       <div class="row">
                         <div class="col-7" style="margin:20px 0px 20px 0px"><font style="font-size: 19px;left: 30px;position: relative;" v-html="$t('home.roadmap4')"></font></div>
-                        <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group3.png"></div>
+                        <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group3.png" alt="Group3"></div>
                       </div>
                     </div>
                   </div>
@@ -124,7 +124,7 @@
                     <div class="card-body">
                       <div class="row">
                         <div class="col-7" style="margin:0px 0px 0px 0px"><font style="font-size: 20px;left: 30px;position: relative;" v-html="$t('home.roadmap5')"></font></div>
-                        <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group4.png"></div>
+                        <div class="col-5" style="margin:5px 0px 5px 0px"><img style="left: 30px;position: relative;" src="./../assets/icon/Group4.png" alt="Group4"></div>
                       </div>
                     </div>
                   </div>
@@ -132,10 +132,8 @@
               </div>
             </div>
             <div class="row mt-3 p-3">
-                <div class="col-12">
-                  <iframe width="100%" height="580" src="https://www.youtube.com/embed/dxN2yRqXTYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-              </div>
+                <YoutubeVideo/>
+            </div>
           </div>
           <!-- ----------- mobile size ----------- -->
           <div class="d-block d-xl-none d-xxl-none">
@@ -145,78 +143,76 @@
                   <p class="font-wght mt-2" style="font-size:25px;color:#23233C;margin-bottom: 0px;">YOUR ROADMAP</p>
                   <p class="font-wght" style="font-size:25px;color:#23233C;">TO SUCCESS</p> 
                 </div>
-                <img class="mt-4 img-fluid" src="./../assets/Vector001.png" style="float: right;width: 110px;">
+                <img class="mt-4 img-fluid" src="./../assets/Vector001.png" alt="Vector 001" style="float: right;width: 110px;">
                 <div class="bg" style="margin-top: 200px;">
                   <div class="card item-center card-roadmap" style="bottom: 150px;">
                     <div class="row">
                       <div class="col-7" style="margin:28px 0px 28px 0px"><font class="text-white" style="font-size: 18px;left: 18px;position: relative;" v-html="$t('home.roadmap1')"></font></div>
-                      <div class="col-5" style="margin:22px 0px 22px 0px"><img width="65" height="65" style="position: relative;margin-left: 40px;" src="./../assets/icon/Group.png"></div>
+                      <div class="col-5" style="margin:22px 0px 22px 0px"><img width="65" height="65" style="position: relative;margin-left: 40px;" src="./../assets/icon/Group.png" alt="Group"></div>
                     </div>
                   </div>
                     <div class="card item-center card-roadmap mt-3" style="bottom: 150px;">
                       <div class="row">
                         <div class="col-7" style="margin:28px 0px 28px 0px"><font class="text-white" style="font-size: 18px;left: 18px;position: relative;" v-html="$t('home.roadmap2')"></font></div>
-                        <div class="col-5" style="margin:22px 0px 22px 0px"><img width="65" height="65" style="position: relative;margin-left: 40px;" src="./../assets/icon/Group1.png"></div>
+                        <div class="col-5" style="margin:22px 0px 22px 0px"><img width="65" height="65" style="position: relative;margin-left: 40px;" src="./../assets/icon/Group1.png" alt="Group1"></div>
                       </div>
                     </div>
                     <div class="card item-center card-roadmap mt-3" style="bottom: 150px;">
                       <div class="row">
                         <div class="col-7" style="margin:28px 0px 28px 0px"><font class="text-white" style="font-size: 18px;left: 18px;position: relative;" v-html="$t('home.roadmap3')"></font></div>
-                        <div class="col-5" style="margin:22px 0px 22px 0px"><img width="65" height="65" style="position: relative;margin-left: 40px;" src="./../assets/icon/Group2.png"></div>
+                        <div class="col-5" style="margin:22px 0px 22px 0px"><img width="65" height="65" style="position: relative;margin-left: 40px;" src="./../assets/icon/Group2.png" alt="Group2"></div>
                       </div>
                     </div>
                     <div class="card item-center card-roadmap mt-3" style="bottom: 150px;">
                       <div class="row">
                         <div class="col-7" style="margin:15px 0px 15px 0px"><font class="text-white" style="font-size: 18px;left: 18px;position: relative;" v-html="$t('home.roadmap4')"></font></div>
-                        <div class="col-5" style="margin:22px 0px 22px 0px"><img width="65" height="65" style="position: relative;margin-left: 40px;" src="./../assets/icon/Group3.png"></div>
+                        <div class="col-5" style="margin:22px 0px 22px 0px"><img width="65" height="65" style="position: relative;margin-left: 40px;" src="./../assets/icon/Group3.png" alt="Group3"></div>
                       </div>
                     </div>
                     <div class="card item-center card-roadmap mt-3" style="bottom: 150px;">
                       <div class="row">
                         <div class="col-7" style="margin:15px 0px 15px 0px"><font class="text-white" style="font-size: 18px;left: 18px;position: relative;" v-html="$t('home.roadmap5')"></font></div>
-                        <div class="col-5" style="margin:22px 0px 22px 0px"><img width="65" height="65" style="position: relative;margin-left: 20px;" src="./../assets/icon/Group4.png"></div>
+                        <div class="col-5" style="margin:22px 0px 22px 0px"><img width="65" height="65" style="position: relative;margin-left: 20px;" src="./../assets/icon/Group4.png" alt="Group4"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="row mt-3 p-3">
-                <div class="col-12">
-                  <iframe width="100%" height="320" src="https://www.youtube.com/embed/dxN2yRqXTYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                  <YoutubeVideo/>
               </div>
             </div>
           <Review :type="type"/>
           <div class="row mt-3 mb-3 d-none d-xl-block d-xxl-block">
             <div class="col-12">
               <table style="text-align:center;width:100%">
-                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_11_fb7cd31613.webp"></td>
-                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_22_7dc25d4c2b.webp"></td>
-                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_33_df24cea2cc.webp"></td>
-                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_44_cc06f77185.webp"></td>
-                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_55_2817addebd.webp"></td>
-                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_66_a377e6c849.webp"></td>
-                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_77_bee2277445.webp"></td>
-                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_88_342b654e63.webp"></td>
-                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_99_4cf2750cce.webp"></td>
-                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_1010_2a62f4561b.webp"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_11_fb7cd31613.webp" alt="logo partner"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_22_7dc25d4c2b.webp" alt="logo partner"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_33_df24cea2cc.webp" alt="logo partner"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_44_cc06f77185.webp" alt="logo partner"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_55_2817addebd.webp" alt="logo partner"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_66_a377e6c849.webp" alt="logo partner"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_77_bee2277445.webp" alt="logo partner"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_88_342b654e63.webp" alt="logo partner"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_99_4cf2750cce.webp" alt="logo partner"></td>
+                <td><img class="img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_1010_2a62f4561b.webp" alt="logo partner"></td>
               </table>
             </div>
           </div>
           <div class="row mt-3 mb-3 p-3 d-block d-xl-none">
               <table style="text-align:center;width:100%">
-                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_11_fb7cd31613.webp"></td>
-                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_22_7dc25d4c2b.webp"></td>
-                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_33_df24cea2cc.webp"></td>
-                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_55_2817addebd.webp"></td>
-                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_66_a377e6c849.webp"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_11_fb7cd31613.webp" alt="logo partner"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_22_7dc25d4c2b.webp" alt="logo partner"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_33_df24cea2cc.webp" alt="logo partner"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_55_2817addebd.webp" alt="logo partner"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_66_a377e6c849.webp" alt="logo partner"></td>
               </table>
               <table style="text-align:center;width:100%">
-                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_66_a377e6c849.webp"></td>
-                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_77_bee2277445.webp"></td>
-                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_88_342b654e63.webp"></td>
-                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_99_4cf2750cce.webp"></td>
-                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_1010_2a62f4561b.webp"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_66_a377e6c849.webp" alt="logo partner"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_77_bee2277445.webp" alt="logo partner"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_88_342b654e63.webp" alt="logo partner"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_99_4cf2750cce.webp" alt="logo partner"></td>
+                <td><img class="img-fluid p-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/logo_partner_1010_2a62f4561b.webp" alt="logo partner"></td>
               </table>
           </div>
         </div>
@@ -235,6 +231,7 @@ import Preloader from '@/components/Preloader'
 import BannerBU from '@/components/BannerBU'
 //import ParallaxAll from '@/components/ParallaxAll'
 import ParallaxMobile from '@/components/ParallaxMobile'
+import YoutubeVideo from '@/components/YoutubeVideo'
 
 export default {
   name: 'Home',
@@ -244,6 +241,7 @@ export default {
     Review,
     BannerBU,
     Preloader,
+    YoutubeVideo,
     //ParallaxAll,
     ParallaxMobile
   },
@@ -251,7 +249,7 @@ export default {
     return {
     type:'All',
     readMore: false
-    
+
     }
   },
   methods: {

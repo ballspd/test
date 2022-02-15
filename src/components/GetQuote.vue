@@ -56,7 +56,7 @@
                 </form>
               </div>
               <div class="col-5">
-                <img class="mt-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/GET_A_QUOTE_db09b3e246.webp" style="position: relative;margin-left:-25px">
+                <img class="mt-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/GET_A_QUOTE_db09b3e246.webp" alt="GET A QUOTE" style="position: relative;margin-left:-25px">
               </div>
             </div>
           </div>
