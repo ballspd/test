@@ -7,7 +7,7 @@ const routes = [
     name: "Home",
     component: Home,
     meta:{
-      title: "Home"
+      title: "Home || Sellsuki"
     }
   },
   {
@@ -15,7 +15,7 @@ const routes = [
     name: "AboutUs",
     component: () => import(/* webpackChunkName: "AboutUs" */ '@/components/AboutUs.vue'),
     meta:{
-      title: "About Us"
+      title: "About Us || Sellsuki"
     }
   },
   {
@@ -23,7 +23,7 @@ const routes = [
     name: "Portfolio",
     component: () => import(/* webpackChunkName: "Portfolio" */ '@/components/Portfolio.vue'),
     meta:{
-      title: "Portfolio"
+      title: "Portfolio || Sellsuki"
     }
   },
   {
@@ -31,7 +31,7 @@ const routes = [
     name: "PortfolioDetail",
     component: () => import(/* webpackChunkName: "Portfolio" */ '@/components/Portfolio/PortfolioDetail.vue'),
     meta:{
-      title: "Portfolio"
+      title: "Portfolio || Sellsuki"
     }
   },
   {
@@ -39,7 +39,7 @@ const routes = [
     name: "Blog",
     component: () => import(/* webpackChunkName: "Blog" */ '@/components/Blog.vue'),
     meta:{
-      title: "Blog"
+      title: "Blog || Sellsuki"
     }
   },
   {
@@ -47,7 +47,7 @@ const routes = [
     name: "BlogsAll",
     component: () => import(/* webpackChunkName: "BlogsAll" */ '@/components/Blogs/BlogsAll.vue'),
     meta:{
-      title: "Blogs"
+      title: "Blogs || Sellsuki"
     }
   },
   {
@@ -55,7 +55,7 @@ const routes = [
     name: "BlogsDetail",
     component: () => import(/* webpackChunkName: "BlogsDetail" */ '@/components/Blogs/BlogsDetail.vue'),
     meta:{
-      title: "Blogs"
+      title: "Blogs || Sellsuki"
     }
   },
   {
@@ -63,7 +63,7 @@ const routes = [
     name: "ContactUs",
     component: () => import(/* webpackChunkName: "ContactUs" */ '@/components/ContactUs.vue'),
     meta:{
-      title: "Contact Us"
+      title: "Contact Us || Sellsuki"
     }
   },
   {
@@ -71,7 +71,7 @@ const routes = [
     name: "JoinUs",
     component: () => import(/* webpackChunkName: "JoinUs" */ '@/components/JoinUs.vue'),
     meta:{
-      title: "Join Us"
+      title: "Join Us || Sellsuki"
     }
   },
   {
@@ -79,7 +79,7 @@ const routes = [
     name: "JoinUsForm",
     component: () => import(/* webpackChunkName: "JoinUsForm" */ '@/components/JoinUsForm.vue'),
     meta:{
-      title: "Join Us"
+      title: "Join Us || Sellsuki"
     }
   },
   {
@@ -87,7 +87,7 @@ const routes = [
     name: "SolutionsFuse",
     component: () => import(/* webpackChunkName: "SolutionsFuse" */ '@/components/Solutions/SolutionsFuse.vue'),
     meta:{
-      title: "Solutions Fuse"
+      title: "Solutions Fuse || Sellsuki"
     }
   },
   {
@@ -95,7 +95,7 @@ const routes = [
     name: "SolutionsLine",
     component: () => import(/* webpackChunkName: "SolutionsLine" */ '@/components/Solutions/SolutionsLine.vue'),
     meta:{
-      title: "Solutions Line"
+      title: "Solutions Line || Sellsuki"
     }
   },
   {
@@ -103,7 +103,7 @@ const routes = [
     name: "SolutionsAkita",
     component: () => import(/* webpackChunkName: "SolutionsAkita" */ '@/components/Solutions/SolutionsAkita.vue'),
     meta:{
-      title: "Solutions Akita"
+      title: "Solutions Akita || Sellsuki"
     }
   },
   {
@@ -111,7 +111,7 @@ const routes = [
     name: "SolutionsBeary",
     component: () => import(/* webpackChunkName: "SolutionsBeary" */ '@/components/Solutions/SolutionsBeary.vue'),
     meta:{
-      title: "Solutions Beary"
+      title: "Solutions Beary || Sellsuki"
     }
   },
   {
@@ -119,7 +119,7 @@ const routes = [
     name: "SolutionsKaikong",
     component: () => import(/* webpackChunkName: "SolutionsKaikong" */ '@/components/Solutions/SolutionsKaikong.vue'),
     meta:{
-      title: "Solutions Kaikong"
+      title: "Solutions Kaikong || Sellsuki"
     }
   },
   {
@@ -127,7 +127,7 @@ const routes = [
     name: "SolutionsShipmunk",
     component: () => import(/* webpackChunkName: "SolutionsShipmunk" */ '@/components/Solutions/SolutionsShipmunk.vue'),
     meta:{
-      title: "Solutions Shipmunk"
+      title: "Solutions Shipmunk || Sellsuki"
     }
   },
   {
@@ -135,7 +135,7 @@ const routes = [
     name: "SolutionsOc2Plus",
     component: () => import(/* webpackChunkName: "SolutionsOc2Plus" */ '@/components/Solutions/SolutionsOc2Plus.vue'),
     meta:{
-      title: "Solutions Oc2Plus"
+      title: "Solutions Oc2Plus || Sellsuki"
     }
   },
   {
@@ -143,7 +143,7 @@ const routes = [
     name: "BusinessOwner",
     component: () => import(/* webpackChunkName: "BusinessOwner" */ '@/components/TypesOfBusiness/BusinessOwner.vue'),
     meta:{
-      title: "Business Owner"
+      title: "Business Owner || Sellsuki"
     }
   },
   {
@@ -151,7 +151,7 @@ const routes = [
     name: "OnlineMerchant",
     component: () => import(/* webpackChunkName: "OnlineMerchant" */ '@/components/TypesOfBusiness/OnlineMerchant.vue'),
     meta:{
-      title: "Online Merchant"
+      title: "Online Merchant || Sellsuki"
     }
   },
   {
@@ -159,7 +159,7 @@ const routes = [
     name: "Coporate",
     component: () => import(/* webpackChunkName: "Corporate" */ '@/components/TypesOfBusiness/Corporate.vue'),
     meta:{
-      title: "Coporate"
+      title: "Coporate || Sellsuki"
     }
   },
   {
@@ -167,7 +167,7 @@ const routes = [
     name: "Policy",
     component: () => import(/* webpackChunkName: "Corporate" */ '@/components/Policy.vue'),
     meta:{
-      title: "Policy"
+      title: "Policy || Sellsuki"
     }
   },
   {
@@ -175,7 +175,7 @@ const routes = [
     name: "TermsOfUse",
     component: () => import(/* webpackChunkName: "Corporate" */ '@/components/TermsOfUse.vue'),
     meta:{
-      title: "Terms Of Use"
+      title: "Terms Of Use || Sellsuki"
     }
   },
 ];
