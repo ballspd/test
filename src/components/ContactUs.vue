@@ -57,10 +57,10 @@
                         </form>
                     </div>
                     <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12 text-center">
-                        <img class="item-center mt-5" width="193" height="82" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Sellsuki_logo_01_3_41353765c4.png">
+                        <img class="item-center mt-5" width="193" height="82" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Sellsuki_logo_01_3_41353765c4.png" alt="Sellsuki logo">
                         <p class="text-s-16 mt-4" style="color:#23243D">Sellsuki Co,. Ltd. อาคาร 4 Simplex <br>ชั้น 3 เลขที่ 10/39 ถนนรัชดาภิเษก <br>แขวงจันทรเกษม เขตจตุจักร กรุงเทพมหานคร 10900</p>
                         <p class="text-s-16 mt-5" style="color:#23243D">โทรศัพท์ : 02-026-3250</p>
-                        <img class="item-center mt-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/sellsuki_actor_2_0237634e46.webp" >
+                        <img class="item-center mt-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/sellsuki_actor_2_0237634e46.webp" alt="sellsuki actor">
                     </div>
                 </div>
                 <div class="row">

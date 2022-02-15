@@ -25,10 +25,10 @@
                     </div>
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div class="row">
-                        <div class="col-2" style="margin-right:15px"><a href="https://www.facebook.com/Sellsuki/" target="_blank"><img class="hvr-pop" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/icon_facebook_bc636d1ef3.webp"></a></div>
-                        <div class="col-2" style="margin-right:15px"><a href="https://lin.ee/eMB0DP0" target="_blank"><img class="hvr-pop" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Group_351_6cfbba5ab1.png"></a></div>
-                        <div class="col-2" style="margin-right:15px"><a href="https://www.youtube.com/channel/UC-NEIYfX5dc2JXG9mEwWfcQ" target="_blank"><img class="hvr-pop" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/icon_youtube_d357434034.webp"></a></div>
-                        <div class="col-2" style="margin-right:15px"><a href="" target="_blank"><img class="hvr-pop" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/icon_mail_6d62394fe0.webp"></a></div>
+                        <div class="col-2" style="margin-right:15px"><a href="https://www.facebook.com/Sellsuki/" target="_blank"><img class="hvr-pop" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/icon_facebook_bc636d1ef3.webp" alt="facebook icon"></a></div>
+                        <div class="col-2" style="margin-right:15px"><a href="https://lin.ee/eMB0DP0" target="_blank"><img class="hvr-pop" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Group_351_6cfbba5ab1.png" alt="line icon"></a></div>
+                        <div class="col-2" style="margin-right:15px"><a href="https://www.youtube.com/channel/UC-NEIYfX5dc2JXG9mEwWfcQ" target="_blank"><img class="hvr-pop" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/icon_youtube_d357434034.webp" alt="youtube icon"></a></div>
+                        <div class="col-2" style="margin-right:15px"><a href="" target="_blank"><img class="hvr-pop" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/icon_mail_6d62394fe0.webp" alt="mail icon"></a></div>
                     </div>
                     <div class="row mt-2">
                         <div class="col-12">
@@ -40,7 +40,7 @@
                         <p class="text-w-400 font-footer d-block d-xl-none d-xxl-none" style="font-size: 13px;color:#ffffff;margin-bottom:11px !important;">Sellsuki Co. Ltd.<br> 4Simplex, 3rd Floor, No. 10/39 Ratchadapisek Road,<br> Chankasem, Chatuchak, Bangkok 10900 Thailand</p>
                         </div>                  
                         <div class="col-12">
-                        <img class="background-main" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/image13_bf4410dec1.png" style="border-radius: 5px">
+                        <img class="background-main" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/image13_bf4410dec1.png" alt="background main" style="border-radius: 5px">
                         </div>
                     </div>
                     </div>
