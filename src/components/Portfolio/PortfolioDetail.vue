@@ -24,8 +24,8 @@
                             </div>
                             <div class="col-6 col-md-5 col-xl-3" style="border-right: 2px solid #E5E5E5;">
                                 <span class="me-4">Share with :</span> 
-                                <img width="45" src="./../../assets/icon/entypo-social_facebook-with-circle.png"> 
-                                <img width="45" src="./../../assets/icon/entypo-social_twitter-with-circle.png">
+                                <img width="45" src="./../../assets/icon/entypo-social_facebook-with-circle.png" alt="entypo social facebook with circle"> 
+                                <img width="45" src="./../../assets/icon/entypo-social_twitter-with-circle.png" alt="entypo social twitter with circle">
                             </div>
                             <div class="col-6 col-md-7 col-xl-9 p-2">
                                 <i class="bi bi-eye ms-lg-5 ms-3"></i>
@@ -34,7 +34,7 @@
                             <div v-for="(data, index) in responseData.contant" :key="index">
                                 <div v-if="index == 0" class="row">
                                     <div v-if="data.image != null" class="col-12 mt-5 mb-5">
-                                        <img v-if="data.image != null" class="img-cover" :src="data.image.url" :alt="data.image.name">
+                                        <img v-if="data.image != null" class="img-cover" :src="data.image.url" :alt="data.image.alternativeText">
                                     </div>
                                     <div v-if="data.text != null" class="col-12">
                                         <p v-html="markdownToHtml(data.text)"></p>
@@ -64,7 +64,7 @@
                             <div v-for="(data, index) in responseData.contant" :key="index">
                                 <div v-if="index != 0" class="row">
                                     <div v-if="data.image != null" class="col-12 mt-5 mb-5">
-                                        <img class="img-cover" :src="data.image.url" :alt="data.image.name">
+                                        <img class="img-cover" :src="data.image.url" :alt="data.image.alternativeText">
                                     </div>
                                     <div v-else class="mt-3 mb-3">
                                     </div>

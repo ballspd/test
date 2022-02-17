@@ -6,8 +6,8 @@
                     <button class="navbar-toggler" type="button" @click="display_manu = !display_manu" >
                         <i class="bi bi-list" style="font-size: 35px;"></i>
                     </button>
-                    <img src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Sellsuki_logo_01_3_41353765c4.png">
-                    <a href="tel:020263250" target="_blank"><img class="shadow" src="./../../assets/mobile/Vector.png" style="background-color: #FFFFFF;border-radius: 50px;"></a>
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Sellsuki_logo_01_3_41353765c4.png" alt="Sellsuki logo">
+                    <a href="tel:020263250" target="_blank"><img class="shadow" src="./../../assets/mobile/Vector.png" alt="Vector" style="background-color: #FFFFFF;border-radius: 50px;"></a>
                 </div>
             </nav>
             <div v-if="display_manu" class="side-bg"></div>
