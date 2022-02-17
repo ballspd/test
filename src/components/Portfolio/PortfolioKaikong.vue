@@ -5,7 +5,7 @@
         <div v-for="data in responseData" :key="data.id" class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 p-xxl-0 p-xl-0 p-lg-5 p-md-5 p-sm-4 p-4 mb-4 hvr-hang">
             <router-link @click="scrollToTop" :to="{ path: '/Portfolio/Detail/'+data.id+'/'+data.url+''}">
                 <div class="row ps-lg-2 pe-lg-2 ps-0 pe-0 animate__animated animate__bounceIn">
-                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"><img v-if="data.illustration != null" class="mb-2 img-fix-size" :src="data.illustration.url" :alt="data.illustration.name"></div>
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"><img v-if="data.illustration != null" class="mb-2 img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText"></div>
                     <div class="col-col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#373737">{{data.title}}</font>
                         <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
