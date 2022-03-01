@@ -84,7 +84,7 @@
                                     <a @click="type = 'Beary',Akita = true,Fuse = true,Line = true,Beary = false,Kaikong = true,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
                                         <div class="hover-logo" :class="{'filter-gray':Beary}">
                                             <img class="item-center" src="./../assets/logo/logo-Beary.png" alt="">
-                                            <font class="text-s-16" style="color:#231F20">Beary Web & Tech Service</font>
+                                            <font class="text-s-16 color-231F20">Beary Web & Tech Service</font>
                                         </div>
                                     </a>
                                 </div>
@@ -93,7 +93,7 @@
                                     <a @click="type = 'Kaikong',Akita = true,Fuse = true,Line = true,Beary = true,Kaikong = false,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
                                         <div class="hover-logo" :class="{'filter-gray':Kaikong}">
                                             <img class="item-center" src="./../assets/logo/logo-Kaikong.png" alt="">
-                                            <font class="text-s-16" style="color:#7E4922">Kaikong Content Marketing</font>
+                                            <font class="text-s-16 color-7E4922">Kaikong Content Marketing</font>
                                         </div>
                                     </a>
                                 </div>
