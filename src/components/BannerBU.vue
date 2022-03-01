@@ -47,7 +47,7 @@
                     <div v-else-if="activeBuLine" class="text-center ps-5 pe-5">
                         <img class="animate__animated animate__flipInX" src="./../assets/logo/logo-line.png" alt="logo-line.png" style="margin-top:120px">
                         <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">LINE AGENCY BY SELLSUKI</h1>
-                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">{{ $t("banner.Line") }}</p>
+                        <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">{{ $t("banner.line") }}</p>
                         <router-link @click="scrollToTop" to="/Solutions/Line" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></router-link>
                     </div>
                     <div v-else-if="activeBuAkita" class="text-center ps-5 pe-5">

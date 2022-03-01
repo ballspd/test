@@ -12,53 +12,53 @@
           </div>
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
             <div class="d-none d-xl-block d-xxl-block">
-              <h1 class="font-wght mt-5" style="font-size:45px;line-height: 1.5;" v-html="$t('home.YourRoadmap')"></h1>
+              <h1 class="font-wght mt-5 text-s-45 line-height-1-5" v-html="$t('home.YourRoadmap')"></h1>
               <p v-if="readMore == false" class="text-s-16 text-description mt-5 mb-5 animate__animated animate__flipInX">{{$t("home.text_shot")}}</p>
               <p v-if="readMore == true" class="text-s-16 text-description mt-5 mb-5 animate__animated animate__flipInX">{{$t("home.text_long")}}</p>
               <button @click="readMore = !readMore" class="btn-black text-s-16 text-w-400 hvr-back-pulse"><span>Read More</span></button>
             </div>
             <div class="d-block d-xl-none d-xxl-none p-3">
-              <h1 class="font-wght mb-3" style="font-size:30px;display: flex;">{{ $t("home.YourRoadmapM") }}</h1>
+              <h1 class="font-wght mb-3 text-s-30 d-flex">{{ $t("home.YourRoadmapM") }}</h1>
               <p v-if="readMore == false" class="text-s-16 text-description animate__animated animate__flipInX" style="">{{$t("home.text_shot")}}</p>
               <p v-if="readMore == true" class="text-s-16 text-description animate__animated animate__flipInX">{{$t("home.text_long")}}</p>
-              <button @click="readMore = !readMore" class="item-center btn-black text-s-16 text-w-400 mt-4 item-center hvr-back-pulse" style="display:block"><span>Read More</span></button>
+              <button @click="readMore = !readMore" class="item-center btn-black text-s-16 text-w-400 mt-4 item-center hvr-back-pulse d-block"><span>Read More</span></button>
             </div>
           </div>
         </div>
-        <div style="padding-top: 80px !important;padding:40px">
+        <div class="padding-home">
           <div class="row pb-4">
               <div class="col-12 text-center">
-                  <h2 style="font-weight: 700;font-size: 36px;color:#231F20">SOLUTION SERVICE</h2>
-                  <h2 style="font-weight: 700;font-size: 24px;color:#231F20">ธุรกิจแบบไหนก็ดูเเลไหว</h2>
+                  <h2 class="text-w-700 text-s-36 color-231F20">SOLUTION SERVICE</h2>
+                  <h2 class="text-w-700 text-s-24 color-231F20">ธุรกิจแบบไหนก็ดูเเลไหว</h2>
               </div>
             </div>
           <div class="row">
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
               <router-link @click="scrollToTop" to="/TypesOfBusiness/BusinessOwner">
-              <div class="card card-shadow hvr-grow-rotate-left mt-3" style="border-radius: 20px;background-color: #CBE2F8;width: 286px;">
+              <div class="card card-shadow hvr-grow-rotate-left crad-service mt-3">
                 <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_1_5fa36c01d1.webp" alt="home">
-                <div class="card-body" style="background-color: #AACCEB;border-bottom-left-radius: 20px !important;border-bottom-right-radius: 20px !important;">
-                  <h3 class="text-w-700 font-wght text-center text-dark m-1" style="position: relative;font-size:20px;z-index: 1;">BUSINESS OWNER</h3>
+                <div class="card-body crad-body-service">
+                  <h3 class="text-w-700 font-wght text-center text-dark m-1 text-service">BUSINESS OWNER</h3>
                 </div>
               </div>
               </router-link>
             </div>
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
               <router-link @click="scrollToTop" to="/TypesOfBusiness/OnlineMerchant">
-              <div class="card card-shadow hvr-grow mt-3" style="border-radius: 20px;background-color: #CBE2F8;width: 286px;">
+              <div class="card card-shadow hvr-grow mt-3 crad-service">
                 <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_2_30fffe585a.webp" alt="home">
-                <div class="card-body" style="background-color: #AACCEB;border-bottom-left-radius: 20px !important;border-bottom-right-radius: 20px !important;">
-                  <h3 class="text-w-700 font-wght text-center text-dark m-1" style="position: relative;font-size:20px;z-index: 1;">ONLINE MERCHANT</h3>
+                <div class="card-body crad-body-service">
+                  <h3 class="text-w-700 font-wght text-center text-dark m-1 text-service">ONLINE MERCHANT</h3>
                 </div>
               </div>
               </router-link>
             </div>
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
               <router-link @click="scrollToTop" to="/TypesOfBusiness/OnlineMerchant">
-              <div class="card card-shadow hvr-grow-rotate mt-3" style="border-radius: 20px;background-color: #CBE2F8;width: 286px;">
+              <div class="card card-shadow hvr-grow-rotate mt-3 crad-service">
                 <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_3_2f16995ad2.webp" alt="home">
-                <div class="card-body" style="background-color: #AACCEB;border-bottom-left-radius: 20px !important;border-bottom-right-radius: 20px !important;">
-                  <h3 class="text-w-700 font-wght text-center text-dark m-1" style="position: relative;font-size:20px;z-index: 1;">CORPORATE</h3>
+                <div class="card-body crad-body-service">
+                  <h3 class="text-w-700 font-wght text-center text-dark m-1 text-service">CORPORATE</h3>
                 </div>
               </div>
               </router-link>
@@ -74,12 +74,12 @@
           <div class="d-none d-xxl-block d-xl-block">
             <div class="row mb-3">
               <div class="col-6">
-                <h2 class="font-wght" style="font-size:64px;position: relative;color:#23233C;line-height: 90.72px;">YOUR<br>ROADMAP<br>TO SUCCESS</h2>
-                <img class="mt-3" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector001_89725b6f03.webp" alt="Vector" style="float: right;;">
-                <img class="mt-2" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector_Smart_Object001_442f89ee50.webp" alt="Vector_Smart_Object" style="position: relative;left: -80px;height: 510px;width: 540px;">
+                <h2 class="font-wght text-s-64 color-23233C text-yourroadmap">YOUR<br>ROADMAP<br>TO SUCCESS</h2>
+                <img class="mt-3 float-end" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector001_89725b6f03.webp" alt="Vector">
+                <img class="mt-2 img-smart" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector_Smart_Object001_442f89ee50.webp" alt="Vector_Smart_Object">
               </div>
               <div class="col-6">
-                <div class="row" style="float: right;margin: auto;">
+                <div class="row float-end m-auto">
                   <div class="card text-white card-roadmap hvr-rotate">
                     <div class="card-body">
                       <div class="row">
@@ -140,7 +140,7 @@
             <div class="row mb-3">
               <div class="col-12">
                 <div class="text-center">
-                  <h2 class="font-wght mt-2" style="font-size:25px;color:#23233C;margin-bottom: 0px;">YOUR ROADMAP <br>TO SUCCESS</h2>
+                  <h2 class="font-wght mt-2 color-23233C" style="font-size:25px;margin-bottom: 0px;">YOUR ROADMAP <br>TO SUCCESS</h2>
                 </div>
                 <img class="mt-4 img-fluid" src="./../assets/Vector001.png" alt="Vector 001" style="float: right;width: 110px;">
                 <div class="bg" style="margin-top: 200px;">
@@ -299,5 +299,45 @@ export default {
 .hvr-grow-rotate-left:hover, .hvr-grow-rotate-left:focus, .hvr-grow-rotate-left:active {
   -webkit-transform: scale(1.1) rotate(-4deg);
   transform: scale(1.1) rotate(-4deg);
+}
+
+.padding-home{
+  padding-top: 80px !important;
+  padding:40px;
+}
+
+.crad-service{
+  border-radius: 20px;
+  background-color: #CBE2F8;
+  width: 286px;
+}
+
+.crad-body-service{
+  background-color: #AACCEB;
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+
+.text-service{
+  position: relative;
+  font-size:20px;
+  z-index: 1;
+}
+
+.text-yourroadmap {
+  position: relative;
+  line-height: 90.72px;
+}
+
+.img-smart{
+  position: relative;left: -80px;height: 510px;width: 540px;
+}
+
+.col-7-custom{
+  margin:20px 0px 20px 0px
+}
+
+.col-5-custom{
+  margin:20px 0px 20px 0px
 }
 </style>
