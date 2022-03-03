@@ -54,7 +54,7 @@
               </router-link>
             </div>
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
-              <router-link @click="scrollToTop" to="/TypesOfBusiness/OnlineMerchant">
+              <router-link @click="scrollToTop" to="/TypesOfBusiness/Corporate">
               <div class="card card-shadow hvr-grow-rotate mt-3 crad-service">
                 <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_3_2f16995ad2.webp" alt="home">
                 <div class="card-body crad-body-service">

@@ -134,7 +134,6 @@
                     </div>
                 <InterestingArticles :type="type"/>
                 <div class="padding-card pt-0 text-center">
-                    <h1 class="mt-5 text-s-30 text-w-700">เรื่องเล่าจากลูกค้าเรา</h1>
                     <Review/>
                 </div>
                 <GetQuote :type="type"/>         

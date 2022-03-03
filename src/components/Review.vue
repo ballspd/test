@@ -1,6 +1,7 @@
 <template>
-    <div id="Review">
-        <div v-if="responseData.length != 0" class="row mt-4 mb-2 p-3">
+    <div id="Review" v-if="responseData.length != 0">
+        <h1 class="mt-5 text-s-30 text-w-700 text-center">เรื่องเล่าจากลูกค้าเรา</h1>
+        <div class="row mt-4 mb-2 p-3">
             <div class="col-12">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
