@@ -139,6 +139,9 @@ export default {
       }
     },
     methods:{
+        scrollToTop() {
+          window.scrollTo(0,0);
+        },
         submitForm() {
             if(this.form.fname == '' || this.form.lname == '' || this.form.tel == '' || this.form.email == '' || this.form.brand == '' || this.form.interested == '' || this.form.message == ''){
                 this.$swal.fire(
@@ -177,11 +180,8 @@ export default {
                         var api_token = "4e9d4073e72ab32c7ffff64dcee32836be9954f8"
                         this.axios.post('https://api.pipedrive.com/v1/leads?api_token='+ api_token, data)
                         .then(
-                            this.$swal.fire(
-                                'Success',
-                                'Send information successfully',
-                                'success'
-                            )
+                          this.$router.push({name : 'ThankYou',params: { bu: 'All' }}),
+                          this.scrollToTop()
                         ).catch((error) => {
                             this.$swal.fire({
                                 icon: 'error',
@@ -190,13 +190,13 @@ export default {
                             })
                         })
 
-                        this.form.fname == ''
-                        this.form.lname == ''
-                        this.form.tel == ''
-                        this.form.email == ''
-                        this.form.message == ''
-                        this.form.brand == ''
-                        this.form.interested == ''
+                        this.form.fname = ''
+                        this.form.lname = ''
+                        this.form.tel = ''
+                        this.form.email = ''
+                        this.form.message = ''
+                        this.form.brand = ''
+                        this.form.interested = ''
                     }
                 })
         }

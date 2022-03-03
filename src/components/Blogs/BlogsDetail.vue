@@ -85,7 +85,11 @@ export default {
         //console.log(view)
         this.count = parseInt(view) + 1
         //console.log(this.count)
-        this.axios.put('blogs/'+ this.$route.params.id, {view: this.count})
+        this.axios.put('blogs/'+ this.$route.params.id, {view: this.count}, {
+            headers: {
+                'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjQ2Mjg3OTE5LCJleHAiOjE2NDg4Nzk5MTl9.vNDWq9auv0zy3i4AZba2IUR8zbezstz1Pb67Wr_0a2M`
+            }
+        })
         .then()
       }
     },

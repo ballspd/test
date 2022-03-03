@@ -49,7 +49,7 @@
                     <div class="col-12"><hr style="border: 1px solid #FFFFFF;width:100%;opacity:1"></div>
                 </div>
                 <div class="row mt-1">
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><p class="text-w-400" style="color:#FFFFFF;">© Sellsuki Co. Ltd. (c) All Rights Reserved. Dream-Theme</p></div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><p class="text-w-400" style="color:#FFFFFF;">© Sellsuki Co., Ltd. (c) All Rights Reserved. Dream-Theme</p></div>
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-xxl-end text-xl-end text-lg-end text-md-end"><p class="text-w-400" style="font-size: 14px;color:#FFFFFF;"><router-link @click="scrollToTop" to="/Policy">Privacy Policy</router-link><i class="fa fa-cloud"></i> <font style="margin-left:6px;margin-right:6px">|</font> <router-link @click="scrollToTop" to="/TermsOfUse">Terms and Conditions</router-link></p></div>
                 </div>
                 </div>
