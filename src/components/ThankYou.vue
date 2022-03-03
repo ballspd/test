@@ -1,9 +1,9 @@
  <template>
 <div id="ThankYou">               
     <Preloader/>
-    <div class="background-main">
-        <div class="container page-top">
-            <div class="crad mt-4 text-color-this-page p-5">
+    <div class="background-main page-top">
+        <div class="container">
+            <div class="crad text-color-this-page p-5">
                 <div class="row justify-content-center">
                     <div class="col-5 ps-xxl-4 ps-xl-4 ps-1 pe-xxl-4 pe-xl-4 pe-1">
                         <img class="img-fluid"  src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Home_826a845399.webp" alt="Header-sellsuki">
@@ -14,7 +14,7 @@
                         <h1 class="text-s-40 text-w-700">ขอบคุณสำหรับข้อมูลลงทะเบียนครับ</h1>
                         <h2 class="text-s-18 text-w-400 pt-4">ทีมให้คำปรึกษาจะติดต่อเพื่อให้ข้อมูลโดยเร็วที่สุด</h2>
                         <div class="p-5">
-                            <a class="btn btn-orange text-s-16 text-w-400 hvr-back-pulse"><span>Read More</span></a>
+                            <a @click="goBack" class="btn btn-orange text-s-16 text-w-400 hvr-back-pulse"><span>Read More</span></a>
                         </div>
                     </div>
                 </div>
@@ -25,8 +25,13 @@
 </template>
 
 <script>
+import Preloader from '@/components/Preloader'
+
 export default {
     name: 'ThankYou',
+    components:{
+        Preloader
+    },
     data() {
       return {
         responseData:[],
@@ -37,6 +42,10 @@ export default {
     methods : {
         scrollToTop() {
             window.scrollTo(0,0);
+        },
+        goBack() { 
+            this.$router.back()
+            //window.scrollTo(0,0);
         }
     },
     
@@ -53,6 +62,6 @@ export default {
     object-fit: cover;
 }
 .page-top{
-    margin-top: 130px;
+    padding-top: 120px;
 }
 </style>

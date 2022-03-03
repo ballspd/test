@@ -217,7 +217,7 @@ const routes = [
     }
   },
   {
-    path: "/ThankYou",
+    path: "/ThankYou/:bu",
     name: "ThankYou",
     component: () => import(/* webpackChunkName: "Corporate" */ '@/components/ThankYou.vue'),
     meta:{
