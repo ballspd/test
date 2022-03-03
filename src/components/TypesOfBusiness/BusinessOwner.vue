@@ -87,11 +87,8 @@
                     </div>
                 </div>
                 <InterestingArticles :type="type"/>
-                <div class="padding-card pt-0 mb-5 text-center">
-                    <h1 class="mt-5 text-s-30 text-w-700">เรื่องเล่าจากลูกค้าเรา</h1>
-                    <div class="text-start">
-                        <Review :type="type"/>
-                    </div>
+                <div class="padding-card pt-0 text-center">
+                    <Review :type="type"/>
                 </div>
                 <GetQuote :type="type"/>         
             </div>

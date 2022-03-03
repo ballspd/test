@@ -1,5 +1,5 @@
 <template>
-    <div id="InterestingArticles">
+    <div id="InterestingArticles" v-if="responseData.length != 0">
         <div class="p-5" style="padding-top: 40px !important;padding-bottom: 40px !important;background: linear-gradient(110.74deg, #52B8E2 0%, #3D90DD 75.34%);">
           <div class="row">
             <div class="d-none d-lg-block d-xl-block">

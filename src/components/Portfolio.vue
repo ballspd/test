@@ -41,8 +41,8 @@
                                 <option value="Line">Line</option>
                                 <option value="Beary">Beary tech</option>
                                 <option value="Kaikong">Kaikong</option>
-                                <option value="Shipmunk">Shipmunk</option>
-                                <option value="Oc2Plus">Oc2Plus</option>
+                                <!-- <option value="Shipmunk">Shipmunk</option>
+                                <option value="Oc2Plus">Oc2Plus</option> -->
                             </select>
                         </div>
                     </div>

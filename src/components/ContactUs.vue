@@ -194,10 +194,10 @@ export default {
                             })
                         })
 
-                        this.form.name == ''
-                        this.form.phone_number == ''
-                        this.form.email == ''
-                        this.form.message == ''
+                        this.form.name = ''
+                        this.form.phone_number = ''
+                        this.form.email = ''
+                        this.form.message = ''
                     }
                 })
         }

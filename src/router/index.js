@@ -216,6 +216,14 @@ const routes = [
       title: "Terms Of Use"
     }
   },
+  {
+    path: "/ThankYou",
+    name: "ThankYou",
+    component: () => import(/* webpackChunkName: "Corporate" */ '@/components/ThankYou.vue'),
+    meta:{
+      title: "Sellsuki"
+    }
+  },
 ];
 
 const router = createRouter({

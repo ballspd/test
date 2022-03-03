@@ -190,13 +190,13 @@ export default {
                             })
                         })
 
-                        this.form.fname == ''
-                        this.form.lname == ''
-                        this.form.tel == ''
-                        this.form.email == ''
-                        this.form.message == ''
-                        this.form.brand == ''
-                        this.form.interested == ''
+                        this.form.fname = ''
+                        this.form.lname = ''
+                        this.form.tel = ''
+                        this.form.email = ''
+                        this.form.message = ''
+                        this.form.brand = ''
+                        this.form.interested = ''
                     }
                 })
         }
