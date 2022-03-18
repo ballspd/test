@@ -14,7 +14,7 @@
                         <h1 class="text-s-40 text-w-700">ขอบคุณสำหรับข้อมูลลงทะเบียนครับ</h1>
                         <h2 class="text-s-18 text-w-400 pt-4">ทีมให้คำปรึกษาจะติดต่อเพื่อให้ข้อมูลโดยเร็วที่สุด</h2>
                         <div class="p-5">
-                            <a @click="goBack" class="btn btn-orange text-s-16 text-w-400 hvr-back-pulse"><span>Read More</span></a>
+                            <a href="/" class="btn btn-orange text-s-16 text-w-400 hvr-back-pulse"><span>กลับสู่หน้าหลัก</span></a>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ export default {
             window.scrollTo(0,0);
         },
         goBack() { 
-            this.$router.back()
+            //this.$router.back()
             //window.scrollTo(0,0);
         }
     },
