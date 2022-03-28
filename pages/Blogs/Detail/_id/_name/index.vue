@@ -44,7 +44,7 @@
                         </div> 
                     </div>
                 </div>
-                <RelatedPosts :type="'Blogs'" :CategoryName="blog_category.blog_category.id" :Id="$route.params.id"/>
+                <RelatedPosts :type="'Blogs'" :CategoryName="blog_category_id" :Id="$route.params.id"/>
             </div>
         </div>
     </div>
@@ -67,17 +67,19 @@ export default {
     },
     async asyncData({ $axios, route, i18n }) {
         const blog_category = await $axios.$get('https://login.sellsuki.co.th/blogs/' + route.params.id);
-        const responseData = await $axios.$get('https://login.sellsuki.co.th/blogs/' + route.params.id + '&_locale='+i18n.locale);
+        const responseData = await $axios.$get('https://login.sellsuki.co.th/blogs/' + route.params.id+ '&_locale='+i18n.locale);
         return { 
-            blog_category,
-            responseData,
+            blog_category_id: blog_category.blog_category.id,
+            responseData: responseData
         };
     },
     data() {
       return {
         lang: this.$i18n.locale || 'th-TH',
         view: 1,
-        count:0
+        count:0,
+        responseData:[],
+        blog_category_id:''
       }
     },
     methods: {
@@ -101,8 +103,7 @@ export default {
     },
     //this.$route.params.id
     created () {
-        axios.get('https://login.sellsuki.co.th/blogs/' + this.$route.params.id+'&_locale='+ this.lang)
-        .then(response => (this.addView(response.data.view)))
+        this.addView(this.responseData.view)
     }
 }
 </script>
