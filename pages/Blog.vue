@@ -488,15 +488,15 @@ export default {
         const responseDatac7 = await $axios.$get('blogs?blog_category=14&_sort=created_at:DESC&_limit=4&_locale='+i18n.locale);
         const responseDatac8 = await $axios.$get('blogs?blog_category=15&_sort=created_at:DESC&_limit=4&_locale='+i18n.locale);
         return { 
-            responseData:responseData,
-            responseDatac1:responseDatac1,
-            responseDatac2:responseDatac2,
-            responseDatac3:responseDatac3,
-            responseDatac4:responseDatac4,
-            responseDatac5:responseDatac5,
-            responseDatac6:responseDatac6,
-            responseDatac7:responseDatac7,
-            responseDatac8:responseDatac8 
+            responseData,
+            responseDatac1,
+            responseDatac2,
+            responseDatac3,
+            responseDatac4,
+            responseDatac5,
+            responseDatac6,
+            responseDatac7,
+            responseDatac8 
         };
     },
     data () {
@@ -512,16 +512,7 @@ export default {
             c5:false,
             c6:false,
             c7:false,
-            c8:false,
-            responseData:[],
-            responseDatac1:[],
-            responseDatac2:[],
-            responseDatac3:[],
-            responseDatac4:[],
-            responseDatac5:[],
-            responseDatac6:[],
-            responseDatac7:[],
-            responseDatac8:[]
+            c8:false
         }
     },
     mounted () {
