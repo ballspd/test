@@ -169,7 +169,7 @@ export default {
         return {
             type: 'All',
             isHidden: false,
-            lang: localStorage.getItem('lang') || 'th-TH',
+            //lang: localStorage.getItem('lang') || 'th-TH',
         }
     },
     methods:{
