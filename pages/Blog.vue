@@ -44,7 +44,6 @@
                         </div>
                         </NuxtLink>
                     </div>
-                    {{responseData}}
                     <div class="d-none d-xl-block d-xxl-block">
                         <div class="row p-3" style="background-color:#F2F3F5">
                             <div class="col-12 p-0">
@@ -478,11 +477,6 @@ export default {
     components: {
         Preloader
     },
-    head() {
-        return {
-            title: "Blog"
-        };
-    },
     async asyncData({ $axios, route, i18n }) {
         const responseData = await $axios.$get('blogs?_sort=created_at:DESC&_limit=6&_locale='+i18n.locale);
         const responseDatac1 = await $axios.$get('blogs?blog_category=8&_sort=created_at:DESC&_limit=4&_locale='+i18n.locale);
@@ -494,7 +488,7 @@ export default {
         const responseDatac7 = await $axios.$get('blogs?blog_category=14&_sort=created_at:DESC&_limit=4&_locale='+i18n.locale);
         const responseDatac8 = await $axios.$get('blogs?blog_category=15&_sort=created_at:DESC&_limit=4&_locale='+i18n.locale);
         return { 
-            responseData: responseData,
+            responseData,
             responseDatac1,
             responseDatac2,
             responseDatac3,
@@ -507,7 +501,6 @@ export default {
     },
     data () {
         return {
-            responseData:[],
             isActive: true,
             show:false,
             windowTop:0,
