@@ -6,33 +6,67 @@
                     <table class="align-middle" style="width: 100%;">
                         <td style="height: 690px !important;">
                             <div v-if="activeBuFuse">
-                                <img class="mt-5 animate__animated animate__flipInX" src="./../assets/logo/logo-Fuse.png" alt="logo-fuse.png">
-                                <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:550px">FUSE ADVERTISING</h1>
-                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">{{ $t("banner.fuse") }}</p>
+                                <div class="animate__animated animate__flipInX">
+                                    <img class="mt-5" src="./../assets/logo/logo-Fuse.png" alt="logo-fuse.png">
+                                </div>
+                                <div class="animate__animated animate__fadeInLeft">
+                                    <h1 class="font-wght mt-3 text-s-banner" style="color:#50151C;line-height: 1.4;width:550px">FUSE ADVERTISING</h1>
+                                </div>
+                                <div class="animate__animated animate__fadeInRight">
+                                    <p class="text-s-16 mt-3" style="color:#50151C;width:430px">{{ $t("banner.fuse") }}</p>
+                                </div>
                             </div>
                             <div v-else-if="activeBuLine">
-                                <img class="mt-5 animate__animated animate__flipInX" src="./../assets/logo/logo-line.png" alt="logo-Line.png">
-                                <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">LINE AGENCY <br>BY SELLSUKI</h1>
-                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">{{ $t("banner.line") }}</p>
+                                <div class="animate__animated animate__flipInX">
+                                    <img class="mt-5" src="./../assets/logo/logo-line.png" alt="logo-Line.png">
+                                </div>
+                                <div class="animate__animated animate__fadeInLeft">
+                                    <h1 class="font-wght mt-3 text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">LINE AGENCY <br>BY SELLSUKI</h1>
+                                </div>
+                                <div class="animate__animated animate__fadeInRight">
+                                    <p class="text-s-16 mt-3" style="color:#50151C;width:430px">{{ $t("banner.line") }}</p>
+                                </div>
                             </div>
                             <div v-else-if="activeBuAkita">
-                                <img class="mt-5 animate__animated animate__flipInX" src="./../assets/logo/logo-Akita.png" alt="logo-Akita.png">
-                                <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">AKITA <br>FULFILLMENT</h1>
-                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">{{ $t("banner.akita") }}</p>
+                                <div class="animate__animated animate__flipInX">
+                                    <img class="mt-5" src="./../assets/logo/logo-Akita.png" alt="logo-Akita.png">
+                                </div>
+                                <div class="animate__animated animate__fadeInLeft">
+                                    <h1 class="font-wght mt-3 text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">AKITA <br>FULFILLMENT</h1>
+                                </div>
+                                <div class="animate__animated animate__fadeInRight">
+                                    <p class="text-s-16 mt-3" style="color:#50151C;width:430px">{{ $t("banner.akita") }}</p>
+                                </div>
                             </div>
                             <div v-else-if="activeBuBeary">
-                                <img class="mt-5 animate__animated animate__flipInX" src="./../assets/logo/logo-Beary.png" alt="logo-Beary.png">
-                                <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">BEARY TECH</h1>
-                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">{{ $t("banner.beary") }}</p>
+                                <div class="animate__animated animate__flipInX">
+                                    <img class="mt-5" src="./../assets/logo/logo-Beary.png" alt="logo-Beary.png">
+                                </div>
+                                <div class="animate__animated animate__fadeInLeft">
+                                    <h1 class="font-wght mt-3 text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">BEARY TECH</h1>
+                                </div>
+                                <div class="animate__animated animate__fadeInRight">
+                                    <p class="text-s-16 mt-3" style="color:#50151C;width:430px">{{ $t("banner.beary") }}</p>
+                                </div>
                             </div>
                             <div v-else-if="activeBuKaikong">
-                                <img class="mt-5 animate__animated animate__flipInX" src="./../assets/logo/logo-Kaikong.png" alt="logo-Kaikong.png">
-                                <h1 class="font-wght mt-3 animate__animated animate__fadeInLeft text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">KAIKONG</h1>
-                                <p class="text-s-16 mt-3 animate__animated animate__fadeInRight" style="color:#50151C;width:430px">{{ $t("banner.kaikong") }}</p>
+                                <div class="animate__animated animate__flipInX">
+                                    <img class="mt-5" src="./../assets/logo/logo-Kaikong.png" alt="logo-Kaikong.png">
+                                </div>
+                                <div class="animate__animated animate__fadeInLeft">
+                                    <h1 class="font-wght mt-3 text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">KAIKONG</h1>
+                                </div>
+                                <div class="animate__animated animate__fadeInRight">
+                                    <p class="text-s-16 mt-3" style="color:#50151C;width:430px">{{ $t("banner.kaikong") }}</p>
+                                </div>
                             </div>
                             <div v-else>
-                                <h1 class="font-wght mt-5 text-s-banner" style="color:#50151C;width:600px">E-COMMERCE <br>SOLUTION</h1>
-                                <p class="text-s-16" style="color:#50151C;width:420px">Sellsuki ผู้ช่วยธุรกิจออนไลน์ที่ครบเครื่องมากที่สุด ช่วยมองหาทางออกที่ใช่ให้ธุรกิจคุณ</p>
+                                <div class="animate__animated animate__fadeInLeft">
+                                    <h1 class="font-wght mt-5 text-s-banner" style="color:#50151C;width:600px">E-COMMERCE <br>SOLUTION</h1>
+                                </div>
+                                <div class="animate__animated animate__fadeInRight">
+                                    <p class="text-s-16" style="color:#50151C;width:420px">Sellsuki ผู้ช่วยธุรกิจออนไลน์ที่ครบเครื่องมากที่สุด ช่วยมองหาทางออกที่ใช่ให้ธุรกิจคุณ</p>
+                                </div>
                             </div>
                         </td>
                     </table>
