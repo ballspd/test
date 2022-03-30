@@ -168,6 +168,11 @@ export default {
         GetQuote,
         Preloader
     },
+    head() {
+      return {
+          title: "Beary"
+      };
+    },
     data () {
         return {
             type: 'Beary',

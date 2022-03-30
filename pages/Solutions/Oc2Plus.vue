@@ -173,6 +173,11 @@ export default {
         GetQuote,
         Preloader
     },
+    head() {
+      return {
+          title: "Oc2Plus"
+      };
+    },
     data () {
             return {
                 type: 'Oc2Plus',

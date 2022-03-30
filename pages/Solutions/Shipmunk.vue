@@ -308,6 +308,11 @@ export default {
         GetQuote,
         Preloader,
   },
+    head() {
+      return {
+          title: "Shipmunk"
+      };
+    },
     data () {
             return {
                 type: 'Shipmunk',

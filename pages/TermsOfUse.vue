@@ -191,6 +191,11 @@
 <script>
 export default {
 	name: 'TermsOfUse',
+  head() {
+      return {
+          title: "Terms Of Use"
+      };
+  },
 }
 </script>
 

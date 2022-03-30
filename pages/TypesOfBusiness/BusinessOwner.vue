@@ -113,6 +113,11 @@ export default {
         GetQuote,
         Preloader
     },
+    head() {
+      return {
+          title: "Business Owner"
+      };
+    },
     data () {
         return {
             type: 'All',

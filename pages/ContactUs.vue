@@ -99,6 +99,11 @@ export default {
     components: {
         Preloader
     },
+    head() {
+      return {
+          title: "Contact Us"
+      };
+    },
     data() {
       return {
           form: {

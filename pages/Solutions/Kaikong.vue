@@ -122,6 +122,11 @@ export default {
         GetQuote,
         Preloader
     },
+    head() {
+      return {
+          title: "Kaikong"
+      };
+    },
     data () {
             return {
                 type: 'Kaikong',

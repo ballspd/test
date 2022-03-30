@@ -63,6 +63,11 @@ export default {
     components: {
         Preloader
     },
+    head() {
+      return {
+          title: this.$route.params.name
+      };
+    },
     data() {
       return {
         responseData:[],

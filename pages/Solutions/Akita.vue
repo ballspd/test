@@ -159,6 +159,11 @@ export default {
         GetQuote,
         Preloader
     },
+    head() {
+      return {
+          title: "Akita"
+      };
+    },
     data () {
             return {
                 type: 'Akita',

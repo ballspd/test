@@ -65,13 +65,18 @@ export default {
         RelatedPosts,
         Preloader
     },
-    asyncData({route, params}){
-        return axios.get('https://login.sellsuki.co.th/blogs/' + route.params.id)
-        .then((response) => {
-            return {
-                blog_category_id: response.data.blog_category.id
-            }
-        })
+    head() {
+      return {
+          title: this.responseData.title
+      };
+    },
+    async asyncData({ $axios, route, i18n }) {
+        const blog_category = await $axios.$get('https://login.sellsuki.co.th/blogs/' + route.params.id);
+        const responseData = await $axios.$get('https://login.sellsuki.co.th/blogs/' + route.params.id+ '&_locale='+i18n.locale);
+        return { 
+            blog_category_id: blog_category.blog_category.id,
+            responseData: responseData
+        };
     },
     data() {
       return {
@@ -102,9 +107,8 @@ export default {
       }
     },
     //this.$route.params.id
-    created () {
-        axios.get('https://login.sellsuki.co.th/blogs/' + this.$route.params.id+'&_locale='+ this.lang)
-        .then(response => (this.responseData = response.data,this.addView(response.data.view)))
+    mounted () {
+        this.addView(this.responseData.view)
     }
 }
 </script>

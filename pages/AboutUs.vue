@@ -114,6 +114,11 @@ export default {
         InterestingArticles,
         Preloader
     },
+    head() {
+      return {
+          title: "About Us"
+      };
+    },
     data(){
         return{
             height_colum: 285,

@@ -152,6 +152,11 @@
 <script>
 export default {
 	name: 'Policy',
+    head() {
+      return {
+          title: "Policy"
+      };
+    },
     methods: {
     scrollToTop() {
       window.scrollTo(0,0);

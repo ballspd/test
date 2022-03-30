@@ -174,6 +174,11 @@ export default {
         GetQuote,
         Preloader
     },
+    head() {
+      return {
+          title: "Line"
+      };
+    },
     data () {
             return {
                 type: 'Line',

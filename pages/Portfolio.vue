@@ -151,6 +151,11 @@ export default {
         PortfolioBeary,
         Preloader
     },
+    head() {
+      return {
+          title: "Portfolio"
+      };
+    },
     data () {
         return {
             isActive: true,

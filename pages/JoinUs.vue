@@ -167,6 +167,11 @@ export default {
     components: {
         Preloader
     },
+    head() {
+      return {
+          title: "Join Us"
+      };
+    },
     data() {
       return {
         lang: this.$i18n.locale || 'th-TH',

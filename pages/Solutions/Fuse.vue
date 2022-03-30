@@ -141,6 +141,11 @@ export default {
         GetQuote,
         Preloader
     },
+    head() {
+      return {
+          title: "Fuse"
+      };
+    },
     data () {
             return {
                 type: 'Fuse',

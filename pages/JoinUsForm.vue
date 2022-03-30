@@ -128,6 +128,11 @@ export default {
     components: {
         Preloader
     },
+    head() {
+      return {
+          title: "Join Us Form"
+      };
+    },
     data() {
       return {
         responseData:[],

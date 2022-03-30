@@ -104,6 +104,11 @@ export default {
         RelatedPosts,
         Preloader
     },
+    head() {
+      return {
+          title: this.responseData.title
+      };
+    },
     asyncData({route, params}){
         return axios.get(process.env.API_URL+'portfolios/' + route.params.id)
         .then((response) => {

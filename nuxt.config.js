@@ -8,8 +8,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - sellsuki-web',
-    title: 'sellsuki-web',
+    titleTemplate: '%s | Sellsuki',
+    title: 'sellsuki',
     htmlAttrs: {
       lang: 'en',
     },

@@ -477,6 +477,11 @@ export default {
     components: {
         Preloader
     },
+    head() {
+        return {
+            title: "Blog"
+        };
+    },
     async asyncData({ $axios, route, i18n }) {
         const responseData = await $axios.$get('blogs?_sort=created_at:DESC&_limit=6&_locale='+i18n.locale);
         const responseDatac1 = await $axios.$get('blogs?blog_category=8&_sort=created_at:DESC&_limit=4&_locale='+i18n.locale);

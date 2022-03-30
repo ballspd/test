@@ -165,6 +165,11 @@ export default {
         GetQuote,
         Preloader
     },
+    head() {
+      return {
+          title: "Online Merchant"
+      };
+    },
     data () {
         return {
             type: 'All',

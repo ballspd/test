@@ -26,6 +26,11 @@
 export default {
   layout:"Layout",
   name: 'App',
+  head() {
+      return {
+          title: "Home"
+      };
+    },
   data () {
     return {
       isActive: true
