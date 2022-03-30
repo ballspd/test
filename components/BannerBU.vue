@@ -9,10 +9,10 @@
                                 <div class="animate__animated animate__flipInX">
                                     <img class="mt-5" src="./../assets/logo/logo-Fuse.png" alt="logo-fuse.png">
                                 </div>
-                                <div class="animate__animated animate__fadeInLeft">
+                                <div class="animate__animated animate__fadeInRight">
                                     <h1 class="font-wght mt-3 text-s-banner" style="color:#50151C;line-height: 1.4;width:550px">FUSE ADVERTISING</h1>
                                 </div>
-                                <div class="animate__animated animate__fadeInRight">
+                                <div class="animate__animated animate__fadeInLeft">
                                     <p class="text-s-16 mt-3" style="color:#50151C;width:430px">{{ $t("banner.fuse") }}</p>
                                 </div>
                             </div>
@@ -31,10 +31,10 @@
                                 <div class="animate__animated animate__flipInX">
                                     <img class="mt-5" src="./../assets/logo/logo-Akita.png" alt="logo-Akita.png">
                                 </div>
-                                <div class="animate__animated animate__fadeInLeft">
+                                <div class="animate__animated animate__fadeInRight">
                                     <h1 class="font-wght mt-3 text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">AKITA <br>FULFILLMENT</h1>
                                 </div>
-                                <div class="animate__animated animate__fadeInRight">
+                                <div class="animate__animated animate__fadeInLeft">
                                     <p class="text-s-16 mt-3" style="color:#50151C;width:430px">{{ $t("banner.akita") }}</p>
                                 </div>
                             </div>
@@ -53,10 +53,10 @@
                                 <div class="animate__animated animate__flipInX">
                                     <img class="mt-5" src="./../assets/logo/logo-Kaikong.png" alt="logo-Kaikong.png">
                                 </div>
-                                <div class="animate__animated animate__fadeInLeft">
+                                <div class="animate__animated animate__fadeInRight">
                                     <h1 class="font-wght mt-3 text-s-banner" style="color:#50151C;line-height: 1.4;width:500px">KAIKONG</h1>
                                 </div>
-                                <div class="animate__animated animate__fadeInRight">
+                                <div class="animate__animated animate__fadeInLeft">
                                     <p class="text-s-16 mt-3" style="color:#50151C;width:430px">{{ $t("banner.kaikong") }}</p>
                                 </div>
                             </div>
