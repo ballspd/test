@@ -12,8 +12,8 @@
     "lintfix": "prettier --write --list-different .",
     "staging": "nuxt start",
     "production": "nuxt start",
-    "build:staging": "nuxt build",
-    "build:production": "nuxt build"
+    "build:staging": "nuxt generate",
+    "build:production": "nuxt generate"
   },
   "dependencies": {
     "@nuxt/markdown": "0.0.21",

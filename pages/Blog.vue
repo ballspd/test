@@ -468,6 +468,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import Preloader from '@/components/Preloader'
 import moment from 'moment'
 
@@ -482,27 +483,21 @@ export default {
             title: "Blog"
         };
     },
-    async asyncData({ $axios, route, i18n }) {
-        const responseData = await $axios.$get('blogs?_sort=created_at:DESC&_limit=6&_locale='+i18n.locale);
-        const responseDatac1 = await $axios.$get('blogs?blog_category=8&_sort=created_at:DESC&_limit=4&_locale='+i18n.locale);
-        const responseDatac2 = await $axios.$get('blogs?blog_category=9&_sort=created_at:DESC&_limit=4&_locale='+i18n.locale);
-        const responseDatac3 = await $axios.$get('blogs?blog_category=10&_sort=created_at:DESC&_limit=4&_locale='+i18n.locale);
-        const responseDatac4 = await $axios.$get('blogs?blog_category=11&_sort=created_at:DESC&_limit=4&_locale='+i18n.locale);
-        const responseDatac5 = await $axios.$get('blogs?blog_category=12&_sort=created_at:DESC&_limit=4&_locale='+i18n.locale);
-        const responseDatac6 = await $axios.$get('blogs?blog_category=13&_sort=created_at:DESC&_limit=4&_locale='+i18n.locale);
-        const responseDatac7 = await $axios.$get('blogs?blog_category=14&_sort=created_at:DESC&_limit=4&_locale='+i18n.locale);
-        const responseDatac8 = await $axios.$get('blogs?blog_category=15&_sort=created_at:DESC&_limit=4&_locale='+i18n.locale);
-        return { 
-            responseData,
-            responseDatac1,
-            responseDatac2,
-            responseDatac3,
-            responseDatac4,
-            responseDatac5,
-            responseDatac6,
-            responseDatac7,
-            responseDatac8 
-        };
+    asyncData({route, params, i18n}){
+        return axios.get('https://login.sellsuki.co.th/blogs?blog_category=9&_sort=created_at:DESC&_limit=4&_locale='+i18n.locale)
+        .then((response) => {
+            return {
+                responseData: response.data,
+                responseDatac1: response.data,
+                responseDatac2: response.data,
+                responseDatac3: response.data,
+                responseDatac4: response.data,
+                responseDatac5: response.data,
+                responseDatac6: response.data,
+                responseDatac7: response.data,
+                responseDatac8: response.data
+            }
+        })
     },
     data () {
         return {
@@ -517,7 +512,16 @@ export default {
             c5:false,
             c6:false,
             c7:false,
-            c8:false
+            c8:false,
+            responseData:[],
+            responseDatac1:[],
+            responseDatac2:[],
+            responseDatac3:[],
+            responseDatac4:[],
+            responseDatac5:[],
+            responseDatac6:[],
+            responseDatac7:[],
+            responseDatac8:[]
         }
     },
     mounted () {
