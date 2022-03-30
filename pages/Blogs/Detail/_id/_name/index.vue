@@ -70,13 +70,13 @@ export default {
           title: this.responseData.title
       };
     },
-    async asyncData({ $axios, route, i18n }) {
-        const blog_category = await $axios.$get('https://login.sellsuki.co.th/blogs/' + route.params.id);
-        const responseData = await $axios.$get('https://login.sellsuki.co.th/blogs/' + route.params.id+ '&_locale='+i18n.locale);
-        return { 
-            blog_category_id: blog_category.blog_category.id,
-            responseData: responseData
-        };
+    asyncData({route, params}){
+        return axios.get('https://login.sellsuki.co.th/blogs/' + route.params.id)
+        .then((response) => {
+            return {
+                blog_category_id: response.data.blog_category.id
+            }
+        })
     },
     data() {
       return {
@@ -98,7 +98,7 @@ export default {
         //console.log(view)
         this.count = parseInt(view) + 1
         //console.log(this.count)
-        axios.put('https://login.sellsuki.co.th/blogs/'+ this.$route.params.id, {view: this.count}, {
+        axios.put(process.env.API_URL + 'blogs/'+ this.$route.params.id, {view: this.count}, {
             headers: {
                 'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjQ2Mjg3OTE5LCJleHAiOjE2NDg4Nzk5MTl9.vNDWq9auv0zy3i4AZba2IUR8zbezstz1Pb67Wr_0a2M`
             }
@@ -108,7 +108,8 @@ export default {
     },
     //this.$route.params.id
     mounted () {
-        this.addView(this.responseData.view)
+        axios.get(process.env.API_URL + 'blogs/' + this.$route.params.id+'&_locale='+ this.lang)
+        .then(response => (this.responseData = response.data,this.addView(response.data.view)))
     }
 }
 </script>
