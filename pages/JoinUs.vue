@@ -46,7 +46,10 @@
                             <div class="col-12 p-0">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="10000">
-                                      <img src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/IMG_0005_e48fa140f2.webp" class="d-block w-100">
+                                      <img src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/join_us2_d06dad213c.webp" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                      <img src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/join_us1_cecaa5262e.webp" class="d-block w-100">
                                     </div>
                                     <div class="carousel-item" data-bs-interval="2000">
                                       <img src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/IMG_0013_9d4498a6de.webp" class="d-block w-100">
@@ -69,6 +72,7 @@
                             <button type="button" data-bs-target="#carouselimage" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             <button type="button" data-bs-target="#carouselimage" data-bs-slide-to="3" aria-label="Slide 4"></button>
                             <button type="button" data-bs-target="#carouselimage" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselimage" data-bs-slide-to="5" aria-label="Slide 6"></button>
                         </div>
                     </div>
                   </div>

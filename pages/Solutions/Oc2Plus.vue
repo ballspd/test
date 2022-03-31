@@ -56,7 +56,7 @@
                         <div class="col-md-6 col-12 view animate__animated animate__slideInLeft animate__slow">
                             <div class="card item-center">
                                 <div class="card-view theme-background-main d-flex">
-                                    <h1 class="m-auto text-s-24 text-w-700 text-white">CDV VIEW</h1>
+                                    <h1 class="m-auto text-s-24 text-w-700 text-white">CDP VIEW</h1>
                                 </div>
                                 <div class="triangle-down-main"></div>
                                 <h1 class="mt-2 text-center text-s-24 text-w-700 text-drak">SELLSUKI</h1>
@@ -81,7 +81,7 @@
                         <div class="col-md-6 col-12 mt-md-0 mt-5 view animate__animated animate__slideInRight animate__slow">
                             <div class="card item-center">
                                 <div class="card-view theme-background-sub d-flex">
-                                    <h1 class="m-auto text-s-24 text-w-700 text-white">CDV VIEW</h1>
+                                    <h1 class="m-auto text-s-24 text-w-700 text-white">CRM VIEW</h1>
                                 </div>
                                 <div class="triangle-down-sub"></div>
                                 <h1 class="mt-2 text-center text-s-24 text-w-700 text-drak">SELLSUKI</h1>
