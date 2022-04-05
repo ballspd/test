@@ -60,6 +60,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/i18n',
+    'vue-social-sharing/nuxt',
     '@nuxtjs/markdownit'
   ],
   i18n: {

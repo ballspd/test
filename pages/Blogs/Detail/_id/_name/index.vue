@@ -21,8 +21,17 @@
                                 <p class="text-s-16" style="color:#807F7F !important">{{dateTime(responseData.created_at)}}</p>
                             </div>
                             <div class="col-6 col-md-5 col-xl-3" style="border-right: 2px solid #E5E5E5;">
-                                <span class="me-4">Share with :</span> 
-                                <img width="45" src="./../../../../../assets/icon/entypo-social_facebook-with-circle.png"> 
+                                <span class="me-4">Share with : </span> 
+                                <ShareNetwork
+                                    network="facebook"
+                                    :url="url"
+                                    :title="responseData.title"
+                                    :description="responseData.description"
+                                    quote="Sellsuki Co. Ltd"
+                                    hashtags="Sellsuki"
+                                >
+                                    <img width="45" src="./../../../../../assets/icon/entypo-social_facebook-with-circle.png">
+                                </ShareNetwork>
                                 <img width="45" src="./../../../../../assets/icon/entypo-social_twitter-with-circle.png">
                             </div>
                             <div class="col-6 col-md-7 col-xl-9 p-2">
@@ -67,14 +76,22 @@ export default {
     },
     head() {
       return {
-          title: this.responseData.title
+        title: this.responseData.title,
+        meta: [
+            { hid: 'og-site_name', property: 'og:site_name', content: 'Sellsuki' },
+            { hid: 'og-title', property: 'og:title', content: this.responseData.title },
+            { hid: 'og-description', property: 'og:description', content: this.responseData.description },
+            { hid: 'og-image', property: 'og:image', content: this.responseData.illustration.url },
+            { hid: 'og-url', property: 'og:url', content: this.url }
+        ],
       };
     },
     asyncData({route, params}){
         return axios.get('https://login.sellsuki.co.th/blogs/' + route.params.id)
         .then((response) => {
             return {
-                blog_category_id: response.data.blog_category.id
+                blog_category_id: response.data.blog_category.id,
+                responseData: response.data
             }
         })
     },
@@ -84,7 +101,8 @@ export default {
         lang: this.$i18n.locale || 'th-TH',
         view: 1,
         count:0,
-        blog_category_id:''
+        blog_category_id:'',
+        url: 'https://www.sellsuki.co.th/Blogs/Detail/'+this.$route.params.id+'/'+this.$route.params.name
       }
     },
     methods: {
@@ -108,6 +126,10 @@ export default {
     },
     //this.$route.params.id
     mounted () {
+        if(/^\?fbclid=/.test(location.search)){
+            location.replace(location.href.replace(/\?fbclid.+/, ""));
+        }
+
         axios.get(process.env.API_URL + 'blogs/' + this.$route.params.id+'&_locale='+ this.lang)
         .then(response => (this.responseData = response.data,this.addView(response.data.view)))
     }
