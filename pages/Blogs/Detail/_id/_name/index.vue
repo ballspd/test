@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <RelatedPosts v-if="blog_category_id != ''" :type="'Blogs'" :CategoryName="blog_category_id" :Id="$route.params.id"/>
-                <RelatedPosts v-if="blog_category_id == ''" :type="'Blogs'" :CategoryName="responseData.blog_category_id" :Id="$route.params.id"/>
+                <RelatedPosts v-if="blog_category_id == ''" :type="'Blogs'" :CategoryName="responseData.blog_category.id" :Id="$route.params.id"/>
             </div>
         </div>
     </div>
@@ -103,7 +103,7 @@ export default {
         view: 1,
         count:0,
         blog_category_id:'',
-        url: 'https://www.sellsuki.co.th/Blogs/Detail/'+this.$route.params.id+'/'+this.$route.params.name
+        url: 'https://staging-sellsuki.bearyweb.com/Blogs/Detail/'+this.$route.params.id+'/'+this.$route.params.name
       }
     },
     methods: {
