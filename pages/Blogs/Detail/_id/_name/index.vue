@@ -76,16 +76,14 @@ export default {
         Preloader
     },
     head() {
-      return {
+      return this.$headUtil({
+        lang: this.$i18n.locale,
         title: this.responseData.title,
-        meta: [
-            { hid: 'og-site_name', property: 'og:site_name', content: 'Sellsuki' },
-            { hid: 'og-title', property: 'og:title', content: this.responseData.title },
-            { hid: 'og-description', property: 'og:description', content: this.responseData.description },
-            { hid: 'og-image', property: 'og:image', content: this.responseData.illustration.url },
-            { hid: 'og-url', property: 'og:url', content: this.url }
-        ],
-      };
+        description: this.responseData.description,
+        site_name: 'Sellsuki',
+        illustration: this.responseData.illustration.url,
+        url: this.url
+      });
     },
     asyncData({route, params}){
         return axios.get('https://login.sellsuki.co.th/blogs/' + route.params.id)
