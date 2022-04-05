@@ -53,7 +53,8 @@
                         </div> 
                     </div>
                 </div>
-                <RelatedPosts :type="'Blogs'" :CategoryName="blog_category_id" :Id="$route.params.id"/>
+                <RelatedPosts v-if="blog_category_id != ''" :type="'Blogs'" :CategoryName="blog_category_id" :Id="$route.params.id"/>
+                <RelatedPosts v-if="blog_category_id == ''" :type="'Blogs'" :CategoryName="responseData.blog_category_id" :Id="$route.params.id"/>
             </div>
         </div>
     </div>
