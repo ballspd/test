@@ -236,7 +236,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></NuxtLink>
+                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span>Read More</span></NuxtLink>
                                     </div>
                                 </div>
                                 </NuxtLink>
@@ -271,7 +271,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></NuxtLink>
+                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span>Read More</span></NuxtLink>
                                     </div>
                                 </div>
                                 </NuxtLink>
@@ -306,7 +306,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></NuxtLink>
+                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span>Read More</span></NuxtLink>
                                     </div>
                                 </div>
                                 </NuxtLink>
@@ -341,7 +341,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></NuxtLink>
+                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span>Read More</span></NuxtLink>
                                     </div>
                                 </div>
                                 </NuxtLink>
@@ -376,7 +376,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></NuxtLink>
+                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span>Read More</span></NuxtLink>
                                     </div>
                                 </div>
                                 </NuxtLink>
@@ -411,7 +411,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></NuxtLink>
+                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span>Read More</span></NuxtLink>
                                     </div>
                                 </div>
                                 </NuxtLink>
@@ -446,7 +446,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'' , query: { type: data.blog_category.id }}"><span>Read More</span></NuxtLink>
+                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span>Read More</span></NuxtLink>
                                     </div>
                                 </div>
                                 </NuxtLink>

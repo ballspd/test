@@ -26,7 +26,7 @@ export default {
           async: true,
           crossorigin: "anonymous"
       }
-  ]
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -62,8 +62,23 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/i18n',
     'vue-social-sharing/nuxt',
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    '@nuxtjs/gtm',
+    'nuxt-facebook-pixel-module',
   ],
+
+  facebook: {
+    /* module options */
+    track: 'PageView',
+    pixelId: '320126622270975',
+    autoPageView: true,
+    disabled: false
+  },
+
+  gtm: {
+    id: 'GTM-MPPDKR2'
+  },
+
   i18n: {
     locales: ['en', 'th-TH'],
     defaultLocale: 'th-TH',
