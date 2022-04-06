@@ -128,9 +128,6 @@ export default {
         if(/^\?fbclid=/.test(location.search)){
             location.replace(location.href.replace(/\?fbclid.+/, ""));
         }
-
-        axios.get(process.env.API_URL + 'blogs/' + this.$route.params.id+'&_locale='+ this.lang)
-        .then(response => (this.responseData = response.data,this.addView(response.data.view)))
     }
 }
 </script>
