@@ -85,14 +85,9 @@ export default {
         url: this.url
       });
     },
-    asyncData({route, params}){
-        return axios.get('https://login.sellsuki.co.th/blogs/' + route.params.id)
-        .then((response) => {
-            return {
-                blog_category_id: response.data.blog_category.id,
-                responseData: response.data
-            }
-        })
+    async asyncData({ $axios, route, i18n }) {
+      const response = await $axios.$get('https://login.sellsuki.co.th/blogs/' + route.params.id + '?_locale='+ i18n.locale);
+      return { responseData: response , blog_category_id : response.blog_category.id };
     },
     data() {
       return {
@@ -117,7 +112,7 @@ export default {
         //console.log(this.count)
         axios.put(process.env.API_URL + 'blogs/'+ this.$route.params.id, {view: this.count}, {
             headers: {
-                'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjQ2Mjg3OTE5LCJleHAiOjE2NDg4Nzk5MTl9.vNDWq9auv0zy3i4AZba2IUR8zbezstz1Pb67Wr_0a2M`
+                'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjQ5MjMxMDIzLCJleHAiOjE2NTE4MjMwMjN9.7X3x0UwOJOUdyaCXLS6m_MRZR9uuF7ppPPiCyN9zcJc`
             }
         })
         .then()
@@ -128,6 +123,8 @@ export default {
         if(/^\?fbclid=/.test(location.search)){
             location.replace(location.href.replace(/\?fbclid.+/, ""));
         }
+
+        this.addView(this.responseData.view)
     }
 }
 </script>
