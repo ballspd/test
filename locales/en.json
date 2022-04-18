@@ -1,0 +1,161 @@
+{
+  "footer":{
+    "Service": "Service",
+    "OnlineAdvertising": "Online Advertising",
+    "Fulfillment": "Fulfillment",
+    "LINEAgency": "LINE Agency",
+    "DevelopWebsite": "Develop Website",
+    "ContentMarketing": "Content Marketing",
+    "DeliveryCompare": "Delivery Compare",
+    "CustomerDataPlatform": "Customer Data Platform",
+    "AboutUs": "About Us",
+    "Contact": "Contact",
+    "JoinUs": "Join Us",
+    "Portfolio": "Portfolio",
+    "Blog": "Blog"
+  },
+
+  "form":{
+    "FirstName": "First Name",
+    "LastName": "Last Name",
+    "Email": "Email",
+    "Tel": "Tel",
+    "Brand": "Brand",
+    "interestedabout": "interested about",
+    "Message": "Message"
+  },
+
+  "home":{
+    "YourRoadmap": "Let Your Business <br>Growth Together",
+    "YourRoadmapM": "Let Your Business Growth Together",
+    "text_shot": "Online sellers in the 5.0 era and how to adjust to keep up on the day when our world spins so speedy? Entering a market where have many competitors, compete intensely to struggle for the product presentation area. It’s difficult and complicated if you do it alone. But if you want to start online selling smoothly and safely, you should have an effective assistant to help your work on your own.",
+    "text_long": "Online sellers in the 5.0 era and how to adjust to keep up on the day when our world spins so speedy? Entering a market where have many competitors, compete intensely to struggle for the product presentation area. It’s difficult and complicated if you do it alone. But if you want to start online selling smoothly and safely, you should have an effective assistant to help your work on your own. For the new Sellsuki, we are ready to be an online seller assistant for all. Not only order management but also, we have many tools to solve all selling online problems. Whether guide you about marketing, starting a business, social media marketing in every type and channel, making your own websites or any business systems, Fulfillment services which help to manage a product and your orders anytime. Therefore, Sellsuki is a selling online assistant who literally takes care of you from the beginning until successful",
+    "roadmap1": "Research Find <br>Insight",
+    "roadmap2": "Analytic the <br>Fact",
+    "roadmap3": "Right Strategy",
+    "roadmap4": "Repeat <br>Optimization",
+    "roadmap5": "Get Feedback & <br>Never Stop learning"
+  },
+
+  "banner":{
+    "fuse": "We have an advertising creation service that covers all many social media platforms. And we also have an add-on service that helps you to push your business to have more growth as well as suggestions about marketing to a business plan for more growth.",
+    "line": "1st LINE partner in Thailand who takes care of 6,000 accounts in selling on LINE Official account and accurately advertises to target customers including Chatbot. Therefore, we will make customer responses more convenient.",
+    "akita": "“One-stop warehouse service” helps you to take care of your products in steps that include Parcel receiving, Packing, and safe product delivery to the customer. We can reduce unnecessary time in your work process. Therefore, it helps you have more time to expand your business growth.",
+    "kaikong": "Marketing content planning, creating engaging content and reaching the right target customer. We have an admin who takes care of your business page or channels to make your brand rapidly respond to the customer in time and complete your sale professionally.",
+    "shipmunk": "reservation systems and delivery fee comparison and shipping distance from the top delivery provider. It helps your business to use the most worthwhile services and completely track a parcel's status.",
+    "oc2plus": "Customer Data Platforms (CDP) system or storage data systems that we can bring that data to analyze, plan, strategize a business, and reach the target customer effectively.",
+    "beary": "Website design service and software development include connecting with API systems and online sales channels. Whether Shopee, Lazada, or LINE My shop to support your business."
+  },
+
+  "solution":{
+    "akita":{
+      "mata":"We’re ready to grow alongside all businesses to provide shipping experiences to the customer with the most effective and efficient.",
+      "ONE_Stop_warehouse_service": "ONE-Stop warehouse service",
+      "receiving":"Receiving",
+      "packing":"Packing",
+      "delivering":"Delivering",
+      "listening": "Listening",
+      "active": "Active",
+      "attention": "Attention",
+      "reliable": "Reliable",
+      "brand_value": "Brand Value"
+    },
+    "fuse":{
+      "mata":"Fuse by sellsuki,Social media marketing provider and suggests a marketing plan that helps you plan, advertise, and survey the target customer.",
+      "why_do": "Why do customers choose us?",
+      "suggestions":"Suggestions for all  <br>business doing",
+      "assisted":"Assisted by <br>professional teams",
+      "focus":"Focus on the result by <br>understanding your business"
+    },
+    "line":{
+      "mata":"The 1st LINE OA professional who takes care of 6,000 business account.",
+      "why_do": "Why do customers choose us?",
+      "training":"The best Course <br>Training Line",
+      "suggestions":"Suggestions by <br>professional",
+      "tools":"Tools for business <br>growth faster",
+      "add_on_services":"Add-on Services"
+    },
+    "kaikong":{
+      "mata":"Creative agencies, professionals in building marketing content that can help to create your business be memorable. To motivate your sales and growth in advance",
+      "text_banner": "help you to create a memorable business",
+      "content_marketing":"Content Marketing",
+      "graphic_production":"Graphic & Production",
+      "admin_page":"Admin Page"
+    },
+    "beary":{
+      "mata":"Beary Tech, the website creation provider that ability to design a suitable and meet the users need to deliver the best experiences for all",
+      "text_banner": "Website design and development",
+      "brand_value": "Brand Value",
+      "h1":"Beary tech, we are ready to provide development suggestions by customizing a system to suit your business.",
+      "h2":"Beary Tech have teams who always support and provide suggestion all the time",
+      "h3":"Developing team who have experience in system development for various users and improve a system on every channel"
+    },
+    "shipmunk":{
+      "mata":"Parcel delivery fee comparison service provider, booking a shipping queue, and easy to pay through an online system. Therefore, it will reduce complicated work and run a business smoothly.",
+      "text_banner": "helps you compare a parcel delivery fee, choose the best shipping to deliver, convenient, and the cheapest.",
+      "h1":"Frozen parcel <br>delivery service",
+      "h2":"Cargo insurance in case <br>that parcel get damaged",
+      "header": "Easier Shipping with Shipmunk service",
+      "add_on_services":"Add-on Services",
+      "why": "Why should you choose Shipmunk?",
+      "why1": "receive delivery service charge immediately and compare delivery service provider that the most suitable for your business",
+      "why2": "reserve shipping in advance every time",
+      "why3": "able to deliver in both Drop-off or Pick-up (delivery provider come to take your parcel at home)",
+      "why4": "immediately pay for service charges through online channels.",
+      "why5": "real-time parcel status tracking through LINE OA's Shipmunk",
+      "why6": "print a parcel cover sheet for free",
+      "why7": "use a system for free",
+      "why8": "have report generation systems or Dashboard & Statistic that merchants can use to strategize and develop a business."
+    },
+    "oc2plus":{
+      "mata":"the latest service from Sellsuki - is a Customer Data Platform( CDP) service or data storage space that is essential for doing business. Because we have to use data about customer behavior, customer interest to plan a business marketing, communication plan to increase your business sales. <br>The Customer Data Platform (CDP) role is collecting customer information from every channel whether a website or any social media in together for easy use.",
+      "text_banner": "Storage tool for marketing planning which business owners need",
+      "h1":"Collecting data from every channel",
+      "h2":"One place storage",
+      "h3":"easy bringing to use",
+      "header": "CDP formatted data",
+      "why": "Why should you use CDP?",
+      "why1": "Helping you to collect data from every sale platform",
+      "why2": "More data reaching for development",
+      "why3": "Reach target customer actually need",
+      "why4": "Increase business plan performance"
+    }
+  },
+  "type_of_business":{
+    "business_owner":{
+      "mata":"A new business owner who is making a new brand or creating a business for their own should read this article. Sellsuki would like to suggest business creation steps that make your brand popular, rising in sales, and what steps should we start from?",
+      "text_banner": "Tips for a new business owner, how to make a successful brand?"
+    },
+    "online_merchant":{
+      "mata":"SME business owners who have to run a business alone or have few assistants. When business is starting to go, many problems come such as you can not do work in time or can't allocate time to work in other parts. Therefore, it might harm your business. If you're encountering these problems, whether sale planning, not enough goods storage or parcel packing. Today, Sellsuki has an assistant to solve these problems for your business. Let's go",
+      "text_banner": "SME business is growing, overwhelmed task, You should have an assistant to help your work.",
+      "header1": "Can not reach a market trend",
+      "h1_1":"don't <br>understand insight",
+      "h1_2":"Not trendy",
+      "d1_1" : "Although your business is stable or has a regular customer, we have to do marketing every time. Especially during the business growing time, Catching the social issues or topics point is essential. Therefore, customer demand reaching is a very important thing. So we can use data to improve communication which is suitable for target customers.",
+      "d1_2" : "FUSE- professional Social media marketers who can help you create business marketing on any platform. We have suggestion services that help to develop a business. Includes working with social listening that can help you reach market trends and customer favoring, more reach target groups, and take data to development.",
+      "header2": "Overwhelmed order, can't respond in time",
+      "h2_1" : "Admin can't work in time",
+      "h2_2" : "Slow response",
+      "h2_3" : "Customer order error",
+      "d2_1" : "In growing times, There have many orders from customers. This might make an admin unable to effectively response to those customer orders in time. Therefore, it makes a customer decide to buy with another store. The basic way that Sellsuki wants to suggest you is to set up the <a href='#' style='color:#469EEB;text-decoration: underline'>automatic responding system</a>, it will help you to manage and respond to the majority of the customer in time.",
+      "d2_2" : "Meanwhile, there might have some customers who will ask about your products and services. And don't want an automatic responding system. Therefore, it might make them dissatisfied. So, today Sellsuki has an assistant service <a href='/Solutions/Kaikong' style='color:#469EEB;text-decoration: underline'>Kaikong admin</a> that will help you to manage a customer order. The ability to respond to the customer in 15 hours (09:00-24:00) makes the business owner doesn't have to worry about this response part and let our professional admin take care of your business",
+      "header3": "Goods storage is insufficient, can not pack a parcel in time",
+      "h3_1" : "Insufficient storage",
+      "h3_2" : "Error order managing",
+      "h3_3" : "Can not pack a parcel in time",
+      "d3_1" : "Increasing the order amount, refers to making goods storage insufficient. In the past, you just stock your products at home. But when you have a higher ordering total, you can not pack and send it in time, and there is always an error in order management.",
+      "d3_2" : "<a href='/Solutions/Akita' style='color:#469EEB;text-decoration: underline'>Akita fulfillment</a> is a warehouse service that helps business owners reduce tasks whether storage goods, packing a parcel, parcel delivery including we have a system that has the ability to calculate product stock which helps you manage products in every order. Make you increase capability in packing and delivery. We can especially use these data to analyze and plan a business plan as well."
+    },
+    "corporate":{
+      "mata":"One-stop service of marketing campaign creator. We take care of providing digital marketing suggestions, strategizing a campaign, researching and analyzing markets. Includes analyzing target behavior by professional marketers who actually recognize a real business problem. Therefore we develop a campaign communication plan to reach the right target customer to push your business steps up.",
+      "text_banner": "Plan an important campaign to be memorable, reach a target customer before investing.",
+      "why": "Why do you have to choose Sellsuki?",
+      "why1": "We have professional teams who always take care of you to solve a problem",
+      "why2": "Working under the Data driven, understanding data and problems before planning and taking action",
+      "why3": "We have a partner that covers all social media platforms and top delivery providers",
+      "why4": "One-stop marketing creator service that takes care of every part whether planning until delivering goods to the customer",
+      "why5": "More than 7 years experience in Digital marketing"
+    }
+  }
+}
