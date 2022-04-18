@@ -1,5 +1,6 @@
 <template>
 <div>
+    <Cookie/>
     <Menu/>
     <nuxt/>
     <Footer/>

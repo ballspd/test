@@ -1,4 +1,30 @@
 {
+  "footer":{
+    "Service": "Service",
+    "OnlineAdvertising": "Online Advertising",
+    "Fulfillment": "Fulfillment",
+    "LINEAgency": "LINE Agency",
+    "DevelopWebsite": "Develop Website",
+    "ContentMarketing": "Content Marketing",
+    "DeliveryCompare": "Delivery Compare",
+    "CustomerDataPlatform": "Customer Data Platform",
+    "AboutUs": "About Us",
+    "Contact": "Contact",
+    "JoinUs": "Join Us",
+    "Portfolio": "Portfolio",
+    "Blog": "Blog"
+  },
+
+  "form":{
+    "FirstName": "First Name",
+    "LastName": "Last Name",
+    "Email": "Email",
+    "Tel": "Tel",
+    "Brand": "Brand",
+    "interestedabout": "interested about",
+    "Message": "Message"
+  },
+
   "home":{
     "YourRoadmap": "Let Your Business <br>Growth Together",
     "YourRoadmapM": "Let Your Business Growth Together",

@@ -65,6 +65,10 @@ export default {
     '@nuxtjs/markdownit',
     '@nuxtjs/gtm',
     'nuxt-facebook-pixel-module',
+    'cookie-universal-nuxt',
+    
+    // With options
+    ['cookie-universal-nuxt', { alias: 'cookiz' }],
   ],
 
   facebook: {
@@ -115,4 +119,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  generate: {
+    fallback: '404.html'
+  }
 }

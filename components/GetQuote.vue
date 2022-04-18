@@ -15,38 +15,38 @@
                 <form v-on:submit.prevent="submitForm">
                   <div class="row mt-4">
                     <div class="form-group col-6">
-                      <label class="text-s-16 text-white">ชื่อ*</label>
+                      <label class="text-s-16 text-white">{{ $t("form.FirstName") }}*</label>
                       <input v-model="form.fname" type="text" class="form-control mt-2" placeholder="First Name*">
                     </div>
                     <div class="form-group col-6">
-                      <label class="text-s-16 text-white">นามสกุล*</label>
+                      <label class="text-s-16 text-white">{{ $t("form.LastName") }}*</label>
                       <input v-model="form.lname" type="text" class="form-control mt-2" placeholder="Last Name*">
                     </div>
                     <div class="form-group col-6 mt-3">
-                      <label class="text-s-16 text-white">อีเมล*</label>
+                      <label class="text-s-16 text-white">{{ $t("form.Email") }}*</label>
                       <input v-model="form.email" type="email" class="form-control mt-2" placeholder="Email*">
                     </div>
                     <div class="form-group col-6 mt-3">
-                      <label class="text-s-16 text-white">เบอร์โทรศัพท์*</label>
+                      <label class="text-s-16 text-white">{{ $t("form.Tel") }}*</label>
                       <input v-model="form.tel" type="text" class="form-control mt-2" placeholder="Tel*">
                     </div>
                     <div class="form-group col-6 mt-3">
-                      <label class="text-s-16 text-white">ชื่อเเบรนด์*</label>
+                      <label class="text-s-16 text-white">{{ $t("form.Brand") }}*</label>
                       <input v-model="form.brand" type="text" class="form-control mt-2" placeholder="Brand*">
                     </div>
                     <div class="form-group col-6 mt-3">
-                      <label class="text-s-16 text-white">เลือกความต้องการ*</label>
+                      <label class="text-s-16 text-white">{{ $t("form.interestedabout") }}*</label>
                       <select v-model="form.interested" class="form-select mt-2" placeholder="interested about*">
                           <option selected value="">interested about*</option>
                           <option value="บริการทำโฆษณาบน Social Media">บริการทำโฆษณาบน Social Media</option>
                           <option value="บริการ Fulfillment เก็บ แพ็ก ส่ง">บริการ Fulfillment เก็บ แพ็ก ส่ง</option>
                           <option value="LINE Agency เปิดบัญชี LINE OA">LINE Agency เปิดบัญชี LINE OA</option>
-                          <option value="บริการจัดทำเว็บไซต์และระบบหลังบ้าน">บริการจัดทำเว็บไซต์และระบบหลังบ้าน</option>
+                          <option value="บริการจัดทำเว็บไซต์และระบบหลังบ้าน">บริการจัดทำเว็บไซต์, System, และ API</option>
                           <option value="บริการ Content Marketing และ แอดมิน">บริการ Content Marketing และ แอดมิน</option>
                       </select>
                     </div>
                     <div class="form-group col-12 mt-3">
-                      <label class="text-s-16 text-white">ข้อความ*</label>
+                      <label class="text-s-16 text-white">{{ $t("form.Message") }}*</label>
                       <textarea v-model="form.message" class="form-control mt-2" style="height:130px" placeholder="Message*"></textarea>
                     </div>
                   </div>
@@ -76,38 +76,38 @@
               <div class="col-12">
                 <form v-on:submit.prevent="submitForm">
                     <div class="form-group col-12">
-                      <label class="text-s-16 text-white">ชื่อ*</label>
+                      <label class="text-s-16 text-white">{{ $t("form.FirstName") }}*</label>
                       <input v-model="form.fname" type="text" class="form-control mt-2" placeholder="First Name*">
                     </div>
                     <div class="form-group col-12 mt-3">
-                      <label class="text-s-16 text-white">นามสกุล*</label>
+                      <label class="text-s-16 text-white">{{ $t("form.LastName") }}*</label>
                       <input v-model="form.lname" type="text" class="form-control mt-2" placeholder="Last Name*">
                     </div>
                     <div class="form-group col-12 mt-3">
-                      <label class="text-s-16 text-white">อีเมล*</label>
+                      <label class="text-s-16 text-white">{{ $t("form.Email") }}*</label>
                       <input v-model="form.email" type="email" class="form-control mt-2" placeholder="Email*">
                     </div>
                     <div class="form-group col-12 mt-3">
-                      <label class="text-s-16 text-white">เบอร์โทรศัพท์*</label>
+                      <label class="text-s-16 text-white">{{ $t("form.Tel") }}*</label>
                       <input v-model="form.tel" type="text" class="form-control mt-2" placeholder="Tel*">
                     </div>
                     <div class="form-group col-12 mt-3">
-                      <label class="text-s-16 text-white">ชื่อเเบรนด์*</label>
+                      <label class="text-s-16 text-white">{{ $t("form.Brand") }}*</label>
                       <input v-model="form.brand" type="text" class="form-control mt-2" placeholder="Brand*">
                     </div>
                     <div class="form-group col-12 mt-3">
-                      <label class="text-s-16 text-white">เลือกความต้องการ*</label>
+                      <label class="text-s-16 text-white">{{ $t("form.interestedabout") }}*</label>
                       <select v-model="form.interested" class="form-select mt-2" placeholder="interested about*">
                           <option selected value="">interested about*</option>
                           <option value="บริการทำโฆษณาบน Social Media">บริการทำโฆษณาบน Social Media</option>
                           <option value="บริการ Fulfillment เก็บ แพ็ก ส่ง">บริการ Fulfillment เก็บ แพ็ก ส่ง</option>
                           <option value="LINE Agency เปิดบัญชี LINE OA">LINE Agency เปิดบัญชี LINE OA</option>
-                          <option value="บริการจัดทำเว็บไซต์และระบบหลังบ้าน">บริการจัดทำเว็บไซต์และระบบหลังบ้าน</option>
+                          <option value="บริการจัดทำเว็บไซต์และระบบหลังบ้าน">บริการจัดทำเว็บไซต์, System, และ API</option>
                           <option value="บริการ Content Marketing และ แอดมิน">บริการ Content Marketing และ แอดมิน</option>
                       </select>
                     </div>
                     <div class="form-group col-12 mt-3">
-                      <label class="text-s-16 text-white">ข้อความ*</label>
+                      <label class="text-s-16 text-white">{{ $t("form.Message") }}*</label>
                       <textarea v-model="form.message" class="form-control mt-2" style="height:130px" placeholder="Message*"></textarea>
                     </div>
                   <div class="text-center mt-4 mb-2" style="width: 100%">

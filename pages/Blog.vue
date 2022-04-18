@@ -6,7 +6,7 @@
             <div class="row banner-hero">
                 <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="d-none d-md-block d-lg-block d-xl-block d-xxl-block">
-                        <p class="text-s-16 mt-150" style="color:#50151C;"><NuxtLink @click="scrollToTop" to="/">Home</NuxtLink> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">Blog</font></p>
+                        <p class="text-s-16 mt-150" style="color:#50151C;"><NuxtLink @click="scrollToTop" :to="localePath('/')">Home</NuxtLink> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">Blog</font></p>
                         <table class="align-middle" style="width: 100%;">
                             <td class="banner-height">
                                 <font class="font-wght" style="font-size:64px;color:#50151C">Blog</font>
@@ -16,8 +16,8 @@
                     </div>
                     <div class="d-block d-md-none d-lg-none d-xl-none d-xxl-none text-center ps-4 pe-4">
                         <p class="text-s-16 text-start" style="color:#50151C;margin-top:95px !important">
-                            <NuxtLink @click="scrollToTop" to="/" style="color:#50151C">Home</NuxtLink> <i class="bi bi-chevron-right"></i>
-                            <font class="text-s-16 text-w-700"><NuxtLink @click="scrollToTop" to="/Blog" style="color:#50151C"> Blog</NuxtLink></font>
+                            <NuxtLink @click="scrollToTop" :to="localePath('/')" style="color:#50151C">Home</NuxtLink> <i class="bi bi-chevron-right"></i>
+                            <font class="text-s-16 text-w-700"><NuxtLink @click="scrollToTop" :to="localePath('/Blog')" style="color:#50151C"> Blog</NuxtLink></font>
                         </p>
                         <font class="font-wght mt-3" style="font-size:36px;color:#50151C">Blog</font>
                         <p class="text-s-16" style="color:#50151C">ติดตามข่าวสาร และข้อมูลดี ๆ เกี่ยวกับ เทรนด์การตลาด และ e-Commerce ก่อนใครได้แล้ว ที่นี่!</p>
@@ -31,7 +31,7 @@
             <div class="crad mt-5">
                 <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
                     <div v-for="(data, index) in responseData" :key="index" class="mb-5">
-                        <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
+                        <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                         <div v-if="index == 0" class="row">
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img v-if="data.illustration != null" class="img-fluid img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText" style="width: 510px;height: 330px;"></div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="padding: 30px 10px 10px 10px;">
@@ -39,7 +39,7 @@
                                 <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                 <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
                                 <p class="text-limit-2 text-s-16" style="color:#373737;">{{data.description}}</p>
-                                <NuxtLink class="btn btn-transparent mt-2 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span>Read More</span></NuxtLink>
+                                <NuxtLink class="btn btn-transparent mt-2 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
                             </div>
                         </div>
                         </NuxtLink>
@@ -51,8 +51,8 @@
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                             <div class="row">
-                                                <div v-for="(data, index) in responseData" :key="index" :class="{'col-4':index < 3}">
-                                                    <NuxtLink class="row" v-if="index < 3" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
+                                                <div v-for="(data, index) in responseData" :key="index" :class="{'col-4':index < 4 && index != 0}">
+                                                    <NuxtLink class="row" v-if="index < 4 && index != 0" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                                         <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.alternativeText"></div>
                                                         <div class="col-6 p-1">                                                
                                                             <div class="btn lh-1 btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important"><span style="font-size:14px">NEW</span></div>
@@ -66,8 +66,8 @@
                                         </div>
                                         <div class="carousel-item">
                                             <div class="row">
-                                                <div v-for="(data, index) in responseData" :key="index" :class="{'col-4':index > 2}">
-                                                    <NuxtLink class="row" v-if="index > 2" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
+                                                <div v-for="(data, index) in responseData" :key="index" :class="{'col-4':index > 3 && index < 6}">
+                                                    <NuxtLink class="row" v-if="index > 3 && index < 6" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                                         <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.alternativeText"></div>
                                                         <div class="col-6 p-1">                                                
                                                             <div class="btn lh-1 btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important"><span style="font-size:14px">NEW</span></div>
@@ -95,7 +95,7 @@
                                                     <div class="row">
                                                         <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.alternativeText"></div>
                                                         <div class="col-6 p-2 ps-sm-3 pe-sm-3">                                                
-                                                            <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}" class="btn btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important;line-height: 1"><span style="font-size:14px">NEW</span></NuxtLink>
+                                                            <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})" class="btn btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important;line-height: 1"><span style="font-size:14px">NEW</span></NuxtLink>
                                                             <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:18px">{{data.title}}</p>
                                                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
                                                             <p class="text-limit-2 text-s-14 mb-0" style="color:#373737;">{{data.description}}</p>
@@ -187,12 +187,12 @@
                                 <font class="text-w-700" style="font-size:24px;color:#15304E">เทคนิคการขาย และการโฆษณา</font>
                             </div>
                             <div class="col-6 text-end">
-                                <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/All/8/เทคนิคการขาย และการโฆษณา' }"><font style="color:#807F7F;font-size: 14px">View all</font></NuxtLink>
+                                <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/All/8/เทคนิคการขาย และการโฆษณา' })"><font style="color:#807F7F;font-size: 14px">View all</font></NuxtLink>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac1" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
+                                <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                     <div class="row">
                                         <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                             <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
@@ -201,7 +201,7 @@
                                             <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                             <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                             <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                            <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span>Read More</span></NuxtLink>
+                                            <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
                                         </div>
                                     </div>
                                 </NuxtLink>
@@ -222,12 +222,12 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ Social Media</p>
                             </div>
                             <div class="col-6 text-end">
-                                <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/All/9/เทรนด์ Social Media'}"><font style="color:#807F7F;font-size: 14px">View all</font></NuxtLink>
+                                <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/All/9/เทรนด์ Social Media'})"><font style="color:#807F7F;font-size: 14px">View all</font></NuxtLink>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac2" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
+                                <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
@@ -236,7 +236,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span>Read More</span></NuxtLink>
+                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
                                     </div>
                                 </div>
                                 </NuxtLink>
@@ -257,12 +257,12 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ Market Place</p>
                             </div>
                             <div class="col-6 text-end">
-                                <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/All/10/เทรนด์ Market Place'}"><font style="color:#807F7F;font-size: 14px">View all</font></NuxtLink>
+                                <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/All/10/เทรนด์ Market Place'})"><font style="color:#807F7F;font-size: 14px">View all</font></NuxtLink>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac3" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
+                                <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
@@ -271,7 +271,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span>Read More</span></NuxtLink>
+                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
                                     </div>
                                 </div>
                                 </NuxtLink>
@@ -292,12 +292,12 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">เทรนด์ E-Commerce</p>
                             </div>
                             <div class="col-6 text-end">
-                                <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/All/11/เทรนด์ E-Commerce'}"><font style="color:#807F7F;font-size: 14px">View all</font></NuxtLink>
+                                <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/All/11/เทรนด์ E-Commerce'})"><font style="color:#807F7F;font-size: 14px">View all</font></NuxtLink>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac4" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
+                                <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
@@ -306,7 +306,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span>Read More</span></NuxtLink>
+                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
                                     </div>
                                 </div>
                                 </NuxtLink>
@@ -327,12 +327,12 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">ครบจบ ทุกเรื่อง LINE</p>
                             </div>
                             <div class="col-6 text-end">
-                                <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/All/12/ครบจบ ทุกเรื่อง LINE'}"><font style="color:#807F7F;font-size: 14px">View all</font></NuxtLink>
+                                <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/All/12/ครบจบ ทุกเรื่อง LINE'})"><font style="color:#807F7F;font-size: 14px">View all</font></NuxtLink>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac5" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
+                                <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
@@ -341,7 +341,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span>Read More</span></NuxtLink>
+                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
                                     </div>
                                 </div>
                                 </NuxtLink>
@@ -362,12 +362,12 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">Martech</p>
                             </div>
                             <div class="col-6 text-end">
-                                <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/All/13/Martech'}"><font style="color:#807F7F;font-size: 14px">View all</font></NuxtLink>
+                                <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/All/13/Martech'})"><font style="color:#807F7F;font-size: 14px">View all</font></NuxtLink>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac6" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
+                                <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
@@ -376,7 +376,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span>Read More</span></NuxtLink>
+                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
                                     </div>
                                 </div>
                                 </NuxtLink>
@@ -397,12 +397,12 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">Digital Transformation</p>
                             </div>
                             <div class="col-6 text-end">
-                                <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/All/14/Digital Transformation'}"><font style="color:#807F7F;font-size: 14px">View all</font></NuxtLink>
+                                <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/All/14/Digital Transformation'})"><font style="color:#807F7F;font-size: 14px">View all</font></NuxtLink>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac7" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
+                                <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
@@ -411,7 +411,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span>Read More</span></NuxtLink>
+                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
                                     </div>
                                 </div>
                                 </NuxtLink>
@@ -432,12 +432,12 @@
                                 <p class="text-w-700" style="font-size:24px;color:#15304E">อื่น ๆ</p>
                             </div>
                             <div class="col-6 text-end">
-                                <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/All/15/อื่นๆ' }"><font style="color:#807F7F;font-size: 14px">View all</font></NuxtLink>
+                                <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/All/15/อื่นๆ' })"><font style="color:#807F7F;font-size: 14px">View all</font></NuxtLink>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div v-for="data in responseDatac8" :key="data.id" class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
+                                <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
@@ -446,7 +446,7 @@
                                         <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span>Read More</span></NuxtLink>
+                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
                                     </div>
                                 </div>
                                 </NuxtLink>

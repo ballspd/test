@@ -7,9 +7,11 @@
       </a>
       <div class="ml-2">
         <ul class="navbar-nav navbar-custom shadow text-s-16 text-w-500 menu-bar" style="padding:0px !important;width: 100% !important;"> <!-- 797px -->
+        <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath('/')">
           <li class="nav-item navbar-item" style="border-radius: 50px 0px 0px 50px;">
-            <NuxtLink @click="scrollToTop" style="padding-left:19px !important" class="nav-link text-c-menu" aria-current="page" to="/">Home</NuxtLink>
+            <a style="padding-left:19px !important" class="nav-link text-c-menu">Home</a>
           </li>
+        </NuxtLink>
           <!-- <li class="nav-item navbar-item">
             <NuxtLink @click="scrollToTop" class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Services <i class="bi bi-chevron-down" style="font-size: 15px;"></i></NuxtLink>
             <ul class="dropdown" style="padding: 30px 50px 30px 50px;width: 1380px;left: 50%;">
@@ -90,39 +92,49 @@
                 <div class="col-6 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;height:415px;width: 235px !important;">
                   <a href="#"><img src="./../assets/icon/icon-menu1.png" alt="icon-menu1"><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Types of Business</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">
-                  <NuxtLink @click="scrollToTop" to="/TypesOfBusiness/BusinessOwner"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Business Owner</p></NuxtLink><br>
-                  <NuxtLink @click="scrollToTop" to="/TypesOfBusiness/OnlineMerchant"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Online Merchant</p></NuxtLink><br>
-                  <NuxtLink @click="scrollToTop" to="/TypesOfBusiness/Corporate"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Corporate</p></NuxtLink>
+                  <NuxtLink @click="scrollToTop" :to="localePath('/TypesOfBusiness/BusinessOwner')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Business Owner</p></NuxtLink><br>
+                  <NuxtLink @click="scrollToTop" :to="localePath('/TypesOfBusiness/OnlineMerchant')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Online Merchant</p></NuxtLink><br>
+                  <NuxtLink @click="scrollToTop" :to="localePath('/TypesOfBusiness/Corporate')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Corporate</p></NuxtLink>
                 </div>
                 <div class="col-6 hover-manu" style="padding-right: 20px !important;padding-left: 20px !important;width: 260px !important;">
                   <a href="#"><img src="./../assets/icon/icon-menu2.png" alt="icon-menu2"><font class="text-w-700 text-s-16" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Services-Products</font></a>
                   <hr style="border: 1px solid #E7E7EA;width: 182px;height: 0px;">
-                  <nuxt-link @click="scrollToTop" to="/Solutions/Fuse"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Fuse Advertising</p></nuxt-link><br>
-                  <NuxtLink @click="scrollToTop" to="/Solutions/Line"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE Agency</p></NuxtLink><br>
-                  <NuxtLink @click="scrollToTop" to="/Solutions/Kaikong"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Kaikong Content Marketing</p></NuxtLink><br>
-                  <NuxtLink @click="scrollToTop" to="/Solutions/Beary"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Beary Web & Tech Service</p></NuxtLink><br>
-                  <NuxtLink @click="scrollToTop" to="/Solutions/Akita"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Akita Fulfillment</p></NuxtLink><br>
-                  <NuxtLink @click="scrollToTop" to="/Solutions/Shipmunk"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Shipmunk : Dropshipping</p></NuxtLink><br>
-                  <NuxtLink @click="scrollToTop" to="/Solutions/Oc2Plus"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Oc2Plus : Customer Data<br>Platform</p></NuxtLink> 
+                  <nuxt-link @click="scrollToTop" :to="localePath('/Solutions/Fuse')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Fuse Advertising</p></nuxt-link><br>
+                  <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Line')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">LINE Agency</p></NuxtLink><br>
+                  <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Kaikong')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Kaikong Content Marketing</p></NuxtLink><br>
+                  <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Beary')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Beary Web & Tech Service</p></NuxtLink><br>
+                  <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Akita')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Akita Fulfillment</p></NuxtLink><br>
+                  <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Shipmunk')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Shipmunk : Delivery Booking</p></NuxtLink><br>
+                  <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Oc2Plus')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">Oc2Plus : Customer Data<br>Platform</p></NuxtLink> 
                 </div>
               </div>
             </ul>
           </li>
+          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'AboutUs' })">
           <li class="nav-item navbar-item">
-            <NuxtLink @click="scrollToTop" class="nav-link border-menu text-c-menu" aria-current="page" to="/AboutUs">About Us</NuxtLink>
+            <a class="nav-link border-menu text-c-menu">About Us</a>
           </li>
+          </NuxtLink>
+          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'Portfolio' })">
           <li class="nav-item navbar-item">
-            <NuxtLink @click="scrollToTop" class="nav-link border-menu text-c-menu" aria-current="page" to="/Portfolio">Portfolio</NuxtLink>
+            <a class="nav-link border-menu text-c-menu">Portfolio</a>
           </li>
+          </NuxtLink>
+          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'Blog' })">
           <li class="nav-item navbar-item">
-            <NuxtLink @click="scrollToTop" class="nav-link border-menu text-c-menu" aria-current="page" to="/Blog">Blog</NuxtLink>
+            <a class="nav-link border-menu text-c-menu">Blog</a>
           </li>
+          </NuxtLink>
+          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'ContactUs' })">
           <li class="nav-item navbar-item">
-            <NuxtLink @click="scrollToTop" class="nav-link border-menu text-c-menu" aria-current="page" to="/ContactUs">Contact Us</NuxtLink>
+            <a class="nav-link border-menu text-c-menu">Contact Us</a>
           </li>
+          </NuxtLink>
+          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'JoinUs' })">
           <li class="nav-item navbar-item" style="border-radius: 0px 50px 50px 0px;">
-            <NuxtLink @click="scrollToTop" class="nav-link border-menu text-c-menu" aria-current="page" to="/JoinUs">Join Us</NuxtLink>
+            <a class="nav-link border-menu text-c-menu">Join Us</a>
           </li>
+          </NuxtLink>
         </ul>
       </div>
       <div class="ml-2">

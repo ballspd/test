@@ -32,7 +32,15 @@
                                 >
                                     <img width="45" src="./../../../../../assets/icon/entypo-social_facebook-with-circle.png">
                                 </ShareNetwork>
-                                <img width="45" src="./../../../../../assets/icon/entypo-social_twitter-with-circle.png">
+                                <ShareNetwork
+                                    network="twitter"
+                                    :url="url"
+                                    :title="responseData.title"
+                                    :description="responseData.description"
+                                    twitter-user="Sellsuki Co. Ltd">
+                                    
+                                    <img width="45" src="./../../../../../assets/icon/entypo-social_twitter-with-circle.png">
+                                </ShareNetwork>
                             </div>
                             <div class="col-6 col-md-7 col-xl-9 p-2">
                                 <i class="bi bi-eye ms-lg-5 ms-3"></i>
@@ -45,7 +53,7 @@
                             </div>
                             <div v-else class="mt-3 mb-3">
                             </div>
-                            <div v-if="data.text != null" class="col-12">
+                            <div v-if="data.text != null" class="col-12 show-text-color">
                                 <div v-html="$md.render(data.text)"></div>
                             </div>
                             <div v-else class="mt-3 mb-3">
@@ -110,7 +118,7 @@ export default {
         //console.log(view)
         this.count = parseInt(view) + 1
         //console.log(this.count)
-        axios.put(process.env.API_URL + 'blogs/'+ this.$route.params.id, {view: this.count}, {
+        axios.put('https://login.sellsuki.co.th/blogs/'+ this.$route.params.id, {view: this.count}, {
             headers: {
                 'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjQ5MjMxMDIzLCJleHAiOjE2NTE4MjMwMjN9.7X3x0UwOJOUdyaCXLS6m_MRZR9uuF7ppPPiCyN9zcJc`
             }
@@ -123,13 +131,16 @@ export default {
         if(/^\?fbclid=/.test(location.search)){
             location.replace(location.href.replace(/\?fbclid.+/, ""));
         }
-
-        this.addView(this.responseData.view)
+        axios.get('https://login.sellsuki.co.th/blogs/' + this.$route.params.id+'?_locale='+ this.lang)
+        .then(response => (this.addView(response.data.view)))
     }
 }
 </script>
 
 <style scoped>
+.show-text-color a{
+    color: #0d6efd !important;
+}
 
 .card {
   background: #FBFBFB;

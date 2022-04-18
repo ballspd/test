@@ -6,7 +6,7 @@
             <div class="row banner-hero">
                     <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="d-none d-md-block">
-                            <p class="text-s-16 mt-150"><NuxtLink @click="scrollToTop" to="/" style="color:#50151C;">Home</NuxtLink> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">About Us</font></p>
+                            <p class="text-s-16 mt-150"><NuxtLink @click="scrollToTop" :to="localePath('/')" style="color:#50151C;">Home</NuxtLink> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">About Us</font></p>
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
                                     <h1 class="font-wght text-s-64" style="color:#50151C">ABOUT US</h1>
@@ -14,7 +14,7 @@
                             </table>
                         </div>
                         <div class="d-block d-md-none text-center text-md-start ps-sm-3 pe-sm-3 ps-4 pe-4">
-                            <p class="text-s-14 pb-3 text-start" style="color:#50151C;margin-top:95px !important"><NuxtLink @click="scrollToTop" to="/" style="color:#50151C;">Home</NuxtLink> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">About Us</font></p>
+                            <p class="text-s-14 pb-3 text-start" style="color:#50151C;margin-top:95px !important"><NuxtLink @click="scrollToTop" :to="localePath('/')" style="color:#50151C;">Home</NuxtLink> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">About Us</font></p>
                             <h1 class="font-wght text-s-36" style="color:#50151C">ABOUT US</h1>
                         </div>
                     </div>

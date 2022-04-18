@@ -6,7 +6,7 @@
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div v-for="(data, index) in responseData" :key="index" class="carousel-item" :class="{'active': index == 0}">
-                        <NuxtLink @click="scrollToTop" :to="{ path: '/Portfolio/Detail/'+data.id+'' , query: { type: data.bu_category.name } }">
+                        <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Portfolio/Detail/'+data.id+'' , query: { type: data.bu_category.name } })">
                         <div class="row">
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img v-if="data.illustration != null" class="d-block image-review" :src="data.illustration.url" :alt="data.illustration.alternativeText"></div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-xxl-5 p-lg-5 p-sm-3 p-3">

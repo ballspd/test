@@ -68,7 +68,7 @@
                                     </div>
                                     <div v-else class="mt-3 mb-3">
                                     </div>
-                                    <div v-if="data.text != null" class="col-12">
+                                    <div v-if="data.text != null" class="col-12 show-text-color">
                                         <p v-html="$md.render(data.text)"></p>
                                     </div>
                                     <div v-else class="mt-3 mb-3">
@@ -139,7 +139,7 @@ export default {
         //console.log(this.count)
         axios.put(process.env.API_URL+'portfolios/'+ this.$route.params.id, {view: this.count}, {
             headers: {
-                'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjQ2Mjg3OTE5LCJleHAiOjE2NDg4Nzk5MTl9.vNDWq9auv0zy3i4AZba2IUR8zbezstz1Pb67Wr_0a2M`
+                'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjQ5MjMxMDIzLCJleHAiOjE2NTE4MjMwMjN9.7X3x0UwOJOUdyaCXLS6m_MRZR9uuF7ppPPiCyN9zcJc`
             }
         })
         .then()
@@ -154,6 +154,9 @@ export default {
 </script>
 
 <style scoped>
+.show-text-color a{
+    color: #0d6efd !important;
+}
 
 .card {
   background: #FBFBFB;

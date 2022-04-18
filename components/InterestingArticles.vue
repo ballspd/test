@@ -8,13 +8,13 @@
             </div>
             <carousel v-bind="options" :perPage="3">
               <slide v-for="(data, index) in responseData" :key="index" class="col-4 d-flex justify-content-center ps-2 pe-2" style="padding-top: 30px !important;">
-                <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}" style="color:unset !important">
+                <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})" style="color:unset !important">
                     <div class="card" style="border-radius: 10px">
                       <img v-if="data.illustration != null" class="card-img-top img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                       <div class="card-body">
                         <font class="card-title text-limit-1" style="font-weight: bold;font-size: 24px;">{{data.title}}</font>
                         <p style="margin-bottom: 0rem;" class="card-text text-s-16 text-limit-2">{{data.description}}</p>
-                        <NuxtLink class="btn btn-transparent hvr-back-pulse position-btn mt-1" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span class="m-auto">Read More</span></NuxtLink>
+                        <NuxtLink class="btn btn-transparent hvr-back-pulse position-btn mt-1" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span class="m-auto">Read More</span></NuxtLink>
                       </div>
                     </div>
                 </NuxtLink>
@@ -27,13 +27,13 @@
               </div>
               <carousel v-bind="options" :perPage="1">
                 <slide v-for="(data, index) in responseData" :key="index" class="col-4 d-flex justify-content-center ps-2 pe-2" style="padding-top: 30px !important;">
-                  <NuxtLink @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}" style="color:unset !important">
+                  <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})" style="color:unset !important">
                       <div class="card" style="border-radius: 10px">
                         <img v-if="data.illustration != null" class="card-img-top img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                         <div class="card-body">
                           <font class="card-title text-limit-1" style="font-weight: bold;font-size: 24px;">{{data.title}}</font>
                           <p style="margin-bottom: 0rem;" class="card-text text-s-16 text-limit-2">{{data.description}}</p>
-                          <NuxtLink class="btn btn-transparent hvr-back-pulse position-btn mt-1" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span class="m-auto">Read More</span></NuxtLink>
+                          <NuxtLink class="btn btn-transparent hvr-back-pulse position-btn mt-1" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span class="m-auto">Read More</span></NuxtLink>
                         </div>
                       </div>
                   </NuxtLink>

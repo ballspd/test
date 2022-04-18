@@ -26,7 +26,7 @@ export default (_, inject) => {
                     hid: 'og-title', 
                     property: 'og:title', 
                     name: 'og:title', 
-                    content: data.title || 'Home'
+                    content: data.title
                 },
                 { 
                     hid: 'og-description', 
@@ -38,13 +38,39 @@ export default (_, inject) => {
                     hid: 'og-image', 
                     property: 'og:image', 
                     name: 'og:image', 
-                    content: data.illustration || '	https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Home_826a845399.webp'
+                    content: data.illustration || 'https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Home_826a845399.webp'
                 },
                 { 
                     hid: 'og-url', 
                     property: 'og:url', 
                     name: 'og:url', 
                     content: data.url || 'https://staging-sellsuki.bearyweb.com'
+                },
+                { 
+                    hid: 'twitter-title', 
+                    name: 'twitter:title', 
+                    content: data.title
+                },
+                { 
+                    hid: 'twitter-description', 
+                    name: 'twitter:description', 
+                    content: data.description || 'Sellsuki บริการ Solution ครบวงจรสำหรับคนทำธุรกิจออนไลน์ โฆษณาออนไลน์ วางแผนคอนเทนต์ ออกแบบเว็บไซต์ และคลังสินค้าครบวงจร'
+                },
+                { 
+                    hid: 'twitter-image', 
+                    name: 'twitter:image', 
+                    content: data.illustration || 'https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Home_826a845399.webp'
+                },
+                { 
+                    hid: 'twitter-url', 
+                    property: 'twitter:url', 
+                    name: 'twitter:url', 
+                    content: data.url || 'https://staging-sellsuki.bearyweb.com'
+                },
+                { 
+                    hid: 'twitter-card', 
+                    name: 'twitter:card',
+                    content: data.description || 'Sellsuki บริการ Solution ครบวงจรสำหรับคนทำธุรกิจออนไลน์ โฆษณาออนไลน์ วางแผนคอนเทนต์ ออกแบบเว็บไซต์ และคลังสินค้าครบวงจร'
                 }
 
             ],

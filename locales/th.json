@@ -1,4 +1,30 @@
 {
+  "footer":{
+    "Service": "บริการของเรา",
+    "OnlineAdvertising": "ลงโฆษณาออนไลน์",
+    "Fulfillment": "คลังสินค้าครบวงจร",
+    "LINEAgency": "เปิดบัญชี LINE OA",
+    "DevelopWebsite": "ทำเว็บไซต์",
+    "ContentMarketing": "ทำคอนเทนต์",
+    "DeliveryCompare": "เปรียบเทียบค่าขนส่ง",
+    "CustomerDataPlatform": "Customer Data Platform",
+    "AboutUs": "เกี่ยวกับเรา",
+    "Contact": "ติดต่อเรา",
+    "JoinUs": "ร่วมงานกับเรา",
+    "Portfolio": "Portfolio",
+    "Blog": "Blog"
+  },
+
+  "form":{
+    "FirstName": "ชื่อ",
+    "LastName": "นามสกุล",
+    "Email": "อีเมล",
+    "Tel": "เบอร์โทรศัพท์",
+    "Brand": "ชื่อเเบรนด์",
+    "interestedabout": "เลือกความต้องการ",
+    "Message": "ข้อความ"
+  },
+
   "home":{
     "YourRoadmap": "Let Your Business <br>Growth Together",
     "YourRoadmapM": "Let Your Business Growth Together",

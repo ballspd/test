@@ -102,7 +102,7 @@
                                     <a @click="type = 'Shipmunk',Akita = true,Fuse = true,Line = true,Beary = true,Kaikong = true,Shipmunk = false,Oc2Plus = true" style="cursor: pointer;">
                                         <div class="hover-logo" :class="{'filter-gray':Shipmunk}">
                                             <img class="item-center" src="./../assets/logo/shipmunk.png" alt="">
-                                            <font class="text-s-16" style="color:#0B195E">Shipmunk : Dropshipping</font>
+                                            <font class="text-s-16" style="color:#0B195E">Shipmunk : Delivery Booking</font>
                                         </div>
                                     </a>
                                 </div>
