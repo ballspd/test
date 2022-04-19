@@ -7,9 +7,11 @@
       </a>
       <div class="ml-2">
         <ul class="navbar-nav navbar-custom shadow text-s-16 text-w-500 menu-bar" style="padding:0px !important;width: 100% !important;"> <!-- 797px -->
+        <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath('/')">
           <li class="nav-item navbar-item" style="border-radius: 50px 0px 0px 50px;">
-            <NuxtLink :to="localePath('/')" style="padding-left:19px !important" class="nav-link text-c-menu">Home</NuxtLink>
+            <p style="padding-left:19px !important" class="nav-link text-c-menu">Home</p>
           </li>
+        </NuxtLink>
           <!-- <li class="nav-item navbar-item">
             <NuxtLink @click="scrollToTop" class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Services <i class="bi bi-chevron-down" style="font-size: 15px;"></i></NuxtLink>
             <ul class="dropdown" style="padding: 30px 50px 30px 50px;width: 1380px;left: 50%;">
@@ -108,6 +110,31 @@
               </div>
             </ul>
           </li>
+          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'AboutUs' })">
+          <li class="nav-item navbar-item">
+            <p class="nav-link border-menu text-c-menu">About Us</p>
+          </li>
+          </NuxtLink>
+          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'Portfolio' })">
+          <li class="nav-item navbar-item">
+            <p class="nav-link border-menu text-c-menu">Portfolio</p>
+          </li>
+          </NuxtLink>
+          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'Blog' })">
+          <li class="nav-item navbar-item">
+            <p class="nav-link border-menu text-c-menu">Blog</p>
+          </li>
+          </NuxtLink>
+          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'ContactUs' })">
+          <li class="nav-item navbar-item">
+            <p class="nav-link border-menu text-c-menu">Contact Us</p>
+          </li>
+          </NuxtLink>
+          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'JoinUs' })">
+          <li class="nav-item navbar-item" style="border-radius: 0px 50px 50px 0px;">
+            <p class="nav-link border-menu text-c-menu">Join Us</p>
+          </li>
+          </NuxtLink>
         </ul>
       </div>
       <div class="ml-2">
