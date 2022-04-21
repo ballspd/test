@@ -9,7 +9,7 @@
         <ul class="navbar-nav navbar-custom shadow text-s-16 text-w-500 menu-bar" style="padding:0px !important;width: 100% !important;"> <!-- 797px -->
         <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath('/')">
           <li class="nav-item navbar-item" style="border-radius: 50px 0px 0px 50px;">
-            <p style="padding-left:19px !important" class="nav-link text-c-menu">Home</p>
+            <div style="padding-left:19px !important" class="nav-link text-c-menu">Home</div>
           </li>
         </NuxtLink>
           <!-- <li class="nav-item navbar-item">
@@ -112,27 +112,27 @@
           </li>
           <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'AboutUs' })">
           <li class="nav-item navbar-item">
-            <p class="nav-link border-menu text-c-menu">About Us</p>
+            <div class="nav-link border-menu text-c-menu">About Us</div>
           </li>
           </NuxtLink>
           <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'Portfolio' })">
           <li class="nav-item navbar-item">
-            <p class="nav-link border-menu text-c-menu">Portfolio</p>
+            <div class="nav-link border-menu text-c-menu">Portfolio</div>
           </li>
           </NuxtLink>
           <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'Blog' })">
           <li class="nav-item navbar-item">
-            <p class="nav-link border-menu text-c-menu">Blog</p>
+            <div class="nav-link border-menu text-c-menu">Blog</div>
           </li>
           </NuxtLink>
           <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'ContactUs' })">
           <li class="nav-item navbar-item">
-            <p class="nav-link border-menu text-c-menu">Contact Us</p>
+            <div class="nav-link border-menu text-c-menu">Contact Us</div>
           </li>
           </NuxtLink>
           <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'JoinUs' })">
           <li class="nav-item navbar-item" style="border-radius: 0px 50px 50px 0px;">
-            <p class="nav-link border-menu text-c-menu">Join Us</p>
+            <div class="nav-link border-menu text-c-menu">Join Us</div>
           </li>
           </NuxtLink>
         </ul>
@@ -218,6 +218,11 @@ export default {
 }
 .hover-manu a p:hover:after { 
   width: 100%; 
+}
+
+.menu-bar li:hover div {
+  color:#FFFFFF !important;
+  border: 0;
 }
 </style>
 

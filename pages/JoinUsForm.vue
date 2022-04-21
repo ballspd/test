@@ -22,23 +22,35 @@
                         <div class="row">
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">First Name/ชื่อ<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control mt-2" v-model="firstName" id="firstName" name="firstName">
+                                <input type="text" class="form-control mt-2" :class="{'border border-danger': validate && !firstName}" v-model="firstName" id="firstName" name="firstName">
+                                <div v-if="validate">
+                                    <p v-if="!firstName" class="text-danger">กรุณาระบุ</p>
+                                </div>
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">Last Name/นามสกุล<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control mt-2" v-model="lastName" id="lastName" name="lastName">
+                                <input type="text" class="form-control mt-2 " :class="{'border border-danger': validate && !lastName}" v-model="lastName" id="lastName" name="lastName">
+                                <div v-if="validate">
+                                    <p v-if="!lastName" class="text-danger">กรุณาระบุ</p>
+                                </div>
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">Email/อีเมล<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control mt-2" v-model="email" id="email" name="email">
+                                <input type="text" class="form-control mt-2" :class="{'border border-danger': validate && !email}" v-model="email" id="email" name="email">
+                                <div v-if="validate">
+                                    <p v-if="!email" class="text-danger">กรุณาระบุ</p>
+                                </div>
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">Phone Number/เบอร์โทรศัพท์<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control mt-2" v-model="phoneNumber" id="phoneNumber" name="phoneNumber">
+                                <input type="text" class="form-control mt-2" :class="{'border border-danger': validate && !phoneNumber}" v-model="phoneNumber" id="phoneNumber" name="phoneNumber">
+                                <div v-if="validate">
+                                    <p v-if="!phoneNumber" class="text-danger">กรุณาระบุ</p>
+                                </div>
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">How did you hear of this job vacancy? <br>คุณรู้จักตำแหน่งงานนี้ได้อย่างไร?<span class="text-danger">*</span></label>
-                                <select class="form-select mt-2" placeholder="Please Select/กรุณาเลือก" v-model="jobVacancy" id="jobVacancy" name="jobVacancy">
+                                <select class="form-select mt-2" :class="{'border border-danger': validate && !jobVacancy}" placeholder="Please Select/กรุณาเลือก" v-model="jobVacancy" id="jobVacancy" name="jobVacancy">
                                     <option selected value="">Please Select/กรุณาเลือก</option>
                                     <option value="Jobsdb">Jobsdb</option>
                                     <option value="Jobthai">Jobthai</option>
@@ -47,26 +59,41 @@
                                     <option value="Blognone">Blognone</option>
                                     <option value="อื่นๆ เช่นการบอกต่อ">อื่นๆ เช่นการบอกต่อ</option>
                                 </select>
+                                <div v-if="validate">
+                                    <p v-if="!jobVacancy" class="text-danger">กรุณาระบุ</p>
+                                </div>
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;"><br>Position applied for/ตำแหน่งที่สนใจ<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control mt-2" v-model="position" id="position" name="position">
+                                <input type="text" class="form-control mt-2" :class="{'border border-danger': validate && !position}" v-model="position" id="position" name="position">
+                                <div v-if="validate">
+                                    <p v-if="!position" class="text-danger">กรุณาระบุ</p>
+                                </div>
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">Expected salary/เงินเดือนที่คาดหวัง<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control mt-2" v-model="expectedSalary" id="expectedSalary" name="expectedSalary">
+                                <input type="text" class="form-control mt-2" :class="{'border border-danger': validate && !expectedSalary}" v-model="expectedSalary" id="expectedSalary" name="expectedSalary">
+                                <div v-if="validate">
+                                    <p v-if="!expectedSalary" class="text-danger">กรุณาระบุ</p>
+                                </div>
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">Resume/CV<span class="text-danger">*</span></label>
                                 <div class="input-group mb-3 mt-2">
                                     <input type="file" ref="file" class="form-control" @change="onChangeFileUpload()" id="inputGroupFile" hidden>
-                                    <input type="text" class="form-control cursor-pointer" :value="filename" for="inputGroupFile" readonly>
+                                    <input type="text" class="form-control cursor-pointer" :class="{'border border-danger': validate && !filename}" :value="filename" for="inputGroupFile" readonly>
                                     <label class="input-group-text text-s-14 cursor-pointer" for="inputGroupFile" style="background: #FF773B;color: #FFFFFF;">Choose File</label>
+                                </div>
+                                <div v-if="validate" style="margin-top:-15px">
+                                    <p v-if="!filename" class="text-danger">กรุณาระบุ</p>
                                 </div>
                             </div>
                             <div class="form-group col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">Tell us about yourself <br>อยากบอกอะไรให้เรารู้เกี่ยวกับตัวคุณ*<span class="text-danger">*</span></label>
-                                <textarea class="form-control mt-2" style="height:180px" v-model="tellUs" id="tellUs" name="tellUs"></textarea>
+                                <textarea class="form-control mt-2" :class="{'border border-danger': validate && !tellUs}" style="height:180px" v-model="tellUs" id="tellUs" name="tellUs"></textarea>
+                                <div v-if="validate">
+                                    <p v-if="!tellUs" class="text-danger">กรุณาระบุ</p>
+                                </div>
                             </div>
 
                         </div>
@@ -99,6 +126,9 @@
                                     <label class="form-check-label" for="flexCheckChecked">
                                         ยินยอมให้ใช้หรือเปิดเผยข้อมูลส่วนบุคคลของผู้สมัคร
                                     </label>
+                                </div>
+                                <div v-if="validate">
+                                    <p v-if="!checkbox" class="text-danger">กรุณายินยอมให้ใช้หรือเปิดเผยข้อมูลส่วนบุคคลของผู้สมัคร</p>
                                 </div>
                             </div>
                             <hr class="mt-5 mb-3" style="border: 1px solid #E5E5E5;">
@@ -136,6 +166,7 @@ export default {
     data() {
       return {
         responseData:[],
+        validate:false,
         files:'',
         filename:'',
         firstName:'',
@@ -170,19 +201,11 @@ export default {
 
         submitForm(){
             if(this.filename == '' || this.firstName == '' || this.lastName == '' || this.email == '' || this.phoneNumber == '' || this.jobVacancy == '' || this.position == '' || this.expectedSalary == '' || this.tellUs == ''){
-                this.$swal.fire(
-                                'ข้อมูลไม่ครบถ้วน',
-                                'กรุณากรอกข้อมูลให้ครบถ้วน',
-                                'warning'
-                            )
+                this.validate = true
                 return false
             }
             if(this.checkbox != true){
-                this.$swal.fire(
-                                'ยินยอมให้ใช้ข้อมูล',
-                                'กรุณายินยอมให้ใช้หรือเปิดเผยข้อมูลส่วนบุคคลของผู้สมัคร',
-                                'warning'
-                            )
+                this.validate = true
                 return false
             }
 
@@ -202,33 +225,9 @@ export default {
                     console.log('FAILURE!!');
                 });
             }
-            
-            this.$swal.fire({
-                title: 'Are you sure?',
-                text: "You want to send a message",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Confilm'
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        try {
-                            this.sendEmail()
-                            this.$swal.fire(
-                                'Success',
-                                'Send information successfully',
-                                'success'
-                            )
-                        } catch(error) {
-                            this.$swal.fire({
-                                icon: 'error',
-                                title: 'Oops...',
-                                text: error,
-                            })
-                        }
-                    }
-                })
+            if(this.filename != '' && this.firstName != '' && this.lastName != '' && this.email != '' && this.phoneNumber != '' && this.jobVacancy != '' && this.position != '' && this.expectedSalary != '' && this.tellUs != ''){
+                this.sendEmail();
+            }
         },
         sendEmail() {
             var name = this.firstName + ' ' + this.lastName

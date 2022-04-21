@@ -242,81 +242,59 @@ export default {
     methods:{
         submitForm() {
             if(this.form.fname == '' || this.form.lname == '' || this.form.tel == '' || this.form.email == '' || this.form.brand == '' || this.form.interested == '' || this.form.message == ''){
-                this.$swal.fire(
-                                'ข้อมูลไม่ครบถ้วน',
-                                'กรุณากรอกข้อมูลให้ครบถ้วน',
-                                'warning'
-                            )
                 return false
             }
-            this.$swal.fire({
-                title: 'Are you sure?',
-                text: "You want to send a message",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Confilm'
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                      var bu = ""
-                        if(this.type == "Fuse"){
-                          bu = "82"
-                        }else if (this.type == "Line"){
-                          bu = "83"
-                        }else if (this.type == "Beary"){
-                          bu = "86"
-                        }else if (this.type == "Shipmunk"){
-                          bu = ""
-                        }else if (this.type == "Kaikong"){
-                          bu = "84"
-                        }else if (this.type == "Oc2Plus"){
-                          bu = ""
-                        }else if (this.type == "Akita"){
-                          bu = "85"
-                        }
-                        var fullname = this.form.fname + " " + this.form.lname
-                        const data = { 
-                            "title": fullname + ' ' + bu,
-                            "owner_id": 6542084,
-                            "person_id": null,
-                            "organization_id": null,
-                            "dd1bbc90338efc249596b00527d3d2d47ae4fb46" : fullname,
-                            "f4f7afcb9529346468dd737251033edf6c04847b": this.form.tel,
-                            "1681c8caf179eaa804c3abe3bdd3456bf053fd38": this.form.email,
-                            "1bc506f7722eb25f5f7bd1fdfaad6d06ebbe14b4": this.form.message,
-                            "0241c0c2c487c8f1fb6c09a1c20f0bc343466a53": this.form.brand,
-                            "c8a12d868709dfba7851c4a17313adc3eb92b8f9": this.form.interested,
-                            "6bfcbe93be86dd7661959021d28399ed876670f3": bu,
-                        };
+            if (this.form.fname != '' && this.form.lname != '' && this.form.tel != '' && this.form.email != '' && this.form.brand != '' && this.form.interested != '' && this.form.message != '') {
+              var bu = ""
+                if(this.type == "Fuse"){
+                  bu = "82"
+                }else if (this.type == "Line"){
+                  bu = "83"
+                }else if (this.type == "Beary"){
+                  bu = "86"
+                }else if (this.type == "Shipmunk"){
+                  bu = ""
+                }else if (this.type == "Kaikong"){
+                  bu = "84"
+                }else if (this.type == "Oc2Plus"){
+                  bu = ""
+                }else if (this.type == "Akita"){
+                  bu = "85"
+                }
+                var fullname = this.form.fname + " " + this.form.lname
+                const data = { 
+                    "title": fullname + ' (' + this.form.interested + ' "' +this.type + '")',
+                    "owner_id": 6542084,
+                    "person_id": null,
+                    "organization_id": null,
+                    "dd1bbc90338efc249596b00527d3d2d47ae4fb46" : fullname,
+                    "f4f7afcb9529346468dd737251033edf6c04847b": this.form.tel,
+                    "1681c8caf179eaa804c3abe3bdd3456bf053fd38": this.form.email,
+                    "1bc506f7722eb25f5f7bd1fdfaad6d06ebbe14b4": this.form.message,
+                    "0241c0c2c487c8f1fb6c09a1c20f0bc343466a53": this.form.brand,
+                    "c8a12d868709dfba7851c4a17313adc3eb92b8f9": this.form.interested,
+                    "6bfcbe93be86dd7661959021d28399ed876670f3": bu,
+                };
 
-                        console.log(data)
+                //console.log(data)
 
-                        var api_token = "4e9d4073e72ab32c7ffff64dcee32836be9954f8"
-                        axios.post('https://api.pipedrive.com/v1/leads?api_token='+ api_token, data)
-                        .then(
-                            this.$swal.fire(
-                                'Success',
-                                'Send information successfully',
-                                'success'
-                            )
-                        ).catch((error) => {
-                            this.$swal.fire({
-                                icon: 'error',
-                                title: 'Oops...',
-                                text: error,
-                            })
-                        })
-
-                        this.form.fname == ''
-                        this.form.lname == ''
-                        this.form.tel == ''
-                        this.form.email == ''
-                        this.form.message == ''
-                        this.form.brand == ''
-                        this.form.interested == ''
-                    }
+                var api_token = "4e9d4073e72ab32c7ffff64dcee32836be9954f8"
+                axios.post('https://api.pipedrive.com/v1/leads?api_token='+ api_token, data)
+                .then(
+                    this.$router.push({ path: '/ThankYou/'+ this.type }),
+                    this.scrollToTop()
+                ).catch((error) => {
+                    alert(error)
                 })
+
+                this.form.fname == ''
+                this.form.lname == ''
+                this.form.tel == ''
+                this.form.email == ''
+                this.form.message == ''
+                this.form.brand == ''
+                this.form.interested == ''
+            }
         }
     }
 }

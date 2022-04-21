@@ -1,13 +1,16 @@
 <template>
-  <v-app dark>
-    <h1 v-if="error.statusCode === 404">
-      {{ pageNotFound }}
-    </h1>
-    <h1 v-else>
-      {{ otherError }}
-    </h1>
-    <NuxtLink to="/"> Home page </NuxtLink>
-  </v-app>
+  <div>
+    <div class="text-center height-div">
+      <div v-if="error.statusCode === 404">
+        <h1>{{ pageNotFound }}</h1>
+        <p>OOPS. Looks like the page you're looking for no longer exists</p>
+      </div>
+      <div v-else>
+        <h1>{{ otherError }}</h1>
+      </div>
+      <NuxtLink to="/"> Home page </NuxtLink>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -33,11 +36,17 @@ export default {
       title,
     }
   },
+  mounted() {
+    //window.location.href = 'http://localhost:3000/'
+    window.location.href = window.location.origin
+    //console.log(window.location.origin)
+  }
 }
 </script>
 
 <style scoped>
-h1 {
-  font-size: 20px;
+.height-div{
+  margin-top: 300px;
+  background-color: #fdf5e8 !important;
 }
 </style>

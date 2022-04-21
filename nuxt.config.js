@@ -43,7 +43,7 @@ export default {
   plugins: [
     //{ src: './plugins/splide.js', mode: 'client' },
     { src: './plugins/vue-carousel.js', mode: 'client' },
-    '~/plugins/head-util.js'
+    '~/plugins/head-util.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -118,7 +118,9 @@ export default {
   // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    publicPath: '/nuxt/',
+  },
 
   // generate: {
   //   fallback: '404.html'
