@@ -122,7 +122,5 @@ export default {
     publicPath: '/nuxt/',
   },
 
-  // generate: {
-  //   fallback: '404.html'
-  // }
+  generate: { fallback: '404.html' },
 }
