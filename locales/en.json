@@ -1,4 +1,16 @@
 {
+  "Validation":{
+    "firstName": "Please input your first name.",
+    "lastName": "Please input your last name.",
+    "email": "Please input the email correctly ,need “@“ in your email.",
+    "PhoneNumber": "Please input your last phone number.",
+    "jobVacancy": "Please choose the options.",
+    "position": "Please input the position that you want to apply.",
+    "expectedSalary": "Please input your expected salary. Input with a number (0-9) only.",
+    "filename": "Please attach a file as PDF,JPEG,PNG only",
+    "tellUs": "Please fill in the information."
+  },
+
   "footer":{
     "Service": "Service",
     "OnlineAdvertising": "Online Advertising",
@@ -93,8 +105,12 @@
     "shipmunk":{
       "mata":"Parcel delivery fee comparison service provider, booking a shipping queue, and easy to pay through an online system. Therefore, it will reduce complicated work and run a business smoothly.",
       "text_banner": "helps you compare a parcel delivery fee, choose the best shipping to deliver, convenient, and the cheapest.",
-      "h1":"Frozen parcel <br>delivery service",
-      "h2":"Cargo insurance in case <br>that parcel get damaged",
+      "h1":"จองบริการขนส่ง",
+      "h2":" พิมพ์ใบปะหน้า",
+      "h3":" ระบบจัดการร้านค้า",
+      "h4":" แจ้งเตือนหมายเลขพัสดุ",
+      "h5":" เคลมสินค้าเสียหาย",
+      "h6":" Reward",
       "header": "Easier Shipping with Shipmunk service",
       "add_on_services":"Add-on Services",
       "why": "Why should you choose Shipmunk?",

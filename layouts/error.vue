@@ -38,7 +38,7 @@ export default {
   },
   mounted() {
     //window.location.href = 'http://localhost:3000/'
-    window.location.href = window.location.origin
+    //window.location.href = window.location.origin
     //console.log(window.location.origin)
   }
 }

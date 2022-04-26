@@ -16,27 +16,42 @@
                   <div class="row mt-4">
                     <div class="form-group col-6">
                       <label class="text-s-16 text-white">{{ $t("form.FirstName") }}*</label>
-                      <input v-model="form.fname" type="text" class="form-control mt-2" placeholder="First Name*">
+                      <input v-model="form.fname" type="text" class="form-control mt-2" :class="{'border border-danger': validate && !form.fname}" placeholder="First Name*">
+                      <div v-if="validate">
+                          <p v-if="!form.fname" class="text-danger mb-0">กรุณาระบุ</p>
+                      </div>
                     </div>
                     <div class="form-group col-6">
                       <label class="text-s-16 text-white">{{ $t("form.LastName") }}*</label>
-                      <input v-model="form.lname" type="text" class="form-control mt-2" placeholder="Last Name*">
+                      <input v-model="form.lname" type="text" class="form-control mt-2" :class="{'border border-danger': validate && !form.lname}" placeholder="Last Name*">
+                      <div v-if="validate">
+                          <p v-if="!form.lname" class="text-danger mb-0">กรุณาระบุ</p>
+                      </div>
                     </div>
                     <div class="form-group col-6 mt-3">
                       <label class="text-s-16 text-white">{{ $t("form.Email") }}*</label>
-                      <input v-model="form.email" type="email" class="form-control mt-2" placeholder="Email*">
+                      <input v-model="form.email" type="email" class="form-control mt-2" :class="{'border border-danger': validate && !form.email}" placeholder="Email*">
+                      <div v-if="validate">
+                          <p v-if="!form.email" class="text-danger mb-0">กรุณาระบุ</p>
+                      </div>
                     </div>
                     <div class="form-group col-6 mt-3">
                       <label class="text-s-16 text-white">{{ $t("form.Tel") }}*</label>
-                      <input v-model="form.tel" type="text" class="form-control mt-2" placeholder="Tel*">
+                      <input v-model="form.tel" type="text" class="form-control mt-2" :class="{'border border-danger': validate && !form.tel}" placeholder="Tel*">
+                      <div v-if="validate">
+                          <p v-if="!form.tel" class="text-danger mb-0">กรุณาระบุ</p>
+                      </div>
                     </div>
                     <div class="form-group col-6 mt-3">
                       <label class="text-s-16 text-white">{{ $t("form.Brand") }}*</label>
-                      <input v-model="form.brand" type="text" class="form-control mt-2" placeholder="Brand*">
+                      <input v-model="form.brand" type="text" class="form-control mt-2" :class="{'border border-danger': validate && !form.brand}" placeholder="Brand*">
+                      <div v-if="validate">
+                          <p v-if="!form.brand" class="text-danger mb-0">กรุณาระบุ</p>
+                      </div>
                     </div>
                     <div class="form-group col-6 mt-3">
                       <label class="text-s-16 text-white">{{ $t("form.interestedabout") }}*</label>
-                      <select v-model="form.interested" class="form-select mt-2" placeholder="interested about*">
+                      <select v-model="form.interested" class="form-select mt-2" :class="{'border border-danger': validate && !form.interested}" placeholder="interested about*">
                           <option selected value="">interested about*</option>
                           <option value="บริการทำโฆษณาบน Social Media">บริการทำโฆษณาบน Social Media</option>
                           <option value="บริการ Fulfillment เก็บ แพ็ก ส่ง">บริการ Fulfillment เก็บ แพ็ก ส่ง</option>
@@ -44,10 +59,16 @@
                           <option value="บริการจัดทำเว็บไซต์และระบบหลังบ้าน">บริการจัดทำเว็บไซต์, System, และ API</option>
                           <option value="บริการ Content Marketing และ แอดมิน">บริการ Content Marketing และ แอดมิน</option>
                       </select>
+                      <div v-if="validate">
+                          <p v-if="!form.interested" class="text-danger mb-0">กรุณาระบุ</p>
+                      </div>
                     </div>
                     <div class="form-group col-12 mt-3">
                       <label class="text-s-16 text-white">{{ $t("form.Message") }}*</label>
-                      <textarea v-model="form.message" class="form-control mt-2" style="height:130px" placeholder="Message*"></textarea>
+                      <textarea v-model="form.message" class="form-control mt-2" :class="{'border border-danger': validate && !form.message}" style="height:130px" placeholder="Message*"></textarea>
+                      <div v-if="validate">
+                          <p v-if="!form.message" class="text-danger mb-0">กรุณาระบุ</p>
+                      </div>
                     </div>
                   </div>
                   <div class="text-center" style="width: 100%;margin-top:32px">
@@ -77,27 +98,42 @@
                 <form v-on:submit.prevent="submitForm">
                     <div class="form-group col-12">
                       <label class="text-s-16 text-white">{{ $t("form.FirstName") }}*</label>
-                      <input v-model="form.fname" type="text" class="form-control mt-2" placeholder="First Name*">
+                      <input v-model="form.fname" type="text" class="form-control mt-2" :class="{'border border-danger': validate && !form.fname}" placeholder="First Name*">
+                      <div v-if="validate">
+                          <p v-if="!form.fname" class="text-danger mb-0">กรุณาระบุ</p>
+                      </div>
                     </div>
                     <div class="form-group col-12 mt-3">
                       <label class="text-s-16 text-white">{{ $t("form.LastName") }}*</label>
-                      <input v-model="form.lname" type="text" class="form-control mt-2" placeholder="Last Name*">
+                      <input v-model="form.lname" type="text" class="form-control mt-2" :class="{'border border-danger': validate && !form.lname}" placeholder="Last Name*">
+                      <div v-if="validate">
+                          <p v-if="!form.lname" class="text-danger mb-0">กรุณาระบุ</p>
+                      </div>
                     </div>
                     <div class="form-group col-12 mt-3">
                       <label class="text-s-16 text-white">{{ $t("form.Email") }}*</label>
-                      <input v-model="form.email" type="email" class="form-control mt-2" placeholder="Email*">
+                      <input v-model="form.email" type="email" class="form-control mt-2" :class="{'border border-danger': validate && !form.email}" placeholder="Email*">
+                      <div v-if="validate">
+                          <p v-if="!form.email" class="text-danger mb-0">กรุณาระบุ</p>
+                      </div>
                     </div>
                     <div class="form-group col-12 mt-3">
                       <label class="text-s-16 text-white">{{ $t("form.Tel") }}*</label>
-                      <input v-model="form.tel" type="text" class="form-control mt-2" placeholder="Tel*">
+                      <input v-model="form.tel" type="text" class="form-control mt-2" :class="{'border border-danger': validate && !form.tel}" placeholder="Tel*">
+                      <div v-if="validate">
+                          <p v-if="!form.tel" class="text-danger mb-0">กรุณาระบุ</p>
+                      </div>
                     </div>
                     <div class="form-group col-12 mt-3">
                       <label class="text-s-16 text-white">{{ $t("form.Brand") }}*</label>
-                      <input v-model="form.brand" type="text" class="form-control mt-2" placeholder="Brand*">
+                      <input v-model="form.brand" type="text" class="form-control mt-2" :class="{'border border-danger': validate && !form.brand}" placeholder="Brand*">
+                      <div v-if="validate">
+                          <p v-if="!form.brand" class="text-danger mb-0">กรุณาระบุ</p>
+                      </div>
                     </div>
                     <div class="form-group col-12 mt-3">
                       <label class="text-s-16 text-white">{{ $t("form.interestedabout") }}*</label>
-                      <select v-model="form.interested" class="form-select mt-2" placeholder="interested about*">
+                      <select v-model="form.interested" class="form-select mt-2" :class="{'border border-danger': validate && !form.interested}" placeholder="interested about*">
                           <option selected value="">interested about*</option>
                           <option value="บริการทำโฆษณาบน Social Media">บริการทำโฆษณาบน Social Media</option>
                           <option value="บริการ Fulfillment เก็บ แพ็ก ส่ง">บริการ Fulfillment เก็บ แพ็ก ส่ง</option>
@@ -105,10 +141,16 @@
                           <option value="บริการจัดทำเว็บไซต์และระบบหลังบ้าน">บริการจัดทำเว็บไซต์, System, และ API</option>
                           <option value="บริการ Content Marketing และ แอดมิน">บริการ Content Marketing และ แอดมิน</option>
                       </select>
+                      <div v-if="validate">
+                          <p v-if="!form.interested" class="text-danger mb-0">กรุณาระบุ</p>
+                      </div>
                     </div>
                     <div class="form-group col-12 mt-3">
                       <label class="text-s-16 text-white">{{ $t("form.Message") }}*</label>
-                      <textarea v-model="form.message" class="form-control mt-2" style="height:130px" placeholder="Message*"></textarea>
+                      <textarea v-model="form.message" class="form-control mt-2" :class="{'border border-danger': validate && !form.message}" style="height:130px" placeholder="Message*"></textarea>
+                      <div v-if="validate">
+                          <p v-if="!form.message" class="text-danger mb-0">กรุณาระบุ</p>
+                      </div>
                     </div>
                   <div class="text-center mt-4 mb-2" style="width: 100%">
                     <button type="submit" class="btn-orange hvr-back-pulse" style="width: 150px !important"><span>Submit</span></button>
@@ -123,6 +165,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
     name: 'GetQuote',
     data() {
@@ -135,17 +179,14 @@ export default {
                     brand:'',
                     interested:'',
                     message:''
-          }
+          },
+          validate: false,
       }
     },
     methods:{
         submitForm() {
             if(this.form.fname == '' || this.form.lname == '' || this.form.tel == '' || this.form.email == '' || this.form.brand == '' || this.form.interested == '' || this.form.message == ''){
-                this.$swal.fire(
-                                'ข้อมูลไม่ครบถ้วน',
-                                'กรุณากรอกข้อมูลให้ครบถ้วน',
-                                'warning'
-                            )
+                this.validate = true
                 return false
             }
             if (this.form.fname != '' && this.form.lname != '' && this.form.tel != '' && this.form.email != '' && this.form.brand != '' && this.form.interested != '' && this.form.message != '') {
@@ -166,7 +207,7 @@ export default {
                 //console.log(data)
 
                 var api_token = "4e9d4073e72ab32c7ffff64dcee32836be9954f8"
-                this.axios.post('https://api.pipedrive.com/v1/leads?api_token='+ api_token, data)
+                axios.post('https://api.pipedrive.com/v1/leads?api_token='+ api_token, data)
                 .then(
                     this.$router.push({ path: '/ThankYou/All' }),
                     this.scrollToTop()

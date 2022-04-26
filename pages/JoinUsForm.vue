@@ -24,28 +24,28 @@
                                 <label class="text-s-16" style="color: #373737;">First Name/ชื่อ<span class="text-danger">*</span></label>
                                 <input type="text" class="form-control mt-2" :class="{'border border-danger': validate && !firstName}" v-model="firstName" id="firstName" name="firstName">
                                 <div v-if="validate">
-                                    <p v-if="!firstName" class="text-danger">กรุณาระบุ</p>
+                                    <p v-if="!firstName" class="text-danger mb-0">{{ $t("Validation.firstName") }}</p>
                                 </div>
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">Last Name/นามสกุล<span class="text-danger">*</span></label>
                                 <input type="text" class="form-control mt-2 " :class="{'border border-danger': validate && !lastName}" v-model="lastName" id="lastName" name="lastName">
                                 <div v-if="validate">
-                                    <p v-if="!lastName" class="text-danger">กรุณาระบุ</p>
+                                    <p v-if="!lastName" class="text-danger mb-0">{{ $t("Validation.lastName") }}</p>
                                 </div>
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">Email/อีเมล<span class="text-danger">*</span></label>
                                 <input type="text" class="form-control mt-2" :class="{'border border-danger': validate && !email}" v-model="email" id="email" name="email">
                                 <div v-if="validate">
-                                    <p v-if="!email" class="text-danger">กรุณาระบุ</p>
+                                    <p v-if="!email" class="text-danger mb-0">{{ $t("Validation.email") }}</p>
                                 </div>
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">Phone Number/เบอร์โทรศัพท์<span class="text-danger">*</span></label>
                                 <input type="text" class="form-control mt-2" :class="{'border border-danger': validate && !phoneNumber}" v-model="phoneNumber" id="phoneNumber" name="phoneNumber">
                                 <div v-if="validate">
-                                    <p v-if="!phoneNumber" class="text-danger">กรุณาระบุ</p>
+                                    <p v-if="!phoneNumber" class="text-danger mb-0">{{ $t("Validation.phoneNumber") }}</p>
                                 </div>
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
@@ -60,21 +60,21 @@
                                     <option value="อื่นๆ เช่นการบอกต่อ">อื่นๆ เช่นการบอกต่อ</option>
                                 </select>
                                 <div v-if="validate">
-                                    <p v-if="!jobVacancy" class="text-danger">กรุณาระบุ</p>
+                                    <p v-if="!jobVacancy" class="text-danger mb-0">{{ $t("Validation.jobVacancy") }}</p>
                                 </div>
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;"><br>Position applied for/ตำแหน่งที่สนใจ<span class="text-danger">*</span></label>
                                 <input type="text" class="form-control mt-2" :class="{'border border-danger': validate && !position}" v-model="position" id="position" name="position">
                                 <div v-if="validate">
-                                    <p v-if="!position" class="text-danger">กรุณาระบุ</p>
+                                    <p v-if="!position" class="text-danger mb-0">{{ $t("Validation.position") }}</p>
                                 </div>
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">Expected salary/เงินเดือนที่คาดหวัง<span class="text-danger">*</span></label>
                                 <input type="text" class="form-control mt-2" :class="{'border border-danger': validate && !expectedSalary}" v-model="expectedSalary" id="expectedSalary" name="expectedSalary">
                                 <div v-if="validate">
-                                    <p v-if="!expectedSalary" class="text-danger">กรุณาระบุ</p>
+                                    <p v-if="!expectedSalary" class="text-danger mb-0">{{ $t("Validation.expectedSalary") }}</p>
                                 </div>
                             </div>
                             <div class="form-group col-xxl-6 col-xxl-6 col-lg-6 col-12 mt-5">
@@ -85,14 +85,14 @@
                                     <label class="input-group-text text-s-14 cursor-pointer" for="inputGroupFile" style="background: #FF773B;color: #FFFFFF;">Choose File</label>
                                 </div>
                                 <div v-if="validate" style="margin-top:-15px">
-                                    <p v-if="!filename" class="text-danger">กรุณาระบุ</p>
+                                    <p v-if="!filename" class="text-danger mb-0">{{ $t("Validation.filename") }}</p>
                                 </div>
                             </div>
                             <div class="form-group col-12 mt-5">
                                 <label class="text-s-16" style="color: #373737;">Tell us about yourself <br>อยากบอกอะไรให้เรารู้เกี่ยวกับตัวคุณ*<span class="text-danger">*</span></label>
                                 <textarea class="form-control mt-2" :class="{'border border-danger': validate && !tellUs}" style="height:180px" v-model="tellUs" id="tellUs" name="tellUs"></textarea>
                                 <div v-if="validate">
-                                    <p v-if="!tellUs" class="text-danger">กรุณาระบุ</p>
+                                    <p v-if="!tellUs" class="text-danger mb-0">{{ $t("Validation.tellUs") }}</p>
                                 </div>
                             </div>
 

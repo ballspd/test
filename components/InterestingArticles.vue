@@ -54,7 +54,8 @@ export default {
       return {
         responseData:[],
         url:'',
-        lang: this.$i18n.locale || 'th-TH',
+        //lang: this.$i18n.locale || 'th-TH',
+        lang: 'th-TH',
         options: {
           loop: true,
           //perPage: 3,

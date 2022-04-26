@@ -36,19 +36,31 @@
                         <div class="row">
                             <div class="form-group col-12">
                                 <label class="text-s-16" style="color: #373737;">Name<span class="text-danger">*</span></label>
-                                <input v-model="form.name" id="name" type="text" class="form-control mt-2">
+                                <input v-model="form.name" id="name" type="text" class="form-control mt-2" :class="{'border border-danger': validate && !form.name}">
+                                <div v-if="validate">
+                                    <p v-if="!form.name" class="text-danger mb-0">กรุณาระบุ</p>
+                                </div>
                             </div>
                             <div class="form-group col-12 mt-4">
                                 <label class="text-s-16" style="color: #373737;">Phone Number<span class="text-danger">*</span></label>
-                                <input v-model="form.phone_number" id="phone_number" type="text" class="form-control mt-2">
+                                <input v-model="form.phone_number" id="phone_number" type="text" class="form-control mt-2" :class="{'border border-danger': validate && !form.phone_number}">
+                                <div v-if="validate">
+                                    <p v-if="!form.phone_number" class="text-danger mb-0 mb-0">กรุณาระบุ</p>
+                                </div>
                             </div>
                             <div class="form-group col-12 mt-4">
                                 <label class="text-s-16" style="color: #373737;">Email<span class="text-danger">*</span></label>
-                                <input v-model="form.email" id="email" type="email" class="form-control mt-2">
+                                <input v-model="form.email" id="email" type="email" class="form-control mt-2" :class="{'border border-danger': validate && !form.email}">
+                                <div v-if="validate">
+                                    <p v-if="!form.email" class="text-danger mb-0">กรุณาระบุ</p>
+                                </div>
                             </div>
                             <div class="form-group col-12 mt-4">
                                 <label class="text-s-16" style="color: #373737;">Message<span class="text-danger">*</span></label>
-                                <textarea v-model="form.message" id="message" class="form-control mt-2" style="height:180px"></textarea>
+                                <textarea v-model="form.message" id="message" class="form-control mt-2" :class="{'border border-danger': validate && !form.message}" style="height:180px"></textarea>
+                                <div v-if="validate">
+                                    <p v-if="!form.message" class="text-danger mb-0">กรุณาระบุ</p>
+                                </div>
                             </div>
                         </div>
                         <div class="text-center" style="width: 100%;margin-top:32px">
@@ -92,7 +104,7 @@
 
 <script>
 import Preloader from '@/components/Preloader'
-
+import axios from 'axios'
 export default {
     name: 'ContactUs',
     layout:"Layout",
@@ -106,6 +118,7 @@ export default {
     },
     data() {
       return {
+          validate:false,
           form: {
                     name:'',
                     phone_number:'',
@@ -129,6 +142,7 @@ export default {
         },
         submitForm() {
             if(this.form.name == '' || this.form.phone_number == '' || this.form.email == '' || this.form.message == ''){
+                this.validate = true
                 return false
             }
             if (this.form.name != '' && this.form.phone_number != '' && this.form.email != '' && this.form.message != '') {
@@ -174,7 +188,7 @@ export default {
                 //console.log(data)
 
                 var api_token = "4e9d4073e72ab32c7ffff64dcee32836be9954f8"
-                this.axios.post('https://api.pipedrive.com/v1/leads?api_token='+ api_token, data)
+                axios.post('https://api.pipedrive.com/v1/leads?api_token='+ api_token, data)
                 .then(
                     this.$router.push({ path: '/ThankYou/contact-us' }),
                     this.scrollToTop()

@@ -71,7 +71,8 @@ export default {
     data() {
       return {
         responseData:[],
-        lang: this.$i18n.locale || 'th-TH',
+        //lang: this.$i18n.locale || 'th-TH',
+        lang: 'th-TH',
         paramsId: this.$route.params.id
       }
     },

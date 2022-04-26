@@ -10,8 +10,8 @@
     "lint:prettier": "prettier --check .",
     "lint": "npm run lint:prettier",
     "lintfix": "prettier --write --list-different .",
-    "build:staging": "nuxt generate --mode staging",
-    "build:production": "nuxt generate --mode production"
+    "build:staging": "nuxt generate",
+    "build:production": "nuxt generate"
   },
   "dependencies": {
     "@nuxt/markdown": "0.0.21",

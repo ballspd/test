@@ -94,13 +94,15 @@ export default {
       });
     },
     async asyncData({ $axios, route, i18n }) {
-      const response = await $axios.$get('https://login.sellsuki.co.th/blogs/' + route.params.id + '?_locale='+ i18n.locale);
+      //const response = await $axios.$get('https://login.sellsuki.co.th/blogs/' + route.params.id + '?_locale='+ i18n.locale);
+      const response = await $axios.$get('https://login.sellsuki.co.th/blogs/' + route.params.id);
       return { responseData: response , blog_category_id : response.blog_category.id };
     },
     data() {
       return {
         responseData:[],
-        lang: this.$i18n.locale || 'th-TH',
+        //lang: this.$i18n.locale || 'th-TH',
+        lang: 'th-TH',
         view: 1,
         count:0,
         blog_category_id:'',
