@@ -70,15 +70,15 @@ export default {
       var blogType
 
       if(this.type == 'Fuse' || this.type == 'Kaikong'){
-        blogType = 2
+        blogType = 9
       }else if(this.type == 'Akita' || this.type == 'Shipmunk'){
-        blogType = 4
+        blogType = 11
       }else if(this.type == 'Line'){
-        blogType = 5
+        blogType = 12
       }else if(this.type == 'Oc2Plus'){
-        blogType = 7
+        blogType = 14
       }else if(this.type == 'Beary'){
-        blogType = 6
+        blogType = 13
       }
       
         if(this.type != 'All'){

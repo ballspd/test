@@ -106,7 +106,7 @@ export default {
         view: 1,
         count:0,
         blog_category_id:'',
-        url: 'https://staging-sellsuki.bearyweb.com/Blogs/Detail/'+this.$route.params.id+'/'+this.$route.params.name
+        url: 'https://www.sellsuki.co.th/Blogs/Detail/'+this.$route.params.id+'/'+this.$route.params.name
       }
     },
     methods: {

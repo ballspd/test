@@ -1,5 +1,6 @@
 <template>
 <div class="home">
+  <Home/>
   <div class="fabs animate__animated animate__bounce" @click="isActive = !isActive" style="bottom:80px !important">
     <div class="social-chat">
       <i v-if="isActive == false" class="bi bi-x" style="font-size:38px;margin: 9.2px;"></i>

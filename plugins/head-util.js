@@ -44,7 +44,7 @@ export default (_, inject) => {
                     hid: 'og-url', 
                     property: 'og:url', 
                     name: 'og:url', 
-                    content: data.url || 'https://staging-sellsuki.bearyweb.com'
+                    content: data.url || 'https://www.sellsuki.co.th/'
                 },
                 { 
                     hid: 'twitter-title', 
@@ -65,7 +65,7 @@ export default (_, inject) => {
                     hid: 'twitter-url', 
                     property: 'twitter:url', 
                     name: 'twitter:url', 
-                    content: data.url || 'https://staging-sellsuki.bearyweb.com'
+                    content: data.url || 'https://www.sellsuki.co.th/'
                 },
                 { 
                     hid: 'twitter-card', 

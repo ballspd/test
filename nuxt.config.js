@@ -4,20 +4,86 @@ require('dotenv').config()
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
+  //mode: 'spa',
+  ssr: true,
   target: 'static',
+  //ssr: false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s | Sellsuki',
     title: 'sellsuki',
-    htmlAttrs: {
-      lang: 'en',
-    },
+    // htmlAttrs: {
+    //   lang: 'en',
+    // },
     meta: [
       { charset: 'utf-8' },
+      { name: 'google-site-verification', content: 'y3SPcUi4BBJcORn-mg0hoeh7213idJCbHcjJI6PY7QE' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Sellsuki บริการ Solution ครบวงจรสำหรับคนทำธุรกิจออนไลน์ โฆษณาออนไลน์ วางแผนคอนเทนต์ ออกแบบเว็บไซต์ และคลังสินค้าครบวงจร' },
       { name: 'format-detection', content: 'telephone=no' },
+      { name: 'keywords', content: ['Sellsuki', 'Solution', 'โฆษณาออนไลน์', 'วางแผนคอนเทนต์', 'ออกแบบเว็บไซต์' , 'คลังสินค้าครบวงจร'] },
+                { 
+                    hid: 'description', 
+                    name: 'description', 
+                    content: 'Sellsuki บริการ Solution ครบวงจรสำหรับคนทำธุรกิจออนไลน์ โฆษณาออนไลน์ วางแผนคอนเทนต์ ออกแบบเว็บไซต์ และคลังสินค้าครบวงจร'
+                },
+                { 
+                    hid: 'og-site_name', 
+                    property: 'og:site_name', 
+                    name: 'og:site_name', 
+                    content: 'Sellsuki'
+                },
+                { 
+                    hid: 'og-title', 
+                    property: 'og:title', 
+                    name: 'og:title', 
+                    content: 'Sellsuki บริการ Solution ครบวงจรสำหรับคนทำธุรกิจออนไลน์ โฆษณาออนไลน์ วางแผนคอนเทนต์ ออกแบบเว็บไซต์ และคลังสินค้าครบวงจร'
+                },
+                { 
+                    hid: 'og-description', 
+                    property: 'og:description', 
+                    name: 'og:description', 
+                    content: 'Sellsuki บริการ Solution ครบวงจรสำหรับคนทำธุรกิจออนไลน์ โฆษณาออนไลน์ วางแผนคอนเทนต์ ออกแบบเว็บไซต์ และคลังสินค้าครบวงจร'
+                },
+                { 
+                    hid: 'og-image', 
+                    property: 'og:image', 
+                    name: 'og:image', 
+                    content: 'https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Home_826a845399.webp'
+                },
+                { 
+                    hid: 'og-url', 
+                    property: 'og:url', 
+                    name: 'og:url', 
+                    content: 'https://www.sellsuki.co.th/'
+                },
+                { 
+                    hid: 'twitter-title', 
+                    name: 'twitter:title', 
+                    content: 'Sellsuki บริการ Solution ครบวงจรสำหรับคนทำธุรกิจออนไลน์ โฆษณาออนไลน์ วางแผนคอนเทนต์ ออกแบบเว็บไซต์ และคลังสินค้าครบวงจร'
+                },
+                { 
+                    hid: 'twitter-description', 
+                    name: 'twitter:description', 
+                    content: 'Sellsuki บริการ Solution ครบวงจรสำหรับคนทำธุรกิจออนไลน์ โฆษณาออนไลน์ วางแผนคอนเทนต์ ออกแบบเว็บไซต์ และคลังสินค้าครบวงจร'
+                },
+                { 
+                    hid: 'twitter-image', 
+                    name: 'twitter:image', 
+                    content: 'https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Home_826a845399.webp'
+                },
+                { 
+                    hid: 'twitter-url', 
+                    property: 'twitter:url', 
+                    name: 'twitter:url', 
+                    content: 'https://www.sellsuki.co.th/'
+                },
+                { 
+                    hid: 'twitter-card', 
+                    name: 'twitter:card',
+                    content: 'Sellsuki บริการ Solution ครบวงจรสำหรับคนทำธุรกิจออนไลน์ โฆษณาออนไลน์ วางแผนคอนเทนต์ ออกแบบเว็บไซต์ และคลังสินค้าครบวงจร'
+                }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
@@ -66,10 +132,16 @@ export default {
     '@nuxtjs/gtm',
     'nuxt-facebook-pixel-module',
     'cookie-universal-nuxt',
+    '@nuxtjs/sitemap',
     
     // With options
     ['cookie-universal-nuxt', { alias: 'cookiz' }],
   ],
+
+  sitemap: {
+    hostname: 'https://www.sellsuki.co.th/',
+    // gzip: true,
+  },
 
   facebook: {
     /* module options */
@@ -122,5 +194,8 @@ export default {
     publicPath: '/nuxt/',
   },
 
-  generate: { fallback: '404.html' },
+  generate: { 
+    fallback: '404.html',
+    //subFolders: false
+ },
 }
