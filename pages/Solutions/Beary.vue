@@ -36,37 +36,37 @@
                     <div class="row text-center justify-content-center mb-4">
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 hvr-float-shadow" style="background-color: #0BBD92;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-solution-beary-1.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-solution-beary-1.webp"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#0A0909">Website</h2>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 hvr-float-shadow" style="background-color: #030303;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-solution-beary-2.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-solution-beary-2.webp"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#0A0909">LINE API Messaging</h2>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 hvr-float-shadow" style="background-color: #0BBD92;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-solution-beary-3.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-solution-beary-3.webp"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#0A0909">LINE OA</h2>
                         </div>
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 hvr-float-shadow" style="background-color: #030303;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-solution-beary-4.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-solution-beary-4.webp"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#0A0909">CRM Software</h2>
                         </div>  
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 hvr-float-shadow" style="background-color: #0BBD92;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-solution-beary-5.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-solution-beary-5.webp"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#0A0909">Web Application</h2>
                         </div>  
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 mt-3 mt-md-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 hvr-float-shadow" style="background-color: #030303;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-solution-beary-6.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsBeary/icon-solution-beary-6.webp"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#0A0909">Mobile Application</h2>
                         </div>       
@@ -120,23 +120,23 @@
                         <div class="row mt-5 text-center">
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-2">
-                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-1.png"></div>
+                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-1.webp"></div>
                                 </div>
-                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
+                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.webp">
                                 <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737" v-html="$t('solution.beary.h1')"></h2>
                             </div>
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-2.png"></div>
+                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-2.webp"></div>
                                 </div>
-                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
+                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.webp">
                                 <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737" v-html="$t('solution.beary.h2')"></h2>
                             </div>
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-3.png"></div>
+                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-3.webp"></div>
                                 </div>
-                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
+                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.webp">
                                 <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737" v-html="$t('solution.beary.h3')"></h2>
                             </div>     
                         </div>

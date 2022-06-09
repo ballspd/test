@@ -24,8 +24,8 @@
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="d-none d-md-block img-fluid img-banner-top m-auto" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Shipmunk_316ca19a45.webp">
-                        <img class="d-block d-md-none img-fluid img-banner-top m-auto pb-5" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Shipmunk_316ca19a45.webp">
+                        <img class="d-none d-md-block img-fluid img-banner-top m-auto" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Shipmunk_02_1_a35fa78ddf.webp">
+                        <img class="d-block d-md-none img-fluid img-banner-top m-auto pb-5" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Shipmunk_02_1_a35fa78ddf.webp">
                     </div>
                 </div>
             </div>
@@ -131,7 +131,7 @@
                                         </div>
                                     </div>
                                 <div class="order-first order-lg-last col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 animate__animated animate__zoomInRight">
-                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><img v-if="index == 1" class="me-2" style="margin-top:-3px" src="./../../assets/icon/new.png" alt="new.png"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><img v-if="index == 1" class="me-2" style="margin-top:-3px" src="./../../assets/icon/new.webp" alt="new.webp"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
                                     <img v-if="data.image != null" class="item-center hvr-rotate" :src="data.image.url" :alt="data.image.name">
                                 </div>
                             </div>
@@ -162,17 +162,17 @@
                             <carousel v-bind="options" v-bind:perPage="3">
                                 <slide>
                                     <div style="padding-top: 30px !important;">
-                                        <img class="item-center" width="320" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_1_ca62b683df.webp" alt="shipmunk-banner2.png">
+                                        <img class="item-center" width="320" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_1_ca62b683df.webp" alt="shipmunk-banner2.webp">
                                     </div>
                                 </slide>
                                 <slide>
                                     <div style="padding-top: 30px !important;">
-                                        <img class="item-center" width="320" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_2_dba10752e9.webp" alt="shipmunk-banner2.png">
+                                        <img class="item-center" width="320" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_2_dba10752e9.webp" alt="shipmunk-banner2.webp">
                                     </div>
                                 </slide>
                                 <slide>
                                     <div style="padding-top: 30px !important;">
-                                        <img class="item-center" width="320" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_3_db62025453.webp" alt="shipmunk-banner2.png">
+                                        <img class="item-center" width="320" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_3_db62025453.webp" alt="shipmunk-banner2.webp">
                                     </div>
                                 </slide>
                             </carousel>
@@ -181,17 +181,17 @@
                             <carousel v-bind="options" v-bind:perPage="1">
                                 <slide>
                                     <div style="padding-top: 30px !important;">
-                                        <img class="item-center" width="360" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_1_ca62b683df.webp" alt="shipmunk-banner2.png">
+                                        <img class="item-center" width="360" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_1_ca62b683df.webp" alt="shipmunk-banner2.webp">
                                     </div>
                                 </slide>
                                 <slide>
                                     <div style="padding-top: 30px !important;">
-                                        <img class="item-center" width="360" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_2_dba10752e9.webp" alt="shipmunk-banner2.png">
+                                        <img class="item-center" width="360" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_2_dba10752e9.webp" alt="shipmunk-banner2.webp">
                                     </div>
                                 </slide>
                                 <slide>
                                     <div style="padding-top: 30px !important;">
-                                        <img class="item-center" width="360" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_3_db62025453.webp" alt="shipmunk-banner2.png">
+                                        <img class="item-center" width="360" height="385" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/shipmunk_card_3_db62025453.webp" alt="shipmunk-banner2.webp">
                                     </div>
                                 </slide>
                             </carousel>
@@ -207,7 +207,7 @@
                             <div class="card mt-4">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.webp" alt="Group163">
                                         <p v-if="lang == 'en'" class="text-w-700 mb-0" style="font-size:13.5px">{{$t('solution.shipmunk.why1')}}</p>
                                         <p v-else class="text-s-16 text-w-700 mb-0">{{$t('solution.shipmunk.why1')}}</p>
                                     </div>
@@ -218,7 +218,7 @@
                             <div class="card mt-4">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.webp" alt="Group163">
                                         <p class="text-s-16 text-w-700 mb-0">{{$t('solution.shipmunk.why2')}}</p>
                                     </div>
                                 </div>
@@ -228,7 +228,7 @@
                             <div class="card mt-4">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.webp" alt="Group163">
                                         <p v-if="lang == 'en'" class="text-s-14 text-w-700 mb-0">{{$t('solution.shipmunk.why3')}}</p>
                                         <p v-else class="text-s-16 text-w-700 mb-0">{{$t('solution.shipmunk.why3')}}</p>
                                     </div>
@@ -239,7 +239,7 @@
                             <div class="card mt-4">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.webp" alt="Group163">
                                         <p class="text-s-16 text-w-700 mb-0">{{$t('solution.shipmunk.why4')}}</p>
                                     </div>
                                 </div>
@@ -249,7 +249,7 @@
                             <div class="card mt-4">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.webp" alt="Group163">
                                         <p class="text-s-16 text-w-700 mb-0">{{$t('solution.shipmunk.why5')}}</p>
                                     </div>
                                 </div>
@@ -259,7 +259,7 @@
                             <div class="card mt-4">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.webp" alt="Group163">
                                         <p class="text-s-16 text-w-700 mb-0">{{$t('solution.shipmunk.why6')}}</p>
                                     </div>
                                 </div>
@@ -269,7 +269,7 @@
                             <div class="card mt-4">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.webp" alt="Group163">
                                         <p class="text-s-16 text-w-700 mb-0">{{$t('solution.shipmunk.why7')}}</p>
                                     </div>
                                 </div>
@@ -279,7 +279,7 @@
                             <div class="card mt-4">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class=" ms-2 me-2" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-2" width="20" height="20" src="./../../assets/icon/Group163.webp" alt="Group163">
                                         <p v-if="lang == 'en'" class="text-w-700 mb-0" style="font-size:13.5px">{{$t('solution.shipmunk.why8')}}</p>
                                         <p v-else class="text-s-16 text-w-700 mb-0">{{$t('solution.shipmunk.why8')}}</p>
                                     </div>
@@ -290,19 +290,19 @@
                 </div>
                 <div class="row mt-0 mt-lg-5 mb-5 ms-5 me-5">
                     <div class="col-4 col-lg-2 m-auto">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-1.png">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-1.webp" alt="logo-partner-1">
                     </div>
                     <div class="col-4 col-lg-2 m-auto">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-2.png">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-2.webp" alt="logo-partner-2">
                     </div>
                     <div class="col-4 col-lg-2 m-auto">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-3.png">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-3.webp" alt="logo-partner-3">
                     </div>
                     <div class="col-4 col-lg-2 m-auto">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-4.png">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-4.webp" alt="logo-partner-4">
                     </div>
                     <div class="col-4 col-lg-2 m-auto">
-                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-6.png">
+                        <img class="img-fluid item-center mt-5 mt-lg-0" src="./../../assets/logo/logo-partner-6.webp" alt="logo-partner-6">
                     </div>
                 </div>
                 <InterestingArticles :type="type"/>
@@ -495,7 +495,7 @@ export default {
         border-radius: 50%;
     }
     .img-banner-top{
-        width: 60%;
+        width: 80%;
     }
 }
 
@@ -510,8 +510,8 @@ export default {
         border-radius: 50%;
     }
     .img-banner-top{
-        margin-top:115px !important;
-        width: 70%;
+        margin-top:65px !important;
+        width: 100%;
     }
 } 
 
@@ -526,8 +526,8 @@ export default {
         border-radius: 50%;
     }
     .img-banner-top{
-        margin-top:115px !important;
-        width: 70%;
+        margin-top:75px !important;
+        width: 80%;
     }
 } 
 
@@ -550,7 +550,8 @@ export default {
         border-radius: 50%;
     }
     .img-banner-top{
-        margin-top: 145px !important;
+        margin-top: 125px !important;
+        width: 85%;
     }
 }
 </style>

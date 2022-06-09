@@ -6,180 +6,128 @@
     <div class="termsFrame">
       <div class="termsFrameTop"></div>
 
-      <div class="title1 pb-5">Terms Of Use</div>
+      <div class="title1 pb-4">ข้อตกลงและเงื่อนไขทั่วไปในการใช้บริการผลิตภัณฑ์และบริการ </div>
 
-      <div class="title2 pt-3">SELLSUKI USER AGREEMENT</div>
       <div class="text1">
         <p>
-          This User Agreement, the Sellsuki Privacy Policy, and all policies posted on our site set out the terms on which Sellsuki
-          offers you access to and use of our site, services, applications and tools. All policies and the Sellsuki Privacy
-          Policy are incorporated into this User Agreement. Sellsuki operates under the rules and jurisdictions governed
-          by The Ministry of Information and Communication Technology of Thailand in conjunction with the policies and regulations
-          of Facebook Co.
+          การใช้บริการผลิตภัณฑ์และบริการต่างๆ ที่ได้ระบุไว้ใน และ/หรือ นำเสนอโดย www.sellsuki.co.th ภายใต้การบริหารงานโดย บริษัท เซลสุกิ จำกัด (“บริษัท”) สำนักงานตั้งอยู่ ณ 10/39 ชั้นที่ 3 ถนนรัชดาภิเษก แขวงจันทรเกษม เขตจตุจักร กรุงเทพมหานคร 10900 รวมถึง บริการผลิตภัณฑ์และบริการอย่างอื่นที่จะมีขึ้นในอนาคต (“ผลิตภัณฑ์และบริการ”) อยู่ภายใต้บังคับของข้อตกลงและเงื่อนไขทั่วไปในการใช้บริการผลิตภัณฑ์และบริการ (“เงื่อนไขในการใช้บริการทั่วไป”) และข้อตกลงและเงื่อนไขในการใช้บริการเฉพาะรายผลิตภัณฑ์และบริการ (“เงื่อนไขในการใช้บริการเฉพาะ”)
         </p>
         <p>
-          The entity you are contracting with is Sellsuki Company Limited (Sellsuki Co., Ltd.) located in Bangkok, Thailand.
-          We acknowledge the privacy and safety of users’ sensitive information. The following statements explain the scope
-          of our practices and operations of our website, www.Sellsuki.com. By using Sellsuki, users agree to comply with
-          all the terms and conditions below. Users also acknowledge that they have read and understand our policies and
-          practices. This User Agreement is effective immediately upon creating a Sellsuki user account, including registration
-          of an account during the free trial period. Users also agree to comply with information technology laws that pertain
-          to the country in which Sellsuki is accessed from.</p>
+          เมื่อผู้ใช้บริการผลิตภัณฑ์ แอปพลิเคชัน และบริการต่าง ๆ ของบริษัท (“ผู้ใช้บริการ”) ได้เข้าถึง และ/หรือ เข้าสู่ระบบ แอปพลิเคชัน เพื่อใช้บริการเกี่ยวกับผลิตภัณฑ์และบริการต่าง ๆ ผู้ใช้บริการได้ยืนยันและรับรองต่อบริษัท และ บริษัทจะถือว่า ผู้ใช้บริการได้ให้คำยืนยันและรับรองต่อบริษัทว่า ผู้ใช้บริการได้เข้าถึง ตรวจสอบ ศึกษา ซักถาม และ/หรือ รับทราบ รายละเอียดต่าง ๆ ของเงื่อนไขในการใช้บริการก่อนการเข้าใช้บริการผลิตภัณฑ์และบริการ พร้อมทั้งผู้ใช้บริการยังได้ตกลง ยินยอม และ จะปฏิบัติตามเงื่อนไขในการใช้บริการต่าง ๆ (รวมถึง เงื่อนไขในการใช้บริการที่บริษัทอาจจะได้มีการปรับปรุงและแก้ไขเพิ่มเติมต่อไปในอนาคต) อย่างเคร่งครัด ทั้งนี้ การเข้าถึง และ/หรือ การเข้าสู่ระบบ แอปพลิเคชัน เพื่อใช้บริการเกี่ยวกับผลิตภัณฑ์และบริการของผู้ใช้บริการในแต่ละครั้ง ให้ถือว่าผู้ใช้บริการได้ให้คำรับรองและคำยืนยันดังกล่าวข้างต้นทุกครั้ง</p>
         <p>
-          Sellsuki is a chat-based E-commerce platform that supports E-commerce through Facebook business pages and merely serves as
-          a platform for conducting business via Facebook. The purpose of Sellsuki is to convert Facebook chats into sales,
-          helping those who utilize Facebook for business purposes chat with customers and conduct sales more efficiently.
-          Sellsuki operating under the entity of Sellsuki Co., Ltd. cannot be held accountable for any losses, damages
-          or legal matters brought upon by the use of Sellsuki.com. Our company also does not take responsibility for the
-          sales of any illegal, infringed or pirated products through our website.
+          ภายใต้บังคับของเงื่อนไขในการใช้บริการเฉพาะซึ่งได้กล่าวไว้ในส่วนต่อไป ผู้ใช้บริการรับทราบและจะปฏิบัติตามเงื่อนไขในการใช้บริการทั่วไปที่ดังมีรายละเอียดต่อไปนี้
         </p>
       </div>
 
-      <div class="title2">ABOUT SELLSUKI</div>
+      <div class="title2">1. การแจ้งให้อ่านข้อมูล</div>
       <div class="text1">
         <p>
-          As mentioned above, Sellsuki.com is a chat-based E-commerce platform that supports E-commerce through Facebook business pages
-          and merely serves as a platform for conducting business via Facebook. The purpose of Sellsuki is to convert Facebook
-          chats into sales, helping those who utilize Facebook for business purposes chat with customers and conduct sales
-          more efficiently. Our goal is to establish a system of sales
+          ข้อความต่อไปนี้มีความสำคัญ กรุณาอ่านข้อกำหนดและเงื่อนไขการใช้บริการแอปพลิเคชัน นี้อย่างรอบคอบ เมื่อท่านได้กดตกลงแล้วจะถือว่าท่านตกลงว่า ท่านได้อ่าน เข้าใจ ยอมรับ และตกลงข้อกำหนดและเงื่อนไขการใช้บริการแอปพลิเคชัน เงื่อนไขที่ระบุในแบบฟอร์มการลงทะเบียน รวมถึงเอกสารอื่นๆ และข้อมูลใดๆ ที่บริษัท เซลสุกิ จำกัด ได้จัดเตรียมให้ (ไม่ว่าท่านจะได้ลงลายมือชื่อหรือไม่ก็ตาม) นอกจากนี้ ท่านยังตกลงปฏิบัติตามคำรับรองที่ท่านได้ให้ไว้ หากท่านไม่ตกลงหรือไม่ปฏิบัติตามเงื่อนไขในการใช้บริการ และประสงค์ที่จะไม่ใช้บริการต่อไป กรุณาหยุดใช้แอปพลิเคชัน หรือหยุดใช้บริการ
         </p>
       </div>
 
-      <div class="title2">USING SELLSUKI</div>
+      <div class="title2">2. ผู้ใช้บริการ</div>
       <div class="text1">
         <p>
-          While using or accessing the services of Sellsuki users will not:
+          ผู้ใช้บริการขอให้คำยืนยันและคำรับรองต่อบริษัทดังต่อไปนี้
+          <br>2.1 ในกรณีที่ผู้ใช้บริการเป็นบุคคลธรรมดาผู้ใช้บริการเป็นผู้บรรลุนิติภาวะหรือมีอายุ 18 ปีขึ้นไปหรือในกรณีเป็นผู้เยาว์ต้องได้รับความยินยอมจากผู้แทนโดยชอบธรรมก่อน
         </p>
-        <ul>
-          <li>Post, list or upload content or items in inappropriate categories or areas on our site</li>
-          <li>Breach or circumvent any laws, third party rights or our systems, policies, or determinations of your account status</li>
-          <li>Use our Services if you are not able to form legally binding contracts (for example if you are under 18), or are
-            temporarily or indefinitely suspended from using our sites, services, applications or tools</li>
-          <li>Fail to deliver items sold by you, unless the buyer fails to follow the posted terms, or you cannot contact the
-            buyer
-          </li>
-          <li>Post false, inaccurate, misleading, defamatory, or libelous content</li>
-          <li>Distribute or post spam, unsolicited or bulk electronic communications, chain letters, or pyramid schemes</li>
-          <li>Distribute viruses or any other technologies that may harm Sellsuki, or the interests or property of Sellsuki users</li>
-          <li>Use any robot, spider, scraper or other automated means to access our Services for any purpose
-          </li>
-          <li>bypass our robot exclusion headers, interfere with the working of our Services, or impose an unreasonable or disproportionately
-            large load on our infra structure</li>
-          <li>Export or re-export any Sellsuki application or tool except in compliance with the export control laws of any relevant
-            jurisdictions and in accordance with posted rules and restrictions</li>
-          <li>Copy, modify, or distribute rights or content from our Services or Sellsuki’s copyrights, trademarks, logo</li>
-          <li>Copy, reproduce, reverse engineer, modify, create derivative works from, distribute, or publicly display any content
-            (except for your information) from our sites, services, applications, or tools without the prior express written
-            permission of Sellsuki and the appropriate third party, as applicable;</li>
-          <li>Commercialize any Sellsuki application, tool or any information or software associated with such application without
-            our consent</li>
-          <li>Utilize Sellsuki to harvest or otherwise collect information about users, including email addresses, without their
-            consent </li>
-          <p>
-            Sellsuki bears the legal right to immediately cancel accounts that have operated in breach of this user agreement. Sellsuki
-            also bears the right to cancel unconfirmed accounts, accounts that have been inactive for a long time or modify
-            or discontinue our Services.
-          </p>
-        </ul>
+        <p>
+          2.2 ในกรณีที่ผู้ใช้บริการเป็นนิติบุคคลหรือองค์กรใดๆ ผู้ติดต่อและ/หรือเข้าทำสัญญาใดๆ กับบริษัทเพื่อใช้บริการผลิตภัณฑ์และบริการต่างๆ ของผู้ใช้บริการเป็นผู้มีอำนาจผูกพัน และ/หรือ ได้รับการมอบอำนาจให้กระทำการแทนนิติบุคคลหรือองค์กรดังกล่าวอย่างสมบรูณ์
+        </p>
+        <p>
+          2.3 เพื่อใช้บริการผลิตภัณฑ์และบริการต่างๆ ผู้ใช้บริการจะให้และ จะเปิดเผยข้อมูลต่างๆ ของผู้ใช้บริการให้ครบถ้วน ถูกต้องและ เป็นปัจจุบัน และผู้ใช้บริการจะจัดให้มีอีเมล และ/หรือ ช่องทางการสื่อสารทางระบบอินเทอร์เน็ตอย่างอื่น เพื่อการรับข้อมูลข่าวสารต่างๆ และ เป็นช่องทางติดต่อกับบริษัทอนึ่ง ในกรณีที่ข้อมูลต่างๆ ที่ผู้ใช้บริการได้ให้และ/หรือ เปิดเผย แก่บริษัทได้เปลื่ยนแปลงไป ผู้ใช้บริการมีหน้าที่และตกลงจะแก้ไขข้อมูลต่างๆ ดังกล่าวให้เป็นปัจจุบันอยู่เสมอ ซึ่งผู้ใช้บริการสามารถแก้ไขข้อมูลดังกล่าวผ่านทางระบบการจัดการในเว็บไซต์ หรือ แอปพลิเคชัน ในกรณีที่บริษัทจัดให้มีระบบการจัดการให้แก้ไขข้อมูลหรือผู้ใช้บริการจะแจ้งการแก้ไขข้อมูลดังกล่าวไปยังเจ้าหน้าที่ของบริษัทที่ให้บริการแก่ผู้ใช้บริการ
+        </p>
+        <p>
+          2.4 ผู้ใช้บริการได้ศึกษาและเข้าใจในคุณลักษณะ ข้อจำกัด และเงื่อนไขต่างๆ ของผลิตภัณฑ์และบริการต่างๆ ที่บริษัทได้จัดแสดงในหน้าเว็บไซต์ www.sellsuki.co.th หรือ แอปพลิเคชัน และผู้ใช้บริการได้ตัดสินใจใช้บริการผลิตภัณฑ์และบริการด้วยคุณลักษณะ ข้อจำกัด และเงื่อนไขต่าง ๆ ที่มีอยู่นี้ และยอมรับการเปลี่ยนแปลงคุณลักษณะ ข้อจำกัด และเงื่อนไขต่าง ๆ ที่จะมีในอนาคตซึ่งอาจจะมีผลทำให้ผู้ใช้บริการได้ใช้บริการผลิตภัณฑ์และบริการที่แตกต่างจากที่เคยได้ใช้บริการมาก่อนเช่น การใช้บริการผ่านการทำงานในรูปแบบ หรือ Feature ที่แตกต่างไปจากเดิม
+        </p>
+        <p>
+          2.5 ผู้ใช้บริการเป็นผู้ตัดสินใจเลือกใช้บริการผลิตภัณฑ์และบริการด้วยตัวเอง และ ในกรณีที่ผู้ใช้บริการที่เป็นนิติบุคคลหรือองค์กรใดๆ บริษัทจะถือว่า ผู้ใช้บริการเป็นผู้รับผิดชอบต่อการตัดสินใจเลือกใช้บริการผลิตภัณฑ์และบริการนั้นๆ เอง หากมีปัญหาเกิดขึ้นระหว่างผู้ใช้บริการกับผู้ติดต่อหรือตัวแทนของผู้ใช้บริการ ผู้ใช้บริการรับทราบว่า บริษัทไม่มีหน้าที่ใดๆในการดำเนินการแก้ไขปัญหาดังกล่าวของผู้ใช้บริการ
+        </p>
+        <p>
+          2.6 เมื่อได้รับการร้องขอจากบริษัท ผู้ใช้บริการจะส่งมอบเอกสาร และ/หรือ หลักฐานใดๆ ที่จำเป็นเพื่อแสดงว่าผู้ใช้บริการมีความสามารถ และ/หรือ อำนาจในการใช้บริการผลิตภัณฑ์และบริการที่ผู้ใช้บริการได้เลือกใช้บริการ เช่น บัตรประชาชน ทะเบียนบ้าน หนังสือรับรองของบริษัท เป็นต้น รวมถึง ผู้ใช้บริการจะลงนามในเอกสารใดๆ เพื่อรับทราบและตกลงยินยอมผูกพันตามข้อตกลงและเงื่อนไขในการใช้บริการผลิตภัณฑ์และบริการของผู้ใช้บริการ ตามที่บริษัทพิจารณาเห็นสมควรและได้ร้องขอให้ดำเนินการ
+        </p>
       </div>
 
-      <div class="title2">AUTHORIZATION TO CONTACT YOU</div>
+      <div class="title2">3. การใช้บริการผลิตภัณฑ์และบริการ</div>
       <div class="text1">
         <p>
-          You agree to receive calls, including autodialed and/or pre-recorded message calls, calls from from Sellsuki at any of the
-          telephone numbers (including mobile telephone numbers) that we have collected for you as authorized and described
-          in our Privacy Policy, including telephone numbers you have provided us, or that we have obtained from third parties
-          or collected by our own efforts. If the telephone number that we have collected is a mobile telephone number, you
-          consent to receive SMS or other text messages at that number. You also consent to pay for any fees collected from
-          you by your telephone service company in the case that a Sellsuki representative contacts you. You agree we may
-          contact you in the manner described above at the telephone numbers we have in our records for these purposes:
+          3.1. บริษัทจะไม่รับผิดชอบต่อความสูญเสีย และ/หรือ ความเสียหายไม่ว่าในลักษณะใดที่เป็นผล และ/หรือ อาจจะเป็นผลมาจากการใช้บริการ ผลิตภัณฑ์และบริการของผู้ใช้บริการ (ทั้งนี้ไม่ว่าทางตรงหรือทางอ้อม)
         </p>
-        <ul>
-          <li>To contact you for reasons relating to your account or your use of our Services (such as to collect a debt, resolve
-            a dispute, or to otherwise enforce our User Agreement) or as authorized by applicable law </li>
-          <li>To contact you for marketing, promotional, or other reasons that you have either previously consented to or that
-            you may be asked to consent to in the future.</li>
-        </ul>
+        <p>
+          3.2. บริษัทได้จัดให้มีข้อกำหนดด้านนโยบายความเป็นส่วนตัว (Privacy Policy) (รวมถึงที่จะได้มีการแก้ไขในอนาคต) ผู้ใช้บริการควรศึกษา ทำความเข้าใจ และ รับทราบรายละเอียดต่าง ๆ ของข้อกำหนดดังกล่าวก่อนการใช้บริการผลิตภัณฑ์และบริการของผู้ใช้บริการ ซึ่งผู้ใช้บริการสามารถเข้าถึง ศึกษา ตรวจสอบ และ จัดพิมพ์ ข้อกำหนดด้านนโยบายความเป็นส่วนตัว (Privacy Policy)
+        </p>
+        <p>
+          3.3 บริษัทให้ความพยายามอย่างเต็มที่ในการให้บริการแก่ผู้ใช้บริการอย่างไรก็ตาม บริษัทไม่สามารถรับรองผลลัพธ์ หรือ ผลสำเร็จใด (ไม่ว่าทางธุรกิจ กำไร หรือ อย่างอื่นใด) ที่ผู้ใช้บริการมุ่งหวังหรือประสงค์ที่จะได้รับจากการใช้บริการผลิตภัณฑ์และบริการที่ผู้ใช้บริการได้เลือกใช้บริการ และบริษัทจะไม่รับผิดชอบต่อความสูญเสียและ/หรือ ความเสียหายใดๆ ที่มีหรืออาจจะเกิดขึ้นไม่ว่าในกรณีใดๆ
+        </p>
+        <p>
+          3.4 ไม่ว่าระหว่าง หรือ ภายหลังระยะเวลา การใช้บริการผลิตภัณฑ์และบริการของผู้ใช้บริการ ผู้ใช้บริการขอยืนยันต่อบริษัทว่า ผู้ใช้บริการจะไม่ให้ข้อมูล และ/หรือ แสดงความคิดเห็นใดๆ ในที่สาธารณะ หรือ ในระบบหรือรูปแบบที่ทำให้ข้อมูลสามารถถูกเข้าถึงได้ในวงกว้าง (รวมถึง สื่อสารมวลชน สื่อออนไลน์ และ/หรือ โซเชียลมีเดีย)ที่อาจจะทำให้เกิดความเสียหาย หรือ เสื่อมเสียต่อบริษัท (ไม่ว่าในรูปแบบใดๆ) อย่างไรก็ตามบริษัทยินดีน้อมรับคำติชมและคำแนะนำต่างๆ จากผู้ใช้บริการเพื่อนำมาปรับปรุงการให้บริการของบริษัทต่อไป ซึ่งผู้ใช้บริการสามารถส่งคำติชมและคำแนะนำต่างๆให้แก่บริษัทมาได้ที่ support@akitahub.com
+        </p>
+        <p>
+          3.5 ไม่ว่าระหว่างหรือ ภายหลังระยะเวลาการใช้บริการผลิตภัณฑ์และบริการของผู้ใช้บริการหากมีปัญหา และ/หรือ ข้อพิพาทใดๆ เกิดขึ้นระหว่างผู้ใช้บริการกับลูกค้าของผู้ใช้บริการและ/หรือบุคคลอื่นใดก็ตาม ที่เป็นผลมาจากการใช้บริการผลิตภัณฑ์และบริการของผู้ใช้บริการ ผู้ใช้บริการรับทราบและ จะรับผิดชอบในการดำเนินการใดๆ กับปัญหาดังกล่าวเอง บริษัทไม่มีหน้าที่ และ/หรือความรับผิดชอบในดำเนินการกับปัญหา และ/หรือ ข้อพิพาทดังกล่าวอนึ่ง ในกรณีที่บริษัทต้องเสียหาย (ไม่ว่าในรูปแบบใดๆ อันเป็นผลมาจากการดำเนินการใดๆ เกี่ยวปัญหาดังกล่าว ผู้ใช้บริการตกลงที่จะดำเนินการแก้ไขความเสียหายดังกล่าวให้หมดสิ้นไปและ/หรือ ชดเชยค่าเสียหายใดๆ ที่มีหรืออาจจะมีขึ้นแก่บริษัท รวมถึงกรรมการ ผู้บริหาร เจ้าหน้าที่ และ ตัวแทน ของบริษัท
+        </p>
+        <p>
+          3.6 รูปภาพ รูปแบบ ข้อความ ข้อมูล ความเห็น และ/หรือ เนื้อหาต่างๆ ที่ผู้ใช้บริการนำมาใช้ (รวมถึง รูปภาพ รูปแบบ ข้อความ ข้อมูล ความเห็น และ/หรือ เนื้อหาต่างๆ ที่มีผู้แสดงออก และ/หรือ โพสไว้ในเว็บไซต์หรือแอปพลิเคชันของผู้ใช้บริการ) ไม่ว่าในการใช้บริการผลิตภัณฑ์และบริการใดๆ ของผู้ใช้บริการ เช่น ใน เว็บไซต์หรือในเนื้อหาโฆษณานั้น จะถือเป็นความรับผิดชอบของผู้ใช้บริการแต่เพียงผู้เดียว บริษัทไม่มีหน้าที่ตรวจสอบ และ/หรือ คัดกรอง รูปภาพ รูปแบบ ข้อมูล และ เนื้อหาต่างๆ ดังกล่าว และบริษัทจะไม่รับผิดชอบต่อความเสียหายที่เกิดขึ้นเนื่องจากการใช้งาน การรุกล้ำสิทธิ์ส่วนบุคคล หรือปัญหาต่างๆ ที่เกิดขึ้นระหว่างผู้ใช้บริการกับบุคคลอื่นอีกทั้ง ผู้ใช้บริการจะต้องไม่นำมาใช้ และ/หรือ ยินยอมให้ใช้ รูปภาพ รูปแบบ ข้อความ ข้อมูล ความเห็น และ/หรือ เนื้อหาที่ผิดหรือ อาจจะผิดกฎหมาย และ/หรือศีลธรรมของสังคม ไม่ว่าในกรณีใดๆ ในกรณีที่บริษัทพบว่า ผู้ใช้บริการไม่ได้ดำเนินการให้เป็นไปตามเงื่อนไขดังกล่าว บริษัทขอสงวนสิทธิ์ในการลบรูปภาพ รูปแบบ ข้อความ ข้อมูล ความเห็น และ/หรือ เนื้อหา เหล่านั้น หรือยกเลิกการใช้บริการผลิตภัณฑ์และบริการใดๆ ของผู้ใช้บริการที่ก่อหรือ อาจจะก่อให้เกิดปัญหา และ/หรือ ความเสียหายต่างๆ ดังกล่าว โดยบริษัทไม่จำเป็นต้องแจ้งให้ผู้ใช้บริการทราบล่วงหน้า
+        </p>
+        <p>
+          3.7 เมื่อได้รับการร้องขอจากบริษัท (ไม่ว่าระหว่าง หรือ ภายหลัง การใช้บริการผลิตภัณฑ์และบริการของผู้ใช้บริการ) ผู้ใช้บริการยินดีจะให้ความร่วมมือกับบริษัท ในการให้ และ เปิดเผย ข้อมูล เอกสาร และ/หรือ หลักฐานต่างๆ ที่เกี่ยวกับการใช้บริการผลิตภัณฑ์และบริการของผู้ใช้บริการ แก่บริษัท และ ให้บริษัทเปิดเผย และ/หรือ ส่งมอบข้อมูล เอกสาร และ/หรือ หลักฐานดังกล่าว ให้แก่หน่วยงานราชการ และ องค์กรใดๆ ที่มีอำนาจตามกฎหมาย เพื่อปฏิบัติตาม กฎ ระเบียบ กฎหมาย และ/หรือ คำสั่ง ของหน่วยงานราชการ และ องค์กรใดๆ ที่มีอำนาจตามกฎหมายที่เกี่ยวข้องดังกล่าว
+        </p>
+        <p>
+          3.8 ในการใช้บริการผลิตภัณฑ์และบริการของผู้ใช้บริการ ผู้ใช้บริการรับทราบและตกลงว่า บริษัทไม่ได้ให้คำรับรองหรือยืนยันถึงคุณภาพ คุณค่า มูลค่า และ/หรือ คุณสมบัติใดๆ ของสินค้า ผลิตภัณฑ์ และ/หรือ บริการ ที่ผู้ใช้บริการ และ/หรือ บุคคลภายนอก นำมาเสนอหรือแสดงไว้ เกี่ยวกับการใช้บริการผลิตภัณฑ์และบริการของผู้ใช้บริการ เช่น การแสดงไว้ในเว็บไซต์หรือในเนื้อหาโฆษณา อนึ่ง ในกรณีที่บริษัทต้องเสียหาย (ไม่ว่าในรูปแบบใดๆ) อันเป็นผลมาจากการดำเนินการเกี่ยวกรณีดังกล่าว ผู้ใช้บริการตกลงที่จะดำเนินการแก้ไขความเสียหายดังกล่าวให้หมดสิ้นไป หรือชดเชยค่าเสียหายใดๆ ที่มีหรืออาจจะมีขึ้นแก่บริษัทรวมถึง กรรมการ ผู้บริหาร เจ้าหน้าที่ และ ตัวแทน ของบริษัท
+        </p>
+        <p>
+          3.9 ในการใช้บริการผลิตภัณฑ์และบริการของผู้ใช้บริการ ผู้ใช้บริการรับทราบและตกลงว่า บริษัทไม่ได้ให้คำรับรองหรือยืนยันว่าระบบเครือข่ายอินเทอร์เน็ต และ/หรือ การให้บริการโดยผู้ให้บริการในต่างประเทศ จะสามารถดำเนินการได้อย่างสมบูรณ์แบบ ไม่มีข้อบกพร่อง และ/หรือ มีเสถียรภาพตลอดเวลาการใช้บริการ พร้อมกันนี้ บริษัทขอสงวนสิทธิ์ที่จะไม่รับผิดชอบถึงความสูญเสีย หรือ ความเสียหายใดๆ ที่มี หรือ อาจจะมีขึ้นจากการกรณีดังกล่าวทั้งสิ้นในกรณีที่ผู้ใช้บริการพบข้อบกพร่องใดๆ ของการใช้บริการผู้ใช้บริการสามารถแจ้งให้บริษัททราบถึงข้อบกพร่องดังกล่าวผ่านช่องทางการติดต่อสื่อสารในเงื่อนไขการให้บริการ
+        </p>
+        <p>
+          3.10 ผู้ใช้บริการขอให้คำรับรองและยืนยันต่อบริษัทว่า ผู้ใช้บริการเข้าใจ รับทราบถึง และ จะปฏิบัติตาม บทบัญญัติของกฎหมายที่เกี่ยวข้องกับการใช้บริการผลิตภัณฑ์และบริการของผู้ใช้บริการ (รวมถึง กฎ ระเบียบ กฎหมาย และ/หรือ คำสั่ง ของหน่วยงานราชการที่เกี่ยวข้อง) อย่างเคร่งครัด
+        </p>
+        <p>
+          3.11 ผู้ใช้บริการรับทราบและเข้าใจว่า ในการให้บริการผลิตภัณฑ์และบริการต่างๆ แก่ผู้ใช้บริการ บริษัทไม่สามารถรับรองและยืนยันได้ว่า จะไม่มีบุคคลอื่นสามารถเข้าถึง ทำสำเนา แก้ไข เปลี่ยนแปลง และ/หรือ นำไปใช้ซึ่ง ข้อมูล เอกสาร และ/หรือ หลักฐานต่างๆ ที่เกี่ยวกับการใช้บริการผลิตภัณฑ์และบริการของผู้ใช้บริการ (ไม่ว่าที่เป็นความลับ หรือไม่ก็ตาม) และ/หรือ ทำ หรือ อาจจะทำให้เกิดความเสียหายใดๆ แก่สินค้าผลิตภัณฑ์และบริการต่างๆของผู้ใช้บริการ
+        </p>
       </div>
 
-      <div class="title2">DISCLOSURE OF INFORMATION</div>
+      <div class="title2">4. การต่ออายุและยกเลิกใช้บริการ</div>
       <div class="text1">
         <p>
-          Our primary purpose in collecting personal information upon registration is to provide you with access to our sites and/or
-          use of our services, applications and tools, provide you with requested customer service and relevant information
-          about your account and our services, and to provide you with a safe, smooth, efficient, and customized experience.
-        </p>
-        <p>You agree that we may use your personal information to:</p>
-        <ul>
-          <li>Provide you access to our sites and the services and customer support you request</li>
-          <li>Prevent, detect, and investigate, fraud, security breaches, potentially prohibited or illegal activities, and enforce
-            our User Agreement. In the case that any potentially prohibited or illegal activites should occur, Sellsuki shall
-            still remains</li>
-          <li>Customize, measure and improve our services, content and advertising</li>
-          <li>Contact you, either via email or telephone, to resolve disputes, collect fees, and troubleshoot problems with your
-            account or our sites, services, applications or tools, or for other purposes authorized by law</li>
-          <li>Contact you, either via email or telephone to inform you about our services and those of our corporate family,
-            deliver targeted marketing, service updates, and promotional offers based on your communication preferences</li>
-        </ul>
-        <p>
-          Sellsuki does not affiliate with any third party organizations to provide user information for any commercial purpose nor
-          publish such information to the public or government-related institutions. We do not sell or rent your personal
-          information to third parties for their marketing purposes without your explicit consent. We may combine your information
-          with information we collect from other companies and use it to improve and personalize our services, content and
-          advertising. However, because we operate under the policies of Facebook, Facebook can make use of user information
-          under Facebook's privacy policy.
+          4.1 ผู้ใช้บริการสามารถยกเลิกใช้บริการผลิตภัณฑ์และบริการได้โดยส่งอีเมลแจ้งความประสงค์ขอยกเลิกการใช้บริการมาได้ที่ support@akitahub.com หรือแจ้งความประสงค์ขอยกเลิกการใช้บริการต่อเจ้าหน้าที่ของบริษัทที่ได้รับมอบหมายให้เป็นผู้ให้บริการแก่ผู้ใช้บริการเป็นลายลักษณ์อักษรล่วงหน้าไม่น้อยกว่า 30 วัน หรือ ดำเนินการตามวิธีการขอยกเลิกการใช้บริการที่กำหนดไว้ในเงื่อนไขในการใช้บริการเฉพาะรายผลิตภัณฑ์และบริการ ทั้งนี้ บริษัทขอสงวนสิทธิ์ที่จะไม่คืนเงินค่าบริการที่ผู้ใช้บริการได้ชำระแล้วทั้งหมดคืนให้แก่ผู้ใช้บริการ
         </p>
         <p>
-          Information you provide upon using our website is strictly kept confidential and not accessible as we DO NOT retain, keep
-          record nor share your information, which includes, but is not limited to:
+          4.2 เพื่ออำนวยความสะดวกแก่ผู้ใช้บริการบริษัทจะพยายามติดต่อผู้ใช้บริการเพื่อแจ้งเตือนผู้ใช้บริการก่อนหมดอายุการใช้บริการล่วงหน้า เพื่อให้ผู้ใช้บริการทำการต่ออายุการใช้บริการได้ก่อนหมดอายุการใช้บริการ อย่างไรก็ตาม ผู้ใช้บริการยังคงมีหน้าที่ติดต่อกับบริษัทเพื่อแจ้งความประสงค์การต่ออายุการใช้บริการ หรือ การไม่ต่ออายุการใช้บริการ ดังนั้น หากบริษัทไม่ได้ติดต่อ หรือ ไม่สามารถติดต่อผู้ใช้บริการได้ และผู้ใช้บริการไม่สามารถต่ออายุการใช้บริการได้ทันตามกำหนดเวลา บริษัทขอสงวนสิทธิ์ที่จะไม่รับผิดชอบต่อความเสียหายใดๆ อันเกิดขึ้น หรือ อาจจะเกิดขึ้นแก่ผู้ใช้บริการหรือบุคคลใดๆ อันเป็นผลมาจากการหมดอายุการใช้บริการ อนึ่ง หากผู้ใช้บริการไม่ได้ชำระเงินต่ออายุการใช้บริการภายในระยะเวลาที่กำหนด บริษัทจะถือว่าการใช้บริการผลิตภัณฑ์และบริการของผู้ใช้บริการได้สิ้นสุดเมื่อหมดอายุการใช้บริการ
         </p>
-        <ul class="ulNum">
-          <li>Information you provide us when registering for an account, including email address, phone number, mobile telephone
-            number, physical contact infor mation, and (depending on the service used) sometimes financial information, such
-            as credit card or bank account numbers</li>
-          <li>Additional information you may provide to us via social media sites or services</li>
-          <li>Transactional information based on your activities on the sites (such as bidding, buying, selling, item and content
-            you generate or that relates to your account); </li>
-          <li>Shipping, billing and other information you provide to purchase or ship an item, as well as to receive payments</li>
-          <li>Chat history and information provided in the context of community discussions, chats, dispute resolution, correspondence
-            through our sites, or corre spondence sent to us</li>
-        </ul>
-        <p>
-          We hold the right to disclose personal information to respond to legal requirements in certain cases, including but not limited
-          to: to enforce our policies, respond to claims that a listing or other content violates the rights of others, or
-          to protect anyone's rights, property, or safety. Such information will be disclosed in accordance with this Privacy
-          Policy and applicable laws and regulations. As stated above, we do not disclose your personal information to third
-          parties for their marketing purposes without your explicit consent. Sellsuki operates under the Privacy Policies
-          of Facebook.com that is explained by the following:
-        </p>
-        <p>
-          “Facebook Platform lets you log into other applications and websites using your Facebook account. When you log in using Facebook,
-          we give the site your User ID (just like when you connect with any other application), but we do not share your
-          email address with that website through this process without your permission and no password is retrieved from
-          your Facebook account.
-        </p>
-        <p>
-          If you already have an account on that website, the site may also be able to connect that account with your Facebook account.
-          Sometimes it does this using what is called an "email hash", which is similar to searching for someone on Facebook
-          using an email address. Only the email addresses in this case are hashed so no email addresses are actually shared
-          between Facebook and the website.
-        </p>
-        <p>
-          The website sends over a hashed version of your email address, and we match it with a database of email addresses that we
-          have also hashed. If there is a match, then we tell the website the User ID associated with the email address.
-          This way, when you log into the website using Facebook, the website can link your Facebook account to your account
-          on that website.”
-        </p>
-        <p>
-          As mentioned above, Facebook.com does not provide users passwords and no personal information can be retrieved without
-          explicit approval by the user. Sellsuki also has no right to request such information from Facebook without users'
-          authorization.
-        </p>
-
       </div>
 
+      <div class="title2">5. การติดต่อระหว่างผู้ใช้บริการกับบริษัท และการเปลี่ยนแปลงกฎ ระเบียบ และเงื่อนไขการให้บริการผลิตภัณฑ์และบริการ</div>
+      <div class="text1">
+        <p>
+          5.1 การติดต่อระหว่างบริษัทกับผู้ใช้บริการ จะดำเนินการผ่านช่องทางการติดต่อสื่อสารทางอีเมลเป็นหลัก โดยผู้ใช้บริการท่านใดมีปัญหาการใช้บริการผลิตภัณฑ์และบริการ หรือประสงค์จะสอบถามเกี่ยวกับผลิตภัณฑ์และบริการสามารถส่งอีเมลมาได้ที่ support@akitahub.com อย่างไรก็ตาม การติดต่อระหว่างบริษัทกับผู้ใช้บริการ อาจจะมีรูปแบบเฉพาะเพิ่มเติมขึ้นอยู่กับการใช้บริการผลิตภัณฑ์และบริการเฉพาะราย ที่ผู้ใช้บริการเลือกใช้บริการ ซึ่งจะระบุวิธีการติดต่อดังกล่าวไว้ในเงื่อนไขในการใช้บริการเฉพาะรายผลิตภัณฑ์และบริการของแต่ละผลิตภัณฑ์และบริการที่ผู้ใช้บริการเลือกใช้บริการ
+        </p>
+        <p>
+          5.2 บริษัทอาจจะมีการเปลี่ยนแปลง กฎ ระเบียบ และ เงื่อนไข การให้บริการผลิตภัณฑ์และบริการ (รวมถึง เงื่อนไขในการใช้บริการ และ ข้อกำหนดด้านนโยบายความเป็นส่วนตัว (Privacy Policy) เพื่อความเหมาะสมอยู่เสมอ แม้ว่า เพื่ออำนวยความสะดวกให้แก่ผู้ใช้บริการ บริษัท จะพยายามแจ้งให้ผู้ใช้บริการทราบถึงการเปลี่ยนแปลง กฎ ระเบียบ และ เงื่อนไข การให้บริการผลิตภัณฑ์และบริการดังกล่าวผ่านทางเว็บไซต์ www.sellsuki.co.th บริษัทขอสงวนสิทธิ์ในการเปลี่ยนแปลง กฎ ระเบียบ และ เงื่อนไข การให้บริการผลิตภัณฑ์และบริการดังกล่าว โดยไม่ต้องแจ้งให้ผู้ใช้บริการทราบล่วงหน้า และ จะไม่รับผิดชอบความเสียหายที่เกิดแก่ผู้ใช้บริการหรือบุคคลอื่นใดอันเนื่องมาจากการเปลี่ยนแปลง กฎ ระเบียบ และ เงื่อนไข การให้บริการผลิตภัณฑ์และบริการไม่ว่าในกรณีใดๆ
+        </p>
+      </div>
 
+      <div class="title2">6. การยกเลิกการใช้บริการผลิตภัณฑ์และบริการ</div>
+      <div class="text1">
+        <p>
+          บริษัทขอสงวนสิทธิ์ในการยกเลิกการใช้บริการผลิตภัณฑ์และบริการของผู้ใช้บริการ หากบริษัทเห็นว่าผู้ใช้บริการไม่ปฏิบัติตาม กฎ ระเบียบ และเงื่อนไขการให้บริการผลิตภัณฑ์และบริการ (รวมถึง เงื่อนไขในการใช้บริการ และ ข้อกำหนดด้านนโยบายความเป็นส่วนตัว (Privacy Policy) โดยบริษัทไม่จำเป็นต้องแจ้งให้ผู้ใช้บริการทราบล่วงหน้า และบริษัทจะไม่รับผิดชอบความเสียหายใดๆ ที่เกิด หรือ อาจจะเกิดขึ้น แก่ผู้ใช้บริการหรือบุคคลอื่นใดอันเนื่องมาจากการดำเนินการดังกล่าว
+          <br>นอกเหนือไปจากเงื่อนไขในการใช้บริการทั่วไปข้างต้นแล้ว ผู้ใช้บริการต้องรับทราบและปฏิบัติตามเงื่อนไขในการใช้บริการเฉพาะซึ่งได้กล่าวไว้ในส่วนต่อไปโดยเคร่งครัด
+        </p>
+      </div>
 
+      <div class="title2">7. ข้อจำกัดความรับผิดชอบ</div>
+      <div class="text1">
+        <p>
+          การเรียกร้องใดๆ ของท่านต่อบริษัทนั้นไม่ว่ากรณีใดๆ บริษัทจะมีความรับผิดไม่เกินมูลค่าทั้งหมดของจำนวนเงินที่ท่านได้ชำระตามจริงสำหรับค่าบริการ เนื่องจากการใช้บริการระหว่างที่มีการเรียกร้องนั้นๆ เกิดขึ้น และไม่มีกรณีใดที่บริษัท ต้องรับผิดต่อท่านหรือบุคคลใดๆ ไม่ว่าทางตรง ทางอ้อม สำหรับค่าเสียหายเชิงลงโทษ ค่าเสียหายเชิงเศรษฐกิจ ค่าเสียหายที่อาจเกิดขึ้นในอนาคต หรือค่าเสียหายหรือความสูญเสียอื่นๆ บริษัทไม่ต้องรับผิดต่อความเสียหายหรือการบาดเจ็บใดๆ ซึ่งอาจเกิดขึ้นกับ หรือเป็นเหตุให้ท่านหรือบุคคลใดๆ ที่ท่านได้ใช้บริการ รวมถึงแต่ไม่จำกัดเฉพาะความสูญเสีย ความเสียหาย หรือการบาดเจ็บที่เกิดขึ้นจากหรือเกี่ยวข้องกับบริการ แอปพลิเคชัน และ/หรือซอฟท์แวร์ รวมถึงแต่ไม่จำกัดเฉพาะการใช้ หรือการไม่สามารถใช้บริการ แอปพลิเคชัน และ/หรือซอฟท์แวร์ได้ การที่ท่านได้ให้ความไว้วางใจในความสมบูรณ์ ความแม่นยำ หรือความมีอยู่ของโฆษณาใดๆ หรือเป็นผลมาจากความสัมพันธ์ หรือการทำธุรกรรมใดๆ ระหว่างท่านและผู้ให้บริการซึ่งเป็นบุคคลภายนอกบริษัท ผู้ซื้อโฆษณา หรือผู้สนับสนุนซึ่งโฆษณาของบุคคลเหล่านั้นปรากฎอยู่หน้าเว็บไซต์ หรือถูกอ้างอิงถึงจากการใช้บริการ แอปพลิเคชัน และ/หรือซอฟท์แวร์ แม้ว่าบริษัท และ/หรือผู้อนุญาตให้ใช้สิทธิของบริษัทได้รับคำแนะนำเกี่ยวกับความเป็นไปได้ของค่าเสียหายดังกล่าวมาก่อน
+        </p>
+      </div>
+
+      <div class="title2">8. การส่งหนังสือบอกกล่าว</div>
+      <div class="text1">
+        <p>
+          บริษัทอาจส่งหนังสือบอกกล่าวให้ท่านโดยการแจ้งเตือนบนแอปพลิเคชัน ส่งไปรษณีย์อิเล็กทรอนิกส์ ไปยังที่อยู่ทางไปรษณีย์อิเล็กทรอนิกส์ ของท่านตามข้อมูลที่บริษัทมี หรือการสื่อสารด้วยลายลักษณ์อักษรส่งไปหาท่านด้วยไปรษณีย์ลงทะเบียน หรือไปรษณีย์ที่ชำระค่าบริการล่วงหน้าไปยังที่อยู่ของท่านตามข้อมูลที่บริษัทมี
+          <br>ท่านอาจส่งหนังสือบอกกล่าวไปยังบริษัท (หนังสือบอกกล่าวดังกล่าวจะถือว่าได้ส่งแล้วต่อเมื่อบริษัทได้รับ) โดยหนังสือส่งผ่านทางผู้ให้บริการขนส่ง หรือไปรษณีย์ลงทะเบียนไปยังบริษัทโดยใช้รายละเอียดของการติดต่อตามที่ระบุ
+        </p>
+      </div>
     </div>
 
 
@@ -229,14 +177,13 @@ section .termsFrame {
 section .termsFrameTop {
     width: 100%;
     height: 16px;
-    background: url("https://www.sellsuki.co.th/img/bg-head-terms-of-use.png") no-repeat;
     position: absolute;
     top: -16px;
     left: 0px;
 }
 
 .title1{
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     text-align: center;
     line-height: 30px;
@@ -246,6 +193,7 @@ section .termsFrameTop {
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
+    text-decoration: underline;
 }
 
 .text1{

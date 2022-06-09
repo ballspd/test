@@ -12,7 +12,7 @@
                                 <td class="banner-height">
                                     <font class="font-wght" style="font-size:62px;color:#FFFFFC">LINE AGENCY <br>BY SELLSUKI</font>
                                     <p class="text-s-16 mt-3" style="color:#FFFFFC">{{ $t("solution.line.mata") }}</p>
-                                    <a href="https://lineagency.sellsuki.com" target="_blank" class="btn btn-orange button mt-4"><span class="text-white" style="font-size:18px">Click Now</span></a>
+                                    <a href="https://lineagency.sellsuki.com" target="_blank" rel="noopener" class="btn btn-orange button mt-4"><span class="text-white" style="font-size:18px">Click Now</span></a>
                                 </td>
                             </table>
                         </div>
@@ -20,7 +20,7 @@
                             <p class="text-s-14 pb-3 text-start" style="color:#FFFFFC;margin-top:95px !important"><router-link @click="scrollToTop" to="/" style="color:#FFFFFC !important;">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#FFFFFC">LINE Agency</font></p>
                             <h1 class="font-wght text-s-36" style="color:#FFFFFC">LINE AGENCY <br>BY SELLSUKI</h1>
                             <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">{{ $t("solution.line.mata") }}</p>
-                            <a href="https://lineagency.sellsuki.com" target="_blank" class="btn btn-orange button mt-4"><span class="text-white" style="font-size:18px">Click Now</span></a>
+                            <a href="https://lineagency.sellsuki.com" target="_blank" rel="noopener" class="btn btn-orange button mt-4"><span class="text-white" style="font-size:18px">Click Now</span></a>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -40,23 +40,23 @@
                         <div class="row mt-5 text-center">
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-2">
-                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-1.png"></div>
+                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-1.webp"></div>
                                 </div>
-                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
+                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.webp">
                                 <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737" v-html="$t('solution.line.training')"></h2>
                             </div>
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-2.png"></div>
+                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-2.webp"></div>
                                 </div>
-                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
+                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.webp">
                                 <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737" v-html="$t('solution.line.suggestions')"></h2>
                             </div>
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-3.png"></div>
+                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsLine/icon-solution-Line-3.webp"></div>
                                 </div>
-                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
+                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.webp">
                                 <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737" v-html="$t('solution.line.tools')"></h2>
                             </div>     
                         </div>
@@ -127,11 +127,11 @@
                             </div>
                             <div v-else class="row mt-4 p-custom-2 d-flex">
                                 <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 pt-5 animate__animated animate__zoomInLeft">
-                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><img v-if="index == 1" class="me-2" style="margin-top:-3px" src="./../../assets/icon/new.png" alt="new.png"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-block d-lg-none pb-5" style="padding: 10px 5px;"><img v-if="index == 1" class="me-2" style="margin-top:-3px" src="./../../assets/icon/new.webp" alt="new.webp"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
                                     <img v-if="data.image != null" class="item-center hvr-rotate" :src="data.image.url" :alt="data.image.name">
                                 </div>
                                 <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ps-lg-5 pe-lg-5 ps-3 pe-3 m-auto">
-                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInRight animate__slow" style="padding: 10px 5px;"><img v-if="index == 1" class="me-2" style="margin-top:-3px" src="./../../assets/icon/new.png" alt="new.png"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
+                                    <h2 class="text-s-20 font-wght text-lg-start text-center d-none d-lg-block animate__animated animate__bounceInRight animate__slow" style="padding: 10px 5px;"><img v-if="index == 1" class="me-2" style="margin-top:-3px" src="./../../assets/icon/new.webp" alt="new.webp"><span class="theme-text-main theme-border" style="padding: 10px 5px">{{data.header}}</span></h2>
                                     <div class="animate__animated animate__bounceInLeft animate__slow">
                                         <div class="show collapse animate__animated animate__flipInX" :class="'multi-collapse'+data.id" :id="'showCollapseMin'+data.id">
                                             <div class="text-center text-lg-start text-16 mt-4 p-2 pb-0 mb-0 text-limit-3" style="color:#373737" v-html="$md.render(data.detail)"></div>
@@ -250,7 +250,7 @@ export default {
 }
 text-center text-lg-start 
 .bg{
-  background: url('./../../assets/image94.png');
+  background: url('./../../assets/image94.webp');
   background-position: center;
   background-repeat: no-repeat;
   height: 350px;

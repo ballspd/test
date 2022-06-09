@@ -9,10 +9,10 @@
                     <a :href="'/Portfolio/Detail/'+data.id+'?type='+data.bu_category.name">
                         <div class="row p-2">
                             <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-2">
-                                <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.name">
+                                <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText" loading="lazy">
                             </div>
                             <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-2">
-                                <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
+                                <div class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</div>
                                 <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                 <p class="text-s-14 text-limit-2" style="color:#373737">{{data.description}}</p>
                             </div>
@@ -25,10 +25,10 @@
                     <a :href="'/Blogs/Detail/'+data.id+'/'+data.url">
                         <div class="row p-2">
                             <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-2">
-                                <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.name">
+                                <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText" loading="lazy">
                             </div>
                             <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-2">
-                                <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
+                                <div class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</div>
                                 <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                 <p class="text-s-14 text-limit-2" style="color:#373737">{{data.description}}</p>
                             </div>

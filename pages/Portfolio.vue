@@ -57,7 +57,7 @@
                                 <div class="p-3">
                                     <a @click="type = 'Akita',Akita = false,Fuse = true,Line = true,Beary = true,Kaikong = true,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
                                         <div class="hover-logo" :class="{'filter-gray':Akita}">
-                                            <img class="item-center" src="./../assets/logo/logo-Akita.png" alt="">
+                                            <img class="item-center" src="./../assets/logo/logo-Akita.webp" alt="">
                                             <font class="text-s-16" style="color:#373737">Akita Fulfillment</font>
                                         </div>
                                     </a>
@@ -66,7 +66,7 @@
                                 <div class="p-3">
                                     <a @click="type = 'Fuse',Akita = true,Fuse = false,Line = true,Beary = true,Kaikong = true,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
                                         <div class="hover-logo" :class="{'filter-gray':Fuse}">
-                                            <img class="item-center" src="./../assets/logo/logo-Fuse.png" alt="">
+                                            <img class="item-center" src="./../assets/logo/logo-Fuse.webp" alt="">
                                             <font class="text-s-16" style="color:##413E93">Fuse Advertising</font>
                                         </div>
                                     </a>
@@ -75,7 +75,7 @@
                                 <div class="p-3">
                                     <a @click="type = 'Line',Akita = true,Fuse = true,Line = false,Beary = true,Kaikong = true,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
                                         <div class="hover-logo" :class="{'filter-gray':Line}">
-                                            <img class="item-center" src="./../assets/logo/logo-line.png" alt="">
+                                            <img class="item-center" src="./../assets/logo/logo-line.webp" alt="">
                                         </div>
                                     </a>
                                 </div>
@@ -83,7 +83,7 @@
                                 <div class="p-3">
                                     <a @click="type = 'Beary',Akita = true,Fuse = true,Line = true,Beary = false,Kaikong = true,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
                                         <div class="hover-logo" :class="{'filter-gray':Beary}">
-                                            <img class="item-center" src="./../assets/logo/logo-Beary.png" alt="">
+                                            <img class="item-center" src="./../assets/logo/logo-Beary.webp" alt="">
                                             <font class="text-s-16 color-231F20">Beary Web & Tech Service</font>
                                         </div>
                                     </a>
@@ -92,7 +92,7 @@
                                 <div class="p-3">
                                     <a @click="type = 'Kaikong',Akita = true,Fuse = true,Line = true,Beary = true,Kaikong = false,Shipmunk = true,Oc2Plus = true" style="cursor: pointer;">
                                         <div class="hover-logo" :class="{'filter-gray':Kaikong}">
-                                            <img class="item-center" src="./../assets/logo/logo-Kaikong.png" alt="">
+                                            <img class="item-center" src="./../assets/logo/logo-Kaikong.webp" alt="">
                                             <font class="text-s-16 color-7E4922">Kaikong Content Marketing</font>
                                         </div>
                                     </a>
@@ -101,7 +101,7 @@
                                 <!-- <div class="p-3">
                                     <a @click="type = 'Shipmunk',Akita = true,Fuse = true,Line = true,Beary = true,Kaikong = true,Shipmunk = false,Oc2Plus = true" style="cursor: pointer;">
                                         <div class="hover-logo" :class="{'filter-gray':Shipmunk}">
-                                            <img class="item-center" src="./../assets/logo/shipmunk.png" alt="">
+                                            <img class="item-center" src="./../assets/logo/shipmunk.webp" alt="shipmunk">
                                             <font class="text-s-16" style="color:#0B195E">Shipmunk : Delivery Booking</font>
                                         </div>
                                     </a>
@@ -110,7 +110,7 @@
                                 <div class="p-3">
                                     <a @click="type = 'Oc2Plus',Akita = true,Fuse = true,Line = true,Beary = true,Kaikong = true,Shipmunk = true,Oc2Plus = false" style="cursor: pointer;">
                                         <div class="hover-logo" :class="{'filter-gray':Oc2Plus}">
-                                            <img class="item-center" src="./../assets/logo/Oc2Plus-01.png" alt="">
+                                            <img class="item-center" src="./../assets/logo/Oc2Plus-01.webp" alt="Oc2Plus">
                                             <font class="text-s-16" style="color:#0F0D0D">Oc2Plus Customer <br>Data Platform</font>
                                         </div>
                                     </a>

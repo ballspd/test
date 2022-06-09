@@ -270,7 +270,7 @@ export default {
 <style scoped>
 
 .bg{
-  background: url('./../assets/1-Developer.png');
+  background: url('./../assets/1-Developer.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

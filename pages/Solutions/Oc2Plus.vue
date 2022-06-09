@@ -35,23 +35,23 @@
                 <div v-if="animation1" class="mt-custom p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
                     <div class="row text-center justify-content-center mb-4 ps-5 pe-5">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-5 mt-lg-0">
-                            <img class="item-center animate__animated animate__rotateIn animate__slow animate__delay-1s" src="./../../assets/SolutionsOc2plus/Oc2Plus-01-รวบรวมข้อมูลจากทุกช่องทาง.png" alt="Oc2Plus-01-รวบรวมข้อมูลจากทุกช่องทาง.png">
+                            <img class="item-center animate__animated animate__rotateIn animate__slow animate__delay-1s" src="./../../assets/SolutionsOc2plus/Oc2Plus-01-รวบรวมข้อมูลจากทุกช่องทาง.webp" alt="Oc2Plus-01-รวบรวมข้อมูลจากทุกช่องทาง.webp">
                             <h2 class="text-s-18 text-w-700 mt-4 ps-3 pe-3 theme-text-main animate__animated animate__fadeInDown animate__delay-2s">{{ $t("solution.oc2plus.h1") }}</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-5 mt-lg-0">
-                            <img class="item-center animate__animated animate__rotateIn animate__slow animate__delay-1s" src="./../../assets/SolutionsOc2plus/Oc2Plus-02-จัดเก็บไว้ในที่เดียว.png" alt="Oc2Plus-02-จัดเก็บไว้ในที่เดียว.png">
+                            <img class="item-center animate__animated animate__rotateIn animate__slow animate__delay-1s" src="./../../assets/SolutionsOc2plus/Oc2Plus-02-จัดเก็บไว้ในที่เดียว.webp" alt="Oc2Plus-02-จัดเก็บไว้ในที่เดียว.webp">
                             <h2 class="text-s-18 text-w-700 mt-4 ps-3 pe-3 theme-text-main animate__animated animate__fadeInDown animate__delay-2s">{{ $t("solution.oc2plus.h2") }}</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-5 mt-lg-0">
-                            <img class="item-center animate__animated animate__rotateIn animate__slow animate__delay-1s" src="./../../assets/SolutionsOc2plus/Oc2Plus-03-ง่ายต่อการนำไปใช้งาน.png" alt="Oc2Plus-03-ง่ายต่อการนำไปใช้งาน.png">
+                            <img class="item-center animate__animated animate__rotateIn animate__slow animate__delay-1s" src="./../../assets/SolutionsOc2plus/Oc2Plus-03-ง่ายต่อการนำไปใช้งาน.webp" alt="Oc2Plus-03-ง่ายต่อการนำไปใช้งาน.webp">
                             <h2 class="text-s-18 text-w-700 mt-4 ps-3 pe-3 theme-text-main animate__animated animate__fadeInDown animate__delay-2s">{{ $t("solution.oc2plus.h3") }}</h2>
                         </div>      
                     </div>
                 </div>
                     <div v-if="animation2" class="row p-custom-2 d-flex ms-5 me-5">
                         <div class="col-12 text-center mt-4 mt-lg-5 mb-5 animate__animated animate__fadeInDown"><h1 class="text-s-30 text-w-700 theme-text-main">{{ $t("solution.oc2plus.header") }}</h1></div>
-                        <!-- <div class="col-12 col-lg-6 ps-lg-5 mt-3"><img src="./../../assets/SolutionsOc2plus/Oc2Plus-04-CDP-View.png" alt="Oc2Plus-04-CDP-View.png"></div>
-                        <div class="col-12 col-lg-6 ps-lg-5 mt-3"><img src="./../../assets/SolutionsOc2plus/Oc2Plus-05-CRM-View.png" alt="Oc2Plus-05-CRM-View.png"></div> -->
+                        <!-- <div class="col-12 col-lg-6 ps-lg-5 mt-3"><img src="./../../assets/SolutionsOc2plus/Oc2Plus-04-CDP-View.wbp" alt="Oc2Plus-04-CDP-View.webp"></div>
+                        <div class="col-12 col-lg-6 ps-lg-5 mt-3"><img src="./../../assets/SolutionsOc2plus/Oc2Plus-05-CRM-View.wbp" alt="Oc2Plus-05-CRM-View.webp"></div> -->
                 
                         <div class="col-md-6 col-12 view animate__animated animate__slideInLeft animate__slow">
                             <div class="card item-center">
@@ -107,7 +107,7 @@
                             <div class="card mt-3">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.webp">
                                         <p class="text-s-16 text-w-700 mb-0">{{ $t("solution.oc2plus.why1") }}</p>
                                     </div>
                                 </div>
@@ -117,7 +117,7 @@
                             <div class="card mt-3">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.webp">
                                         <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">{{ $t("solution.oc2plus.why2") }}</p>
                                     </div>
                                 </div>
@@ -129,7 +129,7 @@
                             <div class="card mt-3">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.webp">
                                         <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">{{ $t("solution.oc2plus.why3") }}</p>
                                     </div>
                                 </div>
@@ -139,7 +139,7 @@
                             <div class="card mt-3">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.webp">
                                         <p class="text-s-16 text-w-700 mb-0 ps-2 pe-2">{{ $t("solution.oc2plus.why4") }}</p>
                                     </div>
                                 </div>

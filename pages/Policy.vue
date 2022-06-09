@@ -6,140 +6,146 @@
                             <div class="termsFrame">
                             <div class="termsFrameTop"></div>
 
-                            <div class="title1 pb-5">Privacy Policy</div>
+                            <div class="title1 pb-4">นโยบายความเป็นส่วนตัว และ คุ้มครองข้อมูลส่วนบุคคล</div>
 
-                            <div class="title2 pt-3">What information do we collect?</div>
                             <div class="text1">
                                 <p>
-                                We collect information from you when you register on our site.
-                                </p>
-                                <p>
-                                When ordering or registering on our site, as appropriate, you may be asked to enter your: name or e-mail address. You may,
-                                however, visit our site anonymously.
+                                กลุ่มบริษัท เซลสุกิ จำกัด (“บริษัท”) ขอแนะนำให้ท่านทำความเข้าใจนโยบายส่วนบุคคล (privacy policy) นี้ เนื่องจาก นโยบายนี้อธิบายถึงวิธีการที่บริษัทปฏิบัติต่อข้อมูลส่วนบุคคลของท่าน เช่น การเก็บรวบรวม การจัดเก็บรักษา การใช้ การเปิดเผย รวมถึงสิทธิต่างๆ ของท่าน เป็นต้น เพื่อให้ท่านได้รับทราบถึงนโยบายในการคุ้มครองข้อมูลส่วนบุคคลของบริษัท บริษัท ตระหนักถึงความสำคัญของการปกป้องข้อมูลส่วนบุคคลของลูกค้า พนักงาน รวมตลอดถึงคู่ค้าของบริษัท ด้วยเหตุนี้บริษัทจึงได้จัดให้มีมาตรการในการเก็บรักษา และป้องกันตามมาตราฐานของกฎหมาย ข้อกำหนด และระเบียบเกี่ยวกับการคุ้มครองข้อมูลส่วนบุคคล อย่างเคร่งครัด ดังต่อไปนี้
                                 </p>
                             </div>
 
-                            <div class="title2">What do we use your information for?</div>
+                            <div class="title2">1. คำนิยาม</div>
                             <div class="text1">
                                 <p>
-                                Any of the information we collect from you may be used in one of the following ways:
-                                </p>
-                                <ul>
-                                <li>To personalize your experience
-                                    <br>(your information helps us to better respond to your individual needs)</li>
-                                <li>To improve our website
-                                    <br>(we continually strive to improve our website offerings based on the information and feedback we receive from
-                                    you)</li>
-                                <li>To improve customer service
-                                    <br>(your information helps us to more effectively respond to your customer service requests and support needs)</li>
-                                <li>To process transactions
-                                    <br>Your information, whether public or private, will not be sold, exchanged, transferred, or given to any other
-                                    company for any reason whatsoever, without your consent, other than for the express purpose of delivering the
-                                    purchased product or service requested.</li>
-                                <li>To administer a contest, promotion, survey or other site feature</li>
-                                <li>To send periodic emails</li>
-                                </ul>
-                                <p>
-                                The email address you provide may be used to send you information, respond to inquiries, and/or other requests or questions.
+                                <span>“กลุ่มบริษัท เซลสุกิ จำกัด (“บริษัท”)”</span> หมายความว่า กลุ่มบริษัทที่ประกอบด้วย 3 บริษัทดังต่อไปนี้ บริษัทเซลสุกิ จำกัด (ประกอบด้วยบริการ Beary Web & Tech Service, LINE Agency, Fuse Advertising, Kaikong Content Marketing, Shipmunk : Delivery Booking) บริษัท อคิตะ ฟูลฟิลเมนท์ จำกัด (Akita Fulfillment) และบริษัท มิลเลเนี่ยมฟอลคอน จำกัด (Oc2Plus : Customer Data Platform)
+                                <br><span>“ข้อมูลส่วนบุคคล”</span> หมายความว่า ข้อมูลเกี่ยวกับบุคคลซึ่งทำให้สามารถระบุตัวบุคคลนั้นได้ไม่ว่าทางตรงหรือทางอ้อม แต่ไม่รวมถึงข้อมูลของผู้ถึงแก่กรรมโดยเฉพาะ
+                                <br><span>“ผู้ควบคุมข้อมูลส่วนบุคคล”</span> หมายความว่า บุคคลหรือนิติบุคคลซึ่งทำให้มีอำนาจหน้าที่ตัดสินใจเกี่ยวกับการเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูลส่วนบุคคล 
+                                <br><span>“ผู้ประมวลผลข้อมูลส่วนบุคคล”</span> หมายความว่า บุคคลหรือนิติบุคคลซึ่งดำเนินการเกี่ยวกับรวบรวม ใช้ หรือเปิดเผยข้อมูลส่วนบุคคลตามคำสั่งหรือในนามของผู้ควบคุมข้อมูลส่วนบุคคล ทั้งนี้ บุคคลหรือนิติบุคคลซึ่งดำเนินการดังกล่าวไม่เป็นผู้ควบคุมข้อมูลส่วนบุคคล 
+                                <br><span>“เจ้าของข้อมูล”</span> หมายความว่า ลูกค้า พนักงาน คู่ค้า ซึ่งเป็นบุคคลธรรมดา “บุคคล” หมายความว่า บุคคลธรรมดา
                                 </p>
                             </div>
 
-                            <div class="title2">How do we protect your information?</div>
+                            <div class="title2">2. วัตถุประสงค์ในการจัดทำนโยบายการคุ้มครองข้อมูลส่วนบุคคล</div>
                             <div class="text1">
                                 <p>
-                                We implement a variety of security measures to maintain the safety of your personal information when you enter, submit, or
-                                access your personal information.
+                                บริษัทจัดทำนโยบายการคุ้มครองข้อมูลส่วนบุคคลเพื่อคุ้มครองข้อมูลของลูกค้า พนักงาน รวมตลอดถึง คู่ค้าของบริษัท ในการทำธุรกรรมต่าง ๆ กับบริษัท ให้มีความปลอดภัย น่าเชื่อถือ และเพื่อให้เจ้าของข้อมูลได้รับการคุ้มครองอย่างมีประสิทธิภาพและได้รับการป้องการการนำข้อมูลส่วนบุคคลของเจ้าของข้อมูลไปใช้โดยไม่ได้รับอนุญาต อีกทั้งเพื่อให้มีการเยียวยาเจ้าของข้อมูลส่วนบุคคตามกฎหมายที่เกี่ยวข้อง
                                 </p>
                             </div>
 
-                            <div class="title2">Do we use cookies?</div>
+                            <div class="title2">3. การเก็บข้อมูลส่วนบุคคลอย่างจำกัด</div>
                             <div class="text1">
                                 <p>
-                                Yes (Cookies are small files that a site or its service provider transfers to your computers hard drive through your Web
-                                browser (if you allow) that enables the sites or service providers systems to recognize your browser and capture
-                                and remember certain information
+                                การจัดเก็บรวบรวมข้อมูลส่วนบุคคลจะกระทำโดยมี วัตถุประสงค์ ขอบเขต และใช้วิธีการที่ชอบด้วยกฎหมายและเป็นธรรม ในการเก็บรวบรวมและจัดเก็บข้อมูล ตลอดจนเก็บรวบรวม และจัดเก็บข้อมูลส่วนบุคคลอย่างจำกัดเพียงเท่าที่จำเป็นแก่การให้บริการ หรือบริการด้วยวิธีการทางอิเล็กทรอนิกส์อื่นใดภายใต้วัตถุประสงค์ของบริษัทเท่านั้น ทั้งนี้บริษัทจะดำเนินการให้เจ้าของข้อมูล รับรู้ ให้ความยินยอม ทางอิเล็กทรอนิกส์ ตามแบบวิธีการของบริษัท
                                 </p>
                                 <p>
-                                We use cookies to understand and save your preferences for future visits and compile aggregate data about site traffic and
-                                site interaction so that we can offer better site experiences and tools in the future.
+                                    บริษัท ได้เก็บรวบรวมข้อมูลของท่านผ่าน2 ช่องทาง ได้แก่
+                                    <br>1.ข้อมูลที่ท่านแสดงและส่งมอบให้กับบริษัท
+                                    <br>2.ข้อมูลที่เราเก็บรวบรวมผ่านบริการของ Third-Party
+                                </p>
+                                <p>
+                                    บริษัทอาจจัดเก็บข้อมูลส่วนบุคคลของท่านซึ่งเกี่ยวกับความสนใจและบริการที่ท่านใช้ ซึ่งอาจประกอบด้วยเรื่อง เชื้อชาติ ศาสนาหรือปรัชญา ข้อมูลสุขภาพของท่าน ข้อมูลชีวภาพ ทุพพลภาพ ความพิการ อัตลักษณ์ หรือข้อมูลอื่นใด ที่จะเป็นประโยชน์ในการให้บริการ ทั้งนี้ การดำเนินการดังกล่าวข้างต้น บริษัทจะขอความยินยอมจากท่านก่อนทำการเก็บรวบรวม เว้นแต่
+                                    <br>3.1. เป็นการปฏิบัติตามกฎหมาย เช่น พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พระราชบัญญัติว่าด้วยธุรกรรมทางอิเล็กทรอนิกส์ พระราชบัญญัติการประกอบกิจการโทรคมนาคม พระราชบัญญัติป้องกันและปราบปรามการฟอกเงิน ประมวลกฎหมายแพ่งและอาญา ประมวลกฎหมายวิธีพิจารณาความแพ่งและอาญา เป็นต้น
+                                    <br>3.2. เป็นไปเพื่อประโยชน์แก่การสอบสวนของพนักงานสอบสวน หรือการพิจารณาพิพากษาคดีของศาล
+                                    <br>3.3. เพื่อประโยชน์ของท่าน และการขอความยินยอมไม่อาจกระทำได้ในเวลานั้น
+                                    <br>3.4. เป็นการจำเป็นเพื่อประโยชน์โดยชอบด้วยกฎหมายของบริษัท หรือของบุคคลหรือนิติบุคคลอื่นที่ไม่ใช่บริษัท
+                                    <br>3.5. เป็นการจำเป็นเพื่อป้องกันหรือระงับอันตรายต่อชีวิต ร่างกาย หรือสุขภาพของบุคคล
+                                    <br>3.6. เป็นการจำเป็นเพื่อการปฏิบัติตามสัญญาซึ่งเจ้าของข้อมูลส่วนบุคคลเป็นคู่สัญญาหรือเพื่อใช้ในการดำเนินการตามคำขอของเจ้าของข้อมูลส่วนบุคคลก่อนเข้าทำสัญญานั้น
+                                    <br>3.7. เพื่อให้บรรลุวัตถุประสงค์ที่เกี่ยวกับการจัดทำเอกสารประวัติศาสตร์หรือจดหมายเหตุ เพื่อประโยชน์สาธารณะ หรือเพื่อการศึกษา วิจัย การจัดทำสถิติ ซึ่งได้จัดให้มีมาตรการป้องกันที่เหมาะสม
+                                    <br>3.8 ข้อมูลพฤติกรรมการใช้งาน ผ่านเครื่องมือดังต่อไปนี้ Google Analytics, Google AdWords, Hotjar และ Facebook Pixel เพื่อวิเคราะห์ความสามารถของ platform รวมถึงวางแผนการพัฒนา platform ในอนาคต โดยเป็นข้อมูลการใช้งานและไม่เกี่ยวข้องกับข้อมูลส่วนบุคคลใดๆทั้งสิ้น
                                 </p>
                             </div>
 
-                            <div class="title2">Do we disclose any information to outside parties?</div>
+                            <div class="title2">4. วัตถุประสงค์ในการเก็บรวบรวมข้อมูลส่วนบุคคล</div>
                             <div class="text1">
                                 <p>
-                                We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include
-                                trusted third parties who assist us in operating our website, conducting our business, or servicing you, so long
-                                as those parties agree to keep this information confidential. We may also release your information when we believe
-                                release is appropriate to comply with the law, enforce our site policies, or protect ours or others rights, property,
-                                or safety. However, non-personally identifiable visitor information may be provided to other parties for marketing,
-                                advertising, or other uses.
+                                    บริษัทจะดำเนินการจัดเก็บรวบรวม ใช้ ปรับปรุงและเปิดเผยข้อมูลส่วนบุคคลของผู้ให้ข้อมูลตามวัตถุประสงค์ ขอบเขต และตามวิธีการที่กฎหมายหมายกำหนด โดยจะจัดเก็บเพียงเท่าที่จำเป็นแก่การให้บริการ และการดำเนินงานของบริษัทเพื่อประโยชน์ของเจ้าของข้อมูลเป็นหลัก และการอื่น ๆตามกฎหมายเพื่อวัตถุประสงค์ ดังนี้
+                                </p>
+                                <p>
+                                    4.1) เพื่อใช้ในการประมวลผล บริหารจัดการ พิจารณา ให้บริการและการดำเนินงานต่าง ๆ ซึ่งเกี่ยวกับธุรกิจของบริษัทที่มีอยู่ในปัจจุบัน และอาจมีขึ้นในอนาคต และรวมถึงการใด ๆ เพื่อประโยชน์ของเจ้าของข้อมูล ตลอดจนนำไปใช้ในการจัดทำบัญชี งบการเงิน และข้อมูลทางบัญชีของบริษัท
+                                    <br>4.2) เพื่อใช้ในการติดตามและเรียกเก็บหนี้สินอื่นใด (ถ้ามี) จากเจ้าของข้อมูล ซึ่งบริษัทมีสิทธิตามกฎหมาย
+                                    <br>4.3) เพื่อใช้ในการแก้ไข ยกเลิก และ/หรือต่ออายุสัญญาเช่าซื้อ สัญญาจ้าง และสัญญาอื่นใดระหว่างเจ้าของข้อมูลกับบริษัท
+                                    <br>4.4) เพื่อใช้เป็นข้อมูลในการวิเคราะห์ เสนอ ให้ใช้ เพื่อการวิจัยการตลาดและ/หรือการจัดกิจกรรมส่งเสริมการขาย และ/หรือเพื่อประโยชน์ในการจัดทำฐานข้อมูลและใช้ข้อมูลเพื่อเสนอสิทธิประโยชน์ตามความสนใจของ เจ้าของข้อมูล และ/หรือปรับปรุงการให้บริการ การดำเนินการ หรือผลิตภัณฑ์ของบริษัท
+                                    <br>4.5) เพื่อปฏิบัติตามระเบียบ ประกาศ ข้อบังคับ รวมตลอดถึงข้อกำหนดอื่นใดซึ่งบริษัทมีหน้าที่ผูกพันในการปฏิบัติตามกฎหมาย
+                                    <br>4.6) เพื่อการนำเสนอข้อมูล ติดตาม ประสานงาน และการให้บริการหลังการขายรวมตลอดถึงเพื่อการจัดทำบริการทางอิเล็คทรอนิกส์
+                                    <br>4.7) เพื่อดำเนินการอื่นใดที่เกี่ยวข้องเพื่อให้บรรลุวัตถุประสงค์ดังที่ได้กล่าวมาข้างต้น
                                 </p>
                             </div>
 
-                            <div class="title2">Third party links</div>
+                            <div class="title2">5. ข้อจำกัดในการใช้ข้อมูลส่วนบุคคล</div>
                             <div class="text1">
                                 <p>
-                                Occasionally, at our discretion, we may include or offer third party products or services on our website. These third party
-                                sites have separate and independent privacy policies. We therefore have no responsibility or liability for the
-                                content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome
-                                any feedback about these sites.
+                                    บริษัทจะทำการเก็บข้อมูลส่วนบุคคลตามมาตรฐานที่กฎหมายกำหนดและจะไม่ทำการใช้หรือเปิด เผยข้อมูลดังกล่าวต่อบุคคลภายนอกโดยไม่ได้รับความยินยอมของเจ้าของข้อมูล เว้นแต่เพื่อปฏิบัติตามวัตถุประสงค์ที่ระบุไว้ข้างต้น หรือตามที่กฎหมายกำหนดให้ต้องทำการเปิดเผย โดยจะเปิดเผยข้อมูลส่วนบุคคลให้กับหน่วยงานหรือบุคคลที่เกี่ยวข้องดังนี้
+                                </p>
+                                <p>
+                                    5.1) กลุ่มธุรกิจ พันธมิตรทางธุรกิจ ของบริษัท รวมตลอดถึงหน่วยงานของรัฐที่เกี่ยวข้อง ในการให้บริการในการประมวลผล บริหารจัดการ พิจารณา ให้บริการและการดำเนินงานต่าง ๆ ที่เจ้าของข้อมูลได้รับและอาจได้รับในอนาคต
+                                    <br>5.2) บริษัท รวมตลอดถึงบริษัทในเครือกิจการหรือเครือธุรกิจเดียวกัน หรือหน่วยงานอื่นที่เกี่ยวข้อง
+                                    <br>5.3)พนักงาน ผู้รับมอบอำนาจ ตัวแทน บุคคลหรือนิติบุคคลผู้ให้บริการด้านการเร่งรัดหนี้สิน และ/หรือผู้ตรวจสอบบัญชีของบริษัท และ/หรือบริการและการดำเนินงานต่าง ๆ ซึ่งเกี่ยวกับธุรกิจของบริษัทที่มีอยู่ในปัจจุบันและอาจมีขึ้นในอนาคต
+                                    <br>5.4) พนักงาน ผู้รับมอบอำนาจ ตัวแทน บุคคล นิติบุคคลหรือหน่วยงานอื่นใด เพื่อปฏิบัติตามข้อกำหนดของกฎหมายหรือก่อตั้งสิทธิตามสัญญาของบริษัท
                                 </p>
                             </div>
 
-                            <div class="title2">California Online Privacy Protection Act Compliance</div>
+                            <div class="title2">6. สิทธิของเจ้าของข้อมูลส่วนบุคคล</div>
                             <div class="text1">
                                 <p>
-                                Because we value your privacy we have taken the necessary precautions to be in compliance with the California Online Privacy
-                                Protection Act. We therefore will not distribute your personal information to outside parties without your consent.
+                                    บริษัทให้ความสำคัญกับสิทธิของเจ้าของข้อมูลส่วนบุคคล จึงได้กำหนดสิทธิของเจ้าของข้อมูลในการดำเนินการกับข้อมูลส่วนบุคคลของตนซึ่งบริษัทเก็บรวบรวมไว้เพื่อให้สอดคล้องกับกฎหมาย ดังนี้
                                 </p>
                                 <p>
-                                As part of the California Online Privacy Protection Act, all users of our application may make any changes to their information
-                                at anytime by logging into their account and going to the 'Setting' page.
+                                6.1) ขอเข้าถึงและขอรับสำเนาข้อมูลส่วนบุคคลที่เกี่ยวกับตน ซึ่งอยู่ในความรับผิดชอบของบริษัทได้ตามหลักเกณฑ์และวิธีการที่บริษัทกำหนด หรือขอให้เปิดเผยถึงการได้มาซึ่งข้อมูลส่วนบุคคลดังกล่าวที่ตนไม่ได้ให้ความยินยอม
+                                <br>6.2) ขอรับข้อมูลส่วนบุคคลที่เกี่ยวกับตนจากบริษัทได้ ในกรณีที่บริษัทได้ทำให้ข้อมูลส่วนบุคคลนั้นอยู่ในรูปแบบที่สามารถอ่านหรือใช้งานโดยทั่วไปได้ด้วยเครื่องมือหรืออุปกรณ์ที่ทำงานได้โดยอัตโนมัติ และสามารถใช้หรือเปิดเผยข้อมูลส่วนบุคคลได้ด้วยวิธีการอัตโนมัติ
+                                <br>6.3) คัดค้านการเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูลส่วนบุคคลที่เกี่ยวกับตน ที่กฎหมายอนุญาตให้เก็บได้โดยไม่ต้องได้รับความยินยอมจากผู้ให้ข้อมูล เมื่อใดก็ได้
+                                <br>6.4) ขอให้บริษัทลบหรือทำลาย หรือทำให้ข้อมูลส่วนบุคคลเป็นข้อมูลที่ไม่สามารถระบุตัวบุคคลที่เป็นเจ้าของข้อมูลส่วนบุคคลได้ ในกรณีตามที่กฎหมายกำหนด
+                                <br>6.5) ขอให้บริษัทระงับการใช้ข้อมูลส่วนบุคคลได้ ในกรณีตามที่กฎหมายกำหนด
+                                <br>6.6) แจ้งให้บริษัทดำเนินการให้ข้อมูลส่วนบุคคลนั้นถูกต้องเป็นปัจจุบัน สมบูรณ์ และไม่ก่อให้เกิดความเข้าใจผิด
+                                <br>6.7) ร้องเรียนในกรณีที่ผู้ควบคุมข้อมูลส่วนบุคคลหรือผู้ประมวลผลข้อมูลส่วนบุคคล รวมทั้งลูกจ้างหรือผู้รับจ้างของผู้ควบคุมข้อมูลส่วนบุคคลหรือผู้ประมวลผลข้อมูลส่วนบุคคล ฝ่าฝืนหรือ ไม่ปฏิบัติตามกฎหมายคุ้มครองข้อมูลส่วนบุคคล
                                 </p>
                             </div>
 
-                            <div class="title2">Childrens Online Privacy Protection Act Compliance</div>
+                            <div class="title2">7. การเพิกถอนความยินยอม</div>
                             <div class="text1">
                                 <p>
-                                We are in compliance with the requirements of COPPA (Childrens Online Privacy Protection Act), we do not collect any information
-                                from anyone under 13 years of age. Our website, products and services are all directed to people who are at least
-                                13 years old or older.
+                                เจ้าของข้อมูลสามารถเพิกถอนความยินยอมที่ได้ให้ไว้กับบริษัทในการเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูลส่วนบุคคลดังกล่าวข้างต้นเสียเมื่อใดก็ได้ ด้วยการแจ้งความประสงค์ให้บริษัททราบพร้อมทั้งเหตุผลแห่งการนั้น โดยบริษัทจะดำเนินการตามที่ได้รับแจ้งเว้นแต่กรณีมีข้อจำกัดสิทธิในการถอนความยินยอมโดยกฎหมายหรือสัญญาที่ให้ประโยชน์แก่ เจ้าของข้อมูล
+                                <br>ทั้งนี้ การเพิกถอนความยินยอมของเจ้าของข้อมูลส่วนบุคคล จะไม่ส่งผลกระทบต่อการเก็บรวบรวมใช้ หรือเปิดเผยข้อมูลส่วนบุคคล ที่เจ้าของข้อมูลส่วนบุคคลได้ให้ความยินยอมไปแล้วก่อนหน้านั้น
                                 </p>
                             </div>
 
-                            <div class="title2">Online Privacy Policy Only</div>
+                            <div class="title2">8. การปฏิเสธและการจัดทำบันทึก</div>
                             <div class="text1">
                                 <p>
-                                This online privacy policy applies only to information collected through our website and not to information collected offline.
+                                ในกรณีที่เจ้าของข้อมูลร้องขอให้บริษัทดำเนินการตามที่ระบุไว้ในข้อ 6.1-6.7 หรือ ข้อ 7 บริษัทจะดำเนินการตามที่ได้รับคำร้องขอภายในเวลาที่เหมาะสมและตามขั้นตอนการปฏิบัติของบริษัท เว้นแต่ในกรณีดังนี้ บริษัทอาจปฏิเสธการดำเนินการดังกล่าวได้
+                                </p>
+                                <p>
+                                    8.1) โดยสภาพแล้วไม่อาจดำเนินการดังกล่าวได้
+                                    <br>8.2) เป็นการปฏิเสธตามกฎหมายหรือตามคำสั่งศาล และการเข้าถึงและขอรับสำเนาข้อมูลส่วนบุคคลนั้นจะส่งผลกระทบที่อาจก่อให้เกิดความเสียหาต่อสิทธิและเสรีภาพบุคคลอื่น
+                                    <br>8.3) การส่งหรือการโอนข้อมูลส่วนบุคคลนั้นเป็นการปฏิบัติหน้าที่เพื่อประโยชน์สาธารณะหรือเป็นการปฏิบัติหน้าที่ตามกฎหมาย หรือการใช้สิทธิดังกล่าวอาจเป็นการละเมิดสิทธิหรือเสรีภาพของบุคคลอื่น
+                                    <br>8.4) การเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูลส่วนบุคคลนั้น ผู้ควบคุมข้อมูลส่วนบุคคลได้แสดงให้เห็นถึงเหตุอันชอบด้วยกฎหมายที่สำคัญยิ่งกว่า
+                                    <br>8.5) การเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูลส่วนบุคคลนั้นเป็นไปเพื่อก่อตั้งสิทธิเรียกร้องตามกฎหมายการปฏิบัติตามหรือการใช้สิทธิเรียกร้องตามกฎหมาย หรือการยกขึ้นต่อสู้สิทธิเรียกร้องตามกฎหมายในกรณีที่บริษัทปฏิเสธไม่ดำเนินการตามคำร้องขอของเจ้าของข้อมูลให้ดำเนินการอย่างใดอย่างหนึ่งตามข้อ 6.1-6.8 หรือ ข้อ 7 นั้น บริษัทจะจัดทำรายงานการบันทึกการปฏิเสธพร้อมเหตุผลแห่งการปฏิเสธจัดเก็บไว้ในฝ่าย แผนก หรือหน่วยงานอื่นใดภายในบริษัทซึ่งปฏิเสธคำร้องขอของเจ้าของข้อมูล
+
                                 </p>
                             </div>
 
-                            <div class="title2">Terms and Conditions</div>
+                            <div class="title2">9. มาตรการรักษาความมั่นคงปลอดภัยและคุณภาพของข้อมูล</div>
                             <div class="text1">
                                 <p>
-                                Please also visit our Terms and Conditions section establishing the use, disclaimers, and limitations of liability governing
-                                the use of our website at
-                                <router-link @click="scrollToTop" to="/TermsOfUse">www.sellsuki.co.th/TermsOfUse</router-link>
+                                บริษัทตระหนักถึงความสำคัญของการรักษาความมั่นคงปลอดภัยของข้อมูลส่วนบุคคลของท่าน บริษัทจึงกำหนดให้มีมาตรการในการรักษาความมั่นคงปลอดภัยของข้อมูลส่วนบุคคลอย่างเหมาะสมและสอดคล้องกับการรักษาความลับของข้อมูลส่วนบุคคลเพื่อป้องกันการสูญหาย การเข้าถึง ทำลาย ใช้ แปลง แก้ไขหรือเปิดเผยข้อมูลส่วนบุคคลโดยไม่มีสิทธิหรือโดยไม่ชอบด้วยกฎหมาย ตลอดจนการป้องกันมิให้มีการนำข้อมูลส่วนบุคคลไปใช้โดยมิได้รับอนุญาต นอกจากนี้คณะกรรมการของบริษัทยังได้จัดทำนโยบาย ระเบียบปฏิบัติ คู่มือ แนวทางและอบรมให้ความรู้ ในการเก็บรักษา ใช้ และเปิดเผยข้อมูลส่วนบุคคล เพื่อให้พนักงานของบริษัทในทุกระดับชั้นดำเนินการเก็บรักษา ใช้ และ เปิดเผยข้อมูลส่วนบุคคลปฏิบัติตามมาตราฐานของบริษัทและสอดคล้องกับกฎหมายที่เกี่ยวข้อง
                                 </p>
                             </div>
 
-                            <div class="title2">Your Consent</div>
+                            <div class="title2">11. ระยะเวลาการเก็บและการทำลายข้อมูลส่วนบุคคล</div>
                             <div class="text1">
                                 <p>
-                                By using our site, you consent to our web site privacy policy.
+                                บริษัทจะจัดเก็บรักษาข้อมูลตามที่ได้รับจากเจ้าของข้อมูลตามระยะเวลาเท่าที่จำเป็นในการดำเนินการตามวัตถุประสงค์ดังที่ได้กล่าวมาข้างต้นเท่านั้น เว้นแต่ในกรณีที่มีกฎหมายกำหนดไว้โดยเฉพาะให้เก็บไว้ได้นานกว่านั้น หรือ เป็นการจำเป็นเพื่อการก่อตั้งสิทธิเรียกร้องตามกฎหมาย การปฏิบัติตามหรือการใช้สิทธิเรียกร้องตามกฎหมาย หรือการยกขึ้นต่อสู้ซึ่งสิทธิเรียกร้องตามกฎหมาย หรือเพื่อดำเนินการตามสัญญาซึ่งบริษัทมีสิทธิตามกฎหมาย
                                 </p>
 
                             </div>
 
-                            <div class="title2">Changes to our Privacy Policy</div>
+                            <div class="title2">12. ช่องทางการติดต่อบริษัท</div>
                             <div class="text1">
                                 <p>
-                                If we decide to change our privacy policy, we will post those changes on this page.
-                                <router-link @click="scrollToTop" to="/">www.sellsuki.co.th</router-link>
-                                </p>
-                                <p>
-                                This policy is powered by Trust Guard PCI compliance.
+                                    บริษัท เซลสุกิ จำกัด
+                                    <br>10/39 ชั้นที่ 3 ถนนรัชดาภิเษก แขวงจันทรเกษม เขตจตุจักร กรุงเทพมหานคร 10900
+                                    <br>หรือติดต่อผ่าน แผนกคุ้มครองข้อมูลส่วนบุคคล (Data Protection Office Unit)
+                                    <br>Email: support@akitahub.com
+
                                 </p>
                             </div>
 
@@ -195,14 +201,13 @@ section .termsFrame {
 section .termsFrameTop {
     width: 100%;
     height: 16px;
-    background: url("https://www.sellsuki.co.th/img/bg-head-terms-of-use.png") no-repeat;
     position: absolute;
     top: -16px;
     left: 0px;
 }
 
 .title1{
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     text-align: center;
     line-height: 30px;
@@ -212,6 +217,7 @@ section .termsFrameTop {
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
+    text-decoration: underline;
 }
 
 .text1{
@@ -223,5 +229,9 @@ section .termsFrameTop {
 p{
     margin-top: 1rem !important;
     margin-bottom: 1rem !important;
+}
+
+span{
+    font-weight: 500;
 }
 </style>

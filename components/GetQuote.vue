@@ -5,9 +5,9 @@
           <div style="padding: 40px 80px 40px 80px">
             <div class="row">
               <div class="col-12">
-                  <font style="font-weight: 700;font-size: 30px;color:#ffffff">GET A QUOTE</font>
+                  <div style="font-weight: 700;font-size: 30px;color:#ffffff">GET A QUOTE</div>
                   <hr style="width: 100%;height: 2px;color:#FFFFFF">
-                  <font style="font-weight: 400;font-size: 18px;color:#ffffff">Please complete the form to request a quotation</font>
+                  <div style="font-weight: 400;font-size: 18px;color:#ffffff">Please complete the form to request a quotation</div>
               </div>
             </div>
             <div class="row">
@@ -77,7 +77,7 @@
                 </form>
               </div>
               <div class="col-5">
-                <img class="mt-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/GET_A_QUOTE_db09b3e246.webp" alt="GET A QUOTE" style="position: relative;margin-left:-25px">
+                <img class="mt-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/GET_A_QUOTE_db09b3e246.webp" alt="GET A QUOTE" loading="lazy" style="position: relative;margin-left:-25px">
               </div>
             </div>
           </div>
@@ -88,9 +88,9 @@
           <div class="bg" style="padding: 20px 20px 20px 20px">
             <div class="row ps-5 pe-5 pb-2">
               <div class="col-12 text-center">
-                  <font style="font-weight: 700;font-size: 24px;color:#ffffff">GET A QUOTE</font>
+                  <div style="font-weight: 700;font-size: 24px;color:#ffffff">GET A QUOTE</div>
                   <hr style="width: 100%;height: 2px;color:#FFFFFF">
-                  <font style="font-weight: 400;font-size: 16px;color:#ffffff">Please complete the form to request a quotation</font>
+                  <div style="font-weight: 400;font-size: 16px;color:#ffffff">Please complete the form to request a quotation</div>
               </div>
             </div>
             <div class="row">

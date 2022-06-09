@@ -29,17 +29,17 @@
                         <p class="text-s-30 text-w-700" style="margin-bottom: 10px !important">ประวัติความเป็นมาของ</p>
                     </div>
                     <div class="col-12 mb-4">
-                        <img class="item-center" width="193" height="82" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Sellsuki_logo_01_3_41353765c4.png" alt="Sellsuki logo">
+                        <img class="item-center" width="193" height="82" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Sellsuki_logo_01_3_5a97fddbc3.webp" alt="Sellsuki logo">
                     </div>
                     <div class="d-none d-xl-block d-xxl-block">
                         <div class="col-12 mt-4" :style="'height:'+ height_colum +'px'">
-                            <img src="./../assets/icon/Line28.png" alt="icon Line" :style="'left: 50%;position: absolute;margin-top: 20px;height:'+ height_border +'px'">
-                            <img class="item-center-absolute pt-2" src="./../assets/icon/Ellipse14.png" alt="icon Ellipse14" :style="'margin-top:'+height_border+'px'">
+                            <img src="./../assets/icon/Line28.webp" alt="icon Line" :style="'left: 50%;position: absolute;margin-top: 20px;height:'+ height_border +'px'">
+                            <img class="item-center-absolute pt-2" src="./../assets/icon/Ellipse14.webp" alt="icon Ellipse14" :style="'margin-top:'+height_border+'px'">
                                 <div class="row">
                                     <div class="col-6 text-end" style="padding-right: 55px">
                                         <div v-for="(data, index) in responseData" :key="index" :class="{'top':index != 0}">
                                             <div v-if="data.position_left == true">
-                                                <img class="item-center-absolute" src="./../assets/icon/Ellipse14.png" alt="Ellipse14.png" style="margin-top: 20px;">
+                                                <img class="item-center-absolute" src="./../assets/icon/Ellipse14.webp" alt="Ellipse14.webp" style="margin-top: 20px;">
                                                 <p class="text-s-30 text-w-700" style="color:#50151C">{{data.year}}</p>
                                                 <p style="font-size:18" v-html="$md.render(data.message)"></p>
                                                 <img v-if="data.image != null" class="iem-center img-fluid" :src="data.image.url" :alt="data.image.name" style="margin-top: 20px;">
@@ -49,7 +49,7 @@
                                     <div class="col-6 text-start" style="padding-left: 55px;margin-top:70px">
                                         <div v-for="(data, index) in responseData" :key="index" :class="{'top':index != 0}">
                                             <div v-if="data.position_left == false">
-                                                <img class="item-center-absolute" src="./../assets/icon/Ellipse14.png" alt="Ellipse14.png" style="margin-top: 20px;">
+                                                <img class="item-center-absolute" src="./../assets/icon/Ellipse14.webp" alt="Ellipse14.webp" style="margin-top: 20px;">
                                                 <p class="text-s-30 text-w-700" style="color:#50151C">{{data.year}}</p>
                                                 <p style="font-size:18" v-html="$md.render(data.message)"></p>
                                                 <img v-if="data.image != null" class="iem-center img-fluid" :src="data.image.url" :alt="data.image.name" style="margin-top: 20px;">
@@ -64,9 +64,9 @@
                             <div class="col-12 mt-2">
                                 <div class="row text-center">
                                     <div v-for="(data, index) in responseData" :key="index" class="col-12 mt-3">
-                                        <img v-if="index != 0" src="./../assets/icon/Line53.png" alt="Line.png">
-                                        <img class="item-center" src="./../assets/icon/Ellipse14.png" alt="Ellipse14.png">
-                                        <img src="./../assets/icon/Line53.png" alt="Line.png">
+                                        <img v-if="index != 0" src="./../assets/icon/Line53.webp" alt="Line.webp">
+                                        <img class="item-center" src="./../assets/icon/Ellipse14.webp" alt="Ellipse14.webp">
+                                        <img src="./../assets/icon/Line53.webp" alt="Line.webp">
                                         <p class="text-s-30 text-w-700" style="color:#50151C">{{data.year}}</p>
                                         <p style="font-size:18" v-html="$md.render(data.message)"></p>
                                         <img v-if="data.image != null" class="iem-center img-fluid" :src="data.image.url" :alt="data.image.name" style="margin-top: 20px;">

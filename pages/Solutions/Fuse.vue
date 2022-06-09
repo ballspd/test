@@ -33,12 +33,12 @@
                 <div class="mt-custom p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
                     <div class="row p-custom justify-content-center">
                         <div class="row text-center mt-2">
-                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid hvr-float-shadow" width="60" src="./../../assets/icon/image60.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Facebook</p></div>
-                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid hvr-float-shadow" width="60" src="./../../assets/icon/image61.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Google</p></div>
-                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid hvr-float-shadow" width="60" src="./../../assets/icon/image62.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">YouTube</p></div>
-                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid hvr-float-shadow" width="60" src="./../../assets/icon/image63.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Instagram</p></div>
-                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid hvr-float-shadow" width="60" src="./../../assets/icon/image64.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Twitter</p></div>
-                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid hvr-float-shadow" width="60" src="./../../assets/icon/image65.png"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Tiktok</p></div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid hvr-float-shadow" width="60" src="./../../assets/icon/image60.webp"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Facebook</p></div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid hvr-float-shadow" width="60" src="./../../assets/icon/image61.webp"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Google</p></div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid hvr-float-shadow" width="60" src="./../../assets/icon/image62.webp"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">YouTube</p></div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid hvr-float-shadow" width="60" src="./../../assets/icon/image63.webp"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Instagram</p></div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid hvr-float-shadow" width="60" src="./../../assets/icon/image64.webp"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Twitter</p></div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 p-xxl-2 p-3"><img class="img-fluid hvr-float-shadow" width="60" src="./../../assets/icon/image65.webp"><p class="text-s-18 text-w-700 mt-3" style="color:#182E9C">Tiktok</p></div>
                         </div>
                     </div>
                     <div class="col-12 text-center mt-5"><h1 class="text-s-30 font-wght" style="color:#A7A2FD">DIGITAL ADVERTISING TOOLS</h1></div>
@@ -91,23 +91,23 @@
                         <div class="row mt-5 text-center">
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-2">
-                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-1.png"></div>
+                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-1.webp"></div>
                                 </div>
-                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
+                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.webp">
                                 <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737" v-html="$t('solution.fuse.suggestions')"></h2>
                             </div>
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-2.png"></div>
+                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-2.webp"></div>
                                 </div>
-                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
+                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.webp">
                                 <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737" v-html="$t('solution.fuse.assisted')"></h2>
                             </div>
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-3.png"></div>
+                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsFuse/icon-Fuse-3.webp"></div>
                                 </div>
-                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
+                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.webp">
                                 <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737" v-html="$t('solution.fuse.focus')"></h2>
                             </div>     
                         </div>
@@ -209,7 +209,7 @@ export default {
 }
 
 .bg{
-  background: url('./../../assets/image94.png');
+  background: url('./../../assets/image94.webp');
   background-position: center;
   background-repeat: no-repeat;
   height: 350px;

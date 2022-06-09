@@ -297,11 +297,11 @@ a{
 }
 /* ----------------------------- #font ------------------------------ */
 
-/* prompt-300 - latin */
+/* prompt-regular - latin */
 @font-face {
   font-family: 'Prompt';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   src: url('./../../fonts/prompt-v5-thai_latin-300.eot'); /* IE9 Compat Modes */
   src: local(''),
        url('./../../fonts/prompt-v5-thai_latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -309,19 +309,6 @@ a{
        url('./../../fonts/prompt-v5-thai_latin-300.woff') format('woff'), /* Modern Browsers */
        url('./../../fonts/prompt-v5-thai_latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
        url('./../../fonts/prompt-v5-thai_latin-300.svg#Prompt') format('svg'); /* Legacy iOS */
-}
-/* prompt-regular - latin */
-@font-face {
-  font-family: 'Prompt';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./../../fonts/prompt-v5-thai_latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('./../../fonts/prompt-v5-thai_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./../../fonts/prompt-v5-thai_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('./../../fonts/prompt-v5-thai_latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('./../../fonts/prompt-v5-thai_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('./../../fonts/prompt-v5-thai_latin-regular.svg#Prompt') format('svg'); /* Legacy iOS */
 }
 /* prompt-500 - latin */
 @font-face {
@@ -336,19 +323,6 @@ a{
        url('./../../fonts/prompt-v5-thai_latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
        url('./../../fonts/prompt-v5-thai_latin-500.svg#Prompt') format('svg'); /* Legacy iOS */
 }
-/* prompt-600 - latin */
-@font-face {
-  font-family: 'Prompt';
-  font-style: normal;
-  font-weight: 600;
-  src: url('./../../fonts/prompt-v5-thai_latin-600.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('./../../fonts/prompt-v5-thai_latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./../../fonts/prompt-v5-thai_latin-600.woff2') format('woff2'), /* Super Modern Browsers */
-       url('./../../fonts/prompt-v5-thai_latin-600.woff') format('woff'), /* Modern Browsers */
-       url('./../../fonts/prompt-v5-thai_latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('./../../fonts/prompt-v5-thai_latin-600.svg#Prompt') format('svg'); /* Legacy iOS */
-}
 /* prompt-700 - latin */
 @font-face {
   font-family: 'Prompt';
@@ -362,33 +336,6 @@ a{
        url('./../../fonts/prompt-v5-thai_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
        url('./../../fonts/prompt-v5-thai_latin-700.svg#Prompt') format('svg'); /* Legacy iOS */
 }
-/* prompt-800 - latin */
-@font-face {
-  font-family: 'Prompt';
-  font-style: normal;
-  font-weight: 800;
-  src: url('./../../fonts/prompt-v5-thai_latin-800.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('./../../fonts/prompt-v5-thai_latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./../../fonts/prompt-v5-thai_latin-800.woff2') format('woff2'), /* Super Modern Browsers */
-       url('./../../fonts/prompt-v5-thai_latin-800.woff') format('woff'), /* Modern Browsers */
-       url('./../../fonts/prompt-v5-thai_latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('./../../fonts/prompt-v5-thai_latin-800.svg#Prompt') format('svg'); /* Legacy iOS */
-}
-/* prompt-900 - latin */
-@font-face {
-  font-family: 'Prompt';
-  font-style: normal;
-  font-weight: 900;
-  src: url('./../../fonts/prompt-v5-thai_latin-900.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('./../../fonts/prompt-v5-thai_latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./../../fonts/prompt-v5-thai_latin-900.woff2') format('woff2'), /* Super Modern Browsers */
-       url('./../../fonts/prompt-v5-thai_latin-900.woff') format('woff'), /* Modern Browsers */
-       url('./../../fonts/prompt-v5-thai_latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('./../../fonts/prompt-v5-thai_latin-900.svg#Prompt') format('svg'); /* Legacy iOS */
-}
-
 
 /* alfa-slab-one-regular - latin */
 @font-face {
@@ -516,6 +463,10 @@ li{
 
 .color-231F20{
   color:#231F20
+}
+
+.color-15304E{
+  color: #15304E;
 }
 
 .color-7E4922{

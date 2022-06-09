@@ -36,8 +36,8 @@
                     <div class="row">
                         <div class="col-12 text-center ps-5 pe-5"><h1 class="text-s-30 text-w-700 ps-4 pe-4" style="color:#09193A">{{ $t("type_of_business.online_merchant.header1") }}</h1></div>    
                     </div>
-                    <img class="d-none d-lg-block" src="./../../assets/element.png" style="position: absolute;margin-left: 125px;">
-                    <img class="d-block d-lg-none" src="./../../assets/element.png" style="position: absolute;margin-left: 15px;">
+                    <img class="d-none d-lg-block" src="./../../assets/element.webp" style="position: absolute;margin-left: 125px;">
+                    <img class="d-block d-lg-none" src="./../../assets/element.webp" style="position: absolute;margin-left: 15px;">
                     <div class="row justify-content-center mt-3">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
                             <div class="hvr-grow-shadow crad-square mt-3">
@@ -65,8 +65,8 @@
                     <div class="row mt-4">
                         <div class="col-12 text-center ps-5 pe-5"><h1 class="text-s-30 text-w-700 ps-4 pe-4" style="color:#09193A">{{ $t("type_of_business.online_merchant.header2") }}</h1></div>    
                     </div>
-                    <img class="d-none d-xl-block" src="./../../assets/element.png" style="position: absolute;margin-left: 925px;">
-                    <img class="d-block d-xl-none" src="./../../assets/element.png" style="position: absolute;margin-left: 325px;">
+                    <img class="d-none d-xl-block" src="./../../assets/element.webp" style="position: absolute;margin-left: 925px;">
+                    <img class="d-block d-xl-none" src="./../../assets/element.webp" style="position: absolute;margin-left: 325px;">
                     <div class="row justify-content-center mt-3">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
                             <div class="hvr-grow-shadow crad-square mt-3">
@@ -104,8 +104,8 @@
                     <div class="row mt-4">
                         <div class="col-12 text-center ps-5 pe-5"><h1 class="text-s-30 text-w-700 ps-4 pe-4" style="color:#09193A">{{ $t("type_of_business.online_merchant.header3") }}</h1></div>    
                     </div>
-                    <img class="d-none d-xl-block" src="./../../assets/element.png" style="position: absolute;margin-left: 925px;">
-                    <img class="d-block d-xl-none" src="./../../assets/element.png" style="position: absolute;margin-left: 325px;">
+                    <img class="d-none d-xl-block" src="./../../assets/element.webp" style="position: absolute;margin-left: 925px;">
+                    <img class="d-block d-xl-none" src="./../../assets/element.webp" style="position: absolute;margin-left: 325px;">
                     <div class="row justify-content-center mt-3">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
                             <div class="hvr-grow-shadow crad-square mt-3">

@@ -1,33 +1,31 @@
 import en from './locales/en.json'
 import th from './locales/th.json'
+import axios from 'axios';
 require('dotenv').config()
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   //mode: 'spa',
   ssr: true,
-  target: 'static',
   //ssr: false,
+  target: 'static',
+  //target: 'server',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s | Sellsuki',
-    title: 'sellsuki',
-    // htmlAttrs: {
-    //   lang: 'en',
-    // },
+    title: 'Home',
+    htmlAttrs: {
+       lang: 'en',
+     },
     meta: [
       { charset: 'utf-8' },
       { name: 'google-site-verification', content: 'y3SPcUi4BBJcORn-mg0hoeh7213idJCbHcjJI6PY7QE' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Sellsuki บริการ Solution ครบวงจรสำหรับคนทำธุรกิจออนไลน์ โฆษณาออนไลน์ วางแผนคอนเทนต์ ออกแบบเว็บไซต์ และคลังสินค้าครบวงจร' },
-      { name: 'format-detection', content: 'telephone=no' },
-      { name: 'keywords', content: ['Sellsuki', 'Solution', 'โฆษณาออนไลน์', 'วางแผนคอนเทนต์', 'ออกแบบเว็บไซต์' , 'คลังสินค้าครบวงจร'] },
-                { 
-                    hid: 'description', 
-                    name: 'description', 
-                    content: 'Sellsuki บริการ Solution ครบวงจรสำหรับคนทำธุรกิจออนไลน์ โฆษณาออนไลน์ วางแผนคอนเทนต์ ออกแบบเว็บไซต์ และคลังสินค้าครบวงจร'
-                },
+      { name: 'format-detection', content: 'telephone=020263250' },
+      { name: 'author', content: 'Ssllsuki' },
+      { hid: 'keywords', name: 'keywords', content: ['Sellsuki บริการ Solution ครบวงจรสำหรับคนทำธุรกิจออนไลน์ โฆษณาออนไลน์ วางแผนคอนเทนต์ ออกแบบเว็บไซต์ และคลังสินค้าครบวงจร', 'Sellsuki', 'Digital Advertising', 'โฆษณาออนไลน์', 'วางแผนคอนเทนต์', 'ออกแบบเว็บไซต์', 'คลังสินค้าครบวงจร', 'Line Ads', 'Line Agency'] },
                 { 
                     hid: 'og-site_name', 
                     property: 'og:site_name', 
@@ -117,6 +115,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    'nuxt-compress',
     '@nuxtjs/dotenv',
     // With options
     ['@nuxtjs/dotenv', { /* module options */ }]
@@ -133,14 +132,42 @@ export default {
     'nuxt-facebook-pixel-module',
     'cookie-universal-nuxt',
     '@nuxtjs/sitemap',
+    'nuxt-brotli',
+    '@nuxtjs/robots',
+
+    ['nuxt-lazy-load', {
+      // Your options
+    }],
     
     // With options
     ['cookie-universal-nuxt', { alias: 'cookiz' }],
+
+    [
+      'nuxt-compress',
+      {
+        gzip: {
+          threshold: 8192,
+        },
+        brotli: {
+          threshold: 8192,
+        },
+      },
+    ],
   ],
+
+  robots: {
+    UserAgent: '*',
+    Allow: '/'
+  },
 
   sitemap: {
     hostname: 'https://www.sellsuki.co.th/',
-    // gzip: true,
+    gzip: true,
+    routes: async () => {
+      let { data } = await axios.get('https://login.sellsuki.co.th/blogs')
+      //console.log(data)
+      return data.map(v => `/Blogs/Detail/${v.id}/${v.url}`)
+    }
   },
 
   facebook: {
@@ -192,6 +219,22 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     publicPath: '/nuxt/',
+    html:{
+      minify:{
+        collapseBooleanAttributes: true,
+        decodeEntities: true,
+        minifyCSS: true,
+        minifyJS: true,
+        processConditionalComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: true,
+        trimCustomFragments: true,
+        useShortDoctype: true,
+        minifyURLs: true,
+        removeComments: true,
+        removeEmptyElements: true
+      }
+    }
   },
 
   generate: { 

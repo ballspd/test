@@ -91,7 +91,7 @@
                             <div class="card mt-3">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.webp" alt="Group163">
                                         <p class="text-s-14 text-w-700 mb-0">{{ $t("type_of_business.corporate.why1") }}</p>
                                     </div>
                                 </div>
@@ -101,7 +101,7 @@
                             <div class="card mt-3">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.webp" alt="Group163">
                                         <p class="text-s-14 text-w-700 mb-0">{{ $t("type_of_business.corporate.why2") }}</p>
                                     </div>
                                 </div>
@@ -111,7 +111,7 @@
                             <div class="card mt-3">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.webp" alt="Group163">
                                         <p class="text-s-14 text-w-700 mb-0 ps-2 pe-2">{{ $t("type_of_business.corporate.why3") }}</p>
                                     </div>
                                 </div>
@@ -123,7 +123,7 @@
                             <div class="card mt-3">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.webp" alt="Group163">
                                         <p class="text-w-700 mb-0" style="font-size: 13.5px">{{ $t("type_of_business.corporate.why4") }}</p>
                                     </div>
                                 </div>
@@ -133,7 +133,7 @@
                             <div class="card mt-3">
                                 <div class="card-body d-flex">
                                     <div class="d-flex mt-auto mb-auto">
-                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.png">
+                                        <img class=" ms-2 me-3" width="20" height="20" src="./../../assets/icon/Group163.webp" alt="Group163">
                                         <p class="text-s-14 text-w-700 mb-0 ps-2 pe-2">{{ $t("type_of_business.corporate.why5") }}</p>
                                     </div>
                                 </div>

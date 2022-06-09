@@ -82,46 +82,46 @@
               </div>
               <div class="col-5 text-center">
                 <div v-if="type === 'Fuse'">
-                  <img class="item-center" src="./../../assets/SolutionsFuse/logo.png" alt="">
+                  <img class="item-center" src="./../../assets/SolutionsFuse/logo.webp" alt="logo">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-                  <img class="item-center" width="320" src="./../../assets/SolutionsFuse/Fuse-qrcode.png" alt="">
-                  <img class="position-bu mt-5" src="./../../assets/SolutionsFuse/Fuse-bu.png" alt="">
+                  <img class="item-center" width="320" src="./../../assets/SolutionsFuse/Fuse-qrcode.webp" alt="Fuse-qrcode">
+                  <img class="position-bu mt-5" src="./../../assets/SolutionsFuse/Fuse-bu.webp" alt="Fuse-bu">
                 </div>
                 <div v-if="type === 'Line'">
-                  <img class="item-center" src="./../../assets/SolutionsLine/logo.png" alt="">
+                  <img class="item-center" src="./../../assets/SolutionsLine/logo.webp" alt="logo">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-                  <img class="item-center" width="320" src="./../../assets/SolutionsLine/Line-qrcode.png" alt="">
-                  <img class="position-bu" src="./../../assets/SolutionsLine/Line-bu.png" alt="">
+                  <img class="item-center" width="320" src="./../../assets/SolutionsLine/Line-qrcode.webp" alt="Line-qrcode">
+                  <img class="position-bu" src="./../../assets/SolutionsLine/Line-bu.webp" alt="">
                 </div>
                 <div v-if="type === 'Akita'">
-                  <img class="item-center" src="./../../assets/SolutionsAkita/logo.png" alt="">
+                  <img class="item-center" src="./../../assets/SolutionsAkita/logo.webp" alt="logo">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-                  <img class="item-center" width="320" src="./../../assets/SolutionsAkita/Akita-qrcode.png" alt="">
-                  <img class="position-bu" width="220" src="./../../assets/SolutionsAkita/Akita-bu.png" alt="">
+                  <img class="item-center" width="320" src="./../../assets/SolutionsAkita/Akita-qrcode.webp" alt="Akita-qrcode">
+                  <img class="position-bu" width="220" src="./../../assets/SolutionsAkita/Akita-bu.webp" alt="Akita-bu">
                 </div>
                 <div v-if="type === 'Beary'">
-                  <img class="item-center" src="./../../assets/SolutionsBeary/logo.png" alt="">
+                  <img class="item-center" src="./../../assets/SolutionsBeary/logo.webp" alt="logo">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-                  <img class="item-center" width="320" src="./../../assets/SolutionsBeary/Beary-qrcode.png" alt="">
-                    <img class="position-bu" width="220" src="./../../assets/SolutionsBeary/Beary-bu.png" alt="">
+                  <img class="item-center" width="320" src="./../../assets/SolutionsBeary/Beary-qrcode.webp" alt="Beary-qrcode">
+                    <img class="position-bu" width="220" src="./../../assets/SolutionsBeary/Beary-bu.webp" alt="Beary-bu">
                 </div>
                 <div v-if="type === 'Kaikong'">
-                  <img class="item-center" src="./../../assets/SolutionsKaikong/logo.png" alt="">
+                  <img class="item-center" src="./../../assets/SolutionsKaikong/logo.webp" alt="logo">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-                  <img class="item-center" width="320" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Kaikong_qrcode_cece10d44a.png" alt="">
-                  <img class="position-bu" width="220" src="./../../assets/SolutionsKaikong/Kaikong-bu.png" alt="">
+                  <img class="item-center" width="320" src="./../../assets/SolutionsKaikong/Kaikong-qrcode.webp" alt="Kaikong-qrcode">
+                  <img class="position-bu" width="220" src="./../../assets/SolutionsKaikong/Kaikong-bu.webp" alt="Kaikong-bu">
                 </div>
                 <div v-if="type === 'Shipmunk'">
-                  <img class="item-center" src="./../../assets/SolutionsShipmunk/logo.png" alt="">
+                  <img class="item-center" src="./../../assets/SolutionsShipmunk/logo.webp" alt="logo">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-                  <img class="item-center" width="320" src="./../../assets/qr-code-sellsuki.png" alt="">
-                  <img class="position-bu mt-4" width="220" src="./../../assets/SolutionsShipmunk/Shipmunk-bu.png" alt="">
+                  <img class="item-center" width="320" src="./../../assets/qr-code-sellsuki.webp" alt="qr-code-sellsuki">
+                  <img class="position-bu mt-4" width="220" src="./../../assets/SolutionsShipmunk/Shipmunk-bu.webp" alt="Shipmunk-bu">
                 </div>
                 <div v-if="type === 'Oc2Plus'">
-                  <img class="item-center" src="./../../assets/SolutionsOc2plus/logo.png" alt="">
+                  <img class="item-center" src="./../../assets/SolutionsOc2plus/logo.webp" alt="logo">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-                  <img class="item-center" width="320" src="./../../assets/qr-code-sellsuki.png" alt="">
-                  <img class="position-bu mt-2" src="./../../assets/SolutionsOc2plus/Oc2plus-bu.png" alt="">
+                  <img class="item-center" width="320" src="./../../assets/qr-code-sellsuki.webp" alt="qr-code-sellsuki">
+                  <img class="position-bu mt-2" src="./../../assets/SolutionsOc2plus/Oc2plus-bu.webp" alt="Oc2plus-bu">
                 </div>
               </div>
             </div>
@@ -136,7 +136,7 @@
                 <div class="col-12 text-center">
                     <h1 class="font-wght text-s-700 text-s-24" style="color:#373737">GET A QUOTE</h1>
                     <hr class="ms-auto me-auto" style="width: 70%;height: 2px;color:#373737">
-                    <font class="text-s-16 mt-2" style="color:#373737">Please complete the form to <br>request a quotation</font>
+                    <div class="text-s-16 mt-2" style="color:#373737">Please complete the form to <br>request a quotation</div>
                 </div>
               </div>
               <div class="row">
@@ -218,46 +218,46 @@
         </div>
         <div class="text-center mt-4" style="height: 655px;">
             <div v-if="type === 'Fuse'">
-              <img class="item-center" src="./../../assets/SolutionsFuse/logo.png" alt="">
+              <img class="item-center" src="./../../assets/SolutionsFuse/logo.webp" alt="logo">
               <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-              <img class="item-center" width="320" src="./../../assets/SolutionsFuse/Fuse-qrcode.png" alt="">
-              <img class="position-bu mt-5" src="./../../assets/SolutionsFuse/Fuse-bu.png" alt="">
+              <img class="item-center" width="320" src="./../../assets/SolutionsFuse/Fuse-qrcode.webp" alt="Fuse-qrcode">
+              <img class="position-bu mt-5" src="./../../assets/SolutionsFuse/Fuse-bu.webp" alt="Fuse-bu">
             </div>
             <div v-if="type === 'Line'">
-              <img class="item-center" src="./../../assets/SolutionsLine/logo.png" alt="">
+              <img class="item-center" src="./../../assets/SolutionsLine/logo.webp" alt="logo">
               <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-              <img class="item-center" width="320" src="./../../assets/SolutionsLine/Line-qrcode.png" alt="">
-              <img class="position-bu" src="./../../assets/SolutionsLine/Line-bu.png" alt="">
+              <img class="item-center" width="320" src="./../../assets/SolutionsLine/Line-qrcode.webp" alt="Line-qrcode">
+              <img class="position-bu" src="./../../assets/SolutionsLine/Line-bu.webp" alt="Line-bu">
             </div>
             <div v-if="type === 'Akita'">
-              <img class="item-center" src="./../../assets/SolutionsAkita/logo.png" alt="">
+              <img class="item-center" src="./../../assets/SolutionsAkita/logo.webp" alt="logo">
               <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-              <img class="item-center" width="320" src="./../../assets/SolutionsAkita/Akita-qrcode.png" alt="">
-              <img class="position-bu" src="./../../assets/SolutionsAkita/Akita-bu.png" alt="">
+              <img class="item-center" width="320" src="./../../assets/SolutionsAkita/Akita-qrcode.webp" alt="Akita-qrcode">
+              <img class="position-bu" src="./../../assets/SolutionsAkita/Akita-bu.webp" alt="Akita-bu">
             </div>
             <div v-if="type === 'Beary'">
-              <img class="item-center" src="./../../assets/SolutionsBeary/logo.png" alt="">
+              <img class="item-center" src="./../../assets/SolutionsBeary/logo.webp" alt="logo">
               <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-              <img class="item-center" width="320" src="./../../assets/SolutionsBeary/Beary-qrcode.png" alt="">
-              <img class="position-bu" src="./../../assets/SolutionsBeary/Beary-bu.png" alt="">
+              <img class="item-center" width="320" src="./../../assets/SolutionsBeary/Beary-qrcode.webp" alt="Beary-qrcode.webp">
+              <img class="position-bu" src="./../../assets/SolutionsBeary/Beary-bu.webp" alt="Beary-bu">
             </div>
             <div v-if="type === 'Kaikong'">
-              <img class="item-center" src="./../../assets/SolutionsKaikong/logo.png" alt="">
+              <img class="item-center" src="./../../assets/SolutionsKaikong/logo.webp" alt="logo">
               <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-              <img class="item-center" width="320" src="./../../assets/SolutionsKaikong/Kaikong-qrcode.png" alt="">
-              <img class="position-bu" width="120" src="./../../assets/SolutionsKaikong/Kaikong-bu.png" alt="">
+              <img class="item-center" width="320" src="./../../assets/SolutionsKaikong/Kaikong-qrcode.webp" alt="Kaikong-qrcode">
+              <img class="position-bu" width="120" src="./../../assets/SolutionsKaikong/Kaikong-bu.webp" alt="Kaikong-bu">
             </div>
             <div v-if="type === 'Shipmunk'">
-              <img class="item-center" src="./../../assets/SolutionsShipmunk/logo.png" alt="">
+              <img class="item-center" src="./../../assets/SolutionsShipmunk/logo.webp" alt="logo">
               <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-              <img class="item-center" width="320" src="./../../assets/qr-code-sellsuki.png" alt="">
-              <img class="position-bu" width="180" src="./../../assets/SolutionsShipmunk/Shipmunk-bu.png" alt="">
+              <img class="item-center" width="320" src="./../../assets/qr-code-sellsuki.webp" alt="qr-code-sellsuki">
+              <img class="position-bu" width="180" src="./../../assets/SolutionsShipmunk/Shipmunk-bu.webp" alt="Shipmunk-bu">
             </div>
             <div v-if="type === 'Oc2Plus'">
-              <img class="item-center" src="./../../assets/SolutionsOc2plus/logo.png" alt="">
+              <img class="item-center" src="./../../assets/SolutionsOc2plus/logo.webp" alt="logo">
               <p class="txt-s-16 mt-4" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
-              <img class="item-center" width="320" src="./../../assets/qr-code-sellsuki.png" alt="">
-              <img class="position-bu" width="120" src="./../../assets/SolutionsOc2plus/Oc2plus-bu.png" alt="">
+              <img class="item-center" width="320" src="./../../assets/qr-code-sellsuki.webp" alt="qr-code-sellsuki">
+              <img class="position-bu" width="120" src="./../../assets/SolutionsOc2plus/Oc2plus-bu.webp" alt="Oc2plus-bu">
             </div>
         </div>
       </div>

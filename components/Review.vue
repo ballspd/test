@@ -8,12 +8,12 @@
                     <div v-for="(data, index) in responseData" :key="index" class="carousel-item" :class="{'active': index == 0}">
                         <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Portfolio/Detail/'+data.id+'' , query: { type: data.bu_category.name } })">
                         <div class="row">
-                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img v-if="data.illustration != null" class="d-block image-review" :src="data.illustration.url" :alt="data.illustration.alternativeText"></div>
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img v-if="data.illustration != null" class="d-block image-review" :src="data.illustration.url" :alt="data.illustration.alternativeText" loading="lazy"></div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-xxl-5 p-lg-5 p-sm-3 p-3">
-                                <div class="ps-sm-2 pe-sm-2 ps-2 pe-0">
+                                <div itemscope class="ps-sm-2 pe-sm-2 ps-2 pe-0">
                                 <p style="color:#FF773B">-- TESTIMONIALS</p>
-                                    <font class="text-review text-limit-1">{{data.title}}</font>
-                                    <p class="mt-3 text-limit-7">{{data.description}}</p>
+                                    <div itemprop="name" class="text-review text-limit-1">{{data.title}}</div>
+                                    <p itemprop="desc" class="mt-3 text-limit-7">{{data.description}}</p>
                                     <p class="mt-xxl-5 mt-4" style="color:#FF773B">{{data.name}}<br>{{data.position}}</p>
                                 </div>
                             </div>

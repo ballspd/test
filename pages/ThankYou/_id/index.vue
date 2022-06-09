@@ -44,10 +44,10 @@ export default {
         scrollToTop() {
             window.scrollTo(0,0);
         },
-        goBack() { 
+        //goBack() { 
             //this.$router.back()
             //window.scrollTo(0,0);
-        }
+        //}
     },
     
 }

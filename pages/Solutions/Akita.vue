@@ -22,7 +22,7 @@
                             <h1 class="font-wght text-s-36" style="color:#FFFFFC">AKITA<br>FULFILLMENT</h1>
                             <h2 class="text-s-24 text-w-700 ps-md-0 pe-md-0 ps-5 pe-5 mt-4" style="color:#FFFFFC">“{{ $t("solution.akita.ONE_Stop_warehouse_service") }}”</h2>
                             <p class="text-s-16 p-4 p-md-0 ps-5 pe-5 mb-0" style="color:#FFFFFC">{{ $t("solution.akita.mata") }}</p>
-                            <a href="https://www.akitahub.com/" target="_blank" class="btn btn-orange button mt-2"><span class="text-white" style="font-size:18px">Click Now</span></a>
+                            <a href="https://www.akitahub.com/" target="_blank" rel="noopener" class="btn btn-orange button mt-2"><span class="text-white" style="font-size:18px">Click Now</span></a>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -38,19 +38,19 @@
                     <div class="row mt-5 ps-5 pe-5 text-center">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 hvr-float-shadow" style="background-color: #F76D22;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsAkita/icon-solution-akita-1.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsAkita/icon-solution-akita-1.webp"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#373737">{{ $t("solution.akita.receiving") }}</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 hvr-float-shadow" style="background-color: #143555;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsAkita/icon-solution-akita-2.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsAkita/icon-solution-akita-2.webp"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#373737">{{ $t("solution.akita.packing") }}</h2>
                         </div>
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                             <div class="bg-icon-single d-flex item-center mt-md-0 mt-2 hvr-float-shadow" style="background-color: #F76D22;">
-                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsAkita/icon-solution-akita-3.png"></div>
+                                <div class="bg-icon-single d-flex"><img class="m-auto img-fluid p-3 p-md-4 p-lg-0" src="./../../assets/SolutionsAkita/icon-solution-akita-3.webp"></div>
                             </div>
                             <h2 class="text-s-20 mt-3" style="color:#373737">{{ $t("solution.akita.delivering") }}</h2>
                         </div>     
@@ -104,30 +104,30 @@
                         <div class="row mt-5 text-center">
                             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-2">
-                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsAkita/icon-solution-akita-4.png"></div>
+                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsAkita/icon-solution-akita-4.webp"></div>
                                 </div>
-                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
+                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.webp">
                                 <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">{{ $t("solution.akita.listening") }}</h2>
                             </div>
                             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsAkita/icon-solution-akita-5.png"></div>
+                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsAkita/icon-solution-akita-5.webp"></div>
                                 </div>
-                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
+                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.webp">
                                 <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">{{ $t("solution.akita.active") }}</h2>
                             </div>
                             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsAkita/icon-solution-akita-6.png"></div>
+                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsAkita/icon-solution-akita-6.webp"></div>
                                 </div>
-                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
+                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.webp">
                                 <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">{{ $t("solution.akita.attention") }}</h2>
                             </div>
                             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
                                 <div class="bg-icon d-flex item-center mt-md-0 mt-5">
-                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsAkita/icon-solution-akita-7.png"></div>
+                                    <div class="bg-icon-main d-flex animate__animated animate__rotateIn animate__slow animate__delay-1s"><img class="m-auto" src="./../../assets/SolutionsAkita/icon-solution-akita-7.webp"></div>
                                 </div>
-                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.png">
+                                <img class="item-center mt-4 animate__animated animate__fadeInDown animate__delay-1s" src="./../../assets/icon/Group163.webp">
                                 <h2 class="text-s-20 mt-3 animate__animated animate__fadeInDown animate__delay-2s" style="color:#373737">{{ $t("solution.akita.reliable") }}</h2>
                             </div>       
                         </div>

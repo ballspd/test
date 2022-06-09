@@ -30,7 +30,7 @@
                                     quote="Sellsuki Co. Ltd"
                                     hashtags="Sellsuki"
                                 >
-                                    <img width="45" src="./../../../../../assets/icon/entypo-social_facebook-with-circle.png">
+                                    <img width="45" src="./../../../../../assets/icon/entypo-social_facebook-with-circle.webp">
                                 </ShareNetwork>
                                 <ShareNetwork
                                     network="twitter"
@@ -39,7 +39,7 @@
                                     :description="responseData.description"
                                     twitter-user="Sellsuki Co. Ltd">
                                     
-                                    <img width="45" src="./../../../../../assets/icon/entypo-social_twitter-with-circle.png">
+                                    <img width="45" src="./../../../../../assets/icon/entypo-social_twitter-with-circle.webp">
                                 </ShareNetwork>
                             </div>
                             <div class="col-6 col-md-7 col-xl-9 p-2">
@@ -49,7 +49,7 @@
                         </div>
                         <div v-for="data in responseData.contant" :key="data.id" class="row">
                             <div v-if="data.image != null" class="col-12 mt-5 mb-5">
-                                <img v-if="data.image != null" class="img-cover" :src="data.image.url" :alt="data.image.name">
+                                <img v-if="data.image != null" class="img-cover" :src="data.image.url" :alt="data.image.alternativeText">
                             </div>
                             <div v-else class="mt-3 mb-3">
                             </div>

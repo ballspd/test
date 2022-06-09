@@ -59,8 +59,8 @@
                     </div>
                     <div class="row crad-gradient p-4">
                         <div class="col-12">
-                            <img class="element-in-card-right" src="~/assets/element.png">
-                            <img class="element-in-card-left" src="~/assets/element.png">
+                            <img class="element-in-card-right" src="~/assets/element.webp">
+                            <img class="element-in-card-left" src="~/assets/element.webp">
                             <h1 class="text-s-30 text-w-700 text-center mt-2 text-white">เพิ่มการตอบโต้ระหว่างแบรนด์และลูกค้า</h1> 
                             <hr class="text-center text-white mt-4 hr-in-crad"/>
                             <img class="item-center" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Social_listening_03_1_4dd0c5b7fd.webp" alt="Social listening 03">
@@ -72,8 +72,8 @@
                     <div class="row">
                         <div class="col-12 text-center ps-5 pe-5"><h1 class="text-s-30 text-w-700 ps-4 pe-4 text-h1">SOCIAL LISTENIN แอบดูอะไรได้บ้าง</h1></div>    
                     </div>
-                    <img class="img-element" src="~/assets/element.png">
-                    <img class="img-element-2" src="~/assets/element2.png">
+                    <img class="img-element" src="~/assets/element.webp">
+                    <img class="img-element-2" src="~/assets/element2.webp">
                     <div class="row justify-content-center mt-3">
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 p-2 d-flex justify-content-center">
                             <div class="hvr-grow-shadow crad-square mt-3">

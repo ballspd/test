@@ -197,7 +197,7 @@ export default {
 <style scoped>
 
 .bg{
-  background: url('./../assets/image94.png');
+  background: url('./../assets/image94.webp');
   background-position: center;
   background-repeat: no-repeat;
   height: 350px;

@@ -3,7 +3,7 @@
     "firstName": "Please input your first name.",
     "lastName": "Please input your last name.",
     "email": "Please input the email correctly ,need “@“ in your email.",
-    "PhoneNumber": "Please input your last phone number.",
+    "phoneNumber": "Please input your last phone number.",
     "jobVacancy": "Please choose the options.",
     "position": "Please input the position that you want to apply.",
     "expectedSalary": "Please input your expected salary. Input with a number (0-9) only.",

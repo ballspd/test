@@ -24,8 +24,8 @@
                             </div>
                             <div class="col-6 col-md-5 col-xl-3" style="border-right: 2px solid #E5E5E5;">
                                 <span class="me-4">Share with :</span> 
-                                <img width="45" src="~/assets/icon/entypo-social_facebook-with-circle.png" alt="entypo social facebook with circle"> 
-                                <img width="45" src="~/assets/icon/entypo-social_twitter-with-circle.png" alt="entypo social twitter with circle">
+                                <img width="45" src="~/assets/icon/entypo-social_facebook-with-circle.webp" alt="entypo social facebook with circle"> 
+                                <img width="45" src="~/assets/icon/entypo-social_twitter-with-circle.webp" alt="entypo social twitter with circle">
                             </div>
                             <div class="col-6 col-md-7 col-xl-9 p-2">
                                 <i class="bi bi-eye ms-lg-5 ms-3"></i>
