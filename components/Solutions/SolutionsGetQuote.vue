@@ -48,12 +48,12 @@
                     <div class="form-group col-6 mt-3">
                       <label class="text-s-16 text-dark">{{ $t("form.interestedabout") }}*</label>
                       <select v-model="form.interested" class="form-select mt-2" :class="{'border border-danger': validate && !form.interested}" placeholder="interested about*">
-                          <option selected value="">interested about*</option>
-                          <option value="บริการทำโฆษณาบน Social Media">บริการทำโฆษณาบน Social Media</option>
-                          <option value="บริการ Fulfillment เก็บ แพ็ก ส่ง">บริการ Fulfillment เก็บ แพ็ก ส่ง</option>
-                          <option value="LINE Agency เปิดบัญชี LINE OA">LINE Agency เปิดบัญชี LINE OA</option>
-                          <option value="บริการจัดทำเว็บไซต์และระบบหลังบ้าน">บริการจัดทำเว็บไซต์, System, และ API</option>
-                          <option value="บริการ Content Marketing และ แอดมิน">บริการ Content Marketing และ แอดมิน</option>
+                          <option disabled value="">interested about*</option>
+                          <option value="Fuse">บริการทำโฆษณาบน Social Media</option>
+                          <option value="Akita">บริการ Fulfillment เก็บ แพ็ก ส่ง</option>
+                          <option value="Line">LINE Agency เปิดบัญชี LINE OA</option>
+                          <option value="Beary">บริการจัดทำเว็บไซต์, System, และ API</option>
+                          <option value="Kaikong">บริการ Content Marketing และ แอดมิน</option>
                       </select>
                       <div v-if="validate">
                           <p v-if="!form.interested" class="text-danger mb-0">กรุณาระบุ</p>
@@ -82,43 +82,43 @@
               </div>
               <div class="col-5 text-center">
                 <div v-if="type === 'Fuse'">
-                  <img class="item-center" src="./../../assets/SolutionsFuse/logo.webp" alt="logo">
+                  <img class="item-center cover-img" width="190" height="90" src="./../../assets/SolutionsFuse/logo.svg" alt="logo">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
                   <img class="item-center" width="320" src="./../../assets/SolutionsFuse/Fuse-qrcode.webp" alt="Fuse-qrcode">
                   <img class="position-bu mt-5" src="./../../assets/SolutionsFuse/Fuse-bu.webp" alt="Fuse-bu">
                 </div>
                 <div v-if="type === 'Line'">
-                  <img class="item-center" src="./../../assets/SolutionsLine/logo.webp" alt="logo">
+                  <img class="item-center cover-img"  width="320" height="45" src="./../../assets/SolutionsLine/logo.svg" alt="logo">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
                   <img class="item-center" width="320" src="./../../assets/SolutionsLine/Line-qrcode.webp" alt="Line-qrcode">
                   <img class="position-bu" src="./../../assets/SolutionsLine/Line-bu.webp" alt="">
                 </div>
                 <div v-if="type === 'Akita'">
-                  <img class="item-center" src="./../../assets/SolutionsAkita/logo.webp" alt="logo">
+                  <img class="item-center cover-img" width="220" height="90" src="./../../assets/SolutionsAkita/logo.svg" alt="logo">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
                   <img class="item-center" width="320" src="./../../assets/SolutionsAkita/Akita-qrcode.webp" alt="Akita-qrcode">
                   <img class="position-bu" width="220" src="./../../assets/SolutionsAkita/Akita-bu.webp" alt="Akita-bu">
                 </div>
                 <div v-if="type === 'Beary'">
-                  <img class="item-center" src="./../../assets/SolutionsBeary/logo.webp" alt="logo">
+                  <img class="item-center cover-img" width="190" height="90" src="./../../assets/SolutionsBeary/logo.svg" alt="logo">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
                   <img class="item-center" width="320" src="./../../assets/SolutionsBeary/Beary-qrcode.webp" alt="Beary-qrcode">
                     <img class="position-bu" width="220" src="./../../assets/SolutionsBeary/Beary-bu.webp" alt="Beary-bu">
                 </div>
                 <div v-if="type === 'Kaikong'">
-                  <img class="item-center" src="./../../assets/SolutionsKaikong/logo.webp" alt="logo">
+                  <img class="item-center cover-img" width="250" height="90" src="./../../assets/SolutionsKaikong/logo.svg" alt="logo">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
                   <img class="item-center" width="320" src="./../../assets/SolutionsKaikong/Kaikong-qrcode.webp" alt="Kaikong-qrcode">
                   <img class="position-bu" width="220" src="./../../assets/SolutionsKaikong/Kaikong-bu.webp" alt="Kaikong-bu">
                 </div>
                 <div v-if="type === 'Shipmunk'">
-                  <img class="item-center" src="./../../assets/SolutionsShipmunk/logo.webp" alt="logo">
+                  <img class="item-center cover-img" width="190" height="100" src="./../../assets/SolutionsShipmunk/logo.svg" alt="logo">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
                   <img class="item-center" width="320" src="./../../assets/qr-code-sellsuki.webp" alt="qr-code-sellsuki">
                   <img class="position-bu mt-4" width="220" src="./../../assets/SolutionsShipmunk/Shipmunk-bu.webp" alt="Shipmunk-bu">
                 </div>
                 <div v-if="type === 'Oc2Plus'">
-                  <img class="item-center" src="./../../assets/SolutionsOc2plus/logo.webp" alt="logo">
+                  <img class="item-center cover-img" width="210" height="80" src="./../../assets/SolutionsOc2plus/logo.svg" alt="logo">
                   <p class="txt-s-16 mt-3" style="color:#23243D">ติดต่อสอบถามข้อมูลเพิ่มเติมได้ที่</p>
                   <img class="item-center" width="320" src="./../../assets/qr-code-sellsuki.webp" alt="qr-code-sellsuki">
                   <img class="position-bu mt-2" src="./../../assets/SolutionsOc2plus/Oc2plus-bu.webp" alt="Oc2plus-bu">
@@ -180,12 +180,12 @@
                     <div class="form-group col-12 mt-3">
                       <label class="text-s-16 text-text-dark">{{ $t("form.interestedabout") }}*</label>
                       <select v-model="form.interested" class="form-select mt-2" :class="{'border border-danger': validate && !form.interested}" placeholder="interested about*">
-                          <option selected value="">interested about*</option>
-                          <option value="บริการทำโฆษณาบน Social Media">บริการทำโฆษณาบน Social Media</option>
-                          <option value="บริการ Fulfillment เก็บ แพ็ก ส่ง">บริการ Fulfillment เก็บ แพ็ก ส่ง</option>
-                          <option value="LINE Agency เปิดบัญชี LINE OA">LINE Agency เปิดบัญชี LINE OA</option>
-                          <option value="บริการจัดทำเว็บไซต์และระบบหลังบ้าน">บริการจัดทำเว็บไซต์, System, และ API</option>
-                          <option value="บริการ Content Marketing และ แอดมิน">บริการ Content Marketing และ แอดมิน</option>
+                          <option disabled value="">interested about*</option>
+                          <option value="Fuse">บริการทำโฆษณาบน Social Media</option>
+                          <option value="Akita">บริการ Fulfillment เก็บ แพ็ก ส่ง</option>
+                          <option value="Line">LINE Agency เปิดบัญชี LINE OA</option>
+                          <option value="Beary">บริการจัดทำเว็บไซต์, System, และ API</option>
+                          <option value="Kaikong">บริการ Content Marketing และ แอดมิน</option>
                       </select>
                       <div v-if="validate">
                           <p v-if="!form.interested" class="text-danger mb-0">กรุณาระบุ</p>
@@ -278,7 +278,7 @@ export default {
                     tel:'',
                     email:'',
                     brand:'',
-                    interested:'',
+                    interested:this.type,
                     message:''
           },
           validate: false,
@@ -292,6 +292,7 @@ export default {
             }
             if (this.form.fname != '' && this.form.lname != '' && this.form.tel != '' && this.form.email != '' && this.form.brand != '' && this.form.interested != '' && this.form.message != '') {
               var bu = ""
+              var interested = ""
                 if(this.type == "Fuse"){
                   bu = "82"
                 }else if (this.type == "Line"){
@@ -307,6 +308,22 @@ export default {
                 }else if (this.type == "Akita"){
                   bu = "85"
                 }
+
+                if(this.form.interested == "Fuse"){
+                  interested = "บริการทำโฆษณาบน Social Media"
+                }else if (this.form.interested == "Akita"){
+                  interested = "บริการ Fulfillment เก็บ แพ็ก ส่ง"
+                }else if (this.form.interested == "Line"){
+                  interested = "LINE Agency เปิดบัญชี LINE OA"
+                }else if (this.form.interested == "Beary"){
+                  interested = "บริการจัดทำเว็บไซต์, System, และ API"
+                }else if (this.form.interested == "Kaikong"){
+                  interested = "บริการ Content Marketing และ แอดมิน"
+                }else if (this.form.interested == "Oc2Plus"){
+                  interested = ""
+                }else if (this.form.interested == "Shipmunk"){
+                  interested = ""
+                }
                 var fullname = this.form.fname + " " + this.form.lname
                 const data = { 
                     "title": fullname + ' (' +this.type + ')',
@@ -318,7 +335,7 @@ export default {
                     "1681c8caf179eaa804c3abe3bdd3456bf053fd38": this.form.email,
                     "1bc506f7722eb25f5f7bd1fdfaad6d06ebbe14b4": this.form.message,
                     "0241c0c2c487c8f1fb6c09a1c20f0bc343466a53": this.form.brand,
-                    "c8a12d868709dfba7851c4a17313adc3eb92b8f9": this.form.interested,
+                    "c8a12d868709dfba7851c4a17313adc3eb92b8f9": interested,
                     "6bfcbe93be86dd7661959021d28399ed876670f3": bu,
                 };
 
@@ -339,7 +356,7 @@ export default {
                 this.form.email == ''
                 this.form.message == ''
                 this.form.brand == ''
-                this.form.interested == ''
+                //this.form.interested == ''
             }
         }
     }

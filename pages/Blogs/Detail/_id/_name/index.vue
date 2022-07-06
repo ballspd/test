@@ -24,7 +24,7 @@
                                 <span class="me-4">Share with : </span> 
                                 <ShareNetwork
                                     network="facebook"
-                                    :url="url"
+                                    :url="urls"
                                     :title="responseData.title"
                                     :description="responseData.description"
                                     quote="Sellsuki Co. Ltd"
@@ -34,7 +34,7 @@
                                 </ShareNetwork>
                                 <ShareNetwork
                                     network="twitter"
-                                    :url="url"
+                                    :url="urls"
                                     :title="responseData.title"
                                     :description="responseData.description"
                                     twitter-user="Sellsuki Co. Ltd">
@@ -90,7 +90,7 @@ export default {
         description: this.responseData.description,
         site_name: 'Sellsuki',
         illustration: this.responseData.illustration.url,
-        url: this.url
+        urls: this.urls
       });
     },
     async asyncData({ $axios, route, i18n }) {
@@ -106,7 +106,7 @@ export default {
         view: 1,
         count:0,
         blog_category_id:'',
-        url: 'https://www.sellsuki.co.th/Blogs/Detail/'+this.$route.params.id+'/'+this.$route.params.name
+        urls: 'https://www.sellsuki.co.th/Blogs/Detail/'+this.$route.params.id+'/'+this.$route.params.name
       }
     },
     methods: {
@@ -117,12 +117,12 @@ export default {
         return moment(value).format('DD MMM YYYY');
       },
       addView(view){
-        //console.log(view)
+        console.log(view)
         this.count = parseInt(view) + 1
-        //console.log(this.count)
+        console.log(this.count)
         axios.put('https://login.sellsuki.co.th/blogs/'+ this.$route.params.id, {view: this.count}, {
             headers: {
-                'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjQ5MjMxMDIzLCJleHAiOjE2NTE4MjMwMjN9.7X3x0UwOJOUdyaCXLS6m_MRZR9uuF7ppPPiCyN9zcJc`
+                'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjU2NDQxMTc1LCJleHAiOjE2NTkwMzMxNzV9.pmkkDG5APoFoOeGeYowp0nan0tim0LDE17f2-j8T0tU`
             }
         })
         .then()
@@ -133,8 +133,9 @@ export default {
         if(/^\?fbclid=/.test(location.search)){
             location.replace(location.href.replace(/\?fbclid.+/, ""));
         }
-        axios.get('https://login.sellsuki.co.th/blogs/' + this.$route.params.id+'?_locale='+ this.lang)
-        .then(response => (this.addView(response.data.view)))
+        //axios.get('https://login.sellsuki.co.th/blogs/' + this.$route.params.id+'?_locale='+ this.lang)
+        axios.get('https://login.sellsuki.co.th/blogs/' + this.$route.params.id)
+        .then(response => (this.responseData = response.data,this.addView(response.data.view)))
     }
 }
 </script>

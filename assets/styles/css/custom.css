@@ -251,7 +251,7 @@ ul li ul:hover {
   position: absolute;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  height: 470px;
+  height: 480px;
   top: 85px;
   background: #FFFFFC;
   border-radius: 5px;
@@ -450,8 +450,8 @@ a{
 .nav-link{
   padding-top: 2px !important;
   padding-bottom: 2px !important;
-  padding-right: 16px !important;;
-  padding-left: 16px !important;;
+  padding-right: 10px !important;;
+  padding-left: 10px !important;;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -470,11 +470,15 @@ li{
 }
 
 .color-7E4922{
-  color:#7E4922
+  color:#7E4922;
 }
 
 .color-23233C{
-  color:#23233C
+  color:#23233C;
+}
+
+.color-FF773B{
+  color:#FF773B;
 }
 
 .text-w-400{
@@ -517,6 +521,10 @@ li{
   font-size: 24px !important;
 }
 
+.text-s-28{
+  font-size: 28px !important;
+}
+
 .text-s-30{
   font-size: 30px !important;
 }
@@ -553,6 +561,11 @@ hr{
 .text-c-menu{
   color: #50151C !important;
   Fill:solid !important;
+}
+
+.cover-img{
+  object-fit: cover;
+  
 }
 
 .crad{

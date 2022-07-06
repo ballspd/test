@@ -12,8 +12,8 @@
                     <div class="card" style="border-radius: 10px">
                       <img v-if="data.illustration != null" class="card-img-top img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText" loading="lazy">
                       <div itemscope class="card-body">
-                        <div itemprop="name" class="card-title text-limit-1" style="font-weight: bold;font-size: 24px;">{{data.title}}</div>
-                        <p itemprop="desc" style="margin-bottom: 0rem;" class="card-text text-s-16 text-limit-2">{{data.description}}</p>
+                        <div itemprop="name" class="card-title text-limit-2" style="font-weight: bold;font-size: 20px;">{{data.title}}</div>
+                        <p itemprop="desc" style="margin-bottom: 0rem;" class="card-text text-s-16 text-limit-3">{{data.description}}</p>
                         <NuxtLink class="btn btn-transparent hvr-back-pulse position-btn mt-1" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span class="m-auto">Read More</span></NuxtLink>
                       </div>
                     </div>
@@ -31,8 +31,8 @@
                       <div class="card" style="border-radius: 10px">
                         <img v-if="data.illustration != null" class="card-img-top img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText" loading="lazy">
                         <div itemscope class="card-body">
-                          <div itemprop="name" class="card-title text-limit-1" style="font-weight: bold;font-size: 24px;">{{data.title}}</div>
-                          <p itemprop="desc" style="margin-bottom: 0rem;" class="card-text text-s-16 text-limit-2">{{data.description}}</p>
+                          <div itemprop="name" class="card-title text-limit-2" style="font-weight: bold;font-size: 20px;">{{data.title}}</div>
+                          <p itemprop="desc" style="margin-bottom: 0rem;" class="card-text text-s-16 text-limit-3">{{data.description}}</p>
                           <NuxtLink class="btn btn-transparent hvr-back-pulse position-btn mt-1" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span class="m-auto">Read More</span></NuxtLink>
                         </div>
                       </div>
@@ -115,5 +115,18 @@ export default {
 .card-img, .card-img-top{
   border-top-left-radius: 10px !important;
   border-top-right-radius: 10px !important;
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .card{
+      height: 400px !important;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .card{
+      height: 400px !important;
+    }
 }
 </style>

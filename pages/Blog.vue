@@ -9,8 +9,8 @@
                         <p class="text-s-16 mt-150" style="color:#50151C;"><NuxtLink @click="scrollToTop" :to="localePath('/')">Home</NuxtLink> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">Blog</font></p>
                         <table class="align-middle" style="width: 100%;">
                             <td class="banner-height">
-                                <font class="font-wght" style="font-size:64px;color:#50151C">Blog</font>
-                                <p class="text-s-16" style="color:#50151C;width: 395px;">ติดตามข่าวสาร และข้อมูลดี ๆ เกี่ยวกับ เทรนด์การตลาด และ e-Commerce ก่อนใครได้แล้ว ที่นี่!</p>
+                                <font class="font-wght" style="font-size:52px;color:#50151C">{{$t("Blog.titel")}}</font>
+                                <p class="text-s-16" style="color:#50151C;width: 395px;">{{$t("Blog.mata")}}</p>
                             </td>
                         </table>
                     </div>
@@ -19,8 +19,8 @@
                             <NuxtLink @click="scrollToTop" :to="localePath('/')" style="color:#50151C">Home</NuxtLink> <i class="bi bi-chevron-right"></i>
                             <font class="text-s-16 text-w-700"><NuxtLink @click="scrollToTop" :to="localePath('/Blog')" style="color:#50151C"> Blog</NuxtLink></font>
                         </p>
-                        <font class="font-wght mt-3" style="font-size:36px;color:#50151C">Blog</font>
-                        <p class="text-s-16" style="color:#50151C">ติดตามข่าวสาร และข้อมูลดี ๆ เกี่ยวกับ เทรนด์การตลาด และ e-Commerce ก่อนใครได้แล้ว ที่นี่!</p>
+                        <font class="font-wght mt-3" style="font-size:36px;color:#50151C">{{$t("Blog.titel")}}</font>
+                        <p class="text-s-16" style="color:#50151C">{{$t("Blog.mata")}}</p>
                     </div>
                 </div>
                 <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -30,73 +30,87 @@
             </div>
             <div class="crad mt-5">
                 <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
+                    <div class="row mb-3">
+                        <div class="col-3" style="padding:0 !important">
+                            <span class="d-flex"><img width="35" height="20" class="me-2" style="margin-top:11px" src="./../assets/icon/new.webp" alt="new.webp"><div class="text-w-700 text-s-28 color-15304E">{{$t("Blog.LastedUpdate")}}</div></span>
+                        </div>
+                        <div class="col-9">
+                            <hr class="hr-mid"/>
+                        </div>
+                    </div>
                     <div v-for="(data, index) in responseData" :key="index" class="mb-5">
                         <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                         <div v-if="index == 0" class="row">
-                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><img v-if="data.illustration != null" class="img-fluid img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText" style="width: 510px;height: 330px;"></div>
-                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="padding: 30px 10px 10px 10px;">
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <img v-if="data.illustration != null" class="img-fluid img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText" style="width: 510px;height: 330px;">
+                            </div>
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-3 pb-2 pt-1">
                                 <p class="text-s-16" style="color:#807F7F">{{dateTime(responseData.created_at)}}</p>
-                                <font class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</font>
+                                <font class="text-w-700 text-s-24 color-15304E">{{data.title}}</font>
                                 <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                <p class="text-limit-2 text-s-16" style="color:#373737;">{{data.description}}</p>
+                                <p class="text-s-16" style="color:#373737;">{{data.description}}</p>
                                 <NuxtLink class="btn btn-transparent mt-2 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
                             </div>
                         </div>
                         </NuxtLink>
                     </div>
-                    <div class="d-none d-xl-block d-xxl-block">
+                    <div class="d-none d-xl-block">
                         <div class="row p-3" style="background-color:#F2F3F5">
                             <div class="col-12 p-0">
-                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                                     <div class="carousel-inner">
-                                        <div class="carousel-item active">
+                                        <div class="carousel-item active" data-bs-interval="2000">
                                             <div class="row">
                                                 <div v-for="(data, index) in responseData" :key="index" :class="{'col-4':index < 4 && index != 0}">
                                                     <NuxtLink class="row" v-if="index < 4 && index != 0" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                                         <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.alternativeText"></div>
                                                         <div class="col-6 p-1">                                                
                                                             <div class="btn lh-1 btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important"><span style="font-size:14px">NEW</span></div>
-                                                            <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:18px">{{data.title}}</p>
+                                                            <p class="text-limit-2 font-wght mt-2 mb-1" style="color:#15304E;font-size:14px">{{data.title}}</p>
                                                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                                            <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
+                                                            <p class="text-limit-2" style="color:#373737;font-size:12px">{{data.description}}</p>
                                                         </div>
                                                     </NuxtLink>
                                                 </div>                                         
                                             </div>
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item" data-bs-interval="2000">
                                             <div class="row">
-                                                <div v-for="(data, index) in responseData" :key="index" :class="{'col-4':index > 3 && index < 6}">
-                                                    <NuxtLink class="row" v-if="index > 3 && index < 6" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
+                                                <div v-for="(data, index) in responseData" :key="index" :class="{'col-4':index > 3}">
+                                                    <NuxtLink class="row" v-if="index > 3" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                                         <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.alternativeText"></div>
                                                         <div class="col-6 p-1">                                                
                                                             <div class="btn lh-1 btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important"><span style="font-size:14px">NEW</span></div>
-                                                            <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:18px">{{data.title}}</p>
+                                                            <p class="text-limit-2 font-wght mt-2 mb-1" style="color:#15304E;font-size:14px">{{data.title}}</p>
                                                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
-                                                            <p class="text-limit-2" style="color:#373737;font-size:14px">{{data.description}}</p>
+                                                            <p class="text-limit-2" style="color:#373737;font-size:12px">{{data.description}}</p>
                                                         </div>
                                                     </NuxtLink>
                                                 </div>                                         
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="carousel-indicators mt-carousel">
+                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="d-block d-lg-none d-xl-none mb-4">
+                    <div class="d-block d-xl-none mb-4">
                         <div id="carouselMobile" class="carousel carousel-dark slide" data-bs-ride="carousel">
                             <div class="row p-3" style="background-color:#F2F3F5">
                                 <div class="col-12 p-0">
                                     <div class="carousel-inner">
-                                        <div v-for="(data, index) in responseData" :key="index" :class="{'active':index == 0}" class="carousel-item" data-bs-interval="10000">
+                                        <div v-for="(data, index) in responseData" :key="index" :class="{'active':index == 1 && index != 0,'display-none':index == 0}" class="carousel-item" data-bs-interval="5000">
                                             <div class="row">
                                                 <div class="col-12">
                                                     <div class="row">
                                                         <div class="col-6" style="width:170px"><img v-if="data.illustration != null" class="img-fluid img-fix-size-2" :src="data.illustration.url" :alt="data.illustration.alternativeText"></div>
                                                         <div class="col-6 p-2 ps-sm-3 pe-sm-3">                                                
                                                             <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})" class="btn btn-orange hvr-back-pulse" style="width: 70px !important;height: 32px !important;line-height: 1"><span style="font-size:14px">NEW</span></NuxtLink>
-                                                            <p class="text-limit-1 font-wght mt-2 mb-1" style="color:#15304E;font-size:18px">{{data.title}}</p>
+                                                            <p class="text-limit-2 font-wght mt-2 mb-1" style="color:#15304E;font-size:18px">{{data.title}}</p>
                                                             <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
                                                             <p class="text-limit-2 text-s-14 mb-0" style="color:#373737;">{{data.description}}</p>
                                                         </div>
@@ -109,12 +123,12 @@
                             </div>
                             <div class="carousel-indicators mt-3" style="position: relative;">
                                 <div v-for="(data, index) in responseData" :key="index">
-                                    <button type="button" data-bs-target="#carouselMobile" :data-bs-slide-to="index" :class="{'active':index == 0}" :aria-current="{'true':index == 0}" :aria-label="'Slide '+ (index + 1)"></button>
+                                    <button v-if="index != 0" type="button" data-bs-target="#carouselMobile" :data-bs-slide-to="index" :class="{'active':index == 1 && index != 0}" :aria-current="{'true':index == 1 && index != 0}" :aria-label="'Slide '+ (index + 1)"></button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row text-center mt-4 justify-content-center">
+                    <div class="row text-center mt-5 pt-4 justify-content-center">
                         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4 p-xxl-2 p-3">
                             <a class="hvr-bounce-in" @click="c1 = true" href="#เทคนิคการขาย-และการโฆษณา">
                                 <div class="bg-radius">
@@ -191,17 +205,19 @@
                             </div>
                         </div>
                         <div class="row mt-2">
-                            <div v-for="data in responseDatac1" :key="data.id" class="col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12 crad-height">
+                            <div v-for="data in responseDatac1" :key="data.id" class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 crad-height">
                                 <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                     <div class="row">
-                                        <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6 p-2">
                                             <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                                         </div>
-                                        <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6 p-2">
                                             <font class="text-w-700 text-limit-3 color-15304E text-s-18">{{data.title}}</font>
                                             <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                             <p class="text-limit-3" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                            <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse btn-crad" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
+                                            <div class="text-end btn-crad">
+                                            <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
+                                            </div>
                                         </div>
                                     </div>
                                 </NuxtLink>
@@ -226,17 +242,17 @@
                             </div>
                         </div>
                         <div class="row mt-2">
-                            <div v-for="data in responseDatac2" :key="data.id" class="col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div v-for="data in responseDatac2" :key="data.id" class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 crad-height">
                                 <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                     <div class="row">
-                                        <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6 p-2">
                                             <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                                         </div>
-                                        <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6 p-2">
                                             <font class="text-w-700 text-limit-3 color-15304E text-s-18">{{data.title}}</font>
                                             <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                             <p class="text-limit-3" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                            <div class="text-end">
+                                            <div class="text-end btn-crad">
                                             <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
                                             </div>
                                         </div>
@@ -263,17 +279,17 @@
                             </div>
                         </div>
                         <div class="row mt-2">
-                            <div v-for="data in responseDatac3" :key="data.id" class="col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div v-for="data in responseDatac3" :key="data.id" class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 crad-height">
                                 <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                     <div class="row">
-                                        <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6 p-2">
                                             <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                                         </div>
-                                        <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6 p-2">
                                             <font class="text-w-700 text-limit-3 color-15304E text-s-18">{{data.title}}</font>
                                             <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                             <p class="text-limit-3" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                            <div class="text-end">
+                                            <div class="text-end btn-crad">
                                             <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
                                             </div>
                                         </div>
@@ -300,17 +316,17 @@
                             </div>
                         </div>
                         <div class="row mt-2">
-                            <div v-for="data in responseDatac4" :key="data.id" class="col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div v-for="data in responseDatac4" :key="data.id" class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 crad-height">
                                 <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                     <div class="row">
-                                        <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6 p-2">
                                             <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                                         </div>
-                                        <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6 p-2">
                                             <font class="text-w-700 text-limit-3 color-15304E text-s-18">{{data.title}}</font>
                                             <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                             <p class="text-limit-3" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                            <div class="text-end">
+                                            <div class="text-end btn-crad">
                                             <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
                                             </div>
                                         </div>
@@ -337,17 +353,17 @@
                             </div>
                         </div>
                         <div class="row mt-2">
-                            <div v-for="data in responseDatac5" :key="data.id" class="col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div v-for="data in responseDatac5" :key="data.id" class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 crad-height">
                                 <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                     <div class="row">
-                                        <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6 p-2">
                                             <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                                         </div>
-                                        <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6 p-2">
                                             <font class="text-w-700 text-limit-3 color-15304E text-s-18">{{data.title}}</font>
                                             <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                             <p class="text-limit-3" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                            <div class="text-end">
+                                            <div class="text-end btn-crad">
                                             <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
                                             </div>
                                         </div>
@@ -374,17 +390,17 @@
                             </div>
                         </div>
                         <div class="row mt-2">
-                            <div v-for="data in responseDatac6" :key="data.id" class="col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div v-for="data in responseDatac6" :key="data.id" class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 crad-height">
                                 <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                     <div class="row">
-                                        <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6 p-2">
                                             <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                                         </div>
-                                        <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6 p-2">
                                             <font class="text-w-700 text-limit-3 color-15304E text-s-18">{{data.title}}</font>
                                             <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                             <p class="text-limit-3" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                            <div class="text-end">
+                                            <div class="text-end btn-crad">
                                             <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
                                             </div>
                                         </div>
@@ -411,17 +427,17 @@
                             </div>
                         </div>
                         <div class="row mt-2">
-                            <div v-for="data in responseDatac7" :key="data.id" class="col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div v-for="data in responseDatac7" :key="data.id" class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 crad-height">
                                 <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                     <div class="row">
-                                        <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6 p-2">
                                             <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                                         </div>
-                                        <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6 p-2">
                                             <font class="text-w-700 text-limit-3 color-15304E text-s-18">{{data.title}}</font>
                                             <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                             <p class="text-limit-3" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                            <div class="text-end">
+                                            <div class="text-end btn-crad">
                                             <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
                                             </div>
                                         </div>
@@ -448,17 +464,17 @@
                             </div>
                         </div>
                         <div class="row mt-2">
-                            <div v-for="data in responseDatac8" :key="data.id" class="col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div v-for="data in responseDatac8" :key="data.id" class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 crad-height">
                                 <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
                                     <div class="row">
-                                        <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6 p-2">
                                             <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
                                         </div>
-                                        <div class="col-xxl-12 col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 p-2">
+                                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6 p-2">
                                             <font class="text-w-700 text-limit-3 color-15304E text-s-18">{{data.title}}</font>
                                             <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                             <p class="text-limit-3" style="color:#373737;font-size:14px">{{data.description}}</p>
-                                            <div class="text-end">
+                                            <div class="text-end btn-crad">
                                             <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
                                             </div>
                                         </div>
@@ -498,7 +514,7 @@ export default {
         };
     },
     async asyncData({ $axios, route, i18n }) {
-        const responseData = await $axios.$get('blogs?_sort=created_at:DESC&_limit=6&_locale='+i18n.locale);
+        const responseData = await $axios.$get('blogs?_sort=created_at:DESC&_limit=7&_locale='+i18n.locale);
         const responseDatac1 = await $axios.$get('blogs?blog_category=8&_sort=created_at:DESC&_limit=3&_locale='+i18n.locale);
         const responseDatac2 = await $axios.$get('blogs?blog_category=9&_sort=created_at:DESC&_limit=3&_locale='+i18n.locale);
         const responseDatac3 = await $axios.$get('blogs?blog_category=10&_sort=created_at:DESC&_limit=3&_locale='+i18n.locale);
@@ -546,34 +562,35 @@ export default {
         }
     },
     mounted () {
-        // axios.get(process.env.API_URL+'blogs?_sort=created_at:DESC&_limit=6&_locale='+ this.lang)
-        // .then(response => (this.responseData = response.data))
-        // .catch()
+        //console.log(this.responseData.length);
+         axios.get(process.env.API_URL+'blogs?_sort=created_at:DESC&_limit=7&_locale='+ this.lang)
+         .then(response => (this.responseData = response.data))
+         .catch()
 
-        // axios.get(process.env.API_URL+'blogs?blog_category=8&_sort=created_at:DESC&_limit=3&_locale='+ this.lang)
-        // .then(response => (this.responseDatac1 = response.data))
-        // .catch()
-        // axios.get(process.env.API_URL+'blogs?blog_category=9&_sort=created_at:DESC&_limit=3&_locale='+ this.lang)
-        // .then(response => (this.responseDatac2 = response.data))
-        // .catch()
-        // axios.get(process.env.API_URL+'blogs?blog_category=10&_sort=created_at:DESC&_limit=3&_locale='+ this.lang)
-        // .then(response => (this.responseDatac3 = response.data))
-        // .catch()
-        // axios.get(process.env.API_URL+'blogs?blog_category=11&_sort=created_at:DESC&_limit=3&_locale='+ this.lang)
-        // .then(response => (this.responseDatac4 = response.data))
-        // .catch()
-        // axios.get(process.env.API_URL+'blogs?blog_category=12&_sort=created_at:DESC&_limit=3&_locale='+ this.lang)
-        // .then(response => (this.responseDatac5 = response.data))
-        // .catch()
-        // axios.get(process.env.API_URL+'blogs?blog_category=13&_sort=created_at:DESC&_limit=3&_locale='+ this.lang)
-        // .then(response => (this.responseDatac6 = response.data))
-        // .catch()
-        // axios.get(process.env.API_URL+'blogs?blog_category=14&_sort=created_at:DESC&_limit=3&_locale='+ this.lang)
-        // .then(response => (this.responseDatac7 = response.data))
-        // .catch()
-        // axios.get(process.env.API_URL+'blogs?blog_category=15&_sort=created_at:DESC&_limit=3&_locale='+ this.lang)
-        // .then(response => (this.responseDatac8 = response.data))
-        // .catch()
+         axios.get(process.env.API_URL+'blogs?blog_category=8&_sort=created_at:DESC&_limit=3&_locale='+ this.lang)
+         .then(response => (this.responseDatac1 = response.data))
+         .catch()
+         axios.get(process.env.API_URL+'blogs?blog_category=9&_sort=created_at:DESC&_limit=3&_locale='+ this.lang)
+         .then(response => (this.responseDatac2 = response.data))
+         .catch()
+         axios.get(process.env.API_URL+'blogs?blog_category=10&_sort=created_at:DESC&_limit=3&_locale='+ this.lang)
+         .then(response => (this.responseDatac3 = response.data))
+         .catch()
+         axios.get(process.env.API_URL+'blogs?blog_category=11&_sort=created_at:DESC&_limit=3&_locale='+ this.lang)
+         .then(response => (this.responseDatac4 = response.data))
+         .catch()
+         axios.get(process.env.API_URL+'blogs?blog_category=12&_sort=created_at:DESC&_limit=3&_locale='+ this.lang)
+         .then(response => (this.responseDatac5 = response.data))
+         .catch()
+         axios.get(process.env.API_URL+'blogs?blog_category=13&_sort=created_at:DESC&_limit=3&_locale='+ this.lang)
+         .then(response => (this.responseDatac6 = response.data))
+         .catch()
+         axios.get(process.env.API_URL+'blogs?blog_category=14&_sort=created_at:DESC&_limit=3&_locale='+ this.lang)
+         .then(response => (this.responseDatac7 = response.data))
+         .catch()
+         axios.get(process.env.API_URL+'blogs?blog_category=15&_sort=created_at:DESC&_limit=3&_locale='+ this.lang)
+         .then(response => (this.responseDatac8 = response.data))
+         .catch()
 
         window.addEventListener('scroll', this.onShow);
     },
@@ -635,14 +652,8 @@ export default {
     line-height: 1 !important
 }
 
-.crad-height{
-    height: 470px;
-}
-
-.btn-crad{
-    position: absolute;
-    bottom:0;
-    right: 0;
+.display-none{
+    display: none;
 }
 
 .btn-green{
@@ -667,8 +678,21 @@ export default {
     border-radius: 20px !important;
 }
 
+.carousel-indicators .active {
+    background-color: #F76E22 !important;
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: #F76E22 !important;
+}
+
 .carousel-indicators {
     opacity: .8;
+}
+
+.mt-carousel{
+    margin-top: 30px !important;
+    bottom: auto !important;
 }
 
 .img-fix-size{
@@ -689,9 +713,117 @@ export default {
     border-radius: 50%;
 }
 
-@media only screen and (max-width: 600px) {
+/* Extra small devices (phones, 525px and down) */
+@media only screen and (max-width: 525px) {
     .text-s-18{
         font-size: 14px !important;
     }
+    .btn-crad{ 
+        top: 0;
+        position: relative;
+        margin-left: 0;
+    }
+    .crad-height{
+        height: 100%;
+    }
+    .hr-mid{
+        border: 1px solid #E5E5E5;
+        width: 100%;
+        /* text-align: center; */
+        margin: 20px 5px 20px 5px;
+    }
 }
+
+@media only screen and (min-width: 525px) {
+    .text-s-18{
+        font-size: 14px !important;
+    }
+    .btn-crad{ 
+        top: 0;
+        position: relative;
+        margin-left: 0;
+    }
+    .crad-height{
+        height: 100%;
+    }
+    .hr-mid{
+        border: 1px solid #E5E5E5;
+        width: 100%;
+        /* text-align: center; */
+        margin: 20px 5px 20px 5px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .btn-crad{ 
+        top: 0;
+        position: relative;
+        margin-left: 0;
+    }
+    .crad-height{
+        height: 100%;
+    }
+    .hr-mid{
+        border: 1px solid #E5E5E5;
+        width: 100%;
+        /* text-align: center; */
+        margin: 20px 5px 20px 5px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .btn-crad{ 
+        top: 0;
+        position: relative;
+        margin-left: 0;
+    }
+    .crad-height{
+        height: 100%;
+    }
+    .hr-mid{
+        border: 1px solid #E5E5E5;
+        width: 100%;
+        /* text-align: center; */
+        margin: 20px 5px 20px 5px;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .btn-crad{ 
+        top: 480px;
+        position: absolute;
+        margin-left: 110px;
+    }
+    .crad-height{
+        height: 490px;
+    }
+    .hr-mid{
+        border: 1px solid #E5E5E5;
+        width: 100%;
+        /* text-align: center; */
+        margin: 20px 5px 20px 5px;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .btn-crad{ 
+        top: 485px;
+        position: absolute;
+        margin-left: 140px;
+    }
+    .crad-height{
+        height: 490px;
+    }
+    .hr-mid{
+        border: 1px solid #E5E5E5;
+        width: 100%;
+        /* text-align: center; */
+        margin: 20px 5px 20px 5px;
+    }
+}
+
 </style>

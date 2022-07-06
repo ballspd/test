@@ -139,7 +139,7 @@ export default {
         //console.log(this.count)
         axios.put(process.env.API_URL+'portfolios/'+ this.$route.params.id, {view: this.count}, {
             headers: {
-                'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjQ5MjMxMDIzLCJleHAiOjE2NTE4MjMwMjN9.7X3x0UwOJOUdyaCXLS6m_MRZR9uuF7ppPPiCyN9zcJc`
+                'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjU2NDQxMTc1LCJleHAiOjE2NTkwMzMxNzV9.pmkkDG5APoFoOeGeYowp0nan0tim0LDE17f2-j8T0tU`
             }
         })
         .then()

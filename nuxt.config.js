@@ -6,7 +6,7 @@ require('dotenv').config()
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   //mode: 'spa',
-  //ssr: true,
+  ssr: true,
   //ssr: false,
   target: 'static',
   //target: 'server',
@@ -89,6 +89,9 @@ export default {
           src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js',
           async: true,
           crossorigin: "anonymous"
+      },
+      {
+        src: 'https://static.line-scdn.net/liff/edge/2/sdk.js'
       }
     ]
   },
@@ -162,7 +165,7 @@ export default {
 
   sitemap: {
     hostname: 'https://www.sellsuki.co.th/',
-    gzip: true,
+    //gzip: true,
     routes: async () => {
       let { data } = await axios.get('https://login.sellsuki.co.th/blogs')
       //console.log(data)
@@ -203,6 +206,11 @@ export default {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: process.env.API_URL || 'https://login.sellsuki.co.th/'
   },
+
+  serverMiddleware: [
+    { path: '/api', handler: '~/server/index.js' },
+    { path: '/test', handler: '~/server/api/index.js' }
+  ],
 
   // publicRuntimeConfig: {
   //   axios: {

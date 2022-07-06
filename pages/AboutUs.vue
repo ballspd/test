@@ -29,7 +29,7 @@
                         <p class="text-s-30 text-w-700" style="margin-bottom: 10px !important">ประวัติความเป็นมาของ</p>
                     </div>
                     <div class="col-12 mb-4">
-                        <img class="item-center" width="193" height="82" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Sellsuki_logo_01_3_5a97fddbc3.webp" alt="Sellsuki logo">
+                        <img class="item-center" width="193" height="82" src="../assets/logo-Sellsuki.svg" alt="Sellsuki logo">
                     </div>
                     <div class="d-none d-xl-block d-xxl-block">
                         <div class="col-12 mt-4" :style="'height:'+ height_colum +'px'">

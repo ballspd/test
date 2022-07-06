@@ -148,6 +148,7 @@
 
 <script>
 import Preloader from '@/components/Preloader';
+import axios from 'axios'
 import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
 init("user_QloagcVOZPqf6VjPjBCaI");
@@ -213,20 +214,21 @@ export default {
                 let formData = new FormData();
                 formData.append('files', this.files);
 
-                this.axios.post('upload',
+                axios.post(process.env.API_URL+'uploadX',
                 formData,
-                        {
-                        headers: {
-                            'Content-Type': 'multipart/form-data'
-                        }
-                        }
-                ).then(response => (this.responseData = response.data))
+                {
+                    headers: {
+                        'Content-Type': 'multipart/form-data'
+                    }
+                }).then(response => (this.responseData = response.data))
                 .catch(function(){
                     console.log('FAILURE!!');
                 });
             }
             if(this.filename != '' && this.firstName != '' && this.lastName != '' && this.email != '' && this.phoneNumber != '' && this.jobVacancy != '' && this.position != '' && this.expectedSalary != '' && this.tellUs != ''){
-                this.sendEmail();
+                //this.sendEmail();
+                console.log('ส่งได้!!');
+                window.location.href = window.location.origin + '/ThankYouJob';
             }
         },
         sendEmail() {
@@ -252,6 +254,7 @@ export default {
             } catch(error) {
                 console.log({error})
             }
+            window.location.href == window.location.origin + '/ThankYouJob';
             // Reset form field
             this.firstName = ''
             this.lastName = ''

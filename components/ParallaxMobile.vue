@@ -78,7 +78,7 @@
           <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/5/5-1.webp" alt="parallax sellsuki" loading="lazy">
           <img class="img-fluid position-absolute animate__animated animate__fadeOut" src="./../assets/Paralax/4/4-1.webp" alt="parallax sellsuki" loading="lazy">
 
-          <img class="img-fluid position-absolute animate__animated animate__fadeIn" src="./../assets/Paralax/5/5.8.webp" alt="parallax sellsuki" loading="lazy">
+          <img class="img-fluid position-absolute animate__animated animate__fadeIn" src="./../assets/Paralax/5/5.8.svg" alt="parallax sellsuki" loading="lazy">
 
           <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/5/5-2.webp" alt="parallax sellsuki" loading="lazy">
           <img class="img-fluid position-absolute animate__animated animate__fadeOut" src="./../assets/Paralax/4/4-2.webp" alt="parallax sellsuki" loading="lazy">
@@ -99,7 +99,7 @@
           <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/6/6-1.webp" alt="parallax sellsuki" loading="lazy">
           <img class="img-fluid position-absolute animate__animated animate__fadeOut" src="./../assets/Paralax/5/5-1.webp" alt="parallax sellsuki" loading="lazy">
 
-          <img class="img-fluid position-absolute animate__animated animate__fadeIn" src="./../assets/Paralax/6/6.6.webp" alt="parallax sellsuki" loading="lazy">
+          <img class="img-fluid position-absolute animate__animated animate__fadeIn" src="./../assets/Paralax/6/6.6.svg" alt="parallax sellsuki" loading="lazy">
 
           <img class="img-fluid position-absolute show-top" src="./../assets/Paralax/6/6-4.webp" alt="parallax sellsuki" loading="lazy">
           <img class="img-fluid position-absolute show-top" src="./../assets/Paralax/6/6-3.webp" alt="parallax sellsuki" loading="lazy">
@@ -116,7 +116,7 @@
         <div v-if="section7">
           <img class="img-fluid position-absolute" src="./../assets/Paralax/3/3-bg-main.webp" alt="parallax sellsuki" loading="lazy">
 
-          <img class="img-fluid position-absolute animate__animated animate__fadeIn" src="./../assets/Paralax/7/7.8.webp" alt="parallax sellsuki" loading="lazy">
+          <img class="img-fluid position-absolute animate__animated animate__fadeIn" src="./../assets/Paralax/7/7.8.svg" alt="parallax sellsuki" loading="lazy">
           
           <img class="img-fluid position-absolute animate__animated animate__slideInRight animate__delay-2s" src="./../assets/Paralax/7/7-text-1.webp" alt="parallax sellsuki" loading="lazy">
 
@@ -142,7 +142,7 @@
           <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/8/8-1.webp" alt="parallax sellsuki" loading="lazy">
           <img class="img-fluid position-absolute animate__animated animate__fadeOutRight" src="./../assets/Paralax/7/7-1.webp" alt="parallax sellsuki" loading="lazy">
 
-          <img class="img-fluid position-absolute animate__animated animate__fadeIn" src="./../assets/Paralax/8/8.6.webp" alt="parallax sellsuki" loading="lazy">
+          <img class="img-fluid position-absolute animate__animated animate__fadeIn" src="./../assets/Paralax/8/8.6.svg" alt="parallax sellsuki" loading="lazy">
 
           <img class="img-fluid position-absolute show-top" src="./../assets/Paralax/8/8-3.webp" alt="parallax sellsuki" loading="lazy">
           <img class="img-fluid position-absolute animate__animated animate__slideInRight" src="./../assets/Paralax/8/8-text-1.webp" alt="parallax sellsuki" loading="lazy">
@@ -163,7 +163,7 @@
                   <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/9/9-1.webp" alt="parallax sellsuki" loading="lazy">
           <img class="img-fluid position-absolute animate__animated animate__fadeOut" src="./../assets/Paralax/8/8-1.webp" alt="parallax sellsuki" loading="lazy">
 
-          <img class="img-fluid position-absolute animate__animated animate__fadeIn" src="./../assets/Paralax/9/9.8.webp" alt="parallax sellsuki" loading="lazy">
+          <img class="img-fluid position-absolute animate__animated animate__fadeIn" src="./../assets/Paralax/9/9.8.svg" alt="parallax sellsuki" loading="lazy">
           
 
           <img class="img-fluid position-absolute show-top-2" src="./../assets/Paralax/9/9-3.webp" alt="parallax sellsuki" loading="lazy">
@@ -187,7 +187,7 @@
           <img class="img-fluid position-absolute animate__animated animate__fadeIn animate__slow" src="./../assets/Paralax/10/10-1.webp" alt="parallax sellsuki" loading="lazy">
           <img class="img-fluid position-absolute animate__animated animate__fadeOut" src="./../assets/Paralax/9/9-1.webp" alt="parallax sellsuki" loading="lazy">
 
-          <img class="img-fluid position-absolute animate__animated animate__fadeIn" src="./../assets/Paralax/10/10.7.webp" alt="parallax sellsuki" loading="lazy">
+          <img class="img-fluid position-absolute animate__animated animate__fadeIn" src="./../assets/Paralax/10/10.7.svg" alt="parallax sellsuki" loading="lazy">
           
           <img class="img-fluid position-absolute show-top" src="./../assets/Paralax/10/10-7.webp" alt="parallax sellsuki" loading="lazy">
           <img class="img-fluid position-absolute show-bottom" src="./../assets/Paralax/10/10-3.webp" alt="parallax sellsuki" loading="lazy">

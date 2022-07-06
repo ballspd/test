@@ -6,7 +6,7 @@
                     <button class="navbar-toggler" type="button" @click="display_manu = !display_manu" >
                         <i class="bi bi-list" style="font-size: 35px;"></i>
                     </button>
-                    <img src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Sellsuki_logo_01_3_5a97fddbc3.webp" width="130" height="55" alt="Sellsuki logo" loading="lazy">
+                    <img src="../assets/logo-Sellsuki.svg" width="130" height="55" alt="Sellsuki logo" loading="lazy">
                     <a href="tel:020263250" target="_blank" rel="noopener"><img class="shadow" src="./../assets/mobile/Vector.webp" width="40" height="40" alt="Vector" loading="lazy" style="background-color: #FFFFFF;border-radius: 50px;"></a>
                 </div>
             </nav>
@@ -33,7 +33,7 @@
                 <div class="row p-3 menu">
                     <div class="col-12">
                         <div v-if="component == ''">
-                            <router-link @click="display_manu = false" to="/">Home</router-link>
+                            <router-link @click="display_manu = false" to="/">{{$t("Menu.Home")}}</router-link>
                             <!-- <hr style="border: 1px solid #50151C;"/>
                             <div @click="component = 'ServicesMenu'" class="d-flex" >
                             <a href="#">Services</a>
@@ -41,79 +41,79 @@
                             </div> -->
                             <hr style="border: 1px solid #50151C;"/>
                             <div @click="component = 'SolutionsMenu'" class="d-flex" >
-                            <a href="#">Solutions</a>
+                            <a href="#">{{$t("Menu.Solution")}}</a>
                             <i class="ms-auto bi bi-chevron-right"></i>
                             </div>
                         
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/AboutUs">About Us</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/AboutUs">{{$t("Menu.AboutUs")}}</router-link>
                         
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/Portfolio">Portfolio</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/Portfolio">{{$t("Menu.Portfolio")}}</router-link>
                         
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/Blog">Blog</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/Blog">{{$t("Menu.Blog")}}</router-link>
 
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/ContactUs">Contact Us</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/ContactUs">{{$t("Menu.ContactUs")}}</router-link>
                             
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/JoinUs">Join Us</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/JoinUs">{{$t("Menu.JoinUs")}}</router-link>
                             <hr style="border: 1px solid #50151C;"/>
                         </div>
 
                         <div v-if="component == 'SolutionsMenu'">
-                            <a @click="component = ''"><i class="bi bi-chevron-left me-2"></i> Back</a>
+                            <a @click="component = ''"><i class="bi bi-chevron-left me-2"></i> {{$t("Menu.Back")}}</a>
                             <hr style="border: 1px solid #50151C;"/>
                             <div class="d-flex" >
-                                <div class="text-w-700 text-s-18" style="color:#50151C;">Solutions</div>
+                                <div class="text-w-700 text-s-18" style="color:#50151C;">{{$t("Menu.Solution")}}</div>
                             </div>
                             <hr style="border: 1px solid #50151C;"/>
                             <div @click="component = 'Group'" class="d-flex" >
-                                <a href="#">Group</a>
+                                <span class="text-s-18" style="color:#50151C;"><img class="me-2" src="./../assets/icon/icon-menu3.webp" alt="icon-menu3"> {{$t("Menu.Group")}}</span>
                                 <i class="ms-auto bi bi-chevron-right"></i>
                             </div>
                             <hr style="border: 1px solid #50151C;"/>
                             <div @click="component = 'BU'" class="d-flex" >
-                                <a href="#">BU</a>
+                                <span class="text-s-18" style="color:#50151C;"><img class="me-2" src="./../assets/icon/icon-menu2.webp" alt="icon-menu2"> {{$t("Menu.BU")}}</span>
                                 <i class="ms-auto bi bi-chevron-right"></i>
                             </div>
                             <hr style="border: 1px solid #50151C;"/>
                         </div>
                         <div v-if="component == 'Group'">
-                            <a @click="component = 'SolutionsMenu'"><i class="bi bi-chevron-left me-2"></i> Back</a>
+                            <a @click="component = 'SolutionsMenu'"><i class="bi bi-chevron-left me-2"></i> {{$t("Menu.Back")}}</a>
                             <hr style="border: 1px solid #50151C;"/>
                             <div class="d-flex" >
-                                <div class="text-w-700 text-s-18" style="color:#50151C;">Group</div>
+                                <span class="text-w-700 text-s-18" style="color:#50151C;"><img class="me-2" src="./../assets/icon/icon-menu3.webp" alt="icon-menu3"> {{$t("Menu.Group")}}</span>
                             </div>
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/TypesOfBusiness/BusinessOwner">Business Owner</router-link>                           
+                            <router-link @click="display_manu = false,scrollToTop()" to="/TypesOfBusiness/BusinessOwner">{{$t("Menu.Solutions.BusinessOwner")}}</router-link>                           
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/TypesOfBusiness/OnlineMerchant">Online Merchant</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/TypesOfBusiness/OnlineMerchant">{{$t("Menu.Solutions.OnlineMerchant")}}</router-link>
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/TypesOfBusiness/Corporate">Corporate</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/TypesOfBusiness/Corporate">{{$t("Menu.Solutions.Corporate")}}</router-link>
                             <hr style="border: 1px solid #50151C;"/>
                         </div>
                         <div v-if="component == 'BU'">
-                            <a @click="component = 'SolutionsMenu'"><i class="bi bi-chevron-left me-2"></i> Back</a>
+                            <a @click="component = 'SolutionsMenu'"><i class="bi bi-chevron-left me-2"></i> {{$t("Menu.Back")}}</a>
                             <hr style="border: 1px solid #50151C;"/>
                             <div class="d-flex" >
-                                <div class="text-w-700 text-s-18" style="color:#50151C;">BU</div>
+                                <span class="text-w-700 text-s-18" style="color:#50151C;"><img class="me-2" src="./../assets/icon/icon-menu2.webp" alt="icon-menu1"> {{$t("Menu.BU")}}</span>
                             </div>
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Fuse">Fuse Advertising</router-link>                           
+                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Fuse">{{$t("Menu.Solutions.FuseAdvertising")}}</router-link>                           
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Line">LINE Agency</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Line">{{$t("Menu.Solutions.LINEAgency")}}</router-link>
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Kaikong">Kaikong Content Marketing</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Kaikong">{{$t("Menu.Solutions.KaikongContentMarketing")}}</router-link>
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Beary">Beary Web & Tech Service</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Beary">{{$t("Menu.Solutions.BearyWebTechService")}}</router-link>
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Akita">Akita Fulfillment</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Akita">{{$t("Menu.Solutions.AkitaFulfillment")}}</router-link>
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Shipmunk">Shipmunk : Dropshipping</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Shipmunk">{{$t("Menu.Solutions.ShipmunkDropshipping")}}</router-link>
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Oc2Plus">Oc2Plus : Customer Data Platform</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Oc2Plus">{{$t("Menu.Solutions.Oc2PlusCustomerDataPlatform")}}</router-link>
                             <hr style="border: 1px solid #50151C;"/>
                         </div>
                     </div>

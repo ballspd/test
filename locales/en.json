@@ -1,4 +1,34 @@
 {
+  "Menu":{
+    "Home":"Home",
+    "Services":"Services",
+    "Solution":"Solutions",
+    "AboutUs":"About Us",
+    "Portfolio":"Portfolio",
+    "Blog":"Blog",
+    "ContactUs":"Contact Us",
+    "JoinUs":"Join Us",
+    "Solutions":{
+      "TypesofBusiness":"Types of Business",
+      "BusinessOwner": "Business Owner",
+      "OnlineMerchant":"Online Merchant",
+      "Corporate":"Corporate",
+
+      "Services-Products":"Services-Products",
+      "FuseAdvertising": "Fuse Advertising",
+      "LINEAgency": "LINE Agency",
+      "KaikongContentMarketing": "Kaikong Content Marketing",
+      "BearyWebTechService": "Beary Web & Tech Service",
+      "AkitaFulfillment": "Akita Fulfillment",
+      "ShipmunkDropshipping": "Shipmunk : Dropshipping",
+      "Oc2PlusCustomerDataPlatform": "Oc2Plus : Customer Data Platform"
+    },
+    "Back": "Back",
+    "Group": "Group",
+    "BU": "BU"
+    
+  },
+
   "Validation":{
     "firstName": "Please input your first name.",
     "lastName": "Please input your last name.",
@@ -57,6 +87,12 @@
     "shipmunk": "reservation systems and delivery fee comparison and shipping distance from the top delivery provider. It helps your business to use the most worthwhile services and completely track a parcel's status.",
     "oc2plus": "Customer Data Platforms (CDP) system or storage data systems that we can bring that data to analyze, plan, strategize a business, and reach the target customer effectively.",
     "beary": "Website design service and software development include connecting with API systems and online sales channels. Whether Shopee, Lazada, or LINE My shop to support your business."
+  },
+
+  "Blog":{
+    "titel": "Blog",
+    "mata":"Description: Interesting articles and important highlights about marketing trends that you shouldn’t miss. And a recommended blog for you by a specialist writer from the sellsuki team.",
+    "LastedUpdate": "Lasted Update"
   },
 
   "solution":{

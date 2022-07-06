@@ -10,8 +10,9 @@
                             <p class="text-s-16 mt-150" style="color:#FFFFFC;"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> Solutions <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#FFFFFC">LINE Agency</font></p>
                             <table class="align-middle" style="width: 100%;">
                                 <td class="banner-height">
-                                    <font class="font-wght" style="font-size:62px;color:#FFFFFC">LINE AGENCY <br>BY SELLSUKI</font>
+                                    <h1 class="font-wght" style="font-size:62px;color:#FFFFFC">LINE AGENCY <br>BY SELLSUKI</h1>
                                     <p class="text-s-16 mt-3" style="color:#FFFFFC">{{ $t("solution.line.mata") }}</p>
+                                    <!-- <a href="#form" rel="noopener" class="btn btn-orange button mt-4"><span class="text-white" style="font-size:18px">Click Now</span></a> -->
                                     <a href="https://lineagency.sellsuki.com" target="_blank" rel="noopener" class="btn btn-orange button mt-4"><span class="text-white" style="font-size:18px">Click Now</span></a>
                                 </td>
                             </table>
@@ -150,7 +151,7 @@
                 <div class="padding-card pt-0 text-center">
                     <Review/>
                 </div>
-                <GetQuote :type="type"/>         
+                <GetQuote id="form" :type="type"/>         
             </div>
         </div>
     </div>
@@ -329,6 +330,8 @@ text-center text-lg-start
     }
     .mt-custom{
         margin-top: 3rem!important;
+        min-height: 2446px;
     }
+    
 }
 </style>

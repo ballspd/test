@@ -12,9 +12,9 @@
                                 <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText" loading="lazy">
                             </div>
                             <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-2">
-                                <div class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</div>
+                                <div class="text-w-700 text-limit-3 text-s-20 color-15304E">{{data.title}}</div>
                                 <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                <p class="text-s-14 text-limit-2" style="color:#373737">{{data.description}}</p>
+                                <p class="text-s-14 text-limit-3" style="color:#373737">{{data.description}}</p>
                             </div>
                         </div>
                     </a>
@@ -28,9 +28,9 @@
                                 <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText" loading="lazy">
                             </div>
                             <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-2">
-                                <div class="text-w-700 text-limit-1" style="font-size:24px;color:#15304E">{{data.title}}</div>
+                                <div class="text-w-700 text-limit-3 text-s-20 color-15304E">{{data.title}}</div>
                                 <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
-                                <p class="text-s-14 text-limit-2" style="color:#373737">{{data.description}}</p>
+                                <p class="text-s-14 text-limit-3" style="color:#373737">{{data.description}}</p>
                             </div>
                         </div>
                     </a>
