@@ -24,8 +24,8 @@
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="d-none d-md-block img-fluid img-banner-top" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/banner_Kaikong_bbb52fcfe4.webp">
-                        <img class="d-block d-md-none img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/banner_Kaikong_bbb52fcfe4.webp">
+                        <img class="d-none d-md-block img-fluid img-banner-top" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/banner_Kaikong_bbb52fcfe4.webp" alt="kaikong-Content Marketing">
+                        <img class="d-block d-md-none img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/banner_Kaikong_bbb52fcfe4.webp" alt="kaikong-Content Marketing">
                     </div>
                 </div>
             </div>

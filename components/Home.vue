@@ -7,8 +7,8 @@
       <div class="crad mt-5">
         <div class="row padding-row mb-0">
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-            <img class="d-none d-xl-block d-xxl-block mt-5" width="487" height="440" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector_Smart_Object2_869bcb7919.webp" alt="Vector Smart Object" loading="lazy">
-            <img class="d-block d-xl-none d-xxl-none item-center" width="322" height="291" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector_Smart_Object2_869bcb7919.webp" alt="Vector Smart Object" loading="lazy">
+            <img class="d-none d-xl-block d-xxl-block mt-5" width="487" height="440" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector_Smart_Object2_869bcb7919.webp" alt="let-your-business-growth-together" loading="lazy">
+            <img class="d-block d-xl-none d-xxl-none item-center" width="322" height="291" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector_Smart_Object2_869bcb7919.webp" alt="let-your-business-growth-together" loading="lazy">
           </div>
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
             <div itemscope class="d-none d-xl-block d-xxl-block">
@@ -28,15 +28,15 @@
         <div v-if="section1" class="padding-home">
           <div class="row pb-4">
               <div class="col-12 text-center">
-                  <h2 class="text-w-700 text-s-36 color-231F20">SOLUTION SERVICE</h2>
+                  <h2 class="text-w-700 text-s-36 color-231F20">SOLUTION SERVICE {{gg}}</h2>
                   <h2 class="text-w-700 text-s-24 color-231F20">ธุรกิจแบบไหนก็ดูเเลไหว</h2>
               </div>
             </div>
           <div class="row">
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
-              <NuxtLink @click="scrollToTop" :to="localePath('/TypesOfBusiness/BusinessOwner')">
+              <NuxtLink @click="scrollToTop" :to="localePath('/types-of-business/business-owner')">
               <div class="card card-shadow hvr-grow-rotate-left crad-service mt-3">
-                <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_1_5fa36c01d1.webp" alt="home" loading="lazy">
+                <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_1_5fa36c01d1.webp" alt="business-owner-home" loading="lazy">
                 <div class="card-body crad-body-service">
                   <h3 class="text-w-700 font-wght text-center text-dark m-1 text-service">BUSINESS OWNER</h3>
                 </div>
@@ -44,9 +44,9 @@
               </NuxtLink>
             </div>
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
-              <NuxtLink @click="scrollToTop" :to="localePath('/TypesOfBusiness/OnlineMerchant')">
+              <NuxtLink @click="scrollToTop" :to="localePath('/types-of-business/online-merchant')">
               <div class="card card-shadow hvr-grow mt-3 crad-service">
-                <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_2_30fffe585a.webp" alt="home" loading="lazy">
+                <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_2_30fffe585a.webp" alt="online-merchant-home" loading="lazy">
                 <div class="card-body crad-body-service">
                   <h3 class="text-w-700 font-wght text-center text-dark m-1 text-service">ONLINE MERCHANT</h3>
                 </div>
@@ -54,9 +54,9 @@
               </NuxtLink>
             </div>
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
-              <NuxtLink @click="scrollToTop" :to="localePath('/TypesOfBusiness/OnlineMerchant')">
+              <NuxtLink @click="scrollToTop" :to="localePath('/types-of-business/corporate')">
               <div class="card card-shadow hvr-grow-rotate mt-3 crad-service">
-                <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_3_2f16995ad2.webp" alt="home" loading="lazy">
+                <img class="item-center mt-3 p-4" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/home03_3_2f16995ad2.webp" alt="corporate-home" loading="lazy">
                 <div class="card-body crad-body-service">
                   <h3 class="text-w-700 font-wght text-center text-dark m-1 text-service">CORPORATE</h3>
                 </div>
@@ -76,7 +76,7 @@
               <div class="col-6">
                 <h2 class="font-wght text-s-64 color-23233C text-yourroadmap">YOUR<br>ROADMAP<br>TO SUCCESS</h2>
                 <img class="mt-3 float-end" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector001_89725b6f03.webp" alt="Vector" loading="lazy">
-                <img class="mt-2 img-smart" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector_Smart_Object001_442f89ee50.webp" alt="Vector_Smart_Object" loading="lazy">
+                <img class="mt-2 img-smart" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Vector_Smart_Object001_442f89ee50.webp" alt="your-roadmap-to-success" loading="lazy">
               </div>
               <div class="col-6">
                 <div class="row float-end m-auto">
@@ -228,6 +228,7 @@ export default {
   name: 'Home',
   data(){
     return {
+      gg:process.env.NODE_ENV,
     type:'All',
     readMore: false,
     section1:false,

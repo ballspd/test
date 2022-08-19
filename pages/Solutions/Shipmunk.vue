@@ -24,8 +24,8 @@
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="d-none d-md-block img-fluid img-banner-top m-auto" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Shipmunk_02_1_a35fa78ddf.webp">
-                        <img class="d-block d-md-none img-fluid img-banner-top m-auto pb-5" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Shipmunk_02_1_a35fa78ddf.webp">
+                        <img class="d-none d-md-block img-fluid img-banner-top m-auto" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Shipmunk_02_1_a35fa78ddf.webp" alt="shipmunk-Parcel-delivery-fee-comparison-service-provider">
+                        <img class="d-block d-md-none img-fluid img-banner-top m-auto pb-5" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Shipmunk_02_1_a35fa78ddf.webp" alt="shipmunk-Parcel-delivery-fee-comparison-service-provider">
                     </div>
                 </div>
             </div>

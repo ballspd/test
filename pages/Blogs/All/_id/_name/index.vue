@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <p class="text-s-16 mt-150" style="color:#50151C;"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> <router-link @click="scrollToTop" to="/Blog">Blog</router-link> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">{{this.$route.params.name}}</font></p>
+                    <p class="text-s-16 mt-150" style="color:#50151C;"><router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i> <router-link @click="scrollToTop" to="/blog">Blog</router-link> <i class="bi bi-chevron-right"></i> <font class="text-s-16 text-w-700" style="color:#50151C">{{this.$route.params.name}}</font></p>
                 </div>
             </div>
         </div>
@@ -13,7 +13,7 @@
             <div class="crad mt-4 text-color-this-page">
                 <div class="p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
                     <div v-for="(data, index) in responseData" :key="index">
-                        <router-link @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}">
+                        <router-link @click="scrollToTop" :to="localePath({ path: '/blogs/detail/'+data.id+'/'+data.url+''})">
                         <div v-if="index == 0" class="row mb-1">
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText" style="height: 330px;"></div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" style="padding: 30px 10px 10px 10px;">
@@ -21,7 +21,7 @@
                                 <h1 class="font-wght" style="font-size:24px;color:#15304E">{{data.title}}</h1>
                                 <div style="border: 1px solid #E5E5E5;margin: 10px 10px 10px 0px;"></div>
                                 <p class="text-s-16" style="color:#373737">{{data.description}}</p>
-                                <router-link class="btn btn-transparent mt-3 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/Blogs/Detail/'+data.id+'/'+data.url+''}"><span>Read More</span></router-link>
+                                <router-link class="btn btn-transparent mt-3 hvr-back-pulse" @click="scrollToTop" :to="{ path: '/blogs/detail/'+data.id+'/'+data.url+''}"><span>Read More</span></router-link>
                             </div>
                         </div>
                         </router-link>
@@ -30,7 +30,7 @@
                 <div class="pt-xxl-1 pt-xl-1 pt-lg-1 pt-2 p-xxl-5 p-xl-5 p-lg-5 p-md-4 p-sm-4 p-4">
                     <div class="row mt-3">
                         <div v-for="(data, index) in responseData" :key="index" :class="{'hide-col':index == 0}" class="col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12 crad-height">
-                            <NuxtLink @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})">
+                            <NuxtLink @click="scrollToTop" :to="localePath({ path: '/blogs/detail/'+data.id+'/'+data.url+''})">
                                 <div class="row">
                                     <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-6 col-sm-6 col-6 p-2">
                                         <img v-if="data.illustration != null" class="img-fix-size" :src="data.illustration.url" :alt="data.illustration.alternativeText">
@@ -40,7 +40,7 @@
                                         <hr style="margin: 10px 10px 10px 0px;opacity: 0.1 !important;"/>
                                         <p class="text-limit-3" style="color:#373737;font-size:14px">{{data.description}}</p>
                                         <div class="text-end">
-                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/Blogs/Detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
+                                        <NuxtLink class="btn btn-transparent mt-1 hvr-back-pulse" @click="scrollToTop" :to="localePath({ path: '/blogs/detail/'+data.id+'/'+data.url+''})"><span>Read More</span></NuxtLink>
                                         </div>
                                     </div>
                                 </div>

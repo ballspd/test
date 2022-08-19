@@ -344,7 +344,7 @@ export default {
                 var api_token = "4e9d4073e72ab32c7ffff64dcee32836be9954f8"
                 axios.post('https://api.pipedrive.com/v1/leads?api_token='+ api_token, data)
                 .then(
-                    this.$router.push({ path: '/ThankYou/'+ this.type }),
+                    this.$router.push({ path: '/thankyou/'+ this.type }),
                     this.scrollToTop()
                 ).catch((error) => {
                     alert(error)

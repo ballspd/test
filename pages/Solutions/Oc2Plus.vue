@@ -24,8 +24,8 @@
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="d-none d-md-block img-fluid img-banner-top m-auto" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Oc2_Plus_029596b4b0.webp">
-                        <img class="d-block d-md-none img-fluid img-banner-top m-auto pb-5" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Oc2_Plus_029596b4b0.webp">
+                        <img class="d-none d-md-block img-fluid img-banner-top m-auto" src="./../../assets/SolutionsOc2plus/Oc2plus-bu.webp" alt="oc2plus-customer-data-platform">
+                        <img class="d-block d-md-none img-fluid img-banner-top m-auto pb-5" src="./../../assets/SolutionsOc2plus/Oc2plus-bu.webp" alt="oc2plus-customer-data-platform">
                     </div>
                 </div>
             </div>
@@ -300,7 +300,7 @@ export default {
         border-radius: 50%;
     }
     .img-banner-top{
-        width: 60%;
+        width: 80%;
     }
 }
 
@@ -315,7 +315,7 @@ export default {
         border-radius: 50%;
     }
     .img-banner-top{
-        width: 60%;
+        width: 80%;
     }
 }
 
@@ -330,8 +330,8 @@ export default {
         border-radius: 50%;
     }
     .img-banner-top{
-        margin-top:300px !important;
-        width: 70%;
+        margin-top:270px !important;
+        width: 100%;
     }
 } 
 
@@ -346,8 +346,8 @@ export default {
         border-radius: 50%;
     }
     .img-banner-top{
-        margin-top: 220px !important;
-        width: 70%;
+        margin-top: 145px !important;
+        width: 100%;
     }
 } 
 
@@ -370,7 +370,8 @@ export default {
         border-radius: 50%;
     }
     .img-banner-top{
-        margin-top: 300px !important;
+        margin-top: 240px !important;
+        width: 80%;
     }
 }
 </style>

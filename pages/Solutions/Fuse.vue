@@ -22,8 +22,8 @@
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img class="d-none d-md-block img-fluid img-banner-top" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/banner_Fuse_d28afcf0c5.webp">
-                        <img class="d-block d-md-none img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/banner_Fuse_d28afcf0c5.webp">
+                        <img class="d-none d-md-block img-fluid img-banner-top" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/banner_Fuse_d28afcf0c5.webp" alt="fuse-banner">
+                        <img class="d-block d-md-none img-fluid" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/banner_Fuse_d28afcf0c5.webp" alt="fuse-banner">
                     </div>
                 </div>
             </div>
@@ -145,6 +145,12 @@ export default {
       return {
           title: "Fuse"
       };
+    },
+    fetch({ redirect }){
+        console.log(window.location.href + " 55 " + window.location.origin + '/solutions/fuse/')
+        if(window.location.href === window.location.origin + '/solutions/fuse/'){
+            redirect(window.location.origin + '/solutions/fuse')
+        }
     },
     data () {
             return {

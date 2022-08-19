@@ -6,8 +6,8 @@ require('dotenv').config()
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   //mode: 'spa',
+  //ssr: true,
   ssr: true,
-  //ssr: false,
   target: 'static',
   //target: 'server',
 
@@ -25,7 +25,6 @@ export default {
       { hid: 'description', name: 'description', content: 'Sellsuki บริการ Solution ครบวงจรสำหรับคนทำธุรกิจออนไลน์ โฆษณาออนไลน์ วางแผนคอนเทนต์ ออกแบบเว็บไซต์ และคลังสินค้าครบวงจร' },
       { name: 'format-detection', content: 'telephone=020263250' },
       { name: 'author', content: 'Ssllsuki' },
-      { hid: 'keywords', name: 'keywords', content: ['Sellsuki บริการ Solution ครบวงจรสำหรับคนทำธุรกิจออนไลน์ โฆษณาออนไลน์ วางแผนคอนเทนต์ ออกแบบเว็บไซต์ และคลังสินค้าครบวงจร', 'Sellsuki', 'Digital Advertising', 'โฆษณาออนไลน์', 'วางแผนคอนเทนต์', 'ออกแบบเว็บไซต์', 'คลังสินค้าครบวงจร', 'Line Ads', 'Line Agency'] },
                 { 
                     hid: 'og-site_name', 
                     property: 'og:site_name', 
@@ -111,6 +110,7 @@ export default {
     //{ src: './plugins/splide.js', mode: 'client' },
     { src: './plugins/vue-carousel.js', mode: 'client' },
     '~/plugins/head-util.js',
+    '~/plugins/jsonLd.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -169,7 +169,7 @@ export default {
     routes: async () => {
       let { data } = await axios.get('https://login.sellsuki.co.th/blogs')
       //console.log(data)
-      return data.map(v => `/Blogs/Detail/${v.id}/${v.url}`)
+      return data.map(v => `/blogs/detail/${v.id}/${v.url}`)
     }
   },
 
@@ -204,12 +204,15 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+    //baseURL: process.env.API_URL || 'https://staging-sellsukiadmin.bearyweb.com/'
     baseURL: process.env.API_URL || 'https://login.sellsuki.co.th/'
   },
 
   serverMiddleware: [
     { path: '/api', handler: '~/server/index.js' },
-    { path: '/test', handler: '~/server/api/index.js' }
+    { path: '/test', handler: '~/server/api/index.js' },
+    '~/server-middleware/logger',
+    '~/server-middleware/redirect'
   ],
 
   // publicRuntimeConfig: {
@@ -244,6 +247,8 @@ export default {
       }
     }
   },
+
+  buildDir: 'dist',
 
   generate: { 
     fallback: '404.html',

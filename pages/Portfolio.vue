@@ -7,23 +7,23 @@
                 <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="d-none d-md-block d-lg-block d-xl-block d-xxl-block">
                         <p class="text-s-16 mt-150" style="color:#50151C;">
-                            <router-link @click="scrollToTop" to="/">Home</router-link> <i class="bi bi-chevron-right"></i>
-                            <font class="text-s-16 text-w-700" style="color:#50151C"><router-link @click="scrollToTop" to="/Portfolio"> Portfolio</router-link></font>
+                            <router-link @click="scrollToTop" to="/">{{ $t("page.Home") }}</router-link> <i class="bi bi-chevron-right"></i>
+                            <font class="text-s-16 text-w-700" style="color:#50151C"><router-link @click="scrollToTop" to="/Portfolio"> {{ $t("page.PORTFOLIO.Portfolio") }}</router-link></font>
                         </p>
                         <table class="align-middle" style="width: 100%;">
                             <td class="banner-height">
-                                <font class="font-wght" style="font-size:64px;color:#50151C">Portfolio</font>
-                                <p class="text-s-16 text-start" style="color:#50151C">เรื่องเล่าจากลูกค้าเรา ตัวอย่างผลงาน Review <br>ส่วนหนึ่งจากลูกค้าที่ไว้ใจใช้บริการเรา</p>
+                                <h1 class="font-wght" style="font-size:64px;color:#50151C">{{ $t("page.PORTFOLIO.PORTFOLIO") }}</h1>
+                                <p class="text-s-16 text-start" style="color:#50151C">{{ $t("page.PORTFOLIO.mata") }}</p>
                             </td>
                         </table>
                     </div>
                     <div class="d-block d-md-none d-lg-none d-xl-none d-xxl-none text-center ps-4 pe-4">
                         <p class="text-s-16 text-start" style="color:#50151C;margin-top:95px !important">
-                            <router-link @click="scrollToTop" to="/" style="color:#50151C">Home</router-link> <i class="bi bi-chevron-right"></i>
-                            <font class="text-s-16 text-w-700"><router-link @click="scrollToTop" to="/Portfolio" style="color:#50151C"> Portfolio</router-link></font>
+                            <router-link @click="scrollToTop" to="/" style="color:#50151C">{{ $t("page.Home") }}</router-link> <i class="bi bi-chevron-right"></i>
+                            <font class="text-s-16 text-w-700"><router-link @click="scrollToTop" to="/Portfolio" style="color:#50151C"> {{ $t("page.PORTFOLIO.Portfolio") }}</router-link></font>
                         </p>
-                        <font class="font-wght mt-3" style="font-size:36px;color:#50151C">Portfolio</font>
-                        <p class="text-s-16" style="color:#50151C">เรื่องเล่าจากลูกค้าเรา ตัวอย่างผลงาน Review ส่วนหนึ่งจากลูกค้าที่ไว้ใจใช้บริการเรา</p>
+                        <h1 class="font-wght mt-3" style="font-size:36px;color:#50151C">{{ $t("page.PORTFOLIO.PORTFOLIO") }}</h1>
+                        <p class="text-s-16" style="color:#50151C">{{ $t("page.PORTFOLIO.mata") }}</p>
                     </div>
                 </div>
                 <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">

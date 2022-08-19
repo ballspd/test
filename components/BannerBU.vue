@@ -94,7 +94,7 @@
                         </picture>
                         <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">FUSE ADVERTISING</h1>
                         <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">{{ $t("banner.fuse") }}</p>
-                        <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Fuse')" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></NuxtLink>
+                        <NuxtLink @click="scrollToTop" :to="localePath('/solutions/fuse')" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></NuxtLink>
                     </div>
                     <div v-else-if="activeBuLine" class="text-center ps-5 pe-5">
                         <picture>
@@ -103,7 +103,7 @@
                         </picture>
                         <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">LINE AGENCY BY SELLSUKI</h1>
                         <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">{{ $t("banner.line") }}</p>
-                        <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Line')" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></NuxtLink>
+                        <NuxtLink @click="scrollToTop" :to="localePath('/solutions/line')" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></NuxtLink>
                     </div>
                     <div v-else-if="activeBuAkita" class="text-center ps-5 pe-5">
                         <picture>
@@ -112,7 +112,7 @@
                         </picture>
                         <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">AKITA FULFILLMENT</h1>
                         <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">{{ $t("banner.akita") }}</p>
-                        <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Akita')" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></NuxtLink>
+                        <NuxtLink @click="scrollToTop" :to="localePath('/solutions/akita')" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></NuxtLink>
                     </div>
                     <div v-else-if="activeBuBeary" class="text-center ps-5 pe-5">
                         <picture>
@@ -121,7 +121,7 @@
                         </picture>
                         <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">BEARY TECH</h1>
                         <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">{{ $t("banner.beary") }}</p>
-                        <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Beary')" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></NuxtLink>
+                        <NuxtLink @click="scrollToTop" :to="localePath('/solutions/beary')" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></NuxtLink>
                     </div>
                     <div v-else-if="activeBuKaikong" class="text-center ps-5 pe-5">
                         <picture>
@@ -130,7 +130,7 @@
                         </picture>
                         <h1 class="font-wght mt-3 text-center animate__animated animate__fadeInDown" style="font-size:36px;color:#50151C;line-height: 1.2;">KAIKONG</h1>
                         <p class="text-s-16 mt-3 animate__animated animate__fadeInUp" style="color:#50151C;">{{ $t("banner.kaikong") }}</p>
-                        <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Kaikong')" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></NuxtLink>
+                        <NuxtLink @click="scrollToTop" :to="localePath('/solutions/kaikong')" class="btn btn-orange button"><span class="text-white" style="font-size:18px">Click Now</span></NuxtLink>
                     </div>
                     <div v-else class="text-center">
                         <h1 class="font-wght" style="font-size:36px;color:#50151C;margin-top:120px">E-COMMERCE <br>SOLUTION</h1>
@@ -141,44 +141,23 @@
             <div class="col-xxl-7 col-xl-7 col-lg-8 col-md-12 col-sm-12 col-12">
                 <div class="row d-none d-lg-block" style="margin-top: 80px;">
                     <div class="col-12">
-                        <picture>
-                            <source type="image/webp" srcset="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/SSK_Main_fa38f3ed9d.webp">
-                            <img @mouseover="showHover = false,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-main" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/SSK_Main_fa38f3ed9d.webp" alt="bu_main" loading="lazy">
-                        </picture>
-                        <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Fuse')">
-                        <picture>
-                            <source type="image/webp" srcset="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Fuse_b0f13ab75c.webp">
-                            <img @mouseover="activeBuFuse = true,showHover = false,activeBuLine = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-fuse hvr-grow" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Fuse_b0f13ab75c.webp" alt="Fuse" loading="lazy">
-                        </picture>
+                            <img @mouseover="showHover = false,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-main" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/SSK_Main_fa38f3ed9d.webp" alt="sellsuki-banner" loading="lazy">
+                        <NuxtLink @click="scrollToTop" :to="localePath('/solutions/fuse')">
+                            <img @mouseover="activeBuFuse = true,showHover = false,activeBuLine = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-fuse hvr-grow" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Fuse_b0f13ab75c.webp" alt="fuse-mini-icon" loading="lazy">
                         </NuxtLink>
-                        <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Line')">
-                        <picture>
-                            <source type="image/webp" srcset="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Line_e32da8e76c.webp">
-                            <img @mouseover="activeBuLine = true,showHover = false,activeBuFuse = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-line hvr-grow" :class="{'auto-pulse':showHover}" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Line_e32da8e76c.webp" alt="Line" loading="lazy">
-                        </picture>
+                        <NuxtLink @click="scrollToTop" :to="localePath('/solutions/line')">
+                            <img @mouseover="activeBuLine = true,showHover = false,activeBuFuse = false, activeBuAkita = false, activeBuBeary = false, activeBuKaikong = false" class="bu-line hvr-grow" :class="{'auto-pulse':showHover}" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Line_e32da8e76c.webp" alt="line-by-sellsuki-mini-icon" loading="lazy">
                         </NuxtLink>
-                        <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Akita')">
-                        <picture>
-                            <source type="image/webp" srcset="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/AKT_0f1aae1062.webp">
-                            <img @mouseover="activeBuAkita = true,showHover = false,activeBuFuse = false, activeBuLine = false, activeBuBeary = false, activeBuKaikong = false" class="bu-akita hvr-grow" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/AKT_0f1aae1062.webp" alt="Akita" loading="lazy">
-                        </picture>
+                        <NuxtLink @click="scrollToTop" :to="localePath('/solutions/akita')">
+                            <img @mouseover="activeBuAkita = true,showHover = false,activeBuFuse = false, activeBuLine = false, activeBuBeary = false, activeBuKaikong = false" class="bu-akita hvr-grow" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/AKT_0f1aae1062.webp" alt="akita-fulfillment-mini-icon" loading="lazy">
                         </NuxtLink>
-                        <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Beary')">
-                        <picture>
-                            <source type="image/webp" srcset="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Bearyweb_299dd0c679.webp">
-                            <img @mouseover="activeBuBeary = true,showHover = false,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuKaikong = false" class="bu-beary hvr-grow" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Bearyweb_299dd0c679.webp" alt="Beary" loading="lazy">
-                        </picture>
+                        <NuxtLink @click="scrollToTop" :to="localePath('/solutions/beary')">
+                            <img @mouseover="activeBuBeary = true,showHover = false,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuKaikong = false" class="bu-beary hvr-grow" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Bearyweb_299dd0c679.webp" alt="bearytech-mini-icon" loading="lazy">
                         </NuxtLink>
-                        <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Kaikong')">
-                        <picture>
-                            <source type="image/webp" srcset="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Kaikong_dc3a1c2aad.webp">
-                            <img @mouseover="activeBuKaikong = true,showHover = false,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuBeary = false" class="bu-kaikong hvr-grow" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Kaikong_dc3a1c2aad.webp" alt="Kaikong" loading="lazy">
-                        </picture>
+                        <NuxtLink @click="scrollToTop" :to="localePath('/solutions/kaikong')">
+                            <img @mouseover="activeBuKaikong = true,showHover = false,activeBuFuse = false, activeBuLine = false, activeBuAkita = false, activeBuBeary = false" class="bu-kaikong hvr-grow" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Kaikong_dc3a1c2aad.webp" alt="kaikong-mini-icon" loading="lazy">
                         </NuxtLink>
-                        <picture>
-                            <source type="image/webp" srcset="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/SSK_Main_fa38f3ed9d.webp">
-                            <img class="bu-size" width="611" height="614" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/SSK_Main_fa38f3ed9d.webp" alt="SSK_Main" loading="lazy">
-                        </picture>
+                        <img class="bu-size" width="611" height="614" src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/SSK_Main_fa38f3ed9d.webp" alt="sellsuki-banner" loading="lazy">
                     </div>
                 </div>
                 <div class="d-block d-lg-none" style="margin-top: -30px;">

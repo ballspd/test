@@ -3,11 +3,22 @@
     <div class="background-main page-top">
         <div class="container">
             <div class="crad text-color-this-page p-5">
-                <div class="row justify-content-center pt-2 pb-2 pt-lg-5 pb-lg-5">
+                <div v-if="error.statusCode === 404" class="row justify-content-center pt-2 pb-2 pt-lg-5 pb-lg-5">
                     <div class="col-12 col-lg-4 order-2 order-lg-1 text-center pt-3">
                         <h1 class="text-s-1 text-w-700 color-FF773B mb-0">404</h1>
                         <h2 class="text-s-2 text-w-700 color-15304E mb-1">ERROR</h2>
                         <p class="text-s-3 text-w-500 color-15304E">Page not found</p>
+                        <div class="p-5">
+                            <a href="/" class="btn btn-orange text-s-16 text-w-400 hvr-back-pulse"><span>กลับสู่หน้าหลัก</span></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 order-1 order-lg-2 text-center">
+                        <img class="img-fluid" width="370" height="370" src="../assets/SSK-Crying-01-1.webp" alt="Header-sellsuki">
+                    </div>
+                </div>
+                <div v-else class="row justify-content-center pt-2 pb-2 pt-lg-5 pb-lg-5">
+                    <div class="col-12 col-lg-4 order-2 order-lg-1 text-center pt-3">
+                        <h1 class="text-s-1 text-w-700 color-FF773B mb-0">{{otherError}}</h1>
                         <div class="p-5">
                             <a href="/" class="btn btn-orange text-s-16 text-w-400 hvr-back-pulse"><span>กลับสู่หน้าหลัก</span></a>
                         </div>
@@ -59,6 +70,7 @@ export default {
     }
   },
   mounted() {
+    return this.error.statusCode
     //window.location.href = 'http://localhost:3000/'
     // if(window.location.href == window.location.origin + '/terms.html')
     // {

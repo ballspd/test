@@ -47,7 +47,7 @@
                                 <span class="text-s-16 ms-4">{{count}}</span>
                             </div>                 
                         </div>
-                        <div v-for="data in responseData.contant" :key="data.id" class="row">
+                        <!-- <div v-for="data in responseData.contant" :key="data.id" class="row">
                             <div v-if="data.image != null" class="col-12 mt-5 mb-5">
                                 <img v-if="data.image != null" class="img-cover" :src="data.image.url" :alt="data.image.alternativeText">
                             </div>
@@ -57,6 +57,44 @@
                                 <div v-html="$md.render(data.text)"></div>
                             </div>
                             <div v-else class="mt-3 mb-3">
+                            </div>
+                        </div>  -->
+                        <div v-for="data in responseData.contant" :key="data.id">
+                            <div v-if="data.PositionImage == 'Left'" class="row mt-5">
+                                <div class="col-6">
+                                    <div v-if="data.text != null" class="show-text-color">
+                                        <div v-html="$md.render(data.text)"></div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div v-if="data.image != null">
+                                        <img v-if="data.image != null" class="img-cover" :src="data.image.url" :alt="data.image.alternativeText">
+                                    </div>
+                                </div>
+                            </div>
+                            <div v-else-if="data.PositionImage == 'Right'" class="row mt-5">
+                                <div class="col-6">
+                                    <div v-if="data.image != null">
+                                        <img v-if="data.image != null" class="img-cover" :src="data.image.url" :alt="data.image.alternativeText">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div v-if="data.text != null" class="show-text-color">
+                                        <div v-html="$md.render(data.text)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div v-else class="row">
+                                <div v-if="data.image != null" class="col-12 mt-5 mb-5">
+                                    <img v-if="data.image != null" class="img-cover" :src="data.image.url" :alt="data.image.alternativeText">
+                                </div>
+                                <div v-else class="mt-3 mb-3">
+                                </div>
+                                <div v-if="data.text != null" class="col-12 show-text-color">
+                                    <div v-html="$md.render(data.text)"></div>
+                                </div>
+                                <div v-else class="mt-3 mb-3">
+                                </div>
                             </div>
                         </div> 
                     </div>
@@ -95,7 +133,7 @@ export default {
     },
     async asyncData({ $axios, route, i18n }) {
       //const response = await $axios.$get('https://login.sellsuki.co.th/blogs/' + route.params.id + '?_locale='+ i18n.locale);
-      const response = await $axios.$get('https://login.sellsuki.co.th/blogs/' + route.params.id);
+      const response = await $axios.$get(process.env.API_URL+'blogs/' + route.params.id);
       return { responseData: response , blog_category_id : response.blog_category.id };
     },
     data() {
@@ -106,7 +144,7 @@ export default {
         view: 1,
         count:0,
         blog_category_id:'',
-        urls: 'https://www.sellsuki.co.th/Blogs/Detail/'+this.$route.params.id+'/'+this.$route.params.name
+        urls: 'https://www.sellsuki.co.th/blogs/detail/'+this.$route.params.id+'/'+this.$route.params.name
       }
     },
     methods: {
@@ -120,9 +158,9 @@ export default {
         console.log(view)
         this.count = parseInt(view) + 1
         console.log(this.count)
-        axios.put('https://login.sellsuki.co.th/blogs/'+ this.$route.params.id, {view: this.count}, {
+        axios.put(process.env.API_URL+'blogs/'+ this.$route.params.id, {view: this.count}, {
             headers: {
-                'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjU2NDQxMTc1LCJleHAiOjE2NTkwMzMxNzV9.pmkkDG5APoFoOeGeYowp0nan0tim0LDE17f2-j8T0tU`
+                'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjU5NjA2NjQ0LCJleHAiOjE2NjIxOTg2NDR9.6QWY32k1VEZZzN8uUHbHahaPiby2QPlcn8YQeawdXhE`
             }
         })
         .then()
@@ -134,7 +172,7 @@ export default {
             location.replace(location.href.replace(/\?fbclid.+/, ""));
         }
         //axios.get('https://login.sellsuki.co.th/blogs/' + this.$route.params.id+'?_locale='+ this.lang)
-        axios.get('https://login.sellsuki.co.th/blogs/' + this.$route.params.id)
+        axios.get(process.env.API_URL+'blogs/' + this.$route.params.id)
         .then(response => (this.responseData = response.data,this.addView(response.data.view)))
     }
 }

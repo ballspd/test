@@ -3,7 +3,7 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-xl-block d-xxl-block" style="background-color: #F6ECE0;z-index: 999;">
     <div class="container">
       <a class="navbar-brand" href="/">
-        <img src="../assets/logo-Sellsuki.svg" alt="Sellsuki logo" loading="lazy" width="141.29" height="60" class="d-inline-block align-text-top cover-img">
+        <img src="../assets/logo-Sellsuki.svg" alt="sellsuki-logo" loading="lazy" width="141.29" height="60" class="d-inline-block align-text-top cover-img">
       </a>
       <div class="ml-2">
         <ul class="navbar-nav navbar-custom shadow text-s-16 text-w-500 menu-bar" style="padding:0px !important;width: 100% !important;"> <!-- 797px -->
@@ -92,45 +92,45 @@
                 <div class="col-6 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 15px !important;padding-left: 15px !important;height:415px;width: 235px !important;">
                   <span class="text-w-700 text-s-16" style="color:#50151C !important"><img class="me-2" src="./../assets/icon/icon-menu1.webp" alt="icon-menu1">{{$t("Menu.Solutions.TypesofBusiness")}}</span>
                   <hr class="mt-3" style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">
-                  <NuxtLink @click="scrollToTop" :to="localePath('/TypesOfBusiness/BusinessOwner')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.BusinessOwner")}}</p></NuxtLink><br>
-                  <NuxtLink @click="scrollToTop" :to="localePath('/TypesOfBusiness/OnlineMerchant')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.OnlineMerchant")}}</p></NuxtLink><br>
-                  <NuxtLink @click="scrollToTop" :to="localePath('/TypesOfBusiness/Corporate')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.Corporate")}}</p></NuxtLink>
+                  <NuxtLink @click="scrollToTop" :to="localePath('/types-of-business/business-owner')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.BusinessOwner")}}</p></NuxtLink><br>
+                  <NuxtLink @click="scrollToTop" :to="localePath('/types-of-business/online-merchant')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.OnlineMerchant")}}</p></NuxtLink><br>
+                  <NuxtLink @click="scrollToTop" :to="localePath('/types-of-business/corporate')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.Corporate")}}</p></NuxtLink>
                 </div>
                 <div class="col-6 hover-manu" style="padding-right: 15px !important;padding-left: 15px !important;width: 260px !important;">
                   <span class="text-w-700 text-s-16" style="color:#50151C !important"><img class="me-2" src="./../assets/icon/icon-menu2.webp" alt="icon-menu1">{{$t("Menu.Solutions.Services-Products")}}</span>
                   <hr style="border: 1px solid #E7E7EA;width: 182px;height: 0px;">
-                  <nuxt-link @click="scrollToTop" :to="localePath('/Solutions/Fuse')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.FuseAdvertising")}}</p></nuxt-link><br>
-                  <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Line')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.LINEAgency")}}</p></NuxtLink><br>
-                  <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Kaikong')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.KaikongContentMarketing")}}</p></NuxtLink><br>
-                  <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Beary')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.BearyWebTechService")}}</p></NuxtLink><br>
-                  <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Akita')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.AkitaFulfillment")}}</p></NuxtLink><br>
-                  <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Shipmunk')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;width: 255px;">{{$t("Menu.Solutions.ShipmunkDropshipping")}}</p></NuxtLink><br>
-                  <NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Oc2Plus')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;width: 255px;">{{$t("Menu.Solutions.Oc2PlusCustomerDataPlatform")}}</p></NuxtLink> 
+                  <nuxt-link @click="scrollToTop" :to="localePath('/solutions/fuse')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.FuseAdvertising")}}</p></nuxt-link><br>
+                  <NuxtLink @click="scrollToTop" :to="localePath('/solutions/line')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.LINEAgency")}}</p></NuxtLink><br>
+                  <NuxtLink @click="scrollToTop" :to="localePath('/solutions/kaikong')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.KaikongContentMarketing")}}</p></NuxtLink><br>
+                  <NuxtLink @click="scrollToTop" :to="localePath('/solutions/beary')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.BearyWebTechService")}}</p></NuxtLink><br>
+                  <NuxtLink @click="scrollToTop" :to="localePath('/solutions/akita')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.AkitaFulfillment")}}</p></NuxtLink><br>
+                  <NuxtLink @click="scrollToTop" :to="localePath('/solutions/shipmunk')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;width: 255px;">{{$t("Menu.Solutions.ShipmunkDropshipping")}}</p></NuxtLink><br>
+                  <NuxtLink @click="scrollToTop" :to="localePath('/solutions/oc2plus')"><p class="text-w-500 text-s-16" style="color:#50151C;margin-top: 2px;width: 255px;">{{$t("Menu.Solutions.Oc2PlusCustomerDataPlatform")}}</p></NuxtLink> 
                 </div>
               </div>
             </ul>
           </li>
-          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'AboutUs' })">
+          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'about-us' })">
           <li class="nav-item navbar-item">
             <div class="nav-link border-menu text-c-menu">{{$t("Menu.AboutUs")}}</div>
           </li>
           </NuxtLink>
-          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'Portfolio' })">
+          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath('/portfolio')">
           <li class="nav-item navbar-item">
             <div class="nav-link border-menu text-c-menu">{{$t("Menu.Portfolio")}}</div>
           </li>
           </NuxtLink>
-          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'Blog' })">
+          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath('/blog')">
           <li class="nav-item navbar-item">
             <div class="nav-link border-menu text-c-menu">{{$t("Menu.Blog")}}</div>
           </li>
           </NuxtLink>
-          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'ContactUs' })">
+          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'contact-us' })">
           <li class="nav-item navbar-item">
             <div class="nav-link border-menu text-c-menu">{{$t("Menu.ContactUs")}}</div>
           </li>
           </NuxtLink>
-          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'JoinUs' })">
+          <NuxtLink @click="scrollToTop" aria-current="page" :to="localePath({ name: 'join-us' })">
           <li class="nav-item navbar-item" style="border-radius: 0px 50px 50px 0px;">
             <div class="nav-link border-menu text-c-menu">{{$t("Menu.JoinUs")}}</div>
           </li>

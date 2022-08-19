@@ -8,20 +8,20 @@
                 <div class="row">
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6 hover-manu">
                         <p class="text-w-700 font-footer text-white">{{$t('footer.Service')}}</p>
-                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Fuse')" class="text-white">{{$t('footer.OnlineAdvertising')}}</NuxtLink></p>
-                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Akita')" class="text-white">{{$t('footer.Fulfillment')}}</NuxtLink></p>
-                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Line')" class="text-white">{{$t('footer.LINEAgency')}}</NuxtLink></p>
-                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Beary')" class="text-white">{{$t('footer.DevelopWebsite')}}</NuxtLink></p>
-                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Kaikong')" class="text-white">{{$t('footer.ContentMarketing')}}</NuxtLink></p>
-                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Shipmunk')" class="text-white">{{$t('footer.DeliveryCompare')}}</NuxtLink></p>
-                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/Solutions/Oc2Plus')" class="text-white">{{$t('footer.CustomerDataPlatform')}}</NuxtLink></p>
+                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/solutions/fuse')" class="text-white">{{$t('footer.OnlineAdvertising')}}</NuxtLink></p>
+                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/solutions/akita')" class="text-white">{{$t('footer.Fulfillment')}}</NuxtLink></p>
+                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/solutions/line')" class="text-white">{{$t('footer.LINEAgency')}}</NuxtLink></p>
+                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/solutions/beary')" class="text-white">{{$t('footer.DevelopWebsite')}}</NuxtLink></p>
+                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/solutions/kaikong')" class="text-white">{{$t('footer.ContentMarketing')}}</NuxtLink></p>
+                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/solutions/shipmunk')" class="text-white">{{$t('footer.DeliveryCompare')}}</NuxtLink></p>
+                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/solutions/oc2plus')" class="text-white">{{$t('footer.CustomerDataPlatform')}}</NuxtLink></p>
                     </div>
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6 hover-manu">
                         <p class="text-w-700 font-footer text-white">{{$t('footer.AboutUs')}}</p>
-                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/AboutUs')" class="text-white">{{$t('footer.Contact')}}</NuxtLink></p>
-                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/JoinUs')" class="text-white">{{$t('footer.JoinUs')}}</NuxtLink></p>
-                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/Portfolio')" class="text-white">{{$t('footer.Portfolio')}}</NuxtLink></p>
-                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/Blog')" class="text-white">{{$t('footer.Blog')}}</NuxtLink></p>
+                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/about-us')" class="text-white">{{$t('footer.Contact')}}</NuxtLink></p>
+                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/join-us')" class="text-white">{{$t('footer.JoinUs')}}</NuxtLink></p>
+                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/portfolio')" class="text-white">{{$t('footer.Portfolio')}}</NuxtLink></p>
+                        <p class="text-w-400 font-footer"><NuxtLink @click="scrollToTop" :to="localePath('/blog')" class="text-white">{{$t('footer.Blog')}}</NuxtLink></p>
                     </div>
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div class="row">
@@ -52,8 +52,8 @@
                     <div itemprop="company" class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"><p class="text-w-400" style="color:#FFFFFF;">© Sellsuki Co.,Ltd. (c) All Rights Reserved. Dream-Theme</p></div>
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-xxl-end text-xl-end text-lg-end text-md-end">
                       <p class="text-w-400" style="font-size: 14px;color:#FFFFFF;">
-                      <NuxtLink @click="scrollToTop" :to="localePath('/Policy')">Privacy Policy</NuxtLink><span style="margin-left:6px;margin-right:6px"> |</span> 
-                      <NuxtLink @click="scrollToTop" :to="localePath('/TermsOfUse')">Terms and Conditions</NuxtLink>
+                      <NuxtLink @click="scrollToTop" :to="localePath('/policy')">Privacy Policy</NuxtLink><span style="margin-left:6px;margin-right:6px"> |</span> 
+                      <NuxtLink @click="scrollToTop" :to="localePath('/terms-of-use')">Terms and Conditions</NuxtLink>
                       </p>
                     </div>
                 </div>

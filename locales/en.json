@@ -91,7 +91,7 @@
 
   "Blog":{
     "titel": "Blog",
-    "mata":"Description: Interesting articles and important highlights about marketing trends that you shouldn’t miss. And a recommended blog for you by a specialist writer from the sellsuki team.",
+    "mata":"Interesting articles and important highlights about marketing trends that you shouldn’t miss. And a recommended blog for you by a specialist writer from the sellsuki team.",
     "LastedUpdate": "Lasted Update"
   },
 
@@ -208,6 +208,44 @@
       "why3": "We have a partner that covers all social media platforms and top delivery providers",
       "why4": "One-stop marketing creator service that takes care of every part whether planning until delivering goods to the customer",
       "why5": "More than 7 years experience in Digital marketing"
+    }
+  },
+  "page":{
+    "Home": "Home",
+    "CONTACTUS":{
+      "CONTACTUS": "CONTACT US",
+      "ContactUs": "Contact Us",
+      "mata":"สอบถามข้อมูลเพิ่มเติมและปรึกษาเพื่อหาทางออกที่ใช่ให้ธุรกิจคุณ ติดต่อทีมงานของเราได้เลย!"
+    },
+    "ABOUTUS":{
+      "ABOUTUS": "ABOUTUS",
+      "AboutUs": "AboutUs",
+      "mata":""
+    },
+    "JOINUS":{
+      "JOINUS": "JOIN US",
+      "JoinUs": "Join Us",
+      "mata":"มาเป็นครอบครัวเดียวกัน กับ Sellsuki :)"
+    },
+    "PORTFOLIO":{
+      "PORTFOLIO": "PORTFOLIO",
+      "Portfolio": "Portfolio",
+      "mata":"เรื่องเล่าจากลูกค้าเรา ตัวอย่างผลงาน Review ส่วนหนึ่งจากลูกค้าที่ไว้ใจใช้บริการเรา"
+    },
+    "BLOG":{
+      "BLOG": "BLOG",
+      "Blog": "Blog",
+      "mata":"สอบถามข้อมูลเพิ่มเติมและปรึกษาเพื่อหาทางออกที่ใช่ให้ธุรกิจคุณ ติดต่อทีมงานของเราได้เลย!"
+    },
+    "POLICY":{
+      "POLICY": "POLICY",
+      "Policy": "Policy",
+      "mata":"สอบถามข้อมูลเพิ่มเติมและปรึกษาเพื่อหาทางออกที่ใช่ให้ธุรกิจคุณ ติดต่อทีมงานของเราได้เลย!"
+    },
+    "TERMOFUSE":{
+      "TERMOFUSE": "TERM OF USE",
+      "TermOFUse": "Term Of Use",
+      "mata":"สอบถามข้อมูลเพิ่มเติมและปรึกษาเพื่อหาทางออกที่ใช่ให้ธุรกิจคุณ ติดต่อทีมงานของเราได้เลย!"
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
 <div class="d-none d-lg-block">
-	<transition name="fade">
+	<!-- <transition name="fade">
 		<div v-if="show" class="preloader animate__animated animate__fadeIn">
 			<img class="img-fluid logo-preloader"  src="https://s3.ap-southeast-1.amazonaws.com/staging.sellsuki.com-static/Header_Home_826a845399.webp" alt="Header-sellsuki.webp" loading="lazy">
       <div class="waviy">
@@ -14,7 +14,7 @@
         <span style="--i:8">I</span>
       </div>
 		</div>
-	</transition>
+	</transition> -->
   </div>
 </template>
 

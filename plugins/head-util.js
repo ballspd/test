@@ -10,7 +10,6 @@ export default (_, inject) => {
                 { charset: 'utf-8' },
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
                 { name: 'format-detection', content: 'telephone=no' },
-                { name: 'keywords', content: ['Sellsuki', 'Solution', 'โฆษณาออนไลน์', 'วางแผนคอนเทนต์', 'ออกแบบเว็บไซต์' , 'คลังสินค้าครบวงจร'] },
                 { 
                     hid: 'description', 
                     name: 'description', 

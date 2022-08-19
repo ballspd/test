@@ -3,10 +3,11 @@
             <header class="bg-header"></header>
 
                         <section>
-                            <div class="termsFrame">
+                            <div class="container">
+                            <div class="termsFrame shadow">
                             <div class="termsFrameTop"></div>
 
-                            <div class="title1 pb-4">นโยบายความเป็นส่วนตัว และ คุ้มครองข้อมูลส่วนบุคคล</div>
+                            <h1 class="title1 pb-4">นโยบายความเป็นส่วนตัว และ คุ้มครองข้อมูลส่วนบุคคล</h1>
 
                             <div class="text1">
                                 <p>
@@ -150,6 +151,7 @@
                             </div>
 
                             </div>
+                            </div>
                         </section>
 
 		</div>
@@ -189,8 +191,9 @@ export default {
 }
 
 section .termsFrame {
+    border-radius: 20px;
     background: #fff;
-    width: 1000px;
+    width: 100%;
     margin: -30px auto 0;
     padding: 60px 40px;
     box-sizing: border-box;

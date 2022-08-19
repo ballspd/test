@@ -6,12 +6,11 @@
                     <button class="navbar-toggler" type="button" @click="display_manu = !display_manu" >
                         <i class="bi bi-list" style="font-size: 35px;"></i>
                     </button>
-                    <img src="../assets/logo-Sellsuki.svg" width="130" height="55" alt="Sellsuki logo" loading="lazy">
+                    <img src="../assets/logo-Sellsuki.webp" width="130" height="55" alt="sellsuki-logo" loading="lazy">
                     <a href="tel:020263250" target="_blank" rel="noopener"><img class="shadow" src="./../assets/mobile/Vector.webp" width="40" height="40" alt="Vector" loading="lazy" style="background-color: #FFFFFF;border-radius: 50px;"></a>
                 </div>
             </nav>
-            <div v-if="display_manu">
-            <div v-if="display_manu" class="side-bg"></div>
+            <div v-if="display_manu == true" class="side-bg"></div>
             <div class="sidenav animate__animated" :class="{'animate__fadeInLeft':display_manu,'animate__fadeOutLeft':!display_manu}">
                 <div class="row p-3">
                     <div class="col-5">
@@ -46,19 +45,19 @@
                             </div>
                         
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/AboutUs">{{$t("Menu.AboutUs")}}</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/about-us">{{$t("Menu.AboutUs")}}</router-link>
                         
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/Portfolio">{{$t("Menu.Portfolio")}}</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/portfolio">{{$t("Menu.Portfolio")}}</router-link>
                         
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/Blog">{{$t("Menu.Blog")}}</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/blog">{{$t("Menu.Blog")}}</router-link>
 
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/ContactUs">{{$t("Menu.ContactUs")}}</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/contact-us">{{$t("Menu.ContactUs")}}</router-link>
                             
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/JoinUs">{{$t("Menu.JoinUs")}}</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/join-us">{{$t("Menu.JoinUs")}}</router-link>
                             <hr style="border: 1px solid #50151C;"/>
                         </div>
 
@@ -87,11 +86,11 @@
                                 <span class="text-w-700 text-s-18" style="color:#50151C;"><img class="me-2" src="./../assets/icon/icon-menu3.webp" alt="icon-menu3"> {{$t("Menu.Group")}}</span>
                             </div>
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/TypesOfBusiness/BusinessOwner">{{$t("Menu.Solutions.BusinessOwner")}}</router-link>                           
+                            <router-link @click="display_manu = false,scrollToTop()" to="types-of-business/business-owner">{{$t("Menu.Solutions.BusinessOwner")}}</router-link>                           
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/TypesOfBusiness/OnlineMerchant">{{$t("Menu.Solutions.OnlineMerchant")}}</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/types-of-business/online-merchant">{{$t("Menu.Solutions.OnlineMerchant")}}</router-link>
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/TypesOfBusiness/Corporate">{{$t("Menu.Solutions.Corporate")}}</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/types-of-business/corporate">{{$t("Menu.Solutions.Corporate")}}</router-link>
                             <hr style="border: 1px solid #50151C;"/>
                         </div>
                         <div v-if="component == 'BU'">
@@ -101,24 +100,23 @@
                                 <span class="text-w-700 text-s-18" style="color:#50151C;"><img class="me-2" src="./../assets/icon/icon-menu2.webp" alt="icon-menu1"> {{$t("Menu.BU")}}</span>
                             </div>
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Fuse">{{$t("Menu.Solutions.FuseAdvertising")}}</router-link>                           
+                            <router-link @click="display_manu = false,scrollToTop()" to="/solutions/fuse">{{$t("Menu.Solutions.FuseAdvertising")}}</router-link>                           
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Line">{{$t("Menu.Solutions.LINEAgency")}}</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/solutions/line">{{$t("Menu.Solutions.LINEAgency")}}</router-link>
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Kaikong">{{$t("Menu.Solutions.KaikongContentMarketing")}}</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/solutions/kaikong">{{$t("Menu.Solutions.KaikongContentMarketing")}}</router-link>
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Beary">{{$t("Menu.Solutions.BearyWebTechService")}}</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/solutions/beary">{{$t("Menu.Solutions.BearyWebTechService")}}</router-link>
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Akita">{{$t("Menu.Solutions.AkitaFulfillment")}}</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/solutions/akita">{{$t("Menu.Solutions.AkitaFulfillment")}}</router-link>
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Shipmunk">{{$t("Menu.Solutions.ShipmunkDropshipping")}}</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/solutions/shipmunk">{{$t("Menu.Solutions.ShipmunkDropshipping")}}</router-link>
                             <hr style="border: 1px solid #50151C;"/>
-                            <router-link @click="display_manu = false,scrollToTop()" to="/Solutions/Oc2Plus">{{$t("Menu.Solutions.Oc2PlusCustomerDataPlatform")}}</router-link>
+                            <router-link @click="display_manu = false,scrollToTop()" to="/solutions/oc2plus">{{$t("Menu.Solutions.Oc2PlusCustomerDataPlatform")}}</router-link>
                             <hr style="border: 1px solid #50151C;"/>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
 </template>
