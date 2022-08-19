@@ -146,7 +146,7 @@ export default {
           title: "Fuse"
       };
     },
-    fetch({ redirect }){
+    async asyncData({ redirect }) {
         console.log(window.location.href + " 55 " + window.location.origin + '/solutions/fuse/')
         if(window.location.href === window.location.origin + '/solutions/fuse/'){
             redirect(window.location.origin + '/solutions/fuse')
